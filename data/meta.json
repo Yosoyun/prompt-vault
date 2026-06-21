@@ -1,0 +1,309 @@
+{
+  "total": 4408,
+  "groups": [
+    {
+      "key": "writing",
+      "label": "Writing",
+      "icon": "✍️",
+      "color": "#e8b04b",
+      "count": 2096,
+      "categories": [
+        {
+          "name": "writing",
+          "label": "Writing",
+          "count": 1571
+        },
+        {
+          "name": "Respond",
+          "label": "Respond",
+          "count": 162
+        },
+        {
+          "name": "Summarize",
+          "label": "Summarize",
+          "count": 159
+        },
+        {
+          "name": "Script Writing",
+          "label": "Script Writing",
+          "count": 99
+        },
+        {
+          "name": "Improve",
+          "label": "Improve",
+          "count": 80
+        },
+        {
+          "name": "Text Editor",
+          "label": "Text Editor",
+          "count": 22
+        },
+        {
+          "name": "Sports Writing",
+          "label": "Sports Writing",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "key": "marketing",
+      "label": "Marketing & SEO",
+      "icon": "📣",
+      "color": "#5fb0c4",
+      "count": 798,
+      "categories": [
+        {
+          "name": "marketing",
+          "label": "Marketing",
+          "count": 460
+        },
+        {
+          "name": "keywords",
+          "label": "Keywords",
+          "count": 197
+        },
+        {
+          "name": "call to action",
+          "label": "Call to Action",
+          "count": 29
+        },
+        {
+          "name": "Positioning",
+          "label": "Positioning",
+          "count": 23
+        },
+        {
+          "name": "Persuade",
+          "label": "Persuade",
+          "count": 23
+        },
+        {
+          "name": "link building",
+          "label": "Link Building",
+          "count": 22
+        },
+        {
+          "name": "Outreach",
+          "label": "Outreach",
+          "count": 19
+        },
+        {
+          "name": "Segment your audience",
+          "label": "Segment your audience",
+          "count": 13
+        },
+        {
+          "name": "Subject Lines",
+          "label": "Subject Lines",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "key": "sales",
+      "label": "Sales & Support",
+      "icon": "💼",
+      "color": "#c98bbb",
+      "count": 142,
+      "categories": [
+        {
+          "name": "Products",
+          "label": "Products",
+          "count": 89
+        },
+        {
+          "name": "Product Description",
+          "label": "Product Description",
+          "count": 37
+        },
+        {
+          "name": "Cancel",
+          "label": "Cancel",
+          "count": 5
+        },
+        {
+          "name": "CRM",
+          "label": "CRM",
+          "count": 3
+        },
+        {
+          "name": "Pricing",
+          "label": "Pricing",
+          "count": 2
+        },
+        {
+          "name": "Partnerships",
+          "label": "Partnerships",
+          "count": 2
+        },
+        {
+          "name": "Quota",
+          "label": "Quota",
+          "count": 2
+        },
+        {
+          "name": "Refunds",
+          "label": "Refunds",
+          "count": 1
+        },
+        {
+          "name": "Trial",
+          "label": "Trial",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "key": "dev",
+      "label": "Development",
+      "icon": "⚙️",
+      "color": "#7ec699",
+      "count": 265,
+      "categories": [
+        {
+          "name": "Backend Development",
+          "label": "Backend Development",
+          "count": 108
+        },
+        {
+          "name": "Web Development",
+          "label": "Web Development",
+          "count": 97
+        },
+        {
+          "name": "Configuration Management",
+          "label": "Configuration Management",
+          "count": 29
+        },
+        {
+          "name": "Database Administration",
+          "label": "Database Administration",
+          "count": 12
+        },
+        {
+          "name": "Operating System Management",
+          "label": "Operating System Management",
+          "count": 11
+        },
+        {
+          "name": "Containerization",
+          "label": "Containerization",
+          "count": 5
+        },
+        {
+          "name": "Version Control",
+          "label": "Version Control",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "key": "art",
+      "label": "AI Art & Design",
+      "icon": "🎨",
+      "color": "#e08a6e",
+      "count": 188,
+      "categories": [
+        {
+          "name": "Design",
+          "label": "Design",
+          "count": 65
+        },
+        {
+          "name": "Midjourney",
+          "label": "Midjourney",
+          "count": 63
+        },
+        {
+          "name": "Stable Diffusion",
+          "label": "Stable Diffusion",
+          "count": 35
+        },
+        {
+          "name": "Dall-E",
+          "label": "DALL·E",
+          "count": 25
+        }
+      ]
+    },
+    {
+      "key": "ideas",
+      "label": "Ideas & Planning",
+      "icon": "💡",
+      "color": "#b6a4e0",
+      "count": 488,
+      "categories": [
+        {
+          "name": "Plan",
+          "label": "Plan",
+          "count": 167
+        },
+        {
+          "name": "Research",
+          "label": "Research",
+          "count": 152
+        },
+        {
+          "name": "ideation",
+          "label": "Ideation",
+          "count": 136
+        },
+        {
+          "name": "Startup Ideas",
+          "label": "Startup Ideas",
+          "count": 19
+        },
+        {
+          "name": "Spreadsheets",
+          "label": "Spreadsheets",
+          "count": 14
+        }
+      ]
+    },
+    {
+      "key": "business",
+      "label": "Business & Finance",
+      "icon": "📊",
+      "color": "#88b04b",
+      "count": 239,
+      "categories": [
+        {
+          "name": "Accounting",
+          "label": "Accounting",
+          "count": 192
+        },
+        {
+          "name": "Games",
+          "label": "Games",
+          "count": 28
+        },
+        {
+          "name": "Places (Media Channels)",
+          "label": "Media Channels",
+          "count": 19
+        }
+      ]
+    },
+    {
+      "key": "other",
+      "label": "Other",
+      "icon": "🗂️",
+      "color": "#9a9488",
+      "count": 192,
+      "categories": [
+        {
+          "name": "UNSURE",
+          "label": "Uncategorized",
+          "count": 189
+        },
+        {
+          "name": "Unmet Category-Related Needs",
+          "label": "Misc",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "source": "AIPRM community prompts (October 2023)",
+  "curator": "Indrajeet Yadav"
+}

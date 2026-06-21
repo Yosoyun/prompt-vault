@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Prompt Vault · 4,400+ AI Prompts, free — curated by Indrajeet Yadav</title>
+<meta name="description" content="A free, searchable library of 4,400+ ready-to-use AI prompts for ChatGPT, Claude & Gemini — writing, marketing, SEO, code, design and more. Copy & paste in one click. Curated by Indrajeet Yadav.">
+<meta name="author" content="Indrajeet Yadav">
+<meta name="theme-color" content="#14130f">
+<meta property="og:title" content="The Prompt Vault — 4,400+ free AI prompts">
+<meta property="og:description" content="Search, filter and copy 4,400+ ready-to-use AI prompts. Free forever. Curated by Indrajeet Yadav.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-head">
+  <a class="brand" href="#top" aria-label="The Prompt Vault — home">
+    <span class="brand-mark" aria-hidden="true">⌘</span>
+    <span class="brand-text">
+      <span class="brand-name">The&nbsp;Prompt&nbsp;Vault</span>
+      <span class="brand-sub">curated by <b>Indrajeet&nbsp;Yadav</b></span>
+    </span>
+  </a>
+  <div class="head-actions">
+    <a class="ghost-btn" href="#groups">Browse</a>
+    <button class="ghost-btn theme-toggle" id="themeToggle" aria-label="Toggle light / dark theme">
+      <span class="t-dark">☾</span><span class="t-light">☀</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- ░░ HERO ░░ -->
+  <section class="hero">
+    <p class="eyebrow">Free forever · No sign-up · Works offline</p>
+    <h1 class="hero-title">
+      The prompt that<br><em>does the work</em>.
+    </h1>
+    <p class="hero-lede">
+      A hand-organised vault of <b id="heroCount">4,408</b> ready-to-use AI prompts for
+      ChatGPT, Claude &amp; Gemini — sorted into 8 clean shelves. Search it, copy it, paste it.
+    </p>
+
+    <div class="search-wrap" id="searchWrap">
+      <svg class="search-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="search" type="search" placeholder="Search 4,408 prompts — “blog outline”, “cold email”, “midjourney”…" autocomplete="off" spellcheck="false" aria-label="Search prompts">
+      <button class="clear-btn" id="clearSearch" aria-label="Clear search" hidden>✕</button>
+    </div>
+
+    <div class="hero-stats" id="heroStats">
+      <span><b id="statTotal">4,408</b> prompts</span>
+      <span class="dot">·</span>
+      <span><b>8</b> shelves</span>
+      <span class="dot">·</span>
+      <span><b>46</b> topics</span>
+      <span class="dot">·</span>
+      <span>one-click copy</span>
+    </div>
+  </section>
+
+  <!-- ░░ GROUP SHELVES ░░ -->
+  <section class="groups-section" id="groups" aria-label="Prompt shelves">
+    <div class="chip-row" id="groupRow"><!-- group chips injected --></div>
+    <div class="chip-row sub" id="catRow" hidden><!-- category chips injected --></div>
+  </section>
+
+  <!-- ░░ RESULTS TOOLBAR ░░ -->
+  <section class="toolbar">
+    <div class="result-count" id="resultCount">Loading the vault…</div>
+    <label class="sort-wrap">
+      <span>Sort</span>
+      <select id="sort" aria-label="Sort prompts">
+        <option value="default">Featured order</option>
+        <option value="az">Title A → Z</option>
+        <option value="short">Shortest first</option>
+        <option value="long">Longest first</option>
+      </select>
+    </label>
+  </section>
+
+  <!-- ░░ RESULTS GRID ░░ -->
+  <section class="grid" id="grid" aria-live="polite"><!-- cards --></section>
+
+  <div class="load-more-wrap">
+    <button class="load-more" id="loadMore" hidden>Load more prompts</button>
+  </div>
+
+  <div class="empty" id="empty" hidden>
+    <div class="empty-mark">🗝️</div>
+    <h3>No prompts match that.</h3>
+    <p>Try a broader word, or <button class="link-btn" id="resetAll">reset all filters</button>.</p>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <span class="brand-mark" aria-hidden="true">⌘</span>
+      <div>
+        <p class="foot-name">The Prompt Vault</p>
+        <p class="foot-by">Curated &amp; published by <b>Indrajeet Yadav</b></p>
+      </div>
+    </div>
+    <p class="foot-note">
+      Free for everyone, forever — no account, no paywall, no tracking.
+      Prompts are drawn from the open <b>AIPRM community library (Oct 2023)</b>;
+      each prompt credits its original community author. Collected, cleaned and
+      re-organised by Indrajeet Yadav so anyone can find what they need fast.
+    </p>
+  </div>
+  <p class="foot-fine">© <span id="year"></span> Indrajeet Yadav · Built to be shared.</p>
+</footer>
+
+<!-- ░░ PROMPT DETAIL MODAL ░░ -->
+<div class="modal-scrim" id="modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    <div class="modal-head">
+      <span class="m-badge" id="mBadge"></span>
+      <h2 id="mTitle"></h2>
+      <p class="m-meta" id="mMeta"></p>
+    </div>
+    <div class="m-vars" id="mVars" hidden></div>
+    <div class="m-prompt-wrap">
+      <pre class="m-prompt" id="mPrompt"></pre>
+    </div>
+    <div class="m-actions">
+      <button class="copy-btn big" id="mCopy"><span class="ci">⧉</span> <span class="ct">Copy prompt</span></button>
+      <a class="open-ai" id="mOpenAI" target="_blank" rel="noopener">Open ChatGPT ↗</a>
+    </div>
+    <p class="m-hint" id="mHint" hidden></p>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden>Copied to clipboard ✓</div>
+
+<script src="app.js"></script>
+</body>
+</html>
