@@ -36,8 +36,8 @@
     loadSaved();
     try {
       const [meta, index] = await Promise.all([
-        fetch("data/meta.json").then((r) => r.json()),
-        fetch("data/index.json").then((r) => r.json()),
+        fetch("data/meta.json", { cache: "no-cache" }).then((r) => r.json()),
+        fetch("data/index.json", { cache: "no-cache" }).then((r) => r.json()),
       ]);
       state.meta = meta; state.index = index;
       meta.groups.forEach((g) => (state.groupColor[g.key] = g.color));
@@ -64,7 +64,7 @@
   function ensureBodies() {
     if (state.bodies) return Promise.resolve(state.bodies);
     if (!state.bodiesPromise)
-      state.bodiesPromise = fetch("data/bodies.json").then((r) => r.json()).then((b) => (state.bodies = b));
+      state.bodiesPromise = fetch("data/bodies.json", { cache: "no-cache" }).then((r) => r.json()).then((b) => (state.bodies = b));
     return state.bodiesPromise;
   }
 
