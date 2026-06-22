@@ -617,3 +617,53 @@ html[data-theme="light"] .trend-tag { color: #c2502f; }
 .foot-sig { font-size: 30px; display: inline-block; margin-top: 2px;
   text-shadow: 0 1px 0 color-mix(in srgb, var(--accent) 25%, transparent); }
 @media (max-width: 640px) { .modal-sig { display: none; } }
+
+/* ============================================================
+   ENGAGEMENT FEATURES — search chips, prompt of the day, recent,
+   live customizer, share, confetti
+   ============================================================ */
+/* popular search chips */
+.search-chips { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 14px; }
+.sc-label { font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--ink-faint); }
+.sc-chip { font: inherit; font-size: 12.5px; font-weight: 600; color: var(--ink-dim); background: var(--bg-2); border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px; cursor: pointer; }
+.sc-chip:hover { color: var(--accent-ink); background: var(--accent); border-color: var(--accent); transform: translateY(-1px); }
+
+/* prompt of the day */
+.potd { padding: 14px 0 6px; }
+.potd-inner { position: relative; overflow: hidden; border: 1px solid color-mix(in srgb, var(--c, var(--accent)) 35%, var(--line)); border-radius: 18px; padding: 26px clamp(20px, 4vw, 34px); background: linear-gradient(150deg, color-mix(in srgb, var(--c, var(--accent)) 13%, var(--bg-card)), var(--bg-card) 65%); }
+.potd-glow { position: absolute; right: -80px; top: -90px; width: 280px; height: 280px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--c, var(--accent)) 40%, transparent), transparent 70%); }
+.potd-eyebrow { font-family: "JetBrains Mono", monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--c, var(--accent)); }
+.potd-badge { font-family: "JetBrains Mono", monospace; font-size: 11px; color: var(--ink-faint); margin-left: 10px; }
+.potd-title { font-family: "Fraunces", serif; font-weight: 600; font-size: clamp(22px, 3.2vw, 30px); line-height: 1.15; margin: 12px 0 8px; max-width: 760px; }
+.potd-teaser { font-size: 15px; color: var(--ink-dim); margin: 0 0 18px; max-width: 680px; line-height: 1.5; }
+.potd-actions { display: flex; gap: 10px; align-items: center; }
+.potd-open { font: inherit; font-size: 14px; font-weight: 600; color: var(--c, var(--accent)); background: transparent; border: 1px solid color-mix(in srgb, var(--c, var(--accent)) 40%, var(--line)); border-radius: 10px; padding: 9px 16px; cursor: pointer; transition: all .15s; }
+.potd-open:hover { background: color-mix(in srgb, var(--c, var(--accent)) 12%, transparent); transform: translateY(-1px); }
+
+/* recently used rail */
+.recent { padding: 22px 0 4px; }
+.recent-count { font-family: "JetBrains Mono", monospace; font-size: 13px; color: var(--ink-faint); font-weight: 400; }
+.recent-rail { display: flex; gap: 10px; overflow-x: auto; padding: 4px 2px 12px; scrollbar-width: thin; }
+.recent-rail::-webkit-scrollbar { height: 7px; }
+.recent-rail::-webkit-scrollbar-thumb { background: var(--line); border-radius: 9px; }
+.recent-card { flex: 0 0 auto; max-width: 240px; display: flex; align-items: center; gap: 9px; font: inherit; font-size: 13px; font-weight: 600; color: var(--ink); text-align: left; background: var(--bg-2); border: 1px solid var(--line); border-left: 3px solid var(--c, var(--accent)); border-radius: 12px; padding: 10px 14px; cursor: pointer; transition: all .15s; }
+.recent-card:hover { border-color: var(--c, var(--accent)); transform: translateY(-2px); }
+.rc-badge { font-size: 15px; flex: none; }
+.rc-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* live customizer in modal */
+.m-fill { background: var(--bg-2); border: 1px solid var(--line-soft); border-radius: 14px; padding: 14px 16px; margin-bottom: 14px; }
+.m-fill-head { font-size: 14px; margin-bottom: 11px; }
+.m-fill-sub { color: var(--ink-faint); font-size: 12.5px; font-weight: 400; }
+.m-fill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; }
+.fill-field { display: flex; flex-direction: column; gap: 4px; }
+.fill-field span { font-family: "JetBrains Mono", monospace; font-size: 10.5px; letter-spacing: .04em; text-transform: uppercase; color: var(--accent-2); }
+.fill-field input { font: inherit; font-size: 13.5px; color: var(--ink); background: var(--bg-card); border: 1px solid var(--line); border-radius: 9px; padding: 9px 11px; outline: none; transition: border-color .15s; }
+.fill-field input:focus { border-color: var(--accent); }
+.m-prompt mark.filled { background: color-mix(in srgb, var(--accent-2) 34%, transparent); color: var(--ink); font-weight: 600; }
+.icon-btn { font: inherit; font-size: 13.5px; font-weight: 600; color: var(--ink-dim); background: transparent; border: 1px solid var(--line); border-radius: 10px; padding: 13px 16px; cursor: pointer; transition: all .15s; }
+.icon-btn:hover { color: var(--ink); border-color: var(--accent); }
+
+/* confetti */
+.confetti-piece { position: fixed; width: 9px; height: 9px; border-radius: 2px; z-index: 95; pointer-events: none; animation: confettiPop .8s cubic-bezier(.2,.7,.3,1) forwards; }
+@keyframes confettiPop { 0% { transform: translate(0,0) rotate(0); opacity: 1; } 100% { transform: translate(var(--dx), calc(var(--dy) + 90px)) rotate(var(--rot)); opacity: 0; } }

@@ -47,15 +47,24 @@
       state.meta = meta; state.index = index;
       meta.groups.forEach((g) => (state.groupColor[g.key] = g.color));
       meta.groups.forEach((g) => g.categories.forEach((c) => (state.catLabel[c.name] = c.label)));
-      for (const r of index) r._s = (r.t + " " + r.te + " " + (state.catLabel[r.c] || r.c)).toLowerCase();
+      state.slugMap = {};
+      for (const r of index) {
+        r._s = (r.t + " " + r.te + " " + (state.catLabel[r.c] || r.c)).toLowerCase();
+        const s = slug(r.t); if (!(s in state.slugMap)) state.slugMap[s] = r.i;
+      }
 
       hydrateMeta();
       renderGroups();
       renderCollections();
+      renderSearchChips();
+      renderPOTD();
+      renderRecent();
       renderTrending();
+      animateStats();
       applyInitialQuery();
       applyFilters();
       ensureBodies();
+      handleDeepLink();
     } catch (err) {
       $("#resultCount").textContent = "";
       $("#grid").innerHTML =
@@ -270,7 +279,7 @@
     const ok = await toClipboard(bodies[i] ? bodies[i].p : "");
     if (btn) { btn.classList.toggle("done", ok); if (txt) txt.textContent = ok ? "Copied" : "Failed";
       setTimeout(() => { btn.classList.remove("done"); if (txt) txt.textContent = "Copy"; }, 1600); }
-    if (ok) toast();
+    if (ok) { toast(); recordUse(i); confetti(btn); }
   }
   async function toClipboard(text) {
     try { if (navigator.clipboard && window.isSecureContext) { await navigator.clipboard.writeText(text); return true; } } catch (_) {}
@@ -282,30 +291,66 @@
     requestAnimationFrame(() => t.classList.add("show")); clearTimeout(toastT);
     toastT = setTimeout(() => t.classList.remove("show"), 1700); }
 
-  /* ---------- modal ---------- */
+  /* ---------- modal + live customizer ---------- */
+  let modalState = null;
   async function openModal(i) {
     const r = state.index[i];
+    modalState = { i, vars: (r.v || []).slice(), values: {}, body: { p: "", h: "" } };
     const g = state.meta.groups.find((x) => x.key === r.g);
     const card = $(".modal-card"); card.style.setProperty("--c", g ? g.color : "var(--accent)");
     $("#mBadge").textContent = `${g ? g.icon : "✦"} ${g ? g.label : ""} · ${state.catLabel[r.c] || r.c}`;
     $("#mTitle").textContent = r.t;
-    $("#mMeta").innerHTML = `${fmt(r.len)} characters${(r.v && r.v.length) ? ` · ${r.v.length} variable${r.v.length > 1 ? "s" : ""}` : ""}`;
-    const mv = $("#mVars");
-    if (r.v && r.v.length) { mv.hidden = false; mv.innerHTML = `<span class="lbl">Replace before using:</span>` + r.v.map((v) => `<span class="var-tag">${esc(v)}</span>`).join(""); }
-    else mv.hidden = true;
+    $("#mMeta").innerHTML = `${fmt(r.len)} characters${modalState.vars.length ? ` · ${modalState.vars.length} fill-in${modalState.vars.length > 1 ? "s" : ""}` : ""}`;
     const sBtn = $("#mSave"); const syncSave = () => { const on = state.saved.has(i); sBtn.textContent = on ? "★ Saved" : "☆ Save"; sBtn.classList.toggle("on", on); sBtn.setAttribute("aria-pressed", on); };
     syncSave(); sBtn.onclick = () => { toggleSave(i); syncSave(); refreshCardFav(i); };
+    $("#mShare").onclick = async () => {
+      const url = location.origin + location.pathname + "?p=" + encodeURIComponent(slug(r.t));
+      const ok = await toClipboard(url); toast(ok ? "Share link copied 🔗" : "Couldn't copy link");
+    };
+    try { history.replaceState(null, "", "?p=" + encodeURIComponent(slug(r.t))); } catch (_) {}
+    $("#mFill").hidden = true; $("#mFillGrid").innerHTML = "";
     $("#mPrompt").innerHTML = `<span class="sk" style="display:block;height:14px;width:60%;margin:4px 0"></span>`;
     showModal();
     const bodies = await ensureBodies(); const body = bodies[i] || { p: "", h: "" };
-    $("#mPrompt").innerHTML = highlightVars(body.p, r.v);
+    modalState.body = body;
+    if (modalState.vars.length) buildFill();
+    renderModalPreview();
     const hint = $("#mHint");
     if (body.h) { hint.hidden = false; hint.textContent = "💡 " + body.h; } else hint.hidden = true;
     $("#mCopy").onclick = async (e) => {
-      const ok = await toClipboard(body.p); const ct = e.currentTarget.querySelector(".ct");
-      e.currentTarget.classList.toggle("done", ok); ct.textContent = ok ? "Copied ✓" : "Copy failed"; if (ok) toast();
+      const ok = await toClipboard(computeFilled()); const ct = e.currentTarget.querySelector(".ct");
+      e.currentTarget.classList.toggle("done", ok); ct.textContent = ok ? "Copied ✓" : "Copy failed";
+      if (ok) { toast(); recordUse(i); confetti(e.currentTarget); }
       setTimeout(() => { e.currentTarget.classList.remove("done"); ct.textContent = "Copy prompt"; }, 1700);
     };
+  }
+  function buildFill() {
+    const grid = $("#mFillGrid"); grid.innerHTML = "";
+    modalState.vars.forEach((v) => {
+      const name = v.replace(/^\[|\]$/g, "");
+      const field = document.createElement("label"); field.className = "fill-field";
+      field.innerHTML = `<span>${esc(name)}</span><input type="text" placeholder="your ${esc(name.toLowerCase())}…" autocomplete="off" spellcheck="false">`;
+      const input = field.querySelector("input");
+      input.addEventListener("input", () => { modalState.values[v] = input.value; renderModalPreview(); });
+      grid.appendChild(field);
+    });
+    $("#mFill").hidden = false;
+  }
+  function renderModalPreview() {
+    const { body, vars, values } = modalState;
+    let html = esc(body.p);
+    vars.forEach((v) => {
+      const safe = esc(v).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const val = (values[v] || "").trim();
+      html = html.replace(new RegExp(safe, "g"), val ? `<mark class="filled">${esc(val)}</mark>` : `<mark>${esc(v)}</mark>`);
+    });
+    $("#mPrompt").innerHTML = html;
+  }
+  function computeFilled() {
+    const { body, vars, values } = modalState;
+    let out = body.p;
+    vars.forEach((v) => { const val = (values[v] || "").trim(); if (val) out = out.split(v).join(val); });
+    return out;
   }
   function refreshCardFav(i) {
     const b = document.querySelector(`.card .fav[data-i="${i}"]`);
@@ -317,7 +362,105 @@
     return html;
   }
   function showModal() { $("#modal").hidden = false; document.body.style.overflow = "hidden"; }
-  function hideModal() { $("#modal").hidden = true; document.body.style.overflow = ""; }
+  function hideModal() {
+    $("#modal").hidden = true; document.body.style.overflow = "";
+    try { history.replaceState(null, "", location.pathname); } catch (_) {}
+  }
+
+  /* ---------- engagement: deep links, recent, POTD, chips, delight ---------- */
+  function slug(t) { return String(t || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 50); }
+
+  function recordUse(i) {
+    try {
+      let rec = JSON.parse(localStorage.getItem("pv-recent") || "[]");
+      rec = [i, ...rec.filter((x) => x !== i)].slice(0, 14);
+      localStorage.setItem("pv-recent", JSON.stringify(rec));
+      const n = (parseInt(localStorage.getItem("pv-copies") || "0", 10) || 0) + 1;
+      localStorage.setItem("pv-copies", String(n));
+      renderRecent(); milestone(n);
+    } catch (_) {}
+  }
+  function milestone(n) {
+    const M = { 1: "First copy! 🎉 Go build something great.", 5: "5 prompts copied 🔥", 10: "10 copies — you're on a roll 🚀", 25: "25 prompts! Certified power user 💪", 50: "50 copies! Legend 🏆", 100: "100 prompts copied 👑" };
+    if (M[n]) setTimeout(() => toast(M[n]), 950);
+  }
+  function renderRecent() {
+    let rec; try { rec = JSON.parse(localStorage.getItem("pv-recent") || "[]"); } catch (_) { rec = []; }
+    rec = rec.filter((i) => state.index[i]);
+    const sec = $("#recent");
+    if (!rec.length) { sec.hidden = true; return; }
+    sec.hidden = false;
+    const copies = parseInt(localStorage.getItem("pv-copies") || "0", 10) || 0;
+    sec.querySelector(".sec-head h2").innerHTML = `🕘 Pick up where you left off <span class="recent-count">· ${fmt(copies)} copied</span>`;
+    const rail = $("#recentRail"); rail.innerHTML = "";
+    rec.forEach((i) => {
+      const r = state.index[i]; const g = state.meta.groups.find((x) => x.key === r.g);
+      const el = document.createElement("button"); el.className = "recent-card"; el.style.setProperty("--c", g ? g.color : "var(--accent)");
+      el.innerHTML = `<span class="rc-badge">${g ? g.icon : "✦"}</span><span class="rc-title">${esc(r.t)}</span>`;
+      el.addEventListener("click", () => openModal(i));
+      rail.appendChild(el);
+    });
+  }
+  function renderPOTD() {
+    if (!state.index.length) return;
+    const now = new Date();
+    const start = new Date(now.getFullYear(), 0, 0);
+    const dayOfYear = Math.floor((now - start) / 86400000);
+    const seed = now.getFullYear() * 1000 + dayOfYear;
+    const pool = state.index.filter((r) => ["elite", "expert", "viral", "image"].includes(r.g));
+    const arr = pool.length ? pool : state.index;
+    const r = arr[seed % arr.length];
+    const g = state.meta.groups.find((x) => x.key === r.g);
+    $("#potd").style.setProperty("--c", g ? g.color : "var(--accent)");
+    $("#potdBadge").textContent = `${g ? g.icon : "✦"} ${g ? g.label : ""}`;
+    $("#potdTitle").textContent = r.t;
+    $("#potdTeaser").textContent = r.te || "";
+    $("#potdCopy").onclick = (e) => copyPrompt(r.i, e.currentTarget);
+    $("#potdView").onclick = () => openModal(r.i);
+    $("#potd").hidden = false;
+  }
+  function renderSearchChips() {
+    const chips = ["headshot", "cold email", "linkedin", "instagram", "youtube", "midjourney", "resume", "business plan", "study", "logo", "book", "thread"];
+    const row = $("#searchChips"); row.innerHTML = `<span class="sc-label">Popular:</span>`;
+    chips.forEach((q) => {
+      const b = document.createElement("button"); b.className = "sc-chip"; b.textContent = q;
+      b.addEventListener("click", () => { $("#search").value = q; onSearch(q); document.getElementById("groups").scrollIntoView({ behavior: "smooth", block: "start" }); });
+      row.appendChild(b);
+    });
+  }
+  function confetti(anchor) {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const rect = anchor && anchor.getBoundingClientRect ? anchor.getBoundingClientRect() : { left: innerWidth / 2, top: innerHeight / 2, width: 0, height: 0 };
+    const x = rect.left + rect.width / 2, y = rect.top + rect.height / 2;
+    const colors = ["#ff6b4a", "#36c98b", "#34c3c9", "#e8b04b", "#b48cff", "#e0729e"];
+    for (let k = 0; k < 18; k++) {
+      const p = document.createElement("div"); p.className = "confetti-piece";
+      const ang = (Math.PI * 2 * k) / 18 + (k % 4) * 0.18, dist = 46 + (k % 6) * 13;
+      p.style.left = x + "px"; p.style.top = y + "px"; p.style.background = colors[k % colors.length];
+      p.style.setProperty("--dx", (Math.cos(ang) * dist).toFixed(1) + "px");
+      p.style.setProperty("--dy", (Math.sin(ang) * dist - 30).toFixed(1) + "px");
+      p.style.setProperty("--rot", (k * 47) + "deg");
+      document.body.appendChild(p);
+      setTimeout(() => p.remove(), 820);
+    }
+  }
+  function countUp(el, target) {
+    if (!el) return;
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) { el.textContent = fmt(target); return; }
+    const dur = 950, t0 = performance.now();
+    function tick(t) { const p = Math.min(1, (t - t0) / dur); el.textContent = fmt(Math.round(target * (1 - Math.pow(1 - p, 3)))); if (p < 1) requestAnimationFrame(tick); }
+    requestAnimationFrame(tick);
+  }
+  function animateStats() {
+    countUp($("#statTotal"), state.meta.total);
+    countUp($("#heroCount"), state.meta.total);
+    countUp($("#statShelves"), state.meta.groups.filter((g) => g.count > 0).length);
+    countUp($("#statTopics"), state.meta.groups.reduce((a, g) => a + g.categories.length, 0));
+  }
+  function handleDeepLink() {
+    const p = new URLSearchParams(location.search).get("p");
+    if (p && state.slugMap && state.slugMap[p] != null) openModal(state.slugMap[p]);
+  }
 
   /* ---------- saved view ---------- */
   function syncSavedToggle() { $("#savedToggle").setAttribute("aria-pressed", state.savedOnly); $("#savedToggle").classList.toggle("on", state.savedOnly); }
@@ -349,6 +492,7 @@
     $("#surprise").addEventListener("click", () => { const pool = state.results.length ? state.results : state.index; if (pool.length) openModal(pool[Math.floor(Math.random() * pool.length)].i); });
     $("#savedToggle").addEventListener("click", () => { if (state.savedOnly) { state.savedOnly = false; syncSavedToggle(); applyFilters(); } else showSaved(); });
     $("#savedNav").addEventListener("click", showSaved);
+    $("#clearRecent").addEventListener("click", () => { try { localStorage.removeItem("pv-recent"); } catch (_) {} renderRecent(); });
     $("#resetAll").addEventListener("click", () => { state.query = ""; $("#search").value = ""; $("#clearSearch").hidden = true; state.savedOnly = false; syncSavedToggle(); $("#sort").value = "default"; state.sort = "default"; selectGroup("all", true); });
     $("#modalClose").addEventListener("click", hideModal);
     $("#modal").addEventListener("click", (e) => { if (e.target.id === "modal") hideModal(); });

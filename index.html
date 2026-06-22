@@ -95,12 +95,35 @@
       <button class="clear-btn" id="clearSearch" aria-label="Clear search" hidden>✕</button>
     </div>
 
+    <div class="search-chips" id="searchChips" aria-label="Popular searches"></div>
+
     <div class="hero-stats" id="heroStats">
       <span><b id="statTotal">800+</b> prompts</span><span class="dot">·</span>
       <span><b id="statShelves">8</b> shelves</span><span class="dot">·</span>
       <span><b id="statTopics">64</b> topics</span><span class="dot">·</span>
       <button class="surprise" id="surprise">🎲 Surprise me</button>
     </div>
+  </section>
+
+  <!-- ░░ PROMPT OF THE DAY ░░ -->
+  <section class="potd" id="potd" hidden aria-label="Prompt of the day">
+    <div class="potd-inner">
+      <div class="potd-glow" aria-hidden="true"></div>
+      <span class="potd-eyebrow">⭐ Prompt of the day</span>
+      <span class="potd-badge" id="potdBadge"></span>
+      <h2 class="potd-title" id="potdTitle"></h2>
+      <p class="potd-teaser" id="potdTeaser"></p>
+      <div class="potd-actions">
+        <button class="copy-btn" id="potdCopy"><span class="ci">⧉</span> <span class="ct">Copy</span></button>
+        <button class="potd-open" id="potdView">Open &amp; customize →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ RECENTLY USED ░░ -->
+  <section class="recent" id="recent" hidden aria-label="Recently used prompts">
+    <div class="sec-head"><h2>🕘 Pick up where you left off</h2><button class="see-all" id="clearRecent">Clear</button></div>
+    <div class="recent-rail" id="recentRail"></div>
   </section>
 
   <!-- ░░ TRENDING STRIP ░░ -->
@@ -199,10 +222,14 @@
       <h2 id="mTitle"></h2>
       <p class="m-meta" id="mMeta"></p>
     </div>
-    <div class="m-vars" id="mVars" hidden></div>
+    <div class="m-fill" id="mFill" hidden>
+      <div class="m-fill-head">🪄 <b>Fill in the blanks</b> <span class="m-fill-sub">— your answers rewrite the prompt live</span></div>
+      <div class="m-fill-grid" id="mFillGrid"></div>
+    </div>
     <div class="m-prompt-wrap"><pre class="m-prompt" id="mPrompt"></pre></div>
     <div class="m-actions">
       <button class="copy-btn big" id="mCopy"><span class="ci">⧉</span> <span class="ct">Copy prompt</span></button>
+      <button class="icon-btn" id="mShare" title="Copy a link straight to this prompt">🔗 Share</button>
       <button class="save-btn" id="mSave" aria-pressed="false">☆ Save</button>
       <a class="open-ai" id="mOpenAI" href="https://chat.openai.com/" target="_blank" rel="noopener">Open ChatGPT ↗</a>
       <span class="sig modal-sig" title="Prompt by Indrajeet Yadav">Indrajeet Yadav</span>
