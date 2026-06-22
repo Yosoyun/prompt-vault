@@ -1,0 +1,100 @@
+[
+  {
+    "Title": "Find Your Faceless Niche: 10 High-RPM Goldmines",
+    "Teaser": "Surfaces 10 high-RPM faceless niches matched to your interests, scored by audience size, competition, and monetization angle.",
+    "PromptHint": "Fill [INTERESTS/SKILLS] with topics you'd enjoy making; set [STARTING BUDGET] and [HOURS/WEEK] you can commit.",
+    "Category": "Faceless YouTube & Shorts",
+    "Prompt": "You are a YouTube growth strategist who has launched 50+ profitable faceless channels. Based on my interests: [INTERESTS/SKILLS], a budget of [STARTING BUDGET], and [HOURS/WEEK] available, propose 10 faceless YouTube niches I could realistically win in.\n\nThink step by step before answering: (1) estimate search + browse demand for each, (2) gauge how saturated the niche already is, (3) compute an Opportunity Score = audience size + RPM potential - competition, (4) discard oversaturated or low-RPM traps.\n\nReturn a markdown table sorted by Opportunity Score (highest first), columns: Niche | Specific sub-niche angle | Est. RPM band | Audience size | Competition (Low/Med/High) | Faceless format (e.g. AI voice + stock) | Primary monetization | Why YOU can win it given my inputs.\n\nThen below the table: name your #1 pick, give a one-line reason, and list the first 3 videos I should publish to test it. Be specific - reject generic answers like 'tech', 'finance', or 'motivation'; always name a tight sub-niche."
+  },
+  {
+    "Title": "10 Click-Worthy Titles + Thumbnails, Ranked by CTR",
+    "Teaser": "Turns one video idea into 10 title and thumbnail-text pairs, each scored and ranked by click potential.",
+    "PromptHint": "Put your raw idea in [VIDEO IDEA]; add your [NICHE] so the hooks match your audience's psychology.",
+    "Category": "Faceless YouTube & Shorts",
+    "Prompt": "Act as a YouTube packaging expert obsessed with click-through rate. For my video idea: [VIDEO IDEA] in the [NICHE] niche, generate 10 title + thumbnail-text concepts engineered to win the click.\n\nRules: titles 40-60 characters; use a proven lever (curiosity gap, number, high stakes, contrarian take, or transformation). Thumbnail text must be 3-5 BIG words, must NOT repeat the title, and must be legible on a phone screen.\n\nThink first: who is clicking, what do they fear or want, what stops the scroll.\n\nOutput a markdown table sorted by score (highest first): Rank | Title | Thumbnail text (max 5 words) | Lever used | Emotional trigger | Click-potential /10.\n\nFinish with one sentence on the exact thumbnail visual (subject, expression, color contrast) that would make the #1 concept pop on the homepage."
+  },
+  {
+    "Title": "Full Narrated Script With a 7-Second Hook + Retention Beats",
+    "Teaser": "Writes a complete faceless video script with a cold-open hook and a retention beat every 30 seconds.",
+    "PromptHint": "Set [TOPIC], [VIDEO LENGTH] in minutes, and [TONE] (documentary, casual, energetic).",
+    "Category": "Faceless YouTube & Shorts",
+    "Prompt": "You are a senior YouTube scriptwriter for faceless channels with millions of views. Write a full, narration-ready script on [TOPIC] for a [VIDEO LENGTH]-minute video in a [TONE] tone.\n\nStructure it exactly as: (1) a 7-second cold-open hook that opens a curiosity loop; (2) a one-line promise of the payoff they'll get; (3) the body split into sections, each with a re-hook or pattern interrupt roughly every 30 seconds to defend retention; (4) a payoff that closes the opening loop; (5) a natural subscribe CTA.\n\nFormat as a two-column shooting script: put a (Visual / B-roll cue) on its own line, then the spoken VOICEOVER beneath it. Inside the voiceover write ONLY words the narrator says aloud - no stage directions, no brackets. Keep sentences short, concrete, and clean for AI text-to-speech (avoid tongue-twisters and unpronounceable acronyms)."
+  },
+  {
+    "Title": "50 Scroll-Stopping Hooks Using Named Viral Formulas",
+    "Teaser": "Generates 50 first-line hooks for Shorts, Reels, and TikTok, each labeled with the proven formula it uses.",
+    "PromptHint": "Fill [TOPIC] and [TARGET AUDIENCE]; the sharper the audience, the sharper the hooks.",
+    "Category": "Faceless YouTube & Shorts",
+    "Prompt": "You are a short-form hook specialist who has written hooks for 100M+ view accounts. Generate 50 distinct opening hooks for [TOPIC] aimed at [TARGET AUDIENCE], each built to win the first 3 seconds.\n\nUse a spread of named formulas and LABEL the one each hook uses: Negative ('Stop doing X if you want Y'), Curiosity Gap, Secret Reveal ('Nobody talks about...'), Mistake ('You're doing X wrong'), Bold Claim, Direct Question, and Result-First.\n\nRules: each hook under 12 words, sounds natural said aloud, no hashtags, no emojis. Vary the sentence structure - never use the same opening pattern twice in a row.\n\nOutput a numbered list formatted as: hook - [Formula]. Distribute roughly 7 hooks per formula. At the end, star the 5 hooks you'd test first and say in one line why they'll outperform the rest."
+  },
+  {
+    "Title": "One Script, Three Platforms: TikTok / Reels / Shorts",
+    "Teaser": "Re-tunes a single idea into three platform-native scripts, each with the right pacing, on-screen text, and hashtags.",
+    "PromptHint": "Paste your idea or rough script in [IDEA/SCRIPT]; set [VIDEO TOPIC] if it isn't obvious.",
+    "Category": "Faceless YouTube & Shorts",
+    "Prompt": "Act as a short-form content director who ships the same idea across every platform daily. Take my idea: [IDEA/SCRIPT] (topic: [VIDEO TOPIC]) and produce three platform-tuned versions of a sub-60-second script.\n\nKeep the CORE message identical, but adapt energy, word choice, and pacing per platform: TikTok = fast, raw, aggressive hook, casual slang. Reels = aesthetic, smoother pacing, aspirational tone. Shorts = value-dense, one clear takeaway, slightly slower.\n\nFor EACH platform, output under a clear header: Hook line | full Voiceover broken into beats | On-Screen Text overlay for each beat | 5 niche-relevant hashtags. End with a one-line note on which platform this specific idea will perform best on and why."
+  },
+  {
+    "Title": "Your 30-Day Faceless Content Calendar (Bingeable Series)",
+    "Teaser": "Builds a 30-day posting plan with daily titles, formats, and hooks grouped into recurring, bingeable series.",
+    "PromptHint": "Set [NICHE], how many [POSTS PER WEEK], and your [MAIN GOAL] (subs, watch time, or sales).",
+    "Category": "Faceless YouTube & Shorts",
+    "Prompt": "You are a YouTube content strategist. Build a 30-day content calendar for a faceless [NICHE] channel posting [POSTS PER WEEK] times per week, optimized for [MAIN GOAL].\n\nThink in series, not one-offs: group videos into 3-4 recurring formats the audience can binge (e.g. 'Top 5', 'Explained', 'Myths', 'I Tried'). Build a content ladder from beginner to advanced, and never repeat the same angle twice in a row.\n\nOutput a markdown table: Day | Series/Format | Video Title | Hook (1 line) | Type (Short or Long) | Goal it serves.\n\nAfter the table, list the 3-4 series with a one-line description of each, why it retains viewers, and which single series to lead with in week 1."
+  },
+  {
+    "Title": "AI Voiceover Direction Sheet for ElevenLabs-Style TTS",
+    "Teaser": "Converts a plain script into a delivery-directed VO sheet with pacing, emphasis, pauses, and pronunciation fixes.",
+    "PromptHint": "Paste your finished script in [SCRIPT]; set the desired [VOICE STYLE] (calm narrator, hyped, documentary).",
+    "Category": "Faceless YouTube & Shorts",
+    "Prompt": "Act as a voiceover director prepping a script for an AI TTS tool (ElevenLabs-style). Take my script: [SCRIPT] and produce a delivery-directed version in a [VOICE STYLE].\n\nFor each line, annotate: where to insert a [pause], which words to EMPHASIZE (caps), where to slow down or speed up, and the emotional tone in brackets at the start of the sentence (e.g. [curious], [serious], [excited]).\n\nThen, under a 'Settings' header, recommend: overall speaking rate (slow/medium/fast), 2 voice characteristics to choose (e.g. warm, deep), stability and style settings to try, and 3 words a TTS engine is likely to mispronounce - with a phonetic respelling for each.\n\nOutput the directed script first, then the Settings block."
+  },
+  {
+    "Title": "Scene-by-Scene B-Roll Shot List With Search Keywords",
+    "Teaser": "Generates a scene-by-scene B-roll list with literal search keywords so you can source visuals in minutes.",
+    "PromptHint": "Paste the narration in [SCRIPT]; add the [VISUAL STYLE] you want (cinematic, minimal, retro).",
+    "Category": "Faceless YouTube & Shorts",
+    "Prompt": "You are a faceless-video editor planning visuals. Read my narration: [SCRIPT] and build a scene-by-scene B-roll shot list in a [VISUAL STYLE].\n\nBreak the script into visual scenes (roughly one scene per 1-2 sentences). For each scene, output a row: Scene # | Voiceover snippet it covers | Shot description | 3-5 literal stock-search keywords (for Pexels/Storyblocks) | Suggested on-screen text or graphic | Approx duration (sec).\n\nKeep keywords concrete and literal so they actually return results (e.g. 'aerial city traffic at night', not 'feeling of ambition'). Flag any scene where a simple motion graphic or text card would beat stock footage. Output the whole thing as one markdown table."
+  },
+  {
+    "Title": "Rank-Ready YouTube SEO Pack: Description, Tags, Chapters",
+    "Teaser": "Produces a full metadata pack, an optimized description, ordered tags, hashtags, and timestamped chapters from your script.",
+    "PromptHint": "Paste your [SCRIPT OR SUMMARY] and the [PRIMARY KEYWORD] you want to rank for.",
+    "Category": "Faceless YouTube & Shorts",
+    "Prompt": "Act as a YouTube SEO specialist. Using my video [SCRIPT OR SUMMARY] and target keyword [PRIMARY KEYWORD], generate a complete, copy-paste-ready metadata pack.\n\nDeliver under labeled headers: (1) a 150-200 word description - first 2 lines = a hook containing the keyword, then a value summary, then a CTA; (2) 15-20 tags ordered most to least important; (3) 3-5 hashtags; (4) timestamped chapters in '0:00 Intro' format inferred from the script's sections; (5) 3 alternate keyword-rich title options.\n\nWeave the primary keyword plus 2-3 related search terms in naturally - never keyword-stuff or list synonyms unnaturally. End with one line on the single biggest SEO lever for this specific video."
+  },
+  {
+    "Title": "Launch Kit: Channel Names, Branding & Content Pillars",
+    "Teaser": "Spins up channel names, taglines, banner concepts, and a content-pillar system to launch a faceless channel.",
+    "PromptHint": "Set [NICHE] and the [VIBE] you want (premium, fun, mysterious, educational).",
+    "Category": "Faceless YouTube & Shorts",
+    "Prompt": "You are a brand strategist for YouTube creators. Build a launch identity kit for a faceless [NICHE] channel with a [VIBE] vibe.\n\nDeliver under clear headers: (1) 10 channel name ideas - short, brandable, easy to spell and say aloud - each with a one-line rationale; (2) 3 handle/tagline ideas; (3) an About-section description under 120 words containing the primary keyword; (4) a banner concept: layout, key text, and a 3-color palette; (5) a profile-pic concept; (6) 4-5 content pillars the channel posts around, each with one example video title.\n\nAvoid names that echo famous brands or look hard to spell. At the end, recommend your single strongest channel name and why it will travel."
+  },
+  {
+    "Title": "Retention Doctor: Find and Fix Every Drop-Off Point",
+    "Teaser": "Audits your script for retention killers and rewrites the weak moments to keep viewers watching.",
+    "PromptHint": "Paste the full [SCRIPT]; optionally note your [AVG VIEW DURATION] or where you suspect drop-off.",
+    "Category": "Faceless YouTube & Shorts",
+    "Prompt": "Act as a brutally honest YouTube retention analyst. Audit my script: [SCRIPT] for moments where viewers are likely to swipe away. (My current average view duration: [AVG VIEW DURATION], if known.)\n\nThink like the algorithm: flag a slow hook, a buried payoff, rambling sections, missing curiosity loops, and weak transitions.\n\nOutput a markdown table: Location (quote the exact line) | Why it loses viewers | Severity (High/Med/Low) | Rewritten line that fixes it.\n\nThen give 3 structural changes to lift overall retention (e.g. move the payoff tease earlier, add a mid-roll re-hook, cut the intro). Be specific and direct - no vague 'make it more engaging' advice. Prioritize the single fix that will move retention the most."
+  },
+  {
+    "Title": "Pinned Comments That Spark a Wave of Replies",
+    "Teaser": "Writes a pinned comment plus reply-bait questions that drive discussion and lift your engagement signals.",
+    "PromptHint": "Set [VIDEO TOPIC] and your [CTA GOAL] (more comments, subs, or link clicks).",
+    "Category": "Faceless YouTube & Shorts",
+    "Prompt": "You are a community manager who maximizes YouTube engagement. For a video about [VIDEO TOPIC] with the goal of [CTA GOAL], write a set of comment assets.\n\nDeliver under labeled sections: (1) one pinned comment under 280 characters that adds real value or asks an irresistible question to trigger replies; (2) 5 alternative open-ended questions I could pin to spark debate; (3) 3 short 'creator replies' I can drop on early comments to keep threads alive; (4) one soft CTA line that fits naturally without sounding desperate.\n\nKeep everything conversational and human - no corporate tone, no emoji spam, no engagement-bait that feels manipulative. End by naming the single question most likely to blow up the comment section and why."
+  },
+  {
+    "Title": "Faceless Channel Income Map: 6 Streams Beyond AdSense",
+    "Teaser": "Maps a realistic, stage-by-stage income plan with multiple revenue streams matched to your niche and sub count.",
+    "PromptHint": "Set [NICHE] and your current stage via [SUBSCRIBER COUNT] (e.g. 0, 1k, 10k).",
+    "Category": "Faceless YouTube & Shorts",
+    "Prompt": "Act as a YouTube monetization strategist. Build a revenue roadmap for a faceless [NICHE] channel currently at [SUBSCRIBER COUNT] subscribers.\n\nGo beyond AdSense: identify the 4-6 most realistic income streams for THIS specific niche (e.g. affiliates, digital products, sponsorships, memberships, lead-gen), ranked by how soon each becomes viable.\n\nOutput: (1) a stage-based markdown table - Milestone (subs/views) | Streams to unlock | Realistic monthly range | First concrete action to take; (2) the single best stream to start RIGHT NOW and why; (3) one common monetization mistake creators make in this niche.\n\nNote clearly that figures are general, directional estimates - not guaranteed income or financial advice."
+  },
+  {
+    "Title": "Turn One Long Video Into 10 Ready-to-Post Shorts",
+    "Teaser": "Mines a long-form script or transcript for the 10 best moments and writes a ready-to-post Short for each.",
+    "PromptHint": "Paste the long-form [TRANSCRIPT OR SCRIPT]; set your [PLATFORM] target (Shorts, Reels, TikTok).",
+    "Category": "Faceless YouTube & Shorts",
+    "Prompt": "You are a content repurposing editor. From my long-form [TRANSCRIPT OR SCRIPT], extract the 10 most clip-worthy moments and turn each into a standalone Short for [PLATFORM].\n\nPick moments with a self-contained payoff: a surprising fact, a strong opinion, a quick how-to, or an emotional spike. Ensure all 10 are distinct with zero overlapping moments.\n\nFor each clip, output a clearly separated block: Clip # | Source moment (quote) | New 3-second hook | Tightened voiceover (under 45 seconds spoken) | On-screen text overlay | Suggested caption + 4 hashtags.\n\nRank clips by viral potential (strongest first) and mark your top 3 to publish first, with a one-line reason for each."
+  }
+]

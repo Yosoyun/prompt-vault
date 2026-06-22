@@ -1,0 +1,100 @@
+[
+  {
+    "Title": "Voice DNA Extractor: Sound Like You, Not AI",
+    "Teaser": "Reverse-engineers your real writing voice from past posts into a reusable persona block so every future draft sounds like you, not a chatbot.",
+    "PromptHint": "Paste 3-5 of your best past posts where [PAST POSTS] is. Add your field for sharper results.",
+    "Category": "Personal Brand & LinkedIn",
+    "Prompt": "You are a forensic voice analyst for personal brands. Study these writing samples and reverse-engineer my voice:\n\n[PAST POSTS]\n\nMy field: [NICHE]\n\nDo NOT summarize the content. Extract the PATTERNS. Work through:\n1. Sentence rhythm (short vs long, fragments, line-break habits)\n2. Vocabulary tics and signature phrases I actually reuse\n3. Point of view and recurring beliefs\n4. How I open and how I close\n5. Words/cliches I clearly avoid\n\nOUTPUT FORMAT - a reusable VOICE PROFILE, copy-pasteable so I can load it before any future draft:\n- TONE: 3 adjectives\n- RHYTHM: one rule\n- SIGNATURE MOVES: 4 bullets\n- BANNED PHRASES: 6 items\n- SAMPLE: a 40-word post in my voice on a generic topic\n\nReturn only the profile, nothing else."
+  },
+  {
+    "Title": "Scroll-Stopping Hook Lab: 12 Hooks, Ranked",
+    "Teaser": "Generates 12 ranked opening hooks engineered to survive LinkedIn's 'see more' cutoff and earn the click before anyone reads the body.",
+    "PromptHint": "Put your post idea or takeaway in [POST IDEA]. Set [AUDIENCE] to who you want to stop.",
+    "Category": "Personal Brand & LinkedIn",
+    "Prompt": "Act as a LinkedIn hook strategist who has studied thousands of viral posts. My post idea: [POST IDEA]. My audience: [AUDIENCE].\n\nThe only job of a hook is to win the click before the 'see more' fold (~2 lines, ~140 chars). Generate 12 distinct opening hooks using these formulas, labeling each: contrarian take, specific number, confession, before/after, callout question, false-belief, mini-story cold open, stakes, curiosity gap, 'I was wrong', pattern-interrupt, bold promise.\n\nRULES: no hashtags, no emojis, no clickbait you can't pay off, max 140 chars each, plain human language.\n\nOUTPUT FORMAT:\n1. A numbered list of 12 hooks, each prefixed with its formula label.\n2. A 'TOP 3' section ranking the strongest by stop-power, each with one line on why it works.\n\nReturn only that."
+  },
+  {
+    "Title": "Founder Story Mine: 10 Postable Angles From Your Path",
+    "Teaser": "Interviews you about your career, then mines 10 specific, postable founder-story angles with hooks so you never stare at a blank page again.",
+    "PromptHint": "Drop a short bio or your journey in [MY STORY]. The AI will ask before writing.",
+    "Category": "Personal Brand & LinkedIn",
+    "Prompt": "You are a personal-brand ghostwriter who finds the story angles founders can't see in themselves. My background: [MY STORY]. My current focus: [WHAT I DO NOW].\n\nSTEP 1: Ask me up to 4 sharp clarifying questions, one at a time, about turning points, failures, and beliefs I hold that others disagree with. Wait for each answer before the next question.\n\nSTEP 2: Produce a STORY BANK of 10 post angles. Prioritize specific moments over generic advice. No motivational-poster cliches.\n\nOUTPUT FORMAT - a numbered table with columns: Angle (1 line) | Hook (under 140 chars) | Lesson for my audience | Emotional driver (vulnerability / contrarian / aspiration / etc).\n\nDo not write full posts yet - just the bank."
+  },
+  {
+    "Title": "Post-to-Carousel Converter: 8 Swipeable Slides",
+    "Teaser": "Restructures any text post, blog, or transcript into a swipeable LinkedIn carousel with one idea per slide, a hook cover, and a save-worthy CTA.",
+    "PromptHint": "Paste the source in [SOURCE CONTENT]. Set [SLIDES] (default 8) and [GOAL] like saves or DMs.",
+    "Category": "Personal Brand & LinkedIn",
+    "Prompt": "You are a LinkedIn carousel designer. Convert this source into a high-dwell-time document carousel:\n\n[SOURCE CONTENT]\n\nSlides: [SLIDES]. Goal: [GOAL].\n\nRULES: one idea per slide, max ~20 words of body text per slide, conversational not corporate, each slide must pull the reader to swipe. Slide 1 is a pure hook (a promise or tension, no logo dump). The final slide is a clear CTA aligned to the goal.\n\nOUTPUT FORMAT, per slide:\n- SLIDE N\n- HEADLINE: (max 7 words)\n- BODY: (max 20 words)\n- VISUAL NOTE: (what to show)\n\nThen a 'CAPTION' section: the LinkedIn post caption (hook + 1 line + CTA) that ships alongside the carousel."
+  },
+  {
+    "Title": "Contrarian Angle Finder: Turn News Into Authority",
+    "Teaser": "Takes any industry news or trend and spins 5 thoughtful contrarian takes that position you as a sharp thinker, not another reaction-poster.",
+    "PromptHint": "Paste the news/trend in [NEWS]. Set [MY POV] so the takes stay true to what you believe.",
+    "Category": "Personal Brand & LinkedIn",
+    "Prompt": "Act as a sharp industry commentator known for nuanced contrarian takes. News or trend in my space: [NEWS]. My honest stance: [MY POV]. My audience: [AUDIENCE].\n\nMost people will post the obvious reaction. I want angles that make smart people stop and think. Generate 5 contrarian-but-defensible takes. The reasoning must be genuinely logical, not edgy-for-clicks. Flag any take that's too risky for my reputation.\n\nOUTPUT FORMAT - a numbered list; for each take:\n- TAKE: the headline position (1 line)\n- WHY IT HOLDS: 2-3 lines of real reasoning\n- WHO DISAGREES: 1 line\n- HOOK: under 140 chars\n- RISK: low / medium / high\n\nReturn only the list."
+  },
+  {
+    "Title": "Profile Magnet: Headline + About That Converts",
+    "Teaser": "Rewrites your headline and About section into a positioning statement that says who you help, how, and why you, in seconds of attention.",
+    "PromptHint": "Paste your current headline + About in [CURRENT PROFILE]. Add [WHO I HELP] and [OUTCOME].",
+    "Category": "Personal Brand & LinkedIn",
+    "Prompt": "You are a personal-brand positioning strategist. Rewrite my LinkedIn profile to convert visitors into followers and inbound.\n\nCurrent profile: [CURRENT PROFILE]\nWho I help: [WHO I HELP]\nThe outcome I deliver: [OUTCOME]\n\nNo buzzword soup (no 'passionate', 'results-driven', 'synergy'). Sound like a real human.\n\nOUTPUT FORMAT:\n1. HEADLINE: 3 options under 220 chars, each leading with the outcome I create, not just my job title.\n2. ABOUT: a first-person rewrite that opens with a hook line, states who I help + how + proof, shows personality, ends with a clear next step. Short paragraphs, white space.\n3. FIX LIST: 3 specific things my old version got wrong.\n\nReturn only those three sections."
+  },
+  {
+    "Title": "Brutally Honest Personal-Brand Audit (No Flattery)",
+    "Teaser": "Roasts your LinkedIn presence with zero sycophancy, exposes the blind spots killing your reach, then hands you a fix for each.",
+    "PromptHint": "Paste your headline, bio, and 2-3 recent posts in [MY BRAND]. Brace yourself, then read the fixes.",
+    "Category": "Personal Brand & LinkedIn",
+    "Prompt": "Act as a brutally honest personal-brand consultant. No flattery, no hedging, no 'great start!' filler. My LinkedIn presence:\n\n[MY BRAND]\n\nGoal I'm chasing: [GOAL]\n\nBe specific and fair, not cruel for sport. Quote my own words back to me where they're failing. This is feedback on my content, not a personal attack.\n\nOUTPUT FORMAT, in 3 parts:\n1. THE ROAST: 5 specific things that are weak, generic, or invisible about how I show up, said plainly.\n2. WHY IT'S COSTING ME: for each, connect the flaw to lost reach, trust, or inbound.\n3. THE FIX: for each roast, one concrete action I can take this week.\n\nEnd with 'START HERE:' and the single highest-leverage change first."
+  },
+  {
+    "Title": "30-Day LinkedIn Calendar: Post Daily Without Burnout",
+    "Teaser": "Builds a full month of LinkedIn posts across proven formats so you can post consistently without burning out or repeating yourself.",
+    "PromptHint": "Set [NICHE], [AUDIENCE], and [GOAL]. Optional: list 2-3 themes you want to own.",
+    "Category": "Personal Brand & LinkedIn",
+    "Prompt": "You are a LinkedIn content strategist building a sustainable posting system. My niche: [NICHE]. Audience: [AUDIENCE]. Goal: [GOAL]. Pillars I want to own: [THEMES].\n\nDesign a 30-day calendar (assume ~5 posts/week, 20 posts total) that mixes formats so my feed never feels repetitive: story, contrarian take, how-to/list, personal lesson, client/result proof, hot-topic comment, behind-the-scenes, engagement question. Balance value vs personal posts roughly 70/30. No generic motivational fluff.\n\nOUTPUT FORMAT:\n1. A table with columns: Day | Format | Pillar | Working Title | Hook (under 140 chars) | Goal-aligned CTA.\n2. A 'WEEKLY HABIT' line: the one routine that makes this repeatable.\n\nReturn only the table and that line."
+  },
+  {
+    "Title": "Viral Post Rewriter: Steal the Structure, Not the Words",
+    "Teaser": "Feeds the AI proven viral posts plus your raw idea and outputs an optimized post that borrows the winning structure in your own voice.",
+    "PromptHint": "Paste 2-3 viral posts in [EXAMPLES] and your rough idea in [MY IDEA]. Add [VOICE] notes.",
+    "Category": "Personal Brand & LinkedIn",
+    "Prompt": "You are a viral-content engineer. Study the structural DNA of these high-performing posts, then apply it to my idea.\n\nEXAMPLE VIRAL POSTS:\n[EXAMPLES]\n\nMY RAW IDEA:\n[MY IDEA]\n\nMy voice/constraints: [VOICE]\n\nNever copy the examples' wording or topic. Keep my post 100% original and in my voice. Requirements for the post: a hook under 140 chars, short scannable lines with white space, one clear takeaway, a CTA.\n\nOUTPUT FORMAT:\n1. WHY THEY WORKED: 3 bullets on hook pattern, structure, rhythm, payoff.\n2. MY POST: the full draft applying that structure to my idea.\n3. ALT HOOKS: 2 alternate hooks for A/B testing.\n\nReturn only those three sections."
+  },
+  {
+    "Title": "Comment Engine: Get Noticed in Other People's Threads",
+    "Teaser": "Writes thoughtful, value-add comments on other people's posts that build relationships and visibility, not empty 'Great post!' noise.",
+    "PromptHint": "Paste the post you want to comment on in [THE POST]. Set [MY ANGLE] for what you can add.",
+    "Category": "Personal Brand & LinkedIn",
+    "Prompt": "Act as a relationship-driven LinkedIn networker. I want to comment on this post to build a real connection and get noticed by the author's audience:\n\n[THE POST]\n\nMy expertise / angle: [MY ANGLE]\n\nRULES: every comment must add value or perspective, 1-3 sentences, sound like a peer not a fan, no 'Great post!', no obvious self-promotion, no emojis unless natural.\n\nOUTPUT FORMAT - 4 labeled comment options, each a different style:\n1. INSIGHT: add a specific insight or counterpoint\n2. EXPERIENCE: a brief relevant example from my work\n3. QUESTION: a genuinely interesting follow-up question\n4. EXTEND: a 'here's what most people miss' angle\n\nReturn only the 4 labeled options."
+  },
+  {
+    "Title": "Brain Dump to Post: Messy Thoughts, Polished Draft",
+    "Teaser": "Turns your messy voice-note or rough thoughts into a structured, ready-to-publish LinkedIn post that still sounds authentically human.",
+    "PromptHint": "Paste your raw, unedited thoughts in [BRAIN DUMP]. Add [VOICE] notes if you have a tone in mind.",
+    "Category": "Personal Brand & LinkedIn",
+    "Prompt": "You are a LinkedIn ghostwriter who turns raw thinking into publishable posts without sanding off the human edges. My unfiltered brain dump:\n\n[BRAIN DUMP]\n\nVoice notes: [VOICE]\n\nDon't add ideas I didn't have; sharpen what's there. Find the single strongest insight buried in this and build the post around it: hook (under 140 chars) -> short setup -> the insight -> one concrete example or proof -> a takeaway line -> a soft CTA. Use short lines and white space for mobile.\n\nHARD RULES: no corporate jargon, no em-dash overuse, no 'In today's fast-paced world', no fake enthusiasm.\n\nOUTPUT FORMAT:\n1. THE POST: the final draft only.\n2. CUT NOTE: one line on what you removed and why.\n\nReturn only those two."
+  },
+  {
+    "Title": "Authority Positioning Map: Own a Lane Nobody Else Has",
+    "Teaser": "Diagnoses where you're a generalist and carves out a specific, ownable thought-leadership lane with the exact topics to post about.",
+    "PromptHint": "Describe your skills and audience in [ABOUT ME]. List competitors/peers in [PEERS] if known.",
+    "Category": "Personal Brand & LinkedIn",
+    "Prompt": "Act as a thought-leadership positioning strategist. Most people sound like everyone else in their field. Help me own a lane.\n\nAbout me (skills, experience, interests): [ABOUT ME]\nWho I want to reach: [AUDIENCE]\nPeers/competitors already posting in my space: [PEERS]\n\nBe specific to me, not generic advice.\n\nOUTPUT FORMAT, labeled sections:\n1. POSITIONING GAPS: 3 under-claimed angles that are credible for me.\n2. MY LANE: pick the strongest, write 'I help [who] do [what] by [unique angle].'\n3. CONTENT PILLARS: 4 recurring themes, each with 3 example post topics.\n4. THE WEDGE: the one contrarian belief I should plant my flag on.\n\nReturn only those sections."
+  },
+  {
+    "Title": "One Win, One Week: 7 Posts From a Single Result",
+    "Teaser": "Takes a single client result, lesson, or milestone and multiplies it into 7 distinct posts across angles so one story fuels a whole week.",
+    "PromptHint": "Describe the win/result/lesson in [THE WIN]. Set [AUDIENCE] and [GOAL] for the week.",
+    "Category": "Personal Brand & LinkedIn",
+    "Prompt": "You are a content-repurposing strategist. I have one strong asset and want maximum mileage without sounding repetitive. The asset: [THE WIN]. Audience: [AUDIENCE]. This week's goal: [GOAL].\n\nProduce 7 distinct posts, each viewing the same story through a different lens: (1) the result/proof, (2) the mistake before the win, (3) the contrarian lesson, (4) a how-to breakdown, (5) the emotional/behind-the-scenes moment, (6) a myth this disproves, (7) a question that invites the audience's take. No two hooks may feel similar.\n\nOUTPUT FORMAT:\n1. A table: Day | Angle | Hook (under 140 chars) | 2-line body sketch | CTA.\n2. A 'POST FIRST' line naming which to publish first and why.\n\nReturn only the table and that line."
+  },
+  {
+    "Title": "Featured Section Fixer: Turn Profile Visits Into Leads",
+    "Teaser": "Rebuilds your pinned post and Featured section into a deliberate conversion funnel that turns curious profile visitors into followers, replies, and inbound.",
+    "PromptHint": "Describe your offer and best content in [MY ASSETS]. Add [WHO I HELP] and [DESIRED ACTION].",
+    "Category": "Personal Brand & LinkedIn",
+    "Prompt": "Act as a LinkedIn conversion strategist. Most people leave their pinned post and Featured section to chance, wasting their highest-intent traffic: people who clicked through to the profile. Fix that.\n\nWhat I've got (offer, lead magnet, best posts, results, links): [MY ASSETS]\nWho I help: [WHO I HELP]\nThe one action I want a visitor to take: [DESIRED ACTION]\n\nDesign a deliberate funnel for the top of my profile.\n\nOUTPUT FORMAT, labeled sections:\n1. PINNED POST: a copy-ready post (hook under 140 chars + body + CTA) that frames who I help and points to [DESIRED ACTION].\n2. FEATURED LINEUP: 3-4 Featured items in priority order, each with a one-line click-worthy title and why it earns that slot.\n3. THE PATH: the exact journey a visitor should take from headline -> pinned post -> Featured -> [DESIRED ACTION], in 4 steps.\n4. ONE LEAK: the single biggest thing currently losing me visitors, and the fix.\n\nReturn only those sections."
+  }
+]

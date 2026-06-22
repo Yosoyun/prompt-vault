@@ -1,0 +1,100 @@
+[
+  {
+    "Title": "8-Figure PAS Sales Page Built to Convert Cold Traffic",
+    "Teaser": "Writes a full long-form Problem-Agitate-Solution sales page tuned to one awareness stage, with proof, offer stack, risk-reversal, and a single CTA.",
+    "PromptHint": "Fill in your offer, the dream buyer, and their #1 painful problem. Be brutally specific about the pain.",
+    "Category": "Copywriting & Ads",
+    "Prompt": "You are a direct-response copywriter who has written 8-figure sales pages. Write a long-form sales page for [PRODUCT/OFFER] aimed at [TARGET AUDIENCE] whose biggest pain is [CORE PROBLEM]. Optional voice/constraints: [TONE OR CONSTRAINTS].\n\nThink in this order before writing:\n1. Pin the awareness stage (default: problem-aware, skeptical, cold).\n2. Decide the single Big Idea that organizes the whole page.\n\nThen write using Problem-Agitate-Solution:\n- Pattern-interrupt HEADLINE + SUBHEAD.\n- PROBLEM: mirror their exact internal monologue.\n- AGITATE: dramatize the cost of inaction (emotional + practical).\n- SOLUTION: introduce the offer as the obvious bridge.\n- Then: PROOF, MECHANISM (why it works), OFFER STACK with value framing, RISK-REVERSAL/guarantee, and ONE decisive CTA.\n\nRules: short sentences, 6th-grade reading level, one idea per line, no spam-trigger hype words, no em-dash cliches.\n\nOUTPUT FORMAT (use these exact labels):\nBIG IDEA: one line\nHEADLINE:\nSUBHEAD:\nPROBLEM / AGITATE / SOLUTION / PROOF / MECHANISM / OFFER STACK / RISK-REVERSAL (label each section)\nCTA:\nThen ALTERNATE HEADLINES: 3 options on different angles."
+  },
+  {
+    "Title": "10 Scroll-Stopping Ad Hooks, Ranked by Stop Power",
+    "Teaser": "Generates 10 ad hooks, each on a different named formula (negative hook, curiosity gap, contrarian, callout), ranked by predicted hook-rate.",
+    "PromptHint": "Enter the product and the exact audience you want to stop mid-scroll. Add the platform if it matters.",
+    "Category": "Copywriting & Ads",
+    "Prompt": "Act as a performance creative strategist who writes hooks for paid social. Generate 10 scroll-stopping ad hooks for [PRODUCT] targeting [TARGET AUDIENCE] on [PLATFORM].\n\nEach hook MUST use a DIFFERENT named formula: (1) Negative hook 'Stop doing X if you want Y', (2) Curiosity gap, (3) Direct callout 'Hey [audience]...', (4) Contrarian/myth-bust, (5) Number/stat shock, (6) Before-after tease, (7) Confession, (8) Question, (9) 'Nobody talks about...', (10) Us-vs-them.\n\nConstraints: under 12 words each, written to be SPOKEN aloud in the first 3 seconds, every claim payable (no clickbait you can't deliver), no spam-trigger words.\n\nOUTPUT FORMAT: a markdown table with columns | # | Formula | Hook | Why it stops the scroll | Predicted hook-rate (Low/Med/High) |. Sort rows by predicted hook-rate, highest first. After the table, name the single hook to test first and one quick variation of it."
+  },
+  {
+    "Title": "5-Email Welcome Sequence That Warms and Sells",
+    "Teaser": "Builds a complete 5-email welcome/nurture sequence that earns trust and makes one soft offer without burning the relationship.",
+    "PromptHint": "Give your offer, your subscriber's goal, and the lead magnet they just downloaded.",
+    "Category": "Copywriting & Ads",
+    "Prompt": "You are an email marketing strategist specializing in lifecycle sequences. Write a 5-email welcome sequence for new subscribers of [BRAND/OFFER] who just downloaded [LEAD MAGNET] and want [DESIRED OUTCOME]. Voice: [TONE OR CONSTRAINTS].\n\nSequence arc: E1 deliver + set expectations, E2 origin story + relatability, E3 teach one quick win (pure value), E4 case study/proof, E5 the offer with a real deadline.\n\nRules: write like one human to one person, one ask per email, no corporate filler, no fake urgency, mobile-friendly short paragraphs.\n\nOUTPUT FORMAT: for EACH email, under a header 'EMAIL N - [purpose]', give:\n- Send delay (e.g. Day 0)\n- 3 subject lines (curiosity / benefit / personal)\n- Preview text\n- Body copy (under 180 words, conversational)\n- One CTA\n- Metric to watch (one line)\nEnd with a one-line note on the single biggest lever to test across the sequence."
+  },
+  {
+    "Title": "60-Second VSL Script From Hook to CTA",
+    "Teaser": "Writes a tight video sales letter with a 7-second cold-open hook, problem, mechanism, proof, and one decisive CTA, with B-roll and on-screen cues.",
+    "PromptHint": "Drop in your offer, the audience, and the one big promise. Keep the promise specific and believable.",
+    "Category": "Copywriting & Ads",
+    "Prompt": "You are a VSL scriptwriter for direct-response video ads. Write a 60-90 second VSL script for [OFFER] targeting [TARGET AUDIENCE], built around the core promise: [BIG PROMISE]. Optional tone: [TONE OR CONSTRAINTS].\n\nWrite for the EAR not the eye: short spoken lines, second-person 'you', read-time under 90s, no jargon.\n\nStructure with on-screen timecodes:\n0:00-0:07 Cold-open hook (pattern interrupt + promise)\nProblem they feel right now\nFalse solutions that failed them\nThe mechanism (why this is different)\nProof / quick credibility\nThe offer + risk reversal\nClear CTA with a real reason to act now\n\nOUTPUT FORMAT: the script with timecode labels, each line tagged with [B-ROLL: ...] and [ON-SCREEN TEXT: ...] cues where useful. After the script, give 2 alternate cold-open hooks to A/B test and a 1-line thumbnail caption."
+  },
+  {
+    "Title": "Clone Your Brand Voice and Rewrite Any Asset In It",
+    "Teaser": "Extracts a reusable voice profile from samples of your best copy, then writes any new asset so it sounds unmistakably like you.",
+    "PromptHint": "Paste 2-3 samples of your best copy, then name the new asset you want written in that voice.",
+    "Category": "Copywriting & Ads",
+    "Prompt": "You are a brand voice analyst and copywriter. First, study these writing samples from my brand:\n\n[PASTE 2-3 SAMPLES OF EXISTING COPY]\n\nStep 1 - BUILD A VOICE PROFILE: extract tone, sentence rhythm, vocabulary, signature phrases, punctuation habits, reading level, and 3 things this voice NEVER does. Present it as a tidy reference block.\n\nStep 2 - Using ONLY that voice, write: [NEW ASSET TO CREATE]. Optional extra direction: [TONE OR CONSTRAINTS].\n\nRules: match the rhythm and word choice exactly, no generic marketing-speak, banned words: unlock, elevate, game-changer, seamless, and no em-dash cliches.\n\nOUTPUT FORMAT:\n(A) VOICE PROFILE block\n(B) THE NEW ASSET\n(C) MATCH NOTES: 3 specific lines where you deliberately copied a signature pattern, naming the pattern each time."
+  },
+  {
+    "Title": "4 High-Converting AIDA Hero Sections, Each a Different Angle",
+    "Teaser": "Generates four above-the-fold hero blocks (headline, subhead, bullets, CTA, microcopy) using AIDA, each leading on a distinct angle.",
+    "PromptHint": "Enter the product, the audience, and the single most important benefit you want to lead with.",
+    "Category": "Copywriting & Ads",
+    "Prompt": "You are a landing-page conversion copywriter. Write 4 distinct above-the-fold hero sections for [PRODUCT] aimed at [TARGET AUDIENCE], leading with the benefit: [MAIN BENEFIT]. Optional: [TONE OR CONSTRAINTS].\n\nEach variation compresses AIDA into a hero (Attention headline, Interest subhead, Desire via 3 benefit bullets, Action CTA) and takes a DIFFERENT angle: V1 outcome-driven, V2 pain-relief, V3 speed/ease, V4 contrarian/mechanism.\n\nConstraints: headline under 10 words, subhead one sentence, bullets specific and quantified where possible, CTA = verb + value (never 'Submit'), no jargon, no hype words.\n\nOUTPUT FORMAT: one table per variation with rows Angle / Headline / Subhead / Bullet 1-3 / CTA / Button microcopy. End with a one-line recommendation on which variation to test first and why."
+  },
+  {
+    "Title": "Sub-100-Word Cold Email That Actually Gets a Reply",
+    "Teaser": "Writes a trigger-based, personalized cold email under 100 words with a low-friction CTA that dodges spam filters and sounds human.",
+    "PromptHint": "Add the prospect/role, their likely pain, and a recent trigger (news, hire, launch) to reference.",
+    "Category": "Copywriting & Ads",
+    "Prompt": "You are a top-performing SDR who writes cold emails that get 15%+ reply rates. Write a cold email to [PROSPECT ROLE/COMPANY] who likely struggles with [PAIN POINT], referencing this timely trigger: [RECENT TRIGGER].\n\nThinking steps:\n1. Open with the trigger (shows real homework), never 'I hope this finds you well'.\n2. One sentence linking the trigger to their likely problem.\n3. One sentence on the outcome you create (no feature dump).\n4. A low-friction CTA (a question or '15 min?'), never a hard pitch.\n5. A short PS with proof or specificity.\n\nConstraints: under 100 words, subject line under 40 characters, no spam triggers (free, guarantee, act now), reads like a human typed it on their phone.\n\nOUTPUT FORMAT:\nSUBJECT LINES: 3 options\nEMAIL: the body\nFOLLOW-UP: one 1-line nudge to send if no reply in 3 days."
+  },
+  {
+    "Title": "Feature-to-Benefit Translator: The So-What Machine",
+    "Teaser": "Runs each product feature through a 3-step 'so what?' ladder to reach the emotional payoff, then writes copy-paste-ready benefit bullets.",
+    "PromptHint": "Paste your raw feature list and name who's buying. The more features, the better the output.",
+    "Category": "Copywriting & Ads",
+    "Prompt": "You are a conversion copywriter who turns features into benefits buyers feel. Here is my feature list for [PRODUCT] sold to [TARGET AUDIENCE]:\n\n[PASTE FEATURE LIST]\n\nFor each feature, run the 'so what?' ladder 3 times to reach the emotional/end benefit, then rewrite it in the customer's own words (how THEY would describe the win to a friend).\n\nRules: specific, vivid, no jargon, quantified where possible.\n\nOUTPUT FORMAT: a table with columns | Feature | What it does (functional) | So-what benefit | Emotional payoff | Page-ready bullet |. The final column must be copy-paste ready. After the table, write a BEST-OF SHORTLIST: the 3 strongest emotional payoffs as headline-grade bullets, ordered by persuasive power."
+  },
+  {
+    "Title": "3-Email Abandoned-Cart Series That Recovers the Sale",
+    "Teaser": "Creates a 3-email cart-recovery sequence that removes friction, crushes the top objection, and nudges the buyer back without sounding desperate.",
+    "PromptHint": "Enter the product, its price/offer, and the most common reason people hesitate to buy.",
+    "Category": "Copywriting & Ads",
+    "Prompt": "You are an ecommerce email strategist. Write a 3-email abandoned-cart recovery sequence for [PRODUCT] (price/offer: [PRICE OR OFFER]). The top reason buyers hesitate is [MAIN OBJECTION]. Optional voice: [TONE OR CONSTRAINTS].\n\nSequence: E1 (1 hr later) gentle reminder + remove friction, E2 (24 hr) handle the main objection head-on with proof, E3 (48 hr) soft incentive or honest scarcity + final nudge.\n\nRules: helpful not hounding, no guilt-tripping, save any discount for E3 only, short mobile-friendly paragraphs.\n\nOUTPUT FORMAT: for each email under a header 'EMAIL N (timing)', give 3 subject lines, preview text, body under 120 words, one CTA button label, and which objection it neutralizes. End with one timing tip and one A/B test idea for the sequence."
+  },
+  {
+    "Title": "Objection-Crusher FAQ for Any Sales Page",
+    "Teaser": "Surfaces the real reasons buyers don't convert, ranks them, and writes FAQ answers that validate, reframe, and dissolve each one.",
+    "PromptHint": "Give the product, the audience, and the price. The price helps surface money objections.",
+    "Category": "Copywriting & Ads",
+    "Prompt": "You are a conversion strategist who specializes in objection handling. For [PRODUCT] sold to [TARGET AUDIENCE] at [PRICE], do two things.\n\nStep 1: List the 8 most likely reasons this audience hesitates to buy (price, trust, timing, fit, effort, skepticism, comparison, risk). Rank by how often they kill the sale.\n\nStep 2: Write a persuasive FAQ entry for each. Every answer must validate the concern, reframe it, and give a concrete reason to proceed - never defensive, never salesy.\n\nConstraints: answers under 80 words, confident not pushy, use proof or specifics where possible, never dismiss the concern.\n\nOUTPUT FORMAT: a table with columns | Rank | Hidden objection | FAQ question (buyer's words) | Answer |. End with the single objection most worth addressing earlier on the page, above the FAQ, and where to place it."
+  },
+  {
+    "Title": "One Ad Idea, Rewritten Native for 3 Platforms",
+    "Teaser": "Takes a single ad concept and rewrites it natively for three platforms, adapting tone, length, hook aggression, formatting, and CTA to each.",
+    "PromptHint": "Describe the product and your one core ad idea or angle. Name the 3 platforms you run ads on.",
+    "Category": "Copywriting & Ads",
+    "Prompt": "You are a paid-media copywriter who writes platform-native ads. Take this single ad idea for [PRODUCT]: [CORE AD IDEA/ANGLE], and rewrite it natively for these 3 platforms: [PLATFORMS].\n\nFor each platform, adapt tone, length, hook aggression, formatting, and CTA to what performs there (e.g. raw/fast for TikTok, aesthetic for Reels, primary-text + headline for Meta feed, professional for LinkedIn).\n\nRules: never copy-paste across platforms, respect each platform's character norms, keep the core promise consistent, no spam-trigger hype.\n\nOUTPUT FORMAT: one labeled block per platform, each with Primary text/caption, Headline (if used), CTA button choice, and First-line hook / on-screen text. End with a one-line call on which platform this idea will likely win on and why."
+  },
+  {
+    "Title": "Before-After-Bridge Story Ad That Sells Transformation",
+    "Teaser": "Writes a relatable narrative ad using the Before-After-Bridge framework that sells the transformation, not the feature list.",
+    "PromptHint": "Enter the product, the audience, and the transformation it delivers (from struggling-state to dream-state).",
+    "Category": "Copywriting & Ads",
+    "Prompt": "You are a story-driven direct-response copywriter. Write a narrative ad for [PRODUCT] aimed at [TARGET AUDIENCE], using the Before-After-Bridge framework around this transformation: [FROM STATE -> TO STATE]. Optional voice: [TONE OR CONSTRAINTS].\n\nStructure:\nBEFORE - paint their current frustrating reality in vivid, specific detail (a day-in-the-life moment).\nAFTER - show the desirable future once the problem is gone (sensory, concrete).\nBRIDGE - reveal the product as the path from one to the other, then CTA.\n\nRules: tell it as a story about one relatable person, show don't tell, no feature dump until the bridge, emotionally honest (no exaggeration), 120-180 words.\n\nOUTPUT FORMAT:\nAD: the full ad\nALT HOOKS: 2 alternate first lines\nOVERLAY: a 1-line version for a thumbnail / on-screen text."
+  },
+  {
+    "Title": "Launch-Day Announcement Email With Real Urgency",
+    "Teaser": "Writes a launch-day email that builds genuine excitement, frames the offer, and drives first-day sales with urgency tied to a real deadline.",
+    "PromptHint": "Name the product, who it's for, and the launch offer or deadline (early-bird, bonus, price).",
+    "Category": "Copywriting & Ads",
+    "Prompt": "You are a launch copywriter. Write a launch-day announcement email for [PRODUCT] to [TARGET AUDIENCE], featuring this launch offer/deadline: [LAUNCH OFFER OR DEADLINE]. Optional voice: [TONE OR CONSTRAINTS].\n\nStructure: hook subject + preview, a personal 'it's finally here' opening, the single biggest reason it exists (the problem), what it is and who it's for, the launch offer + why now, one clear CTA, and a short PS reinforcing the deadline.\n\nRules: genuine excitement not hype, lead with reader benefit not 'we built', urgency must be real (tie to the stated offer/deadline), under 220 words.\n\nOUTPUT FORMAT:\nSUBJECT LINES: 4 options (excitement / curiosity / benefit / personal)\nPREVIEW TEXT:\nEMAIL: the body\nCTA: button label\nRESEND: one 1-line resend subject for non-openers."
+  },
+  {
+    "Title": "Red-Team Your Sales Copy: Find Every Conversion Leak",
+    "Teaser": "Audits your existing copy as a skeptical buyer and a CRO expert, flagging every reason it loses the sale, ranked by severity, each with a rewrite.",
+    "PromptHint": "Paste your current sales page or ad copy. Add the target audience so the critique stays on-buyer.",
+    "Category": "Copywriting & Ads",
+    "Prompt": "You are a brutally honest conversion-rate optimization expert. Red-team this copy for [TARGET AUDIENCE]:\n\n[PASTE YOUR SALES PAGE / AD / EMAIL COPY]\n\nDo two passes.\nPass 1 - As a skeptical buyer: where do you lose trust, get confused, get bored, or stop reading? Quote the exact line and say why.\nPass 2 - As a CRO expert: flag weak headline, unclear value prop, missing proof, buried CTA, feature-dumping, vague claims, friction, and risk not reversed.\n\nFor each issue give severity (Critical/High/Medium), the problem, and a specific rewritten fix.\n\nRules: be specific and harsh, no praise padding, every criticism must include a concrete fix.\n\nOUTPUT FORMAT: a prioritized table with columns | Severity | Quoted line / element | Problem | Rewritten fix |, sorted by severity. End with the single highest-leverage change to make first and the predicted impact."
+  }
+]

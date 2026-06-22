@@ -1,0 +1,93 @@
+[
+  {
+    "Title": "Five Logo Routes In One Brief: Wordmark, Monogram, Symbol, Emblem, Combo",
+    "Teaser": "Turns a one-line brand brief into five distinct, model-agnostic vector-logo prompts with palettes and MJ params.",
+    "PromptHint": "Give [BRAND] + [WHAT IT DOES], a [VIBE] (e.g. premium fintech, playful pet brand), and an optional [COLOR/AVOID].",
+    "Category": "Logos & Branding",
+    "Prompt": "You are a senior brand-identity designer who writes image-model prompts. Brand: [BRAND] - [WHAT IT DOES]. Desired vibe: [VIBE]. Color steer / things to avoid: [COLOR OR AVOID]. THINK FIRST (silently): the single association the mark must trigger, and which shapes/letterforms/colors earn it; reject cliche symbols (globe, swoosh, lightbulb) unless truly apt. Produce FIVE distinct logo routes: (A) clean wordmark, (B) lettermark/monogram, (C) abstract geometric symbol, (D) emblem/badge, (E) symbol+wordmark combo. For EACH route write ONE copy-paste prompt that specifies: flat vector logo, minimal, geometric construction, a named 2-3 colour palette WITH hex codes, even negative space, solid white background, centered, generous margin, scalable, no gradients, no photorealism, no 3D, no mockup, no text artifacts. OUTPUT FORMAT (Markdown table, columns: Route | Prompt | Midjourney params | Why it fits). Use these MJ params per route: '--ar 1:1 --style raw --no photo, realistic shadow, 3d, gradient'. After the table add: PICK: one line naming the strongest route for [VIBE] and why. Nothing else."
+  },
+  {
+    "Title": "Monogram Lab: Geometric Lettermark From Your Initials (Grid + Negative Space)",
+    "Teaser": "Builds a precise prompt for a geometric monogram from your initials, with grid logic and clever negative space.",
+    "PromptHint": "Set [INITIALS] (1-3 letters), the [INDUSTRY], and a [STYLE] (e.g. luxury serif, techy sans, hand-drawn).",
+    "Category": "Logos & Branding",
+    "Prompt": "Act as a logotype and monogram specialist. Build ONE master image prompt for a geometric monogram using the initials [INITIALS] for a [INDUSTRY] brand, in a [STYLE] direction. THINK FIRST (silently): how the letters can interlock, share a stroke, or create a hidden shape in the negative space; ensure the letters stay READABLE at favicon size. The prompt must specify: single flat vector monogram, built on a visible-then-removed geometric grid (golden ratio or modular), consistent stroke weight, balanced counters, elegant negative space, ONE accent colour on white (give a hex pair), no gradient, no bevel, no drop shadow, no 3D, centered with margin, transparent-ready. OUTPUT FORMAT exactly: 1) PROMPT: <one copy-paste line>. 2) MIDJOURNEY VERSION: same line ending '--ar 1:1 --style raw --s 80 --no shadow, gradient, 3d, photo'. 3) IDEOGRAM/DALL-E NOTE: <one line on rendering the letters cleanly>. 4) READABILITY CHECK: <one line on how to confirm it works at 32px>. Nothing else."
+  },
+  {
+    "Title": "Brand Mascot Builder: A Reusable Character Logo You Can Pose Anywhere",
+    "Teaser": "Designs a friendly, ownable mascot logo plus a locked identity block so it stays consistent across every scene.",
+    "PromptHint": "Describe the [BRAND + AUDIENCE], pick an [ANIMAL/CHARACTER TYPE], and a [PERSONALITY] (e.g. cheeky, wise, energetic).",
+    "Category": "Logos & Branding",
+    "Prompt": "You are a mascot and character-logo designer. Brand: [BRAND + AUDIENCE]. Base character: [ANIMAL OR CHARACTER TYPE]. Personality: [PERSONALITY]. THINK FIRST (silently): one memorable silhouette and one signature feature that makes it instantly ownable and trademark-distinct; keep it simple enough to reproduce as a flat logo. Deliver in this OUTPUT FORMAT: 1) LOCKED IDENTITY BLOCK: a plain-text line fixing species/type, body proportions (chibi vs sleek), exact colour palette with hex codes, signature accessory, and expression - this stays byte-for-byte identical across renders. 2) MASTER LOGO PROMPT: flat vector mascot, bold clean outlines, limited palette, friendly expression, solid white background, centered, scalable, no gradient mesh, no photoreal fur, no 3D render; append '--ar 1:1 --style raw --no photo, 3d, realistic'. 3) THREE POSE PROMPTS: waving, thinking, celebrating - each PREPENDS the identity block verbatim so the mascot looks identical. 4) CONSISTENCY NOTE: one line on using --cref / a reference image to lock the face. Nothing else."
+  },
+  {
+    "Title": "App Icon Foundry: One Glyph That Pops At 1024px And Still Reads At 16px",
+    "Teaser": "Generates a bold, single-concept app-icon prompt engineered to dominate the store listing and still read as a tiny home-screen glyph.",
+    "PromptHint": "Give [APP NAME + WHAT IT DOES], a [CORE METAPHOR] you like, and the [PLATFORM] (iOS, Android, web).",
+    "Category": "Logos & Branding",
+    "Prompt": "You are an app-icon designer who knows iOS/Android icon grids and the 'one idea, one shape' rule. App: [APP NAME + WHAT IT DOES]. Core metaphor to explore: [CORE METAPHOR]. Platform: [PLATFORM]. THINK FIRST (silently): reduce the brand to ONE bold glyph centered on the icon keyline grid; ensure it reads as a 1-bit silhouette and survives at 16px; avoid tiny details, text, and thin lines. The prompt must specify: single app icon, centered bold glyph, flat or subtle single-direction gradient duotone, rounded-square safe area with padding, vibrant 2-colour palette WITH hex, crisp edges, solid background, no text, no photoreal, no skeuomorphic clutter, no drop shadow. OUTPUT FORMAT exactly: 1) ICON PROMPT: <one copy-paste line>. 2) MIDJOURNEY: same line + '--ar 1:1 --style raw --s 120 --no text, photo, 3d clutter'. 3) SCALE TEST: <one line on checking it at 16/32/180px>. 4) LIGHT/DARK NOTE: <one line on a background swap for both modes>. Nothing else."
+  },
+  {
+    "Title": "Instant Brand-In-A-Box: Logo, Palette, Type & Voice From One Brief",
+    "Teaser": "Spins up a coherent starter brand system - mark, colour, typography, motif, voice - as a structured spec plus copy-paste image prompts.",
+    "PromptHint": "Describe [BRAND + WHAT IT DOES], the [TARGET CUSTOMER], and a [POSITIONING] (e.g. premium-minimal, bold-disruptor).",
+    "Category": "Logos & Branding",
+    "Prompt": "Act as a brand strategist + art director shipping a coherent starter identity. Brand: [BRAND + WHAT IT DOES]. Customer: [TARGET CUSTOMER]. Positioning: [POSITIONING]. THINK FIRST (silently): the ONE strategic idea every visual choice must ladder up to, and reject any element that does not reinforce it. OUTPUT FORMAT - return these labelled sections only: 1) BRAND IDEA: one sentence. 2) PALETTE: primary, secondary, neutral, accent - each with name, exact hex, and a use note; confirm body text vs background passes WCAG AA contrast. 3) TYPOGRAPHY: a display + body pairing (Google Fonts only) with a one-line rationale and fallback web-safe stack. 4) LOGO CONCEPT: 2-3 sentence direction naming the mark type (wordmark / symbol+wordmark / monogram). 5) MOTIF/PATTERN: one repeatable graphic device derived from the logo. 6) BRAND VOICE: 3 adjectives + one do/don't line. 7) IMAGE PROMPTS: (a) a flat-vector LOGO prompt and (b) a seamless brand-PATTERN prompt - both specifying flat vector, the exact palette hexes, solid white background, even negative space, no gradient, no photoreal, no 3D, append '--ar 1:1 --style raw'. Reuse identical hex values across every section - no drift. Nothing else."
+  },
+  {
+    "Title": "Negative-Space Genius: Hide a Second Meaning Inside the Logo",
+    "Teaser": "Crafts a clever dual-meaning mark where the negative space reveals a second relevant object (FedEx-arrow style).",
+    "PromptHint": "Give [BRAND + WHAT IT DOES] and two concepts to fuse: [SHAPE A] hiding [SHAPE B] in the negative space.",
+    "Category": "Logos & Branding",
+    "Prompt": "You are a logo designer famous for negative-space and dual-meaning marks. Brand: [BRAND + WHAT IT DOES]. The visible shape should be [SHAPE A]; the hidden shape revealed in the negative space should be [SHAPE B]. THINK FIRST (silently): how the gap between elements forms [SHAPE B] WITHOUT being forced; both readings must be clean and instantly legible in a single colour. The prompt must specify: minimalist flat vector logo, clever negative-space concept where the empty space forms [SHAPE B], single solid colour (give a hex), perfectly balanced, geometric, solid white background, centered, no gradient, no shadow, no 3D, no text, scalable to one colour. OUTPUT FORMAT exactly: 1) CONCEPT: one line explaining the hidden idea. 2) PROMPT: <one copy-paste line>. 3) MIDJOURNEY: same line + '--ar 1:1 --style raw --s 60 --no gradient, shadow, 3d, text, photo'. 4) FALLBACK: one line on how to simplify if the hidden shape reads as noise. Nothing else."
+  },
+  {
+    "Title": "Personal Logo From Your Name: A Signature Mark For Creators & Founders",
+    "Teaser": "Turns a person's name into a tasteful personal logo - monogram, signature, or wordmark - for portfolios and merch.",
+    "PromptHint": "Give [FULL NAME], what you're known for in [NICHE], and a [FEEL] (e.g. editorial, techy, handcrafted).",
+    "Category": "Logos & Branding",
+    "Prompt": "Act as a personal-branding designer. Person: [FULL NAME], known for [NICHE]. Desired feel: [FEEL]. THINK FIRST (silently): which of three formats suits this person best - (a) initials monogram, (b) stylised signature, (c) clean name wordmark - and pick the strongest, but provide all three. For EACH format write ONE image prompt specifying: flat vector personal logo, refined letterforms, balanced spacing, single accent colour on white WITH a hex pair, minimal, no gradient, no photoreal, no 3D, centered with margin, scalable to a profile-pic circle. OUTPUT FORMAT (Markdown table: Format | Prompt | Midjourney params | Best used for). MJ params: '--ar 1:1 --style raw --no shadow, 3d, photo, busy detail'. After the table: RECOMMEND one format for [NICHE] in a single line, and add a PFP TIP line on cropping it into a circular avatar. Nothing else."
+  },
+  {
+    "Title": "Logo Critique & Fix: Brutal Designer Review Of An Existing Mark",
+    "Teaser": "An honest art-director teardown of your current logo with scored flaws and a prioritised redesign brief.",
+    "PromptHint": "Paste a [DESCRIPTION OR UPLOAD] of the logo, the [BRAND CONTEXT], and where it [FAILS/FEELS OFF].",
+    "Category": "Logos & Branding",
+    "Prompt": "You are a no-nonsense art director reviewing a logo. Logo: [DESCRIPTION OR UPLOAD]. Brand context: [BRAND CONTEXT]. Where it feels off: [WHAT FEELS WRONG]. Be brutally honest and specific - do not flatter. THINK FIRST (silently): judge it against scalability, legibility at small size, uniqueness, balance, colour, timelessness, and concept. OUTPUT FORMAT - return: 1) SCORECARD: a table scoring each of those 7 criteria /10 with a one-line reason. 2) TOP 3 PROBLEMS: ranked, each with the fix. 3) KEEP: what is actually working (be fair). 4) REDESIGN BRIEF: a tight paragraph an image model can use. 5) FIXED PROMPT: one copy-paste flat-vector prompt implementing your advice, with hex palette, white background, no gradient/3d/photo, ending '--ar 1:1 --style raw'. Note: this is design feedback, not a legal trademark clearance - tell me to run a separate trademark search before using any mark commercially. Nothing else."
+  },
+  {
+    "Title": "Sticker & Merch Pack: One Brand, A Sheet Of Die-Cut Logo Stickers",
+    "Teaser": "Designs a cohesive die-cut sticker sheet from your brand - mascot, badge, slogan - ready for print-on-demand.",
+    "PromptHint": "Give [BRAND + VIBE], your [PALETTE/HEX], and 3-5 [MOTIFS] you want on the stickers.",
+    "Category": "Logos & Branding",
+    "Prompt": "You are a merch and sticker designer. Brand: [BRAND + VIBE]. Palette: [PALETTE OR HEX]. Motifs to include: [MOTIFS]. THINK FIRST (silently): how to keep 4-6 small designs visually unified by colour, line weight, and a thick white die-cut border, while each works alone. The prompt must specify: a cohesive sheet of die-cut vinyl stickers, flat bold vector style, thick white kiss-cut outline around each, consistent limited palette WITH hex, clean shapes, no fine gradients, no photoreal, on a neutral flat-lay background, even lighting, top-down. OUTPUT FORMAT exactly: 1) STICKER LIST: 4-6 sticker ideas in one line each. 2) SHEET PROMPT: <one copy-paste line for the full sheet>. 3) SINGLE-STICKER PROMPT: <one line for the hero sticker alone>. 4) MIDJOURNEY: append '--ar 4:5 --style raw --no busy gradient, photo realism, thin lines'. 5) PRINT TIP: one line on bleed/safe-zone for print-on-demand. Nothing else."
+  },
+  {
+    "Title": "From One Logo To A Pro Brand Kit: Lockups, Clear-Space & Misuse Rules",
+    "Teaser": "Takes a finished logo and outputs horizontal, stacked, icon-only and mono lockups with clear-space, min-size and do-not rules - a real style-guide page.",
+    "PromptHint": "Describe your [LOGO] (symbol + name), the [BRAND COLORS/HEX], and where it'll appear most: [PRIMARY USE].",
+    "Category": "Logos & Branding",
+    "Prompt": "Act as a brand-systems designer producing a logo usage page for a style guide. Logo: [LOGO - symbol + name]. Brand colours: [BRAND COLORS OR HEX]. Primary use: [PRIMARY USE]. THINK FIRST (silently): which lockups this brand actually needs for [PRIMARY USE], and the minimum-size + clear-space rules that protect the mark from crowding and distortion. OUTPUT FORMAT - return labelled sections only: 1) LOCKUPS: define horizontal, stacked/vertical, icon-only, and one-colour (mono) versions, each in one sentence with its intended placement. 2) CLEAR SPACE: a rule expressed in units of the mark (e.g. 'minimum padding = the height of the symbol on all sides'). 3) MIN SIZE: smallest legible pixel/mm size for icon-only vs full lockup, for screen and print. 4) COLOUR VARIANTS: full-colour, all-black, all-white (knockout/reversed) - each with exact hex and the background it sits on. 5) MISUSE: 5 do-not rules (no stretch/distort, no recolour, no drop shadow, no busy/low-contrast background, no rotation). 6) IMAGE PROMPT: one flat-vector prompt that lays out all lockups and the clear-space diagram on a clean labelled grid board, solid white background, no gradient/3d/photo, ending '--ar 16:9 --style raw'. Nothing else."
+  },
+  {
+    "Title": "Esports & Streamer Logo: Aggressive Mascot Crest For Gamers",
+    "Teaser": "Builds a high-energy esports mascot/crest logo prompt tuned for Twitch avatars, jerseys, and overlays.",
+    "PromptHint": "Give [TEAM/CHANNEL NAME], a [MASCOT] (animal/creature), and a [VIBE] (e.g. neon-cyber, gritty, regal).",
+    "Category": "Logos & Branding",
+    "Prompt": "You are an esports logo illustrator. Team/channel: [TEAM OR CHANNEL NAME]. Mascot: [MASCOT]. Vibe: [VIBE]. THINK FIRST (silently): one fierce, recognizable mascot head or crest with a strong silhouette that reads as a tiny circular avatar AND scales onto a jersey; avoid muddy detail. The prompt must specify: bold esports mascot logo, aggressive dynamic angle, thick clean black outlines, cel-shaded with sharp highlights, vivid 3-colour palette WITH hex, optional banner for the name, solid contrasting background, centered, high contrast, vector-style, no photoreal, no soft blur, no messy gradients. OUTPUT FORMAT exactly: 1) PROMPT: <one copy-paste line>. 2) MIDJOURNEY: same line + '--ar 1:1 --style raw --s 250 --no blur, photo, soft gradient, low contrast'. 3) AVATAR CROP: one line on the circular Twitch/Discord crop. 4) MONO VERSION: one line on a single-colour jersey-embroidery variant. Nothing else."
+  },
+  {
+    "Title": "Restyle My Logo Without Wrecking It: Seasonal & Theme Variants On Lock",
+    "Teaser": "Instruction-style edit prompts that change only the theme of an existing logo - holiday, retro, mono - while preserving the exact mark.",
+    "PromptHint": "Upload/describe the [CURRENT LOGO], then list the [NEW THEMES] you want (e.g. holiday, monochrome, retro).",
+    "Category": "Logos & Branding",
+    "Prompt": "You are an editing-focused image-model operator (Nano Banana / FLUX Kontext style). Base logo: [CURRENT LOGO]. Themes to generate: [NEW THEMES]. THINK FIRST (silently): the surgical-edit rule - change ONLY the requested theme element and explicitly preserve the mark's shape, proportions, letterforms, and composition. For EACH theme write one conversational edit prompt in this pattern: 'Restyle this logo as [THEME] - change [colour/texture/ornament] while keeping the exact same shape, proportions, letterforms, and layout; keep it flat vector and legible at small size.' Quote any literal text to keep with double quotes. OUTPUT FORMAT (Markdown table: Theme | Edit prompt | What to preserve | What changes). Add a final row 'Midjourney/MJ note' explaining to use '--sref [logo url] --sw 150 --ar 1:1 --style raw' instead, since MJ can't edit-in-place. Then one CAUTION line: keep edits subtle so brand recognition is preserved. Nothing else."
+  },
+  {
+    "Title": "Naming + Logo Combo: Brandable Names That Already Have A Visual Hook",
+    "Teaser": "Generates brandable name candidates that each ship with a built-in logo concept and a ready image prompt.",
+    "PromptHint": "Describe [WHAT YOU SELL], the [AUDIENCE + VIBE], and any [MUST-AVOID] words or rivals.",
+    "Category": "Logos & Branding",
+    "Prompt": "Act as a brand naming strategist who thinks in pictures. Product: [WHAT YOU SELL]. Audience + vibe: [AUDIENCE + VIBE]. Avoid: [MUST-AVOID]. THINK FIRST (silently): generate names that are short, pronounceable, .com-plausible, and ALREADY suggest a visual mark (a hidden object, a letter quirk, a metaphor). OUTPUT FORMAT - a Markdown table with columns: Name | Type (coined / compound / real-word / metaphor) | Why it works | Built-in logo idea | Logo image prompt. Give 8 names. Each 'Logo image prompt' must be a flat-vector, single copy-paste line with a hex palette, white background, no gradient/3d/photo, ending '--ar 1:1 --style raw'. After the table: TOP PICK - name the strongest name+mark pairing for [AUDIENCE + VIBE] and why, in one line. Add a NOTE: I have not checked trademark or domain availability - run a separate trademark and domain search before committing. Nothing else."
+  }
+]

@@ -3,17 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Prompt Vault · 4,400+ AI Prompts, free — curated by Indrajeet Yadav</title>
-<meta name="description" content="A free, searchable library of 4,400+ ready-to-use AI prompts for ChatGPT, Claude & Gemini — writing, marketing, SEO, code, design and more. Copy & paste in one click. Curated by Indrajeet Yadav.">
+<title>The Prompt Vault — 450+ Premium AI Prompts for ChatGPT, Claude & Gemini | Indrajeet Yadav</title>
+<meta name="description" content="A free, hand-built library of 450+ premium AI prompts — viral, AI-image (Midjourney, DALL·E, Flux, Nano Banana), agentic & system prompts, and pro mega-prompts — for ChatGPT, Claude & Gemini. Copy & paste in one click. No sign-up. By Indrajeet Yadav.">
+<meta name="keywords" content="AI prompts, ChatGPT prompts, premium prompts, viral prompts, image prompts, Midjourney prompts, DALL-E prompts, Flux prompts, Nano Banana, agentic prompts, system prompts, mega prompts, Claude prompts, Gemini prompts, prompt engineering, Indrajeet Yadav">
 <meta name="author" content="Indrajeet Yadav">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://yosoyun.github.io/prompt-vault/">
 <meta name="theme-color" content="#14130f">
-<meta property="og:title" content="The Prompt Vault — 4,400+ free AI prompts">
-<meta property="og:description" content="Search, filter and copy 4,400+ ready-to-use AI prompts. Free forever. Curated by Indrajeet Yadav.">
+<!-- Open Graph / Twitter -->
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="The Prompt Vault">
+<meta property="og:title" content="The Prompt Vault — 450+ premium AI prompts">
+<meta property="og:description" content="Search, filter & copy 450+ premium AI prompts — viral, image, agentic & mega-prompts. Free forever. By Indrajeet Yadav.">
+<meta property="og:url" content="https://yosoyun.github.io/prompt-vault/">
+<meta property="og:image" content="https://yosoyun.github.io/prompt-vault/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Prompt Vault — 450+ premium AI prompts">
+<meta name="twitter:description" content="Search, filter & copy 450+ premium AI prompts — viral, image, agentic & mega. Free forever. By Indrajeet Yadav.">
+<meta name="twitter:image" content="https://yosoyun.github.io/prompt-vault/og-cover.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "The Prompt Vault",
+  "url": "https://yosoyun.github.io/prompt-vault/",
+  "description": "A free, hand-built library of 450+ premium AI prompts (viral, image, agentic and mega-prompts) for ChatGPT, Claude and Gemini, by Indrajeet Yadav.",
+  "creator": { "@type": "Person", "name": "Indrajeet Yadav" },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://yosoyun.github.io/prompt-vault/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Is The Prompt Vault really free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every one of the 450+ premium prompts is free to copy and use. No account, no paywall, no tracking, forever." } },
+    { "@type": "Question", "name": "Which AI tools do these prompts work with?",
+      "acceptedAnswer": { "@type": "Answer", "text": "All of them. The prompts are plain text and work in ChatGPT, Claude, Gemini, Copilot, Grok and any other chat AI. Image prompts are tuned for Midjourney, DALL·E and Stable Diffusion." } },
+    { "@type": "Question", "name": "Do I need to sign up or install anything?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Open the page, search, and click Copy. It is a single static website that even works offline." } },
+    { "@type": "Question", "name": "Can I use these prompts for my business?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Use them for work, clients, content and products. Replace the [VARIABLES] with your details and go." } }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="grain" aria-hidden="true"></div>
@@ -23,11 +65,12 @@
     <span class="brand-mark" aria-hidden="true">⌘</span>
     <span class="brand-text">
       <span class="brand-name">The&nbsp;Prompt&nbsp;Vault</span>
-      <span class="brand-sub">curated by <b>Indrajeet&nbsp;Yadav</b></span>
+      <span class="sig brand-sig">Indrajeet Yadav</span>
     </span>
   </a>
   <div class="head-actions">
     <a class="ghost-btn" href="#groups">Browse</a>
+    <button class="ghost-btn" id="savedNav" aria-label="View saved prompts">★ <span id="savedNavN">0</span></button>
     <button class="ghost-btn theme-toggle" id="themeToggle" aria-label="Toggle light / dark theme">
       <span class="t-dark">☾</span><span class="t-light">☀</span>
     </button>
@@ -37,64 +80,94 @@
 <main id="top">
   <!-- ░░ HERO ░░ -->
   <section class="hero">
-    <p class="eyebrow">Free forever · No sign-up · Works offline</p>
-    <h1 class="hero-title">
-      The prompt that<br><em>does the work</em>.
-    </h1>
+    <p class="eyebrow">Free forever · No sign-up · <span class="pulse">100% premium, hand-built prompts</span></p>
+    <h1 class="hero-title">The prompt that<br><em>does the work</em>.</h1>
     <p class="hero-lede">
-      A hand-organised vault of <b id="heroCount">4,408</b> ready-to-use AI prompts for
-      ChatGPT, Claude &amp; Gemini — sorted into 8 clean shelves. Search it, copy it, paste it.
+      A hand-built vault of <b id="heroCount">450+</b> premium AI prompts — viral, AI-image,
+      agentic &amp; pro mega-prompts — for ChatGPT, Claude &amp; Gemini. Search it, copy it, paste it.
+      Every one crafted by <b>Indrajeet&nbsp;Yadav</b>.
     </p>
 
     <div class="search-wrap" id="searchWrap">
       <svg class="search-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <input id="search" type="search" placeholder="Search 4,408 prompts — “blog outline”, “cold email”, “midjourney”…" autocomplete="off" spellcheck="false" aria-label="Search prompts">
+      <input id="search" type="search" placeholder="Search prompts — “cold email”, “youtube script”, “midjourney”…" autocomplete="off" spellcheck="false" aria-label="Search prompts">
       <button class="clear-btn" id="clearSearch" aria-label="Clear search" hidden>✕</button>
     </div>
 
     <div class="hero-stats" id="heroStats">
-      <span><b id="statTotal">4,408</b> prompts</span>
-      <span class="dot">·</span>
-      <span><b>8</b> shelves</span>
-      <span class="dot">·</span>
-      <span><b>46</b> topics</span>
-      <span class="dot">·</span>
-      <span>one-click copy</span>
+      <span><b id="statTotal">450+</b> prompts</span><span class="dot">·</span>
+      <span><b id="statShelves">4</b> shelves</span><span class="dot">·</span>
+      <span><b id="statTopics">29</b> topics</span><span class="dot">·</span>
+      <button class="surprise" id="surprise">🎲 Surprise me</button>
     </div>
+  </section>
+
+  <!-- ░░ TRENDING STRIP ░░ -->
+  <section class="trending" id="trending" hidden aria-label="Trending prompts">
+    <div class="sec-head">
+      <h2>🔥 Trending now</h2>
+      <button class="see-all" id="seeViral">See all viral prompts →</button>
+    </div>
+    <div class="trend-rail" id="trendRail"><!-- featured viral cards --></div>
+  </section>
+
+  <!-- ░░ COLLECTIONS ░░ -->
+  <section class="collections" aria-label="Featured collections">
+    <div class="sec-head"><h2>Featured collections</h2><span class="sec-sub">one-tap shortcuts to the good stuff</span></div>
+    <div class="coll-row" id="collRow"><!-- collection chips --></div>
   </section>
 
   <!-- ░░ GROUP SHELVES ░░ -->
   <section class="groups-section" id="groups" aria-label="Prompt shelves">
-    <div class="chip-row" id="groupRow"><!-- group chips injected --></div>
-    <div class="chip-row sub" id="catRow" hidden><!-- category chips injected --></div>
+    <div class="chip-row" id="groupRow"></div>
+    <div class="chip-row sub" id="catRow" hidden></div>
   </section>
 
-  <!-- ░░ RESULTS TOOLBAR ░░ -->
+  <!-- ░░ TOOLBAR ░░ -->
   <section class="toolbar">
     <div class="result-count" id="resultCount">Loading the vault…</div>
-    <label class="sort-wrap">
-      <span>Sort</span>
-      <select id="sort" aria-label="Sort prompts">
-        <option value="default">Featured order</option>
-        <option value="az">Title A → Z</option>
-        <option value="short">Shortest first</option>
-        <option value="long">Longest first</option>
-      </select>
-    </label>
+    <div class="tool-right">
+      <button class="saved-toggle" id="savedToggle" aria-pressed="false">★ Saved</button>
+      <label class="sort-wrap"><span>Sort</span>
+        <select id="sort" aria-label="Sort prompts">
+          <option value="default">Featured order</option>
+          <option value="az">Title A → Z</option>
+          <option value="short">Shortest first</option>
+          <option value="long">Longest first</option>
+        </select>
+      </label>
+    </div>
   </section>
 
-  <!-- ░░ RESULTS GRID ░░ -->
-  <section class="grid" id="grid" aria-live="polite"><!-- cards --></section>
-
-  <div class="load-more-wrap">
-    <button class="load-more" id="loadMore" hidden>Load more prompts</button>
-  </div>
+  <section class="grid" id="grid" aria-live="polite"></section>
+  <div class="load-more-wrap"><button class="load-more" id="loadMore" hidden>Load more prompts</button></div>
 
   <div class="empty" id="empty" hidden>
     <div class="empty-mark">🗝️</div>
-    <h3>No prompts match that.</h3>
+    <h3 id="emptyTitle">No prompts match that.</h3>
     <p>Try a broader word, or <button class="link-btn" id="resetAll">reset all filters</button>.</p>
   </div>
+
+  <!-- ░░ HOW TO USE ░░ -->
+  <section class="howto" aria-label="How to use any prompt">
+    <div class="sec-head"><h2>How to use any prompt</h2></div>
+    <ol class="howto-steps">
+      <li><span class="step-n">1</span><div><b>Find &amp; copy.</b> Search or browse a shelf, then hit <b>Copy</b> on any prompt.</div></li>
+      <li><span class="step-n">2</span><div><b>Fill the blanks.</b> Replace the highlighted <code>[VARIABLES]</code> (like <code>[TOPIC]</code>) with your details.</div></li>
+      <li><span class="step-n">3</span><div><b>Paste &amp; run.</b> Drop it into ChatGPT, Claude or Gemini. Tweak the reply by asking for changes.</div></li>
+    </ol>
+  </section>
+
+  <!-- ░░ FAQ ░░ -->
+  <section class="faq" aria-label="Frequently asked questions">
+    <div class="sec-head"><h2>Quick answers</h2></div>
+    <div class="faq-grid">
+      <details><summary>Is it really free?</summary><p>Yes — every premium prompt, free to copy and use. No account, no paywall, no tracking.</p></details>
+      <details><summary>Which AI tools work?</summary><p>All of them. Plain-text prompts work in ChatGPT, Claude, Gemini, Copilot &amp; Grok. Image prompts suit Midjourney, DALL·E &amp; Stable Diffusion.</p></details>
+      <details><summary>Do I need to sign up?</summary><p>No. Open, search, copy. It's a single static page that even works offline.</p></details>
+      <details><summary>Can I use them for work?</summary><p>Yes — for clients, content, and products. Just swap the [VARIABLES] for your details.</p></details>
+    </div>
+  </section>
 </main>
 
 <footer class="site-foot">
@@ -103,20 +176,20 @@
       <span class="brand-mark" aria-hidden="true">⌘</span>
       <div>
         <p class="foot-name">The Prompt Vault</p>
-        <p class="foot-by">Curated &amp; published by <b>Indrajeet Yadav</b></p>
+        <span class="sig foot-sig">Indrajeet Yadav</span>
       </div>
     </div>
     <p class="foot-note">
-      Free for everyone, forever — no account, no paywall, no tracking.
-      Prompts are drawn from the open <b>AIPRM community library (Oct 2023)</b>;
-      each prompt credits its original community author. Collected, cleaned and
-      re-organised by Indrajeet Yadav so anyone can find what they need fast.
+      Free for everyone, forever — no account, no paywall, no tracking. A hand-built
+      collection of premium AI prompts — <b>viral, AI-image, agentic &amp; pro mega-prompts</b> —
+      every one written and refined by <b>Indrajeet Yadav</b> so the maximum number of
+      people can get exceptional results from AI.
     </p>
   </div>
-  <p class="foot-fine">© <span id="year"></span> Indrajeet Yadav · Built to be shared.</p>
+  <p class="foot-fine">© <span id="year"></span> Indrajeet Yadav · The Prompt Vault · Built to be shared.</p>
 </footer>
 
-<!-- ░░ PROMPT DETAIL MODAL ░░ -->
+<!-- ░░ MODAL ░░ -->
 <div class="modal-scrim" id="modal" hidden>
   <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mTitle">
     <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
@@ -126,19 +199,18 @@
       <p class="m-meta" id="mMeta"></p>
     </div>
     <div class="m-vars" id="mVars" hidden></div>
-    <div class="m-prompt-wrap">
-      <pre class="m-prompt" id="mPrompt"></pre>
-    </div>
+    <div class="m-prompt-wrap"><pre class="m-prompt" id="mPrompt"></pre></div>
     <div class="m-actions">
       <button class="copy-btn big" id="mCopy"><span class="ci">⧉</span> <span class="ct">Copy prompt</span></button>
-      <a class="open-ai" id="mOpenAI" target="_blank" rel="noopener">Open ChatGPT ↗</a>
+      <button class="save-btn" id="mSave" aria-pressed="false">☆ Save</button>
+      <a class="open-ai" id="mOpenAI" href="https://chat.openai.com/" target="_blank" rel="noopener">Open ChatGPT ↗</a>
+      <span class="sig modal-sig" title="Prompt by Indrajeet Yadav">Indrajeet Yadav</span>
     </div>
     <p class="m-hint" id="mHint" hidden></p>
   </div>
 </div>
 
 <div class="toast" id="toast" hidden>Copied to clipboard ✓</div>
-
 <script src="app.js"></script>
 </body>
 </html>

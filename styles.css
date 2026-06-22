@@ -449,3 +449,138 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px)
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: .01ms !important; transition-duration: .05ms !important; scroll-behavior: auto; }
 }
+
+/* ============================================================
+   v2 ADDITIONS — viral, trending, collections, favorites, FAQ
+   ============================================================ */
+
+/* eyebrow pulse */
+.eyebrow .pulse { color: #ff8a6e; }
+html[data-theme="light"] .eyebrow .pulse { color: #d35a3a; }
+.eyebrow .pulse::before { content: "● "; animation: blink 1.6s ease infinite; }
+@keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+
+/* surprise button in hero stats */
+.surprise {
+  font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer;
+  color: var(--ink); background: var(--bg-2); border: 1px solid var(--line);
+  border-radius: 999px; padding: 6px 14px; transition: all .15s;
+}
+.surprise:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
+
+/* section heads (shared) */
+.sec-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin: 8px 0 16px; }
+.sec-head h2 { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: clamp(22px,3.4vw,30px); letter-spacing: -0.015em; margin: 0; }
+.sec-sub { font-size: 13.5px; color: var(--ink-faint); }
+.see-all { margin-left: auto; font: inherit; font-size: 13.5px; font-weight: 600; color: var(--accent); background: none; border: none; cursor: pointer; }
+.see-all:hover { text-decoration: underline; }
+
+/* ── TRENDING RAIL ── */
+.trending { padding: 26px 0 6px; }
+.trend-rail {
+  display: grid; grid-auto-flow: column; grid-auto-columns: minmax(280px, 320px);
+  gap: 14px; overflow-x: auto; padding: 4px 4px 18px; scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+}
+.trend-rail::-webkit-scrollbar { height: 8px; }
+.trend-rail::-webkit-scrollbar-thumb { background: var(--line); border-radius: 9px; }
+.trend-card {
+  scroll-snap-align: start; display: flex; flex-direction: column;
+  background: linear-gradient(165deg, color-mix(in srgb, #ff6b4a 12%, var(--bg-card)), var(--bg-card) 60%);
+  border: 1px solid color-mix(in srgb, #ff6b4a 28%, var(--line));
+  border-radius: var(--radius); padding: 18px;
+}
+.trend-tag { font-family: "JetBrains Mono", monospace; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; color: #ff8a6e; margin-bottom: 8px; }
+html[data-theme="light"] .trend-tag { color: #c2502f; }
+.trend-card h3 { font-family: "Fraunces", serif; font-weight: 600; font-size: 17px; line-height: 1.2; margin: 0 0 7px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.trend-card p { font-size: 13px; color: var(--ink-dim); margin: 0 0 14px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.trend-foot { display: flex; gap: 8px; margin-top: auto; }
+.copy-btn.sm, .view-btn.sm { padding: 6px 12px; font-size: 12.5px; }
+
+/* ── COLLECTIONS ── */
+.collections { padding: 22px 0 6px; }
+.coll-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.coll-chip {
+  display: inline-flex; align-items: center; gap: 9px;
+  font-family: inherit; font-size: 14px; font-weight: 600; color: var(--ink);
+  background: var(--bg-2); border: 1px solid var(--line); border-radius: 12px;
+  padding: 11px 16px; cursor: pointer; transition: all .16s;
+}
+.coll-chip:hover { transform: translateY(-2px); border-color: var(--accent); box-shadow: var(--shadow); }
+.coll-ico { font-size: 17px; }
+
+/* featured (viral) group chip */
+.chip.featured { box-shadow: 0 0 0 1px color-mix(in srgb, #ff6b4a 40%, transparent) inset; }
+.chip.featured:not(.active) { color: var(--ink); }
+
+/* ── TOOLBAR right ── */
+.tool-right { display: flex; align-items: center; gap: 12px; }
+.saved-toggle {
+  font: inherit; font-size: 13px; font-weight: 600; color: var(--ink-dim);
+  background: var(--bg-2); border: 1px solid var(--line); border-radius: 9px;
+  padding: 8px 13px; cursor: pointer; transition: all .15s;
+}
+.saved-toggle:hover { color: var(--ink); border-color: var(--accent); }
+.saved-toggle.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+
+/* ── CARD: favorite + NEW tag ── */
+.card { padding-top: 20px; }
+.card .fav {
+  position: absolute; top: 12px; right: 12px; z-index: 2;
+  width: 30px; height: 30px; border-radius: 8px; cursor: pointer;
+  background: transparent; border: 1px solid transparent; color: var(--ink-faint);
+  font-size: 16px; line-height: 1; transition: all .15s;
+}
+.card .fav:hover { background: var(--bg-3); color: var(--accent); }
+.card .fav.on { color: var(--accent); }
+.card-top { padding-right: 30px; }
+.new-tag {
+  font-family: "JetBrains Mono", monospace; font-size: 9.5px; font-weight: 700; letter-spacing: 0.08em;
+  color: #fff; background: #ff6b4a; padding: 2px 7px; border-radius: 999px;
+}
+.card.viral { background: linear-gradient(168deg, color-mix(in srgb, #ff6b4a 7%, var(--bg-card)), var(--bg-card) 55%); }
+
+/* save button in modal */
+.save-btn {
+  font: inherit; font-size: 13.5px; font-weight: 600; color: var(--ink-dim);
+  background: transparent; border: 1px solid var(--line); border-radius: 10px;
+  padding: 13px 18px; cursor: pointer; transition: all .15s;
+}
+.save-btn:hover { color: var(--ink); border-color: var(--accent); }
+.save-btn.on { color: var(--accent); border-color: var(--accent); }
+
+/* ── HOW TO ── */
+.howto { padding: 40px 0 10px; border-top: 1px solid var(--line-soft); margin-top: 30px; }
+.howto-steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.howto-steps li { display: flex; gap: 14px; background: var(--bg-2); border: 1px solid var(--line-soft); border-radius: 14px; padding: 18px; }
+.step-n { flex: none; width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; font-family: "Fraunces", serif; font-weight: 600; background: var(--accent); color: var(--accent-ink); }
+.howto-steps div { font-size: 14px; color: var(--ink-dim); line-height: 1.5; }
+.howto-steps b { color: var(--ink); }
+.howto-steps code, .faq code { font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--accent-2); background: color-mix(in srgb, var(--accent-2) 12%, transparent); padding: 1px 5px; border-radius: 5px; }
+
+/* ── FAQ ── */
+.faq { padding: 36px 0 20px; }
+.faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.faq details { background: var(--bg-2); border: 1px solid var(--line-soft); border-radius: 12px; padding: 4px 16px; }
+.faq summary { font-weight: 600; font-size: 15px; cursor: pointer; padding: 12px 0; list-style: none; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; float: right; color: var(--ink-faint); font-weight: 400; }
+.faq details[open] summary::after { content: "–"; }
+.faq details p { font-size: 13.5px; color: var(--ink-dim); margin: 0 0 14px; line-height: 1.55; }
+
+@media (max-width: 760px) {
+  .howto-steps { grid-template-columns: 1fr; }
+  .faq-grid { grid-template-columns: 1fr; }
+}
+
+/* ── CALLIGRAPHY SIGNATURE (single consistent style) ── */
+.sig { font-family: "Great Vibes", "Snell Roundhand", cursive; color: var(--accent); line-height: 1; letter-spacing: .2px; white-space: nowrap; }
+.brand-sig { font-size: 19px; margin-top: 2px; }
+.card-foot { justify-content: space-between; }
+.card-sig { font-size: 18px; opacity: .9; }
+.card-len { margin-left: auto; }
+.trend-sig { display: block; font-size: 17px; margin: -2px 0 10px; opacity: .9; }
+.modal-sig { font-size: 22px; margin-left: auto; padding-right: 2px; }
+.foot-sig { font-size: 30px; display: inline-block; margin-top: 2px;
+  text-shadow: 0 1px 0 color-mix(in srgb, var(--accent) 25%, transparent); }
+@media (max-width: 640px) { .modal-sig { display: none; } }

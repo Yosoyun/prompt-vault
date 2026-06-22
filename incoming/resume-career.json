@@ -1,0 +1,107 @@
+[
+  {
+    "Title": "ATS Resume Tailor: Beat the Robot Screen",
+    "Teaser": "Rewrites your resume to mirror a specific job description's keywords so it passes ATS filters and lands on the recruiter's desk.",
+    "PromptHint": "Paste the full [JOB DESCRIPTION] and your [CURRENT RESUME]; name the [TARGET ROLE].",
+    "Category": "Resume & Career",
+    "Prompt": "You are an ATS optimization specialist who has reverse-engineered Workday, Greenhouse and Taleo. I want to tailor my resume for [TARGET ROLE].\n\nJOB DESCRIPTION:\n[JOB DESCRIPTION]\n\nMY CURRENT RESUME:\n[CURRENT RESUME]\n\nDo this step by step:\n1. Extract the top 15 hard skills, tools and keywords from the JD, ranked by how often/prominently they appear.\n2. Build a gap table: | Keyword | In my resume? (Yes/No/Weak) | Where to add it honestly |.\n3. Rewrite my Summary and 6-8 bullet points to weave in matching keywords using the EXACT phrasing the JD uses — never invent experience I don't have.\n4. Flag any keyword I genuinely lack so I can decide whether to upskill or omit.\n\nOutput: (a) the gap table, (b) the rewritten sections, (c) a one-line ATS match estimate (Low/Medium/High) with the 3 biggest fixes."
+  },
+  {
+    "Title": "Weak Bullet -> Quantified Achievement Rewriter",
+    "Teaser": "Turns vague duty statements like 'managed social media' into recruiter-stopping, metric-driven achievements using the X-Y-Z formula.",
+    "PromptHint": "Paste 3-10 [RESUME BULLETS]; add your [ROLE] and any real numbers you remember.",
+    "Category": "Resume & Career",
+    "Prompt": "Act as a top tech-recruiter and resume coach. Rewrite my weak resume bullets into quantified, results-first achievements.\n\nMY BULLETS:\n[RESUME BULLETS]\n\nMY ROLE: [ROLE]\n\nRules:\n- Use the Google X-Y-Z formula: 'Accomplished [X] as measured by [Y] by doing [Z]'.\n- Start every bullet with a strong, varied action verb (no 'responsible for', no 'helped').\n- Add metrics (%, $, time, scale). Where I gave no number, insert a [QUANTIFY: ___] placeholder so I fill in the real figure — never fabricate stats.\n- Cut filler, keep each bullet to one line where possible.\n\nOutput a table: | Original | Rewritten | What got stronger |. End with the 3 metrics I should track down to make this resume undeniable."
+  },
+  {
+    "Title": "Recruiter Roast: Brutally Honest Resume Teardown",
+    "Teaser": "A no-filter hiring-manager rips your resume apart in 30 seconds, then tells you the exact fixes that get you interviews.",
+    "PromptHint": "Paste your full [RESUME] and the [TARGET ROLE] you're chasing.",
+    "Category": "Resume & Career",
+    "Prompt": "You are a brutally honest hiring manager who has rejected 10,000 resumes for [TARGET ROLE]. No sugarcoating, no participation trophies. Roast my resume like you only gave it the real 7-second scan.\n\nMY RESUME:\n[RESUME]\n\nDeliver:\n1. THE 7-SECOND VERDICT — what you actually noticed first, and would you keep reading? (Yes/No and why).\n2. THE BRUTAL TRUTHS — 5 specific things that make you want to hit reject (quote the exact lines).\n3. RED FLAGS — clichés, fluff, vague claims, and anything that screams 'generic AI resume'.\n4. THE COMEBACK — the 5 highest-leverage fixes, ranked, that would move me from 'no' to 'interview'.\n\nBe savage but useful. Every burn must come with the fix."
+  },
+  {
+    "Title": "Cover Letter That Doesn't Sound Like AI",
+    "Teaser": "Writes a sharp, human cover letter from your resume + the job post, with a genuine 'why this company' hook that beats generic templates.",
+    "PromptHint": "Paste [JOB POST], [RESUME], and one [GENUINE REASON] you want this company.",
+    "Category": "Resume & Career",
+    "Prompt": "You are a career writer whose cover letters get 40%+ reply rates. Write a cover letter for the role below that sounds like a real, sharp human — not ChatGPT.\n\nJOB POST:\n[JOB POST]\nMY RESUME:\n[RESUME]\nMY GENUINE REASON FOR THIS COMPANY:\n[GENUINE REASON]\n\nConstraints:\n- Max 250 words, 3-4 tight paragraphs.\n- Open with a specific hook tied to the company/role — NEVER 'I am writing to apply for'.\n- Prove fit with 2 concrete achievements from my resume that map to their top needs.\n- Plain, confident voice. Banned: 'passionate', 'team player', 'fast-paced', 'leverage', 'synergy', em-dash clichés, and hedging.\n- End with a clear, low-pressure call to action.\n\nThen list the 3 lines a reader is most likely to remember, so I can sharpen them."
+  },
+  {
+    "Title": "Mock Interview Simulator: One Question at a Time",
+    "Teaser": "Runs a realistic role-specific interview that asks one question at a time, waits for your answer, then critiques it before moving on.",
+    "PromptHint": "Set [TARGET ROLE], [SENIORITY], and paste the [JOB DESCRIPTION] for tailored questions.",
+    "Category": "Resume & Career",
+    "Prompt": "You are a senior hiring manager interviewing me for [TARGET ROLE] at [SENIORITY] level. Run a realistic mock interview.\n\nJOB DESCRIPTION (for context):\n[JOB DESCRIPTION]\n\nRules:\n- Ask ONE question at a time, then STOP and wait for my answer. Do not answer for me.\n- Mix behavioral, technical/role-specific, and one curveball question.\n- After each of my answers, give: a 1-10 score, what landed, what was weak, and a sharper way to say it.\n- Escalate difficulty based on how I do.\n- After 6 questions, give a final verdict: would you advance me? My 3 strengths, my 2 biggest gaps, and a 1-week prep plan.\n\nStart now with question 1. Wait for me before continuing."
+  },
+  {
+    "Title": "STAR Story Builder for Behavioral Interviews",
+    "Teaser": "Turns your messy career anecdote into a crisp, compelling STAR answer with quantified impact, ready to deliver in 90 seconds.",
+    "PromptHint": "Describe the [SITUATION] and the [INTERVIEW QUESTION] it should answer (e.g. 'conflict with a teammate').",
+    "Category": "Resume & Career",
+    "Prompt": "You are an interview coach specializing in behavioral storytelling. Help me build a STAR answer for this question: [INTERVIEW QUESTION].\n\nHere's my raw story / situation:\n[SITUATION]\n\nDo this:\n1. Interview me briefly — ask up to 3 clarifying questions if you're missing the conflict, my specific actions, or the measurable result. Otherwise proceed.\n2. Structure my answer into Situation, Task, Action, Result — Action should be the longest part and use 'I' (not 'we').\n3. Add a quantified result; if I gave none, insert [QUANTIFY: ___].\n4. Trim it to a ~90-second spoken answer.\n\nOutput: the polished STAR story, a 4-bullet cheat-sheet version to memorize, and one follow-up question the interviewer will likely ask next."
+  },
+  {
+    "Title": "Salary Negotiation Script + Counter-Offer Calculator",
+    "Teaser": "Builds a calm, high-leverage negotiation script and counter-offer range so you stop leaving money on the table.",
+    "PromptHint": "Give the [OFFER DETAILS], your [TARGET NUMBER], and any [COMPETING OFFER] or leverage.",
+    "Category": "Resume & Career",
+    "Prompt": "You are a compensation negotiation coach (ex-recruiter). Help me counter this offer professionally. This is general guidance, not financial or legal advice.\n\nOFFER DETAILS (role, base, bonus, equity, location):\n[OFFER DETAILS]\nMY TARGET NUMBER / PRIORITIES:\n[TARGET NUMBER]\nMY LEVERAGE (competing offers, scarce skills, etc.):\n[COMPETING OFFER]\n\nDeliver:\n1. A realistic counter RANGE (anchor, target, walk-away) with a one-line rationale each.\n2. A word-for-word email script to send the counter — confident, warm, non-apologetic.\n3. A live-call script: what to say, plus responses to 'that's the max', 'is this a yes?', and an exploding deadline.\n4. 3 non-salary levers to trade for (sign-on, equity, start date, remote, title).\n\nKeep it collaborative, never adversarial. Flag where I should get the offer in writing."
+  },
+  {
+    "Title": "LinkedIn Profile-to-Offer Makeover",
+    "Teaser": "Rewrites your headline, About section, and top skills so recruiters actually find you and message you for the roles you want.",
+    "PromptHint": "Paste your current [HEADLINE] + [ABOUT SECTION] and the [TARGET ROLE / KEYWORDS] you want to rank for.",
+    "Category": "Resume & Career",
+    "Prompt": "You are a LinkedIn strategist who turns profiles into inbound-recruiter magnets. Optimize my profile to attract [TARGET ROLE] opportunities.\n\nMY CURRENT HEADLINE: [HEADLINE]\nMY CURRENT ABOUT: [ABOUT SECTION]\nKEYWORDS I WANT TO RANK FOR: [TARGET ROLE / KEYWORDS]\n\nProduce:\n1. HEADLINE — 3 options under 220 chars, each packing my role + value + searchable keywords (not just my job title).\n2. ABOUT — a rewritten first-person summary: a 2-line hook (visible before 'see more'), proof with metrics, and a clear CTA. Keyword-rich but human.\n3. TOP SKILLS — the 10 skills to pin for recruiter search, ordered by demand.\n4. ACTIVITY — 3 post angles this week that signal expertise to my target employers.\n\nNo buzzword soup. Every line must earn its place."
+  },
+  {
+    "Title": "Career Pivot 90-Day Roadmap (GROW Model)",
+    "Teaser": "Acts as a career coach to map a realistic transition into a new field with a week-by-week 90-day action plan.",
+    "PromptHint": "Name your [CURRENT ROLE], your [TARGET ROLE/FIELD], and hours/week you can commit.",
+    "Category": "Resume & Career",
+    "Prompt": "Act as a career coach using the GROW model (Goal, Reality, Options, Will). I want to pivot from [CURRENT ROLE] into [TARGET ROLE/FIELD]. This is coaching, not guaranteed-outcome advice.\n\nFirst, ask me clarifying questions one at a time (transferable skills, constraints, budget, timeline, weekly hours) until you're confident you can build a real plan. Then deliver:\n1. GOAL — a specific, measurable 90-day outcome.\n2. REALITY — my honest starting point: 3 transferable strengths and 3 real gaps.\n3. OPTIONS — 3 distinct pivot paths (e.g. internal move, upskill-then-apply, freelance bridge) with pros/cons.\n4. WILL — a week-by-week 90-day plan: skills to learn, portfolio proof to build, and 5 people to talk to.\n\nEnd with the single highest-impact action to do this week."
+  },
+  {
+    "Title": "Job Description Decoder: Should You Even Apply?",
+    "Teaser": "Translates a vague or bloated job post into plain English, flags red flags, and tells you your honest fit before you waste an application.",
+    "PromptHint": "Paste the full [JOB DESCRIPTION] and a short summary of [MY BACKGROUND].",
+    "Category": "Resume & Career",
+    "Prompt": "You are a no-nonsense career strategist. Decode this job posting for me and tell me if it's worth my time.\n\nJOB DESCRIPTION:\n[JOB DESCRIPTION]\nMY BACKGROUND (quick summary):\n[MY BACKGROUND]\n\nGive me:\n1. PLAIN ENGLISH — what this job actually is day-to-day, minus the corporate jargon.\n2. MUST-HAVES vs NICE-TO-HAVES — separate the real requirements from the wish-list (most 'requirements' aren't).\n3. MY FIT — an honest % and the 3 strengths to emphasize + 2 gaps to address or spin.\n4. RED FLAGS — vague scope, 'wear many hats', unrealistic stack, or comp/title mismatch.\n5. THE CALL — Apply / Apply with tweaks / Skip, in one line, with why.\n\nBe direct. I'd rather hear 'skip it' than waste an afternoon."
+  },
+  {
+    "Title": "Networking & Cold Outreach Message Generator",
+    "Teaser": "Writes short, non-cringe LinkedIn DMs and referral asks that actually get replies from recruiters, hiring managers, and alumni.",
+    "PromptHint": "Name the [PERSON/ROLE] you're messaging, your [GOAL] (referral, info chat), and one [CONNECTION POINT].",
+    "Category": "Resume & Career",
+    "Prompt": "You are an outreach copywriter who gets 30%+ reply rates on cold professional messages. Write outreach for me.\n\nWHO I'M MESSAGING: [PERSON/ROLE]\nMY GOAL: [GOAL]\nOUR CONNECTION POINT (alumni, mutual, their post, same company): [CONNECTION POINT]\n\nWrite 3 message variants, each:\n- Under 75 words, mobile-readable, zero corporate stiffness.\n- Personalized opener using the connection point — never 'I hope this finds you well'.\n- One specific, low-friction ask (a 15-min chat or a single question), not 'pick your brain' or a job demand.\n- A warm, easy out so they don't feel pressured.\n\nThen add: the best subject line/first line for each, and a polite 1-line follow-up to send if they don't reply in 5 days."
+  },
+  {
+    "Title": "Promotion Case Builder: Make Your Manager Say Yes",
+    "Teaser": "Builds an evidence-backed promotion pitch with a brag document and the exact talking points for your review conversation.",
+    "PromptHint": "State your [CURRENT LEVEL], the [TARGET LEVEL], and paste your recent [WINS / IMPACT].",
+    "Category": "Resume & Career",
+    "Prompt": "You are an executive career coach who helps people get promoted. Build my case to move from [CURRENT LEVEL] to [TARGET LEVEL].\n\nMY RECENT WINS / IMPACT:\n[WINS / IMPACT]\n\nFirst ask me up to 3 clarifying questions (scope changes, who I influence, business impact) if needed. Then deliver:\n1. THE NARRATIVE — a 3-sentence story: I'm already operating at the next level, here's the proof.\n2. BRAG DOC — my wins reorganized under the competencies of the target level, each with quantified impact ([QUANTIFY: ___] where I lack a number).\n3. THE GAP — 1-2 areas I haven't yet demonstrated, plus how to close them fast.\n4. THE PITCH — talking points + the exact opening line for the conversation with my manager.\n\nFrame it around business value to them, not fairness to me."
+  },
+  {
+    "Title": "Interview Thank-You Note That Keeps You in the Lead",
+    "Teaser": "Drafts a same-day follow-up email that re-sells your fit, answers the question you fumbled, and nudges the decision your way.",
+    "PromptHint": "Name the [INTERVIEWER + ROLE], paste your [INTERVIEW NOTES], and add one [MOMENT TO FIX OR REINFORCE].",
+    "Category": "Resume & Career",
+    "Prompt": "You are a hiring manager who reads every post-interview thank-you note and uses it as a tiebreaker. Write a follow-up email that moves me up the shortlist.\n\nINTERVIEWER + ROLE: [INTERVIEWER + ROLE]\nWHAT WE DISCUSSED (topics, their concerns, things that clicked): [INTERVIEW NOTES]\nONE MOMENT TO FIX OR REINFORCE (a question I fumbled, or a strength I undersold): [MOMENT TO FIX OR REINFORCE]\n\nRules:\n- Under 150 words, warm and specific — not a template. Send-ready, no placeholders except a real detail I must fill.\n- Reference one concrete thing from the conversation in the first two lines so it's obviously not mass-sent.\n- Address the fumbled moment in ONE clean sentence that reframes it as a strength — no groveling, no over-explaining.\n- Reinforce the single most relevant proof point that maps to their top concern.\n- Close with quiet confidence and a clear next-step line.\n\nOutput: (1) the email with a subject line, (2) a 1-line plain-text variant for LinkedIn, (3) a note on the best time to send it."
+  },
+  {
+    "Title": "AI Career Mirror: What's Holding You Back",
+    "Teaser": "Analyzes your career story to surface the hidden pattern, blind spot, and one uncomfortable truth that's quietly capping your growth.",
+    "PromptHint": "Describe your [CAREER STORY SO FAR] — roles, what you loved/hated, and where you feel stuck.",
+    "Category": "Resume & Career",
+    "Prompt": "You are a perceptive career psychologist who notices what people can't see about themselves. Read my career story and reflect it back honestly.\n\nMY CAREER STORY SO FAR:\n[CAREER STORY SO FAR]\n\nDeliver:\n1. THE PATTERN — the recurring theme in my choices, jobs, and frustrations that I probably haven't named.\n2. MY REAL STRENGTH — the thing I undervalue but that's actually my edge.\n3. THE BLIND SPOT — one honest thing that's quietly holding me back (be kind but direct, not flattering).\n4. THE FORK — where my current path likely leads in 5 years vs the path I keep avoiding.\n5. ONE QUESTION — the single question I should sit with this week.\n\nBe specific to MY story, not generic. This is a reflection, not professional therapy."
+  },
+  {
+    "Title": "30-60-90 Day New-Job Plan to Crush Onboarding",
+    "Teaser": "Generates a structured 30-60-90 day plan that impresses in final interviews and makes you a standout in your first three months.",
+    "PromptHint": "Give the [ROLE TITLE], the [TEAM/COMPANY CONTEXT], and your top [GOALS or KPIs] if known.",
+    "Category": "Resume & Career",
+    "Prompt": "You are an onboarding strategist who helps new hires build instant credibility. Create a 30-60-90 day plan for my new role.\n\nROLE TITLE: [ROLE TITLE]\nTEAM / COMPANY CONTEXT: [TEAM/COMPANY CONTEXT]\nKNOWN GOALS OR KPIs: [GOALS]\n\nBuild three phases:\n- DAYS 1-30 (LEARN): people to meet, systems to understand, questions to ask, and one early quick win.\n- DAYS 31-60 (CONTRIBUTE): owned tasks, a small project to lead, relationships to deepen.\n- DAYS 61-90 (OWN): measurable results to deliver, a process to improve, and how to make my impact visible.\n\nFor each phase give 4-5 concrete actions and 1 success metric. Add a short 'first-week checklist' and 3 smart questions to ask my manager in week one. Keep it presentable as a slide if I'm using it in a final interview."
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "Title": "Brain Dump to a 3-Task Day You Can Start in 5 Minutes",
+    "Teaser": "Turns a messy brain-dump of everything on your plate into a ranked, deadline-stamped action plan you can start in 5 minutes.",
+    "PromptHint": "Paste everything swirling in your head into [BRAIN DUMP]. Don't organize it; just dump.",
+    "Category": "Productivity & Systems",
+    "Prompt": "You are a no-nonsense executive chief of staff who protects my attention like it's the company's last dollar. Here is my unfiltered brain-dump of tasks, worries, and ideas:\n<dump>\n[BRAIN DUMP]\n</dump>\nThink before you answer: silently separate real actions from noise and worries.\nThen do this: (1) Extract every distinct actionable item. (2) Sort each into an Eisenhower quadrant (Do Now / Schedule / Delegate / Delete) with a 4-6 word reason. (3) Output a 'Today' block of the top 3 highest-leverage actions, each phrased as a concrete next physical step with a suggested time block. (4) Flag anything that is a vague worry, not a task, and reframe it as a single decidable question.\nOUTPUT FORMAT:\n- Table: Item | Quadrant | Next step | When\n- Then a 'TODAY (top 3)' block\n- Then 'WORRIES -> QUESTIONS' as bullets\nBe ruthless about cutting busywork. Do not invent tasks I didn't imply."
+  },
+  {
+    "Title": "Design a Weekly Operating Rhythm (Plan + Review Loop)",
+    "Teaser": "Builds one repeatable weekly system: a 20-minute Sunday plan tied to your goals, energy-aware weekday themes, and a Friday review that feeds straight into next week.",
+    "PromptHint": "List your 2-3 big goals in [GOALS] and your fixed commitments in [SCHEDULE].",
+    "Category": "Productivity & Systems",
+    "Prompt": "Act as a productivity systems designer who builds rhythms people still run six months later. My top goals this quarter: [GOALS]. My fixed weekly commitments (work hours, recurring meetings, family): [SCHEDULE].\nDesign one closed-loop weekly operating rhythm with two halves that connect:\nPLAN (Sunday, 20 min): (1) A 5-step ritual with the exact questions to answer. (2) A focus theme for each weekday that protects deep work for my goals. (3) The three 'big rocks' to schedule first, drawn from my goals. (4) Energy-aware guidance on what to do in high vs low focus windows.\nREVIEW (Friday, 10 min): (5) A 4-question review (wins, misses + honest root cause, alignment score 1-10, one lesson) whose output becomes the inputs for next Sunday's plan.\nOUTPUT FORMAT: a clean copy-paste template (clear headings, fill-in blanks) ready to drop into Notion or a doc. Keep it realistic and sustainable, not aspirational fantasy. End with one sentence on the single habit that makes this rhythm survive a busy week."
+  },
+  {
+    "Title": "Meeting Transcript to Decisions, Owners and Next Actions",
+    "Teaser": "Converts any messy meeting transcript into an executive summary plus a decisions log and an action table with owners and deadlines.",
+    "PromptHint": "Paste the raw transcript or notes into [TRANSCRIPT]. Name the meeting date in [DATE].",
+    "Category": "Productivity & Systems",
+    "Prompt": "You are an expert meeting facilitator and note-taker. Meeting date: [DATE]. Here is the raw transcript/notes:\n<transcript>\n[TRANSCRIPT]\n</transcript>\nProduce, in this exact order: (1) Executive Summary in 3 bullets a busy exec could read in 15 seconds. (2) Decisions Made - a numbered list, each with the rationale in one line. (3) Action Items - a table with columns: Action | Owner | Deadline | Priority (H/M/L). Infer owners and deadlines only where stated; mark 'UNASSIGNED' or 'TBD' where unclear rather than inventing. (4) Open Questions / Risks that still need an answer.\nRules: Do NOT include filler or chit-chat. If something is ambiguous, list it under Open Questions instead of guessing. Never fabricate a decision that wasn't actually reached."
+  },
+  {
+    "Title": "Turn a Fuzzy Ambition Into Quarterly OKRs That Hold Up",
+    "Teaser": "Turns a vague goal into 1 sharp Objective with 3-5 measurable Key Results, scored for quality and stripped of vanity metrics.",
+    "PromptHint": "Describe what you or your team want to achieve this quarter in [AMBITION].",
+    "Category": "Productivity & Systems",
+    "Prompt": "Act as an OKR coach who has rolled out OKRs at high-growth companies. My fuzzy ambition for the quarter: [AMBITION]. For my role/team: [CONTEXT].\nDo this: (1) Write ONE inspiring, qualitative Objective (no metrics in it). (2) Write 3-5 Key Results that are measurable, outcome-based (not task lists), and time-bound, each with a baseline and a target number. (3) Flag any KR that is actually a task or a vanity metric and rewrite it. (4) Suggest 2-3 weekly leading indicators I can check to know if I'm on track before quarter-end. (5) Score the final set 1-10 on ambition and measurability and say what would make it a 10.\nOUTPUT FORMAT: the Objective on its own line, then KRs as a table (KR | Baseline | Target | How measured), then leading indicators, then the score. Push me to be ambitious but honest; if my ambition is too vague to measure, say so and propose a sharper version."
+  },
+  {
+    "Title": "Kill Analysis Paralysis: A Decision in One Page",
+    "Teaser": "Runs your tough decision through a structured framework that exposes your real values, the downside risk, and a clear recommendation.",
+    "PromptHint": "State the decision you're stuck on in [DECISION] and any options in [OPTIONS].",
+    "Category": "Productivity & Systems",
+    "Prompt": "You are a neutral decision advisor trained in decision science. My decision: [DECISION]. Options I'm weighing: [OPTIONS]. This is general thinking support, not professional financial, legal, or medical advice.\nWalk me through this: (1) Propose the 3 values/criteria that should matter most here and ask me to confirm or edit them. (2) Build a weighted decision matrix scoring each option against those criteria. (3) Run a pre-mortem on the leading option: top 3 ways it could fail and an early warning sign for each. (4) Apply a reversibility test - is this a one-way or two-way door? (5) Give a clear recommendation with a confidence level and the single biggest assumption it rests on.\nOUTPUT FORMAT: numbered sections as above, with the matrix as a table (Option | each criterion | Weighted total). Be the advisor who tells me what I need to hear, not what I want to hear."
+  },
+  {
+    "Title": "Build Your Second Brain: PARA Setup That Won't Rot",
+    "Teaser": "Designs a complete second-brain setup (PARA folders, capture rules, weekly review) tailored to your tools and the way you actually work.",
+    "PromptHint": "Name your note app in [TOOL] and your main projects/roles in [PROJECTS].",
+    "Category": "Productivity & Systems",
+    "Prompt": "Act as a knowledge-management expert who has set up second-brain systems for busy professionals. My note-taking tool: [TOOL]. My current projects and areas of responsibility: [PROJECTS].\nDesign a complete second-brain system: (1) A PARA structure (Projects, Areas, Resources, Archive) populated with MY actual projects and areas. (2) A capture workflow - exactly where to put fleeting notes, articles, and ideas so nothing gets lost. (3) Three simple tagging/naming conventions that scale. (4) A 'progressive summarization' rule so notes stay useful months later. (5) A 15-minute weekly review checklist to keep it from rotting.\nOUTPUT FORMAT: a numbered setup guide plus a visual folder map (indented tree). Favor simple and sustainable over clever and complex; if my tool can't do something cleanly, suggest the closest native workaround."
+  },
+  {
+    "Title": "Audit My Calendar and Reclaim 5+ Hours This Week",
+    "Teaser": "Audits how you actually spend your week versus how you think you do, then names the leaks and gives you back hours.",
+    "PromptHint": "Paste a typical week's calendar or time log into [CALENDAR]. List your priorities in [PRIORITIES].",
+    "Category": "Productivity & Systems",
+    "Prompt": "You are a time-management analyst who finds hidden patterns people can't see in their own schedules. Here is a typical week of my calendar/time log:\n<calendar>\n[CALENDAR]\n</calendar>\nMy stated top priorities: [PRIORITIES].\nDo this: (1) Estimate hours spent per category (deep work, meetings, admin, reactive, personal). (2) Compare where my time goes vs where my priorities say it should go - name the biggest mismatch bluntly. (3) Identify my 3 worst time leaks (low-value recurring meetings, context-switching, etc.) and quantify roughly how many hours each costs. (4) Propose specific changes to reclaim 5+ hours next week, each phrased as a concrete action. (5) Suggest one experiment to protect deep work.\nOUTPUT FORMAT: a category table (Category | Est. hours | % of week), then 'BIGGEST MISMATCH', then 'TOP 3 LEAKS' with hour costs, then a 'RECLAIM PLAN' checklist totalling 5+ hours. Be honest even if it stings - the point is to actually change something."
+  },
+  {
+    "Title": "Annual Goal to a 90-Day Roadmap You Start Monday",
+    "Teaser": "Breaks a big yearly goal into a sequenced 90-day plan with monthly milestones, weekly focus, and the leading metric to track.",
+    "PromptHint": "State the one big goal in [GOAL] and your weekly hours available in [HOURS].",
+    "Category": "Productivity & Systems",
+    "Prompt": "Act as an execution coach who specializes in turning goals into plans people actually finish. My big goal: [GOAL]. Realistic hours I can commit per week: [HOURS]. My current starting point: [STARTING POINT].\nBuild a 90-day roadmap: (1) Work backward from the goal to define what 'done' looks like in measurable terms. (2) Set 3 monthly milestones, each a meaningful checkpoint. (3) For month 1, give a week-by-week focus with the single most important action each week. (4) Name the ONE leading metric I should track weekly. (5) List the top 3 obstacles likely to derail me and a pre-decided response for each.\nOUTPUT FORMAT: a 'Definition of Done' line, a milestone table (Month | Milestone | Success measure), a Month-1 week-by-week list, the leading metric, then an 'If X happens -> I will Y' obstacle table. Be specific enough that I know exactly what to do Monday morning; if my hours can't support the goal in 90 days, say so and right-size it."
+  },
+  {
+    "Title": "Prioritize a Bloated To-Do List With ICE Scoring",
+    "Teaser": "Scores a chaotic to-do list by Impact, Confidence and Ease so you stop doing everything and start doing the few that matter.",
+    "PromptHint": "Paste your full task list into [TASK LIST]. Add your current main goal in [GOAL].",
+    "Category": "Productivity & Systems",
+    "Prompt": "You are a prioritization expert. My current main goal: [GOAL]. Here is my full, overwhelming task list:\n<tasks>\n[TASK LIST]\n</tasks>\nScore every task using ICE: Impact (1-10, toward my goal), Confidence (1-10, it'll work), Ease (1-10, low effort = high score). Then: (1) Output a table sorted by ICE score (Task | I | C | E | Score). (2) Star the top 5 as 'do these first'. (3) Identify any task with high effort and low impact and recommend dropping or deferring it explicitly. (4) Spot tasks that are actually projects in disguise and suggest the true first step. (5) End with the one task that, if done this week, makes the rest easier or unnecessary.\nDon't soften it - tell me plainly what to ignore. Keep the table clean and the verdicts short."
+  },
+  {
+    "Title": "Design a Habit That Survives Your Worst Days",
+    "Teaser": "Builds a tiny-habits system with triggers, friction reduction and a recovery rule, so one missed day doesn't collapse the streak.",
+    "PromptHint": "Name the habit you want to build in [HABIT] and when in your day you'll do it in [TIME].",
+    "Category": "Productivity & Systems",
+    "Prompt": "Act as a behavior-design coach grounded in habit science (cue-routine-reward, tiny habits, implementation intentions). The habit I want to build: [HABIT]. The time/place I'll do it: [TIME]. My past failures with it: [WHAT WENT WRONG].\nDesign a system: (1) Shrink it to a 'too small to fail' version for the first two weeks. (2) Anchor it to an existing daily habit as the trigger - give me the exact 'After I ___, I will ___' sentence. (3) List 3 ways to reduce friction and 2 ways to make it more rewarding immediately. (4) Give a 'never miss twice' recovery rule for when I slip. (5) Define how I'll track it simply and what 'success' looks like in 30 days.\nOUTPUT FORMAT: a one-page habit plan with those 5 labelled sections. No motivational fluff - just the mechanics that make it stick. If my past failure points to a flaw in the design, call it out and fix it."
+  },
+  {
+    "Title": "Collapse a Long Email Thread Into a One-Screen Brief",
+    "Teaser": "Collapses a sprawling email or chat thread into context, decisions made, and exactly what's needed from you - in one screen.",
+    "PromptHint": "Paste the full thread into [THREAD]. State who you are in it via [MY ROLE].",
+    "Category": "Productivity & Systems",
+    "Prompt": "You are an executive assistant who triages messy threads fast. My role in this thread: [MY ROLE]. Here is the full email/chat thread:\n<thread>\n[THREAD]\n</thread>\nSummarize it into a one-screen brief with these sections: (1) Context - what this is about, in 2 sentences. (2) Decisions already made - bullets. (3) Current state - where things stand right now. (4) What's needed from ME - a short numbered list of my specific action items with any deadlines. (5) Suggested reply - a draft 3-5 sentence response I can send, in a clear professional tone.\nRules: Do not invent facts not in the thread; if something is unclear, list it under 'Need to confirm'. Keep everything under 200 words plus the draft reply."
+  },
+  {
+    "Title": "Inbox to Triaged Action List in 60 Seconds",
+    "Teaser": "Sorts a pile of unread emails into reply-now, delegate, defer, and delete - with one-line draft replies for the urgent few so you clear the backlog fast.",
+    "PromptHint": "Paste your unread emails (subjects + key lines, or full text) into [EMAILS]. Add your role/context in [CONTEXT].",
+    "Category": "Productivity & Systems",
+    "Prompt": "You are a sharp executive assistant doing inbox triage. My role/context: [CONTEXT]. Here is a batch of unread emails (subjects and/or full text):\n<emails>\n[EMAILS]\n</emails>\nTriage every email into exactly one bucket: REPLY NOW (needs my words, time-sensitive), DELEGATE (someone else should own it), DEFER (real but not urgent - give a suggested do-date), or DELETE/ARCHIVE (no action, FYI, or noise). Then:\n(1) Output a triage table: Sender/Subject | Bucket | Why (<=6 words) | Suggested date (if DEFER). (2) For each REPLY NOW item, write a 2-3 sentence draft reply I can send as-is. (3) Flag anything that looks like a deadline, commitment, or risk hiding in the noise. (4) End with the single email I should handle first and why.\nRules: never invent facts or commitments not in the emails; if intent is unclear, put it in REPLY NOW and note what to confirm. Be fast and decisive."
+  },
+  {
+    "Title": "Write a One-Page Personal Operating System",
+    "Teaser": "Drafts your personal OS: roles, priorities, weekly rhythms and decision rules on a single page you can actually live by.",
+    "PromptHint": "List your roles in [ROLES] and what you want this season of life to be about in [SEASON THEME].",
+    "Category": "Productivity & Systems",
+    "Prompt": "You are a coach who helps people design a 'personal operating system' - the reusable structure that runs their life. My roles (e.g. parent, founder, friend): [ROLES]. The theme for this season of my life: [SEASON THEME]. My non-negotiables: [NON-NEGOTIABLES].\nDraft a one-page personal OS with: (1) A short 'how I want to operate' statement. (2) My top 3 priorities for this season and one sentence on why each. (3) A weekly rhythm - what happens daily, weekly, and monthly (planning, review, rest, key blocks). (4) 3-4 personal decision rules ('If X, I default to Y') that save me from re-deciding things constantly. (5) One thing I'll consciously say NO to.\nOUTPUT FORMAT: a single page, clear headings, plain language, mine to edit. No corporate jargon. End with the one sentence I should re-read every Monday."
+  },
+  {
+    "Title": "Red-Team My Plan: Find Every Way It Fails",
+    "Teaser": "Stress-tests your plan or goal by running a brutal pre-mortem, exposing hidden assumptions and the failure modes you're ignoring.",
+    "PromptHint": "Describe the plan or goal you're committed to in [PLAN]. Add the deadline in [DEADLINE].",
+    "Category": "Productivity & Systems",
+    "Prompt": "Act as a brutally honest red-team strategist whose job is to find the cracks before reality does. My plan: [PLAN]. Target deadline: [DEADLINE]. My assumptions (if any): [ASSUMPTIONS]. Do NOT reassure me.\nDo this: (1) Pre-mortem - assume it's the deadline and the plan FAILED; list the 5 most likely reasons in order of probability. (2) Hidden assumptions - name 3 things I'm taking for granted that could be wrong. (3) Single point of failure - what one thing, if it breaks, sinks everything? (4) Capacity reality check - is the timeline honest given normal life and setbacks? Say yes or no plainly. (5) Mitigations - for the top 3 risks, one concrete safeguard each.\nOUTPUT FORMAT: the 5 numbered sections above, then a final line: 'The one question you're avoiding: ...'. Be direct and specific, not vague or kind."
+  }
+]

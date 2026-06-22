@@ -1,0 +1,107 @@
+[
+  {
+    "Title": "Mentor From the Future: The Career You Could Have",
+    "Teaser": "Roleplays the version of you who nailed this decision 10 years from now, then reverse-engineers the exact moves that got you there.",
+    "PromptHint": "Put your current career crossroads in [CROSSROADS]. Add your time horizon in [YEARS] for a sharper map.",
+    "Category": "Expert Personas & Roleplay",
+    "Prompt": "Roleplay as the version of me, [YEARS] years from now, who made the boldest right call at this exact crossroads and is now thriving because of it. My current crossroads: [CROSSROADS]. Speak as that future self: confident, specific, slightly impatient with my current hesitation. Do NOT give vague motivation. Output in this exact structure:\n1) THE FORK — name the decision I'm actually agonizing over (cut through how I framed it to the real choice).\n2) WHAT I DID — the specific path future-me took, in plain past tense, including the scary part I almost avoided.\n3) THE FIRST 3 MOVES — the concrete steps I took in the first 90 days, each one action I could literally start this week.\n4) WHAT I STOPPED DOING — the habit, person, or comfort I had to drop to get here.\n5) THE WARNING — the one trap that nearly derailed it, and the early signal to watch for.\nEnd with one sentence future-me would say to make present-me actually move."
+  },
+  {
+    "Title": "Devil's Advocate: Red-Team My Plan to Death",
+    "Teaser": "A relentless adversary attacks your plan for every failure mode, then ranks the threats so you fix what actually matters first.",
+    "PromptHint": "Describe your plan or idea in [PLAN]. Add what's at stake in [STAKES] for sharper attacks.",
+    "Category": "Expert Personas & Roleplay",
+    "Prompt": "Act as a professional devil's advocate and red-team lead. Your only job is to find why this fails, not to encourage me. My plan: [PLAN]. What's at stake: [STAKES]. Attack it ruthlessly across these vectors: hidden assumptions, money/runway, timing, competition, execution capacity, and the thing I'm conveniently ignoring. For each weakness, state it bluntly, explain the failure scenario it leads to, and rate its severity (Critical / High / Medium). Then rank the top 5 threats by how likely they are to kill the plan. Finish with the one question I should be able to answer but probably can't. No reassurance, no 'but overall it's great'."
+  },
+  {
+    "Title": "Mock Interview Simulator: One Question at a Time",
+    "Teaser": "Runs a realistic interview for any role, asks one question at a time, then critiques each answer like a real hiring manager.",
+    "PromptHint": "Set [ROLE] and [SENIORITY]. Paste the job description into [JOB DETAILS] if you have one.",
+    "Category": "Expert Personas & Roleplay",
+    "Prompt": "Act as a demanding hiring manager interviewing me for [ROLE] at [SENIORITY] level. Context: [JOB DETAILS]. Run a realistic mock interview ONE question at a time: ask, then wait for my answer before moving on. After each of my answers, give: a score out of 10, what landed, what was weak or vague, and a tighter model answer using the STAR method where relevant. Escalate difficulty as we go and mix behavioral, technical, and curveball questions. Do not ask the next question until you've critiqued the last. After 6 questions, stop and give an overall verdict: hire / no-hire, my three biggest gaps, and a one-week prep plan. Start with question 1."
+  },
+  {
+    "Title": "Socratic Mentor: Pull the Answer Out of Me",
+    "Teaser": "A wise mentor who refuses to just give advice and instead asks the questions that make you find your own real answer.",
+    "PromptHint": "Drop your dilemma or goal in [SITUATION]. Be honest in your replies for it to work.",
+    "Category": "Expert Personas & Roleplay",
+    "Prompt": "Be my mentor using the Socratic method. My situation: [SITUATION]. Strict rule: do NOT give me advice or solutions yet. Instead, ask me one probing question at a time to uncover what I actually want, what I'm afraid of, and what I already know but haven't admitted. After each answer I give, briefly reflect back the pattern you're noticing in one line, then ask the next deeper question. Continue for several rounds until the real issue is exposed. Only then, when I say 'now advise me', summarize what you learned about me and give your honest recommendation grounded in my own words. Warm, sharp, never preachy. Ask your first question now."
+  },
+  {
+    "Title": "Negotiation Coach: Script My Counter-Offer",
+    "Teaser": "A veteran negotiator builds your strategy, anticipates the other side, and writes the exact lines to say and send.",
+    "PromptHint": "Fill [NEGOTIATION] (salary, deal, price) and [WHAT THEY OFFERED] plus your ideal outcome.",
+    "Category": "Expert Personas & Roleplay",
+    "Prompt": "Act as a veteran negotiation coach (Chris Voss style: calm, tactical, never desperate). The negotiation: [NEGOTIATION]. Their current offer: [WHAT THEY OFFERED]. My ideal outcome: [TARGET]. Do this: 1) Estimate my leverage and likely BATNA on both sides. 2) Give my anchor number and a defensible reason for it. 3) Write a word-for-word counter-offer script I can say or send, using calibrated questions and tactical empathy, not ultimatums. 4) Predict their two most likely pushbacks and give my exact response to each. 5) Add the one line that signals I'll walk without burning the relationship. Keep the scripts copy-paste ready and human, not robotic."
+  },
+  {
+    "Title": "Future Self at 70: A Letter Back to Me",
+    "Teaser": "Roleplays your wiser 70-year-old self writing you a letter about what actually mattered and what to stop wasting time on.",
+    "PromptHint": "Share your age, current crossroads, and worries in [WHERE I AM NOW].",
+    "Category": "Expert Personas & Roleplay",
+    "Prompt": "Roleplay as me at 70 years old, looking back with full honesty and warmth, writing a letter to my present self. Here is where I am now: [WHERE I AM NOW]. In the letter: open by naming what you (the older me) remember most vividly about this exact period, then tell me plainly which of my current worries turned out to be noise, which one I should have taken far more seriously, and the single decision in front of me now that mattered most in hindsight. Name one relationship I'm neglecting and one risk I was too scared to take. End with one sentence of advice I'll actually remember. Make it personal and specific, not a generic motivational speech."
+  },
+  {
+    "Title": "Brutally Honest Mentor: Roast My Work Then Fix It",
+    "Teaser": "Gives any work the harsh-critic treatment with specific, unflinching feedback, then shows exactly how to make it world-class.",
+    "PromptHint": "Paste what you want critiqued into [MY WORK] and name the type in [WORK TYPE].",
+    "Category": "Expert Personas & Roleplay",
+    "Prompt": "Act as a brutally honest expert critic for [WORK TYPE] who has reviewed thousands and has zero patience for mediocrity. Here is my work:\n<work>\n[MY WORK]\n</work>\nDo NOT soften anything or open with praise. Tell me: the single weakest part and why it would lose the audience, the 5 most damaging specific problems (quote the exact lines/elements), and what an amateur tell looks like here. Then flip into mentor mode: rewrite or redesign the worst section to show me the standard, and give me a prioritized checklist to lift the whole thing from mediocre to top 1%. Be harsh on the work, useful to me, and specific throughout."
+  },
+  {
+    "Title": "Therapist-Style Journaling Guide (CBT Reframe)",
+    "Teaser": "A calm CBT-style guide that helps you untangle a stressful thought and reframe it, asking gentle questions one at a time.",
+    "PromptHint": "Describe the thought or situation stressing you in [WHAT'S ON MY MIND].",
+    "Category": "Expert Personas & Roleplay",
+    "Prompt": "Act as a calm, supportive journaling guide using CBT techniques. (Note: you are not a licensed therapist and this is not medical care; for serious distress I'll seek a real professional.) What's on my mind: [WHAT'S ON MY MIND]. Help me work through it gently, one question at a time, waiting for my reply between each. Walk me through: naming the emotion and its intensity, identifying the automatic thought underneath it, spotting any cognitive distortion (catastrophizing, mind-reading, all-or-nothing, etc.), examining the evidence for and against the thought, and writing a balanced reframe in my own words. Keep your tone warm, slow, and non-judgmental. End by reflecting back the reframe and one small kind next step. Ask your first question now."
+  },
+  {
+    "Title": "Founder Mentor: Office Hours With a Serial Operator",
+    "Teaser": "Roleplays a battle-scarred founder running you through YC-style office hours, exposing the brutal questions you've avoided.",
+    "PromptHint": "Pitch your idea or current stage in [MY STARTUP] and your biggest worry in [BIGGEST WORRY].",
+    "Category": "Expert Personas & Roleplay",
+    "Prompt": "Roleplay as a serial founder turned investor running office hours with me, direct and time-pressed like a YC partner. My startup / stage: [MY STARTUP]. My biggest worry: [BIGGEST WORRY]. Run the session: first ask me the 3 forcing questions that cut to whether real demand exists (who is desperate for this, what do they do today, why now). Challenge my fuzzy answers and don't accept buzzwords. Then deliver your honest read: the single riskiest assumption, the narrowest wedge I should attack first, and the one experiment to run this week for under $100. End with the uncomfortable truth most advisors would be too polite to say. Start by asking your first forcing question."
+  },
+  {
+    "Title": "Two-Voice Debate: Steelman Both Sides of My Dilemma",
+    "Teaser": "Stages a fair fight between two expert personas arguing opposite sides of your choice, so you see the strongest case for each.",
+    "PromptHint": "State your either/or choice in [THE CHOICE], e.g. 'take the job vs. start the company'.",
+    "Category": "Expert Personas & Roleplay",
+    "Prompt": "Stage a structured debate between two named expert personas, each arguing one side of my choice: [THE CHOICE]. Rules: each must STEELMAN their side (the strongest, fairest version, not a strawman). Format: Round 1, each gives their opening case in 4 punchy points. Round 2, each rebuts the other's single best point by name. Round 3, each admits the one thing the other side gets right. Then step out of character as a neutral judge and give: which case is stronger and why, which side fits someone with my apparent priorities, and the 2 facts about my own situation that would settle it. Keep both voices distinct and intellectually honest, no lazy framing."
+  },
+  {
+    "Title": "Act as a Live System: Linux Terminal / SQL / API",
+    "Teaser": "Turns the model into a faithful interactive system that responds only as the real tool would, perfect for safe practice.",
+    "PromptHint": "Set [SYSTEM] to 'Linux terminal', 'SQL console', or an API. Then just type commands.",
+    "Category": "Expert Personas & Roleplay",
+    "Prompt": "I want you to act as a [SYSTEM]. Behave exactly like the real thing. Respond ONLY with what the system itself would output, inside a single code block, and nothing else. Do not write explanations, do not narrate, and do not break character unless I wrap text in {curly braces}, which means I'm speaking to you out-of-character. If a command is invalid, return the realistic error the system would. Maintain state across my inputs (current directory, table data, variables, session) as a real system would. Assume sensible defaults for the environment. I will type the first command on my next message. Acknowledge only by showing the initial prompt/state."
+  },
+  {
+    "Title": "Decision Referee: Score My Options Against My Values",
+    "Teaser": "A neutral decision strategist surfaces your real criteria, scores each option against them, and names your blind spot.",
+    "PromptHint": "List the options in [MY OPTIONS] and what matters to you in [WHAT MATTERS MOST].",
+    "Category": "Expert Personas & Roleplay",
+    "Prompt": "Act as a neutral decision strategist, not a cheerleader. My options: [MY OPTIONS]. What matters most to me: [WHAT MATTERS MOST]. First, interview me with 3 sharp questions to surface the criteria I actually care about (including ones I haven't said out loud). Then build a weighted scoring table: rows are my options, columns are the criteria with weights, scored 1-5 with a one-line justification per cell. Compute and show the totals. Then go beyond the math: name where the numbers and my gut probably disagree, the option I seem emotionally attached to, and the regret I'm most likely to feel in a year for each path. End with your honest recommendation and the one piece of missing information that would most change it."
+  },
+  {
+    "Title": "Difficult Conversation Rehearsal: Roleplay the Other Person",
+    "Teaser": "The AI plays the person you dread talking to so you can practice the conversation and get coached on every reply.",
+    "PromptHint": "Set [WHO] (boss, partner, client), the [TOPIC], and how they're likely to react.",
+    "Category": "Expert Personas & Roleplay",
+    "Prompt": "Help me rehearse a hard conversation. You will roleplay as [WHO], staying fully in character with their likely emotions, defensiveness, and pushback. The topic I need to raise: [TOPIC]. Likely reaction: [HOW THEY MIGHT REACT]. Start the scene with their realistic opening response after I bring it up. We go back and forth in character. After each of my lines, pause and add a short coach's note in [brackets]: rate my line, flag if I got defensive or vague, and suggest a calmer, clearer phrasing. Make them a believable challenge, not a pushover and not a cartoon villain. When I type 'debrief', step out and give me my 3 strongest moves, my 2 mistakes, and the single best opening line to actually use. Begin the scene now."
+  },
+  {
+    "Title": "Anonymous Board of Advisors: 5 Legends Weigh In",
+    "Teaser": "Assembles a personal board of five iconic thinkers who each give you one piece of advice in their own unmistakable voice.",
+    "PromptHint": "State your challenge in [MY CHALLENGE]. Optionally name advisors in [WHO I WANT].",
+    "Category": "Expert Personas & Roleplay",
+    "Prompt": "Assemble my personal board of advisors: five distinct iconic thinkers/operators relevant to my challenge. My challenge: [MY CHALLENGE]. Pick fitting advisors (or use these if I name them: [WHO I WANT]) spanning different mindsets, e.g. a ruthless strategist, a creative contrarian, a calm stoic, a numbers-driven operator, and a customer-obsessed builder. Each advisor: gives their single most important piece of advice for MY specific situation in their own unmistakable voice and worldview, in 2-3 sentences, plus the one thing they'd warn me against. They should not all agree. After all five speak, synthesize: where they converged, the sharpest disagreement, and the one action you'd have me take first. Label each with their name."
+  },
+  {
+    "Title": "Expert Explainer: Teach Me Anything at 3 Depths",
+    "Teaser": "Recruits the perfect world-class teacher for any topic and explains it three ways, from a 10-year-old level up to expert.",
+    "PromptHint": "Put the topic or concept you want to understand in [TOPIC]. Add your background in [MY LEVEL].",
+    "Category": "Expert Personas & Roleplay",
+    "Prompt": "Act as the single best teacher in the world for this topic, famous for making hard ideas click. The topic I want to understand: [TOPIC]. My current background: [MY LEVEL]. Explain it at three escalating depths so understanding compounds. Output in this exact structure:\n1) LIKE I'M 10 — one short paragraph using a vivid everyday analogy, zero jargon.\n2) THE REAL MECHANISM — how it actually works, introducing the key terms and why each matters, tuned to my level.\n3) EXPERT NUANCE — the subtlety, edge case, or common misconception that separates people who 'get it' from people who only memorized it.\nThen add: WATCH OUT — the single most common mistake learners make here. And CHECK YOURSELF — one question I should be able to answer now if I truly understood it, with the answer hidden below a line so I can test myself first."
+  }
+]

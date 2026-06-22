@@ -1,0 +1,100 @@
+[
+  {
+    "Title": "Find My 5 Best Side-Hustles (Ranked by Speed to First Dollar)",
+    "Teaser": "Turns your real skills, hours, and budget into 5 ranked, AI-leveraged side-hustle ideas, each with an exact first offer and a path to sale #1.",
+    "PromptHint": "Fill [SKILLS] honestly (even messy), then your weekly hours and starting budget.",
+    "Category": "Money & Side-Hustle",
+    "Prompt": "You are a pragmatic side-hustle strategist who has launched 50+ profitable solo businesses. My skills: [SKILLS]. I have [HOURS PER WEEK] hours/week and a starting budget of [BUDGET].\n\nThink first (silently): map my skills to buyers who already pay for that outcome, then filter ideas by my hours and budget. Reject anything generic ('start a blog', 'dropship').\n\nGenerate EXACTLY 5 side-hustle ideas that use AI leverage and fit my constraints. For EACH idea, output in this format:\n- Name + one-line pitch\n- Who pays and why (a specific buyer, not 'businesses')\n- Startup cost + realistic time-to-first-dollar\n- The exact first offer to sell, with a $ price\n- The first 3 actions to land sale #1 this week\n- Risk/realism score (1-10) + one sentence why\n\nRank them best-fit first. End with: 'The one I'd bet on for you:' and a 2-sentence reason. Be brutally specific. This is general guidance, not financial advice."
+  },
+  {
+    "Title": "Kill Bad Ideas in 7 Days: A Demand-Validation Sprint",
+    "Teaser": "Builds a concrete day-by-day plan to prove real demand in one week, with outreach scripts and clear go/kill signals, so you never build what nobody wants.",
+    "PromptHint": "Describe [BUSINESS IDEA] in one or two plain sentences, then your target buyer.",
+    "Category": "Money & Side-Hustle",
+    "Prompt": "Act as a lean-startup validation coach. My idea: [BUSINESS IDEA]. Target buyer: [TARGET BUYER].\n\nDesign a 7-day validation sprint that proves real demand BEFORE I build anything. Think first: identify what single belief this whole idea rests on, then design the cheapest test that could prove it false.\n\nOutput in this exact structure:\n1) Core risky assumption (the one thing that, if false, kills this)\n2) The cheapest test that could falsify it\n3) Day-by-day plan (Day 1 through Day 7), one concrete action per day\n4) Outreach scripts I can copy: one DM, one cold email, one community post to find buyers\n5) A 'pre-sell' offer to pitch for money or a waitlist signup before building\n6) PASS / FAIL signals with real numbers (e.g. '5+ replies or 3 pre-orders = green light')\n7) If it FAILS: pivot or kill, and which\n\nBe specific to MY idea, not generic. Use bullets and bold the PASS/FAIL signals."
+  },
+  {
+    "Title": "Your 90-Day Roadmap From $0 to $3K/Month (One Offer)",
+    "Teaser": "Reverse-engineers the sales math, then hands you a phased week-by-week plan with revenue milestones to take a single offer to ~$3,000/month.",
+    "PromptHint": "Set [OFFER] (what you sell), [PRICE], and the [PLATFORM] you'll grow on.",
+    "Category": "Money & Side-Hustle",
+    "Prompt": "You are a growth operator who specializes in solo, bootstrapped businesses. My offer: [OFFER] priced at [PRICE]. Main platform: [PLATFORM]. Goal: $3,000/month within 90 days.\n\nStep 1 - Do the math out loud: how many sales/month at [PRICE] hit $3k, and the traffic-to-sale assumptions behind it.\nStep 2 - Build the roadmap in 3 phases:\n  PHASE 1 (Days 1-30): foundation, offer, first 3 sales\n  PHASE 2 (Days 31-60): one repeatable acquisition channel\n  PHASE 3 (Days 61-90): scale to the revenue target\n\nFor EACH phase output: weekly focus, the ONE metric that matters, near-daily actions, a content cadence, the sales mechanism, and a revenue milestone.\n\nEnd with: 'Top 3 reasons you'd fail' and a one-line fix for each. Keep it concrete and skimmable. This is general business guidance, not financial advice."
+  },
+  {
+    "Title": "Turn What You Know Into a Sellable Digital Product",
+    "Teaser": "Converts a skill or audience into a concrete, ship-this-weekend digital product, with format, price, sales-page hook, and a minimum sellable version.",
+    "PromptHint": "Enter [SKILL OR TOPIC] you know well; add [AUDIENCE] if you have one.",
+    "Category": "Money & Side-Hustle",
+    "Prompt": "You are a digital-product strategist. I want to package this into something I can build once and sell forever: [SKILL OR TOPIC]. My audience (if any): [AUDIENCE].\n\nThink first: what specific, painful problem in this space are people already paying to solve? Then propose 3 distinct digital products, ranked by speed-to-launch.\n\nFor the #1 pick, go deep using this format:\n1) Exact product type (template, mini-course, ebook, Notion system, checklist pack, swipe file, etc.)\n2) The painful problem it solves, in one sentence\n3) A 5-7 item outline / table of contents\n4) Recommended price + pricing rationale\n5) Where to sell it (Gumroad / Etsy / your own site) and why\n6) A 1-line hook + 3 benefit bullets for the sales page\n7) A 'minimum sellable version' I could ship in a weekend\n\nBe specific and unflinching about what will and won't sell."
+  },
+  {
+    "Title": "10 Underserved, High-Margin Niches You Could Own",
+    "Teaser": "Surfaces 10 specific, monetizable sub-niches around your interest in a clean table, with audience signal, competition, and money paths, then picks your top 3.",
+    "PromptHint": "Type a broad [INTEREST OR INDUSTRY]; optionally add your unfair [ADVANTAGE].",
+    "Category": "Money & Side-Hustle",
+    "Prompt": "Act as a niche-research analyst. Broad space: [INTEREST OR INDUSTRY]. My edge/advantage: [ADVANTAGE].\n\nFind 10 specific sub-niches that are underserved but clearly monetizable. Avoid saturated, obvious picks ('fitness', 'productivity'). Get specific: not 'fitness' but 'strength training for desk-job dads over 40'.\n\nOutput a clean Markdown table with these columns:\n| Niche | Audience size signal (large/med/small + why) | Competition (low/med/high) | Top 2 monetization angles | Starter offer idea | Spice score (1-10 = profit vs. effort) |\n\nBelow the table, name the TOP 3 picks for me with one sentence each on why they fit my edge, and one sentence on the fastest way to test each. Mark all estimates as estimates."
+  },
+  {
+    "Title": "Rebuild My Offer Into a No-Brainer (Hormozi-Style)",
+    "Teaser": "Uses value-stacking, a killer bonus, and honest risk reversal to turn a vague service into an offer that sells itself at a higher price.",
+    "PromptHint": "Describe your current [OFFER], who it's [FOR], and the current [PRICE] if any.",
+    "Category": "Money & Side-Hustle",
+    "Prompt": "You are an offer-design expert in the Hormozi 'Grand Slam Offer' tradition. My current offer: [OFFER]. Target customer: [FOR]. Current price: [PRICE].\n\nThink first: what does this buyer actually, secretly want, and what's the #1 reason they currently say no? Then rebuild the offer.\n\nOutput in this format:\n1) The dream outcome the buyer truly wants (in their words)\n2) Value stack: 4-6 components, each with a plain-English value and a rough $ anchor\n3) A bonus that directly crushes the #1 objection\n4) A risk reversal / guarantee that feels safe to them but isn't suicidal for me\n5) Honest scarcity or urgency (real, not fake)\n6) New recommended price + the one-line price justification\n7) A paste-ready offer pitch (one paragraph) for a DM or sales page\n\nMake it specific to MY offer. Flag anything in my current setup that's actively killing conversions."
+  },
+  {
+    "Title": "Cold DM & Email That Books Calls (Under 100 Words, No Cringe)",
+    "Teaser": "Writes short, personalized cold outreach, subject lines, a DM version, and a follow-up, all with low-friction CTAs that actually get replies.",
+    "PromptHint": "Give [WHAT YOU OFFER], the [PROSPECT TYPE], and one [PAIN POINT] they have.",
+    "Category": "Money & Side-Hustle",
+    "Prompt": "You are a top-performing cold-outreach copywriter. I sell: [WHAT YOU OFFER]. Prospect: [PROSPECT TYPE]. Their likely pain: [PAIN POINT].\n\nWrite outreach that earns replies, not eye-rolls. Output in this format:\n1) THREE subject lines (under 40 characters, no clickbait)\n2) Cold EMAIL: under 100 words. Open with a specific observation (never 'Hope you're well'), name the pain, hint at the outcome, end with ONE low-friction CTA phrased as a question (not 'book a call'), plus a short PS.\n3) Cold DM version: under 60 words, casual, same logic.\n4) ONE follow-up for non-responders: under 50 words, adds a new angle (not 'just bumping this').\n\nRules: no buzzwords, no 'I wanted to reach out', no walls of text. Sound like a sharp human. Leave [BRACKETS] where I should personalize."
+  },
+  {
+    "Title": "Write a Gumroad/Etsy Listing That Actually Sells",
+    "Teaser": "Generates a complete, paste-ready listing: keyword-rich titles, a scroll-stopping hook, full description, benefit bullets, objection-killing FAQ, and SEO tags.",
+    "PromptHint": "Enter your [PRODUCT] and the [BUYER] it's for; add the [PLATFORM] (Gumroad/Etsy).",
+    "Category": "Money & Side-Hustle",
+    "Prompt": "Act as a conversion copywriter who specializes in [PLATFORM] digital-product listings. Product: [PRODUCT]. Ideal buyer: [BUYER].\n\nThink first: what is this buyer typing into search, and what outcome makes them click 'buy'? Then write a complete, ready-to-paste listing in this format:\n1) 3 title options (keyword-rich, under 80 characters, benefit-forward)\n2) A scroll-stopping first line (the hook shown before 'read more')\n3) Full description: problem -> what's inside -> the transformation -> who it's for -> what they get instantly\n4) 5 benefit bullets (outcome-led, not feature-led)\n5) FAQ with 3 objection-killing Q&As\n6) 13 SEO tags/keywords, ranked by buyer intent\n7) A short CTA line\n\nMatch the tone to the buyer. No fluff, no fake urgency. Bold the titles and bullets so the listing is easy to scan."
+  },
+  {
+    "Title": "Faceless YouTube Kit: Niche Check + 10 Titles + Full Script",
+    "Teaser": "Builds a faceless YouTube starter kit: RPM and demand check, 10 ranked viral title/thumbnail ideas, and a full narrated script with a 7-second hook and retention resets.",
+    "PromptHint": "Give your [NICHE] and the [VIDEO TOPIC] you want scripted first.",
+    "Category": "Money & Side-Hustle",
+    "Prompt": "You are a faceless-YouTube producer (scriptwriter + researcher + SEO in one). Niche: [NICHE]. First video topic: [VIDEO TOPIC].\n\nDeliver a starter kit in 4 labeled parts:\nPART A - Niche check: estimated RPM range, audience demand, competition level, and the main monetization path (ads / affiliate / product). Mark estimates as estimates.\nPART B - 10 viral title + thumbnail-text concepts for this niche, ranked by click potential, each with the curiosity trigger named.\nPART C - A full narrated script for the topic: a 7-second cold-open hook, then value beats with a retention reset roughly every 30 seconds, a [visual/B-roll cue] per section, and a CTA at the end.\nPART D - Optimized description + 10 tags.\n\nKeep narration tight and spoken-word, not essay-style."
+  },
+  {
+    "Title": "50 Scroll-Stopping Hooks for Your Niche (By Formula)",
+    "Teaser": "Generates 50 short-form hooks grouped by proven formula and tuned to your platform, then flags the 5 most likely to pop.",
+    "PromptHint": "Set your [NICHE] and the [PLATFORM] (TikTok/Reels/Shorts/X) you post on.",
+    "Category": "Money & Side-Hustle",
+    "Prompt": "You are a viral hook writer. Niche: [NICHE]. Platform: [PLATFORM].\n\nGenerate 50 hooks (each under 12 words) I can use as opening lines or on-screen text, grouped by formula:\n- Negative hook ('Stop doing X if you want Y')\n- Curiosity gap\n- Secret reveal ('Nobody talks about...')\n- Contrarian take\n- Result/proof ('How I got X in Y')\n- Mistake callout\n- Listicle tease\n- Question hook\n\nGive ~6 per group, all specific to MY niche (no generic placeholders). Tune the energy to [PLATFORM]. After the list, mark the 5 you predict will perform best with one line each on why. Make them feel native to the platform, not like ads."
+  },
+  {
+    "Title": "Red-Team My Business Idea (Brutally Honest Failure Audit)",
+    "Teaser": "Plays skeptical investor to expose every failure mode, hidden cost, and copycat risk, then hands you the de-risking fixes and a leaner version.",
+    "PromptHint": "Describe your [BUSINESS IDEA] plainly; add your [TARGET MARKET] and price if known.",
+    "Category": "Money & Side-Hustle",
+    "Prompt": "Act as a skeptical investor and red-team analyst. Be brutally honest, not encouraging. My idea: [BUSINESS IDEA]. Target market: [TARGET MARKET].\n\nTear it apart constructively, in this order:\n1) The 5 most likely reasons this fails, ranked by probability\n2) Hidden costs, time sinks, and dependencies I'm probably underestimating\n3) Why a customer might NOT buy (objections + the alternatives they already use)\n4) The 'commodity trap': what stops 100 others from copying me\n5) The single biggest unvalidated assumption\n\nThen flip to solutions:\n6) For each top risk, one concrete way to de-risk it\n7) A leaner version of the idea that dodges the worst failure modes\n\nNo sugarcoating. If it's a bad idea, say so and say why. This is opinion, not professional advice."
+  },
+  {
+    "Title": "One-Page Business Plan + Your Narrowest Way In",
+    "Teaser": "Produces a tight, no-filler one-page plan plus the single narrowest beachhead (one channel, one customer, one offer) to win your first customers.",
+    "PromptHint": "Enter your [IDEA] and the [CUSTOMER] you want to serve first.",
+    "Category": "Money & Side-Hustle",
+    "Prompt": "You are a startup advisor known for ruthless clarity. Idea: [IDEA]. First customer: [CUSTOMER].\n\nWrite a ONE-PAGE business plan, no filler, in this format:\n1) Problem (one sentence, in the customer's own words)\n2) Solution (one sentence)\n3) Who pays + why now\n4) Unfair advantage / wedge\n5) Revenue model + a back-of-envelope path to first $1k and first $10k\n6) Top 3 risks\n7) The 30-day plan (3 milestones)\n\nThen, separately, design the GO-TO-MARKET WEDGE: the single narrowest beachhead (one channel, one customer type, one offer) I should attack first to get traction with the least effort, and exactly why that wedge wins. Keep the whole thing scannable. Flag any assumption that still needs validating."
+  },
+  {
+    "Title": "Stop Undercharging: Find the Price You're Leaving on the Table",
+    "Teaser": "Recommends a value-based price and a Good/Better/Best tier structure, plus the exact words to say it confidently and handle pushback.",
+    "PromptHint": "Describe your [PRODUCT OR SERVICE], the [BUYER], and your current [PRICE].",
+    "Category": "Money & Side-Hustle",
+    "Prompt": "Act as a pricing strategist. Offering: [PRODUCT OR SERVICE]. Buyer: [BUYER]. Current price: [PRICE].\n\nThink first: what does this buyer gain in dollar terms (ROI or cost of inaction)? Price off THAT, not off fear. Output in this format:\n1) The value the buyer gets, in rough dollar terms\n2) Three pricing models that could fit (e.g. flat, tiered, value-based, retainer) with a one-line pro/con each\n3) A recommended price or range + the reasoning\n4) A 3-tier structure (Good / Better / Best), what's in each, and which is the anchor tier\n5) The exact words to state the price confidently, without flinching\n6) 3 common objections ('too expensive', 'I can do it myself', 'send me a discount') each with a short, non-desperate response\n\nTell me honestly if I'm underpricing, and by roughly how much. This is general guidance, not financial advice."
+  },
+  {
+    "Title": "Add Recurring Revenue: Turn a One-Off Into Monthly Income",
+    "Teaser": "Reworks a one-time product or service into a subscription, membership, or retainer that pays you every month, with tiers, pricing, and a churn-killing onboarding.",
+    "PromptHint": "Describe your current [PRODUCT OR SERVICE] and the [CUSTOMER] who buys it.",
+    "Category": "Money & Side-Hustle",
+    "Prompt": "You are a recurring-revenue strategist who has turned dozens of one-off offers into predictable monthly income. My current one-time offer: [PRODUCT OR SERVICE]. Customer: [CUSTOMER].\n\nThink first: what ongoing job, anxiety, or maintenance does this customer face AFTER the one-time purchase? That recurring need is the subscription. Then design it.\n\nOutput in this format:\n1) The recurring need my offer can serve every month (the hook for retention)\n2) 3 recurring-model options (subscription / membership / retainer / 'productized service') with a one-line pro/con each\n3) The recommended model + why it fits my customer\n4) A tier structure (2-3 tiers) with what's delivered each month and a price for each\n5) The 'always-on value' that makes cancelling feel like a loss\n6) A first-30-days onboarding flow that prevents early churn\n7) The exact pitch to convert an existing one-time buyer into a subscriber (one short paragraph)\n\nBe specific to my offer. Call out anything that would make subscribers churn fast. This is general guidance, not financial advice."
+  }
+]

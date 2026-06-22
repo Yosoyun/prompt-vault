@@ -1,0 +1,100 @@
+[
+  {
+    "Title": "Fake Movie Still Generator: Cinematic Frame From a Film That Doesn't Exist",
+    "Teaser": "Builds a believable 'frame from a film that doesn't exist' prompt with director, lens, lighting and grade baked in.",
+    "PromptHint": "Fill [SCENE] with a one-line moment; add a [DIRECTOR/ERA] vibe and an optional [ASPECT RATIO].",
+    "Category": "Midjourney v6 & AI Art",
+    "Prompt": "You are a feature-film cinematographer who writes Midjourney v6 prompts. Turn my idea into ONE photoreal 'fake movie still'. Scene: [SCENE]. Mood/era: [DIRECTOR OR ERA]. Aspect ratio: [ASPECT RATIO]. THINK THROUGH (do not show this): who/what is the subject, what single dramatic moment is frozen, where the light comes from, what lens sells the emotion. Then build the prompt in this exact order on ONE copy-paste line: subject + action, location + time of day, lighting (name source and color temp in K), film stock or lens (e.g. 35mm anamorphic, 85mm portrait), color grade, atmosphere (haze/rain/dust), composition + camera angle. Append: --ar [ASPECT RATIO] --style raw --stylize 250. RULES: no text or captions in the image, no extra people unless stated, no over-saturation. OUTPUT FORMAT exactly: 1) PROMPT: <one line> 2) MOOD SWAPS: <two single-word swaps that change the tone>. Nothing else."
+  },
+  {
+    "Title": "Selfie to Boxed Action Figure: Your Own Collectible in Retail Packaging",
+    "Teaser": "Turns one uploaded photo into a boxed action-figure render with your name, themed accessories and packaging.",
+    "PromptHint": "Upload a clear face photo first; set [YOUR NAME], a [TAGLINE], and [3 ACCESSORIES] that describe you.",
+    "Category": "Midjourney v6 & AI Art",
+    "Prompt": "You are a toy-product photographer. Using the uploaded photo, create a hyper-realistic 3D collectible ACTION FIGURE of this exact person, keeping the face, hairstyle and skin tone clearly recognizable. Present it sealed inside retail blister-pack packaging: clear plastic bubble on a printed cardback. Header reads '[YOUR NAME]' in bold; subtitle reads '[TAGLINE]'. Lay 3 themed accessories in molded slots: [3 ACCESSORIES]. Studio product photography, soft front lighting, slight top-down angle, clean seamless background. CONSTRAINTS: photoreal sharp plastic texture, accurate hand and finger count, no warped or gibberish text, no second figure. THINK FIRST (silently): which accessories read clearly at small scale and match the person. OUTPUT FORMAT exactly: 1) PROMPT: <one copy-paste line ending with --ar 4:5 --style raw> 2) PACKAGING TIP: <one line on making the cardback text render cleanly>. Nothing else."
+  },
+  {
+    "Title": "Consistent Character Sheet: Lock One Face, Reuse It Anywhere",
+    "Teaser": "Locks one character's face and style into a reusable master prompt block you can drop into any new scene.",
+    "PromptHint": "Describe the character once in [CHARACTER]; name your 3 scenes in [SCENE 1], [SCENE 2], [SCENE 3].",
+    "Category": "Midjourney v6 & AI Art",
+    "Prompt": "You are a character designer building a reusable Midjourney v6 character. Character: [CHARACTER]. THINK FIRST (silently): which traits MUST stay fixed across renders versus which can change per scene. Then deliver, in this exact OUTPUT FORMAT: 1) LOCKED IDENTITY BLOCK: plain-text line fixing facial structure, apparent age, skin tone, eye color, hair, body type and signature wardrobe in concrete adjectives (ban vague words like 'pretty' or 'beautiful'). 2) MODEL SHEET PROMPT: front, 3/4 and profile views, neutral grey background, even soft lighting, ending --ar 3:2. 3) SCENE PROMPTS: three prompts for [SCENE 1], [SCENE 2], [SCENE 3] that PREPEND the identity block verbatim so the face stays identical, each one line. 4) CONSISTENCY NOTE: one line on where to paste --cref / a face image-reference. RULE: the identity wording must be byte-for-byte identical in every scene. Nothing else."
+  },
+  {
+    "Title": "Logo Prompt Pack: 4 On-Brief Brand Mark Directions in One Shot",
+    "Teaser": "Generates four distinct, on-brief logo prompt directions for a brand, each with style, palette and usage notes.",
+    "PromptHint": "Give [BRAND], [WHAT IT DOES], and a [VIBE] (e.g. premium, playful, technical).",
+    "Category": "Midjourney v6 & AI Art",
+    "Prompt": "Act as a senior brand identity designer. Brand: [BRAND] - [WHAT IT DOES]. Desired vibe: [VIBE]. THINK FIRST (silently): what association the mark must trigger and which shapes/colors earn it. Create FOUR distinct logo prompt directions for Midjourney v6: (A) minimalist wordmark/monogram, (B) abstract geometric symbol, (C) literal/illustrative mark, (D) emblem/badge. For EACH: write the prompt (style, line weight, a named 2-3 color palette, flat vector, white background, centered, generous margin), append 'simple, scalable, no gradients, no photorealism, no text artifacts --no photo, realistic, 3d --ar 1:1', and add a one-line rationale. OUTPUT FORMAT exactly: a) DIRECTION A-D, each as 'PROMPT: <line>' then 'WHY: <line>'. b) PICK: one line naming the strongest direction for [VIBE] and why. Nothing else."
+  },
+  {
+    "Title": "Photo to Anime: Ghibli/Shinkai Restyle With the Face Kept",
+    "Teaser": "Restyles a real photo into clean hand-drawn anime while keeping the person and composition recognizable.",
+    "PromptHint": "Upload the photo; pick an [ANIME STYLE] and the [SETTING] you want around them.",
+    "Category": "Midjourney v6 & AI Art",
+    "Prompt": "You are an anime background artist. Restyle the uploaded photo into [ANIME STYLE] (e.g. soft Studio-Ghibli, 90s cel anime, modern Makoto Shinkai). KEEP THE SAME PERSON: same pose, expression, hairstyle, clothing colors and recognizable features - do not change identity, age or face shape. Setting: [SETTING]. Apply hand-painted backgrounds, warm volumetric light, soft watercolor skies, gentle film grain and clean line art, while preserving the original framing and crop. CONSTRAINTS: avoid photorealism, avoid extra characters, avoid distorted hands or faces. THINK FIRST (silently): which real-photo details to keep for likeness versus stylize. OUTPUT FORMAT exactly: 1) PROMPT: <one copy-paste line ending --ar 16:9> 2) LIKENESS TIP: <one line on keeping the face recognizable, e.g. --cref strength>. Nothing else."
+  },
+  {
+    "Title": "Hyperreal Macro of an Impossible Subject: Pinterest-Bait Close-Ups",
+    "Teaser": "Crafts a jaw-dropping macro-photography prompt of a surreal subject built to save and share with low competition.",
+    "PromptHint": "Put your surreal idea in [IMPOSSIBLE SUBJECT], e.g. a galaxy inside a dewdrop.",
+    "Category": "Midjourney v6 & AI Art",
+    "Prompt": "You write viral macro-photography prompts. Subject: [IMPOSSIBLE SUBJECT]. THINK FIRST (silently): what physical trick (refraction, translucency, scale) makes this illusion read instantly, and what background makes it pop. Build ONE hyperreal extreme close-up: name a real macro lens (e.g. 100mm f/2.8 macro), razor-thin depth of field with creamy bokeh, dramatic single-source lighting with rim light, dewdrops/translucency/refraction where they sell the illusion, ultra-fine texture, high dynamic range, dark or complementary background, rule-of-thirds composition. Append --ar 4:5 --style raw --stylize 300. OUTPUT FORMAT exactly: 1) PROMPT: <one copy-paste line> 2) SERIES: <three alternate [IMPOSSIBLE SUBJECT] ideas in the same family that would also trend>. Nothing else."
+  },
+  {
+    "Title": "Tilt-Shift Miniature World: Turn Any Scene Into a Tiny Diorama",
+    "Teaser": "Produces a charming fake-miniature scene with tilt-shift blur, toy-scale lighting and tiny figures.",
+    "PromptHint": "Describe the real-world scene in [SCENE]; it becomes a tiny diorama version.",
+    "Category": "Midjourney v6 & AI Art",
+    "Prompt": "You are a miniature-effects photographer. Create a tilt-shift MINIATURE DIORAMA of: [SCENE]. Make it unmistakably a handcrafted tabletop model: strong selective focus (sharp center band, heavy blur top and bottom), slightly oversaturated toy-like colors, high-angle 'looking down' camera, tiny-scale figures and props, soft studio lighting that mimics a photographed model, and subtle handmade texture (felt, painted foam, plastic). Photoreal yet clearly toy-scale. THINK FIRST (silently): which focal band sells the miniature illusion for this scene. Append --ar 3:2 --stylize 200. OUTPUT FORMAT exactly: 1) PROMPT: <one copy-paste line> 2) VARIANTS: one [TIME OF DAY] variant line and one [SEASON] variant line of the same diorama. Nothing else."
+  },
+  {
+    "Title": "Double-Exposure Portrait: Silhouette + Landscape, Gallery-Poster Ready",
+    "Teaser": "Writes a striking double-exposure prompt blending a silhouette with a scene, gallery-poster ready.",
+    "PromptHint": "Set [SUBJECT] (the silhouette) and [SCENE TO BLEND] inside it.",
+    "Category": "Midjourney v6 & AI Art",
+    "Prompt": "You are a fine-art poster designer. Design a DOUBLE-EXPOSURE image. Base silhouette: [SUBJECT] in clean profile. Blended inside the silhouette: [SCENE TO BLEND] (forest, city skyline, ocean, etc.). RULES: crisp silhouette edge, inner scene fills the head and shoulders, faded ghosting where the two layers meet, limited 2-3 color palette, plain negative space, subtle grain, poster-grade contrast, NO facial detail inside the silhouette (shape only). THINK FIRST (silently): which part of the inner scene lands at the head versus shoulders for the strongest read. Append --ar 4:5 --style raw. OUTPUT FORMAT exactly: 1) LIGHT VERSION: <one copy-paste line, off-white background> 2) DARK VERSION: <one copy-paste line, deep-dark background>. Nothing else."
+  },
+  {
+    "Title": "Album Cover Art Director: Genre-Perfect Cover With Title Space",
+    "Teaser": "Designs three on-genre album-cover prompts with mood, palette and clean banner space for your title and artist name.",
+    "PromptHint": "Name the [ARTIST/ALBUM], the [GENRE/MOOD], and an optional [SYMBOL OR MOTIF].",
+    "Category": "Midjourney v6 & AI Art",
+    "Prompt": "You are an album-cover art director who knows how covers read as 50px thumbnails AND 12-inch vinyl. Project: [ARTIST/ALBUM], genre/mood [GENRE/MOOD], recurring motif [SYMBOL OR MOTIF]. THINK FIRST (silently): the single iconic image that signals this genre, the palette, and where clean space must sit for the title and artist name. Then produce THREE distinct cover concepts: (A) bold graphic/typographic, (B) photographic/cinematic, (C) surreal/illustrative. For EACH write the prompt with: central image, palette, lighting/texture, composition that LEAVES clean banner zones for text (do NOT render real letters - leave them empty), and an --ar 1:1 plus a fitting --stylize. OUTPUT FORMAT exactly: a) CONCEPT A-C, each as 'PROMPT: <one line>' then 'THUMBNAIL TEST: <one line on whether it reads when tiny>'. b) PICK: one line naming the strongest concept for [GENRE/MOOD]. Nothing else."
+  },
+  {
+    "Title": "Prompt Doctor: Rewrite My Weak Image Prompt Into a 10/10",
+    "Teaser": "Diagnoses why your Midjourney prompt is flat and rewrites it with lens, light, palette and params dialed in.",
+    "PromptHint": "Paste your current prompt into [MY PROMPT]; optionally say the [GOAL] look.",
+    "Category": "Midjourney v6 & AI Art",
+    "Prompt": "You are a senior Midjourney v6 prompt engineer. My prompt: [MY PROMPT]. Goal look: [GOAL]. THINK FIRST (silently): diagnose what's missing (subject clarity, lighting, lens/medium, composition, params). Then deliver in this exact OUTPUT FORMAT: 1) SCORE: x/10 plus the 3 biggest weaknesses, one line each. 2) REWRITE: ONE strong prompt ordered subject -> setting -> lighting -> medium/lens -> style -> color -> mood, with a smart --ar, --stylize and a --no list for common artifacts, on a single copy-paste line. 3) PUSHED FURTHER: a bolder variant on one line. 4) WHAT CHANGED: 3 bullets, each naming a fix and the effect it has. Keep both prompts copy-paste ready. Nothing else."
+  },
+  {
+    "Title": "Retro-Futurism Poster: Named Decade + Print Technique, Series-Ready",
+    "Teaser": "Generates a cohesive retro-future poster prompt with a specific decade, palette and print technique baked in.",
+    "PromptHint": "Choose [SUBJECT] and an [ERA] like 1950s atompunk or 1980s synthwave.",
+    "Category": "Midjourney v6 & AI Art",
+    "Prompt": "You are a retro poster designer. Create a RETRO-FUTURISM poster of [SUBJECT] in the [ERA] style (e.g. 1950s atompunk, 1970s sci-fi paperback, 1980s synthwave, Soviet space-age). THINK FIRST (silently): the era's signature palette, print technique and optimism. Specify in the prompt: era-accurate color palette, print technique (screen-print, halftone, risograph, airbrush), period typography ZONES left clean (do NOT render gibberish text - leave empty banner space), dramatic perspective, 'world of tomorrow' mood, flat graphic shading over photorealism. Append --ar 2:3 --stylize 350. OUTPUT FORMAT exactly: 1) PROMPT: <one copy-paste line> 2) SERIES: <three alternate [ERA] treatments of the same subject so I can build a matching set>. Nothing else."
+  },
+  {
+    "Title": "Pro Headshot From a Casual Selfie: LinkedIn-Ready, Face Intact",
+    "Teaser": "Converts a phone selfie into a polished corporate headshot with studio lighting and a clean backdrop, face intact.",
+    "PromptHint": "Upload your selfie; set [ATTIRE] and a [BACKDROP] color.",
+    "Category": "Midjourney v6 & AI Art",
+    "Prompt": "You are a corporate portrait photographer. From the uploaded selfie, generate a professional CORPORATE HEADSHOT of the same person - keep the exact face, apparent age, skin tone and features UNCHANGED. Dress them in [ATTIRE]. Background: [BACKDROP] studio backdrop, softly blurred. Lighting: flattering three-point studio softbox, gentle catchlights, natural skin texture (NO plastic smoothing). Framing: head-and-shoulders, eyes to camera, confident relaxed expression, sharp focus on the eyes. CONSTRAINTS: photoreal, color-accurate, no warped features, no extra people, no logos. THINK FIRST (silently): what to fix (lighting, attire, background) without altering identity. OUTPUT FORMAT exactly: 1) PROMPT: <one copy-paste line ending --ar 4:5 --style raw> 2) LIKENESS TIP: <one line on keeping the face faithful>. Nothing else."
+  },
+  {
+    "Title": "One Concept, Six Art Styles: Instant Mood-Board Builder",
+    "Teaser": "Takes a single subject and writes six stylistically distinct prompts so you can compare looks in one batch.",
+    "PromptHint": "Put your single idea in [SUBJECT]; name your [USE CASE] so it can recommend a style.",
+    "Category": "Midjourney v6 & AI Art",
+    "Prompt": "Act as an art director building a mood board. Subject: [SUBJECT]. Use case: [USE CASE]. THINK FIRST (silently): how to keep the SAME subject identical while genuinely changing the medium. Write SIX copy-paste Midjourney v6 prompts of the same subject in six clearly different styles: (1) photoreal cinematic, (2) watercolor illustration, (3) 3D Pixar-style render, (4) flat vector / line art, (5) oil-painting impasto, (6) cyberpunk neon concept art. For EACH, tune wording, lighting, medium and a fitting --ar / --stylize for that style; keep the subject wording identical across all six so they're comparable. OUTPUT FORMAT exactly: a) STYLE 1-6, each as 'STYLE NAME -> PROMPT: <one line>'. b) RECOMMEND: one line naming the best style for [USE CASE] and why. Nothing else."
+  },
+  {
+    "Title": "Product Hero Shot for Ads: Conversion-Grade, Copy Space Built In",
+    "Teaser": "Builds a clean, conversion-grade product photography prompt with controlled lighting, surface and negative space for copy.",
+    "PromptHint": "Name the [PRODUCT], a [SURFACE/SETTING], and the [MOOD] you're selling.",
+    "Category": "Midjourney v6 & AI Art",
+    "Prompt": "You shoot commercial product photography for paid ads. Product: [PRODUCT]. THINK FIRST (silently): what material cues signal quality for this product and which side should hold copy space. Create ONE hero shot: place it on [SURFACE OR SETTING], mood [MOOD]. Specify: studio or styled lighting (name key + fill + rim), realistic reflections and shadows, shallow depth of field, premium materials, dust-free surfaces, accurate colors, and intentional NEGATIVE SPACE on one side for ad copy. Macro detail on the product, logo-free unless described. Append --ar 4:5 --style raw --stylize 150. OUTPUT FORMAT exactly: 1) PROMPT: <one copy-paste line> 2) VARIANTS: one flat-lay variant line and one lifestyle-in-use variant line of the same product. Nothing else."
+  }
+]

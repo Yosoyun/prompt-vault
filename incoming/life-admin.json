@@ -1,0 +1,100 @@
+[
+  {
+    "Title": "7-Day No-Repeat Meal Plan + Aisle-Sorted Grocery List",
+    "Teaser": "Turns your diet, budget, and cooking time into a full week of no-repeat dinners with a shopping list sorted by store aisle.",
+    "PromptHint": "Fill [DIETARY NEEDS] (e.g. vegetarian, 1800 cal), then your budget and weeknight time limit.",
+    "Category": "Life, Travel & Home",
+    "Prompt": "You are a registered-dietitian-minded meal planner and frugal home cook. Build a 7-day dinner plan for [DIETARY NEEDS / GOAL], a weekly grocery budget of [BUDGET], cooking for [NUMBER OF PEOPLE], with a max of [MINUTES] minutes per meal on weeknights.\n\nRules: never repeat a main dish; deliberately reuse perishable ingredients across meals to cut waste; balance protein/veg/carbs each day; flag anything that batch-cooks or freezes well.\n\nThink step by step before answering: (a) pick the 7 mains, (b) cross-check ingredient overlap and adjust to share perishables, (c) total the estimated cost and trim if over budget.\n\nOutput in this exact order: (1) a day-by-day table — Day | Meal | Prep time | Est. cost; (2) a grocery list grouped by store section (Produce, Protein, Pantry, Dairy/Frozen) with quantities; (3) one 'use-it-up' tip for likely leftovers; (4) total estimated cost vs. my budget, with the gap stated plainly.\n\nThis is general guidance, not medical or nutritional advice."
+  },
+  {
+    "Title": "Day-by-Day Trip Itinerary Tuned to How You Travel",
+    "Teaser": "Generates a realistic, walkable itinerary for any destination matched to your pace, interests, and budget.",
+    "PromptHint": "Enter [DESTINATION] + [NUMBER OF DAYS], then your travel style and budget level.",
+    "Category": "Life, Travel & Home",
+    "Prompt": "Act as a local-savvy travel planner who hates tourist traps and over-stuffed schedules. Plan a [NUMBER OF DAYS]-day trip to [DESTINATION] for a [TRAVEL STYLE] traveler (e.g. slow/foodie/adventure/family) on a [BUDGET LEVEL] budget.\n\nConstraints: group activities by neighborhood to minimize backtracking; never schedule more than 3 anchor activities per day; include one rest/buffer block daily; flag anything needing advance booking.\n\nThink first: cluster sights geographically, then sequence days to flow logically, then sanity-check pace.\n\nFor each day output: morning / afternoon / evening blocks, one signature meal recommendation with a price tier, walking-or-transit notes between stops, and a 'skip this if short on time' line.\n\nEnd with: a packing-essentials shortlist for this destination/season, 3 local etiquette or safety tips, and a rough per-day cost estimate. Verify opening days/seasonality where you can and flag anything I should double-check before booking."
+  },
+  {
+    "Title": "Zero-Based Budget That Exposes Where Your Money Leaks",
+    "Teaser": "Builds a full monthly budget from your income and expenses, then exposes the spending patterns you can't see.",
+    "PromptHint": "Paste your [MONTHLY INCOME] and rough expenses; add a savings goal if you have one.",
+    "Category": "Life, Travel & Home",
+    "Prompt": "You are a no-nonsense personal finance coach. Build a zero-based monthly budget from: monthly take-home income [MONTHLY INCOME]; fixed costs and rough spending [EXPENSES]; savings or debt goal [GOAL].\n\nFirst, ask me up to 3 clarifying questions ONLY if a number is missing or ambiguous. Then assign every dollar a job until income minus outgo equals zero.\n\nThink step by step: list fixed costs, then flexible, then compare against typical benchmarks before flagging leaks.\n\nOutput: (1) a category table — Category | Amount | % of income | Fixed/Flexible; (2) a 50/30/20 reality check vs. my actual split; (3) the top 3 'silent leaks' where I'm overspending vs. typical, each with a specific dollar cut; (4) one automated move (transfer, autopay, sinking fund) to hit my goal faster.\n\nBe direct about trade-offs. This is general educational information, not financial advice."
+  },
+  {
+    "Title": "Weekend Declutter Sprint Plan You'll Actually Finish",
+    "Teaser": "Breaks an overwhelming messy space into timed, dopamine-friendly micro-sessions with clear keep/donate/trash rules.",
+    "PromptHint": "Name the [SPACE] (e.g. garage, kids' room) and how many hours you can give it.",
+    "Category": "Life, Travel & Home",
+    "Prompt": "Act as a professional organizer who specializes in people who get overwhelmed and quit halfway. Create a decluttering plan for my [SPACE] with [HOURS] total hours available, broken into [SESSION LENGTH]-minute sprints.\n\nUse a keep/donate/trash/relocate system. Sequence sprints from fastest visible win to hardest decision zone to build momentum.\n\nThink first: map the zones, estimate effort per zone, then order them easy-to-hard.\n\nFor each sprint output: target zone, one specific decision rule (e.g. 'haven't used in 12 months = donate'), what to physically do with each pile, and a 5-minute reset to lock in the win.\n\nEnd with: a 'maintenance ritual' (10 min/week) so it stays clear, a shortlist of bins/bags/tools to grab first, and one mindset reframe for items I feel guilty letting go."
+  },
+  {
+    "Title": "Gift Finder That Actually Nails the Person",
+    "Teaser": "Turns a few details about someone into thoughtful, ranked gift ideas across every budget tier.",
+    "PromptHint": "Describe the [RECIPIENT] (relationship, interests, age) and your max budget.",
+    "Category": "Life, Travel & Home",
+    "Prompt": "You are a thoughtful gift concierge who avoids clichés (no generic candles or 'World's Best' mugs). Find gift ideas for [RECIPIENT]: their relationship to me, age range, interests/hobbies, and the occasion [OCCASION]. My budget is up to [BUDGET].\n\nFirst, infer what they actually value (experiences vs. objects, practical vs. sentimental) from the details. Then brainstorm widely, then cut anything forgettable.\n\nOutput 9 ideas in 3 tiers (Budget / Mid / Splurge), each with: the gift, ONE sentence on why it fits THIS person specifically, and an optional personal-touch add-on. Include 2 'experience' gifts and 1 wildcard.\n\nEnd with a one-line gift message I could write for my top pick. Ask me 1-2 questions only if you need them to avoid a generic answer."
+  },
+  {
+    "Title": "Stress-Free Party Plan: Timeline, Menu & Run-of-Show",
+    "Teaser": "Plans an entire event end-to-end with a countdown timeline, scaled food quantities, and a day-of schedule.",
+    "PromptHint": "Enter the [EVENT TYPE] + guest count, then your budget and any theme.",
+    "Category": "Life, Travel & Home",
+    "Prompt": "Act as an experienced event planner. Plan a [EVENT TYPE] for [NUMBER OF GUESTS] guests with a budget of [BUDGET] and a vibe of [THEME / TONE].\n\nWork backwards from the event date. Cover food & drink (quantities scaled to headcount), a simple decor plan, a music/activity flow, and a realistic budget breakdown that stays under my limit.\n\nThink first: lock the headcount math, then the timeline, then the budget split.\n\nOutput: (1) a countdown checklist (2 weeks out / 1 week / day-before / day-of) with times; (2) a menu with per-person quantities and a shopping list; (3) a day-of run-of-show schedule hour by hour; (4) a 'delegate this' list of tasks to hand off; (5) one contingency plan (weather / late guests / ran out of food).\n\nKeep it doable for one host, not a catering team. Flag the 3 things most likely to go wrong and how to prevent them."
+  },
+  {
+    "Title": "DIY Project Planner With an Honest DIY-vs-Pro Verdict",
+    "Teaser": "Turns 'I want to do X myself' into a real plan with a tool list, cost estimate, and a blunt difficulty rating.",
+    "PromptHint": "Describe the [PROJECT] (e.g. install floating shelves) and your DIY skill level.",
+    "Category": "Life, Travel & Home",
+    "Prompt": "You are a seasoned DIY contractor and safety-first mentor. Plan this home project: [PROJECT]. My skill level is [SKILL LEVEL] and my budget is [BUDGET].\n\nFirst give an honest difficulty rating (1-5) and a clear 'DIY vs. hire a pro' verdict with the reasoning. Then break the job down.\n\nOutput: (1) full materials + tools list with rough costs and a budget total; (2) numbered step-by-step instructions written for my skill level; (3) a realistic time estimate (and how it changes if it's my first time); (4) the top 3 beginner mistakes and how to avoid each; (5) a safety checklist plus any tasks that legally or practically need a licensed pro.\n\nIf the project involves electrical, gas, structural, or roofing work, say so plainly and recommend professional help. This is general guidance, not a substitute for a qualified tradesperson or local code."
+  },
+  {
+    "Title": "Tonight's Dinner From What's Already In Your Fridge",
+    "Teaser": "Paste what you already have and get real recipes you can cook tonight with no extra shopping trip.",
+    "PromptHint": "List the [INGREDIENTS] you have on hand and any dietary limits.",
+    "Category": "Life, Travel & Home",
+    "Prompt": "Act as a resourceful home cook who specializes in 'use what you've got' cooking. Here's what I have: [INGREDIENTS]. Assume I also have basic pantry staples (oil, salt, pepper, common spices, flour, stock). Dietary limits: [RESTRICTIONS]. I have about [MINUTES] minutes.\n\nGive me 3 distinct dinner options I can make WITHOUT buying anything new (or note the single cheap item if one is truly needed).\n\nThink first: identify what's likely to spoil soonest and build around it.\n\nFor each option output: dish name, the ingredients used, numbered steps, total time, and one easy upgrade if I want it fancier. Rank them by how well they use up what might spoil first.\n\nDon't suggest dishes requiring ingredients I didn't list. If I'm missing something critical, say what and offer a swap."
+  },
+  {
+    "Title": "Weekly Home Reset System So Chores Stop Piling Up",
+    "Teaser": "Builds a repeatable weekly home-management routine so chores, meals, and errands never snowball again.",
+    "PromptHint": "Describe your [HOUSEHOLD] (who lives there, work hours) and which chores you hate most.",
+    "Category": "Life, Travel & Home",
+    "Prompt": "You are a home-operations consultant who builds calm, sustainable household systems. Design a weekly 'home reset' routine for my household: [HOUSEHOLD DETAILS] (size, kids/pets, work schedule). The chores I dread most are [PAIN POINTS], and I can realistically spend [HOURS PER WEEK].\n\nBuild a system, not a guilt-trip. Distribute tasks across the week so no single day is brutal, and batch similar tasks (all errands together, etc.).\n\nThink first: total the recurring tasks, then spread them to fit the hours I gave.\n\nOutput: (1) a weekly calendar — which tasks happen which day, with time blocks; (2) a 30-minute 'Sunday reset' checklist that sets up the week; (3) a fair task-split suggestion if multiple people live here; (4) the 3 highest-leverage habits that prevent the most mess; (5) a 'minimum viable week' version for when life gets busy.\n\nKeep it realistic for the hours I gave you."
+  },
+  {
+    "Title": "Big-Purchase Decision Maker: Pros, Cons & True Cost",
+    "Teaser": "Runs any major buy through a clear decision framework so you stop second-guessing and choose with confidence.",
+    "PromptHint": "Name the [PURCHASE] you're weighing and your top priorities or worries.",
+    "Category": "Life, Travel & Home",
+    "Prompt": "Act as a neutral decision advisor (not a salesperson). I'm deciding whether to buy [PURCHASE], priced around [PRICE]. My priorities and concerns are [PRIORITIES / WORRIES].\n\nFirst, ask me up to 3 clarifying questions if key context is missing (how often I'll use it, alternatives I'm considering, urgency). Then run a structured analysis.\n\nOutput: (1) the true total cost of ownership (purchase + maintenance + hidden costs over a realistic timeframe); (2) a pros/cons table weighted by MY priorities; (3) 2-3 alternatives including the 'do nothing / wait' option; (4) the core trade-off in one sentence; (5) a clear recommendation with reasoning and the one thing that would change my answer.\n\nBe honest if it's a bad buy. This is general guidance, not financial advice."
+  },
+  {
+    "Title": "Multi-City Trip Logistics Solver: Routes, Bookings, Buffers",
+    "Teaser": "Sequences a multi-stop trip in the smartest order and flags every booking, transfer, and timing risk.",
+    "PromptHint": "List the [CITIES / STOPS], your total days, and your start/end city.",
+    "Category": "Life, Travel & Home",
+    "Prompt": "You are a meticulous travel logistics coordinator. I'm planning a trip covering these stops: [CITIES / STOPS], over [TOTAL DAYS] days, with this start and end city: [START / END CITY]. Budget level: [BUDGET LEVEL].\n\nOptimize the visiting ORDER to minimize backtracking and transit cost, then allocate nights per stop based on what each place warrants.\n\nThink first: map distances between stops, then find the shortest sensible loop, then assign nights.\n\nOutput: (1) the recommended route with nights per city and the reasoning; (2) a transport plan between each leg (mode, rough duration, book-ahead vs. walk-up); (3) a master booking checklist ordered by how early each should be locked in; (4) realistic buffer/transfer time warnings (tight connections, border/visa flags to verify); (5) a 'what breaks the plan' risk list.\n\nFlag anything seasonal or requiring a visa/permit that I must verify independently before booking."
+  },
+  {
+    "Title": "Sunday Batch-Cook Plan for a Whole Week of Meals",
+    "Teaser": "Designs one Sunday cook session that yields grab-and-go meals all week with minimal repetition.",
+    "PromptHint": "Enter [MEALS NEEDED] (e.g. 5 lunches + 4 dinners) and any food preferences.",
+    "Category": "Life, Travel & Home",
+    "Prompt": "Act as a meal-prep coach who values flavor and variety, not sad identical containers. Design a batch-cook plan to produce [MEALS NEEDED] for the week. Preferences/restrictions: [PREFERENCES]. I want a single prep session of about [PREP HOURS] hours.\n\nUse a 'component' strategy: cook proteins, grains, sauces, and veg that mix into different meals so nothing tastes the same two days running.\n\nThink first: choose components that recombine, then plan the parallel cook order to fit my hours.\n\nOutput: (1) the component shopping list with quantities; (2) an efficient cook-order timeline for the prep session (what goes in the oven/pot/pan and when, running in parallel); (3) an assembly guide showing how components combine into each labeled meal; (4) storage + reheating notes and which items freeze well; (5) a fridge-life chart so nothing spoils first.\n\nKeep total active time within the hours I gave you."
+  },
+  {
+    "Title": "Sinking-Fund Plan to Cover a Big Expense Without Debt",
+    "Teaser": "Reverse-engineers exactly how much to set aside each week to cover a known future cost with zero credit-card stress.",
+    "PromptHint": "Enter the [EXPENSE] and its target date, plus what you can save now.",
+    "Category": "Life, Travel & Home",
+    "Prompt": "You are a practical money coach who helps people stop relying on credit cards for predictable costs. I have an upcoming expense: [EXPENSE], estimated at [AMOUNT], needed by [TARGET DATE]. I can currently set aside about [SAVINGS CAPACITY] per period.\n\nWork out a 'sinking fund' so the money is ready in time.\n\nThink first: count the periods until the deadline, then divide the target across them, then test it against my capacity.\n\nOutput: (1) the per-week and per-month amount I need to hit the target, and whether my current capacity is enough; (2) if there's a gap, 3 specific ways to close it (trim a category, earn a bit extra, adjust the timeline); (3) a week-by-week savings schedule with running totals; (4) where to park the money so it's separate but accessible; (5) a buffer suggestion for cost overruns.\n\nBe realistic and specific. This is general educational information, not financial advice."
+  },
+  {
+    "Title": "Guest-Ready Home in 90 Minutes: Triage Cleaning Sprint",
+    "Teaser": "Gives you a timed, priority-ordered cleaning sprint that makes your place look great before company arrives.",
+    "PromptHint": "Enter [TIME AVAILABLE] and which rooms guests will actually see.",
+    "Category": "Life, Travel & Home",
+    "Prompt": "Act as a speed-cleaning expert who knows what actually moves the needle on 'looks clean' vs. deep clean. Guests arrive in [TIME AVAILABLE]. The rooms they'll see are [VISIBLE ROOMS], and the household situation is [CONTEXT] (e.g. kids, pets, just-cooked kitchen).\n\nTriage ruthlessly: prioritize high-visibility, high-impact tasks (clutter, surfaces, smells, entryway, guest bathroom) and explicitly skip what no one will notice.\n\nThink first: rank tasks by visible payoff per minute before scheduling.\n\nOutput: (1) a minute-by-minute sprint plan totaling my available time, ordered for maximum visible payoff; (2) the '5 things that fake a clean home' (lighting, scent, made surfaces, etc.); (3) a 60-second-per-room 'hide the chaos' move; (4) a quick prep list (drinks, ambiance) if time remains.\n\nBe specific about where NOT to waste time. Keep total time within the limit I gave."
+  }
+]

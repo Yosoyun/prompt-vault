@@ -1,0 +1,100 @@
+[
+  {
+    "Title": "Magazine Cover Star: Put My Face On A Glossy Front Page",
+    "Teaser": "Turns your photo into a believable newsstand magazine cover with a real masthead, cover lines and barcode while keeping your exact face.",
+    "PromptHint": "Upload a clear photo, then set the [MAGAZINE NAME], a bold [COVER HEADLINE] and an optional [SECONDARY LINE].",
+    "Category": "Gemini · Nano Banana",
+    "Prompt": "ROLE: You are a senior magazine art director compositing a newsstand cover. Using the attached photo, place this exact person as the cover star of a glossy premium magazine in a tall portrait (3:4) layout. THINK FIRST (silently): decide masthead placement, where the subject's head overlaps the title, and which cover lines sit left vs right so nothing crowds the face. Render at the top a large bold masthead reading exactly \"[MAGAZINE NAME]\". Add a striking main cover headline reading exactly \"[COVER HEADLINE]\" and a smaller supporting line reading exactly \"[SECONDARY LINE]\", plus 2-3 short realistic teaser lines, an issue date, a price and a small barcode in the bottom corner. Light the subject like a studio cover shoot: soft beauty key light, gentle rim light, clean catchlights, flattering but real. CRITICAL: keep the same face, identity, skin tone, age and natural features unmistakably recognizable; do not slim or beautify into a different person. CONSTRAINTS: photoreal skin with texture (no plastic airbrush), all cover text crisp, correctly spelled and legibly kerned (no gibberish letters), masthead partially behind the head for depth, balanced editorial layout, one person only. OUTPUT: the finished cover image only."
+  },
+  {
+    "Title": "1/7 Scale Anime Figurine On A Desk: Studio-Quality Collectible Render",
+    "Teaser": "Recreates the viral 'turn me into a 1/7 scale figurine' trend with an acrylic base, on-screen modeling viewport and a premium Japanese figure box.",
+    "PromptHint": "Upload a full or half-body photo, then optionally set a [POSE OR THEME] and a [BRAND NAME] for the box.",
+    "Category": "Gemini · Nano Banana",
+    "Prompt": "ROLE: You are a product photographer shooting a commercial collectible figure. Using the attached photo, transform this person into a commercialized 1/7 scale PVC figurine displayed on a round transparent acrylic base. Keep the same face, hairstyle, outfit colors and proportions so the figurine is clearly recognizable as them, optionally restyled to this theme: [POSE OR THEME]. THINK FIRST (silently): position the figure, the monitor and the box so all three read clearly without clutter. Place the figurine on a real desk. Behind it, show a computer monitor displaying the 3D modeling viewport (wireframe/sculpt view) of this exact figurine; beside it place a premium Japanese figure-brand product box with the heading \"[BRAND NAME]\" printed cleanly on the front and a window showing the figure. Style: realistic indoor product photography, soft diffused desk light, shallow depth of field, glossy painted PVC surface. CONSTRAINTS: photoreal plastic, accurate five-finger hands, legible box text (no gibberish), the figure on screen and on the base must match, no warped faces, one figure only. OUTPUT: the edited image only."
+  },
+  {
+    "Title": "Vintage Bollywood Royal Portrait: Keep My Face Exactly",
+    "Teaser": "Restyles your photo into a regal 1970s Bollywood-poster portrait (saree or sherwani) while preserving your real face and identity.",
+    "PromptHint": "Upload a clear face photo, then set the [ATTIRE] (e.g. royal blue silk saree) and a [BACKDROP] (e.g. palace courtyard).",
+    "Category": "Gemini · Nano Banana",
+    "Prompt": "ROLE: You are a vintage portrait retoucher emulating 1970s Indian film photography. Using the attached photo, restyle this person into an elegant vintage Indian studio portrait in the style of a 1970s Bollywood film poster. Dress them in [ATTIRE] with tasteful traditional jewelry that suits the outfit. Place them against [BACKDROP] with soft painterly studio lighting, a warm golden rim light and gentle film grain. CRITICAL: keep the exact same face, facial features, skin tone, age and expression so they remain unmistakably recognizable; do not slim, lighten or alter the face. Only change attire, hair styling, lighting and background. Add the subtle color cast and soft focus of vintage film. CONSTRAINTS: photoreal, no plastic skin, natural-looking jewelry and fabric folds, accurate hands, no text on the image, preserve the original head pose and gaze, one person only. OUTPUT: the edited image only."
+  },
+  {
+    "Title": "LinkedIn-Ready Headshot From A Casual Selfie",
+    "Teaser": "Converts a phone selfie into a polished, recruiter-ready professional headshot with studio lighting and business attire, keeping your real face.",
+    "PromptHint": "Upload a clear selfie, then set the [ATTIRE] (e.g. navy blazer) and a [BACKDROP] (e.g. soft grey studio).",
+    "Category": "Gemini · Nano Banana",
+    "Prompt": "ROLE: You are a professional corporate portrait photographer. Using the attached photo, turn this casual selfie into a polished LinkedIn headshot. Keep the exact same face, identity, skin tone, age and natural features fully recognizable. Dress the person in [ATTIRE], tidy the hair neatly and place them against [BACKDROP]. Light it like a real headshot session: soft key light from front-left, gentle fill, subtle catchlights in the eyes, clean separation from the background, shallow depth of field. Make the expression confident and approachable with a slight natural smile if the original allows. CONSTRAINTS: photoreal skin with visible pores (no airbrushed plastic look), do not change face shape or make them look like a different person, keep blemishes minimal but natural, no over-smoothing, no text or logos, head-and-shoulders crop. OUTPUT: the edited image only."
+  },
+  {
+    "Title": "Corporate Headshot Of My Pet: The CEO-Dog Trend",
+    "Teaser": "Recreates the viral 'professional headshot of my pet' meme, dressing your animal in business attire for a boardroom portrait.",
+    "PromptHint": "Upload a clear photo of your pet, then set the [OUTFIT] (e.g. tiny grey suit and tie) and a [JOB TITLE] for an optional nameplate.",
+    "Category": "Gemini · Nano Banana",
+    "Prompt": "ROLE: You are a corporate portrait photographer shooting an executive headshot — of an animal. Using the attached photo, create a professional corporate headshot of this pet as if it were a company executive. Keep the same animal, breed, fur color, markings and facial features clearly recognizable. Dress it in [OUTFIT] and place it against a softly blurred modern office or grey studio backdrop. Light it like a real LinkedIn headshot: soft front key light, gentle fill, catchlights in the eyes, shallow depth of field, dignified and slightly serious expression. Optionally add a small desk nameplate reading exactly \"[JOB TITLE]\" with crisp legible text. CONSTRAINTS: photoreal fur and fabric, the clothing must sit naturally on the animal's body, no extra limbs, no human face, keep it charming and believable rather than cartoonish, one animal only. OUTPUT: the edited image only."
+  },
+  {
+    "Title": "Decade Time Machine: Render Me As A 70s, 80s, 90s Or Y2K Version",
+    "Teaser": "Sends your photo back in time with era-accurate hair, wardrobe, film stock and color grade while keeping you recognizable.",
+    "PromptHint": "Upload a clear photo, then choose the [DECADE] (e.g. 1985) and an optional [SCENE] (e.g. mall arcade).",
+    "Category": "Gemini · Nano Banana",
+    "Prompt": "ROLE: You are a period-photography stylist and colorist. Using the attached photo, transport this person to the year [DECADE]. Keep the exact same face, identity and recognizable features, but restyle the hair, makeup and wardrobe to be authentically of that era, and place them in this setting: [SCENE]. THINK FIRST (silently): pick the era-correct film look before editing. Match the photographic look of the period: for the 70s/80s use warm grainy film with a slight color shift and soft focus; for the 90s use a flash-lit point-and-shoot snapshot look; for Y2K/early 2000s use a harsh on-camera flash, slight overexposure and digital-camera color. Add the appropriate grain, contrast and color cast so it reads as a real photo from that decade, not a clean modern edit. CONSTRAINTS: do not change face shape or make a different person, photoreal, era-correct props only, accurate hands, no modern phones or logos unless the decade allows. OUTPUT: the edited image only."
+  },
+  {
+    "Title": "Disposable-Camera Throwback: Flash, Grain And Date Stamp",
+    "Teaser": "Fakes the imperfect, nostalgic disposable-camera format so your photo reads as a found memory, not a polished AI render.",
+    "PromptHint": "Upload a photo, then set an optional [TIMESTAMP] (e.g. 06 22 2006) and a [CAPTION] for the white border.",
+    "Category": "Gemini · Nano Banana",
+    "Prompt": "ROLE: You are a film-emulation specialist replicating a 2000s point-and-shoot. Using the attached photo, restyle it to look like an authentic early-2000s disposable-camera snapshot. Keep the same people, poses and setting recognizable. Apply: harsh direct on-camera flash with bright foreground and falloff into shadow, slight red-eye feel, visible film grain, mild motion blur, lowered dynamic range, a faint warm-green color cast and tiny dust specks. Add a thin white film border and, in the lower-right corner, a small orange-yellow digital date stamp reading exactly \"[TIMESTAMP]\". Optionally handwrite \"[CAPTION]\" in the white bottom border. Goal: a deliberately imperfect, nostalgic 'found photo' feel that fights the over-clean AI look. CONSTRAINTS: keep faces recognizable, do NOT beautify or smooth skin, no high-dynamic-range polish, legible date stamp, keep it grounded and real. OUTPUT: the edited image only."
+  },
+  {
+    "Title": "Surgical Photo Edit: Change Only What I Specify, Keep Everything Else",
+    "Teaser": "Edits one element (outfit, hair color, background or season) while explicitly preserving your face, pose, framing and lighting.",
+    "PromptHint": "Upload a photo, then state the [ONE CHANGE] you want and the [WHAT TO KEEP] you must not alter.",
+    "Category": "Gemini · Nano Banana",
+    "Prompt": "ROLE: You are a precision retoucher doing a non-destructive local edit. Using the attached photo, make exactly ONE targeted change and nothing else: [ONE CHANGE]. Everything else must stay identical: [WHAT TO KEEP] — specifically keep the same face, expression, head pose, body position, framing, camera angle, lighting direction and color temperature, and keep the background unless the change explicitly involves it. THINK FIRST (silently): decide which pixels must move and which must be left untouched. Blend the edit so it matches the existing shadows, reflections and grain of the original, with realistic fabric folds, edges and contact shadows. Do not restyle the whole image, do not shift the crop, and do not subtly alter the person's identity. CONSTRAINTS: photoreal, seamless edge blending, preserve original resolution and detail, no added people or objects beyond the requested change. OUTPUT: the edited image only."
+  },
+  {
+    "Title": "Consistent-Character Engine: Same Face Across Any New Scene",
+    "Teaser": "Locks your face and outfit from one reference photo and drops that identical character into a new scene, pose or expression.",
+    "PromptHint": "Upload a clear reference photo, then describe the [NEW SCENE], an optional [NEW POSE] and [NEW EXPRESSION].",
+    "Category": "Gemini · Nano Banana",
+    "Prompt": "ROLE: You are a character-consistency artist building a reusable storyboard character. Using the attached photo as the locked reference, generate a new image of this EXACT same person in a different scene. New scene: [NEW SCENE]. New pose: [NEW POSE]. New expression: [NEW EXPRESSION]. CRITICAL: preserve identity precisely — same facial structure, eye color, skin tone, hairstyle, age and the same outfit as the reference unless the scene requires a stated wardrobe change. The person must be instantly recognizable as the same character across this and any future images. Relight them naturally to fit the new environment (correct shadow direction, color spill and ambient tone) without changing who they are. CONSTRAINTS: photoreal, accurate hands and proportions, no identity drift, no face morphing toward a generic model, one person only, match the realism level of the reference. OUTPUT: the edited image only, ready to reuse as the next storyboard frame."
+  },
+  {
+    "Title": "E-Commerce Hero Shot: Studio Product Mockup With A Real Brand Label",
+    "Teaser": "Turns a flat phone photo of your product into a clean studio hero shot with accurate, legible brand text on the label.",
+    "PromptHint": "Upload a photo of your product, then set the [BRAND NAME], a short [LABEL TAGLINE] and a [SCENE] (e.g. marble countertop).",
+    "Category": "Gemini · Nano Banana",
+    "Prompt": "ROLE: You are a commercial product photographer building a storefront hero image. Using the attached photo of my product, turn it into a premium studio hero shot for an online store. Keep the exact same product shape, color and proportions. Place it on/in this setting: [SCENE], with clean professional lighting — a soft key light, a subtle rim light to define edges, a gentle gradient backdrop, and a realistic contact shadow and reflection. On the product's label/packaging, render the brand name exactly as \"[BRAND NAME]\" and a small tagline exactly as \"[LABEL TAGLINE]\" in crisp, legible, well-aligned typography that wraps naturally to the surface curvature. CONSTRAINTS: photoreal materials (glass, plastic, metal or paper as appropriate), text sharp and free of gibberish, do not distort the product silhouette, keep one product as the hero, leave clean negative space suitable for a storefront. OUTPUT: the edited image only."
+  },
+  {
+    "Title": "Neo-Noir Rain Portrait: Cinematic Neon-Lit Restyle",
+    "Teaser": "Restyles your photo into a moody neo-noir car or street portrait with rain, neon reflections and dramatic shadows.",
+    "PromptHint": "Upload a clear photo, then set the [NEON COLORS] (e.g. cyan and magenta) and a [SETTING] (e.g. inside a car at night).",
+    "Category": "Gemini · Nano Banana",
+    "Prompt": "ROLE: You are a cinematographer lighting a noir film still. Using the attached photo, restyle this into a cinematic neo-noir portrait. Setting: [SETTING]. Keep the same face, identity and recognizable features intact. Relight the scene dramatically with deep shadows and [NEON COLORS] neon glow reflecting on skin, glass and wet surfaces. Add a rain-streaked window or atmosphere, soft bokeh from distant city lights, a teal-and-amber cinematic color grade, gentle film grain and a shallow depth of field that isolates the subject. Make the mood pensive and filmic, like a still from a modern noir thriller. CONSTRAINTS: photoreal, do not alter face shape or identity, realistic reflections and rain physics, keep skin texture natural under the neon, no text, single subject, preserve the original head pose and crop where possible. OUTPUT: the edited image only."
+  },
+  {
+    "Title": "Step-By-Step Infographic Card With Perfectly Spelled Text",
+    "Teaser": "Builds a clean numbered infographic around your photo with a real heading and steps rendered as legible, correctly spelled text.",
+    "PromptHint": "Upload the subject photo, then set the [HEADING], the [STEPS] (semicolon-separated) and a [BRAND PALETTE] of two hex colors.",
+    "Category": "Gemini · Nano Banana",
+    "Prompt": "ROLE: You are a graphic designer producing a share-ready infographic. Using the attached photo as the central image, design a clean, modern step-by-step infographic card. THINK FIRST (silently): plan the grid, text hierarchy and where the hero image anchors the layout. Render the heading at the top reading exactly \"[HEADING]\" in bold large type. Below it, lay out these numbered steps as a tidy vertical or grid list, each with a small icon and short label, in this order: [STEPS]. Use this brand palette: [BRAND PALETTE] for accents, headings and background, with high-contrast readable body text. Keep the uploaded subject as the focal hero image, integrated with consistent lighting. CRITICAL: every word of text must be spelled correctly, sharp and legible with proper alignment, kerning and spacing — no gibberish or warped letters, no lorem-ipsum, no stray characters. Make it feel like a polished Pinterest/Instagram infographic with clear hierarchy and generous spacing. CONSTRAINTS: balanced composition, consistent icon style, one cohesive color system. OUTPUT: the infographic image only."
+  },
+  {
+    "Title": "Restore & Colorize An Old Family Photo Without Faking Faces",
+    "Teaser": "Repairs scratches, sharpens detail and adds natural color to a faded or black-and-white photo without inventing new faces.",
+    "PromptHint": "Upload the old or damaged photo, then optionally note [KNOWN DETAILS] (e.g. her dress was deep red).",
+    "Category": "Gemini · Nano Banana",
+    "Prompt": "ROLE: You are a museum-grade photo restorer. Using the attached old photo, restore and gently colorize it while staying faithful to the original people and scene. Repair scratches, creases, dust, stains and torn edges; reduce noise; and recover natural sharpness and detail in faces, hair and fabric. If the image is black-and-white or faded, add realistic period-appropriate color: natural skin tones, believable clothing and background colors. Honor these known details where given: [KNOWN DETAILS]. CRITICAL: do NOT change anyone's identity, facial features, age, expression or pose — keep every face true to the original. Do not add or remove people or objects, and do not over-smooth skin into a plastic look; preserve authentic texture and the original's character. CONSTRAINTS: photoreal, historically plausible colors, keep the original composition and crop, natural film-like finish. OUTPUT: the restored image only."
+  },
+  {
+    "Title": "Funko-Style Mini-Me Toy In A Window Box",
+    "Teaser": "Turns your photo into a chibi vinyl collectible with a big head and small body, boxed with your name and a themed accessory.",
+    "PromptHint": "Upload a clear photo, then set [YOUR NAME] for the box and a [SIGNATURE ACCESSORY] that represents you.",
+    "Category": "Gemini · Nano Banana",
+    "Prompt": "ROLE: You are a toy designer mocking up a packaged vinyl collectible. Using the attached photo, create a stylized vinyl collectible toy of this person in the popular big-head, small-body chibi style. Keep recognizable cues — same hairstyle, hair color, skin tone, glasses, outfit colors and any signature features — translated into smooth matte vinyl with simplified shapes and large round eyes. Place the figure inside a cardboard window box: a clear plastic front panel, a colored cardback, the name \"[YOUR NAME]\" printed cleanly across the top, and a small molded [SIGNATURE ACCESSORY] beside the figure. Style: studio product photography, soft even lighting, slight top-down angle, clean background. CONSTRAINTS: smooth toy-like vinyl finish (not photoreal skin), legible box text with no gibberish, correct proportions for the chibi style, one figure only, friendly collectible vibe. OUTPUT: the edited image only."
+  }
+]

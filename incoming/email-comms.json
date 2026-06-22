@@ -1,0 +1,107 @@
+[
+  {
+    "Title": "Cold Email That Gets 20%+ Replies (Under 90 Words)",
+    "Teaser": "Writes a tight, personalized cold email with a scroll-stopping subject line and one low-friction ask that beats spam filters and ghosting.",
+    "PromptHint": "Fill [PROSPECT/COMPANY], [THEIR LIKELY PAIN], your [OFFER], and one [SPECIFIC TRIGGER] you noticed.",
+    "Category": "Email & Communication",
+    "Prompt": "You are a top SDR whose cold emails get 20%+ reply rates. Write a cold email to [PROSPECT/COMPANY].\n\nTHEIR LIKELY PAIN: [THEIR LIKELY PAIN]\nMY OFFER: [OFFER]\nSPECIFIC TRIGGER I NOTICED (news, post, hire, launch): [SPECIFIC TRIGGER]\n\nThink first (don't show this): what does this person care about this week, and what's the smallest yes I can ask for?\n\nRules:\n- Open with the trigger, not me. Prove I did my homework in line 1.\n- Body under 90 words, 5th-grade reading level, no jargon.\n- One clear value tied to their pain. No feature dumps.\n- End with ONE low-friction ask (e.g. 'worth a 10-min look?'), never 'hop on a call'.\n- Banned: 'I hope this finds you well', 'circling back', 'synergy', 'revolutionary', exclamation marks.\n\nOUTPUT FORMAT:\n1) SUBJECT LINES — 3 options, under 40 chars, no spam-trigger words\n2) EMAIL BODY\n3) PS — one line\n4) SPAM CHECK — flag any phrase a filter might catch, or write 'clean'"
+  },
+  {
+    "Title": "The 4-Touch Follow-Up Sequence That Doesn't Annoy",
+    "Teaser": "Builds a polite-but-persistent follow-up series that adds new value each time instead of 'just bumping this' — turning silence into replies.",
+    "PromptHint": "Paste your [ORIGINAL EMAIL] and describe the [DEAL/ASK] and [PROSPECT TYPE].",
+    "Category": "Email & Communication",
+    "Prompt": "You are a sales follow-up strategist. Build a 4-email follow-up sequence for someone who went silent after my first message.\n\nORIGINAL EMAIL I SENT:\n[ORIGINAL EMAIL]\nWHAT I'M ASKING FOR: [DEAL/ASK]\nPROSPECT TYPE: [PROSPECT TYPE]\n\nRules:\n- Each email must add NEW value (a resource, a relevant result, a reframed angle) — never just 'following up' or 'bumping this'.\n- Vary the angle: Touch 1 = helpful nudge, Touch 2 = social proof / result, Touch 3 = different pain angle, Touch 4 = graceful breakup that invites a reply.\n- Each under 70 words, friendly and low-pressure, never guilt-trippy.\n- Suggest send timing (days apart) for each.\n\nOUTPUT FORMAT:\n- A table: | Touch | Day | Subject | Body | Why it works |\n- Then one line: the single psychological reason the breakup email (Touch 4) so often gets the reply."
+  },
+  {
+    "Title": "Hard Conversation Script: Say It Without Burning the Bridge",
+    "Teaser": "Turns a dreaded message — pushback, a 'no', a boundary, bad news — into a clear, kind, firm email that protects the relationship.",
+    "PromptHint": "Describe the [SITUATION], who it's [TO], the [OUTCOME YOU WANT], and the [RELATIONSHIP] (boss, client, peer).",
+    "Category": "Email & Communication",
+    "Prompt": "You are a communication coach trained in nonviolent communication and executive feedback. Help me write a hard email I've been avoiding.\n\nSITUATION: [SITUATION]\nWHO IT'S TO: [TO]\nOUTCOME I WANT: [OUTCOME YOU WANT]\nOUR RELATIONSHIP: [RELATIONSHIP]\n\nDo this:\n1. Name the one thing I'm really afraid will happen if I send this.\n2. Write the email: lead with shared context/goodwill, state the issue using observation + impact (not blame or 'you always'), make ONE clear ask, and leave them a dignified path forward.\n3. Keep it under 160 words, warm but firm — no over-apologizing, no passive aggression, no walls of text.\n\nOUTPUT FORMAT:\n(a) THE EMAIL\n(b) SOFTER VERSION and FIRMER VERSION\n(c) ONE SENTENCE TO DELETE if I want to sound less defensive"
+  },
+  {
+    "Title": "The Sincere Apology Email (No 'Sorry If', No Excuses)",
+    "Teaser": "Writes an apology that actually repairs trust — owns the impact, skips the excuses, and proposes a concrete fix instead of a hollow 'sorry'.",
+    "PromptHint": "Explain [WHAT HAPPENED], the [IMPACT ON THEM], who it's [TO], and what you'll [DO TO FIX IT].",
+    "Category": "Email & Communication",
+    "Prompt": "You are an expert in trust repair and crisis communication. Write a genuine apology email.\n\nWHAT HAPPENED: [WHAT HAPPENED]\nIMPACT ON THEM: [IMPACT ON THEM]\nWHO IT'S TO: [TO]\nHOW I'LL FIX IT: [DO TO FIX IT]\n\nNon-negotiable rules:\n- Name the specific mistake plainly. No 'I'm sorry IF', 'mistakes were made', or hiding behind passive voice.\n- Acknowledge the real impact on them before talking about me.\n- Take full ownership — zero excuses, zero blaming circumstances or other people.\n- State exactly what I'll do so it doesn't recur, with a timeframe.\n- Don't grovel or over-apologize; one clean apology, not five.\n- Under 150 words, human and direct.\n\nOUTPUT FORMAT:\n(a) SUBJECT LINE — one line that signals accountability without panic\n(b) THE APOLOGY EMAIL\n(c) 3 PHRASES TO NEVER USE here, each with one reason why"
+  },
+  {
+    "Title": "Salary Negotiation Email: Counter Without Killing the Deal",
+    "Teaser": "Drafts a confident counter-offer email that anchors high, justifies the ask with value, and keeps the tone collaborative so they say yes.",
+    "PromptHint": "Add the [CURRENT OFFER], your [TARGET], your [TOP 2 LEVERAGE POINTS], and what you're [NEGOTIATING].",
+    "Category": "Email & Communication",
+    "Prompt": "You are a negotiation coach (Chris Voss / Harvard 'Getting to Yes' style). Write a counter-offer email.\n\nWHAT I'M NEGOTIATING: [NEGOTIATING]\nCURRENT OFFER: [CURRENT OFFER]\nMY TARGET: [TARGET]\nMY TOP 2 LEVERAGE POINTS: [TOP 2 LEVERAGE POINTS]\n\nRules:\n- Open with genuine enthusiasm for the role so it never reads as ungrateful.\n- Anchor with a specific number/ask backed by value and market reality, not need.\n- Use collaborative framing ('how can we get to X together?') not ultimatums.\n- Keep one specific, reasonable ask front and center; bundle minor asks below.\n- Stay under 180 words, calm and confident — no apologizing for asking.\n\nThis is general guidance, not legal or financial advice.\n\nOUTPUT FORMAT:\n(a) THE EMAIL\n(b) FALLBACK LINE if they say the number is fixed\n(c) THE ONE PHRASE that signals I'm serious but flexible"
+  },
+  {
+    "Title": "Meeting Notes → Decisions, Owners & Action Items",
+    "Teaser": "Turns a messy meeting transcript or notes into a crisp recap with an action-item table (owner + deadline) you can send in 30 seconds.",
+    "PromptHint": "Paste the [TRANSCRIPT/NOTES] and name the [MEETING PURPOSE] so it sorts what matters.",
+    "Category": "Email & Communication",
+    "Prompt": "You are an executive chief-of-staff who writes flawless meeting recaps. Turn the notes below into a send-ready summary.\n\nMEETING PURPOSE: [MEETING PURPOSE]\nTRANSCRIPT / NOTES:\n[TRANSCRIPT/NOTES]\n\nRules: only use what's in the notes, never invent commitments, keep it scannable. If an owner or date was never stated, write 'UNASSIGNED — confirm' rather than guessing.\n\nOUTPUT FORMAT (this exact order):\n1. TL;DR — 2-3 sentences a busy exec reads in 10 seconds\n2. DECISIONS MADE — bullets of what was actually decided (not just discussed)\n3. ACTION ITEMS — a table: | Action | Owner | Deadline | Status |\n4. OPEN QUESTIONS / BLOCKERS — what still needs an answer and from whom\n5. NEXT MEETING — date/topic if mentioned\n6. EMAIL INTRO — one copy-paste line to send this recap to attendees"
+  },
+  {
+    "Title": "Inbox Triage: Clear My Backlog With Drafts in My Voice",
+    "Teaser": "Reads a pile of unanswered emails, sorts them by urgency, and drafts a reply to each in your tone so you clear the backlog in minutes.",
+    "PromptHint": "Paste the [EMAILS] (or thread dump) and describe your [TONE] + any [DEFAULT STANCE] (e.g. protect my time).",
+    "Category": "Email & Communication",
+    "Prompt": "You are my executive assistant. I'll paste several unanswered emails; help me clear them fast in MY voice.\n\nMY TONE: [TONE]\nMY DEFAULT STANCE (e.g. protect my calendar, say no kindly): [DEFAULT STANCE]\nEMAILS:\n[EMAILS]\n\nFor each email:\n1. Classify: REPLY NOW / QUICK YES / POLITE NO / NEEDS INFO / IGNORE — with a one-line reason.\n2. For everything except IGNORE, draft a reply in my tone: under 80 words, one clear next step, no filler.\n3. Where I'd need to decide something, leave a [YOU DECIDE: option A / option B] marker instead of assuming.\n\nDon't send anything — these are drafts for me to approve.\n\nOUTPUT FORMAT:\n- A numbered list, one block per email (classification + reason + draft)\n- A final line: 'Top 3 to handle first' in priority order"
+  },
+  {
+    "Title": "De-Robotify My Email: Kill the AI Tells, Sound Human",
+    "Teaser": "Rewrites stiff, corporate, or obviously-AI email copy into something warm and natural — keeping your meaning but killing the tells.",
+    "PromptHint": "Paste the [DRAFT EMAIL] and pick a [VOICE] (e.g. warm, direct, casual-professional).",
+    "Category": "Email & Communication",
+    "Prompt": "You are an editor who makes business writing sound like a real, likeable human. Rewrite my email so no one can tell AI touched it.\n\nDESIRED VOICE: [VOICE]\nDRAFT EMAIL:\n[DRAFT EMAIL]\n\nRules:\n- Keep the meaning, key facts, and any names/numbers exactly.\n- Cut corporate filler and AI tells: 'I hope this email finds you well', 'I wanted to reach out', 'delve', 'leverage', 'in today's fast-paced world', 'furthermore', overused em-dashes, and tidy rule-of-three lists.\n- Use natural rhythm: vary sentence length, use contractions, allow the occasional short line.\n- Stay concise; end with one clear ask.\n\nOUTPUT FORMAT:\n(a) THE REWRITTEN EMAIL\n(b) HUMANNESS CHECK — the 3 biggest AI tells you removed\n(c) ONE OPTIONAL LINE that adds a touch of genuine personality"
+  },
+  {
+    "Title": "Rewrite My Email: Clear, Under 150 Words, One Real Ask",
+    "Teaser": "Takes a rambling, buried-the-lede email and rebuilds it so the reader knows what you want in the first two lines — the viral clarity template.",
+    "PromptHint": "Paste the [MESSY EMAIL] and state the [ONE THING YOU ACTUALLY WANT] from the reader.",
+    "Category": "Email & Communication",
+    "Prompt": "You are a ruthless editor obsessed with clarity. Rewrite my email so a busy person gets it on the first read.\n\nTHE ONE THING I ACTUALLY WANT: [ONE THING YOU ACTUALLY WANT]\nMESSY EMAIL:\n[MESSY EMAIL]\n\nRules:\n- Put the bottom line up front: the ask must be obvious within the first 2 lines.\n- Under 150 words total. Cut every sentence that doesn't serve the ask.\n- If there are multiple points, use short labeled bullets.\n- Make the call to action specific (what, who, by when). No vague 'let me know'.\n- Preserve essential facts; remove hedging, apologies for length, and backstory the reader doesn't need.\n\nOUTPUT FORMAT:\n(a) SUBJECT LINE\n(b) THE REWRITTEN EMAIL\n(c) ONE-LINE NOTE on the biggest thing that was burying my point"
+  },
+  {
+    "Title": "Long Email Thread → What's Going On & What I Owe",
+    "Teaser": "Collapses a 30-message thread into context, decisions, open loops, and exactly what's being asked of you — so you reply without re-reading everything.",
+    "PromptHint": "Paste the full [EMAIL THREAD] and say [WHO YOU ARE] in it (e.g. the vendor, the manager).",
+    "Category": "Email & Communication",
+    "Prompt": "You are a sharp analyst. I'll paste a long, tangled email thread. Tell me what actually happened and what I owe.\n\nWHO I AM IN THIS THREAD: [WHO YOU ARE]\nTHREAD:\n[EMAIL THREAD]\n\nRules: stick to the thread, flag anything ambiguous as 'unclear — confirm', don't invent obligations.\n\nOUTPUT FORMAT (this order):\n1. CONTEXT — 2-3 sentences: what this thread is about and where it stands\n2. KEY DECISIONS / AGREEMENTS — bullets of what's been settled\n3. OPEN LOOPS — unresolved questions and who they're waiting on\n4. WHAT'S NEEDED FROM ME — a checklist of specific actions/replies I owe, with any stated deadlines\n5. WATCH-OUTS — any tension, contradiction, or commitment I might miss\n6. DRAFT REPLY — 2-3 sentences that close my biggest open loop"
+  },
+  {
+    "Title": "Warm Intro Request People Actually Say Yes To",
+    "Teaser": "Writes a respectful, easy-to-forward intro request (or cold outreach to someone you admire) that makes saying yes effortless.",
+    "PromptHint": "Name [WHO YOU WANT TO REACH], [WHY], your [CONNECTION/ANGLE], and the [ONE SPECIFIC ASK].",
+    "Category": "Email & Communication",
+    "Prompt": "You are a relationship-building expert who gets high reply rates from busy people. Write an outreach email.\n\nWHO I WANT TO REACH: [WHO YOU WANT TO REACH]\nWHY I'M REACHING OUT: [WHY]\nMY CONNECTION OR ANGLE (mutual contact, their work, shared interest): [CONNECTION/ANGLE]\nMY ONE SPECIFIC ASK: [ONE SPECIFIC ASK]\n\nRules:\n- Lead with something genuinely specific about them — prove it's not a mass blast.\n- Give before you take: offer value, context, or a reason I'm worth their time.\n- Make the ask tiny and clear (one question, a 15-min chat, or a yes/no) — easy to grant.\n- Respect their time explicitly; give them an easy out.\n- Under 120 words, no flattery that sounds fake.\n\nOUTPUT FORMAT:\n(a) THE EMAIL\n(b) FORWARDABLE BLURB — a short paragraph the mutual contact can paste in one click (skip if not an intro request)\n(c) 2 SUBJECT-LINE OPTIONS"
+  },
+  {
+    "Title": "Customer Complaint Reply: Defuse, Own It, Win Them Back",
+    "Teaser": "Crafts a calm, empathetic response to an angry customer or review that de-escalates, takes responsibility, and offers a concrete resolution.",
+    "PromptHint": "Paste the [COMPLAINT], your [BRAND TONE], and what you can [OFFER] to make it right.",
+    "Category": "Email & Communication",
+    "Prompt": "You are a head of customer experience known for turning angry customers into fans. Write a reply to this complaint.\n\nTHE COMPLAINT:\n[COMPLAINT]\nMY BRAND TONE: [BRAND TONE]\nWHAT I CAN OFFER TO RESOLVE IT: [OFFER]\n\nRules:\n- Open by acknowledging their feeling and the specific problem — no defensive 'we're sorry you feel that way'.\n- Take ownership where we got it wrong; don't argue or make them prove it.\n- State the concrete resolution and a clear timeline.\n- Stay calm and human even if their message was harsh; never match the heat.\n- Keep it under 140 words. Don't over-promise things I can't deliver.\n\nOUTPUT FORMAT:\n(a) THE REPLY\n(b) PUBLIC-REVIEW VERSION — a shorter version if this is posted in the open\n(c) DEFUSE/INFLAME — the single line most likely to defuse their anger, and the one line to avoid that would inflame it"
+  },
+  {
+    "Title": "The Graceful 'No' Email That Protects the Relationship",
+    "Teaser": "Drafts a graceful decline — to a meeting, request, scope creep, or invite — that's firm and kind so you protect your time without guilt.",
+    "PromptHint": "Describe [WHAT YOU'RE DECLINING], who it's [TO], and any [ALTERNATIVE] you can offer (or none).",
+    "Category": "Email & Communication",
+    "Prompt": "You are a coach who helps people set boundaries without burning bridges. Write an email that says no, gracefully.\n\nWHAT I'M DECLINING: [WHAT YOU'RE DECLINING]\nWHO IT'S TO: [TO]\nALTERNATIVE I CAN OFFER (or 'none'): [ALTERNATIVE]\n\nRules:\n- Be warm and appreciative, but give a clear, unmistakable no — no 'maybe later' that invites a follow-up I don't want.\n- Keep the reason short and honest; do NOT over-explain or list excuses that sound defensive.\n- If I have an alternative, offer it; if not, don't manufacture one.\n- End on a genuinely friendly note that keeps the door open for the relationship, not the request.\n- Under 110 words. No apologizing three times.\n\nOUTPUT FORMAT:\n(a) THE EMAIL\n(b) FIRMER VERSION for when they push back\n(c) THE ONE SENTENCE TO CUT if I want to sound less guilty"
+  },
+  {
+    "Title": "Email Tone Doctor: Will This Land the Way I Think?",
+    "Teaser": "Audits your draft for how it'll actually read — too harsh, too soft, passive-aggressive, or unclear — then fixes it before you hit send.",
+    "PromptHint": "Paste the [DRAFT], say who it's [TO] and the [IMPRESSION YOU WANT] to leave (e.g. confident, warm).",
+    "Category": "Email & Communication",
+    "Prompt": "You are a communication analyst who predicts how an email will be received. Stress-test my draft before I send it.\n\nWHO IT'S TO: [TO]\nIMPRESSION I WANT TO LEAVE: [IMPRESSION YOU WANT]\nMY DRAFT:\n[DRAFT]\n\nBe candid, not flattering.\n\nOUTPUT FORMAT:\n1. TONE READ — how this likely lands on a first read; rate confidence / warmth / clarity 1-10 each, plus the gut reaction it may trigger\n2. RISKY LINES — quote any sentence that could read as passive-aggressive, defensive, demanding, vague, or accidentally cold\n3. MISREADS — the most likely way the reader misinterprets my intent\n4. THE FIX — a rewritten version that achieves the impression I want, same length or shorter\n5. HIGHEST-IMPACT CHANGE — the single word or phrase to change first"
+  },
+  {
+    "Title": "Announce a Change Without Triggering Panic or Backlash",
+    "Teaser": "Drafts an internal announcement — a policy shift, reorg, price change, or new tool — that gets buy-in by leading with the 'why' and pre-empting the objections.",
+    "PromptHint": "Describe [THE CHANGE], the [AUDIENCE], the real [WHY], and the [BIGGEST OBJECTION] you expect.",
+    "Category": "Email & Communication",
+    "Prompt": "You are an internal-comms lead who rolls out hard changes without sparking panic, rumors, or a comment-thread pile-on. Write the announcement email.\n\nTHE CHANGE: [THE CHANGE]\nAUDIENCE (team, company, customers): [AUDIENCE]\nTHE REAL WHY: [WHY]\nBIGGEST OBJECTION I EXPECT: [BIGGEST OBJECTION]\n\nThink first (don't show this): what will the audience feel in the first 5 seconds, and what rumor will fill the gap if I'm vague?\n\nRules:\n- Lead with the change AND the honest 'why' in the first 3 lines — no slow build-up, no corporate euphemisms ('synergies', 'right-sizing').\n- Name what's changing, what's NOT changing, and exactly what each person should do next.\n- Pre-empt the biggest objection directly instead of hoping no one notices it.\n- Acknowledge the human impact where it's real; don't fake-cheerlead a hard change.\n- Give a clear channel for questions. Under 200 words, scannable.\n\nOUTPUT FORMAT:\n(a) SUBJECT LINE — clear, non-alarming\n(b) THE ANNOUNCEMENT EMAIL\n(c) ANTICIPATED Q&A — the 3 toughest questions people will ask, with a one-line honest answer each"
+  }
+]

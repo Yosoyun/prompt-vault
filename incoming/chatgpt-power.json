@@ -1,0 +1,107 @@
+[
+  {
+    "Title": "Prompt Architect: Turn a Rough Idea Into a Pro Prompt",
+    "Teaser": "ChatGPT interviews you one question at a time, then hands you a single optimized, copy-paste prompt built for your exact task.",
+    "PromptHint": "Put what you ultimately want in [GOAL]. Answer the questions one at a time, then copy the final block.",
+    "Category": "ChatGPT Power-User",
+    "Prompt": "You are a senior prompt engineer. My goal: [GOAL]. Do NOT solve it yet. First, interview me by asking ONE clarifying question at a time about audience, scope, constraints, tone, and the exact output I need. Continue until you are 95% confident you can produce an excellent result. Then output, in a single copy-pasteable code block, one optimized prompt that includes: a clear role, the task, key context, explicit constraints, the reasoning steps, and a required OUTPUT FORMAT. Below the block, add 3 bullets on how to adapt it for similar tasks. Begin with your first question now."
+  },
+  {
+    "Title": "Prompt Doctor: Score My Prompt 1-10 and Rewrite It Twice",
+    "Teaser": "Get a brutally honest score, a ranked diagnosis of what's weak, and two upgraded versions of any prompt you paste.",
+    "PromptHint": "Paste your current prompt into [YOUR PROMPT]. Optionally name the model in [MODEL].",
+    "Category": "ChatGPT Power-User",
+    "Prompt": "Act as a critical prompt-engineering reviewer for [MODEL]. Here is my prompt:\n<prompt>\n[YOUR PROMPT]\n</prompt>\nDo this: (1) Score it 1-10 on clarity, specificity, context, constraints, and output format, with a one-line reason for each. (2) List the 3 biggest weaknesses that will hurt the result, ranked by impact. (3) Rewrite it as a 'Solid' version (tightened, same intent) and a 'Power' version (adds role, reasoning steps, and a structured output format). Put each rewrite in its own code block. Do NOT pad with praise. Be specific and direct."
+  },
+  {
+    "Title": "Custom GPT Instructions Generator: Paste-Ready System Prompt",
+    "Teaser": "Produces a complete, paste-ready system prompt for a Custom GPT or Project, with guardrails, a default format, and starters.",
+    "PromptHint": "Describe the assistant in [ASSISTANT PURPOSE]; name the users in [TARGET USERS].",
+    "Category": "ChatGPT Power-User",
+    "Prompt": "You are an expert at writing system instructions for Custom GPTs. I want to build an assistant for: [ASSISTANT PURPOSE], used by [TARGET USERS]. Write a complete system prompt I can paste into the Instructions field, structured as: 1) Identity & mission, 2) Core capabilities, 3) Voice & tone rules, 4) Step-by-step workflow it should follow on every request, 5) Hard constraints and a 'do NOT' list, 6) A default response format, 7) 2-3 conversation starters. Keep it under 400 words, second person ('You are...'), and avoid vague filler. Output the whole thing in one code block."
+  },
+  {
+    "Title": "Memory Audit: See and Sharpen What ChatGPT Knows About You",
+    "Teaser": "Forces ChatGPT to dump everything it has inferred about you, flag what's wrong or stale, and propose cleaner memory entries.",
+    "PromptHint": "No variables required. Turn on ChatGPT Memory first. Add [FOCUS] to aim the audit at one area.",
+    "Category": "ChatGPT Power-User",
+    "Prompt": "Act as an auditor of your own memory and context about me, focused on [FOCUS]. Do NOT flatter or generalize. Step 1: list every concrete fact, preference, and assumption you currently hold about me, grouped as Verified (I stated it), Inferred (you guessed it), and Stale (likely outdated). Step 2: flag the 3 inferences most likely to be wrong or biased, and say what evidence they rest on. Step 3: list anything important you're clearly missing to help me well. Step 4: propose 5 clean, rewritten memory entries I could approve. OUTPUT FORMAT: four labeled sections, bullets only, no prose intro. End with one question that would most improve your model of me."
+  },
+  {
+    "Title": "Brutal Honesty Mode: 10 Hard Truths Holding You Back",
+    "Teaser": "Switches off the flattery and delivers savage, specific, genuinely useful truths about your habits and goals.",
+    "PromptHint": "Add context in [SITUATION] (your goals, work habits, what you're stuck on).",
+    "Category": "ChatGPT Power-User",
+    "Prompt": "Drop the sycophancy completely. Act as my brutally honest advisor who wants me to win, not feel good. Context about me: [SITUATION]. Give me 10 hard truths about what's actually holding me back, based on the patterns you can see. For each: state the truth bluntly in one line, name the specific behavior that proves it, and give one concrete action to fix it. No hedging, no 'it depends', no comfort padding. End with the single truth you think I'm most avoiding, and why it matters most. This is tough love, so be sharp but not cruel."
+  },
+  {
+    "Title": "Clarify-First Mode: Stop ChatGPT From Guessing",
+    "Teaser": "A reusable rule that forces ChatGPT to ask the few questions that matter before answering, killing vague and wrong outputs.",
+    "PromptHint": "Paste your real task into [TASK]. Answer its questions, then it delivers.",
+    "Category": "ChatGPT Power-User",
+    "Prompt": "Before you attempt this task, do not assume anything. Task: [TASK]. First, identify the 3-5 decisions or unknowns that most affect the quality of your answer. Ask me about them as a short numbered list of questions, ordered by importance, and tell me which ONE matters most. If I skip a question, state the assumption you'll make and proceed. Only after I respond should you produce the final deliverable. After delivering, add a one-line note: 'Assumptions I made:' so I can correct course fast."
+  },
+  {
+    "Title": "Expert Panel Simulator: Pressure-Test Any Decision",
+    "Teaser": "Stages three named expert personas who debate your decision from different angles and deliver a clear, no-fence-sitting verdict.",
+    "PromptHint": "Put your decision or plan in [DECISION]; optionally pick the experts in [EXPERTS].",
+    "Category": "ChatGPT Power-User",
+    "Prompt": "Simulate a panel of three sharp, differently-minded experts debating my decision: [DECISION]. If I haven't named them, choose three relevant specialists (e.g., a strategist, a skeptic, and a practitioner) as [EXPERTS]. Format: 1) One-line intro for each expert and their lens. 2) A round where each gives their strongest take, including where they disagree. 3) A rebuttal round where they challenge each other's weakest point. 4) A 'Consensus' section: what they agree on, the biggest risk, and a recommended next step. Keep each voice distinct and opinionated. No fence-sitting."
+  },
+  {
+    "Title": "De-Robotify: Make AI Text Read Like a Real Human",
+    "Teaser": "Strips the telltale AI tics from any draft and rewrites it to sound like a specific, real person wrote it.",
+    "PromptHint": "Paste the text into [DRAFT] and describe the voice you want in [VOICE].",
+    "Category": "ChatGPT Power-User",
+    "Prompt": "Rewrite the text below so it sounds like a real human, not an AI. Target voice: [VOICE].\n<draft>\n[DRAFT]\n</draft>\nRules: vary sentence length, use plain concrete words, cut hedging and throat-clearing, and delete clichés like 'in today's world', 'delve', 'unleash', 'navigate', 'tapestry', and 'it's not just X, it's Y'. No em-dash overuse, no rule-of-three padding, no empty intros or summaries. Keep all facts and meaning intact. Output two versions: 'Clean' (light edit) and 'Natural' (fuller rewrite). Below them, list the AI tells you removed."
+  },
+  {
+    "Title": "Iterative Rewrite: Three Drafts, Each Sharper Than the Last",
+    "Teaser": "Improves your writing three times in sequence and shows every version, so you can grab the sweet spot.",
+    "PromptHint": "Paste the text in [TEXT]; set the goal (clarity, persuasion, brevity) in [GOAL].",
+    "Category": "ChatGPT Power-User",
+    "Prompt": "Improve the text below three times in sequence, optimizing for [GOAL] while preserving meaning and tone.\n<text>\n[TEXT]\n</text>\nShow all three labeled versions: 'Draft 1 - clarity pass', 'Draft 2 - tighter and sharper', 'Draft 3 - final, every word earning its place'. Each must be a real improvement on the previous one, not a paraphrase. After Draft 3, add a 2-line note on exactly what changed across the iterations and roughly how many words you cut. Do not add new claims or change the facts."
+  },
+  {
+    "Title": "Voice Profile Builder: Clone Your Style, Load It Anywhere",
+    "Teaser": "Analyzes your past writing and outputs a portable voice file you can paste into any chat to make AI sound like you.",
+    "PromptHint": "Paste 2-4 samples of your writing into [SAMPLES]. Save the output and reuse it everywhere.",
+    "Category": "ChatGPT Power-User",
+    "Prompt": "Analyze the writing samples below and reverse-engineer my voice into a reusable profile I can load into any future chat.\n<samples>\n[SAMPLES]\n</samples>\nOutput a 'VOICE PROFILE' in one code block with these sections: Tone (3-5 adjectives), Sentence rhythm, Vocabulary and signature words, Structural habits, Punctuation quirks, Things I never do, and a 'How to write as me' instruction line. Then write one fresh 60-word paragraph on a neutral topic to demonstrate the profile in action. Keep it specific enough that another model could imitate me convincingly."
+  },
+  {
+    "Title": "Socratic Tutor: Master Anything by Being Questioned",
+    "Teaser": "Turns ChatGPT into an active tutor that teaches through questions and corrects you in real time, building real mastery.",
+    "PromptHint": "Put the subject in [TOPIC] and your current level in [LEVEL].",
+    "Category": "ChatGPT Power-User",
+    "Prompt": "Be my Socratic tutor for [TOPIC]. My current level: [LEVEL]. Teach by asking me ONE question at a time, never lecturing for more than two sentences before the next question. After each answer I give: tell me what I got right, correct what I got wrong in plain language, then ask a slightly harder question that builds on it. Adapt the difficulty to my responses. Every 5 questions, pause and summarize what I've now understood and what's still shaky. If I'm clearly stuck, give a hint, not the answer. Start by checking what I already know."
+  },
+  {
+    "Title": "Recruiter Mode: Tailor My Resume to Beat the ATS",
+    "Teaser": "Maps your resume to a specific job, flags missing keywords, and rewrites weak bullets into quantified wins.",
+    "PromptHint": "Paste the job ad in [JOB DESCRIPTION] and your resume/experience in [RESUME].",
+    "Category": "ChatGPT Power-User",
+    "Prompt": "Act as a senior technical recruiter who screens with an ATS. Job description:\n<job>\n[JOB DESCRIPTION]\n</job>\nMy resume:\n<resume>\n[RESUME]\n</resume>\nDeliver: 1) A match score out of 100 with the top reasons. 2) A keyword gap table: critical terms in the job ad missing or weak in my resume. 3) Five of my weakest bullets rewritten into quantified, action-verb achievements (use realistic placeholders like [X%] where I must add a number). 4) A 2-line summary statement tailored to this role. Flag anything that looks like keyword stuffing. Be honest about whether I'm a stretch for this role."
+  },
+  {
+    "Title": "Brain-Dump to Day Plan: Turn Chaos Into a Time-Blocked Plan",
+    "Teaser": "Converts messy notes into a prioritized, time-blocked plan with what to cut and a clear first move.",
+    "PromptHint": "Dump everything on your mind into [BRAIN DUMP]; set the time you have in [TIME AVAILABLE].",
+    "Category": "ChatGPT Power-User",
+    "Prompt": "Here is my unstructured brain-dump of everything on my plate:\n<dump>\n[BRAIN DUMP]\n</dump>\nI have [TIME AVAILABLE] to work with. Turn this into an operating plan. Steps: 1) Group items into themes. 2) Score each by impact vs effort and flag the 3 that actually move the needle. 3) Identify anything I can delete, delegate, or defer. 4) Build a time-blocked schedule that fits my available time, with realistic durations and buffer. 5) Name the single first action I should take in the next 15 minutes. Output as a clean table plus the schedule. Be ruthless about cutting low-value tasks."
+  },
+  {
+    "Title": "Viral Post Engine: Reverse-Engineer a Proven Style",
+    "Teaser": "Feed it winning examples plus your idea, and it outputs scroll-stopping posts engineered in that exact style.",
+    "PromptHint": "Paste 2-3 winners in [EXAMPLES], your idea in [IDEA], and the platform in [PLATFORM].",
+    "Category": "ChatGPT Power-User",
+    "Prompt": "You are a short-form content strategist for [PLATFORM]. Study these proven posts and reverse-engineer what makes each one work:\n<examples>\n[EXAMPLES]\n</examples>\nNow take my raw idea: [IDEA]. First, in 3 bullets, name the hook pattern, structure, and tone the examples share. Then write 3 distinct post options in that style, each with a scroll-stopping first line, tight body using line breaks for skimmability, and a clear ending (CTA or punchline). Keep them platform-native and within typical length limits. Avoid hashtags-as-filler and generic motivational fluff. Label each option with the angle it uses."
+  },
+  {
+    "Title": "Red-Team My Plan: Find Every Way It Fails First",
+    "Teaser": "A pre-mortem engine that assumes your plan already failed, then lists the real reasons and the cheapest fixes for each.",
+    "PromptHint": "Describe the plan in [PLAN]; optionally state what 'failure' means for you in [FAILURE].",
+    "Category": "ChatGPT Power-User",
+    "Prompt": "Act as a ruthless red-team analyst running a pre-mortem on my plan: [PLAN]. Assume it's now 6 months later and the plan has clearly failed; failure means [FAILURE]. Do NOT reassure me. Steps: 1) List the top 8 specific reasons it failed, ranked by likelihood x damage, each in one concrete sentence. 2) For each, label the root cause type (assumption, execution, external, or incentive). 3) Mark the 3 'silent killers' I'm least likely to see coming. 4) For each of those 3, give the cheapest early-warning signal to watch and one mitigation I can set up now. OUTPUT FORMAT: a ranked risk table, then a short 'Silent killers' section. End with the single change that most increases my odds of success."
+  }
+]

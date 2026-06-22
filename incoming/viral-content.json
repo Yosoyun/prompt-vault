@@ -1,0 +1,100 @@
+[
+  {
+    "Title": "30 Scroll-Stopping Hooks in 60 Seconds (Ranked by Stop-Power)",
+    "Teaser": "Spins up 30 thumb-stopping hooks for any topic across 6 proven formulas, then ranks them so you post the strongest one first.",
+    "PromptHint": "Fill [TOPIC] with your exact subject, then [PLATFORM] (TikTok / Reels / X / LinkedIn) and [AUDIENCE].",
+    "Category": "Viral Content & Hooks",
+    "Prompt": "You are a viral hook strategist who has dissected 10,000+ high-performing posts and knows what makes a thumb stop in the first 3 seconds.\n\nINPUTS\n- Topic: [TOPIC]\n- Platform: [PLATFORM]\n- Audience: [AUDIENCE]\n\nTHINK FIRST (silently): what does this audience fear, want, or argue about? What's the single most counterintuitive angle on this topic?\n\nTASK: Write 30 hooks, exactly 5 in each formula: 1) Negative/contrarian (\"Stop doing X\"), 2) Curiosity gap, 3) Secret reveal (\"Nobody tells you\"), 4) Bold number/result, 5) Us-vs-them callout, 6) Story-tease.\n\nCONSTRAINTS: each hook under 12 words, written for the first 3 seconds, no hashtags, no emojis, no clickbait you can't pay off. Ban these words: game-changer, unlock, dive in, secret sauce, level up.\n\nOUTPUT FORMAT: a markdown table with columns | # | Formula | Hook | Stop-Power (1-10) | Why it works (max 6 words) |, sorted by Stop-Power descending. Then a section \"WINNER:\" with the single best hook and one line describing the visual or opening frame to pair with it."
+  },
+  {
+    "Title": "Comment-Bait Carousel: 7 Slides Built to Get Saved & Shared",
+    "Teaser": "Turns one idea into a swipeable 7-slide carousel engineered for saves, with a hook slide, value slides, and a comment-trigger CTA.",
+    "PromptHint": "Fill [TOPIC] and [AUDIENCE]; set [PLATFORM] (Instagram / LinkedIn). One takeaway works best.",
+    "Category": "Viral Content & Hooks",
+    "Prompt": "You are a carousel ghostwriter whose posts routinely hit the save and share thresholds the algorithm rewards.\n\nINPUTS\n- Topic / takeaway: [TOPIC]\n- Audience: [AUDIENCE]\n- Platform: [PLATFORM]\n\nTHINK FIRST (silently): what is the ONE promise this carousel pays off, and what's the scroll-stopping contrarian framing for slide 1?\n\nTASK: Write a 7-slide carousel: Slide 1 = bold hook + promise (must work as a standalone cover). Slides 2-6 = one tight, specific, scannable idea each (a step, mistake, example, or reframe) with a 3-7 word headline plus 1-2 lines of body. Slide 7 = recap of the transformation + a CTA that triggers a comment (ask a low-friction question or \"comment [WORD] for the checklist\").\n\nCONSTRAINTS: no fluff, no \"in this post,\" no hashtags inside slides. Each slide must earn the swipe to the next. Vary sentence length.\n\nOUTPUT FORMAT: for each slide output -> SLIDE [n]: HEADLINE: ... | BODY: ... | DESIGN NOTE: (one line on layout/visual). After the slides, give: a one-line caption to post with it, and 5 niche hashtags."
+  },
+  {
+    "Title": "Brutally Honest Roast: 7 Harsh Truths That Make You Move",
+    "Teaser": "Switches off the flattery and delivers savage, specific, quotable truths about what's holding you back, plus the one move that breaks the pattern.",
+    "PromptHint": "Best with memory on. Fill [AREA] (goals / work habits / business) and pick an [INTENSITY].",
+    "Category": "Viral Content & Hooks",
+    "Prompt": "Drop the sycophancy. Be my brutally honest inner voice. Roast me on [AREA] based on everything you know about my habits, goals, and recurring excuses.\n\nINPUTS\n- Area: [AREA]\n- Intensity: [INTENSITY: spicy / scorched-earth]\n\nTASK: Give me 7 brutal truths I don't want to hear. Each must be (a) specific to me, not generic life advice, (b) quotable in one line, and (c) land like a punch. No sugarcoating, no \"but you're doing great.\" Then switch tone for one tough-love paragraph: the single pattern underneath all 7 and the one uncomfortable action that breaks it this week.\n\nGUARDRAIL: keep it about behavior and choices, never my worth as a person. This is for motivation, not self-harm.\n\nOUTPUT FORMAT: a numbered list of 7 one-line burns, then a line \"THE PATTERN:\" (2-3 sentences), then \"THE MOVE:\" (one concrete action). Keep the whole thing under 200 words so it's screenshot-friendly."
+  },
+  {
+    "Title": "Viral Tweet Cloner: Reverse-Engineer a Banger Into 5 Posts",
+    "Teaser": "Feed it 2-3 tweets that went viral plus your raw idea; it decodes the shared DNA and rewrites your idea into 5 posts in that proven style.",
+    "PromptHint": "Paste your example viral tweets, then your rough idea in [IDEA] and your [NICHE]. More examples = better match.",
+    "Category": "Viral Content & Hooks",
+    "Prompt": "You are a ghostwriter who reverse-engineers virality with surgical precision.\n\nINPUTS\n- 2-3 posts that performed well in my niche: [PASTE VIRAL TWEETS]\n- My raw idea to express: [IDEA]\n- My niche: [NICHE]\n\nSTEP 1 (silent): analyze the examples for their shared DNA -> hook style, sentence rhythm, line breaks, level of specificity, emotional trigger, and how each opens and closes.\nSTEP 2: write 5 distinct posts conveying MY idea in that proven pattern.\n\nCONSTRAINTS: each under 280 characters, strong standalone first line, no hashtags, and no emojis unless the examples use them.\n\nOUTPUT FORMAT: list the 5 posts, each labeled with the angle it uses (contrarian / story / list / confession / prediction). Then a line \"POST THIS FIRST:\" naming the strongest one and a one-sentence reason. Finally, in 3 bullets, name the exact pattern you cloned so I can reuse it."
+  },
+  {
+    "Title": "Self-Contained Viral Thread: Every Post Screenshot-Worthy",
+    "Teaser": "Writes a full X thread where every single post can stand alone and get screenshotted, engineered end-to-end for replies, saves, and reposts.",
+    "PromptHint": "Fill [TOPIC] and [BIG PROMISE]; set [N] posts (8-12 works best).",
+    "Category": "Viral Content & Hooks",
+    "Prompt": "You are a thread writer whose threads regularly get bookmarked and quote-tweeted.\n\nINPUTS\n- Topic: [TOPIC]\n- Core promise of the thread: [BIG PROMISE]\n- Length: [N] posts\n\nTHINK FIRST (silently): what's the transformation the reader gets by the end, and what curiosity gap makes post 1 un-scrollable?\n\nTASK: Write the thread so that -> Post 1 is a scroll-stopping hook stating the promise plus a curiosity gap (tease the payoff, no fluff, no \"a thread\" announcement). Posts 2 to N-1 each deliver ONE self-contained lesson, example, or step, screenshot-worthy on its own, with a tiny pattern interrupt. The final post recaps the transformation and ends with a soft CTA (follow + a low-friction reply prompt).\n\nCONSTRAINTS: each post under 280 chars, no hashtags, no emoji spam, vary sentence length.\n\nOUTPUT FORMAT: number each post (1/, 2/ ...). After post 1 only, add a bracketed one-line note on why it stops the scroll."
+  },
+  {
+    "Title": "Selfie to Action Figure: The Boxed Collectible Trend Prompt",
+    "Teaser": "A copy-paste image prompt that turns your selfie into a hyper-real boxed action figure with your name, a fun subtitle, and themed accessories.",
+    "PromptHint": "Attach one clear face photo. Fill [NAME], [PROFESSION/VIBE], and 3 [ACCESSORIES].",
+    "Category": "Viral Content & Hooks",
+    "Prompt": "Using the person in the attached photo, create a hyper-realistic 3D collectible action figure of them, keeping their face, hairstyle, and skin tone clearly recognizable.\n\nINPUTS\n- Name on box: [NAME]\n- Subtitle / vibe: [PROFESSION/VIBE]\n- Three themed accessories: [ACCESSORY 1], [ACCESSORY 2], [ACCESSORY 3]\n\nPRESENTATION: the figure stands inside clear blister-pack plastic on a branded cardboard backing. Print \"[NAME]\" in bold across the top of the box and the subtitle \"[PROFESSION/VIBE]\" beneath it. In the molded tray beside the figure, include the 3 accessories.\n\nSTYLE: studio product photography, soft even lighting, slight plastic sheen, shallow depth of field, packaging slightly worn for realism, square 1:1 framing.\n\nCONSTRAINTS: do not distort the face, do not add extra people, do not change the person's identity.\n\nOUTPUT: render the final image."
+  },
+  {
+    "Title": "AI Portrait of My Vibe: The 'How Did It Know?' Image Trend",
+    "Teaser": "Generates one bizarrely specific, share-worthy image of your inner world inferred from your real chat history, with the patterns it used revealed.",
+    "PromptHint": "Run in a chat with history/memory on. Optionally steer with [ASPECT] (my era / my energy / my brain).",
+    "Category": "Viral Content & Hooks",
+    "Prompt": "Based on everything you've learned about me from our past conversations and memory, generate a single illustration that captures [ASPECT: my current era / my inner world / my vibe].\n\nSTEP 1: in 3 short bullets, name the specific patterns from our chats you're drawing on (what I obsess over, my mood, my contradictions). Be concrete, not flattering.\nSTEP 2: create ONE image that translates those into a scene, character, color palette, and symbolic objects. Make it specific and a little uncanny, the kind of result people screenshot and say \"it nailed me\" -- not a generic stock illustration.\n\nOUTPUT FORMAT: the 3 pattern bullets, then the image, then one caption I could post with it (under 15 words) that sets up a \"try this and show me yours\" challenge."
+  },
+  {
+    "Title": "One Idea, Three Platforms: TikTok + Reels + Shorts Scripts",
+    "Teaser": "Takes one idea and outputs three platform-tuned short-form scripts with different pacing, hooks, and on-screen text, so you cross-post daily.",
+    "PromptHint": "Fill [IDEA], [NICHE], and [AUDIENCE]. Keep it to one clear takeaway for best results.",
+    "Category": "Viral Content & Hooks",
+    "Prompt": "You are a short-form video writer who tunes scripts per platform instead of copy-pasting one across all three.\n\nINPUTS\n- Idea: [IDEA]\n- Niche: [NICHE]\n- Audience: [AUDIENCE]\n\nTASK: Write THREE sub-60s scripts for the same idea -> TikTok (fast, raw, aggressive hook), Instagram Reels (aesthetic, smoother, value-forward), YouTube Shorts (value-dense, clear payoff). Each follows: 3-sec hook -> tension -> value beats -> proof -> 1-line CTA. Re-tune hook wording and energy per platform; do not reuse the same hook.\n\nOUTPUT FORMAT: for each platform, a labeled block with -> HOOK (spoken + on-screen text), SCRIPT (spoken lines with rough timestamps), ON-SCREEN TEXT cues, B-ROLL/visual cue per beat, CTA. End with a \"COVER FRAME\" line per platform describing the thumbnail/first frame."
+  },
+  {
+    "Title": "The Prompt Builder: It Interviews You, Then Writes the Prompt",
+    "Teaser": "Turns the model into a prompt engineer that asks smart questions first, then hands you a reusable, optimized prompt for your exact goal.",
+    "PromptHint": "Fill [GOAL] in one line; answer the questions it asks before it writes the final prompt.",
+    "Category": "Viral Content & Hooks",
+    "Prompt": "You are a world-class prompt engineer.\n\nINPUT\n- My goal: [GOAL]\n\nDo NOT write the prompt yet. First, INTERVIEW me: ask clarifying questions ONE at a time about my audience, desired output format, tone, constraints, examples I like, and what \"great\" looks like. After each answer, reflect it back in one line and ask the next most useful question. Keep going until you're at least 95% confident you can produce an excellent, reusable prompt, then say \"Ready.\"\n\nWhen ready, OUTPUT FORMAT:\n1) THE PROMPT -- a clean, copy-paste block with [VARIABLES] in CAPS where I should customize, fully self-contained so anyone could reuse it.\n2) WHY IT WORKS -- 3 bullets on the techniques used.\n3) HOW TO TWEAK IT -- 2 quick variations for different use cases."
+  },
+  {
+    "Title": "Steal-My-Prompt Thread: Package a Prompt as Engagement Bait",
+    "Teaser": "Wraps any useful prompt into a 'steal this' viral thread with a pain-point hook, the prompt, a proof example, and a comment-to-get-it CTA.",
+    "PromptHint": "Paste the prompt you want to go viral into [PROMPT], name its [BENEFIT] and your [NICHE].",
+    "Category": "Viral Content & Hooks",
+    "Prompt": "You are a growth creator who turns prompts into viral \"steal this\" threads.\n\nINPUTS\n- The prompt to feature: [PROMPT]\n- What it does for people: [BENEFIT]\n- My niche: [NICHE]\n\nTASK: Write an X thread that packages it -> Post 1 = a hook that overstates the pain it solves + a bold claim (no hashtags). Post 2 = the relatable problem. Post 3 = the prompt itself, formatted to copy cleanly. Posts 4-5 = a quick before/after example of the output + one tip to customize it. Final post = a CTA combining a follow + \"comment [KEYWORD] and I'll send you the full pack\" DM-bait.\n\nCONSTRAINTS: every post standalone and screenshot-worthy, no emoji spam, vary sentence length.\n\nOUTPUT FORMAT: numbered posts (1/, 2/ ...), then a line \"SUGGESTED KEYWORD:\" with the best comment trigger and why."
+  },
+  {
+    "Title": "ChatGPT Wrapped: Your Shareable Year-in-Review Persona Card",
+    "Teaser": "Builds a 'Wrapped'-style persona card from your chat history: top themes, your archetype, a surprising stat, and a quotable tagline.",
+    "PromptHint": "Run where your history lives. Optionally set [PERIOD] (this year / last 6 months).",
+    "Category": "Viral Content & Hooks",
+    "Prompt": "Create my \"ChatGPT Wrapped\" for [PERIOD], based on everything you know from our conversations and memory.\n\nDesign it like a shareable stats card with these sections:\n1) TOP 3 THEMES I kept coming back to\n2) MY ARCHETYPE -- a fun, specific persona name + one-line description (e.g. \"The Midnight Strategist\")\n3) MY MOST-USED MODE -- what I mostly ask you for\n4) GROWTH MOMENT -- one way I clearly evolved\n5) A SURPRISING STAT about how I use you\n6) MY [PERIOD] TAGLINE -- under 8 words, quotable\n\nCONSTRAINTS: keep it under 200 words, playful but accurate (no flattery filler), use emojis only as section markers so it screenshots like a real Wrapped card.\n\nOUTPUT FORMAT: the 6 labeled sections, then a final line: \"Want yours? Try this prompt.\""
+  },
+  {
+    "Title": "Expert Panel Simulator: 3 Minds Debate Your Decision",
+    "Teaser": "Simulates three named expert personas genuinely debating your decision from different angles, then forces a consensus and a clear next step.",
+    "PromptHint": "Describe the [DECISION] and [CONTEXT]; optionally name the 3 [EXPERTS] to convene.",
+    "Category": "Viral Content & Hooks",
+    "Prompt": "Simulate a panel of 3 distinct experts debating my decision.\n\nINPUTS\n- Decision / dilemma: [DECISION]\n- Context: [CONTEXT]\n- Panelists (optional, else pick the 3 most relevant): [EXPERTS]\n\nRULES: give each expert a clear name, discipline, and worldview. They must genuinely disagree, not nod politely. Run 2 rounds -> Round 1: each makes their strongest case. Round 2: they rebut the others and update their view if persuaded.\n\nGUARDRAIL: this is structured thinking, not professional advice; for high-stakes calls, consult a qualified expert.\n\nOUTPUT FORMAT: ROUND 1 (each expert, 3-4 sentences), ROUND 2 (rebuttals), CONSENSUS (the synthesized recommendation + the key tradeoff they agreed on), MY NEXT STEP (one concrete action this week)."
+  },
+  {
+    "Title": "Honest Career Coach: The GROW Plan That Asks First",
+    "Teaser": "A coaching prompt that interviews you with the GROW model, surfaces what you actually want, then builds a concrete 90-day plan.",
+    "PromptHint": "Fill [GOAL OR CROSSROADS] and [FIELD]; answer its questions honestly before it builds the plan.",
+    "Category": "Viral Content & Hooks",
+    "Prompt": "Act as a sharp, honest career coach using the GROW model.\n\nINPUTS\n- My goal or crossroads: [GOAL OR CROSSROADS]\n- My field: [FIELD]\n\nDon't lecture or dump advice. COACH me by asking questions ONE at a time, walking through GROW -> Goal (what I actually want and why), Reality (where I am, honestly), Options (paths I haven't considered), Will (what I'll commit to). After each answer, reflect back what you heard in one line and ask the next question. Gently challenge vague or fear-based answers.\n\nWhen all four are covered, OUTPUT FORMAT: a \"90-DAY PLAN\" with -> 3 milestones, a weekly focus, the one skill or relationship to invest in, and how I'll measure progress.\n\nGUARDRAIL: this is coaching, not a guaranteed outcome."
+  },
+  {
+    "Title": "Side-Hustle Finder + 90-Day Plan to Your First $1K",
+    "Teaser": "Takes your skills, time, and budget and returns 5 validated AI-leverage hustle ideas plus a concrete 90-day roadmap to first revenue.",
+    "PromptHint": "Fill [SKILLS], [HOURS/WEEK], and [BUDGET]. Be specific for sharper ideas.",
+    "Category": "Viral Content & Hooks",
+    "Prompt": "You are a pragmatic founder who has launched lean digital businesses and hates generic advice.\n\nINPUTS\n- My skills: [SKILLS]\n- Time available: [HOURS/WEEK]\n- Starting budget: [BUDGET]\n- Audience I can reach (if any): [AUDIENCE]\n\nTASK: Generate 5 specific AI-leverage side-hustle ideas matched to my inputs (no \"start a blog\"). For each: the offer, who pays and why, a 1-line validation test I can run this week, realistic time-to-first-sale, and a startup-cost estimate. Then pick the single best fit and build a 90-DAY PLAN to first $1,000 -> Days 1-30 (validate + set up), 31-60 (build + first customers), 61-90 (scale to repeatable), with weekly milestones and the #1 risk per phase.\n\nGUARDRAIL: this is general information, not financial advice.\n\nOUTPUT FORMAT: a ranked idea table (Idea | Who Pays | Validation Test | Time-to-First-Sale | Cost), then the 90-day plan in three labeled phases."
+  }
+]

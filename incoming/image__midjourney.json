@@ -1,0 +1,100 @@
+[
+  {
+    "Title": "Editorial Beauty Portrait: Vogue-Grade Close-Up With Real Skin Texture",
+    "Teaser": "Builds a high-fashion close-up portrait prompt with named lighting, lens and grade so faces read editorial, not plastic-AI.",
+    "PromptHint": "Describe the [PERSON] in plain terms; set a [MOOD] and an optional [PALETTE].",
+    "Category": "Midjourney v6/v7",
+    "Prompt": "You are a fashion-magazine cinematographer who writes Midjourney v6/v7 prompts. Turn my idea into ONE photoreal editorial beauty portrait. Person: [PERSON]. Mood: [MOOD]. Palette: [PALETTE]. THINK FIRST (silently, never shown): where the key light sits, what lens flatters the face, what single emotion the frame holds, what kills the 'too-perfect AI' look. Then write ONE copy-paste line of cinematic, comma-separated descriptors in this order: subject + expression, wardrobe + styling, environment, lighting (name the source + color temperature in K, e.g. soft Rembrandt key 5600K), lens + camera (e.g. 85mm f/1.4, shallow depth of field), color grade, skin and detail cues (visible pores, fine flyaway hairs, natural asymmetry), mood. HARD RULES: keep real skin texture, no waxy smoothing, no extra fingers, no text, no logos. End the line with realistic params: --ar 4:5 --v 6 --style raw --s 250. OUTPUT FORMAT exactly: 1) PROMPT: <one line> 2) TWO TWEAKS: <two single-word swaps that shift the mood>. Nothing else."
+  },
+  {
+    "Title": "Product Hero Shot: Studio Ad Frame With Built-In Copy Space",
+    "Teaser": "Crafts a conversion-grade product hero prompt with named lighting setup, surface, and deliberate negative space for headlines.",
+    "PromptHint": "Name the [PRODUCT], the [SURFACE/SETTING], and which [SIDE] should stay empty for text.",
+    "Category": "Midjourney v6/v7",
+    "Prompt": "You are a commercial product photographer who writes Midjourney v6/v7 prompts. Build ONE photoreal hero shot that an ad team could ship. Product: [PRODUCT]. Setting/surface: [SURFACE/SETTING]. Keep this [SIDE] of the frame as clean negative space for a headline. THINK FIRST (silently): hero angle, reflection vs matte, what light shape sells the material, where copy will sit. Then write ONE copy-paste line of cinematic, comma-separated descriptors: product + material + finish, placement on surface, studio environment, lighting (name it: softbox key + rim, gradient sweep, controlled specular highlights), camera (e.g. 100mm macro, f/8 tack sharp), reflections + shadow style, deliberate empty space on the [SIDE], premium mood. HARD RULES: accurate product shape, no warped text on the product, no clutter on the copy side, no second product. End with realistic params: --ar 16:9 --v 6 --style raw --s 150. OUTPUT FORMAT exactly: 1) PROMPT: <one line> 2) LAYOUT NOTE: <one line on where headline + CTA go>. Nothing else."
+  },
+  {
+    "Title": "Cinematic Scene Builder: A Frame From a Film That Doesn't Exist",
+    "Teaser": "Turns one moment into a believable movie still with director-grade lighting, lens and atmosphere baked into the descriptors.",
+    "PromptHint": "Give the [MOMENT] in a line, a [DIRECTOR OR ERA] vibe, and an [ASPECT RATIO].",
+    "Category": "Midjourney v6/v7",
+    "Prompt": "You are a feature-film cinematographer writing Midjourney v6/v7 prompts. Turn my idea into ONE photoreal cinematic still. Moment: [MOMENT]. Vibe: [DIRECTOR OR ERA]. Aspect ratio: [ASPECT RATIO]. THINK FIRST (silently): who the subject is, what dramatic beat is frozen, light direction + color, what lens sells the emotion, what atmosphere adds depth. Name a real director's cinematography instead of the word 'cinematic'. Then write ONE copy-paste line of comma-separated descriptors in order: subject + action, location + time of day, lighting (source + color temp in K, motivated practicals), film stock or lens (e.g. 35mm anamorphic, halation, gentle grain), color grade (e.g. teal-orange, bleach bypass), atmosphere (haze, rain, dust, god rays), composition + camera angle, mood. HARD RULES: no captions or subtitles, no extra people unless stated, no oversaturation. End with realistic params: --ar [ASPECT RATIO] --v 6 --style raw --s 250. OUTPUT FORMAT exactly: 1) PROMPT: <one line> 2) MOOD SWAPS: <two single-word swaps>. Nothing else."
+  },
+  {
+    "Title": "Brand Aesthetic Lock: One Reusable --sref Look Across Your Whole Feed",
+    "Teaser": "Defines a single repeatable brand visual language, then outputs three on-brand scene prompts that share one style reference.",
+    "PromptHint": "Describe the [BRAND] and its [VIBE]; name three [SCENES] you want on-brand.",
+    "Category": "Midjourney v6/v7",
+    "Prompt": "You are an art director building a repeatable Midjourney v6/v7 brand system. Brand: [BRAND]. Vibe: [VIBE]. Scenes I need on-brand: [SCENES]. THINK FIRST (silently): which visual traits MUST stay fixed (palette, light, texture, mood) versus what changes per scene, so the whole feed looks like one hand made it. Deliver in this exact OUTPUT FORMAT: 1) STYLE DNA: one plain-text line of comma-separated descriptors fixing palette (name hex-ish colors), lighting character, texture/grain, lens feel, and overall mood in concrete words (ban 'beautiful', 'amazing'). 2) THREE SCENE PROMPTS: for each scene, one copy-paste line that PREPENDS the Style DNA verbatim, then adds the scene-specific subject + environment, each ending with realistic params: --ar 4:5 --v 6 --style raw --s 180 --sref [PASTE YOUR REFERENCE IMAGE URL HERE]. 3) CONSISTENCY NOTE: one line on reusing the same --sref and adjusting --sw for tighter or looser adherence. RULE: the Style DNA wording must be byte-for-byte identical in every scene prompt. Nothing else."
+  },
+  {
+    "Title": "Surreal Concept Art: Two Impossible Worlds Fused Into One Scroll-Stopper",
+    "Teaser": "Generates a jaw-dropping surreal scene prompt that fuses two unrelated worlds into one shareable, grounded-photoreal image people save.",
+    "PromptHint": "Name two things to collide in [WORLD A] and [WORLD B]; add an optional [MOOD].",
+    "Category": "Midjourney v6/v7",
+    "Prompt": "You are a surrealist concept artist writing Midjourney v6/v7 prompts. Fuse two unrelated worlds into ONE impossible, beautiful scene people will save. World A: [WORLD A]. World B: [WORLD B]. Mood: [MOOD]. THINK FIRST (silently): the single arresting visual where the two worlds meet, the scale contrast, the light that makes it feel real not goofy, the one detail that sells the dream logic. Then write ONE copy-paste line of cinematic, comma-separated descriptors: the central fused subject, the impossible juxtaposition described literally, environment + scale cues, lighting (volumetric, rim, or bioluminescent as fits), atmosphere (mist, particles, refraction), camera + lens, art direction (matte-painting realism, Beeple-grade detail), mood. HARD RULES: keep it photoreal and grounded (real shadows, real physics of light), no melty AI mush, no text. End with realistic params: --ar 16:9 --v 6 --style raw --s 400 --c 15. OUTPUT FORMAT exactly: 1) PROMPT: <one line> 2) WILD CARD: <one swap that makes it even stranger>. Nothing else."
+  },
+  {
+    "Title": "Selfie to Pro Headshot: LinkedIn-Ready, Face Kept Intact",
+    "Teaser": "Restyles one casual selfie into a clean corporate headshot prompt while preserving the person's exact identity.",
+    "PromptHint": "Upload your photo; pick a [BACKDROP] and a [WARDROBE] level (e.g. smart casual, suit).",
+    "Category": "Midjourney v6/v7",
+    "Prompt": "You are a corporate portrait photographer writing Midjourney v6/v7 prompts. Using my uploaded photo, produce ONE clean, professional headshot of THIS EXACT PERSON. Backdrop: [BACKDROP]. Wardrobe: [WARDROBE]. KEEP IDENTITY: same face shape, age, skin tone, hairline and distinguishing features, natural expression with a subtle confident smile. THINK FIRST (silently): flattering crop, key-light position, how to look polished without changing who they are. Then write ONE copy-paste line of comma-separated descriptors: professional headshot of the same person, [WARDROBE], [BACKDROP], lighting (soft three-point, gentle catchlights, 5500K), camera (85mm f/2.0, shallow depth of field), retouching cues (clean but real skin, no plastic smoothing), framing (head-and-shoulders, eye-level), confident mood. HARD RULES: do not alter identity, age or face shape; no extra people; natural hands if visible. End with realistic params: --ar 4:5 --v 6 --style raw --s 120 --cref [PASTE YOUR PHOTO URL] --cw 100. OUTPUT FORMAT exactly: 1) PROMPT: <one line> 2) LIKENESS TIP: <one line on tuning --cw for stronger or looser face match>. Nothing else."
+  },
+  {
+    "Title": "Consistent Character Across Scenes: Lock the Face With --oref",
+    "Teaser": "Builds a reusable character identity block plus scene prompts that keep the same face and outfit using Omni Reference.",
+    "PromptHint": "Describe the [CHARACTER] once; name three [SCENES] to drop them into.",
+    "Category": "Midjourney v6/v7",
+    "Prompt": "You are a character designer building a reusable Midjourney v7 character (Omni Reference). Character: [CHARACTER]. Scenes: [SCENES]. THINK FIRST (silently): which traits MUST stay fixed across renders versus what may change per scene. Deliver in this exact OUTPUT FORMAT: 1) LOCKED IDENTITY BLOCK: one plain-text line of comma-separated descriptors fixing facial structure, apparent age, skin tone, eye color, hairstyle, body type and signature wardrobe in concrete adjectives (ban 'pretty', 'beautiful'). 2) THREE SCENE PROMPTS: for each scene, one copy-paste line that PREPENDS the Locked Identity Block verbatim, then adds the scene-specific environment, lighting and camera as cinematic comma-separated descriptors, each ending with realistic params: --ar 16:9 --v 7 --style raw --s 200 --oref [PASTE CHARACTER IMAGE URL] --ow 200. 3) CONSISTENCY NOTE: one line on lowering --ow when the face is fighting the scene, and that --oref is v7 only. RULE: the identity wording must be byte-for-byte identical in every scene. Nothing else."
+  },
+  {
+    "Title": "Retro-Decade Portrait: Same Face, 1970s / 80s / Y2K Time Machine",
+    "Teaser": "Turns one photo into a believable vintage-decade portrait with period film stock, wardrobe and grain, identity preserved.",
+    "PromptHint": "Upload your photo; choose a [DECADE] and an optional [SETTING].",
+    "Category": "Midjourney v6/v7",
+    "Prompt": "You are a retro portrait photographer writing Midjourney v6/v7 prompts. Using my uploaded photo, render THIS EXACT PERSON as an authentic portrait from the [DECADE]. Setting: [SETTING]. KEEP IDENTITY: same face, age and features; only the era changes. THINK FIRST (silently): the period-correct film stock, hairstyle, wardrobe, color cast and grain that scream that decade without caricature. Then write ONE copy-paste line of cinematic, comma-separated descriptors: period portrait of the same person, era-accurate hairstyle + wardrobe, [SETTING], film stock + process (e.g. Kodak Portra for 70s warmth, harsh direct flash + feathered hair for 80s, low-fi point-and-shoot for Y2K), lighting, slight grain + light leaks + period color cast, framing, nostalgic mood. HARD RULES: preserve identity, no modern items, no text, no over-clean look (it should read as a real old photo). End with realistic params: --ar 4:5 --v 6 --style raw --s 150 --cref [PASTE YOUR PHOTO URL] --cw 90. OUTPUT FORMAT exactly: 1) PROMPT: <one line> 2) ERA SWAP: <one line giving the alt-decade descriptor set>. Nothing else."
+  },
+  {
+    "Title": "Seamless Pattern + Tile: Print-Ready Repeat for Packaging and Fabric",
+    "Teaser": "Designs a tileable surface pattern prompt with a named motif and palette, set to repeat cleanly for product and print.",
+    "PromptHint": "Name the [MOTIF], a [STYLE] (e.g. art deco, botanical), and a [PALETTE].",
+    "Category": "Midjourney v6/v7",
+    "Prompt": "You are a surface-pattern designer writing Midjourney v6/v7 prompts. Create ONE seamless, print-ready repeat. Motif: [MOTIF]. Style: [STYLE]. Palette: [PALETTE]. THINK FIRST (silently): motif scale and spacing so it reads at small size, color balance, and how to keep edges tiling cleanly. Then write ONE copy-paste line of comma-separated descriptors: seamless repeating pattern of [MOTIF], [STYLE], evenly distributed balanced composition, [PALETTE], flat even lighting, crisp vector-clean edges, consistent scale, no focal subject, suitable for fabric and packaging. HARD RULES: edges must tile, no text, no watermark, no 3D perspective, no single hero object. End with realistic params: --tile --ar 1:1 --v 6 --style raw --s 100. OUTPUT FORMAT exactly: 1) PROMPT: <one line> 2) USE NOTE: <one line on scaling the repeat for wrapping paper vs. a phone case>. Nothing else."
+  },
+  {
+    "Title": "Food Photography That Sells: Menu-Grade Dish, Steam and All",
+    "Teaser": "Writes a mouth-watering food hero prompt with garnish, props, and the lighting trick that makes dishes look fresh and hot.",
+    "PromptHint": "Name the [DISH], a [STYLE] (rustic, fine-dining, street), and an optional [PROP].",
+    "Category": "Midjourney v6/v7",
+    "Prompt": "You are a food photographer writing Midjourney v6/v7 prompts. Build ONE appetizing hero shot a restaurant could put on a menu. Dish: [DISH]. Style: [STYLE]. Prop: [PROP]. THINK FIRST (silently): the angle that shows the food best (45deg vs top-down vs eye-level), backlight to make it glisten, garnish and steam for freshness, props that set the scene without crowding it. Then write ONE copy-paste line of cinematic, comma-separated descriptors: the dish plated, fresh garnish + texture detail, [STYLE] table styling with [PROP], background context, lighting (soft backlight + reflector fill to make food glisten, gentle steam, 5200K), camera (50mm or 100mm macro, shallow depth of field, 45-degree angle), shallow crumbs/condensation realism, warm appetizing mood. HARD RULES: photoreal food, accurate portions, no plastic-looking gloss, no text, no extra plates crowding the frame. End with realistic params: --ar 4:5 --v 6 --style raw --s 200. OUTPUT FORMAT exactly: 1) PROMPT: <one line> 2) APPETITE TWEAK: <one line on adding steam, droplets or a sauce drizzle>. Nothing else."
+  },
+  {
+    "Title": "Architecture & Interior Render: Architectural-Digest-Grade Space on Demand",
+    "Teaser": "Produces an AD-grade interior or exterior render prompt with named style, real materials, time-of-day light and verticals-straight lens choice.",
+    "PromptHint": "Describe the [SPACE], a design [STYLE], and the [TIME OF DAY] light you want.",
+    "Category": "Midjourney v6/v7",
+    "Prompt": "You are an architectural photographer writing Midjourney v6/v7 prompts. Build ONE magazine-spread interior or exterior render. Space: [SPACE]. Style: [STYLE]. Light: [TIME OF DAY]. THINK FIRST (silently): the camera height + lens that keep verticals straight, how natural light enters, the few materials that define the style, and the styling that makes it feel lived-in not staged-dead. Then write ONE copy-paste line of cinematic, comma-separated descriptors: the space, [STYLE] design language, key materials (e.g. warm oak, travertine, brushed brass, linen), furniture + styling details, [TIME OF DAY] natural light pouring in with soft shadows, camera (16-24mm architectural lens, straight verticals, eye-level), color grade, calm aspirational mood. HARD RULES: correct perspective and straight lines, realistic materials, no warped geometry, no text, no people unless stated. End with realistic params: --ar 3:2 --v 6 --style raw --s 150. OUTPUT FORMAT exactly: 1) PROMPT: <one line> 2) LIGHT SWAP: <one line giving a golden-hour vs overcast alt>. Nothing else."
+  },
+  {
+    "Title": "Action-Figure You: Turn Your Photo Into a Boxed Collectible (Viral Trend)",
+    "Teaser": "Turns one photo into a hyper-real blister-packed action-figure render with your name, tagline and themed accessories molded into the tray.",
+    "PromptHint": "Upload a clear face photo; set [YOUR NAME], a [TAGLINE], and [3 ACCESSORIES].",
+    "Category": "Midjourney v6/v7",
+    "Prompt": "You are a toy-product photographer writing Midjourney v6/v7 prompts. Using my uploaded photo, render a hyper-real 3D collectible ACTION FIGURE of this exact person, face and hairstyle clearly recognizable, sealed in retail blister-pack packaging. THINK FIRST (silently): which accessories read at small scale, how to keep the cardback text clean. Then write ONE copy-paste line of comma-separated descriptors: photoreal collectible action figure of the same person, sealed clear plastic bubble on a printed cardback, bold header reading '[YOUR NAME]', subtitle reading '[TAGLINE]', three themed accessories in molded slots ([3 ACCESSORIES]), studio product photography, soft front lighting + slight top-down angle, clean seamless background, sharp plastic + cardboard texture. HARD RULES: accurate fingers, no warped or gibberish text, no second figure. End with realistic params: --ar 4:5 --v 6 --style raw --s 200 --cref [PASTE YOUR PHOTO URL] --cw 100. OUTPUT FORMAT exactly: 1) PROMPT: <one line> 2) TEXT TIP: <one line on keeping the header and subtitle crisp>. Nothing else."
+  },
+  {
+    "Title": "Neo-Noir Car Portrait: The Viral Rain-and-Neon Window Shot, Engineered",
+    "Teaser": "Crafts the viral rain-streaked, neon-reflection neo-noir car-window portrait prompt with full lighting, lens and deep-shadow direction.",
+    "PromptHint": "Say who is in the [SUBJECT] seat and pick a [CITY/NEON COLOR] mood.",
+    "Category": "Midjourney v6/v7",
+    "Prompt": "You are a neo-noir cinematographer writing Midjourney v6/v7 prompts. Build ONE moody, screenshot-ready car portrait. Subject: [SUBJECT]. Neon/city mood: [CITY/NEON COLOR]. THINK FIRST (silently): the single shadowed angle through a rain-streaked window, where the neon catches the face, and what's deliberately left in darkness. Then write ONE copy-paste line of cinematic, comma-separated descriptors: [SUBJECT] seen through a rain-streaked car window, half-lit face, [CITY/NEON COLOR] neon reflections streaking across wet glass, deep shadow on the unlit side, rim light catching the jawline, shallow depth of field, 50mm lens, anamorphic flares, fine grain, moody contemplative atmosphere, color grade (cyan-magenta noir). HARD RULES: photoreal, keep deep blacks (no flat washed-out shadows), no text, no extra passengers unless stated. End with realistic params: --ar 16:9 --v 6 --style raw --s 300 --c 10. OUTPUT FORMAT exactly: 1) PROMPT: <one line> 2) PALETTE SWAP: <one line giving an alt neon color scheme>. Nothing else."
+  },
+  {
+    "Title": "Prompt Doctor: Rewrite My Weak Image Prompt Into a Cinematic 10/10",
+    "Teaser": "Diagnoses a flat Midjourney prompt and rebuilds it into ordered cinematic descriptors with a correct v6/v7 flag stack.",
+    "PromptHint": "Paste your [ROUGH PROMPT]; optionally state the [GOAL] image you actually want.",
+    "Category": "Midjourney v6/v7",
+    "Prompt": "You are a Midjourney v6/v7 prompt engineer. Upgrade my weak prompt into a premium one. Rough prompt: [ROUGH PROMPT]. Goal: [GOAL]. THINK FIRST (silently): what subject the user actually wants, what's vague or missing (lighting, lens, environment, mood, params), and which 'hype words' to delete because v6/v7 weight information over adjectives. Reorder into cinematic comma-separated descriptors: subject + action, environment + time of day, lighting (named source + color temp), lens/camera + film feel, color grade, atmosphere, mood. Pick a sensible flag stack and explain it. OUTPUT FORMAT exactly: 1) DIAGNOSIS: 2-3 bullets naming what was missing or hurting the result. 2) UPGRADED PROMPT: <one copy-paste line of ordered descriptors ending with realistic params, e.g. --ar 16:9 --v 6 --style raw --s 250>. 3) FLAG NOTES: one line each explaining the chosen --ar, --s, --style raw, and any --sref/--cref/--c so I can tune them. 4) ONE VARIANT: a second descriptor set that changes only the mood. Nothing else."
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "Title": "Diff Reviewer + Perfect Commit Message",
+    "Teaser": "Paste a git diff and get a focused PR review plus a clean Conventional-Commit message and PR description, so you ship faster and reviewers love you.",
+    "PromptHint": "Paste the diff/patch in [DIFF]; set [LANGUAGE]; add what the change is meant to do in [INTENT].",
+    "Category": "Coding & Dev Copilot",
+    "Prompt": "You are a staff [LANGUAGE] engineer reviewing a pull request. Intended change: [INTENT]. Here is the diff:\n[DIFF]\n\nWork strictly from the diff — review only what changed and its blast radius; do not invent code you can't see.\n\nDeliver in this exact order:\n1) VERDICT: Approve / Approve-with-nits / Request-changes, in one line with the reason.\n2) REVIEW: a markdown table — Severity (Blocker/High/Medium/Nit) | File:Line | Issue | Why it matters | Suggested fix. Cover correctness, hidden behavior changes, edge cases, security, and tests the diff should have added but didn't.\n3) MISSING TESTS: the 2-3 specific cases this change should be tested against.\n4) COMMIT MESSAGE: a Conventional Commit (type(scope): summary under 72 chars) plus a tight body explaining the why, not the what.\n5) PR DESCRIPTION: a short paste-ready block — Summary, Changes, Risk, How to test.\nIf the diff lacks context you need, list your assumptions instead of guessing silently."
+  },
+  {
+    "Title": "Senior Engineer Code Review with Severity Levels",
+    "Teaser": "Get a brutally honest staff-level review scored by severity across security, performance, correctness, and readability, with concrete diffs.",
+    "PromptHint": "Paste a function/file in [CODE]; set [LANGUAGE] and optional [CONTEXT] (what it does).",
+    "Category": "Coding & Dev Copilot",
+    "Prompt": "Act as a staff [LANGUAGE] engineer doing a no-sugarcoating PR review. Context: [CONTEXT]. Code:\n[CODE]\n\nReview it across: Security, Correctness/edge cases, Performance, Type safety, Readability, and Test coverage gaps. Be specific and harsh where warranted — no vague praise.\n\nOutput as a markdown table with columns: Severity (Blocker/High/Medium/Nit) | File:Line | Issue | Why it matters | Suggested fix (code). Sort by severity. After the table, add: (a) the top 3 things to fix before merge, and (b) one thing done well. If you'd block the merge, say so in one line at the top."
+  },
+  {
+    "Title": "Regex Builder That Explains Every Token",
+    "Teaser": "Turn a plain-English matching rule into a battle-tested regex, with a token-by-token breakdown and test cases so you trust it.",
+    "PromptHint": "Describe what to match in [MATCH GOAL]; set [FLAVOR] (e.g. JavaScript, PCRE, Python).",
+    "Category": "Coding & Dev Copilot",
+    "Prompt": "You are a regex expert for the [FLAVOR] engine. I need a pattern that does this: [MATCH GOAL].\n\nDeliver in this exact format:\n1) PATTERN: the regex on its own line, ready to paste.\n2) BREAKDOWN: a table explaining each token/group and what it matches.\n3) SHOULD MATCH: 5 example strings it matches.\n4) SHOULD NOT MATCH: 5 tricky strings it correctly rejects (include the edge cases people forget).\n5) GOTCHAS: catastrophic-backtracking risk, anchoring, Unicode, and flag notes.\n6) SAFER ALTERNATIVE: if a regex is the wrong tool here, say so and suggest the better approach.\nKeep the pattern as simple as correctness allows — no clever golf."
+  },
+  {
+    "Title": "Plain-English to SQL (Optimized + Explained)",
+    "Teaser": "Describe the data question in English and get a correct, index-aware SQL query with an EXPLAIN-style walkthrough and gotchas.",
+    "PromptHint": "Describe the question in [QUESTION]; set [DIALECT]; paste table schemas in [SCHEMA].",
+    "Category": "Coding & Dev Copilot",
+    "Prompt": "You are a senior data engineer writing [DIALECT] SQL. Schema:\n[SCHEMA]\n\nQuestion to answer: [QUESTION]\n\nReturn:\n1) QUERY: clean, formatted SQL ready to run.\n2) HOW IT WORKS: plain-English walkthrough of joins, filters, and aggregation order.\n3) CORRECTNESS TRAPS: call out NULL handling, duplicate rows, timezone/date pitfalls, and GROUP BY mistakes relevant here.\n4) PERFORMANCE: which indexes would help and why; flag any full-table scan or N+1 risk.\n5) SANITY CHECK: a small query I can run to validate the result.\nIf the schema is missing something you need, list your assumptions explicitly instead of guessing silently."
+  },
+  {
+    "Title": "Unit Test Generator (Edge Cases You'd Forget)",
+    "Teaser": "Generates a complete, runnable test suite that hunts the boundary and failure cases most devs miss, not just the happy path.",
+    "PromptHint": "Paste the function in [CODE]; set [LANGUAGE] and [TEST FRAMEWORK] (e.g. Jest, pytest).",
+    "Category": "Coding & Dev Copilot",
+    "Prompt": "You are a test-obsessed [LANGUAGE] engineer using [TEST FRAMEWORK]. Write tests for:\n[CODE]\n\nFirst, list the behaviors and contracts this code promises (in 1 line each). Then enumerate test cases grouped as: Happy path, Boundary values, Empty/null/zero, Invalid input & error handling, Concurrency/ordering (if relevant), and Regression traps. For each, give a one-line name describing intent.\n\nThen output the full runnable test file using AAA (Arrange-Act-Assert), descriptive test names, and no flaky timing assumptions. Mock external dependencies cleanly. End with: any untestable code smells you noticed and how to make the code more testable. Aim for meaningful coverage, not vanity coverage."
+  },
+  {
+    "Title": "Refactor + Test + Document in One Shot",
+    "Teaser": "The combo power-move: cleaner code, a passing test stub, and docs in a single pass, with every change explained and behavior preserved.",
+    "PromptHint": "Paste messy code in [CODE]; set [LANGUAGE]. Optionally name a [GOAL] like 'readability' or 'speed'.",
+    "Category": "Coding & Dev Copilot",
+    "Prompt": "You are a senior [LANGUAGE] engineer. Refactor, test, and document this code in ONE response, optimizing for [GOAL]:\n[CODE]\n\nHard rule: external behavior must stay identical — list any behavior that could change.\n\nDeliver:\n1) REFACTORED CODE: clearer names, smaller functions, no dead code, idiomatic style. Add a brief comment only where intent isn't obvious.\n2) CHANGE LOG: bullet list of what you changed and why (readability, perf, safety).\n3) TESTS: a runnable test stub covering the main paths and 2 edge cases.\n4) DOCS: a docstring/JSDoc for each public function plus a 3-line usage example.\nIf the code has a real bug, fix it and flag it separately so I don't miss it."
+  },
+  {
+    "Title": "Rubber-Duck Debugger: Interview Me First",
+    "Teaser": "Instead of guessing a fix, it interviews you about the failure, forms a ranked hypothesis list, and pinpoints root cause before touching code.",
+    "PromptHint": "Describe the bug in [PROBLEM]; set [STACK]. Answer its questions one at a time.",
+    "Category": "Coding & Dev Copilot",
+    "Prompt": "You are a calm senior debugger pair-programming with me on a [STACK] project. The problem: [PROBLEM].\n\nDo NOT propose a fix yet. First, interview me to localize the bug: ask ONE high-signal question at a time (what changed, exact error, when it started, what you've already ruled out, repro steps). After each answer, tell me what it rules in or out.\n\nWhen you're ~90% confident, output:\n1) ROOT CAUSE: the single most likely cause and the evidence for it.\n2) RANKED SUSPECTS: 2-3 alternatives with how to test each in under 5 minutes.\n3) MINIMAL FIX: the smallest change that addresses the root cause, with code.\n4) GUARDRAIL: a test or check so this can't silently regress.\nNever assume the obvious cause is the real one until the evidence supports it."
+  },
+  {
+    "Title": "Architecture Blueprint from a Feature Description",
+    "Teaser": "Turns a one-paragraph feature idea into a pragmatic architecture: components, data flow, tradeoffs, failure modes, and the riskiest decisions.",
+    "PromptHint": "Describe the system in [FEATURE]; set [SCALE] (users/QPS) and [CONSTRAINTS] (stack, budget).",
+    "Category": "Coding & Dev Copilot",
+    "Prompt": "Act as a pragmatic principal engineer designing: [FEATURE]. Expected scale: [SCALE]. Constraints: [CONSTRAINTS].\n\nBefore designing, list the 3-5 decisions that most shape this system and the assumptions you're making. Then produce:\n1) ARCHITECTURE: components and responsibilities, plus a text/ASCII diagram of the data flow.\n2) DATA MODEL: key entities and the one storage choice you'd make, with the tradeoff.\n3) APIs: the main endpoints/contracts.\n4) FAILURE MODES: what breaks under load or partial failure, and how you'd mitigate (retries, idempotency, backpressure).\n5) SECURITY & COST: top risks and the cheap version vs. the scalable version.\n6) RISKIEST BET: the one decision most likely to be wrong, and how to de-risk it early.\nFavor boring, proven choices over clever ones. Flag anything that smells like premature scaling."
+  },
+  {
+    "Title": "Cryptic Error Decoder + Step-by-Step Fix",
+    "Teaser": "Paste any stack trace or build error and get a plain-English translation, the real cause, and an ordered, copy-paste fix checklist.",
+    "PromptHint": "Paste the full error/stack trace in [ERROR]; set [STACK] and what you were doing in [CONTEXT].",
+    "Category": "Coding & Dev Copilot",
+    "Prompt": "You are an expert at decoding errors in [STACK]. Here is the full output:\n[ERROR]\n\nWhat I was doing: [CONTEXT]\n\nRespond in this format:\n1) TRANSLATION: what this error actually means in one plain sentence.\n2) THE REAL CAUSE: the most likely root cause (and how to confirm it in one step). Note if the true error is hidden higher in the trace than the last line.\n3) FIX STEPS: a numbered, ordered checklist of exact commands/code to try, most-likely-first, each with what success looks like.\n4) IF THAT FAILS: the next two suspects to investigate.\n5) PREVENTION: how to stop this recurring.\nDon't lecture — get me unblocked fast, but explain the 'why' in one line per step so I learn it."
+  },
+  {
+    "Title": "Make This Code Production-Ready (Hardening Pass)",
+    "Teaser": "Upgrades a working-but-fragile snippet into production-grade code: error handling, logging, input validation, and the edge cases that page you at 3am.",
+    "PromptHint": "Paste the snippet in [CODE]; set [LANGUAGE] and where it runs in [ENVIRONMENT].",
+    "Category": "Coding & Dev Copilot",
+    "Prompt": "You are a senior [LANGUAGE] engineer who has been on-call too many times. This code works in the happy path but isn't production-ready:\n[CODE]\n\nIt will run in: [ENVIRONMENT].\n\nHarden it. Output:\n1) RISK AUDIT: a table of what would break in production (unhandled errors, bad input, timeouts, race conditions, resource leaks, secrets in code, missing retries) ranked by likelihood x impact.\n2) HARDENED CODE: the rewritten version with proper error handling, input validation, structured logging, timeouts/retries where needed, and no swallowed exceptions — comments mark each addition.\n3) OBSERVABILITY: the 3 log lines or metrics you'd add to debug this at 3am.\n4) STILL-MANUAL: anything that needs config, infra, or a human decision (don't fake it). Keep it idiomatic; don't over-engineer."
+  },
+  {
+    "Title": "Socratic Code Tutor: Learn by Building",
+    "Teaser": "A coding mentor that teaches a concept by asking you questions and reviewing your attempts, building real mastery instead of spoon-feeding answers.",
+    "PromptHint": "Set the [CONCEPT] you want to learn, your [LANGUAGE], and your [LEVEL] (beginner/intermediate).",
+    "Category": "Coding & Dev Copilot",
+    "Prompt": "Be my Socratic coding tutor for [CONCEPT] in [LANGUAGE]. My level: [LEVEL].\n\nRules: teach by asking, not lecturing. Ask me ONE question at a time and wait for my answer. Start by probing what I already understand, then guide me to discover the concept through small questions and tiny code challenges. When I answer, tell me precisely what's right, what's off, and why — then ask the next question that closes the gap. If I'm stuck twice, give a small hint, not the full answer.\n\nEvery few steps, have me explain the concept back in my own words (Feynman check) and you point out the gaps. End the session when I can correctly write a small example from scratch, then give me one slightly harder challenge to do solo. Keep each turn short and encouraging but honest."
+  },
+  {
+    "Title": "Whole-Codebase Onboarding Map",
+    "Teaser": "Drop in a repo or key files and get an architecture overview, the request lifecycle, and the riskiest modules a new hire should fear first.",
+    "PromptHint": "Paste files/structure in [CODEBASE]; set [LANGUAGE/FRAMEWORK] and your [GOAL] (e.g. add a feature).",
+    "Category": "Coding & Dev Copilot",
+    "Prompt": "You are a tech lead onboarding me to this [LANGUAGE/FRAMEWORK] codebase. My goal: [GOAL]. Here is the code/structure:\n[CODEBASE]\n\nProduce an onboarding map:\n1) WHAT IT DOES: the system's purpose in 3 sentences.\n2) ARCHITECTURE: the main modules and how they relate (text diagram).\n3) LIFECYCLE: trace one typical request/operation from entry point to response, naming the files it passes through.\n4) WHERE THINGS LIVE: a table mapping common tasks (add an endpoint, change the DB, write a test) to the file/folder to touch.\n5) RISKIEST MODULES: the 3 files with the most complexity, coupling, or hidden gotchas — and why to be careful.\n6) FOR MY GOAL: the exact files I'd edit and the order I'd do it in.\nIf something is unclear from the provided code, say so rather than inventing it."
+  },
+  {
+    "Title": "Red-Team This Code for Security Holes",
+    "Teaser": "Think like an attacker: find injection, auth, secrets, and data-leak flaws in your code mapped to OWASP, each with a concrete exploit and patch.",
+    "PromptHint": "Paste code/endpoint in [CODE]; set [LANGUAGE] and what handles untrusted input in [INPUTS].",
+    "Category": "Coding & Dev Copilot",
+    "Prompt": "Act as an application security engineer red-teaming this [LANGUAGE] code. Untrusted inputs / entry points: [INPUTS]. Code:\n[CODE]\n\nThink like an attacker. Find real vulnerabilities — injection (SQL/command/template), broken auth or access control, secrets in code, insecure deserialization, SSRF, XSS, missing input validation, sensitive data in logs, and unsafe defaults.\n\nOutput a table: Severity (Critical/High/Med) | Vulnerability (OWASP category) | Location | How an attacker exploits it (concrete steps) | The fix (code). Then give: (a) the single most urgent fix, and (b) one defense-in-depth improvement. Only report issues you can actually justify from the code — clearly separate confirmed flaws from things that merely warrant a closer look. This is a code review, not professional pentest certification."
+  },
+  {
+    "Title": "Pick the Right Tool: Tech Decision Advisor",
+    "Teaser": "Stuck between libraries, databases, or patterns? Get a neutral decision matrix scored on your real constraints, plus the honest recommendation.",
+    "PromptHint": "List the options in [OPTIONS]; describe the [USE CASE] and your top [CONSTRAINTS] (team, scale, deadline).",
+    "Category": "Coding & Dev Copilot",
+    "Prompt": "Act as a neutral, experienced architect helping me choose between: [OPTIONS]. Use case: [USE CASE]. My constraints that matter most: [CONSTRAINTS].\n\nDon't be a fanboy of any option. Steps:\n1) CRITERIA: list the 5-6 decision criteria that actually matter for MY use case (e.g. learning curve, ecosystem, performance, hiring, lock-in, long-term maintenance), weighted.\n2) MATRIX: score each option 1-5 per criterion in a table, with a one-line justification per cell.\n3) TRADEOFFS: the honest downside of the leading option that its fans won't tell me.\n4) RECOMMENDATION: your pick for my situation, the conditions under which you'd switch, and the cheapest way to validate the choice before committing.\nIf I'm asking the wrong question or missing a better option, say so. Note this is engineering guidance, not a guarantee."
+  }
+]

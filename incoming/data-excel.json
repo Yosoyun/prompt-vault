@@ -1,0 +1,100 @@
+[
+  {
+    "Title": "Plain English to Excel & Sheets Formula (Both Dialects)",
+    "Teaser": "Describe what you want in plain English and get the exact working formula for both Excel and Google Sheets, explained and tested.",
+    "PromptHint": "Fill [WHAT YOU WANT TO CALCULATE] in plain words. Optionally add column letters or sample data.",
+    "Category": "Data, Excel & Sheets",
+    "Prompt": "You are a spreadsheet formula expert fluent in both Microsoft Excel and Google Sheets. I want to: [WHAT YOU WANT TO CALCULATE]. My data layout: [COLUMNS / SAMPLE / 'unknown - ask me'].\n\nSteps:\n1. If the layout is unclear, ask me up to 3 clarifying questions first (which columns, header row, what counts as a match).\n2. Choose the most robust, modern functions (XLOOKUP/FILTER/SUMIFS over fragile nested IFs where possible).\n\nOutput in this format:\n- EXCEL FORMULA: (copy-paste ready, using cell refs)\n- GOOGLE SHEETS FORMULA: (if it differs)\n- PLAIN-ENGLISH EXPLANATION: what each part does, 2-4 lines\n- WATCH OUT FOR: 1-2 common errors (#N/A, locale commas vs semicolons, absolute refs)\n- TEST IT: one example with sample values and the expected result.\nKeep refs editable so I can swap in my own ranges."
+  },
+  {
+    "Title": "Fix Any Broken Formula: #REF!, #N/A, #VALUE!",
+    "Teaser": "Paste a formula that's throwing an error or wrong result and get a line-by-line diagnosis plus the corrected, hardened version.",
+    "PromptHint": "Paste the full broken formula in [FORMULA] and the error or wrong result in [ERROR].",
+    "Category": "Data, Excel & Sheets",
+    "Prompt": "Act as a senior spreadsheet debugger. Here is my formula: [FORMULA]. The error or wrong result it gives: [ERROR OR WRONG OUTPUT]. Tool: [EXCEL / GOOGLE SHEETS].\n\nDo this:\n1. Restate in plain English what this formula is TRYING to do.\n2. Break it down piece by piece and pinpoint exactly where it breaks and why (wrong range, lookup not sorted, text-vs-number mismatch, locale separators, relative vs absolute ref, etc.).\n3. Give the CORRECTED formula, copy-paste ready.\n4. Suggest a cleaner/more robust rewrite if one exists (e.g., XLOOKUP instead of VLOOKUP), and say when to use it.\n5. Add one IFERROR/safety wrapper so it fails gracefully.\n\nFormat as: Goal / Diagnosis / Corrected Formula / Better Version / Safety Net. Be specific - reference the actual cells in my formula."
+  },
+  {
+    "Title": "Messy Data Cleanup Playbook: Dedupe, Dates, Text",
+    "Teaser": "Turn an inconsistent, dirty dataset into clean, analysis-ready columns with step-by-step formulas and rules you run top to bottom.",
+    "PromptHint": "Paste 5-15 sample rows in [SAMPLE DATA] and list the problems in [ISSUES].",
+    "Category": "Data, Excel & Sheets",
+    "Prompt": "You are a data-cleaning specialist. Here is a sample of my messy data (paste rows including headers): [SAMPLE DATA]. Known problems: [ISSUES e.g. mixed date formats, trailing spaces, duplicates, inconsistent capitalization, currency symbols in numbers]. Tool: [EXCEL / GOOGLE SHEETS].\n\nProduce a cleanup playbook:\n1. AUDIT: list every quality issue you spot in the sample, most damaging first.\n2. For each issue, give the exact fix - formula (TRIM, CLEAN, PROPER, TEXT, SUBSTITUTE, VALUE) OR a Power Query / menu step - with a before to after example.\n3. DEDUPE rule: how to find and remove duplicates safely, and which column(s) define a duplicate.\n4. STANDARDIZE: target format for dates, names, phone numbers, categories.\n5. VALIDATION CHECK: a formula that flags any row still failing the rules.\nGive me the steps in order, so I can run them top to bottom and end with a clean sheet."
+  },
+  {
+    "Title": "Pivot Table Architect: From Question to Setup",
+    "Teaser": "Tell it the business question and it designs the exact pivot table - rows, columns, values, filters - with click-by-click setup.",
+    "PromptHint": "Describe your question in [ANALYSIS QUESTION] and list your column headers in [COLUMNS].",
+    "Category": "Data, Excel & Sheets",
+    "Prompt": "Act as a data analyst who builds pivot tables. The question I need answered: [ANALYSIS QUESTION e.g. total revenue by region and month, top 10 products by margin]. My columns/fields: [COLUMNS]. Tool: [EXCEL / GOOGLE SHEETS].\n\nDeliver:\n1. PIVOT BLUEPRINT: exactly which fields go in Rows, Columns, Values (with aggregation: SUM/COUNT/AVERAGE), and Filters/Slicers.\n2. SETUP STEPS: click-by-click instructions to build it from scratch.\n3. CALCULATED FIELD: if the question needs one (e.g. margin % = profit/revenue), give the formula and where to add it.\n4. SORT & FORMAT: how to sort, show top N, and format numbers/percentages for readability.\n5. READING IT: what the finished table will tell me and one follow-up cut worth exploring.\nIf my fields can't answer the question, say so and tell me what column I'm missing."
+  },
+  {
+    "Title": "Plain English to SQL Query (With Explanation)",
+    "Teaser": "Describe the data pull you need in everyday language and get a clean, dialect-correct SQL query with a line-by-line explanation.",
+    "PromptHint": "Describe the result you want in [WHAT YOU NEED] and paste your table/column names in [SCHEMA].",
+    "Category": "Data, Excel & Sheets",
+    "Prompt": "You are an expert SQL engineer. I need this result: [WHAT YOU NEED IN PLAIN ENGLISH]. My tables and columns: [SCHEMA - table names with key columns, or 'ask me']. SQL dialect: [MYSQL / POSTGRESQL / BIGQUERY / SQL SERVER / SQLITE].\n\nSteps:\n1. If the schema or grain is ambiguous, ask up to 3 clarifying questions first (which table joins to which, what counts as one row, date range).\n2. Write the query using clear aliases and correct JOIN logic.\n\nOutput:\n- SQL QUERY: formatted, copy-paste ready, dialect-correct\n- WHAT IT DOES: line-by-line explanation in plain English\n- ASSUMPTIONS: any I made about your schema\n- EDGE CASES: NULLs, duplicates, or grain issues to watch, plus how the query handles them\n- OPTIMIZATION TIP: one index or rewrite that would speed it up.\nPrefer readable, maintainable SQL over clever one-liners."
+  },
+  {
+    "Title": "One-Page KPI Dashboard Blueprint for Spreadsheets",
+    "Teaser": "Hand it your raw columns and a goal; it designs a clean one-page dashboard - KPIs, charts, layout wireframe, and the formulas.",
+    "PromptHint": "State who it's for and the goal in [AUDIENCE + GOAL]; list your raw data fields in [COLUMNS].",
+    "Category": "Data, Excel & Sheets",
+    "Prompt": "Act as a dashboard designer for spreadsheets. Audience and goal: [AUDIENCE + GOAL e.g. show my manager weekly sales health]. Raw data fields available: [COLUMNS]. Tool: [EXCEL / GOOGLE SHEETS].\n\nDesign a one-page dashboard:\n1. KPIs: the 4-6 metrics that actually matter for this goal, with the formula for each (SUMIFS, AVERAGEIFS, growth %, etc.).\n2. CHARTS: which 2-4 chart types fit which metric and why (no chart-junk - justify each).\n3. LAYOUT: a text wireframe showing where KPIs, charts, and filters sit on the page (top-left = most important).\n4. INTERACTIVITY: which slicers/dropdowns/drop-down filters to add for self-service.\n5. HELPER TABLES: any summary tables the charts need, and where to put them (separate tab).\n6. POLISH: number formatting, conditional formatting for red/green, and one design 'do not do this' tip.\nKeep it clean and executive-readable, not cluttered."
+  },
+  {
+    "Title": "Conditional Formatting Rules From Plain English",
+    "Teaser": "Describe what you want highlighted and get the exact conditional-formatting rule, formula, and applies-to range to make it happen.",
+    "PromptHint": "Say what to highlight and when in [HIGHLIGHT RULE], e.g. 'rows where status is overdue'.",
+    "Category": "Data, Excel & Sheets",
+    "Prompt": "You are a spreadsheet conditional-formatting expert. I want to highlight: [HIGHLIGHT RULE e.g. highlight the whole row red when the Due Date has passed and Status isn't 'Done'; color the top 10% of sales green]. My relevant columns: [COLUMNS]. Tool: [EXCEL / GOOGLE SHEETS].\n\nDeliver:\n1. RULE TYPE: which conditional-formatting option to pick (formula-based, top/bottom, color scale, etc.).\n2. THE FORMULA: the exact 'format cells if' formula, copy-paste ready, with absolute/relative refs set correctly so it applies down the whole range.\n3. APPLIES-TO RANGE: the exact range to enter.\n4. FORMAT: suggested fill/font/icon for clarity and accessibility (don't rely on color alone).\n5. STEPS: click path to set it up.\n6. TEST: one example row that should trigger and one that shouldn't.\nIf I want to format entire rows (not just one cell), make sure the formula locks the column with $ correctly and explain why."
+  },
+  {
+    "Title": "Realistic Test Data Generator for Any Schema",
+    "Teaser": "Get realistic, ready-to-paste sample data for any schema so you can build and test formulas before real data lands.",
+    "PromptHint": "List the columns and how many rows in [COLUMNS + ROWS]; add any rules like 'dates in 2025'.",
+    "Category": "Data, Excel & Sheets",
+    "Prompt": "Act as a test-data generator. Create realistic sample data for these columns: [COLUMNS + ROWS e.g. 25 rows: Order ID, Customer Name, Region, Product, Quantity, Unit Price, Order Date, Status]. Constraints: [RULES e.g. dates in 2025, 4 regions, prices $5-$500, ~10% of orders 'Cancelled'].\n\nRules for the data:\n1. Make values realistic and internally consistent (totals, dates in order, plausible names/regions).\n2. Include a little intentional messiness ONLY if I asked (otherwise keep it clean).\n3. Spread categories so pivots and filters have something to show.\n\nOutput:\n- A tab-separated or CSV table with a header row, copy-paste ready into Excel/Sheets.\n- A one-line note on what scenarios this data lets me test (e.g. 'cancelled orders for filtering, multiple regions for pivots').\nDo not add commentary inside the table - keep it pure data so it pastes cleanly."
+  },
+  {
+    "Title": "Build a Macro / Apps Script to Automate the Boring Stuff",
+    "Teaser": "Describe a repetitive spreadsheet task and get ready-to-paste VBA or Google Apps Script that automates it, with setup steps.",
+    "PromptHint": "Describe the repetitive task in [TASK TO AUTOMATE]; name the tool and any triggers in [TOOL + TRIGGER].",
+    "Category": "Data, Excel & Sheets",
+    "Prompt": "You are an automation engineer who writes Excel VBA macros and Google Apps Script. The repetitive task I want to automate: [TASK TO AUTOMATE e.g. every Monday, copy new rows from 'Inbox' to 'Archive', timestamp them, and email me a summary]. Tool and trigger: [TOOL + TRIGGER e.g. Google Sheets, run on a daily time trigger / Excel, run on button click]. Relevant sheet names and columns: [SHEETS + COLUMNS].\n\nDeliver:\n1. PLAN: in 2-4 plain-English bullets, what the script will do step by step.\n2. THE CODE: complete, copy-paste-ready VBA or Apps Script, commented so a non-coder can follow it. Use the actual sheet/column names I gave.\n3. SETUP STEPS: exactly where to paste it (Apps Script editor / VBA module), how to authorize it, and how to wire the trigger or button.\n4. SAFETY: what it changes irreversibly, and one line to back up data or test on a copy first.\n5. CUSTOMIZE: the 1-2 variables at the top I'd most likely tweak, clearly marked.\nKeep the code minimal and readable - no unnecessary libraries or clever tricks."
+  },
+  {
+    "Title": "Merge Two Sheets by Key (XLOOKUP / INDEX-MATCH)",
+    "Teaser": "Combining two tables by a shared key? Get the right method, the exact lookup formula, and how to catch silent mismatches.",
+    "PromptHint": "Describe both tables and the shared key in [TABLE A], [TABLE B], [MATCH ON].",
+    "Category": "Data, Excel & Sheets",
+    "Prompt": "Act as a data-merge specialist. I need to pull data from one table into another using a shared key. Main table: [TABLE A - sheet/range + columns]. Lookup table: [TABLE B - sheet/range + columns, and which columns to bring over]. Match on: [MATCH ON - the shared key column]. Tool: [EXCEL / GOOGLE SHEETS].\n\nDeliver:\n1. BEST METHOD: recommend XLOOKUP, INDEX/MATCH, or Power Query/QUERY and say why for my case (one column vs many, exact vs approximate, performance).\n2. THE FORMULA: copy-paste ready, with refs I can swap, set to exact match.\n3. DRAG-DOWN NOTE: how to lock refs so it fills correctly down all rows.\n4. UNMATCHED ROWS: a formula to flag keys in Table A that have NO match in Table B (the silent data-loss trap).\n5. DUPLICATE-KEY WARNING: what happens if Table B has duplicate keys, and how to detect it.\nKeep it robust - I'd rather catch missing matches than get a silently wrong merge."
+  },
+  {
+    "Title": "Find the Story in My Data: Trends, Outliers, So-What",
+    "Teaser": "Paste a summary of your dataset and get the key trends, anomalies, and 'so what' actions a sharp analyst would surface.",
+    "PromptHint": "Paste an aggregated table or summary stats in [DATA SUMMARY] and your context/goal in [CONTEXT].",
+    "Category": "Data, Excel & Sheets",
+    "Prompt": "You are a sharp data analyst who finds the story, not just the numbers. Here is my data (paste an aggregated table, pivot output, or summary - not thousands of raw rows): [DATA SUMMARY]. Context and what I care about: [CONTEXT e.g. monthly sales for a SaaS, I care about growth and churn].\n\nDo this:\n1. HEADLINE: the single most important takeaway in one sentence.\n2. KEY TRENDS: 3-5 patterns worth noting (direction, magnitude, what's accelerating/declining).\n3. OUTLIERS & ANOMALIES: anything surprising, and a likely explanation or a question to investigate.\n4. SO WHAT: for each insight, why it matters and what action it suggests.\n5. WHAT'S MISSING: data I should add to make this analysis trustworthy.\nBe specific and quote the numbers. Flag where you're inferring vs. certain. Note: this is analytical guidance, not professional financial advice - verify before making money decisions."
+  },
+  {
+    "Title": "Google Sheets QUERY & ARRAYFORMULA Power Builder",
+    "Teaser": "Get one elegant single-cell QUERY or ARRAYFORMULA that replaces dozens of dragged-down formulas and updates live.",
+    "PromptHint": "Describe the result you want in [WHAT YOU WANT] and your column layout in [COLUMNS].",
+    "Category": "Data, Excel & Sheets",
+    "Prompt": "You are a Google Sheets power user who specializes in QUERY, ARRAYFORMULA, FILTER, and SORTN. I want: [WHAT YOU WANT e.g. a live table of total sales per rep, sorted high to low, only for this quarter]. My data columns and range: [COLUMNS + RANGE e.g. Sheet1!A1:F]. \n\nDeliver:\n1. THE FORMULA: a single-cell QUERY or ARRAYFORMULA that produces the whole result dynamically (no dragging), copy-paste ready.\n2. HOW IT WORKS: explain the QUERY syntax (SELECT, WHERE, GROUP BY, ORDER BY, LABEL) or the array logic in plain English.\n3. LIVE-UPDATE NOTE: confirm it auto-expands as new rows are added, and how to set the range so it does.\n4. COMMON PITFALL: locale (commas vs semicolons), header rows, or mixed data types - and how to avoid the error.\n5. VARIATION: one tweak I'm likely to want next (add a filter, a second sort, a total row).\nFavor one elegant formula over many helper columns."
+  },
+  {
+    "Title": "Stop Bad Data at Entry: Validation & Dropdown System",
+    "Teaser": "Get dropdown lists, dependent menus, and validation rules that keep junk out of your sheet at the point of entry.",
+    "PromptHint": "Describe what each column should accept in [VALIDATION RULES], e.g. 'Status must be one of 3 values'.",
+    "Category": "Data, Excel & Sheets",
+    "Prompt": "Act as a spreadsheet data-integrity expert. I want to lock down data entry so people can't enter junk. Columns and what each should accept: [VALIDATION RULES e.g. Status = Open/In Progress/Done; Email must be valid; Quantity must be a positive whole number; Region picks from a list]. Tool: [EXCEL / GOOGLE SHEETS].\n\nDeliver:\n1. For each column: the exact data-validation rule to apply (list, whole number, date range, custom formula) and step-by-step where to set it.\n2. DROPDOWNS: how to build the lists (and whether to source them from a named range/separate tab so they're easy to update).\n3. DEPENDENT DROPDOWNS: if I need cascading menus (e.g. Country to City), give the formula/approach.\n4. CUSTOM RULES: validation formulas for tricky cases (email pattern, no duplicates, value must exist in another list).\n5. ERROR MESSAGES: the input prompt and error alert text to show users.\n6. GOTCHAS: how validation behaves on paste (the classic bypass) and how to harden it.\nMake the system easy for a non-technical teammate to maintain."
+  },
+  {
+    "Title": "Regex & Text-Extraction Recipes for Spreadsheets",
+    "Teaser": "Pull emails, IDs, numbers, or any pattern out of messy text cells with ready-to-use regex and text formulas tested on your samples.",
+    "PromptHint": "Paste a few example cells in [SAMPLE TEXT] and say what to extract in [WHAT TO PULL OUT].",
+    "Category": "Data, Excel & Sheets",
+    "Prompt": "You are a text-parsing and regex expert for spreadsheets. From these example cells: [SAMPLE TEXT - paste 3-6 real examples]. I want to extract: [WHAT TO PULL OUT e.g. the email address, the 6-digit order ID, the city before the comma, the number after 'Total:']. Tool: [EXCEL / GOOGLE SHEETS].\n\nDeliver:\n1. RECOMMENDED APPROACH: regex (REGEXEXTRACT in Sheets / functions in Excel) OR text functions (LEFT/MID/FIND/TEXTBEFORE/TEXTAFTER/SPLIT) - pick what's cleanest for my examples.\n2. THE FORMULA: copy-paste ready, with the pattern explained token by token if regex.\n3. APPLIED TO MY EXAMPLES: show the exact output it would return for each sample I gave.\n4. EDGE CASES: what happens when the pattern is missing or the text varies, plus an IFERROR fallback.\n5. ALTERNATIVE: a non-regex version if my tool/version doesn't support REGEXEXTRACT.\nMake sure the pattern handles the variations visible in my samples, not just the first one."
+  }
+]

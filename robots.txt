@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://yosoyun.github.io/prompt-vault/sitemap.xml

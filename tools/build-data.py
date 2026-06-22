@@ -1,78 +1,46 @@
 #!/usr/bin/env python3
 """
-Build the Prompt Vault dataset from the raw AIPRM community export.
+Build The Prompt Vault dataset — PREMIUM ONLY (v3).
 
-Reads tools/aiprm_raw.json (array of prompt objects) and writes:
-  data/index.json    - slim search/browse index, NO prompt bodies (loads first)
-  data/bodies.json    - full prompt bodies + hints, aligned by index (lazy-loaded)
-  data/meta.json     - groups, categories, counts, build stats
+100% hand-built, original prompts by Indrajeet Yadav. The old community export is
+NOT used. Source is incoming/*.json, routed to a group by filename prefix:
+
+  <group>__<name>.json   -> that group   (image / agents / mega)
+  <name>.json            -> "viral" group (the trending/viral set)
+
+Writes:
+  data/index.json  - slim search/browse index (loads first)
+  data/bodies.json - full prompt bodies + hints (lazy-loaded)
+  data/meta.json   - groups, categories, counts, build stats
 
 Run:  python3 tools/build-data.py
 """
 import json
 import re
 import os
-import html
+import glob
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-RAW = os.path.join(HERE, "aiprm_raw.json")
+INCOMING = os.path.join(ROOT, "incoming")
 OUT_DATA = os.path.join(ROOT, "data")
+CURATOR = "Indrajeet Yadav"
 
-# ---- 8 clean groups -> raw AIPRM categories ----------------------------------
+# Premium groups, in display order (featured first). key, label, icon, color
 GROUPS = [
-    ("writing",     "Writing",          "✍️", "#e8b04b",
-        ["writing", "Script Writing", "Sports Writing", "Text Editor",
-         "Summarize", "Respond", "Improve"]),
-    ("marketing",   "Marketing & SEO",  "📣", "#5fb0c4",
-        ["marketing", "keywords", "link building", "call to action",
-         "Subject Lines", "Positioning", "Persuade", "Segment your audience",
-         "Outreach"]),
-    ("sales",       "Sales & Support",  "💼", "#c98bbb",
-        ["Products", "Product Description", "Pricing", "Partnerships", "CRM",
-         "Cancel", "Quota", "Refunds", "Trial"]),
-    ("dev",         "Development",       "⚙️", "#7ec699",
-        ["Backend Development", "Web Development", "Configuration Management",
-         "Containerization", "Database Administration",
-         "Operating System Management", "Version Control"]),
-    ("art",         "AI Art & Design",  "🎨", "#e08a6e",
-        ["Midjourney", "Stable Diffusion", "Dall-E", "Design"]),
-    ("ideas",       "Ideas & Planning", "💡", "#b6a4e0",
-        ["Plan", "Research", "ideation", "Startup Ideas", "Spreadsheets"]),
-    ("business",    "Business & Finance","📊", "#88b04b",
-        ["Accounting", "Places (Media Channels)", "Games"]),
-    ("other",       "Other",            "🗂️", "#9a9488",
-        ["UNSURE", "Unmet Category-Related Needs"]),
+    ("viral",  "Trending & Viral",      "🔥", "#ff6b4a"),
+    ("image",  "AI Image Prompts",      "🖼️", "#e0729e"),
+    ("agents", "Agentic & System",      "🤖", "#6c8cff"),
+    ("mega",   "Pro Mega-Prompts",      "⚡", "#b48cff"),
 ]
-
-# raw category -> group key
-CAT2GROUP = {}
-for key, label, icon, color, cats in GROUPS:
-    for c in cats:
-        CAT2GROUP[c] = key
-
-# Nicer display names for a few raw categories
-CAT_DISPLAY = {
-    "ideation": "Ideation",
-    "keywords": "Keywords",
-    "marketing": "Marketing",
-    "writing": "Writing",
-    "link building": "Link Building",
-    "call to action": "Call to Action",
-    "Places (Media Channels)": "Media Channels",
-    "UNSURE": "Uncategorized",
-    "Unmet Category-Related Needs": "Misc",
-    "Dall-E": "DALL·E",
-}
-
-VAR_RE = re.compile(r"\[([A-Z][A-Z0-9 _\-]{1,40})\]")
+GROUP_KEYS = {g[0] for g in GROUPS}
+VAR_RE = re.compile(r"\[([A-Z][A-Z0-9 _\-/]{1,40})\]")
 
 
 def clean(s):
     if not s:
         return ""
-    s = s.replace("\r\n", "\n").replace("\r", "\n")
-    return s.strip()
+    return str(s).replace("\r\n", "\n").replace("\r", "\n").strip()
 
 
 def detect_vars(prompt):
@@ -84,82 +52,91 @@ def detect_vars(prompt):
     return seen[:8]
 
 
-def main():
-    with open(RAW, "r", encoding="utf-8") as f:
-        raw = json.load(f)
+def norm_title(t):
+    return re.sub(r"[^a-z0-9]", "", (t or "").lower())[:48]
 
-    index = []   # slim, no bodies
-    bodies = []  # full prompt + hint, aligned by index
+
+def group_of(filename):
+    base = os.path.basename(filename)[:-5]  # strip .json
+    if "__" in base:
+        g = base.split("__", 1)[0]
+        return g if g in GROUP_KEYS else "viral"
+    return "viral"
+
+
+def main():
+    files = sorted(glob.glob(os.path.join(INCOMING, "*.json")))
+    index, bodies = [], []
+    seen = set()
     group_counts = {g[0]: 0 for g in GROUPS}
-    cat_counts = {}
+    cat_counts = {}       # (group, category) -> n
     skipped = 0
 
-    for i, d in enumerate(raw):
-        prompt = clean(d.get("Prompt"))
-        title = clean(d.get("Title")) or "Untitled prompt"
-        if not prompt or len(prompt) < 8:
-            skipped += 1
+    for fp in files:
+        gkey = group_of(fp)
+        try:
+            arr = json.load(open(fp, encoding="utf-8"))
+        except Exception as e:
+            print(f"  ! skip {os.path.basename(fp)}: {e}")
             continue
-        cat = d.get("Category") or "UNSURE"
-        gkey = CAT2GROUP.get(cat, "other")
-        idx = len(index)
-        index.append({
-            "i": idx,
-            "t": title[:160],
-            "te": clean(d.get("Teaser"))[:280],
-            "a": clean(d.get("AuthorName"))[:60],
-            "u": (d.get("AuthorURL") or "").strip()[:200],
-            "c": cat,
-            "g": gkey,
-            "v": detect_vars(prompt),
-            "len": len(prompt),
-        })
-        bodies.append({"p": prompt, "h": clean(d.get("PromptHint"))[:240]})
-        group_counts[gkey] += 1
-        cat_counts[cat] = cat_counts.get(cat, 0) + 1
-
-    # Build meta with categories nested per group, sorted by count desc
-    groups_meta = []
-    for key, label, icon, color, cats in GROUPS:
-        cat_list = []
-        for c in cats:
-            n = cat_counts.get(c, 0)
-            if n == 0:
+        if not isinstance(arr, list):
+            continue
+        for d in arr:
+            if not isinstance(d, dict):
                 continue
-            cat_list.append({
-                "name": c,
-                "label": CAT_DISPLAY.get(c, c[:1].upper() + c[1:]),
-                "count": n,
+            prompt = clean(d.get("Prompt"))
+            title = clean(d.get("Title"))
+            if not prompt or not title or len(prompt) < 40:
+                skipped += 1
+                continue
+            nt = norm_title(title)
+            if nt in seen:
+                skipped += 1
+                continue
+            seen.add(nt)
+            cat = clean(d.get("Category")) or "Trending"
+            idx = len(index)
+            index.append({
+                "i": idx, "t": title[:160], "te": clean(d.get("Teaser"))[:280],
+                "c": cat, "g": gkey, "v": detect_vars(prompt), "len": len(prompt),
             })
-        cat_list.sort(key=lambda x: -x["count"])
+            bodies.append({"p": prompt, "h": clean(d.get("PromptHint"))[:240]})
+            group_counts[gkey] += 1
+            cat_counts[(gkey, cat)] = cat_counts.get((gkey, cat), 0) + 1
+
+    groups_meta = []
+    for i, (key, label, icon, color) in enumerate(GROUPS):
+        cats = [{"name": c, "label": c, "count": n}
+                for (g, c), n in cat_counts.items() if g == key]
+        cats.sort(key=lambda x: -x["count"])
+        if group_counts[key] == 0:
+            continue
         groups_meta.append({
             "key": key, "label": label, "icon": icon, "color": color,
-            "count": group_counts[key], "categories": cat_list,
+            "count": group_counts[key], "featured": i == 0, "categories": cats,
         })
 
     meta = {
         "total": len(index),
         "groups": groups_meta,
-        "source": "AIPRM community prompts (October 2023)",
-        "curator": "Indrajeet Yadav",
+        "curator": CURATOR,
+        "tagline": "Premium AI prompts, hand-built by " + CURATOR,
     }
 
     os.makedirs(OUT_DATA, exist_ok=True)
-    with open(os.path.join(OUT_DATA, "index.json"), "w", encoding="utf-8") as f:
-        json.dump(index, f, ensure_ascii=False, separators=(",", ":"))
-    with open(os.path.join(OUT_DATA, "bodies.json"), "w", encoding="utf-8") as f:
-        json.dump(bodies, f, ensure_ascii=False, separators=(",", ":"))
-    with open(os.path.join(OUT_DATA, "meta.json"), "w", encoding="utf-8") as f:
-        json.dump(meta, f, ensure_ascii=False, indent=2)
+    json.dump(index, open(os.path.join(OUT_DATA, "index.json"), "w", encoding="utf-8"),
+              ensure_ascii=False, separators=(",", ":"))
+    json.dump(bodies, open(os.path.join(OUT_DATA, "bodies.json"), "w", encoding="utf-8"),
+              ensure_ascii=False, separators=(",", ":"))
+    json.dump(meta, open(os.path.join(OUT_DATA, "meta.json"), "w", encoding="utf-8"),
+              ensure_ascii=False, indent=2)
 
-    isize = os.path.getsize(os.path.join(OUT_DATA, "index.json"))
-    bsize = os.path.getsize(os.path.join(OUT_DATA, "bodies.json"))
-    print(f"prompts kept: {len(index)}  skipped: {skipped}")
-    print(f"index.json : {isize/1024/1024:.2f} MB  (loads first)")
-    print(f"bodies.json: {bsize/1024/1024:.2f} MB  (lazy)")
-    print("group counts:")
+    isize = os.path.getsize(os.path.join(OUT_DATA, "index.json")) / 1024
+    bsize = os.path.getsize(os.path.join(OUT_DATA, "bodies.json")) / 1024
+    print(f"PREMIUM prompts: {len(index)}   (skipped/deduped: {skipped})")
+    print(f"index.json {isize:.0f} KB · bodies.json {bsize:.0f} KB")
     for g in groups_meta:
-        print(f"  {g['count']:5d}  {g['label']}  ({len(g['categories'])} cats)")
+        print(f"  {g['count']:4d}  {g['icon']} {g['label']}  ({len(g['categories'])} topics)")
 
 
 if __name__ == "__main__":

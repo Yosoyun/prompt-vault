@@ -1,309 +1,217 @@
 {
-  "total": 4408,
+  "total": 473,
   "groups": [
     {
-      "key": "writing",
-      "label": "Writing",
-      "icon": "✍️",
-      "color": "#e8b04b",
-      "count": 2096,
+      "key": "viral",
+      "label": "Trending & Viral",
+      "icon": "🔥",
+      "color": "#ff6b4a",
+      "count": 259,
+      "featured": true,
       "categories": [
         {
-          "name": "writing",
-          "label": "Writing",
-          "count": 1571
+          "name": "Health, Fitness & Mind",
+          "label": "Health, Fitness & Mind",
+          "count": 16
         },
         {
-          "name": "Respond",
-          "label": "Respond",
-          "count": 162
+          "name": "AI Agents & Automation",
+          "label": "AI Agents & Automation",
+          "count": 15
         },
         {
-          "name": "Summarize",
-          "label": "Summarize",
-          "count": 159
+          "name": "ChatGPT Power-User",
+          "label": "ChatGPT Power-User",
+          "count": 15
         },
         {
-          "name": "Script Writing",
-          "label": "Script Writing",
-          "count": 99
+          "name": "Email & Communication",
+          "label": "Email & Communication",
+          "count": 15
         },
         {
-          "name": "Improve",
-          "label": "Improve",
-          "count": 80
+          "name": "Expert Personas & Roleplay",
+          "label": "Expert Personas & Roleplay",
+          "count": 15
         },
         {
-          "name": "Text Editor",
-          "label": "Text Editor",
-          "count": 22
+          "name": "Study & Learn 10x",
+          "label": "Study & Learn 10x",
+          "count": 15
         },
         {
-          "name": "Sports Writing",
-          "label": "Sports Writing",
-          "count": 3
-        }
-      ]
-    },
-    {
-      "key": "marketing",
-      "label": "Marketing & SEO",
-      "icon": "📣",
-      "color": "#5fb0c4",
-      "count": 798,
-      "categories": [
-        {
-          "name": "marketing",
-          "label": "Marketing",
-          "count": 460
+          "name": "Coding & Dev Copilot",
+          "label": "Coding & Dev Copilot",
+          "count": 14
         },
         {
-          "name": "keywords",
-          "label": "Keywords",
-          "count": 197
+          "name": "Copywriting & Ads",
+          "label": "Copywriting & Ads",
+          "count": 14
         },
         {
-          "name": "call to action",
-          "label": "Call to Action",
-          "count": 29
+          "name": "Data, Excel & Sheets",
+          "label": "Data, Excel & Sheets",
+          "count": 14
         },
         {
-          "name": "Positioning",
-          "label": "Positioning",
-          "count": 23
+          "name": "Life, Travel & Home",
+          "label": "Life, Travel & Home",
+          "count": 14
         },
         {
-          "name": "Persuade",
-          "label": "Persuade",
-          "count": 23
+          "name": "Midjourney v6 & AI Art",
+          "label": "Midjourney v6 & AI Art",
+          "count": 14
         },
         {
-          "name": "link building",
-          "label": "Link Building",
-          "count": 22
+          "name": "Money & Side-Hustle",
+          "label": "Money & Side-Hustle",
+          "count": 14
         },
         {
-          "name": "Outreach",
-          "label": "Outreach",
-          "count": 19
+          "name": "Personal Brand & LinkedIn",
+          "label": "Personal Brand & LinkedIn",
+          "count": 14
         },
         {
-          "name": "Segment your audience",
-          "label": "Segment your audience",
-          "count": 13
+          "name": "Productivity & Systems",
+          "label": "Productivity & Systems",
+          "count": 14
         },
         {
-          "name": "Subject Lines",
-          "label": "Subject Lines",
-          "count": 12
-        }
-      ]
-    },
-    {
-      "key": "sales",
-      "label": "Sales & Support",
-      "icon": "💼",
-      "color": "#c98bbb",
-      "count": 142,
-      "categories": [
-        {
-          "name": "Products",
-          "label": "Products",
-          "count": 89
+          "name": "Resume & Career",
+          "label": "Resume & Career",
+          "count": 14
         },
         {
-          "name": "Product Description",
-          "label": "Product Description",
-          "count": 37
+          "name": "SEO & Growth",
+          "label": "SEO & Growth",
+          "count": 14
         },
         {
-          "name": "Cancel",
-          "label": "Cancel",
-          "count": 5
+          "name": "Viral Content & Hooks",
+          "label": "Viral Content & Hooks",
+          "count": 14
         },
         {
-          "name": "CRM",
-          "label": "CRM",
-          "count": 3
-        },
-        {
-          "name": "Pricing",
-          "label": "Pricing",
-          "count": 2
-        },
-        {
-          "name": "Partnerships",
-          "label": "Partnerships",
-          "count": 2
-        },
-        {
-          "name": "Quota",
-          "label": "Quota",
-          "count": 2
-        },
-        {
-          "name": "Refunds",
-          "label": "Refunds",
-          "count": 1
-        },
-        {
-          "name": "Trial",
-          "label": "Trial",
-          "count": 1
-        }
-      ]
-    },
-    {
-      "key": "dev",
-      "label": "Development",
-      "icon": "⚙️",
-      "color": "#7ec699",
-      "count": 265,
-      "categories": [
-        {
-          "name": "Backend Development",
-          "label": "Backend Development",
-          "count": 108
-        },
-        {
-          "name": "Web Development",
-          "label": "Web Development",
-          "count": 97
-        },
-        {
-          "name": "Configuration Management",
-          "label": "Configuration Management",
-          "count": 29
-        },
-        {
-          "name": "Database Administration",
-          "label": "Database Administration",
-          "count": 12
-        },
-        {
-          "name": "Operating System Management",
-          "label": "Operating System Management",
-          "count": 11
-        },
-        {
-          "name": "Containerization",
-          "label": "Containerization",
-          "count": 5
-        },
-        {
-          "name": "Version Control",
-          "label": "Version Control",
-          "count": 3
-        }
-      ]
-    },
-    {
-      "key": "art",
-      "label": "AI Art & Design",
-      "icon": "🎨",
-      "color": "#e08a6e",
-      "count": 188,
-      "categories": [
-        {
-          "name": "Design",
-          "label": "Design",
-          "count": 65
-        },
-        {
-          "name": "Midjourney",
-          "label": "Midjourney",
-          "count": 63
-        },
-        {
-          "name": "Stable Diffusion",
-          "label": "Stable Diffusion",
-          "count": 35
-        },
-        {
-          "name": "Dall-E",
-          "label": "DALL·E",
-          "count": 25
-        }
-      ]
-    },
-    {
-      "key": "ideas",
-      "label": "Ideas & Planning",
-      "icon": "💡",
-      "color": "#b6a4e0",
-      "count": 488,
-      "categories": [
-        {
-          "name": "Plan",
-          "label": "Plan",
-          "count": 167
-        },
-        {
-          "name": "Research",
-          "label": "Research",
-          "count": 152
-        },
-        {
-          "name": "ideation",
-          "label": "Ideation",
-          "count": 136
-        },
-        {
-          "name": "Startup Ideas",
-          "label": "Startup Ideas",
-          "count": 19
-        },
-        {
-          "name": "Spreadsheets",
-          "label": "Spreadsheets",
+          "name": "Faceless YouTube & Shorts",
+          "label": "Faceless YouTube & Shorts",
           "count": 14
         }
       ]
     },
     {
-      "key": "business",
-      "label": "Business & Finance",
-      "icon": "📊",
-      "color": "#88b04b",
-      "count": 239,
+      "key": "image",
+      "label": "AI Image Prompts",
+      "icon": "🖼️",
+      "color": "#e0729e",
+      "count": 106,
+      "featured": false,
       "categories": [
         {
-          "name": "Accounting",
-          "label": "Accounting",
-          "count": 192
+          "name": "DALL·E 3",
+          "label": "DALL·E 3",
+          "count": 14
         },
         {
-          "name": "Games",
-          "label": "Games",
-          "count": 28
+          "name": "Gemini · Nano Banana",
+          "label": "Gemini · Nano Banana",
+          "count": 14
         },
         {
-          "name": "Places (Media Channels)",
-          "label": "Media Channels",
-          "count": 19
+          "name": "Midjourney v6/v7",
+          "label": "Midjourney v6/v7",
+          "count": 14
+        },
+        {
+          "name": "Flux",
+          "label": "Flux",
+          "count": 13
+        },
+        {
+          "name": "Logos & Branding",
+          "label": "Logos & Branding",
+          "count": 13
+        },
+        {
+          "name": "Photoreal Portraits & Product",
+          "label": "Photoreal Portraits & Product",
+          "count": 13
+        },
+        {
+          "name": "Stable Diffusion (SDXL)",
+          "label": "Stable Diffusion (SDXL)",
+          "count": 13
+        },
+        {
+          "name": "Ideogram (Text in Image)",
+          "label": "Ideogram (Text in Image)",
+          "count": 12
         }
       ]
     },
     {
-      "key": "other",
-      "label": "Other",
-      "icon": "🗂️",
-      "color": "#9a9488",
-      "count": 192,
+      "key": "agents",
+      "label": "Agentic & System",
+      "icon": "🤖",
+      "color": "#6c8cff",
+      "count": 42,
+      "featured": false,
       "categories": [
         {
-          "name": "UNSURE",
-          "label": "Uncategorized",
-          "count": 189
+          "name": "Autonomous Agents",
+          "label": "Autonomous Agents",
+          "count": 15
         },
         {
-          "name": "Unmet Category-Related Needs",
-          "label": "Misc",
-          "count": 3
+          "name": "System Prompts",
+          "label": "System Prompts",
+          "count": 14
+        },
+        {
+          "name": "Multi-Agent & Tools",
+          "label": "Multi-Agent & Tools",
+          "count": 13
+        }
+      ]
+    },
+    {
+      "key": "mega",
+      "label": "Pro Mega-Prompts",
+      "icon": "⚡",
+      "color": "#b48cff",
+      "count": 66,
+      "featured": false,
+      "categories": [
+        {
+          "name": "JSON & Structured Output",
+          "label": "JSON & Structured Output",
+          "count": 14
+        },
+        {
+          "name": "Data Extraction & Tables",
+          "label": "Data Extraction & Tables",
+          "count": 13
+        },
+        {
+          "name": "Life & Productivity",
+          "label": "Life & Productivity",
+          "count": 13
+        },
+        {
+          "name": "Deep Research",
+          "label": "Deep Research",
+          "count": 13
+        },
+        {
+          "name": "Business & Strategy",
+          "label": "Business & Strategy",
+          "count": 13
         }
       ]
     }
   ],
-  "source": "AIPRM community prompts (October 2023)",
-  "curator": "Indrajeet Yadav"
+  "curator": "Indrajeet Yadav",
+  "tagline": "Premium AI prompts, hand-built by Indrajeet Yadav"
 }
