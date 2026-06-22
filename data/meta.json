@@ -1,5 +1,5 @@
 {
-  "total": 607,
+  "total": 848,
   "groups": [
     {
       "key": "viral",
@@ -157,11 +157,46 @@
       ]
     },
     {
+      "key": "expert",
+      "label": "Expert Picks",
+      "icon": "🧠",
+      "color": "#34c3c9",
+      "count": 50,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Agentic Patterns",
+          "label": "Agentic Patterns",
+          "count": 10
+        },
+        {
+          "name": "Expert Frameworks",
+          "label": "Expert Frameworks",
+          "count": 10
+        },
+        {
+          "name": "Meta-Prompting",
+          "label": "Meta-Prompting",
+          "count": 10
+        },
+        {
+          "name": "Power Prompts",
+          "label": "Power Prompts",
+          "count": 10
+        },
+        {
+          "name": "Advanced Reasoning",
+          "label": "Advanced Reasoning",
+          "count": 10
+        }
+      ]
+    },
+    {
       "key": "image",
       "label": "AI Image Prompts",
       "icon": "🖼️",
       "color": "#e0729e",
-      "count": 106,
+      "count": 169,
       "featured": false,
       "categories": [
         {
@@ -180,8 +215,23 @@
           "count": 14
         },
         {
+          "name": "Couples, Family & Pets",
+          "label": "Couples, Family & Pets",
+          "count": 13
+        },
+        {
           "name": "Flux",
           "label": "Flux",
+          "count": 13
+        },
+        {
+          "name": "ChatGPT Viral Image Prompts",
+          "label": "ChatGPT Viral Image Prompts",
+          "count": 13
+        },
+        {
+          "name": "Pro Headshots",
+          "label": "Pro Headshots",
           "count": 13
         },
         {
@@ -195,6 +245,11 @@
           "count": 13
         },
         {
+          "name": "Selfie Transformations",
+          "label": "Selfie Transformations",
+          "count": 13
+        },
+        {
           "name": "Stable Diffusion (SDXL)",
           "label": "Stable Diffusion (SDXL)",
           "count": 13
@@ -203,6 +258,86 @@
           "name": "Ideogram (Text in Image)",
           "label": "Ideogram (Text in Image)",
           "count": 12
+        },
+        {
+          "name": "Viral Photo Trends",
+          "label": "Viral Photo Trends",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "key": "writing",
+      "label": "Content & Writing",
+      "icon": "✍️",
+      "color": "#e3b341",
+      "count": 84,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Blog & Articles",
+          "label": "Blog & Articles",
+          "count": 12
+        },
+        {
+          "name": "Book & Ebook Writing",
+          "label": "Book & Ebook Writing",
+          "count": 12
+        },
+        {
+          "name": "Instagram & Reels",
+          "label": "Instagram & Reels",
+          "count": 12
+        },
+        {
+          "name": "LinkedIn Posts",
+          "label": "LinkedIn Posts",
+          "count": 12
+        },
+        {
+          "name": "Newsletter & Email",
+          "label": "Newsletter & Email",
+          "count": 12
+        },
+        {
+          "name": "Story & Scriptwriting",
+          "label": "Story & Scriptwriting",
+          "count": 12
+        },
+        {
+          "name": "X / Twitter Threads",
+          "label": "X / Twitter Threads",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "key": "gen",
+      "label": "Generators & Templates",
+      "icon": "🛠️",
+      "color": "#9bbf3f",
+      "count": 44,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Custom GPT & System Builders",
+          "label": "Custom GPT & System Builders",
+          "count": 11
+        },
+        {
+          "name": "Prompt Generators",
+          "label": "Prompt Generators",
+          "count": 11
+        },
+        {
+          "name": "Document & Framework Templates",
+          "label": "Document & Framework Templates",
+          "count": 11
+        },
+        {
+          "name": "Workflow & SOP Builders",
+          "label": "Workflow & SOP Builders",
+          "count": 11
         }
       ]
     },

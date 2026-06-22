@@ -28,11 +28,14 @@ CURATOR = "Indrajeet Yadav"
 
 # Premium groups, in display order (featured first). key, label, icon, color
 GROUPS = [
-    ("viral",  "Trending & Viral",      "🔥", "#ff6b4a"),
-    ("elite",  "Million-Dollar Prompts","💎", "#36c98b"),
-    ("image",  "AI Image Prompts",      "🖼️", "#e0729e"),
-    ("agents", "Agentic & System",      "🤖", "#6c8cff"),
-    ("mega",   "Pro Mega-Prompts",      "⚡", "#b48cff"),
+    ("viral",   "Trending & Viral",       "🔥", "#ff6b4a"),
+    ("elite",   "Million-Dollar Prompts", "💎", "#36c98b"),
+    ("expert",  "Expert Picks",           "🧠", "#34c3c9"),
+    ("image",   "AI Image Prompts",       "🖼️", "#e0729e"),
+    ("writing", "Content & Writing",      "✍️", "#e3b341"),
+    ("gen",     "Generators & Templates", "🛠️", "#9bbf3f"),
+    ("agents",  "Agentic & System",       "🤖", "#6c8cff"),
+    ("mega",    "Pro Mega-Prompts",       "⚡", "#b48cff"),
 ]
 GROUP_KEYS = {g[0] for g in GROUPS}
 VAR_RE = re.compile(r"\[([A-Z][A-Z0-9 _\-/]{1,40})\]")

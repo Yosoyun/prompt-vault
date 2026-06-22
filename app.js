@@ -20,15 +20,19 @@
   // Featured one-tap collections (set a search query, optional group)
   const COLLECTIONS = [
     { icon: "💎", label: "Million-dollar",  q: "", group: "elite" },
+    { icon: "🧠", label: "Expert picks",    q: "", group: "expert" },
+    { icon: "📸", label: "Pro headshots",   q: "headshot" },
+    { icon: "🤳", label: "Selfie magic",    q: "selfie" },
     { icon: "🔥", label: "Go viral",        q: "", group: "viral" },
+    { icon: "✍️", label: "LinkedIn",        q: "linkedin" },
+    { icon: "📕", label: "Write a book",    q: "book" },
+    { icon: "🛠️", label: "Prompt generator",q: "", group: "gen" },
     { icon: "✉️", label: "Cold email",      q: "email" },
     { icon: "🎬", label: "YouTube & video", q: "youtube" },
     { icon: "🖼️", label: "Midjourney art",  q: "midjourney" },
     { icon: "📄", label: "Resume & jobs",   q: "resume" },
     { icon: "📊", label: "Excel & data",    q: "excel" },
     { icon: "📚", label: "Study smarter",   q: "study" },
-    { icon: "💸", label: "Make money",      q: "business" },
-    { icon: "📈", label: "SEO & blog",      q: "seo" },
     { icon: "💻", label: "Code helper",     q: "code" },
   ];
 
@@ -217,7 +221,11 @@
   function renderMore() {
     const frag = document.createDocumentFragment();
     const end = Math.min(state.shown + BATCH, state.results.length);
-    for (let k = state.shown; k < end; k++) frag.appendChild(cardEl(state.results[k]));
+    for (let k = state.shown; k < end; k++) {
+      const el = cardEl(state.results[k]);
+      el.style.animationDelay = (((k - state.shown) % 12) * 0.035) + "s"; // staggered motion-in
+      frag.appendChild(el);
+    }
     $("#grid").appendChild(frag); state.shown = end;
     const lm = $("#loadMore"); lm.hidden = state.shown >= state.results.length;
     if (!lm.hidden) lm.textContent = `Load ${Math.min(BATCH, state.results.length - state.shown)} more · ${fmt(state.results.length - state.shown)} left`;
@@ -352,6 +360,14 @@
     $("#themeToggle").addEventListener("click", () => { const n = document.documentElement.dataset.theme === "light" ? "dark" : "light"; document.documentElement.dataset.theme = n; localStorage.setItem("pv-theme", n); });
     const io = new IntersectionObserver((es) => { if (es[0].isIntersecting && !$("#loadMore").hidden) renderMore(); }, { rootMargin: "600px" });
     io.observe($("#loadMore"));
+
+    // scroll-reveal sections (progressive enhancement; skip if reduced motion)
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
+      const ro = new IntersectionObserver((es) => {
+        es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); ro.unobserve(e.target); } });
+      }, { threshold: 0.06, rootMargin: "0px 0px -40px 0px" });
+      document.querySelectorAll(".collections, .howto, .faq").forEach((el) => { el.classList.add("reveal"); ro.observe(el); });
+    }
   }
 
   wire(); boot();

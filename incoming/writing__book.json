@@ -1,0 +1,86 @@
+[
+  {
+    "Title": "Book Architect: Idea to Locked Outline in One Pass",
+    "Teaser": "Turn a fuzzy book idea into a complete, chapter-by-chapter outline with a single promise, a clear arc, and a word budget.",
+    "PromptHint": "Generates a full non-fiction book blueprint you can write against chapter by chapter.",
+    "Category": "Book & Ebook Writing",
+    "Prompt": "You are a veteran nonfiction book architect who has structured bestsellers. I want to write a book on [BOOK TOPIC] for [TARGET READER], whose goal is [READER TRANSFORMATION].\n\nTHINK FIRST (show this): state the ONE core promise of the book in a single sentence, name the reader's before/after states, and pick a structural spine (problem-method-proof, chronological, or framework-led). Justify the choice in 2 lines.\n\nCONSTRAINTS:\n- 8-12 chapters, each advancing the transformation; no two chapters overlap.\n- Every chapter must earn its place; cut filler.\n- Target total length [TARGET WORD COUNT].\n- Map an emotional/logical arc (hook -> build -> payoff).\n\nOUTPUT FORMAT (Markdown):\n1) Working title + 3 alternates + subtitle\n2) One-sentence promise\n3) Reader before/after table\n4) Outline table | # | Chapter Title | Core Idea (1 line) | Reader Takeaway | Word Budget |\n5) The 'spine logic' - 2 sentences on why this order delivers the promise\nEnd with: the single chapter I should draft first and why."
+  },
+  {
+    "Title": "Chapter Drafting Engine: One On-Voice Chapter at a Time",
+    "Teaser": "Draft one full chapter against your locked outline using a Role-Context-Task-Format scaffold, never the whole book at once.",
+    "PromptHint": "Produces a complete, on-voice chapter draft that stays consistent with prior chapters.",
+    "Category": "Book & Ebook Writing",
+    "Prompt": "Act as my co-author drafting ONE chapter at a time so quality never collapses.\n\nLOCKED CONTEXT (treat as canon, do not contradict):\n- Book promise & audience: [BOOK PREMISE + AUDIENCE]\n- Author voice sample (mimic cadence, vocabulary, formality): [VOICE SAMPLE]\n- Where we are: [PRIOR CHAPTERS SUMMARY]\n\nTASK: Draft the chapter described here (title, core idea, and target word count): [CHAPTER SPEC: TITLE + CORE IDEA + WORD COUNT].\n\nTHINK FIRST (show as a 5-7 bullet beat sheet, then write): opening hook, 3-4 main movements, one story/example per movement, the transition that hands off to the next chapter.\n\nCONSTRAINTS:\n- Open with a scene, question, or concrete tension - never 'In this chapter we will'.\n- One idea per section; vary sentence length; show, then explain.\n- Stay in the supplied voice; no AI tell-words (delve, unlock, tapestry, vibrant).\n- End with a 1-line bridge to the next chapter.\n\nOUTPUT FORMAT:\nFirst the beat sheet, then the full chapter prose with H2/H3 headings. Stop after this chapter only."
+  },
+  {
+    "Title": "Lead Magnet Forge: An Ebook That Captures Emails",
+    "Teaser": "Spin one core topic into a high-converting lead magnet with a hook title, an irresistible promise, and a ready-to-write outline.",
+    "PromptHint": "Designs a giveaway ebook or checklist engineered to capture emails and pre-sell your paid book.",
+    "Category": "Book & Ebook Writing",
+    "Prompt": "You are a direct-response strategist who designs lead magnets that convert cold traffic into subscribers.\n\nINPUT:\n- Topic / expertise: [TOPIC]\n- Audience & their burning problem: [AUDIENCE + PAIN]\n- What I ultimately sell: [PAID OFFER]\n\nTHINK FIRST (show briefly): pick the format that best fits the pain (quick-win checklist, mini-ebook, template, or cheat-sheet) and state why in 1 line. The magnet must solve ONE specific problem fast.\n\nCONSTRAINTS:\n- Title promises a result + a timeframe.\n- Deliver a genuine quick win; no fluff sections.\n- Naturally bridge to the paid offer at the end (no hard sell).\n\nOUTPUT FORMAT (Markdown):\n1) 5 title options (curiosity + benefit)\n2) The promise (1 sentence) + who it's for / not for\n3) Section-by-section outline | Section | What it delivers | Approx words |\n4) Opt-in page copy: headline + 3 bullet benefits + CTA button text\n5) The transition line that leads into [PAID OFFER]"
+  },
+  {
+    "Title": "Self-Publishing Launch Kit: Metadata, Categories & Keywords",
+    "Teaser": "Generate the Amazon KDP listing that gets your finished ebook found: categories, keywords, description, and an A+ pitch.",
+    "PromptHint": "Builds discoverability metadata and a conversion-ready listing for a finished book or ebook.",
+    "Category": "Book & Ebook Writing",
+    "Prompt": "Act as a self-publishing strategist who ranks books on Amazon KDP and other ebook stores.\n\nINPUT:\n- Book title & topic: [TITLE + TOPIC]\n- Target reader & the result they want: [READER + RESULT]\n- Comparable bestsellers in this niche (optional): [COMP TITLES]\n\nTHINK FIRST (show): identify the exact phrases this reader types into a store search bar, and the 2-3 sub-niches where this book can rank top-10 rather than drown in a broad category. Name them.\n\nCONSTRAINTS:\n- Keywords must be buyer search phrases, not vague topic words.\n- Categories should be specific and winnable, not the most crowded ones.\n- Description sells the transformation first; features second; no keyword stuffing.\n\nOUTPUT FORMAT (Markdown):\n1) 7 backend keyword phrases (long-tail, search-intent)\n2) 3 recommended store categories + why each is winnable (1 line each)\n3) Listing description (150-200 words, scannable, benefit-led, with a hook first line)\n4) 5 bullet selling points ('You'll be able to ___')\n5) A 2-line A+ / above-the-fold pitch\n6) The single metadata change likely to move rankings most"
+  },
+  {
+    "Title": "Fiction Story Bible & Chapter-Mapped Beat Sheet",
+    "Teaser": "Generate a complete story bible: premise, characters, world rules, and a chapter-mapped beat sheet.",
+    "PromptHint": "Lays the structural foundation for a novel so chapters stay consistent and the arc lands.",
+    "Category": "Book & Ebook Writing",
+    "Prompt": "You are a developmental editor and story architect for fiction.\n\nINPUT:\n- Genre & tone: [GENRE + TONE]\n- One-line premise or seed: [PREMISE]\n- Protagonist's want vs. need: [CHARACTER GOAL/FLAW]\n\nTHINK FIRST (show): articulate the central dramatic question and the protagonist's internal arc (lie they believe -> truth they learn). Choose a structure (3-act, save-the-cat, or hero's journey) and justify in 1 line.\n\nCONSTRAINTS:\n- Stakes must escalate; every major beat changes the protagonist's situation.\n- Antagonist needs a coherent motive, not pure evil.\n- World rules must be consistent and enforced.\n\nOUTPUT FORMAT (Markdown):\n1) Logline (1 sentence) + central dramatic question\n2) Character sheet table | Name | Role | Want | Need | Secret |\n3) World rules (3-5 bullets)\n4) Beat sheet table | Beat | What happens | Emotional shift | Maps to chapters |\n5) The opening image and the closing mirror image\n6) The first scene I should write and its goal"
+  },
+  {
+    "Title": "Continuity Keeper: Never Contradict Yourself Again",
+    "Teaser": "Keep a long manuscript consistent by maintaining a living 'story-so-far' canon after every chapter.",
+    "PromptHint": "Outputs a compact canon summary to feed into the next chapter so the AI never contradicts itself.",
+    "Category": "Book & Ebook Writing",
+    "Prompt": "Act as a continuity editor maintaining the canonical state of my book between chapters.\n\nINPUT:\n- The chapter I just finished (full text or summary): [CHAPTER TEXT]\n- Prior running state (if any): [PRIOR STATE]\n- Book type: [FICTION OR NONFICTION]\n\nTASK: Update the running 'canon' so I can paste it into the next drafting prompt and avoid contradictions.\n\nTHINK FIRST (show): list anything introduced this chapter that future chapters must respect (facts, promises, open threads, character changes, claims I've committed to).\n\nCONSTRAINTS:\n- Be terse and high-signal; this is a reference, not prose.\n- Flag unresolved threads explicitly so they get paid off.\n- Note any contradiction with the prior state.\n\nOUTPUT FORMAT (Markdown):\n1) One-paragraph 'story/argument so far'\n2) Canon facts (bulleted) - names, terms, claims, timeline\n3) Open loops to resolve | Thread | Introduced in | Must pay off by |\n4) Voice/tense/POV reminders\n5) Contradiction warnings (or 'none')\n6) What chapter [NEXT CHAPTER] must accomplish next"
+  },
+  {
+    "Title": "First-Page Surgeon: Hook Them in 30 Seconds",
+    "Teaser": "Rewrite a weak chapter or book opening into a page-one hook readers can't put down.",
+    "PromptHint": "Diagnoses a flat opening and returns three sharper openings in your voice.",
+    "Category": "Book & Ebook Writing",
+    "Prompt": "You are a ruthless opening-line editor who knows readers decide in the first 30 seconds.\n\nINPUT:\n- Current opening (paste it): [DRAFT OPENING]\n- Book type & vibe: [GENRE/NONFICTION + TONE]\n- The reader I must grab: [TARGET READER]\n\nTHINK FIRST (show): diagnose why the current opening is slow - does it warm up, over-explain, bury the tension, or start too abstract? Name the single biggest problem.\n\nCONSTRAINTS:\n- An opening must do ONE of: drop us into a scene, pose an urgent question, state a surprising claim, or create a knowledge gap.\n- No throat-clearing ('In today's world', 'Have you ever wondered').\n- Keep the author's voice; sharpen, don't replace.\n\nOUTPUT FORMAT (Markdown):\n1) Diagnosis (2-3 bullets)\n2) Three rewritten openings, each labeled with its technique (scene / question / claim / gap)\n3) Why each would hook [TARGET READER]\n4) My pick + a one-line reason"
+  },
+  {
+    "Title": "Glossary & Deep-Dive Builder for Any Manuscript",
+    "Teaser": "Produce a clean A-Z glossary or a deep-dive concept explainer that slots straight into your manuscript.",
+    "PromptHint": "Generates publishable reference sections with a fixed structure and word budgets.",
+    "Category": "Book & Ebook Writing",
+    "Prompt": "Act as a technical writer who produces crisp, beginner-clear reference sections for books.\n\nINPUT:\n- Book subject & reader level: [SUBJECT + LEVEL]\n- Terms or concept to cover: [TERMS OR CONCEPT]\n- Mode: GLOSSARY or DEEP-DIVE: [MODE]\n\nTHINK FIRST (show in 1-2 lines): name the reader's likely misconceptions about this material, and the single analogy domain (cooking, sports, money, etc.) that will make it click for this audience. You'll lean on it below.\n\nCONSTRAINTS:\n- Plain language; define jargon the first time it appears.\n- Use a concrete analogy or example for anything abstract.\n- Stay on the supplied reader level - don't over- or under-explain.\n\nOUTPUT FORMAT:\nIf GLOSSARY (~800 words): alphabetized list of 20-25 entries | Term | 1-2 sentence definition | Example in use |\nIf DEEP-DIVE (~900 words) on one concept, use these headings in order: Simple definition -> Detailed breakdown -> Why it matters -> How it works in practice -> Common misunderstandings -> Advanced notes. Use analogies liberally and end with a 1-sentence recap."
+  },
+  {
+    "Title": "Back-Cover Blurb That Turns Browsers Into Buyers",
+    "Teaser": "Write the back-cover description and store sales copy that makes browsers buy.",
+    "PromptHint": "Turns your book's premise into a benefit-led blurb, bullets, and a hook headline.",
+    "Category": "Book & Ebook Writing",
+    "Prompt": "You are a book marketing copywriter who writes back covers that convert browsers into buyers.\n\nINPUT:\n- Book title & topic: [TITLE + TOPIC]\n- Who it's for & their pain: [READER + PAIN]\n- What they'll be able to do after reading: [PAYOFF]\n- Author credibility (optional): [AUTHOR BIO]\n\nTHINK FIRST (show briefly): identify the reader's #1 desire and the objection stopping them from buying.\n\nCONSTRAINTS:\n- Lead with the reader's problem, not the book's features.\n- Sell the transformation; benefits over contents.\n- Tone matches the book; no overpromising or fake hype.\n\nOUTPUT FORMAT (Markdown):\n1) 3 hook headlines (curiosity / pain / aspiration)\n2) Back-cover blurb (120-160 words)\n3) 4-5 benefit bullets ('You'll learn how to ___')\n4) One-line 'this book is for you if...' / 'not for you if...'\n5) A short author-credibility line (if bio given)\n6) Closing CTA sentence"
+  },
+  {
+    "Title": "De-Slop Pass: Make Any Draft Sound Human",
+    "Teaser": "A final-stage line edit that strips AI tells and rewrites a draft to read like a real human author.",
+    "PromptHint": "Rewrites any chapter for natural cadence and specificity while preserving meaning.",
+    "Category": "Book & Ebook Writing",
+    "Prompt": "Act as a line editor whose only job is to make a draft sound human, not machine-generated.\n\nINPUT:\n- Draft to fix (paste): [DRAFT TEXT]\n- Target voice (formal / conversational / witty / authoritative): [VOICE]\n- Author's personal flavor or a sample line (optional): [VOICE SAMPLE]\n\nTHINK FIRST (show as a short list): flag the AI tells present - banned words (delve, embark, unlock, revolutionize, vibrant, tapestry, realm), transition scaffolding ('Moreover', 'In conclusion'), robotic parallelism, and vague abstractions.\n\nCONSTRAINTS:\n- Preserve the original meaning and key facts exactly.\n- Vary sentence length; let some be short. Punchy.\n- Inject specificity (numbers, proper nouns, one concrete detail) where it's generic.\n- Cut cliche openers and filler; no em-dash overuse.\n\nOUTPUT FORMAT (Markdown):\n1) Tells found (bulleted)\n2) The rewritten passage (clean, ready to paste)\n3) 2-3 notes on what changed and why it reads more human"
+  },
+  {
+    "Title": "Chapter Workbook Builder: Turn Readers Into Doers",
+    "Teaser": "Generate reflection prompts, action steps, and exercises that turn passive readers into doers.",
+    "PromptHint": "Adds an end-of-chapter workbook section so the book actually changes reader behavior.",
+    "Category": "Book & Ebook Writing",
+    "Prompt": "You are a curriculum designer who builds end-of-chapter exercises that make a book actually work for readers.\n\nINPUT:\n- Chapter topic & key lesson: [CHAPTER TOPIC + LESSON]\n- Reader & their context: [READER + CONTEXT]\n- Desired action after the chapter: [DESIRED ACTION]\n\nTHINK FIRST (show): name the gap between knowing and doing for this lesson - what stops readers from applying it?\n\nCONSTRAINTS:\n- Exercises must be doable in under 20 minutes.\n- Move from reflection -> application -> commitment.\n- Concrete and specific to this chapter's lesson, not generic journaling.\n\nOUTPUT FORMAT (Markdown):\n1) 2 reflection questions (surface the reader's current reality)\n2) 1 step-by-step action exercise (numbered, with a clear deliverable)\n3) 1 fill-in-the-blank commitment ('This week I will ___ by ___')\n4) A self-check: 'You've nailed this chapter if you can ___'\n5) Optional stretch challenge for advanced readers"
+  },
+  {
+    "Title": "Title & Subtitle Generator That Sells the Click",
+    "Teaser": "Brainstorm magnetic book titles and subtitles, then pressure-test the top picks against your reader.",
+    "PromptHint": "Produces ranked title/subtitle pairs plus a memorable series name option.",
+    "Category": "Book & Ebook Writing",
+    "Prompt": "Act as a book-naming strategist who has titled category bestsellers.\n\nINPUT:\n- What the book is about: [BOOK TOPIC]\n- Target reader & the result they want: [READER + RESULT]\n- Vibe (punchy / authoritative / playful / curious): [DESIRED VIBE]\n- Comparable titles I like (optional): [COMP TITLES]\n\nTHINK FIRST (show): state the emotional hook and the keyword a buyer would search. A great title is short, evocative, and hints at transformation; the subtitle clarifies the promise and audience.\n\nCONSTRAINTS:\n- Main titles <= 5 words where possible; memorable and speakable.\n- Each subtitle must name the benefit and/or the reader.\n- No generic words ('Guide', 'Handbook') unless they sharpen clarity.\n\nOUTPUT FORMAT (Markdown):\n1) 12 title + subtitle pairs grouped by angle (benefit / curiosity / metaphor / contrarian)\n2) Top 3 picks with a one-line rationale each\n3) 1 series name (if this could become a set of books)\n4) The single title I'd test first and why"
+  }
+]

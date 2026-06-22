@@ -573,6 +573,39 @@ html[data-theme="light"] .trend-tag { color: #c2502f; }
   .faq-grid { grid-template-columns: 1fr; }
 }
 
+/* ============================================================
+   MOTION LAYER — staggered entrances, scroll-reveal, micro-interactions
+   ============================================================ */
+@keyframes cardIn { from { opacity: 0; transform: translateY(16px) scale(.985); } to { opacity: 1; transform: none; } }
+.card  { animation: cardIn .5s cubic-bezier(.2,.7,.2,1) backwards; }
+.trend-card { animation: cardIn .5s cubic-bezier(.2,.7,.2,1) backwards; }
+
+@keyframes heroUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+.hero .eyebrow { animation: heroUp .6s ease backwards .02s; }
+.hero-title    { animation: heroUp .75s cubic-bezier(.2,.7,.2,1) backwards .08s; }
+.hero-lede     { animation: heroUp .6s ease backwards .2s; }
+.hero-stats    { animation: heroUp .6s ease backwards .34s; }
+
+/* scroll-reveal (added by JS only; if JS off, content stays visible) */
+.reveal    { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); will-change: opacity, transform; }
+.reveal.in { opacity: 1; transform: none; }
+
+/* chip / button micro-interactions */
+.chip, .coll-chip, .copy-btn, .view-btn, .ghost-btn, .surprise, .load-more, .fav { transition: all .16s ease, transform .14s cubic-bezier(.2,.7,.2,1.5); }
+.chip:active, .coll-chip:active, .copy-btn:active, .view-btn:active { transform: scale(.95); }
+.fav:active { transform: scale(.8); }
+.brand-mark { transition: transform .3s cubic-bezier(.2,.7,.2,1.6); }
+.brand:hover .brand-mark { transform: rotate(-8deg) scale(1.08); }
+.copy-btn.done { animation: pop1 .3s ease; }
+@keyframes pop1 { 0%{transform:scale(1)} 45%{transform:scale(1.07)} 100%{transform:scale(1)} }
+.toast.show { animation: toastIn .3s cubic-bezier(.2,.7,.2,1.5); }
+@keyframes toastIn { from { transform: translateX(-50%) translateY(24px) scale(.9); } to { transform: translateX(-50%) translateY(0) scale(1); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .card, .trend-card, .hero .eyebrow, .hero-title, .hero-lede, .hero-stats { animation: none !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+}
+
 /* ── CALLIGRAPHY SIGNATURE (single consistent style) ── */
 .sig { font-family: "Great Vibes", "Snell Roundhand", cursive; color: var(--accent); line-height: 1; letter-spacing: .2px; white-space: nowrap; }
 .brand-sig { font-size: 19px; margin-top: 2px; }
