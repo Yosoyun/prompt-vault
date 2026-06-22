@@ -1,5 +1,5 @@
 {
-  "total": 473,
+  "total": 480,
   "groups": [
     {
       "key": "viral",
@@ -181,13 +181,23 @@
       "label": "Pro Mega-Prompts",
       "icon": "⚡",
       "color": "#b48cff",
-      "count": 66,
+      "count": 73,
       "featured": false,
       "categories": [
         {
           "name": "JSON & Structured Output",
           "label": "JSON & Structured Output",
-          "count": 14
+          "count": 17
+        },
+        {
+          "name": "Deep Research",
+          "label": "Deep Research",
+          "count": 15
+        },
+        {
+          "name": "Business & Strategy",
+          "label": "Business & Strategy",
+          "count": 15
         },
         {
           "name": "Data Extraction & Tables",
@@ -197,16 +207,6 @@
         {
           "name": "Life & Productivity",
           "label": "Life & Productivity",
-          "count": 13
-        },
-        {
-          "name": "Deep Research",
-          "label": "Deep Research",
-          "count": 13
-        },
-        {
-          "name": "Business & Strategy",
-          "label": "Business & Strategy",
           "count": 13
         }
       ]
