@@ -19,6 +19,7 @@
 
   // Featured one-tap collections (set a search query, optional group)
   const COLLECTIONS = [
+    { icon: "💎", label: "Million-dollar",  q: "", group: "elite" },
     { icon: "🔥", label: "Go viral",        q: "", group: "viral" },
     { icon: "✉️", label: "Cold email",      q: "email" },
     { icon: "🎬", label: "YouTube & video", q: "youtube" },
@@ -142,7 +143,7 @@
   function renderCollections() {
     const row = $("#collRow");
     COLLECTIONS.forEach((c) => {
-      if (c.group === "viral" && !state.meta.groups.some((g) => g.key === "viral" && g.count > 0)) return;
+      if (c.group && !state.meta.groups.some((g) => g.key === c.group && g.count > 0)) return;
       const el = document.createElement("button");
       el.className = "coll-chip";
       el.innerHTML = `<span class="coll-ico">${c.icon}</span><span>${c.label}</span>`;

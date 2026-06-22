@@ -1,5 +1,5 @@
 {
-  "total": 480,
+  "total": 607,
   "groups": [
     {
       "key": "viral",
@@ -97,6 +97,61 @@
         {
           "name": "Faceless YouTube & Shorts",
           "label": "Faceless YouTube & Shorts",
+          "count": 14
+        }
+      ]
+    },
+    {
+      "key": "elite",
+      "label": "Million-Dollar Prompts",
+      "icon": "💎",
+      "color": "#36c98b",
+      "count": 127,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Sales Systems",
+          "label": "Sales Systems",
+          "count": 15
+        },
+        {
+          "name": "AI Business Automation",
+          "label": "AI Business Automation",
+          "count": 14
+        },
+        {
+          "name": "Career & Income",
+          "label": "Career & Income",
+          "count": 14
+        },
+        {
+          "name": "Founder & Strategy",
+          "label": "Founder & Strategy",
+          "count": 14
+        },
+        {
+          "name": "Mastery & Mental Models",
+          "label": "Mastery & Mental Models",
+          "count": 14
+        },
+        {
+          "name": "Personal Leverage & Systems",
+          "label": "Personal Leverage & Systems",
+          "count": 14
+        },
+        {
+          "name": "Growth & Marketing Engines",
+          "label": "Growth & Marketing Engines",
+          "count": 14
+        },
+        {
+          "name": "Offers & Pricing",
+          "label": "Offers & Pricing",
+          "count": 14
+        },
+        {
+          "name": "Deep Research & Due Diligence",
+          "label": "Deep Research & Due Diligence",
           "count": 14
         }
       ]

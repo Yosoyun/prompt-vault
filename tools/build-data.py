@@ -29,6 +29,7 @@ CURATOR = "Indrajeet Yadav"
 # Premium groups, in display order (featured first). key, label, icon, color
 GROUPS = [
     ("viral",  "Trending & Viral",      "🔥", "#ff6b4a"),
+    ("elite",  "Million-Dollar Prompts","💎", "#36c98b"),
     ("image",  "AI Image Prompts",      "🖼️", "#e0729e"),
     ("agents", "Agentic & System",      "🤖", "#6c8cff"),
     ("mega",   "Pro Mega-Prompts",      "⚡", "#b48cff"),
