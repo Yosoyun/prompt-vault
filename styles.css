@@ -560,6 +560,16 @@ html[data-theme="light"] .trend-tag { color: #c2502f; }
 .howto-steps b { color: var(--ink); }
 .howto-steps code, .faq code { font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--accent-2); background: color-mix(in srgb, var(--accent-2) 12%, transparent); padding: 1px 5px; border-radius: 5px; }
 
+/* ── CREATORS WORTH FOLLOWING ── */
+.creators { padding: 38px 0 18px; border-top: 1px solid var(--line-soft); margin-top: 30px; }
+.creators-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+.creator-card { display: flex; flex-direction: column; gap: 5px; text-decoration: none; background: var(--bg-2); border: 1px solid var(--line); border-radius: 14px; padding: 18px; transition: all .16s ease; }
+.creator-card:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: var(--shadow); }
+.cr-name { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 18px; color: var(--ink); }
+.cr-what { font-size: 13px; color: var(--ink-dim); line-height: 1.45; flex: 1; }
+.cr-link { font-family: "JetBrains Mono", monospace; font-size: 12px; font-weight: 500; color: var(--accent); margin-top: 6px; }
+.creators-note { font-size: 13.5px; color: var(--ink-faint); margin: 18px 0 0; }
+
 /* ── FAQ ── */
 .faq { padding: 36px 0 20px; }
 .faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
