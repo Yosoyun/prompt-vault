@@ -1,0 +1,16 @@
+{
+  "name": "The Prompt Vault",
+  "short_name": "Prompt Vault",
+  "description": "800+ premium AI prompts for ChatGPT, Claude & Gemini — viral, business, image, writing & more. By Indrajeet Yadav.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#14130f",
+  "theme_color": "#14130f",
+  "categories": ["productivity", "utilities", "business"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

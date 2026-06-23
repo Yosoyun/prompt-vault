@@ -10,6 +10,11 @@
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://yosoyun.github.io/prompt-vault/">
 <meta name="theme-color" content="#14130f">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Prompt Vault">
 <!-- Open Graph / Twitter -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="The Prompt Vault">
@@ -69,6 +74,7 @@
     </span>
   </a>
   <div class="head-actions">
+    <button class="ghost-btn install-btn" id="installBtn" hidden>⬇ Install app</button>
     <a class="ghost-btn" href="#groups">Browse</a>
     <button class="ghost-btn" id="savedNav" aria-label="View saved prompts">★ <span id="savedNavN">0</span></button>
     <button class="ghost-btn theme-toggle" id="themeToggle" aria-label="Toggle light / dark theme">
@@ -212,7 +218,8 @@
       people can get exceptional results from AI.
     </p>
   </div>
-  <p class="foot-fine">© <span id="year"></span> Indrajeet Yadav · The Prompt Vault · Built to be shared.</p>
+  <p class="foot-fine">© <span id="year"></span> Indrajeet Yadav · The Prompt Vault · Built to be shared. ·
+    <a class="foot-link" href="https://github.com/Yosoyun/prompt-vault/issues/new?title=Prompt%20suggestion%20/%20feedback" target="_blank" rel="noopener">💬 Suggest a prompt / feedback</a></p>
 </footer>
 
 <!-- ░░ MODAL ░░ -->
@@ -231,10 +238,20 @@
     <div class="m-prompt-wrap"><pre class="m-prompt" id="mPrompt"></pre></div>
     <div class="m-actions">
       <button class="copy-btn big" id="mCopy"><span class="ci">⧉</span> <span class="ct">Copy prompt</span></button>
-      <button class="icon-btn" id="mShare" title="Copy a link straight to this prompt">🔗 Share</button>
       <button class="save-btn" id="mSave" aria-pressed="false">☆ Save</button>
-      <a class="open-ai" id="mOpenAI" href="https://chat.openai.com/" target="_blank" rel="noopener">Open ChatGPT ↗</a>
+      <button class="icon-btn" id="mShare" title="Copy a link straight to this prompt">🔗 Link</button>
       <span class="sig modal-sig" title="Prompt by Indrajeet Yadav">Indrajeet Yadav</span>
+    </div>
+    <div class="m-launch">
+      <span class="ml-label">Run it in</span>
+      <button class="launch-btn" data-ai="chatgpt">ChatGPT ↗</button>
+      <button class="launch-btn" data-ai="claude">Claude ↗</button>
+      <button class="launch-btn" data-ai="gemini">Gemini ↗</button>
+      <span class="ml-sep" aria-hidden="true"></span>
+      <span class="ml-label">Share</span>
+      <button class="share-ico" data-share="x" title="Share on X" aria-label="Share on X">𝕏</button>
+      <button class="share-ico" data-share="linkedin" title="Share on LinkedIn" aria-label="Share on LinkedIn">in</button>
+      <button class="share-ico" data-share="whatsapp" title="Share on WhatsApp" aria-label="Share on WhatsApp">⌬</button>
     </div>
     <p class="m-hint" id="mHint" hidden></p>
   </div>

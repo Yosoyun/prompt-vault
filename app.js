@@ -323,6 +323,31 @@
       if (ok) { toast(); recordUse(i); confetti(e.currentTarget); }
       setTimeout(() => { e.currentTarget.classList.remove("done"); ct.textContent = "Copy prompt"; }, 1700);
     };
+    // run-it-in: copy the filled prompt + open the chosen AI
+    document.querySelectorAll(".m-launch .launch-btn").forEach((b) => {
+      b.onclick = async () => {
+        const text = computeFilled(); await toClipboard(text);
+        const enc = encodeURIComponent(text), short = enc.length < 1800, tool = b.dataset.ai;
+        const url = tool === "claude" ? (short ? "https://claude.ai/new?q=" + enc : "https://claude.ai/new")
+          : tool === "gemini" ? "https://gemini.google.com/app"
+          : (short ? "https://chatgpt.com/?q=" + enc : "https://chatgpt.com/");
+        window.open(url, "_blank", "noopener");
+        toast("Prompt copied — paste into " + tool[0].toUpperCase() + tool.slice(1) + " ✓");
+        recordUse(i);
+      };
+    });
+    // social share of the deep link
+    document.querySelectorAll(".m-launch .share-ico").forEach((b) => {
+      b.onclick = () => {
+        const link = location.origin + location.pathname + "?p=" + encodeURIComponent(slug(r.t));
+        const text = r.t + " — a free AI prompt from The Prompt Vault";
+        const net = b.dataset.share;
+        const url = net === "x" ? `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(link)}`
+          : net === "linkedin" ? `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(link)}`
+          : `https://wa.me/?text=${encodeURIComponent(text + " " + link)}`;
+        window.open(url, "_blank", "noopener");
+      };
+    });
   }
   function buildFill() {
     const grid = $("#mFillGrid"); grid.innerHTML = "";
@@ -502,6 +527,16 @@
     });
     const saved = localStorage.getItem("pv-theme"); if (saved) document.documentElement.dataset.theme = saved;
     $("#themeToggle").addEventListener("click", () => { const n = document.documentElement.dataset.theme === "light" ? "dark" : "light"; document.documentElement.dataset.theme = n; localStorage.setItem("pv-theme", n); });
+    // PWA: offline service worker + installable
+    if ("serviceWorker" in navigator) window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+    let deferredPrompt = null;
+    window.addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); deferredPrompt = e; $("#installBtn").hidden = false; });
+    $("#installBtn").addEventListener("click", async () => {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt(); await deferredPrompt.userChoice; deferredPrompt = null; $("#installBtn").hidden = true;
+    });
+    window.addEventListener("appinstalled", () => { $("#installBtn").hidden = true; toast("Installed! Find it on your home screen 🎉"); });
+
     const io = new IntersectionObserver((es) => { if (es[0].isIntersecting && !$("#loadMore").hidden) renderMore(); }, { rootMargin: "600px" });
     io.observe($("#loadMore"));
 

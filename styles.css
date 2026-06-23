@@ -666,6 +666,18 @@ html[data-theme="light"] .trend-tag { color: #c2502f; }
 .icon-btn { font: inherit; font-size: 13.5px; font-weight: 600; color: var(--ink-dim); background: transparent; border: 1px solid var(--line); border-radius: 10px; padding: 13px 16px; cursor: pointer; transition: all .15s; }
 .icon-btn:hover { color: var(--ink); border-color: var(--accent); }
 
+/* run-in-AI + social share row */
+.m-launch { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 12px; padding-top: 14px; border-top: 1px solid var(--line-soft); }
+.ml-label { font-family: "JetBrains Mono", monospace; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-faint); }
+.launch-btn { font: inherit; font-size: 13px; font-weight: 600; color: var(--ink); background: var(--bg-3); border: 1px solid var(--line); border-radius: 9px; padding: 8px 13px; cursor: pointer; transition: all .15s; }
+.launch-btn:hover { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); transform: translateY(-1px); }
+.ml-sep { width: 1px; height: 20px; background: var(--line); margin: 0 4px; }
+.share-ico { font: inherit; font-size: 13px; font-weight: 700; width: 34px; height: 34px; display: grid; place-items: center; color: var(--ink-dim); background: var(--bg-2); border: 1px solid var(--line); border-radius: 9px; cursor: pointer; transition: all .15s; }
+.share-ico:hover { color: var(--accent-ink); background: var(--accent-2); border-color: var(--accent-2); transform: translateY(-1px); }
+.install-btn { color: var(--accent) !important; border-color: color-mix(in srgb, var(--accent) 45%, var(--line)) !important; }
+.foot-link { color: var(--accent); text-decoration: none; }
+.foot-link:hover { text-decoration: underline; }
+
 /* confetti */
 .confetti-piece { position: fixed; width: 9px; height: 9px; border-radius: 2px; z-index: 95; pointer-events: none; animation: confettiPop .8s cubic-bezier(.2,.7,.3,1) forwards; }
 @keyframes confettiPop { 0% { transform: translate(0,0) rotate(0); opacity: 1; } 100% { transform: translate(var(--dx), calc(var(--dy) + 90px)) rotate(var(--rot)); opacity: 0; } }
