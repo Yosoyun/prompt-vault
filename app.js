@@ -264,7 +264,7 @@
         <button class="copy-btn" data-i="${r.i}"><span class="ci">⧉</span> <span class="ct">Copy</span></button>
         <button class="view-btn" data-i="${r.i}">View</button>
       </div>
-      <div class="card-foot"><span class="sig card-sig">Indrajeet Yadav</span><span class="card-len">${fmt(r.len)} chars</span></div>`;
+      <div class="card-foot">${r.cr ? `<a class="card-credit" href="${esc(r.cr.u)}" target="_blank" rel="noopener nofollow">via ${esc(r.cr.n)} ↗</a>` : `<span class="sig card-sig">Indrajeet Yadav</span>`}<span class="card-len">${fmt(r.len)} chars</span></div>`;
     el.querySelector(".fav").addEventListener("click", (e) => { toggleSave(r.i); const b = e.currentTarget; const on = state.saved.has(r.i); b.classList.toggle("on", on); b.textContent = on ? "★" : "☆"; });
     el.querySelector(".copy-btn").addEventListener("click", (e) => copyPrompt(r.i, e.currentTarget));
     el.querySelector(".view-btn").addEventListener("click", () => openModal(r.i));
@@ -300,7 +300,9 @@
     const card = $(".modal-card"); card.style.setProperty("--c", g ? g.color : "var(--accent)");
     $("#mBadge").textContent = `${g ? g.icon : "✦"} ${g ? g.label : ""} · ${state.catLabel[r.c] || r.c}`;
     $("#mTitle").textContent = r.t;
-    $("#mMeta").innerHTML = `${fmt(r.len)} characters${modalState.vars.length ? ` · ${modalState.vars.length} fill-in${modalState.vars.length > 1 ? "s" : ""}` : ""}`;
+    const creditHTML = r.cr ? ` · <a class="m-credit" href="${esc(r.cr.u)}" target="_blank" rel="noopener nofollow">via ${esc(r.cr.n)} ↗</a>` : "";
+    $("#mMeta").innerHTML = `${fmt(r.len)} characters${modalState.vars.length ? ` · ${modalState.vars.length} fill-in${modalState.vars.length > 1 ? "s" : ""}` : ""}${creditHTML}`;
+    $(".modal-sig").style.display = r.cr ? "none" : "";
     const sBtn = $("#mSave"); const syncSave = () => { const on = state.saved.has(i); sBtn.textContent = on ? "★ Saved" : "☆ Save"; sBtn.classList.toggle("on", on); sBtn.setAttribute("aria-pressed", on); };
     syncSave(); sBtn.onclick = () => { toggleSave(i); syncSave(); refreshCardFav(i); };
     $("#mShare").onclick = async () => {

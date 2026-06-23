@@ -36,6 +36,10 @@ GROUPS = [
     ("gen",     "Generators & Templates", "🛠️", "#9bbf3f"),
     ("agents",  "Agentic & System",       "🤖", "#6c8cff"),
     ("mega",    "Pro Mega-Prompts",       "⚡", "#b48cff"),
+    ("work",    "Work & Career",          "🏢", "#d98c4a"),
+    ("living",  "Life & Wellbeing",       "🌿", "#5fc9a8"),
+    ("biz",     "Business & Verticals",   "🛒", "#c77dba"),
+    ("community","Open & Community",       "🌐", "#8a93a0"),
 ]
 GROUP_KEYS = {g[0] for g in GROUPS}
 VAR_RE = re.compile(r"\[([A-Z][A-Z0-9 _\-/]{1,40})\]")
@@ -100,10 +104,14 @@ def main():
             seen.add(nt)
             cat = clean(d.get("Category")) or "Trending"
             idx = len(index)
-            index.append({
+            rec = {
                 "i": idx, "t": title[:160], "te": clean(d.get("Teaser"))[:280],
                 "c": cat, "g": gkey, "v": detect_vars(prompt), "len": len(prompt),
-            })
+            }
+            cr = d.get("Credit")
+            if isinstance(cr, dict) and cr.get("name") and cr.get("url"):
+                rec["cr"] = {"n": clean(cr["name"])[:60], "u": clean(cr["url"])[:200]}
+            index.append(rec)
             bodies.append({"p": prompt, "h": clean(d.get("PromptHint"))[:240]})
             group_counts[gkey] += 1
             cat_counts[(gkey, cat)] = cat_counts.get((gkey, cat), 0) + 1

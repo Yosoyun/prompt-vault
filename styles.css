@@ -688,6 +688,12 @@ html[data-theme="light"] .trend-tag { color: #c2502f; }
 .foot-link { color: var(--accent); text-decoration: none; }
 .foot-link:hover { text-decoration: underline; }
 
+/* per-prompt credit (community / creator prompts) */
+.card-credit { font-family: "JetBrains Mono", monospace; font-size: 11px; color: var(--ink-faint); text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 70%; }
+.card-credit:hover { color: var(--accent); text-decoration: underline; }
+.m-credit { color: var(--ink-faint); text-decoration: none; }
+.m-credit:hover { color: var(--accent); text-decoration: underline; }
+
 /* confetti */
 .confetti-piece { position: fixed; width: 9px; height: 9px; border-radius: 2px; z-index: 95; pointer-events: none; animation: confettiPop .8s cubic-bezier(.2,.7,.3,1) forwards; }
 @keyframes confettiPop { 0% { transform: translate(0,0) rotate(0); opacity: 1; } 100% { transform: translate(var(--dx), calc(var(--dy) + 90px)) rotate(var(--rot)); opacity: 0; } }

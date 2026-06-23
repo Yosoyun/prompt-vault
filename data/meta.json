@@ -1,5 +1,5 @@
 {
-  "total": 848,
+  "total": 1088,
   "groups": [
     {
       "key": "viral",
@@ -398,6 +398,136 @@
           "name": "Life & Productivity",
           "label": "Life & Productivity",
           "count": 13
+        }
+      ]
+    },
+    {
+      "key": "work",
+      "label": "Work & Career",
+      "icon": "🏢",
+      "color": "#d98c4a",
+      "count": 60,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Decision-Making",
+          "label": "Decision-Making",
+          "count": 12
+        },
+        {
+          "name": "Leadership & Management",
+          "label": "Leadership & Management",
+          "count": 12
+        },
+        {
+          "name": "Meetings & Facilitation",
+          "label": "Meetings & Facilitation",
+          "count": 12
+        },
+        {
+          "name": "Performance & Feedback",
+          "label": "Performance & Feedback",
+          "count": 12
+        },
+        {
+          "name": "Project & Product Management",
+          "label": "Project & Product Management",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "key": "living",
+      "label": "Life & Wellbeing",
+      "icon": "🌿",
+      "color": "#5fc9a8",
+      "count": 60,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Habits & Discipline",
+          "label": "Habits & Discipline",
+          "count": 12
+        },
+        {
+          "name": "Home, Cooking & Organising",
+          "label": "Home, Cooking & Organising",
+          "count": 12
+        },
+        {
+          "name": "Mindset & Reflection",
+          "label": "Mindset & Reflection",
+          "count": 12
+        },
+        {
+          "name": "Personal Money Systems",
+          "label": "Personal Money Systems",
+          "count": 12
+        },
+        {
+          "name": "Relationships & Communication",
+          "label": "Relationships & Communication",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "key": "biz",
+      "label": "Business & Verticals",
+      "icon": "🛒",
+      "color": "#c77dba",
+      "count": 120,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Agency & Consulting",
+          "label": "Agency & Consulting",
+          "count": 12
+        },
+        {
+          "name": "B2B & Enterprise Sales",
+          "label": "B2B & Enterprise Sales",
+          "count": 12
+        },
+        {
+          "name": "Creator & Coaching Business",
+          "label": "Creator & Coaching Business",
+          "count": 12
+        },
+        {
+          "name": "E-commerce & DTC",
+          "label": "E-commerce & DTC",
+          "count": 12
+        },
+        {
+          "name": "Finance & Fintech",
+          "label": "Finance & Fintech",
+          "count": 12
+        },
+        {
+          "name": "Restaurants & Hospitality",
+          "label": "Restaurants & Hospitality",
+          "count": 12
+        },
+        {
+          "name": "Local & Service Business",
+          "label": "Local & Service Business",
+          "count": 12
+        },
+        {
+          "name": "Nonprofit & Fundraising",
+          "label": "Nonprofit & Fundraising",
+          "count": 12
+        },
+        {
+          "name": "Real Estate",
+          "label": "Real Estate",
+          "count": 12
+        },
+        {
+          "name": "SaaS & Product",
+          "label": "SaaS & Product",
+          "count": 12
         }
       ]
     }
