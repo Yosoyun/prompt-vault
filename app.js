@@ -32,7 +32,7 @@
     { icon: "🖼️", label: "Midjourney art",  q: "midjourney" },
     { icon: "📄", label: "Resume & jobs",   q: "resume" },
     { icon: "📊", label: "Excel & data",    q: "excel" },
-    { icon: "📚", label: "Study smarter",   q: "study" },
+    { icon: "📚", label: "Learn faster",    q: "learn" },
     { icon: "💻", label: "Code helper",     q: "code" },
   ];
 

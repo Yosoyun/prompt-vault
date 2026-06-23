@@ -99,9 +99,9 @@
   },
   {
     "Title": "Expert Explainer: Teach Me Anything at 3 Depths",
-    "Teaser": "Recruits the perfect world-class teacher for any topic and explains it three ways, from a 10-year-old level up to expert.",
+    "Teaser": "Recruits the perfect world-class expert for any topic and explains it three ways, from a 10-year-old level up to expert.",
     "PromptHint": "Put the topic or concept you want to understand in [TOPIC]. Add your background in [MY LEVEL].",
     "Category": "Expert Personas & Roleplay",
-    "Prompt": "Act as the single best teacher in the world for this topic, famous for making hard ideas click. The topic I want to understand: [TOPIC]. My current background: [MY LEVEL]. Explain it at three escalating depths so understanding compounds. Output in this exact structure:\n1) LIKE I'M 10 — one short paragraph using a vivid everyday analogy, zero jargon.\n2) THE REAL MECHANISM — how it actually works, introducing the key terms and why each matters, tuned to my level.\n3) EXPERT NUANCE — the subtlety, edge case, or common misconception that separates people who 'get it' from people who only memorized it.\nThen add: WATCH OUT — the single most common mistake learners make here. And CHECK YOURSELF — one question I should be able to answer now if I truly understood it, with the answer hidden below a line so I can test myself first."
+    "Prompt": "Act as the single best explainer in the world for this topic, famous for making hard ideas click. The topic I want to understand: [TOPIC]. My current background: [MY LEVEL]. Explain it at three escalating depths so understanding compounds. Output in this exact structure:\n1) LIKE I'M 10 — one short paragraph using a vivid everyday analogy, zero jargon.\n2) THE REAL MECHANISM — how it actually works, introducing the key terms and why each matters, tuned to my level.\n3) EXPERT NUANCE — the subtlety, edge case, or common misconception that separates people who 'get it' from people who only memorized it.\nThen add: WATCH OUT — the single most common mistake learners make here. And CHECK YOURSELF — one question I should be able to answer now if I truly understood it, with the answer hidden below a line so I can test myself first."
   }
 ]

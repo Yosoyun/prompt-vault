@@ -139,6 +139,8 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px)
   max-width: 620px; margin: 0 0 32px; line-height: 1.5;
 }
 .hero-lede b { color: var(--ink); }
+.hero-aud { font-size: 14.5px; color: var(--ink-faint); margin: -10px 0 26px; font-family: "JetBrains Mono", monospace; letter-spacing: .01em; }
+.hero-aud b { color: var(--ink-dim); font-weight: 600; }
 
 .search-wrap {
   position: sticky; top: 70px; z-index: 30;

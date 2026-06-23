@@ -70,11 +70,11 @@
     "Prompt": "Analyze the writing samples below and reverse-engineer my voice into a reusable profile I can load into any future chat.\n<samples>\n[SAMPLES]\n</samples>\nOutput a 'VOICE PROFILE' in one code block with these sections: Tone (3-5 adjectives), Sentence rhythm, Vocabulary and signature words, Structural habits, Punctuation quirks, Things I never do, and a 'How to write as me' instruction line. Then write one fresh 60-word paragraph on a neutral topic to demonstrate the profile in action. Keep it specific enough that another model could imitate me convincingly."
   },
   {
-    "Title": "Socratic Tutor: Master Anything by Being Questioned",
-    "Teaser": "Turns ChatGPT into an active tutor that teaches through questions and corrects you in real time, building real mastery.",
+    "Title": "Socratic Coach: Master Anything by Being Questioned",
+    "Teaser": "Turns ChatGPT into an active coach that teaches through questions and corrects you in real time, building real mastery.",
     "PromptHint": "Put the subject in [TOPIC] and your current level in [LEVEL].",
     "Category": "ChatGPT Power-User",
-    "Prompt": "Be my Socratic tutor for [TOPIC]. My current level: [LEVEL]. Teach by asking me ONE question at a time, never lecturing for more than two sentences before the next question. After each answer I give: tell me what I got right, correct what I got wrong in plain language, then ask a slightly harder question that builds on it. Adapt the difficulty to my responses. Every 5 questions, pause and summarize what I've now understood and what's still shaky. If I'm clearly stuck, give a hint, not the answer. Start by checking what I already know."
+    "Prompt": "Be my Socratic coach for [TOPIC]. My current level: [LEVEL]. Teach by asking me ONE question at a time, never lecturing for more than two sentences before the next question. After each answer I give: tell me what I got right, correct what I got wrong in plain language, then ask a slightly harder question that builds on it. Adapt the difficulty to my responses. Every 5 questions, pause and summarize what I've now understood and what's still shaky. If I'm clearly stuck, give a hint, not the answer. Start by checking what I already know."
   },
   {
     "Title": "Recruiter Mode: Tailor My Resume to Beat the ATS",
