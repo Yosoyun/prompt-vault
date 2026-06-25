@@ -1,5 +1,5 @@
 {
-  "total": 1088,
+  "total": 1195,
   "groups": [
     {
       "key": "viral",
@@ -527,6 +527,71 @@
         {
           "name": "SaaS & Product",
           "label": "SaaS & Product",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "key": "comms",
+      "label": "Communication & Influence",
+      "icon": "🗣️",
+      "color": "#3fb6c2",
+      "count": 59,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Difficult Conversations",
+          "label": "Difficult Conversations",
+          "count": 12
+        },
+        {
+          "name": "Persuasion & Influence",
+          "label": "Persuasion & Influence",
+          "count": 12
+        },
+        {
+          "name": "Public Speaking & Pitches",
+          "label": "Public Speaking & Pitches",
+          "count": 12
+        },
+        {
+          "name": "Storytelling & Narrative",
+          "label": "Storytelling & Narrative",
+          "count": 12
+        },
+        {
+          "name": "Negotiation",
+          "label": "Negotiation",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "key": "ops",
+      "label": "Operations & Admin",
+      "icon": "📋",
+      "color": "#9a8fd8",
+      "count": 48,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Data & Analytics",
+          "label": "Data & Analytics",
+          "count": 12
+        },
+        {
+          "name": "Events & Webinars",
+          "label": "Events & Webinars",
+          "count": 12
+        },
+        {
+          "name": "Legal & Contracts",
+          "label": "Legal & Contracts",
+          "count": 12
+        },
+        {
+          "name": "Policies & Compliance",
+          "label": "Policies & Compliance",
           "count": 12
         }
       ]
