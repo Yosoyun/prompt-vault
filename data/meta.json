@@ -1,5 +1,5 @@
 {
-  "total": 1400,
+  "total": 1526,
   "groups": [
     {
       "key": "viral",
@@ -196,7 +196,7 @@
       "label": "AI Image Prompts",
       "icon": "🖼️",
       "color": "#e0729e",
-      "count": 169,
+      "count": 247,
       "featured": false,
       "categories": [
         {
@@ -215,13 +215,33 @@
           "count": 14
         },
         {
+          "name": "Anime & Manga",
+          "label": "Anime & Manga",
+          "count": 13
+        },
+        {
           "name": "Couples, Family & Pets",
           "label": "Couples, Family & Pets",
           "count": 13
         },
         {
+          "name": "Fantasy & Sci-Fi Art",
+          "label": "Fantasy & Sci-Fi Art",
+          "count": 13
+        },
+        {
+          "name": "Fashion & Editorial",
+          "label": "Fashion & Editorial",
+          "count": 13
+        },
+        {
           "name": "Flux",
           "label": "Flux",
+          "count": 13
+        },
+        {
+          "name": "Food & Drink",
+          "label": "Food & Drink",
           "count": 13
         },
         {
@@ -235,6 +255,11 @@
           "count": 13
         },
         {
+          "name": "Interior & Architecture",
+          "label": "Interior & Architecture",
+          "count": 13
+        },
+        {
           "name": "Logos & Branding",
           "label": "Logos & Branding",
           "count": 13
@@ -242,6 +267,11 @@
         {
           "name": "Photoreal Portraits & Product",
           "label": "Photoreal Portraits & Product",
+          "count": 13
+        },
+        {
+          "name": "Product & Commercial Ads",
+          "label": "Product & Commercial Ads",
           "count": 13
         },
         {
@@ -707,6 +737,36 @@
         {
           "name": "Skill-Building Plans",
           "label": "Skill-Building Plans",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "key": "social",
+      "label": "Social Media",
+      "icon": "📱",
+      "color": "#b388e0",
+      "count": 48,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Paid Social Ads",
+          "label": "Paid Social Ads",
+          "count": 12
+        },
+        {
+          "name": "Pinterest & Visual SEO",
+          "label": "Pinterest & Visual SEO",
+          "count": 12
+        },
+        {
+          "name": "TikTok & Short Video",
+          "label": "TikTok & Short Video",
+          "count": 12
+        },
+        {
+          "name": "UGC & Influencer",
+          "label": "UGC & Influencer",
           "count": 12
         }
       ]

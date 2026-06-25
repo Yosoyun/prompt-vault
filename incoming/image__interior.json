@@ -1,0 +1,93 @@
+[
+  {
+    "Title": "Real-Estate Listing Hero Shot",
+    "Teaser": "Turn any room into a bright, buyer-magnet listing photo.",
+    "PromptHint": "Swap in your room type, design style, and the time of day you want.",
+    "Category": "Interior & Architecture",
+    "Prompt": "You are an architectural photographer who shoots for premium real-estate listings. Build me one image of a [ROOM TYPE] decorated in [DESIGN STYLE], during [TIME OF DAY].\n\nThink first (one line, internal): what wide-but-honest angle makes the space feel large without distorting it, and where the natural light enters.\n\nHard constraints:\n- Eye-level camera at roughly chest height, 24mm wide-angle lens, two-point perspective so all vertical lines stay perfectly straight (no fisheye bulge).\n- Soft, even daylight from a clear window; gentle highlights, open shadows, no harsh hotspots or lens flare.\n- Styled but realistic: tidy and lived-in, nothing cluttered, no people, no text, no brand logos, no warped furniture or invented doorways.\n- Neutral-accurate white balance, true-to-life color, crisp focus front to back.\n\nOUTPUT FORMAT: render the single photo at 3:2 landscape, then append exactly one Midjourney line: --ar 3:2 --style raw --stylize 150 --v 6.1"
+  },
+  {
+    "Title": "Empty-to-Staged Virtual Staging",
+    "Teaser": "Furnish a bare, empty room without moving a single chair.",
+    "PromptHint": "Describe the empty room, the look you want, and who it should appeal to.",
+    "Category": "Interior & Architecture",
+    "Prompt": "You are a virtual home stager. Take the empty room I describe and furnish it convincingly: [EMPTY ROOM DESCRIPTION], styled in [DESIGN STYLE], to appeal to [TARGET BUYER].\n\nThink first (internal): which 4-6 furniture pieces define this room's purpose, and a layout that keeps walkways clear.\n\nHard constraints:\n- Keep the room's existing architecture exactly as described: same windows, doors, flooring, and ceiling height. Add only furniture, rugs, lighting, art, and plants.\n- Furniture must sit flat on the floor with correct scale and grounded contact shadows; nothing floating or clipping into walls.\n- Cohesive palette of 3-4 colors; balanced, not over-decorated.\n- No people, no pets, no text overlays, no fictional structural changes.\n\nOUTPUT FORMAT: render one photoreal interior at 3:2 landscape, then list (a) the furniture placed and (b) the exact color palette as hex codes. End with a Midjourney line: --ar 3:2 --style raw --stylize 200 --v 6.1"
+  },
+  {
+    "Title": "Room Makeover, Before-to-After Concept",
+    "Teaser": "Reimagine a tired room as a fresh, magazine-ready redesign.",
+    "PromptHint": "Describe the current room, your dream style, and a budget feel (high-end vs. thrifty).",
+    "Category": "Interior & Architecture",
+    "Prompt": "You are an interior designer pitching a makeover. Reimagine this room: current state is [CURRENT ROOM], transformed into [TARGET STYLE], at a [BUDGET LEVEL] budget feel.\n\nThink first (internal): the three highest-impact changes (paint, key furniture, lighting) that read instantly as 'after'.\n\nHard constraints:\n- Keep the room's footprint, window positions, and door locations identical to the current state. Change finishes, furniture, textiles, lighting, and decor only.\n- Make the upgrade believable for the stated budget: a thrifty makeover leans on paint, textiles, and rearrangement; a high-end one allows custom built-ins and statement pieces.\n- Realistic materials and light, accurate scale, no people, no text, no logos.\n\nOUTPUT FORMAT: render one 'after' photo at 4:5 portrait, then give a 4-line shopping list (paint color name, two furniture items, one lighting fixture) a real person could actually buy. End with: --ar 4:5 --style raw --stylize 180 --v 6.1"
+  },
+  {
+    "Title": "Twilight Exterior Architecture Render",
+    "Teaser": "That glowing dusk shot architects use to sell a building.",
+    "PromptHint": "Name the building type, architectural style, and surrounding setting.",
+    "Category": "Interior & Architecture",
+    "Prompt": "You are an architectural visualization artist producing a hero exterior render. Create one twilight 'blue hour' shot of a [BUILDING TYPE] in [ARCHITECTURAL STYLE], set in [SURROUNDING LANDSCAPE].\n\nThink first (internal): the three-quarter angle that shows two facades at once and reveals the building's best feature.\n\nHard constraints:\n- Three-quarter front-corner view, 35mm lens, camera slightly below eye level for a confident stance; verticals kept straight.\n- Blue-hour sky (deep indigo to warm amber on the horizon); warm interior lights glowing from windows; subtle landscape and path lighting.\n- Crisp, modern materials with accurate reflections; clean lawn or hardscape; a few realistic trees. No people, no cars unless they belong, no text, no watermarks.\n- Photoreal, not cartoonish; physically plausible light and shadow.\n\nOUTPUT FORMAT: render one image at 16:9 landscape, then append: --ar 16:9 --style raw --stylize 250 --v 6.1"
+  },
+  {
+    "Title": "Cozy Lifestyle Interior Vignette",
+    "Teaser": "A warm, inviting corner that feels like a real lived-in home.",
+    "PromptHint": "Pick the corner or nook, the mood, and the season outside the window.",
+    "Category": "Interior & Architecture",
+    "Prompt": "You are a lifestyle interiors photographer shooting an intimate vignette. Capture [INTERIOR CORNER OR NOOK] with a [MOOD] feeling, in [SEASON].\n\nThink first (internal): the one tactile detail (a throw blanket, steam off a mug, a stack of books) that signals warmth and use.\n\nHard constraints:\n- 50mm lens at eye level, shallow depth of field so the foreground detail is sharp and the background softly blurred.\n- Warm, directional window light with gentle falloff; cozy shadows, no flat overhead lighting.\n- Layered textures (wool, wood, ceramic, linen); a believable hint of human presence but no people in frame.\n- No text, no logos, no AI-glossy plastic sheen; keep it natural and slightly imperfect.\n\nOUTPUT FORMAT: render one image at 4:5 portrait, then append: --ar 4:5 --style raw --stylize 220 --v 6.1"
+  },
+  {
+    "Title": "Architectural Floor-Plan Concept (Top-Down)",
+    "Teaser": "A clean, color-coded layout view of a furnished space.",
+    "PromptHint": "Give the space type, square footage or rough size, and the rooms you want.",
+    "Category": "Interior & Architecture",
+    "Prompt": "You are an architect rendering a presentation floor plan. Produce a top-down, furnished plan view of a [SPACE TYPE] of roughly [SIZE], containing [ROOMS / ZONES].\n\nThink first (internal): a logical adjacency (kitchen near dining, bath near bedrooms) so the flow reads sensibly.\n\nHard constraints:\n- Strict orthographic top-down view (true plan, no perspective tilt).\n- Walls shown as clean filled lines; doors with swing arcs; windows marked in walls; furniture drawn to scale from above.\n- Soft, designer-magazine color fills per zone; light wood floors, subtle rug textures, small labeled room names.\n- Balanced, realistic proportions; clear circulation paths; no people, no clutter, no decorative noise.\n\nOUTPUT FORMAT: render one plan at 1:1 square, then list each room with a one-word color label. End with: --ar 1:1 --stylize 120 --v 6.1"
+  },
+  {
+    "Title": "Material & Mood Board for a Room",
+    "Teaser": "A flat-lay of finishes, fabrics and colors that define a look.",
+    "PromptHint": "Name the room, the target style, and one accent color to anchor it.",
+    "Category": "Interior & Architecture",
+    "Prompt": "You are an interior designer assembling a client mood board. Lay out a flat-lay material board for a [ROOM TYPE] in [DESIGN STYLE], anchored by an accent color of [ACCENT COLOR].\n\nThink first (internal): a palette of one accent, two neutrals, plus wood and metal tones that won't clash.\n\nHard constraints:\n- Overhead flat-lay on a clean neutral surface, soft even daylight, gentle natural shadows.\n- Include arranged swatches: a paint chip, two fabric squares, a flooring sample, a stone or tile tile, one metal finish, and one small hardware piece.\n- Tidy, slightly overlapping arrangement like a real designer's desk; cohesive within the chosen palette.\n- No text labels rendered in the image, no logos, no people, no busy background.\n\nOUTPUT FORMAT: render one flat-lay at 1:1 square, then write the palette as named swatches with hex codes below the image. End with: --ar 1:1 --style raw --stylize 160 --v 6.1"
+  },
+  {
+    "Title": "Small-Space Smart Layout",
+    "Teaser": "Make a tiny apartment or studio feel open and functional.",
+    "PromptHint": "State the small space, its real dimensions, and the must-have functions.",
+    "Category": "Interior & Architecture",
+    "Prompt": "You are a small-space specialist designer. Show a clever, airy layout for [SMALL SPACE TYPE] measuring [DIMENSIONS], that must fit [REQUIRED FUNCTIONS].\n\nThink first (internal): two or three space-saving moves (vertical storage, multi-use furniture, light palette) that buy the most breathing room.\n\nHard constraints:\n- Eye-level 28mm view from a corner, verticals straight, perspective honest (no fake-spacious distortion).\n- Light, reflective palette and a large mirror or window to expand the sense of space; multi-functional furniture (e.g., sofa bed, fold-down desk, under-bench storage).\n- Everything scaled to the stated dimensions; clear walking paths; uncluttered but warm.\n- No people, no text, no logos, no impossible furniture sizes.\n\nOUTPUT FORMAT: render one image at 3:2 landscape, then list the 3 space-saving tricks used. End with: --ar 3:2 --style raw --stylize 170 --v 6.1"
+  },
+  {
+    "Title": "Statement Lighting & Ambience Scene",
+    "Teaser": "Show how the right light fixture transforms a room's mood.",
+    "PromptHint": "Choose the room, the fixture type, and the evening mood you want.",
+    "Category": "Interior & Architecture",
+    "Prompt": "You are a lighting designer demonstrating ambience. Render a [ROOM TYPE] at night where a [LIGHT FIXTURE TYPE] sets a [MOOD] atmosphere.\n\nThink first (internal): the layered lighting plan (ambient, task, accent) so the room glows rather than looks dim or blown out.\n\nHard constraints:\n- Eye-level 35mm view; warm color temperature around 2700K from the fixtures; visible pools of light and soft shadow gradients.\n- The statement fixture is the clear focal point, correctly scaled to the room and ceiling height; secondary lamps or sconces fill the corners.\n- Realistic light physics: gentle bloom, no neon glow, no overexposed hotspots, accurate reflections on surfaces.\n- No people, no text, no logos.\n\nOUTPUT FORMAT: render one image at 16:9 landscape, then name the three light layers used (ambient / task / accent). End with: --ar 16:9 --style raw --stylize 200 --v 6.1"
+  },
+  {
+    "Title": "Outdoor Living & Landscape Design",
+    "Teaser": "Design a backyard, patio or terrace people actually want to relax in.",
+    "PromptHint": "Describe the outdoor space, the style, and the climate or region.",
+    "Category": "Interior & Architecture",
+    "Prompt": "You are a landscape and outdoor-living designer. Create an inviting [OUTDOOR SPACE TYPE] in [DESIGN STYLE], suited to a [CLIMATE / REGION].\n\nThink first (internal): the zones (lounge, dining, greenery) and plants that genuinely thrive in the stated climate.\n\nHard constraints:\n- Eye-level 35mm view at golden hour; warm low sun, long soft shadows, natural color.\n- Climate-appropriate planting and materials (e.g., drought-tolerant for arid, lush foliage for tropical); comfortable seating, a defined dining or lounge zone, and ground material (deck, stone, gravel) that fits the look.\n- Believable scale and depth; a sense of enclosure without feeling cramped; no people, no text, no logos.\n- Photoreal greenery, accurate shadows, no plastic-looking plants.\n\nOUTPUT FORMAT: render one image at 3:2 landscape, then list 4 climate-appropriate plants used. End with: --ar 3:2 --style raw --stylize 220 --v 6.1"
+  },
+  {
+    "Title": "Commercial Space Concept (Cafe / Retail / Office)",
+    "Teaser": "A branded, on-trend interior for a business that draws people in.",
+    "PromptHint": "Name the business type, the brand vibe, and the key customer experience.",
+    "Category": "Interior & Architecture",
+    "Prompt": "You are a commercial interior designer. Design the interior of a [BUSINESS TYPE] with a [BRAND VIBE], built around the experience of [KEY CUSTOMER MOMENT].\n\nThink first (internal): the focal zone customers see first (counter, display, lounge) and how the layout guides their path.\n\nHard constraints:\n- Eye-level 24mm wide view from the entrance, verticals straight, honest perspective.\n- Cohesive brand palette and materials that match the vibe; clear functional zones (service, seating, display) with realistic commercial-grade furniture and signage placement (signage blank, no readable text).\n- Daylight plus designed interior lighting; believable foot-traffic flow; clean but characterful, not sterile.\n- No people in frame, no readable text or real brand logos, no warped fixtures.\n\nOUTPUT FORMAT: render one image at 16:9 landscape, then describe the customer's path in 3 short steps. End with: --ar 16:9 --style raw --stylize 200 --v 6.1"
+  },
+  {
+    "Title": "Single-Wall Accent & Feature Design",
+    "Teaser": "Turn one boring wall into the room's showstopping feature.",
+    "PromptHint": "Give the room, the wall treatment idea, and the overall room style.",
+    "Category": "Interior & Architecture",
+    "Prompt": "You are an interior designer focused on a single feature wall. Show a [ROOM TYPE] where one wall becomes a statement using [WALL TREATMENT], within an overall [ROOM STYLE].\n\nThink first (internal): how the rest of the room stays calm so the feature wall reads as the hero, not chaos.\n\nHard constraints:\n- Eye-level 35mm view angled to show the full feature wall plus part of an adjacent wall for context.\n- The wall treatment is the clear focal point (e.g., textured plaster, wood slats, bold paint, tile, paneling, or floating shelves), executed cleanly with realistic material depth and shadow.\n- Surrounding decor is restrained and complementary; balanced styling; soft natural light grazing the wall to show texture.\n- No people, no text, no logos, no clashing colors.\n\nOUTPUT FORMAT: render one image at 4:5 portrait, then give a 3-line how-to-recreate note (material, finish, accent pairing). End with: --ar 4:5 --style raw --stylize 190 --v 6.1"
+  },
+  {
+    "Title": "Two-Style Side-by-Side Comparison",
+    "Teaser": "See the same room in two different design styles at once.",
+    "PromptHint": "Give the room, then the two styles you're torn between.",
+    "Category": "Interior & Architecture",
+    "Prompt": "You are an interior designer helping a client decide between two directions. Render the same [ROOM TYPE] twice in a split composition: the left half in [STYLE A], the right half in [STYLE B], with the room's architecture identical on both sides.\n\nThink first (internal): keep the camera, window, and layout matched so only the styling differs and the comparison is fair.\n\nHard constraints:\n- One image split cleanly down the middle; identical 35mm eye-level viewpoint and identical room shell (same walls, window, floor, ceiling) on both halves.\n- Each half fully and authentically committed to its style in furniture, palette, textiles, and decor; a thin neutral divider line between them.\n- Consistent realistic daylight across both halves; no people, no text labels, no logos.\n- Honest, buildable looks, not exaggerated caricatures.\n\nOUTPUT FORMAT: render one split image at 16:9 landscape, then write a 2-line verdict: who each side suits best. End with: --ar 16:9 --style raw --stylize 180 --v 6.1"
+  }
+]
