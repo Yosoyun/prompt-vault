@@ -1,5 +1,5 @@
 {
-  "total": 1765,
+  "total": 1891,
   "groups": [
     {
       "key": "viral",
@@ -196,7 +196,7 @@
       "label": "AI Image Prompts",
       "icon": "🖼️",
       "color": "#e0729e",
-      "count": 247,
+      "count": 325,
       "featured": false,
       "categories": [
         {
@@ -213,6 +213,11 @@
           "name": "Midjourney v6/v7",
           "label": "Midjourney v6/v7",
           "count": 14
+        },
+        {
+          "name": "3D & Render",
+          "label": "3D & Render",
+          "count": 13
         },
         {
           "name": "Anime & Manga",
@@ -255,6 +260,16 @@
           "count": 13
         },
         {
+          "name": "Icons & UI Assets",
+          "label": "Icons & UI Assets",
+          "count": 13
+        },
+        {
+          "name": "Infographics & Charts",
+          "label": "Infographics & Charts",
+          "count": 13
+        },
+        {
           "name": "Interior & Architecture",
           "label": "Interior & Architecture",
           "count": 13
@@ -262,6 +277,11 @@
         {
           "name": "Logos & Branding",
           "label": "Logos & Branding",
+          "count": 13
+        },
+        {
+          "name": "Mockups & Packaging",
+          "label": "Mockups & Packaging",
           "count": 13
         },
         {
@@ -275,8 +295,18 @@
           "count": 13
         },
         {
+          "name": "Retro & Vintage",
+          "label": "Retro & Vintage",
+          "count": 13
+        },
+        {
           "name": "Selfie Transformations",
           "label": "Selfie Transformations",
+          "count": 13
+        },
+        {
+          "name": "Sports & Action",
+          "label": "Sports & Action",
           "count": 13
         },
         {
@@ -897,6 +927,36 @@
         {
           "name": "Technical & Science Explainers",
           "label": "Technical & Science Explainers",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "key": "design",
+      "label": "Design & UX",
+      "icon": "🎨",
+      "color": "#c2627a",
+      "count": 48,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Brand & Identity",
+          "label": "Brand & Identity",
+          "count": 12
+        },
+        {
+          "name": "Presentations & Decks",
+          "label": "Presentations & Decks",
+          "count": 12
+        },
+        {
+          "name": "UX & Product Design",
+          "label": "UX & Product Design",
+          "count": 12
+        },
+        {
+          "name": "Web & Landing Pages",
+          "label": "Web & Landing Pages",
           "count": 12
         }
       ]
