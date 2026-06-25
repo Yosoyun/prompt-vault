@@ -1,5 +1,5 @@
 {
-  "total": 1195,
+  "total": 1280,
   "groups": [
     {
       "key": "viral",
@@ -536,12 +536,17 @@
       "label": "Communication & Influence",
       "icon": "🗣️",
       "color": "#3fb6c2",
-      "count": 59,
+      "count": 60,
       "featured": false,
       "categories": [
         {
           "name": "Difficult Conversations",
           "label": "Difficult Conversations",
+          "count": 12
+        },
+        {
+          "name": "Negotiation",
+          "label": "Negotiation",
           "count": 12
         },
         {
@@ -558,11 +563,6 @@
           "name": "Storytelling & Narrative",
           "label": "Storytelling & Narrative",
           "count": 12
-        },
-        {
-          "name": "Negotiation",
-          "label": "Negotiation",
-          "count": 11
         }
       ]
     },
@@ -571,7 +571,7 @@
       "label": "Operations & Admin",
       "icon": "📋",
       "color": "#9a8fd8",
-      "count": 48,
+      "count": 60,
       "featured": false,
       "categories": [
         {
@@ -585,13 +585,58 @@
           "count": 12
         },
         {
-          "name": "Legal & Contracts",
-          "label": "Legal & Contracts",
+          "name": "Legal & Compliance",
+          "label": "Legal & Compliance",
           "count": 12
         },
         {
           "name": "Policies & Compliance",
           "label": "Policies & Compliance",
+          "count": 12
+        },
+        {
+          "name": "Customer Support",
+          "label": "Customer Support",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "key": "tech",
+      "label": "Tech & Engineering",
+      "icon": "💻",
+      "color": "#5fa8d3",
+      "count": 72,
+      "featured": false,
+      "categories": [
+        {
+          "name": "AI/ML Engineering",
+          "label": "AI/ML Engineering",
+          "count": 12
+        },
+        {
+          "name": "System Architecture & APIs",
+          "label": "System Architecture & APIs",
+          "count": 12
+        },
+        {
+          "name": "Data Engineering & Analytics",
+          "label": "Data Engineering & Analytics",
+          "count": 12
+        },
+        {
+          "name": "DevOps & Infrastructure",
+          "label": "DevOps & Infrastructure",
+          "count": 12
+        },
+        {
+          "name": "Mobile & App Dev",
+          "label": "Mobile & App Dev",
+          "count": 12
+        },
+        {
+          "name": "Security & Privacy",
+          "label": "Security & Privacy",
           "count": 12
         }
       ]
