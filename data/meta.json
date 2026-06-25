@@ -1,5 +1,5 @@
 {
-  "total": 1280,
+  "total": 1400,
   "groups": [
     {
       "key": "viral",
@@ -637,6 +637,76 @@
         {
           "name": "Security & Privacy",
           "label": "Security & Privacy",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "key": "create",
+      "label": "Creative & Media",
+      "icon": "🎬",
+      "color": "#d56b8a",
+      "count": 72,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Comedy & Humor",
+          "label": "Comedy & Humor",
+          "count": 12
+        },
+        {
+          "name": "Fiction & Storycraft",
+          "label": "Fiction & Storycraft",
+          "count": 12
+        },
+        {
+          "name": "Games & Interactive Fiction",
+          "label": "Games & Interactive Fiction",
+          "count": 12
+        },
+        {
+          "name": "Music & Lyrics",
+          "label": "Music & Lyrics",
+          "count": 12
+        },
+        {
+          "name": "Podcasting",
+          "label": "Podcasting",
+          "count": 12
+        },
+        {
+          "name": "Film, TV & Video Scripts",
+          "label": "Film, TV & Video Scripts",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "key": "grow",
+      "label": "Learning & Growth",
+      "icon": "🌱",
+      "color": "#6fae5a",
+      "count": 48,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Curiosity & Explainers",
+          "label": "Curiosity & Explainers",
+          "count": 12
+        },
+        {
+          "name": "Languages & Translation",
+          "label": "Languages & Translation",
+          "count": 12
+        },
+        {
+          "name": "Memory & Focus",
+          "label": "Memory & Focus",
+          "count": 12
+        },
+        {
+          "name": "Skill-Building Plans",
+          "label": "Skill-Building Plans",
           "count": 12
         }
       ]
