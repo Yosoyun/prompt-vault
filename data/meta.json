@@ -1,5 +1,5 @@
 {
-  "total": 1891,
+  "total": 2010,
   "groups": [
     {
       "key": "viral",
@@ -957,6 +957,76 @@
         {
           "name": "Web & Landing Pages",
           "label": "Web & Landing Pages",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "key": "money",
+      "label": "Money & Finance",
+      "icon": "💰",
+      "color": "#4faf7a",
+      "count": 59,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Debt & Credit",
+          "label": "Debt & Credit",
+          "count": 12
+        },
+        {
+          "name": "Freelance Finance",
+          "label": "Freelance Finance",
+          "count": 12
+        },
+        {
+          "name": "Investing Basics",
+          "label": "Investing Basics",
+          "count": 12
+        },
+        {
+          "name": "Taxes & Bookkeeping",
+          "label": "Taxes & Bookkeeping",
+          "count": 12
+        },
+        {
+          "name": "Budgeting & Saving",
+          "label": "Budgeting & Saving",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "key": "fun",
+      "label": "Fun & Games",
+      "icon": "✨",
+      "color": "#e8845e",
+      "count": 60,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Astrology & Tarot (for fun)",
+          "label": "Astrology & Tarot (for fun)",
+          "count": 12
+        },
+        {
+          "name": "Name & Title Generators",
+          "label": "Name & Title Generators",
+          "count": 12
+        },
+        {
+          "name": "Party Games & Icebreakers",
+          "label": "Party Games & Icebreakers",
+          "count": 12
+        },
+        {
+          "name": "Roleplay & Simulations",
+          "label": "Roleplay & Simulations",
+          "count": 12
+        },
+        {
+          "name": "Trivia & Quizzes",
+          "label": "Trivia & Quizzes",
           "count": 12
         }
       ]

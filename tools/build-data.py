@@ -49,6 +49,8 @@ GROUPS = [
     ("personal","Personal & Lifestyle",   "🎁", "#e69ec0"),
     ("research", "Research & Analysis",    "🔬", "#6d9b8f"),
     ("design",  "Design & UX",            "🎨", "#c2627a"),
+    ("money",   "Money & Finance",        "💰", "#4faf7a"),
+    ("fun",     "Fun & Games",            "✨", "#e8845e"),
     ("community","Open & Community",       "🌐", "#8a93a0"),
 ]
 GROUP_KEYS = {g[0] for g in GROUPS}
