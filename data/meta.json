@@ -1,5 +1,5 @@
 {
-  "total": 1526,
+  "total": 1645,
   "groups": [
     {
       "key": "viral",
@@ -301,14 +301,9 @@
       "label": "Content & Writing",
       "icon": "✍️",
       "color": "#e3b341",
-      "count": 84,
+      "count": 83,
       "featured": false,
       "categories": [
-        {
-          "name": "Blog & Articles",
-          "label": "Blog & Articles",
-          "count": 12
-        },
         {
           "name": "Book & Ebook Writing",
           "label": "Book & Ebook Writing",
@@ -338,6 +333,11 @@
           "name": "X / Twitter Threads",
           "label": "X / Twitter Threads",
           "count": 12
+        },
+        {
+          "name": "Blog & Articles",
+          "label": "Blog & Articles",
+          "count": 11
         }
       ]
     },
@@ -767,6 +767,76 @@
         {
           "name": "UGC & Influencer",
           "label": "UGC & Influencer",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "key": "industry",
+      "label": "Industry Packs",
+      "icon": "🏭",
+      "color": "#9c8e6a",
+      "count": 72,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Beauty & Wellness Spas",
+          "label": "Beauty & Wellness Spas",
+          "count": 12
+        },
+        {
+          "name": "Construction & Trades",
+          "label": "Construction & Trades",
+          "count": 12
+        },
+        {
+          "name": "Healthcare & Clinics",
+          "label": "Healthcare & Clinics",
+          "count": 12
+        },
+        {
+          "name": "Law Firms",
+          "label": "Law Firms",
+          "count": 12
+        },
+        {
+          "name": "Manufacturing & Logistics",
+          "label": "Manufacturing & Logistics",
+          "count": 12
+        },
+        {
+          "name": "Travel & Tourism",
+          "label": "Travel & Tourism",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "key": "personal",
+      "label": "Personal & Lifestyle",
+      "icon": "🎁",
+      "color": "#e69ec0",
+      "count": 48,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Events & Celebrations",
+          "label": "Events & Celebrations",
+          "count": 12
+        },
+        {
+          "name": "Gifts & Shopping",
+          "label": "Gifts & Shopping",
+          "count": 12
+        },
+        {
+          "name": "Hobbies & DIY",
+          "label": "Hobbies & DIY",
+          "count": 12
+        },
+        {
+          "name": "Pets & Animals",
+          "label": "Pets & Animals",
           "count": 12
         }
       ]
