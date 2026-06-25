@@ -1,5 +1,5 @@
 {
-  "total": 1645,
+  "total": 1765,
   "groups": [
     {
       "key": "viral",
@@ -301,12 +301,27 @@
       "label": "Content & Writing",
       "icon": "✍️",
       "color": "#e3b341",
-      "count": 83,
+      "count": 143,
       "featured": false,
       "categories": [
         {
           "name": "Book & Ebook Writing",
           "label": "Book & Ebook Writing",
+          "count": 12
+        },
+        {
+          "name": "Editing & Proofreading",
+          "label": "Editing & Proofreading",
+          "count": 12
+        },
+        {
+          "name": "Ghostwriting & Bios",
+          "label": "Ghostwriting & Bios",
+          "count": 12
+        },
+        {
+          "name": "Grants & Proposals",
+          "label": "Grants & Proposals",
           "count": 12
         },
         {
@@ -325,8 +340,18 @@
           "count": 12
         },
         {
+          "name": "Press & PR",
+          "label": "Press & PR",
+          "count": 12
+        },
+        {
           "name": "Story & Scriptwriting",
           "label": "Story & Scriptwriting",
+          "count": 12
+        },
+        {
+          "name": "Technical Writing & Docs",
+          "label": "Technical Writing & Docs",
           "count": 12
         },
         {
@@ -837,6 +862,41 @@
         {
           "name": "Pets & Animals",
           "label": "Pets & Animals",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "key": "research",
+      "label": "Research & Analysis",
+      "icon": "🔬",
+      "color": "#6d9b8f",
+      "count": 60,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Competitive & Market Intel",
+          "label": "Competitive & Market Intel",
+          "count": 12
+        },
+        {
+          "name": "Data Analysis & Insights",
+          "label": "Data Analysis & Insights",
+          "count": 12
+        },
+        {
+          "name": "Literature & Source Reviews",
+          "label": "Literature & Source Reviews",
+          "count": 12
+        },
+        {
+          "name": "Surveys & User Research",
+          "label": "Surveys & User Research",
+          "count": 12
+        },
+        {
+          "name": "Technical & Science Explainers",
+          "label": "Technical & Science Explainers",
           "count": 12
         }
       ]
