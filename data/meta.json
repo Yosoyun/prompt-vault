@@ -1,5 +1,5 @@
 {
-  "total": 2246,
+  "total": 2301,
   "groups": [
     {
       "key": "viral",
@@ -1127,6 +1127,41 @@
         {
           "name": "Advanced Meta-Prompting",
           "label": "Advanced Meta-Prompting",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "key": "favorites",
+      "label": "Community Favorites",
+      "icon": "🏆",
+      "color": "#c79a3a",
+      "count": 55,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Life Clarity & Big Decisions",
+          "label": "Life Clarity & Big Decisions",
+          "count": 11
+        },
+        {
+          "name": "Brutally Honest Life Coach",
+          "label": "Brutally Honest Life Coach",
+          "count": 11
+        },
+        {
+          "name": "Learn, Focus & Level Up",
+          "label": "Learn, Focus & Level Up",
+          "count": 11
+        },
+        {
+          "name": "Mindset, Resilience & Reflection",
+          "label": "Mindset, Resilience & Reflection",
+          "count": 11
+        },
+        {
+          "name": "Personal Transformation Systems",
+          "label": "Personal Transformation Systems",
           "count": 11
         }
       ]
