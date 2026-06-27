@@ -1,5 +1,5 @@
 {
-  "total": 2010,
+  "total": 2136,
   "groups": [
     {
       "key": "viral",
@@ -1028,6 +1028,61 @@
           "name": "Trivia & Quizzes",
           "label": "Trivia & Quizzes",
           "count": 12
+        }
+      ]
+    },
+    {
+      "key": "promptlab",
+      "label": "Prompt Lab",
+      "icon": "🧪",
+      "color": "#6e56cf",
+      "count": 126,
+      "featured": false,
+      "categories": [
+        {
+          "name": "AI Agent Designers",
+          "label": "AI Agent Designers",
+          "count": 14
+        },
+        {
+          "name": "Reasoning Frameworks",
+          "label": "Reasoning Frameworks",
+          "count": 14
+        },
+        {
+          "name": "Self-Critique & Refine",
+          "label": "Self-Critique & Refine",
+          "count": 14
+        },
+        {
+          "name": "Custom GPT & Gem Builders",
+          "label": "Custom GPT & Gem Builders",
+          "count": 14
+        },
+        {
+          "name": "Few-Shot & Template Engines",
+          "label": "Few-Shot & Template Engines",
+          "count": 14
+        },
+        {
+          "name": "Mega-Prompt Generators",
+          "label": "Mega-Prompt Generators",
+          "count": 14
+        },
+        {
+          "name": "Multi-Agent Orchestrators",
+          "label": "Multi-Agent Orchestrators",
+          "count": 14
+        },
+        {
+          "name": "Prompt Optimizers",
+          "label": "Prompt Optimizers",
+          "count": 14
+        },
+        {
+          "name": "System Prompt Builders",
+          "label": "System Prompt Builders",
+          "count": 14
         }
       ]
     }
