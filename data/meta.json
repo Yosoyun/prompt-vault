@@ -1,5 +1,5 @@
 {
-  "total": 2136,
+  "total": 2262,
   "groups": [
     {
       "key": "viral",
@@ -1036,12 +1036,17 @@
       "label": "Prompt Lab",
       "icon": "🧪",
       "color": "#6e56cf",
-      "count": 126,
+      "count": 252,
       "featured": false,
       "categories": [
         {
           "name": "AI Agent Designers",
           "label": "AI Agent Designers",
+          "count": 14
+        },
+        {
+          "name": "Prompt Chains & Pipelines",
+          "label": "Prompt Chains & Pipelines",
           "count": 14
         },
         {
@@ -1060,13 +1065,38 @@
           "count": 14
         },
         {
+          "name": "Prompt Debuggers",
+          "label": "Prompt Debuggers",
+          "count": 14
+        },
+        {
+          "name": "Evaluation & LLM-as-Judge",
+          "label": "Evaluation & LLM-as-Judge",
+          "count": 14
+        },
+        {
           "name": "Few-Shot & Template Engines",
           "label": "Few-Shot & Template Engines",
           "count": 14
         },
         {
+          "name": "Output-Format Enforcers",
+          "label": "Output-Format Enforcers",
+          "count": 14
+        },
+        {
+          "name": "Constraints & Guardrails",
+          "label": "Constraints & Guardrails",
+          "count": 14
+        },
+        {
           "name": "Mega-Prompt Generators",
           "label": "Mega-Prompt Generators",
+          "count": 14
+        },
+        {
+          "name": "Advanced Meta-Prompting",
+          "label": "Advanced Meta-Prompting",
           "count": 14
         },
         {
@@ -1077,6 +1107,21 @@
         {
           "name": "Prompt Optimizers",
           "label": "Prompt Optimizers",
+          "count": 14
+        },
+        {
+          "name": "Expert Panel & Role-Stacking",
+          "label": "Expert Panel & Role-Stacking",
+          "count": 14
+        },
+        {
+          "name": "Persona & Voice Builders",
+          "label": "Persona & Voice Builders",
+          "count": 14
+        },
+        {
+          "name": "RAG & Knowledge Prompts",
+          "label": "RAG & Knowledge Prompts",
           "count": 14
         },
         {
