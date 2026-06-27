@@ -1,5 +1,5 @@
 {
-  "total": 2262,
+  "total": 2246,
   "groups": [
     {
       "key": "viral",
@@ -1036,7 +1036,7 @@
       "label": "Prompt Lab",
       "icon": "🧪",
       "color": "#6e56cf",
-      "count": 252,
+      "count": 236,
       "featured": false,
       "categories": [
         {
@@ -1050,38 +1050,8 @@
           "count": 14
         },
         {
-          "name": "Reasoning Frameworks",
-          "label": "Reasoning Frameworks",
-          "count": 14
-        },
-        {
-          "name": "Self-Critique & Refine",
-          "label": "Self-Critique & Refine",
-          "count": 14
-        },
-        {
-          "name": "Custom GPT & Gem Builders",
-          "label": "Custom GPT & Gem Builders",
-          "count": 14
-        },
-        {
           "name": "Prompt Debuggers",
           "label": "Prompt Debuggers",
-          "count": 14
-        },
-        {
-          "name": "Evaluation & LLM-as-Judge",
-          "label": "Evaluation & LLM-as-Judge",
-          "count": 14
-        },
-        {
-          "name": "Few-Shot & Template Engines",
-          "label": "Few-Shot & Template Engines",
-          "count": 14
-        },
-        {
-          "name": "Output-Format Enforcers",
-          "label": "Output-Format Enforcers",
           "count": 14
         },
         {
@@ -1090,28 +1060,8 @@
           "count": 14
         },
         {
-          "name": "Mega-Prompt Generators",
-          "label": "Mega-Prompt Generators",
-          "count": 14
-        },
-        {
-          "name": "Advanced Meta-Prompting",
-          "label": "Advanced Meta-Prompting",
-          "count": 14
-        },
-        {
           "name": "Multi-Agent Orchestrators",
           "label": "Multi-Agent Orchestrators",
-          "count": 14
-        },
-        {
-          "name": "Prompt Optimizers",
-          "label": "Prompt Optimizers",
-          "count": 14
-        },
-        {
-          "name": "Expert Panel & Role-Stacking",
-          "label": "Expert Panel & Role-Stacking",
           "count": 14
         },
         {
@@ -1125,9 +1075,59 @@
           "count": 14
         },
         {
+          "name": "Reasoning Frameworks",
+          "label": "Reasoning Frameworks",
+          "count": 13
+        },
+        {
+          "name": "Self-Critique & Refine",
+          "label": "Self-Critique & Refine",
+          "count": 13
+        },
+        {
+          "name": "Custom GPT & Gem Builders",
+          "label": "Custom GPT & Gem Builders",
+          "count": 13
+        },
+        {
+          "name": "Evaluation & LLM-as-Judge",
+          "label": "Evaluation & LLM-as-Judge",
+          "count": 13
+        },
+        {
+          "name": "Output-Format Enforcers",
+          "label": "Output-Format Enforcers",
+          "count": 13
+        },
+        {
+          "name": "Mega-Prompt Generators",
+          "label": "Mega-Prompt Generators",
+          "count": 13
+        },
+        {
+          "name": "Prompt Optimizers",
+          "label": "Prompt Optimizers",
+          "count": 13
+        },
+        {
+          "name": "Few-Shot & Template Engines",
+          "label": "Few-Shot & Template Engines",
+          "count": 12
+        },
+        {
+          "name": "Expert Panel & Role-Stacking",
+          "label": "Expert Panel & Role-Stacking",
+          "count": 12
+        },
+        {
           "name": "System Prompt Builders",
           "label": "System Prompt Builders",
-          "count": 14
+          "count": 12
+        },
+        {
+          "name": "Advanced Meta-Prompting",
+          "label": "Advanced Meta-Prompting",
+          "count": 11
         }
       ]
     }
