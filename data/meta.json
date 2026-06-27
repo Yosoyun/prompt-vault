@@ -1,5 +1,5 @@
 {
-  "total": 2301,
+  "total": 2445,
   "groups": [
     {
       "key": "viral",
@@ -1163,6 +1163,76 @@
           "name": "Personal Transformation Systems",
           "label": "Personal Transformation Systems",
           "count": 11
+        }
+      ]
+    },
+    {
+      "key": "unicorn",
+      "label": "Unicorn Builder",
+      "icon": "🦄",
+      "color": "#7048e8",
+      "count": 144,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Evals & Model Quality",
+          "label": "Evals & Model Quality",
+          "count": 12
+        },
+        {
+          "name": "Founder Operating System",
+          "label": "Founder Operating System",
+          "count": 12
+        },
+        {
+          "name": "Fundraising & The AI Narrative",
+          "label": "Fundraising & The AI Narrative",
+          "count": 12
+        },
+        {
+          "name": "AI Go-To-Market",
+          "label": "AI Go-To-Market",
+          "count": 12
+        },
+        {
+          "name": "AI Infra & Unit Economics",
+          "label": "AI Infra & Unit Economics",
+          "count": 12
+        },
+        {
+          "name": "Competitive & Market Intel",
+          "label": "Competitive & Market Intel",
+          "count": 12
+        },
+        {
+          "name": "Data, Moats & Defensibility",
+          "label": "Data, Moats & Defensibility",
+          "count": 12
+        },
+        {
+          "name": "Category & Narrative",
+          "label": "Category & Narrative",
+          "count": 12
+        },
+        {
+          "name": "Applied AI Research",
+          "label": "Applied AI Research",
+          "count": 12
+        },
+        {
+          "name": "AI Product Strategy",
+          "label": "AI Product Strategy",
+          "count": 12
+        },
+        {
+          "name": "Hiring & Org for AI",
+          "label": "Hiring & Org for AI",
+          "count": 12
+        },
+        {
+          "name": "AI Safety, Trust & Governance",
+          "label": "AI Safety, Trust & Governance",
+          "count": 12
         }
       ]
     }
