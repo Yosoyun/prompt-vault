@@ -688,6 +688,53 @@ html[data-theme="light"] .trend-tag { color: #c2502f; }
 .foot-link { color: var(--accent); text-decoration: none; }
 .foot-link:hover { text-decoration: underline; }
 
+/* ── GO PRO button (header) ── */
+.go-pro-btn { font-family: inherit; font-size: 14px; font-weight: 700; color: var(--accent-ink);
+  background: var(--accent); border: 1px solid var(--accent); border-radius: 10px; padding: 8px 16px;
+  cursor: pointer; text-decoration: none; transition: all .16s ease;
+  box-shadow: 0 6px 18px -8px color-mix(in srgb, var(--accent) 70%, transparent); }
+.go-pro-btn:hover { transform: translateY(-1px); filter: brightness(1.06); }
+
+/* ── PRICING ── */
+.pricing { padding: 44px 0 18px; border-top: 1px solid var(--line-soft); margin-top: 30px; }
+.pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; max-width: 760px; }
+.price-card { position: relative; display: flex; flex-direction: column; background: var(--bg-card);
+  border: 1px solid var(--line); border-radius: 18px; padding: 26px 24px; }
+.price-card.featured { border-color: var(--accent); box-shadow: 0 18px 50px -24px color-mix(in srgb, var(--accent) 55%, transparent);
+  background: linear-gradient(165deg, color-mix(in srgb, var(--accent) 9%, var(--bg-card)), var(--bg-card) 60%); }
+.price-badge { position: absolute; top: -12px; left: 24px; font-family: "JetBrains Mono", monospace;
+  font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--accent-ink);
+  background: var(--accent); padding: 4px 11px; border-radius: 999px; }
+.price-name { font-family: "JetBrains Mono", monospace; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-faint); }
+.price-amt { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 46px; line-height: 1; margin: 8px 0 18px; color: var(--ink); }
+.price-per { font-family: "Hanken Grotesk", sans-serif; font-size: 16px; font-weight: 500; color: var(--ink-faint); }
+.price-old { font-family: "Hanken Grotesk", sans-serif; font-size: 22px; color: var(--ink-faint); text-decoration: line-through; margin-left: 6px; }
+.price-feats { list-style: none; padding: 0; margin: 0 0 22px; display: flex; flex-direction: column; gap: 10px; }
+.price-feats li { font-size: 14px; color: var(--ink-dim); line-height: 1.45; }
+.price-feats b { color: var(--ink); }
+.price-btn { display: block; text-align: center; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer;
+  color: var(--accent-ink); background: var(--accent); border: 1px solid var(--accent); border-radius: 12px;
+  padding: 13px 18px; text-decoration: none; transition: all .15s; margin-top: auto; }
+.price-btn:hover { transform: translateY(-2px); filter: brightness(1.06); }
+.price-btn.ghost { color: var(--ink); background: transparent; border-color: var(--line); }
+.price-btn.ghost:hover { border-color: var(--accent); filter: none; }
+.price-note { font-size: 12px; color: var(--ink-faint); text-align: center; margin: 12px 0 0; }
+
+/* ── SUBSCRIBE ── */
+.subscribe { padding: 40px 0 24px; }
+.sub-inner { background: var(--bg-2); border: 1px solid var(--line-soft); border-radius: 18px; padding: 32px clamp(20px,4vw,40px); text-align: center; }
+.sub-inner h2 { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: clamp(22px,3vw,28px); margin: 0 0 8px; }
+.sub-inner p { font-size: 15px; color: var(--ink-dim); margin: 0 0 20px; }
+.sub-form { display: flex; gap: 10px; max-width: 440px; margin: 0 auto; }
+.sub-form input { flex: 1; font: inherit; font-size: 15px; color: var(--ink); background: var(--bg-card);
+  border: 1px solid var(--line); border-radius: 11px; padding: 12px 15px; outline: none; }
+.sub-form input:focus { border-color: var(--accent); }
+.sub-form button { font: inherit; font-size: 15px; font-weight: 700; color: var(--accent-ink); background: var(--accent);
+  border: none; border-radius: 11px; padding: 12px 22px; cursor: pointer; transition: filter .15s; }
+.sub-form button:hover { filter: brightness(1.06); }
+.sub-note { font-size: 15px; font-weight: 600; color: var(--accent-2); margin: 14px 0 0; }
+@media (max-width: 520px) { .sub-form { flex-direction: column; } }
+
 /* per-prompt credit (community / creator prompts) */
 .card-credit { font-family: "JetBrains Mono", monospace; font-size: 11px; color: var(--ink-faint); text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 70%; }
 .card-credit:hover { color: var(--accent); text-decoration: underline; }

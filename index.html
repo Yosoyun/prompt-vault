@@ -70,10 +70,11 @@
     <span class="brand-mark" aria-hidden="true">⌘</span>
     <span class="brand-text">
       <span class="brand-name">The&nbsp;Prompt&nbsp;Vault</span>
-      <span class="sig brand-sig">Indrajeet Yadav</span>
+      <span class="brand-sub">Free AI prompt library</span>
     </span>
   </a>
   <div class="head-actions">
+    <a class="go-pro-btn" href="#pricing">✨ Go Pro</a>
     <button class="ghost-btn install-btn" id="installBtn" hidden>⬇ Install app</button>
     <a class="ghost-btn" href="#groups">Browse</a>
     <button class="ghost-btn" id="savedNav" aria-label="View saved prompts">★ <span id="savedNavN">0</span></button>
@@ -190,6 +191,51 @@
     </ol>
   </section>
 
+  <!-- ░░ GO PRO / PRICING ░░ -->
+  <section class="pricing" id="pricing" aria-label="Go Pro">
+    <div class="sec-head"><h2>✨ Get the whole vault, organised</h2><span class="sec-sub">free forever — or go Pro for the offline packs &amp; extras</span></div>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="price-name">Free</div>
+        <div class="price-amt">$0<span class="price-per">/forever</span></div>
+        <ul class="price-feats">
+          <li>✓ All <b id="freeCount">2,445</b> prompts, searchable</li>
+          <li>✓ Live fill-in customizer</li>
+          <li>✓ One-click copy &amp; share links</li>
+          <li>✓ Save favourites · install as an app</li>
+        </ul>
+        <a class="price-btn ghost" href="#groups">Start browsing</a>
+      </div>
+      <div class="price-card featured">
+        <div class="price-badge">Lifetime · launch price</div>
+        <div class="price-name">Pro</div>
+        <div class="price-amt">$39 <span class="price-old">$59</span></div>
+        <ul class="price-feats">
+          <li>★ Everything in Free</li>
+          <li>★ All prompts as polished <b>PDF packs</b> — offline &amp; printable</li>
+          <li>★ <b>Notion-ready</b> version you can clone</li>
+          <li>★ Premium swipe files: 🦄 Unicorn · 🧪 Prompt Lab · 💎 Million-Dollar</li>
+          <li>★ Bonus exclusive prompts + <b>lifetime updates</b></li>
+        </ul>
+        <a class="price-btn" id="goProBtn" href="#pricing" data-checkout="lemonsqueezy">Get Lifetime Pro →</a>
+        <p class="price-note">One-time payment · instant download · 14-day money-back</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SUBSCRIBE ░░ -->
+  <section class="subscribe" aria-label="Subscribe for new prompts">
+    <div class="sub-inner">
+      <h2>📬 Get new prompts in your inbox</h2>
+      <p>A short note when fresh prompts drop. No spam, unsubscribe anytime.</p>
+      <form class="sub-form" id="subForm">
+        <input type="email" id="subEmail" placeholder="you@email.com" required aria-label="Your email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="sub-note" id="subNote" hidden>Thanks — you're on the list! 🎉</p>
+    </div>
+  </section>
+
   <!-- ░░ CREATORS WORTH FOLLOWING ░░ -->
   <section class="creators" aria-label="Creators worth following">
     <div class="sec-head"><h2>✨ Creators worth following</h2><span class="sec-sub">prompt minds we admire — go give them a follow</span></div>
@@ -273,7 +319,6 @@
       <button class="copy-btn big" id="mCopy"><span class="ci">⧉</span> <span class="ct">Copy prompt</span></button>
       <button class="save-btn" id="mSave" aria-pressed="false">☆ Save</button>
       <button class="icon-btn" id="mShare" title="Copy a link straight to this prompt">🔗 Link</button>
-      <span class="sig modal-sig" title="Prompt by Indrajeet Yadav">Indrajeet Yadav</span>
     </div>
     <div class="m-launch">
       <span class="ml-label">Run it in</span>

@@ -103,6 +103,7 @@
     const total = state.meta.total;
     $("#heroCount").textContent = fmt(total);
     $("#statTotal").textContent = fmt(total);
+    const _fc = $("#freeCount"); if (_fc) _fc.textContent = fmt(total);
     $("#statShelves").textContent = state.meta.groups.filter((g) => g.count > 0).length;
     $("#statTopics").textContent = state.meta.groups.reduce((a, g) => a + g.categories.length, 0);
     $("#search").placeholder = `Search ${fmt(total)} prompts — “cold email”, “youtube script”, “midjourney”…`;
@@ -182,7 +183,6 @@
         <span class="trend-tag">🔥 ${esc(state.catLabel[r.c] || r.c)}</span>
         <h3>${esc(r.t)}</h3>
         <p>${esc(r.te || "")}</p>
-        <span class="sig trend-sig">Indrajeet Yadav</span>
         <div class="trend-foot">
           <button class="copy-btn sm" data-i="${r.i}"><span class="ci">⧉</span><span class="ct">Copy</span></button>
           <button class="view-btn sm" data-i="${r.i}">View</button>
@@ -264,7 +264,7 @@
         <button class="copy-btn" data-i="${r.i}"><span class="ci">⧉</span> <span class="ct">Copy</span></button>
         <button class="view-btn" data-i="${r.i}">View</button>
       </div>
-      <div class="card-foot">${r.cr ? `<a class="card-credit" href="${esc(r.cr.u)}" target="_blank" rel="noopener nofollow">via ${esc(r.cr.n)} ↗</a>` : `<span class="sig card-sig">Indrajeet Yadav</span>`}<span class="card-len">${fmt(r.len)} chars</span></div>`;
+      <div class="card-foot">${r.cr ? `<a class="card-credit" href="${esc(r.cr.u)}" target="_blank" rel="noopener nofollow">via ${esc(r.cr.n)} ↗</a>` : ""}<span class="card-len">${fmt(r.len)} chars</span></div>`;
     el.querySelector(".fav").addEventListener("click", (e) => { toggleSave(r.i); const b = e.currentTarget; const on = state.saved.has(r.i); b.classList.toggle("on", on); b.textContent = on ? "★" : "☆"; });
     el.querySelector(".copy-btn").addEventListener("click", (e) => copyPrompt(r.i, e.currentTarget));
     el.querySelector(".view-btn").addEventListener("click", () => openModal(r.i));
@@ -302,7 +302,7 @@
     $("#mTitle").textContent = r.t;
     const creditHTML = r.cr ? ` · <a class="m-credit" href="${esc(r.cr.u)}" target="_blank" rel="noopener nofollow">via ${esc(r.cr.n)} ↗</a>` : "";
     $("#mMeta").innerHTML = `${fmt(r.len)} characters${modalState.vars.length ? ` · ${modalState.vars.length} fill-in${modalState.vars.length > 1 ? "s" : ""}` : ""}${creditHTML}`;
-    $(".modal-sig").style.display = r.cr ? "none" : "";
+    const _ms = $(".modal-sig"); if (_ms) _ms.style.display = r.cr ? "none" : "";
     const sBtn = $("#mSave"); const syncSave = () => { const on = state.saved.has(i); sBtn.textContent = on ? "★ Saved" : "☆ Save"; sBtn.classList.toggle("on", on); sBtn.setAttribute("aria-pressed", on); };
     syncSave(); sBtn.onclick = () => { toggleSave(i); syncSave(); refreshCardFav(i); };
     $("#mShare").onclick = async () => {
@@ -520,6 +520,23 @@
     $("#savedToggle").addEventListener("click", () => { if (state.savedOnly) { state.savedOnly = false; syncSavedToggle(); applyFilters(); } else showSaved(); });
     $("#savedNav").addEventListener("click", showSaved);
     $("#clearRecent").addEventListener("click", () => { try { localStorage.removeItem("pv-recent"); } catch (_) {} renderRecent(); });
+    // Go Pro — until the Lemon Squeezy checkout URL is wired (data-checkout-url), capture interest
+    const goPro = $("#goProBtn");
+    if (goPro) goPro.addEventListener("click", (e) => {
+      if (goPro.dataset.checkoutUrl) return; // real checkout set → navigate normally
+      e.preventDefault();
+      toast("Pro launches soon — drop your email to get launch access ✨");
+      document.querySelector(".subscribe").scrollIntoView({ behavior: "smooth" });
+      setTimeout(() => $("#subEmail") && $("#subEmail").focus(), 500);
+    });
+    const subForm = $("#subForm");
+    if (subForm) subForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = ($("#subEmail").value || "").trim();
+      if (!email) return;
+      try { localStorage.setItem("pv-sub", email); } catch (_) {}
+      subForm.hidden = true; $("#subNote").hidden = false;
+    });
     $("#resetAll").addEventListener("click", () => { state.query = ""; $("#search").value = ""; $("#clearSearch").hidden = true; state.savedOnly = false; syncSavedToggle(); $("#sort").value = "default"; state.sort = "default"; selectGroup("all", true); });
     $("#modalClose").addEventListener("click", hideModal);
     $("#modal").addEventListener("click", (e) => { if (e.target.id === "modal") hideModal(); });
