@@ -1,0 +1,5 @@
+# ProPrompt security contact
+Contact: mailto:hello@getproprompt.com
+Expires: 2027-06-29T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://getproprompt.com/.well-known/security.txt

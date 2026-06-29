@@ -342,7 +342,7 @@
     document.querySelectorAll(".m-launch .share-ico").forEach((b) => {
       b.onclick = () => {
         const link = location.origin + location.pathname + "?p=" + encodeURIComponent(slug(r.t));
-        const text = r.t + " — a free AI prompt from The Prompt Vault";
+        const text = r.t + " — a free AI prompt from ProPrompt";
         const net = b.dataset.share;
         const url = net === "x" ? `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(link)}`
           : net === "linkedin" ? `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(link)}`

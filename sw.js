@@ -1,9 +1,9 @@
-/* The Prompt Vault — service worker (offline + fast repeat loads) */
-const CACHE = "pv-v2";
+/* ProPrompt — service worker (offline + fast repeat loads) */
+const CACHE = "pp-v1";
 const CORE = [
   "./", "./index.html", "./styles.css", "./app.js",
   "./data/meta.json", "./data/index.json", "./data/bodies.json",
-  "./og-cover.png", "./icon-192.png", "./icon-512.png", "./manifest.webmanifest",
+  "./og-cover.png", "./icon.svg", "./icon-192.png", "./icon-512.png", "./manifest.webmanifest",
 ];
 
 self.addEventListener("install", (e) => {
