@@ -1,7 +1,7 @@
 {
   "name": "ProPrompt",
   "short_name": "ProPrompt",
-  "description": "2,200+ original premium AI prompts for ChatGPT, Claude & Gemini. Pro-grade prompts, free to start.",
+  "description": "2,400+ original premium AI prompts for ChatGPT, Claude & Gemini. Pro-grade prompts, free to start.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
