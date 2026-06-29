@@ -31,6 +31,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<style>
+/* ── ProPrompt landing sections ── */
+.why{padding:42px 0 6px;border-top:1px solid var(--line-soft);margin-top:30px;scroll-margin-top:78px}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));gap:16px}
+.why-card{background:var(--bg-card);border:1px solid var(--line);border-radius:16px;padding:22px 20px;transition:transform .25s ease,border-color .25s ease}
+.why-card:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.why-ico{font-size:26px;display:block;margin-bottom:10px}
+.why-card h3{font-family:"Fraunces",Georgia,serif;color:var(--ink);font-size:1.16rem;font-weight:600;margin:.1em 0 .35em}
+.why-card p{color:var(--ink-dim);font-size:.95rem;line-height:1.6;margin:0}
+.affiliate{padding:42px 0 8px;border-top:1px solid var(--line-soft);margin-top:30px;scroll-margin-top:78px}
+.aff-card{display:grid;grid-template-columns:1.5fr 1fr;gap:30px;align-items:center;border-radius:22px;padding:34px 32px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 16%,var(--bg-2)),var(--bg-2) 72%);border:1px solid color-mix(in srgb,var(--accent) 32%,var(--line))}
+.aff-eyebrow{font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.aff-left h2{font-family:"Fraunces",Georgia,serif;color:var(--ink);font-size:clamp(26px,4vw,40px);line-height:1.04;margin:.3em 0 .35em;font-weight:600}
+.aff-left h2 b{color:var(--accent)}
+.aff-left>p{color:var(--ink-dim);font-size:1.01rem;line-height:1.6;margin:0 0 18px;max-width:52ch}
+.aff-left>p b{color:var(--ink)}
+.aff-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+.aff-foot{color:var(--ink-faint);font-size:.84rem}
+.aff-perks{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.aff-perks li{color:var(--ink-dim);font-size:.97rem}
+.aff-perks li b{color:var(--accent)}
+@media(max-width:720px){.aff-card{grid-template-columns:1fr;padding:26px 22px}}
+.vault{padding:10px 0 6px;border-top:1px solid var(--line-soft);margin-top:30px;scroll-margin-top:78px}
+</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -76,7 +100,6 @@
   </a>
   <div class="head-actions">
     <a class="go-pro-btn" href="#pricing">✨ Go Pro</a>
-    <button class="ghost-btn install-btn" id="installBtn" hidden>⬇ Install app</button>
     <a class="ghost-btn" href="#groups">Browse</a>
     <button class="ghost-btn" id="savedNav" aria-label="View saved prompts">★ <span id="savedNavN">0</span></button>
     <button class="ghost-btn theme-toggle" id="themeToggle" aria-label="Toggle light / dark theme">
@@ -151,50 +174,20 @@
     <div class="coll-row" id="collRow"><!-- collection chips --></div>
   </section>
 
-  <!-- ░░ GROUP SHELVES ░░ -->
-  <section class="groups-section" id="groups" aria-label="Prompt shelves">
-    <div class="chip-row" id="groupRow"></div>
-    <div class="chip-row sub" id="catRow" hidden></div>
-  </section>
-
-  <!-- ░░ TOOLBAR ░░ -->
-  <section class="toolbar">
-    <div class="result-count" id="resultCount">Loading the vault…</div>
-    <div class="tool-right">
-      <button class="saved-toggle" id="savedToggle" aria-pressed="false">★ Saved</button>
-      <label class="sort-wrap"><span>Sort</span>
-        <select id="sort" aria-label="Sort prompts">
-          <option value="default">Featured order</option>
-          <option value="az">Title A → Z</option>
-          <option value="short">Shortest first</option>
-          <option value="long">Longest first</option>
-        </select>
-      </label>
+  <!-- ░░ WHY PROPROMPT ░░ -->
+  <section class="why" id="why" aria-label="Why ProPrompt">
+    <div class="sec-head"><h2>Why founders &amp; creators keep it open</h2><span class="sec-sub">not another scraped prompt dump</span></div>
+    <div class="why-grid">
+      <div class="why-card"><span class="why-ico">✍️</span><h3>Hand-built originals</h3><p>All 2,445 prompts written &amp; stress-tested by hand — not scraped, not AI-spun filler. Engineered to produce pro-grade output on the first try.</p></div>
+      <div class="why-card"><span class="why-ico">⚡</span><h3>Copy, fill, run in seconds</h3><p>Fill the <code>[BLANKS]</code> live, one-click copy, then launch straight into ChatGPT, Claude or Gemini. No setup, no account.</p></div>
+      <div class="why-card"><span class="why-ico">🎯</span><h3>For real work, not demos</h3><p>Cold emails, launch copy, AI headshots, business plans, agents &amp; mega-prompts — built for founders, marketers, creators &amp; devs.</p></div>
+      <div class="why-card"><span class="why-ico">🔓</span><h3>Free forever to start</h3><p>The entire searchable vault is free — no card, no trial clock. Go Pro only when you want the offline PDF &amp; Notion packs.</p></div>
     </div>
   </section>
 
-  <section class="grid" id="grid" aria-live="polite"></section>
-  <div class="load-more-wrap"><button class="load-more" id="loadMore" hidden>Load more prompts</button></div>
-
-  <div class="empty" id="empty" hidden>
-    <div class="empty-mark">🗝️</div>
-    <h3 id="emptyTitle">No prompts match that.</h3>
-    <p>Try a broader word, or <button class="link-btn" id="resetAll">reset all filters</button>.</p>
-  </div>
-
-  <!-- ░░ HOW TO USE ░░ -->
-  <section class="howto" aria-label="How to use any prompt">
-    <div class="sec-head"><h2>How to use any prompt</h2></div>
-    <ol class="howto-steps">
-      <li><span class="step-n">1</span><div><b>Find &amp; copy.</b> Search or browse a shelf, then hit <b>Copy</b> on any prompt.</div></li>
-      <li><span class="step-n">2</span><div><b>Fill the blanks.</b> Replace the highlighted <code>[VARIABLES]</code> (like <code>[TOPIC]</code>) with your details.</div></li>
-      <li><span class="step-n">3</span><div><b>Paste &amp; run.</b> Drop it into ChatGPT, Claude or Gemini. Tweak the reply by asking for changes.</div></li>
-    </ol>
-  </section>
-
   <!-- ░░ GO PRO / PRICING ░░ -->
-  <section class="pricing" id="pricing" aria-label="Go Pro">
-    <div class="sec-head"><h2>✨ Get the whole vault, organised</h2><span class="sec-sub">free forever — or go Pro for the offline packs &amp; extras</span></div>
+  <section class="pricing" id="pricing" aria-label="Pricing">
+    <div class="sec-head"><h2>✨ Simple pricing — start free, go Pro once</h2><span class="sec-sub">free forever, or one payment for the offline packs &amp; lifetime updates</span></div>
     <div class="pricing-grid">
       <div class="price-card">
         <div class="price-name">Free</div>
@@ -203,9 +196,10 @@
           <li>✓ All <b id="freeCount">2,445</b> prompts, searchable</li>
           <li>✓ Live fill-in customizer</li>
           <li>✓ One-click copy &amp; share links</li>
-          <li>✓ Save favourites · install as an app</li>
+          <li>✓ Run in ChatGPT · Claude · Gemini</li>
+          <li>✓ Save favourites · works offline</li>
         </ul>
-        <a class="price-btn ghost" href="#groups">Start browsing</a>
+        <a class="price-btn ghost" href="#vault">Start browsing free →</a>
       </div>
       <div class="price-card featured">
         <div class="price-badge">Lifetime · launch price</div>
@@ -221,6 +215,67 @@
         <a class="price-btn" id="goProBtn" href="#pricing" data-checkout="lemonsqueezy">Get Lifetime Pro →</a>
         <p class="price-note">One-time payment · instant download · 14-day money-back</p>
       </div>
+    </div>
+  </section>
+
+  <!-- ░░ AFFILIATE ░░ -->
+  <section class="affiliate" id="affiliate" aria-label="Affiliate program">
+    <div class="aff-card">
+      <div class="aff-left">
+        <span class="aff-eyebrow">💸 Partner program</span>
+        <h2>Promote ProPrompt, earn <b>40%</b>.</h2>
+        <p>Have an audience that uses AI? Share ProPrompt and earn <b>40% on every sale</b>, paid out automatically. We hand you the swipe copy, banners &amp; a tracked link — you just post.</p>
+        <div class="aff-actions">
+          <a class="price-btn" href="mailto:hello@getproprompt.com?subject=ProPrompt%20Affiliate%20%E2%80%94%20Founding%20Partner&amp;body=Hi%20Indrajeet%2C%20I%27d%20like%20to%20join%20the%20ProPrompt%20affiliate%20program.%20Here%27s%20where%20I%20share%3A%20">Become a founding affiliate →</a>
+          <span class="aff-foot">Launching with the Pro store — founding partners get the best slots.</span>
+        </div>
+      </div>
+      <ul class="aff-perks">
+        <li>✓ <b>40%</b> commission, recurring</li>
+        <li>✓ Done-for-you swipe copy &amp; banners</li>
+        <li>✓ Tracked link + live dashboard</li>
+        <li>✓ Built on Lemon Squeezy — reliable payouts</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ░░ HOW TO USE ░░ -->
+  <section class="howto" aria-label="How to use any prompt">
+    <div class="sec-head"><h2>How to use any prompt</h2></div>
+    <ol class="howto-steps">
+      <li><span class="step-n">1</span><div><b>Find &amp; copy.</b> Search or browse a shelf, then hit <b>Copy</b> on any prompt.</div></li>
+      <li><span class="step-n">2</span><div><b>Fill the blanks.</b> Replace the highlighted <code>[VARIABLES]</code> (like <code>[TOPIC]</code>) with your details.</div></li>
+      <li><span class="step-n">3</span><div><b>Paste &amp; run.</b> Drop it into ChatGPT, Claude or Gemini. Tweak the reply by asking for changes.</div></li>
+    </ol>
+  </section>
+
+  <!-- ░░ BROWSE THE FULL VAULT ░░ -->
+  <section class="vault" id="vault" aria-label="Browse the full vault">
+    <div class="sec-head"><h2>📚 Browse the full vault</h2><span class="sec-sub">2,445 prompts · search up top, or pick a shelf</span></div>
+    <div class="groups-section" id="groups" aria-label="Prompt shelves">
+      <div class="chip-row" id="groupRow"></div>
+      <div class="chip-row sub" id="catRow" hidden></div>
+    </div>
+    <div class="toolbar">
+      <div class="result-count" id="resultCount">Loading the vault…</div>
+      <div class="tool-right">
+        <button class="saved-toggle" id="savedToggle" aria-pressed="false">★ Saved</button>
+        <label class="sort-wrap"><span>Sort</span>
+          <select id="sort" aria-label="Sort prompts">
+            <option value="default">Featured order</option>
+            <option value="az">Title A → Z</option>
+            <option value="short">Shortest first</option>
+            <option value="long">Longest first</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <section class="grid" id="grid" aria-live="polite"></section>
+    <div class="load-more-wrap"><button class="load-more" id="loadMore" hidden>Load more prompts</button></div>
+    <div class="empty" id="empty" hidden>
+      <div class="empty-mark">🗝️</div>
+      <h3 id="emptyTitle">No prompts match that.</h3>
+      <p>Try a broader word, or <button class="link-btn" id="resetAll">reset all filters</button>.</p>
     </div>
   </section>
 

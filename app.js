@@ -5,7 +5,7 @@
 (() => {
   "use strict";
 
-  const BATCH = 48;
+  const BATCH = 24;
   const $ = (s, r = document) => r.querySelector(s);
   const fmt = (n) => n.toLocaleString("en-US");
   const SAVE_KEY = "pv-saved";
@@ -501,7 +501,11 @@
 
   /* ---------- search ---------- */
   let searchT;
-  function onSearch(v) { state.query = v; $("#clearSearch").hidden = !v; clearTimeout(searchT); searchT = setTimeout(applyFilters, 120); }
+  function onSearch(v) {
+    const wasEmpty = !state.query;
+    state.query = v; $("#clearSearch").hidden = !v; clearTimeout(searchT); searchT = setTimeout(applyFilters, 120);
+    if (v && wasEmpty) { const g = document.getElementById("vault") || document.getElementById("groups"); if (g) g.scrollIntoView({ behavior: "smooth", block: "start" }); }
+  }
   function applyInitialQuery() {
     const p = new URLSearchParams(location.search).get("q");
     if (p) { state.query = p; $("#search").value = p; $("#clearSearch").hidden = false; }
@@ -548,23 +552,15 @@
     $("#themeToggle").addEventListener("click", () => { const n = document.documentElement.dataset.theme === "light" ? "dark" : "light"; document.documentElement.dataset.theme = n; localStorage.setItem("pv-theme", n); });
     // PWA: offline service worker + installable
     if ("serviceWorker" in navigator) window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
-    let deferredPrompt = null;
-    window.addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); deferredPrompt = e; $("#installBtn").hidden = false; });
-    $("#installBtn").addEventListener("click", async () => {
-      if (!deferredPrompt) return;
-      deferredPrompt.prompt(); await deferredPrompt.userChoice; deferredPrompt = null; $("#installBtn").hidden = true;
-    });
-    window.addEventListener("appinstalled", () => { $("#installBtn").hidden = true; toast("Installed! Find it on your home screen 🎉"); });
-
-    const io = new IntersectionObserver((es) => { if (es[0].isIntersecting && !$("#loadMore").hidden) renderMore(); }, { rootMargin: "600px" });
-    io.observe($("#loadMore"));
+    // (install-app button removed by request — the site is still an installable PWA via the browser menu)
+    // (auto-infinite-scroll removed — the vault uses a manual "Load more" button so the page has a natural end)
 
     // scroll-reveal sections (progressive enhancement; skip if reduced motion)
     if (!matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
       const ro = new IntersectionObserver((es) => {
         es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); ro.unobserve(e.target); } });
       }, { threshold: 0.06, rootMargin: "0px 0px -40px 0px" });
-      document.querySelectorAll(".collections, .howto, .faq").forEach((el) => { el.classList.add("reveal"); ro.observe(el); });
+      document.querySelectorAll(".collections, .why, .affiliate, .howto, .faq").forEach((el) => { el.classList.add("reveal"); ro.observe(el); });
     }
   }
 
