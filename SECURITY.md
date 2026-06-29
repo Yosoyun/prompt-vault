@@ -12,7 +12,7 @@ ProPrompt (stylized **PRO·PROMPT**) is a free web app offering 2,260+ original 
 
 ## 1. Security model
 
-ProPrompt is a **static website hosted on GitHub Pages**. This is the single most important fact about our security posture, because it shrinks the attack surface to almost nothing.
+ProPrompt is a **static website hosted on our static hosting**. This is the single most important fact about our security posture, because it shrinks the attack surface to almost nothing.
 
 What this means in concrete terms:
 
@@ -25,7 +25,7 @@ What this means in concrete terms:
 
 - **Client-side risk.** The main residual application risk is in the front-end code itself — primarily cross-site scripting (XSS) if untrusted content were ever rendered unsafely into the DOM. Because our content is authored by us and the customizer only fills user text into prompt templates that are copied to the clipboard (not executed), this surface is small, but it is the surface we watch most closely.
 - **Supply-chain risk.** Any third-party JavaScript or CDN dependency we include runs with full access to the page. See [Section 8](#8-supply-chain-notes).
-- **Platform / account risk.** The integrity of the site depends on our GitHub account, our domain registrar/DNS, and the GitHub Pages platform. Compromise of those would let an attacker alter what visitors receive. We treat the security of those accounts (strong unique credentials, MFA) as part of our threat model.
+- **Platform / account risk.** The integrity of the site depends on our our hosting account, our domain registrar/DNS, and the our static hosting platform. Compromise of those would let an attacker alter what visitors receive. We treat the security of those accounts (strong unique credentials, MFA) as part of our threat model.
 - **Third-party services.** Payments, newsletter, and analytics are handled by external providers (see Sections 3 and 2). Their security is governed by their own programs; we minimize what we hand to them.
 
 ---
@@ -67,11 +67,11 @@ This arrangement means the highest-sensitivity data in the whole product — pay
 
 ## 4. Transport security
 
-- **HTTPS is enforced** by GitHub Pages for `getproprompt.com`.
-- GitHub Pages provisions and **auto-renews the TLS certificate**, so there is no manual certificate-renewal step that could lapse.
-- We recommend keeping the **"Enforce HTTPS"** setting enabled in the GitHub Pages configuration so that any HTTP request is redirected to HTTPS.
+- **HTTPS is enforced** by our static hosting for `getproprompt.com`.
+- our static hosting provisions and **auto-renews the TLS certificate**, so there is no manual certificate-renewal step that could lapse.
+- We recommend keeping the **"Enforce HTTPS"** setting enabled in the our static hosting configuration so that any HTTP request is redirected to HTTPS.
 
-**Recommended hardening — HSTS.** We recommend enabling **HTTP Strict Transport Security (HSTS)** so browsers refuse to connect over plaintext HTTP after the first visit. Because GitHub Pages cannot set custom response headers (see [Section 5](#5-recommended-http-security-headers)), HSTS in practice requires fronting the site with a proxy such as Cloudflare. A reasonable starter header is:
+**Recommended hardening — HSTS.** We recommend enabling **HTTP Strict Transport Security (HSTS)** so browsers refuse to connect over plaintext HTTP after the first visit. Because our static hosting cannot set custom response headers (see [Section 5](#5-recommended-http-security-headers)), HSTS in practice requires fronting the site with a proxy such as Cloudflare. A reasonable starter header is:
 
 ```
 Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
@@ -85,7 +85,7 @@ Only add `preload` once you are confident every subdomain will be served over HT
 
 These headers are part of our target hardening posture. They reduce the impact of XSS, clickjacking, MIME-sniffing, and referrer leakage.
 
-> **Important platform constraint:** **GitHub Pages cannot set custom HTTP response headers.** You cannot configure these headers from the GitHub Pages settings or from any file in the repository. The two practical options are:
+> **Important platform constraint:** **our static hosting cannot set custom HTTP response headers.** You cannot configure these headers from the our static hosting settings or from any file in the repository. The two practical options are:
 >
 > 1. **Content-Security-Policy via a `<meta http-equiv>` tag** in the HTML `<head>` — this is the one header that *can* be delivered without a proxy (note: `frame-ancestors`, `report-uri`, and a few directives are **ignored** when CSP is set via `<meta>`, so clickjacking protection still needs option 2).
 > 2. **Proxy the site through Cloudflare** (point DNS at Cloudflare and enable the proxy) and use **Transform Rules → Response Header rules** to add CSP, HSTS, and the remaining headers as real HTTP response headers.
@@ -164,11 +164,11 @@ We welcome reports from security researchers and will work with you in good fait
 
 - The ProPrompt website and its content at `https://getproprompt.com` and its subdomains.
 - Client-side vulnerabilities such as XSS, content injection, clickjacking, or insecure handling of `localStorage` data.
-- Misconfigurations of HTTPS, security headers, DNS, or the GitHub Pages / Cloudflare setup.
+- Misconfigurations of HTTPS, security headers, DNS, or the our static hosting / Cloudflare setup.
 
 **Out of scope:**
 
-- **Lemon Squeezy** (our payments Merchant of Record), our **newsletter email provider**, our **analytics provider**, GitHub Pages, Cloudflare, and any other third-party platform — please report issues in those systems directly to the respective vendor's security team.
+- **Lemon Squeezy** (our payments Merchant of Record), our **newsletter email provider**, our **analytics provider**, our static hosting, Cloudflare, and any other third-party platform — please report issues in those systems directly to the respective vendor's security team.
 - Findings that require physical access to a victim's unlocked device, social engineering of the operator, or compromised end-user machines.
 - Volumetric denial-of-service / stress testing, automated scanner output without a demonstrated impact, missing "best-practice" headers reported without an exploit, and theoretical issues with no realistic attack path.
 - Reports about the *content* of prompts (these are editorial, not security, matters).
@@ -207,7 +207,7 @@ Because the site runs entirely in the visitor's browser, any third-party JavaScr
 - **Review dependencies before adding them.** Check what a library actually does, its maintenance status, its own transitive dependencies, and its footprint. Remove anything unused.
 - **Lock and audit build-time dependencies.** If a build toolchain is used, commit a lockfile and run periodic dependency audits so known-vulnerable packages are caught and updated.
 - **Align CSP with the dependency list.** Every allowed origin in `script-src` / `connect-src` should correspond to a real, reviewed dependency. When a dependency is removed, remove its origin from the CSP too.
-- **Protect the source of truth.** Because the deployed site is whatever is in the GitHub repository, the security of the GitHub account and its access controls (strong unique password, MFA, limited collaborators) is part of supply-chain integrity.
+- **Protect the source of truth.** Because the deployed site is whatever is in our source repository, the security of the our hosting account and its access controls (strong unique password, MFA, limited collaborators) is part of supply-chain integrity.
 
 ---
 
