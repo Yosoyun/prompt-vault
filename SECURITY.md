@@ -2,7 +2,7 @@
 
 This document serves two purposes. It is an **honest internal record of ProPrompt's security posture** — what we run, what we store, and where the risk genuinely sits — and it is our **public responsible-disclosure policy** for security researchers.
 
-ProPrompt (stylized **PRO·PROMPT**) is a free web app offering 2,260+ original AI prompts with instant search, a fill-in-the-blanks customizer, one-click copy, and "Run in ChatGPT / Claude / Gemini" buttons. It is operated by **Indrajeet Yadav**, an individual sole proprietor based in Puducherry, India.
+ProPrompt (stylized **PRO·PROMPT**) is a free web app offering 2,260+ original AI prompts with instant search, a fill-in-the-blanks customizer, one-click copy, and "Run in ChatGPT / Claude / Gemini" buttons. It operates as an independent brand; security contact: hello@getproprompt.com.
 
 - **Website:** https://getproprompt.com
 - **Security contact:** hello@getproprompt.com
