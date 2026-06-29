@@ -1,5 +1,5 @@
 /* ProPrompt — service worker (offline + fast repeat loads) */
-const CACHE = "pp-v1";
+const CACHE = "pp-v2";
 const CORE = [
   "./", "./index.html", "./styles.css", "./app.js",
   "./data/meta.json", "./data/index.json", "./data/bodies.json",

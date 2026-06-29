@@ -533,6 +533,11 @@
       document.querySelector(".subscribe").scrollIntoView({ behavior: "smooth" });
       setTimeout(() => $("#subEmail") && $("#subEmail").focus(), 500);
     });
+    const affBtn = $("#affBtn");
+    if (affBtn) affBtn.addEventListener("click", () => {
+      try { navigator.clipboard.writeText("hello@getproprompt.com"); } catch (_) {}
+      toast("📨 Email hello@getproprompt.com to join as a founding affiliate — address copied!");
+    });
     const subForm = $("#subForm");
     if (subForm) subForm.addEventListener("submit", (e) => {
       e.preventDefault();
