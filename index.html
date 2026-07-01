@@ -1058,7 +1058,35 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
     if (!supabase) return Promise.resolve({ offline: true });
     return supabase.from('leads').insert({
       email: email, source: source || null, ref: ref, tier_intent: tierIntent || null
-    }).then(function(res){ if (res && res.error) throw res.error; return res; });
+    }).then(function(res){
+      if (res && res.error) throw res.error;
+      track('lead', { source: source || null, tier: tierIntent || null });
+      return res;
+    });
+  }
+
+  // ---- first-party analytics (anonymous funnel events → public.page_events) ----
+  var _sid = null;
+  function sessionId(){
+    if (_sid) return _sid;
+    try { _sid = localStorage.getItem('pp_sid'); } catch(_){}
+    if (!_sid){
+      _sid = 's_' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36).slice(-4);
+      try { localStorage.setItem('pp_sid', _sid); } catch(_){}
+    }
+    return _sid;
+  }
+  function track(event, meta){
+    if (!supabase) return;
+    var ref = null; try { ref = document.referrer || null; } catch(_){}
+    try {
+      supabase.from('page_events').insert({
+        event: event,
+        path: (location.pathname + location.hash).slice(0, 300),
+        ref: ref, session_id: sessionId(),
+        meta: meta || null
+      }).then(function(){}, function(){});   // fire-and-forget, never blocks UX
+    } catch(_){}
   }
 
   /* ---------- gold dust canvas ---------- */
@@ -1998,6 +2026,7 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
   /* ----- open / close modals ----- */
   function openAuth(mode){
     if (!supabase){ showToast('Auth is unavailable on this page'); return; }
+    track('auth_open', { mode: mode || 'login' });
     setAuthMode(mode || 'login');
     hideMsg(authMsg);
     acctBack.classList.remove('show');
@@ -2274,7 +2303,7 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
   /* ----- track last opened prompt so we can re-gate after auth changes ----- */
   var lastOpened = null;
   var _openModal = openModal;
-  openModal = function(p){ lastOpened = p; return _openModal(p); };
+  openModal = function(p){ lastOpened = p; track('prompt_open', { id: p && p.i, tier: p && p.tier }); return _openModal(p); };
 
   /* ----- session bootstrap + reactive auth ----- */
   function bootstrapAuth(){
@@ -2347,6 +2376,7 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
   }
 
   bootstrapAuth();
+  track('pageview');
 })();
 </script>
 </body>
