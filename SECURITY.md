@@ -12,20 +12,22 @@ ProPrompt (stylized **PRO·PROMPT**) is a free web app offering 2,260+ original 
 
 ## 1. Security model
 
-ProPrompt is a **static website hosted on our static hosting**. This is the single most important fact about our security posture, because it shrinks the attack surface to almost nothing.
+ProPrompt is a **static frontend** served over HTTPS, backed by a small, tightly-scoped set of managed services: **Supabase** for authentication and the database, **Cloudflare Pages Functions** for the few server endpoints we run, and **Lemon Squeezy** (Merchant of Record) for payments. We keep the attack surface deliberately small and **enforce access on the server, never only in the browser.**
 
 What this means in concrete terms:
 
-- **No backend.** There is no application server we run, so there is no server-side code to exploit, no request handler to inject into, and no runtime we have to patch.
-- **No database.** We do not operate a database. There is no store of user records to breach, dump, or ransom.
-- **No user accounts.** There is no login, no session, no password, and no authentication system. There are no credentials for an attacker to steal, phish, or brute-force, and no account-takeover risk because there are no accounts.
-- **No server-side code execution.** The site is plain HTML, CSS, and client-side JavaScript served as static files. There is no SSRF, no server-side template injection, no command injection, and no insecure deserialization surface, because nothing executes on a server we control.
+- **Authentication.** Sign-in is handled by Supabase Auth (GoTrue). We never see or store raw passwords; access tokens are verified server-side on every request that returns protected data.
+- **Database with Row-Level Security.** Account, entitlement, and purchase data live in Supabase Postgres with **Row-Level Security on, default-deny**. A signed-in user can read only their own rows, and clients cannot write their own entitlement or read another user's data.
+- **Premium content is gated on the server.** Paid prompt bodies live in a table with **RLS on and zero client-readable policies** — no client role can read them. They are served only by a Cloudflare Function, using a server-only service key, **after a per-request entitlement check**. There is no bulk-scrape path and no way to unlock paid content by manipulating the frontend.
+- **Secrets stay server-side.** The browser uses only the Supabase publishable/anon key. The Supabase service-role key and the Lemon Squeezy webhook secret exist only in server environment variables — never in client code or the repository.
+- **Payment integrity.** Purchase webhooks are verified by HMAC signature and de-duplicated (idempotent), so access is granted only on genuine, non-replayed payment events.
 
 **What risk remains.** Eliminating the backend does not make the site risk-free; it changes *where* the risk lives:
 
 - **Client-side risk.** The main residual application risk is in the front-end code itself — primarily cross-site scripting (XSS) if untrusted content were ever rendered unsafely into the DOM. Because our content is authored by us and the customizer only fills user text into prompt templates that are copied to the clipboard (not executed), this surface is small, but it is the surface we watch most closely.
 - **Supply-chain risk.** Any third-party JavaScript or CDN dependency we include runs with full access to the page. See [Section 8](#8-supply-chain-notes).
-- **Platform / account risk.** The integrity of the site depends on our our hosting account, our domain registrar/DNS, and the our static hosting platform. Compromise of those would let an attacker alter what visitors receive. We treat the security of those accounts (strong unique credentials, MFA) as part of our threat model.
+- **Access-control & secret risk.** Because we run auth, a database, and server functions, broken access control, leaked secrets, and webhook spoofing are part of our threat model. We mitigate with default-deny RLS, server-side entitlement checks, server-only secrets, signed + idempotent webhooks, and per-user rate limiting on protected endpoints.
+- **Platform / account risk.** The integrity of the service depends on our hosting (Cloudflare Pages), Supabase, our domain registrar/DNS, and Lemon Squeezy. Compromise of those accounts would be serious, so we treat their security (strong unique credentials, MFA) as part of our threat model.
 - **Third-party services.** Payments, newsletter, and analytics are handled by external providers (see Sections 3 and 2). Their security is governed by their own programs; we minimize what we hand to them.
 
 ---
@@ -36,8 +38,9 @@ ProPrompt is built to collect as close to nothing as possible.
 
 **What is NOT stored by ProPrompt:**
 
-- We have no backend and no database, so we do **not** store any visitor data on our side.
-- We do not create user accounts, so there are no profiles, emails, or passwords held by the app.
+- We never store **raw passwords** — authentication is handled by Supabase Auth (GoTrue).
+- We never store **payment card data** — that is handled entirely by Lemon Squeezy as Merchant of Record.
+- We store only the **minimum account data** needed to run the Service: your email, an account identifier, your plan/entitlement, and basic in-app preferences (see the Privacy Policy).
 
 **What stays on the visitor's own device:**
 

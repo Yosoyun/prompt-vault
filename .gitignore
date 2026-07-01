@@ -1,4 +1,7 @@
 tools/aiprm_raw.json
+tools/premium-seed.json
+.env
+.dev.vars
 .gstack/
 .DS_Store
 LAUNCH-PLAYBOOK.md
@@ -7,3 +10,13 @@ product/
 _launch/
 _blueprint/
 _seo/
+
+# Backend + owner-only tooling — kept OUT of the public repo.
+# These get committed at the private-repo / Cloudflare Pages migration.
+functions/
+supabase/
+tools/load-premium.mjs
+data/bodies.free.json
+
+# Local editor / agent state
+.claude/

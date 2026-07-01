@@ -1,370 +1,2353 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ProPrompt — 2,400+ Premium AI Prompts for ChatGPT, Claude & Gemini</title>
-<meta name="description" content="A free, hand-built library of 2,400+ premium AI prompts — viral, million-dollar business, expert techniques, AI-image (headshots, selfies, Midjourney, DALL·E, GPT-4o), LinkedIn & content writing, book writing, prompt generators, agentic & mega-prompts — for ChatGPT, Claude & Gemini. One-click copy. No sign-up.">
-<meta name="keywords" content="AI prompts, ChatGPT prompts, premium prompts, million dollar prompts, viral prompts, business prompts, image prompts, Midjourney prompts, DALL-E prompts, Flux prompts, Nano Banana, agentic prompts, system prompts, mega prompts, Claude prompts, Gemini prompts, prompt engineering, context engineering">
-<meta name="author" content="ProPrompt">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://getproprompt.com/">
-<meta name="theme-color" content="#14130f">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="apple-touch-icon" href="icon-192.png">
-<link rel="icon" type="image/svg+xml" href="icon.svg">
-<link rel="icon" type="image/png" href="icon-192.png">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="ProPrompt">
-<!-- Open Graph / Twitter -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="ProPrompt">
-<meta property="og:title" content="ProPrompt — 2,400+ premium AI prompts">
-<meta property="og:description" content="Search, filter & copy 2,400+ premium AI prompts — viral, image, agentic & mega-prompts. Free forever.">
-<meta property="og:url" content="https://getproprompt.com/">
-<meta property="og:image" content="https://getproprompt.com/og-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ProPrompt — 2,400+ premium AI prompts">
-<meta name="twitter:description" content="Search, filter & copy 2,400+ premium AI prompts — viral, image, agentic & mega. Free forever.">
-<meta name="twitter:image" content="https://getproprompt.com/og-cover.png">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ProPrompt — The Operators' Arsenal</title>
+<meta name="description" content="A premium, hand-built library of 2,713 AI prompts across 26 collections for ChatGPT, Claude & Gemini. Own it, don't rent it." />
+<link rel="canonical" href="https://getproprompt.com/" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#0a0a0c" />
+<link rel="icon" href="/favicon-32.png" sizes="32x32" />
+<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/manifest.webmanifest" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="ProPrompt" />
+<meta property="og:url" content="https://getproprompt.com/" />
+<meta property="og:title" content="ProPrompt — Premium AI Prompts for ChatGPT, Claude &amp; Gemini" />
+<meta property="og:description" content="2,713 hand-built, never-scraped AI prompts across 26 collections. Start free — own it, don't rent it." />
+<meta property="og:image" content="https://getproprompt.com/og-cover.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="ProPrompt — Premium AI Prompts" />
+<meta name="twitter:description" content="2,713 hand-built AI prompts for ChatGPT, Claude &amp; Gemini. Start free." />
+<meta name="twitter:image" content="https://getproprompt.com/og-cover.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,400..700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 <style>
-/* ── ProPrompt landing sections ── */
-.why{padding:42px 0 6px;border-top:1px solid var(--line-soft);margin-top:30px;scroll-margin-top:78px}
-.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));gap:16px}
-.why-card{background:var(--bg-card);border:1px solid var(--line);border-radius:16px;padding:22px 20px;transition:transform .25s ease,border-color .25s ease}
-.why-card:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
-.why-ico{font-size:26px;display:block;margin-bottom:10px}
-.why-card h3{font-family:"Fraunces",Georgia,serif;color:var(--ink);font-size:1.16rem;font-weight:600;margin:.1em 0 .35em}
-.why-card p{color:var(--ink-dim);font-size:.95rem;line-height:1.6;margin:0}
-.affiliate{padding:42px 0 8px;border-top:1px solid var(--line-soft);margin-top:30px;scroll-margin-top:78px}
-.aff-card{display:grid;grid-template-columns:1.5fr 1fr;gap:30px;align-items:center;border-radius:22px;padding:34px 32px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 16%,var(--bg-2)),var(--bg-2) 72%);border:1px solid color-mix(in srgb,var(--accent) 32%,var(--line))}
-.aff-eyebrow{font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
-.aff-left h2{font-family:"Fraunces",Georgia,serif;color:var(--ink);font-size:clamp(26px,4vw,40px);line-height:1.04;margin:.3em 0 .35em;font-weight:600}
-.aff-left h2 b{color:var(--accent)}
-.aff-left>p{color:var(--ink-dim);font-size:1.01rem;line-height:1.6;margin:0 0 18px;max-width:52ch}
-.aff-left>p b{color:var(--ink)}
-.aff-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
-.aff-foot{color:var(--ink-faint);font-size:.84rem}
-.aff-perks{list-style:none;margin:0;padding:0;display:grid;gap:12px}
-.aff-perks li{color:var(--ink-dim);font-size:.97rem}
-.aff-perks li b{color:var(--accent)}
-@media(max-width:720px){.aff-card{grid-template-columns:1fr;padding:26px 22px}}
-.vault{padding:10px 0 6px;border-top:1px solid var(--line-soft);margin-top:30px;scroll-margin-top:78px}
+:root{
+  --void:#0a0a0c;
+  --ink:#0d0d10;
+  --char:#141417;
+  --panel:#16161b;
+  --panel2:#1c1c22;
+  --line:rgba(214,182,108,.16);
+  --line2:rgba(214,182,108,.30);
+  --gold:#d8b667;
+  --gold-hi:#f4dca0;
+  --gold-deep:#a9863c;
+  --rose:#c98b7a;
+  --cream:#efe7d6;
+  --mute:#9a9486;
+  --faint:#6b6658;
+  --white:#f6f1e6;
+  --disp:'Fraunces',serif;
+  --serif:'Cormorant Garamond',serif;
+  --body:'Outfit',sans-serif;
+  --mono:'DM Mono',monospace;
+  --r:18px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--body);
+  background:var(--void);
+  color:var(--cream);
+  line-height:1.6;
+  overflow-x:hidden;
+  font-weight:300;
+  -webkit-font-smoothing:antialiased;
+}
+body.modal-open{overflow:hidden}
+canvas#dust{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.atmos{
+  position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(900px 600px at 78% -8%,rgba(216,182,103,.16),transparent 60%),
+    radial-gradient(700px 700px at 8% 14%,rgba(201,139,122,.07),transparent 55%),
+    radial-gradient(1200px 900px at 50% 120%,rgba(216,182,103,.08),transparent 60%);
+}
+.grain{
+  position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+.wrap{position:relative;z-index:3;max-width:1180px;margin:0 auto;padding:0 28px}
+
+/* custom cursor */
+.cursor-dot,.cursor-ring{position:fixed;top:0;left:0;z-index:9999;pointer-events:none;border-radius:50%;transform:translate(-50%,-50%);mix-blend-mode:screen}
+.cursor-dot{width:6px;height:6px;background:var(--gold-hi);box-shadow:0 0 10px var(--gold)}
+.cursor-ring{width:34px;height:34px;border:1px solid var(--line2);transition:width .25s var(--ease),height .25s var(--ease),border-color .25s,background .25s}
+.cursor-ring.hot{width:54px;height:54px;border-color:var(--gold);background:rgba(216,182,103,.07)}
+@media(hover:none){.cursor-dot,.cursor-ring{display:none}}
+
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(216,182,103,.3);color:#fff}
+
+/* ---------- NAV ---------- */
+nav{position:sticky;top:0;z-index:200;transition:background .4s,border-color .4s,backdrop-filter .4s}
+nav.scrolled{background:rgba(10,10,12,.78);backdrop-filter:blur(16px) saturate(140%);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1180px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;gap:30px}
+.brand{display:flex;align-items:center;gap:11px;font-family:var(--disp);font-weight:500;font-size:1.32rem;letter-spacing:-.01em;color:var(--white)}
+.mark{
+  font-family:var(--mono);font-weight:500;color:var(--void);
+  background:linear-gradient(135deg,var(--gold-hi),var(--gold-deep));
+  width:34px;height:34px;border-radius:9px;display:grid;place-items:center;font-size:1rem;
+  box-shadow:0 4px 18px rgba(216,182,103,.34);letter-spacing:-2px;padding-right:1px;
+}
+.nav-links{display:flex;gap:28px;margin-left:14px;font-size:.82rem;letter-spacing:.04em;color:var(--mute)}
+.nav-links a{position:relative;transition:color .3s}
+.nav-links a::after{content:'';position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--gold);transition:width .3s var(--ease)}
+.nav-links a:hover{color:var(--cream)}
+.nav-links a:hover::after{width:100%}
+.nav-right{margin-left:auto;display:flex;align-items:center;gap:22px}
+.signin{font-size:.82rem;letter-spacing:.04em;color:var(--mute);transition:color .3s}
+.signin:hover{color:var(--cream)}
+.btn{
+  font-family:var(--body);font-weight:400;cursor:pointer;border:none;font-size:.84rem;letter-spacing:.02em;
+  border-radius:100px;transition:transform .25s var(--ease),box-shadow .3s,background .3s,color .3s;
+}
+.btn-gold{
+  background:linear-gradient(135deg,var(--gold-hi),var(--gold));color:#1a1407;padding:11px 24px;font-weight:500;
+  box-shadow:0 6px 24px rgba(216,182,103,.28),inset 0 1px 0 rgba(255,255,255,.4);
+}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(216,182,103,.42),inset 0 1px 0 rgba(255,255,255,.5)}
+.btn-ghost{background:transparent;color:var(--cream);padding:11px 24px;border:1px solid var(--line2)}
+.btn-ghost:hover{background:rgba(216,182,103,.08);border-color:var(--gold);transform:translateY(-2px)}
+.menu-toggle{display:none;background:none;border:none;color:var(--cream);font-size:1.5rem;cursor:pointer}
+
+/* ---------- HERO ---------- */
+header.hero{position:relative;padding:80px 0 60px;overflow:hidden}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.7rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:26px;padding:7px 16px;border:1px solid var(--line);border-radius:100px;background:rgba(216,182,103,.04)}
+.eyebrow .pip{width:5px;height:5px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--gold);animation:pulse 2.4s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:48px;align-items:center}
+h1.hero-h{font-family:var(--disp);font-weight:340;font-size:clamp(2.7rem,6vw,4.7rem);line-height:.98;letter-spacing:-.025em;color:var(--white)}
+h1.hero-h em{font-style:italic;font-weight:300;color:var(--gold)}
+h1.hero-h .grad{background:linear-gradient(110deg,var(--gold-hi),var(--rose) 80%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{font-family:var(--serif);font-size:1.42rem;line-height:1.5;color:var(--cream);max-width:34ch;margin:26px 0 12px;font-weight:400}
+.hero-sub b{color:var(--gold);font-weight:600}
+.hero-meta{display:flex;gap:26px;margin:22px 0 32px;flex-wrap:wrap}
+.hero-meta div{display:flex;flex-direction:column}
+.hero-meta .n{font-family:var(--disp);font-size:1.55rem;color:var(--white);font-weight:400;line-height:1}
+.hero-meta .l{font-family:var(--mono);font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--faint);margin-top:6px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-cta .btn{padding:14px 28px;font-size:.92rem}
+.trust{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;color:var(--faint);margin-top:22px}
+.trust b{color:var(--gold)}
+
+/* centrepiece deck */
+.deck-stage{perspective:1400px;height:440px;position:relative;display:grid;place-items:center}
+.deck{position:relative;width:300px;height:380px;transform-style:preserve-3d;transition:transform .2s ease-out}
+.card3d{
+  position:absolute;inset:0;border-radius:20px;padding:26px 24px;
+  background:linear-gradient(160deg,rgba(28,28,34,.94),rgba(16,16,20,.96));
+  border:1px solid var(--line2);transform-style:preserve-3d;
+  box-shadow:0 30px 70px rgba(0,0,0,.55),inset 0 1px 0 rgba(216,182,103,.12);
+  display:flex;flex-direction:column;
+}
+.card3d::before{content:'';position:absolute;inset:0;border-radius:20px;background:radial-gradient(120% 80% at 50% 0%,rgba(216,182,103,.12),transparent 60%);pointer-events:none}
+.card3d .ct{font-family:var(--mono);font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
+.card3d h3{font-family:var(--disp);font-size:1.5rem;font-weight:400;color:var(--white);margin:14px 0 0;line-height:1.05}
+.card3d .body{font-family:var(--mono);font-size:.74rem;color:var(--mute);line-height:1.7;margin-top:18px;flex:1}
+.card3d .body .v{color:var(--gold);background:rgba(216,182,103,.1);padding:1px 6px;border-radius:5px;border:1px solid var(--line)}
+.card3d .foot{display:flex;align-items:center;justify-content:space-between;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+.card3d .badge{font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;color:var(--faint)}
+.card3d .dots{display:flex;gap:6px}
+.card3d .dots i{width:7px;height:7px;border-radius:50%;background:var(--line2)}
+.card3d .dots i:first-child{background:var(--gold)}
+.card-back-1{transform:translateZ(-60px) translateY(26px) rotate(-7deg) scale(.92);opacity:.5}
+.card-back-2{transform:translateZ(-30px) translateY(13px) rotate(4deg) scale(.96);opacity:.78}
+.deck-glow{position:absolute;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(216,182,103,.22),transparent 65%);filter:blur(20px);z-index:-1}
+.deck-tag{position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--faint)}
+
+/* ---------- section frame ---------- */
+section{position:relative;z-index:3;padding:96px 0}
+.sec-eyebrow{font-family:var(--mono);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.sec-eyebrow::before{content:'';width:34px;height:1px;background:var(--line2)}
+h2.sec-h{font-family:var(--disp);font-weight:340;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.04;letter-spacing:-.02em;color:var(--white);max-width:18ch}
+h2.sec-h em{font-style:italic;color:var(--gold);font-weight:300}
+.sec-lead{font-family:var(--serif);font-size:1.28rem;color:var(--mute);max-width:48ch;margin-top:18px;font-weight:400}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
+
+/* ---------- COLLECTIONS ---------- */
+.coll-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:54px}
+.coll{
+  position:relative;padding:26px 22px 24px;border-radius:var(--r);overflow:hidden;cursor:pointer;
+  background:linear-gradient(165deg,rgba(24,24,29,.7),rgba(14,14,18,.7));
+  border:1px solid var(--line);transition:transform .4s var(--ease),border-color .4s,background .4s;
+  min-height:172px;display:flex;flex-direction:column;
+}
+.coll::after{content:'';position:absolute;left:0;top:0;width:100%;height:2px;background:linear-gradient(90deg,var(--g-col,var(--gold)),transparent);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.coll:hover{transform:translateY(-6px);border-color:var(--line2);background:linear-gradient(165deg,rgba(30,28,24,.85),rgba(16,15,18,.85))}
+.coll:hover::after{transform:scaleX(1)}
+.coll .ci{font-size:1.7rem;margin-bottom:auto;line-height:1;filter:drop-shadow(0 2px 8px rgba(0,0,0,.4))}
+.coll .num{font-family:var(--mono);font-size:.62rem;color:var(--faint);letter-spacing:.16em;position:absolute;top:24px;right:22px}
+.coll h4{font-family:var(--disp);font-size:1.12rem;font-weight:400;color:var(--white);margin:18px 0 7px;line-height:1.1}
+.coll p{font-size:.78rem;color:var(--mute);line-height:1.5}
+.coll-foot{margin-top:46px;font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;color:var(--faint);text-align:center}
+.coll-foot b{color:var(--gold)}
+
+/* ---------- BROWSE ---------- */
+.browse-tools{margin-top:48px}
+.search-row{position:relative;max-width:560px}
+.search-row .sicon{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:var(--gold);font-family:var(--mono);font-size:.9rem;pointer-events:none}
+#searchInput{
+  width:100%;background:linear-gradient(180deg,rgba(20,20,25,.8),rgba(12,12,16,.8));
+  border:1px solid var(--line2);border-radius:14px;padding:15px 18px 15px 44px;
+  color:var(--cream);font-family:var(--mono);font-size:.9rem;letter-spacing:.01em;outline:none;
+  transition:border-color .3s,box-shadow .3s;
+}
+#searchInput::placeholder{color:var(--faint)}
+#searchInput:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(216,182,103,.08)}
+.search-clear{position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--faint);cursor:pointer;font-size:1rem;display:none;transition:color .3s}
+.search-clear:hover{color:var(--gold)}
+.search-clear.on{display:block}
+.chip-row{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}
+.chip{
+  font-family:var(--mono);font-size:.7rem;letter-spacing:.04em;color:var(--mute);cursor:pointer;
+  border:1px solid var(--line);background:rgba(255,255,255,.015);padding:8px 14px;border-radius:100px;
+  display:inline-flex;align-items:center;gap:7px;transition:border-color .3s,color .3s,background .3s,transform .2s;white-space:nowrap;
+}
+.chip:hover{border-color:var(--line2);color:var(--cream);transform:translateY(-1px)}
+.chip .cc{font-size:.85rem;line-height:1}
+.chip .cn{font-size:.62rem;color:var(--faint);background:rgba(255,255,255,.04);padding:1px 7px;border-radius:100px;transition:color .3s,background .3s}
+.chip.active{border-color:var(--gold);background:rgba(216,182,103,.1);color:var(--gold-hi)}
+.chip.active .cn{color:var(--gold);background:rgba(216,182,103,.16)}
+.result-line{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;color:var(--faint);margin-top:30px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.result-line b{color:var(--gold)}
+.result-line .clearfilter{color:var(--rose);cursor:pointer;border-bottom:1px dashed rgba(201,139,122,.4);transition:color .3s}
+.result-line .clearfilter:hover{color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+.pcard{
+  position:relative;display:flex;flex-direction:column;cursor:pointer;
+  padding:22px 22px 20px;border-radius:var(--r);min-height:184px;overflow:hidden;
+  background:linear-gradient(165deg,rgba(22,22,28,.72),rgba(13,13,17,.72));
+  border:1px solid var(--line);transition:transform .35s var(--ease),border-color .35s,background .35s;
+}
+.pcard::after{content:'';position:absolute;left:0;top:0;width:100%;height:2px;background:linear-gradient(90deg,var(--p-col,var(--gold)),transparent);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
+.pcard:hover{transform:translateY(-5px);border-color:var(--line2);background:linear-gradient(165deg,rgba(28,27,24,.85),rgba(15,14,17,.85))}
+.pcard:hover::after{transform:scaleX(1)}
+.pcard-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}
+.pcard-cat{font-family:var(--mono);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:7px;min-width:0}
+.pcard-cat .gi{font-size:.95rem;flex-shrink:0}
+.pcard-cat .gt{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--faint);letter-spacing:.12em}
+.pcard h5{font-family:var(--disp);font-size:1.15rem;font-weight:400;color:var(--white);line-height:1.14;margin-bottom:9px}
+.pcard p{font-size:.8rem;color:var(--mute);line-height:1.5;flex:1;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.pcard-foot{display:flex;align-items:center;justify-content:space-between;margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
+.pcard-meta{font-family:var(--mono);font-size:.6rem;letter-spacing:.08em;color:var(--faint)}
+.pcard-meta .vn{color:var(--mute)}
+.pcard .open-ic{color:var(--faint);font-size:1rem;transition:transform .35s,color .35s}
+.pcard:hover .open-ic{transform:translate(3px,-3px);color:var(--gold)}
+/* tier badge */
+.tier-badge{font-family:var(--mono);font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;padding:4px 9px;border-radius:100px;display:inline-flex;align-items:center;gap:5px;white-space:nowrap;flex-shrink:0}
+.tier-badge.t-free{color:var(--faint);border:1px solid var(--line);background:rgba(255,255,255,.02)}
+.tier-badge.t-pro{color:var(--gold);border:1px solid var(--line2);background:rgba(216,182,103,.05)}
+.tier-badge.t-studio{color:#1a1407;border:1px solid var(--gold);background:linear-gradient(135deg,var(--gold-hi),var(--gold));font-weight:500;box-shadow:0 3px 12px rgba(216,182,103,.3)}
+.tier-badge .crown{font-size:.66rem}
+.load-wrap{display:flex;flex-direction:column;align-items:center;gap:16px;margin-top:46px}
+#loadMore{padding:14px 34px;font-size:.86rem}
+.no-results{grid-column:1/-1;text-align:center;padding:60px 20px;font-family:var(--serif);font-size:1.3rem;color:var(--mute)}
+.no-results .nr-ic{font-size:2rem;color:var(--gold);display:block;margin-bottom:14px}
+.grid-loading{grid-column:1/-1;text-align:center;padding:50px 20px;font-family:var(--mono);font-size:.8rem;letter-spacing:.1em;color:var(--faint)}
+
+/* ---------- MODAL ---------- */
+.modal-back{position:fixed;inset:0;z-index:1000;background:rgba(6,6,8,.74);backdrop-filter:blur(9px);display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
+.modal-back.show{opacity:1;visibility:visible}
+.modal{
+  width:min(680px,100%);max-height:88vh;overflow-y:auto;border-radius:24px;position:relative;
+  background:linear-gradient(165deg,#1a1a20,#101015);border:1px solid var(--line2);
+  box-shadow:0 40px 100px rgba(0,0,0,.7),inset 0 1px 0 rgba(216,182,103,.14);
+  transform:scale(.9) translateY(18px);opacity:0;transition:transform .4s var(--ease),opacity .4s}
+.modal-back.show .modal{transform:none;opacity:1}
+.modal-head{padding:30px 32px 22px;border-bottom:1px solid var(--line);position:relative}
+.modal-head .ct-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.modal-head .ct{font-family:var(--mono);font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:8px}
+.modal-head h3{font-family:var(--disp);font-size:1.7rem;font-weight:400;color:var(--white);margin-top:13px;line-height:1.12;padding-right:30px}
+.modal-head p{font-size:.86rem;color:var(--mute);margin-top:9px;line-height:1.5}
+.modal-close{position:absolute;top:22px;right:22px;width:38px;height:38px;border-radius:50%;border:1px solid var(--line2);background:rgba(255,255,255,.02);color:var(--cream);cursor:pointer;display:grid;place-items:center;font-size:1.1rem;transition:transform .3s,background .3s,color .3s;z-index:2}
+.modal-close:hover{background:rgba(216,182,103,.14);color:var(--gold);transform:rotate(90deg)}
+.modal-hint{font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;color:var(--faint);padding:14px 32px 0;display:flex;align-items:center;gap:8px}
+.modal-hint .hp{width:5px;height:5px;border-radius:50%;background:var(--gold);box-shadow:0 0 6px var(--gold);flex-shrink:0}
+.modal-body{padding:18px 32px 26px;font-family:var(--mono);font-size:.9rem;line-height:2;color:var(--cream);white-space:pre-wrap;word-break:break-word}
+.modal-body .v-input{
+  display:inline-block;background:rgba(216,182,103,.08);border:1px solid var(--line2);border-bottom:1.5px solid var(--gold);
+  color:var(--gold-hi);font-family:var(--mono);font-size:.84rem;padding:1px 9px;border-radius:7px;margin:0 2px;min-width:90px;
+  transition:border-color .3s,background .3s;outline:none;vertical-align:baseline;
+}
+.modal-body .v-input::placeholder{color:var(--faint)}
+.modal-body .v-input:focus{background:rgba(216,182,103,.16);border-color:var(--gold-hi)}
+.modal-foot{display:flex;gap:10px;padding:20px 32px 28px;border-top:1px solid var(--line);flex-wrap:wrap;position:sticky;bottom:0;background:linear-gradient(180deg,rgba(16,16,21,.4),#101015 40%)}
+.mbtn{flex:1;min-width:120px;cursor:pointer;border-radius:12px;padding:13px 14px;font-family:var(--body);font-size:.82rem;font-weight:400;display:flex;align-items:center;justify-content:center;gap:9px;transition:transform .25s var(--ease),background .3s,border-color .3s;border:1px solid var(--line2);background:rgba(255,255,255,.02);color:var(--cream)}
+.mbtn:hover{transform:translateY(-2px);border-color:var(--gold);background:rgba(216,182,103,.08)}
+.mbtn.primary{background:linear-gradient(135deg,var(--gold-hi),var(--gold));color:#1a1407;border:none;font-weight:500;box-shadow:0 6px 22px rgba(216,182,103,.26)}
+.mbtn .ai-ic{width:16px;height:16px;border-radius:5px;display:grid;place-items:center;font-family:var(--disp);font-size:.7rem;font-weight:600;flex-shrink:0}
+
+/* ---------- MANIFESTO ---------- */
+.manifesto{text-align:center;padding:120px 0}
+.manifesto .quote{font-family:var(--disp);font-weight:300;font-size:clamp(2.1rem,5.4vw,4rem);line-height:1.08;letter-spacing:-.02em;color:var(--white);max-width:16ch;margin:0 auto}
+.manifesto .quote em{font-style:italic;color:var(--gold)}
+.manifesto .quote .strike{position:relative;color:var(--faint)}
+.manifesto .quote .strike::after{content:'';position:absolute;left:-4%;top:54%;width:108%;height:2px;background:var(--rose);transform:rotate(-3deg)}
+.manifesto p{font-family:var(--serif);font-size:1.34rem;color:var(--mute);max-width:46ch;margin:34px auto 0;font-weight:400}
+.manifesto .sig{font-family:var(--mono);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--faint);margin-top:30px}
+
+/* ---------- PRICING ---------- */
+.price-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:54px;align-items:stretch}
+.tier{
+  position:relative;padding:30px 22px 28px;border-radius:var(--r);display:flex;flex-direction:column;
+  background:linear-gradient(170deg,rgba(22,22,27,.78),rgba(13,13,17,.78));
+  border:1px solid var(--line);transition:transform .4s var(--ease),border-color .4s;
+}
+.tier:hover{transform:translateY(-5px);border-color:var(--line2)}
+.tier .tn{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.tier .anchor{font-family:var(--mono);font-size:.78rem;color:var(--faint);text-decoration:line-through;margin-top:16px;height:1em}
+.tier .price{font-family:var(--disp);font-size:2.5rem;font-weight:400;color:var(--white);line-height:1;margin-top:4px}
+.tier .price small{font-size:.9rem;color:var(--mute);font-family:var(--body);font-weight:300}
+.tier .once{font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;color:var(--faint);margin-top:8px;text-transform:uppercase}
+.tier ul{list-style:none;margin:22px 0;display:flex;flex-direction:column;gap:11px;flex:1}
+.tier li{font-size:.82rem;color:var(--mute);display:flex;gap:9px;align-items:flex-start;line-height:1.4}
+.tier li i{color:var(--gold);font-size:.92rem;margin-top:2px;flex-shrink:0}
+.tier .btn{width:100%;padding:12px;text-align:center}
+.tier.hero-tier{
+  background:linear-gradient(170deg,rgba(40,34,20,.92),rgba(20,17,12,.95));
+  border:1px solid var(--gold);transform:scale(1.06);z-index:2;
+  box-shadow:0 26px 70px rgba(216,182,103,.22),inset 0 1px 0 rgba(216,182,103,.2);
+}
+.tier.hero-tier:hover{transform:scale(1.06) translateY(-5px)}
+.tier.hero-tier .price{color:var(--gold-hi)}
+.tier .badge-top{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--gold-hi),var(--gold));color:#1a1407;font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 14px;border-radius:100px;font-weight:500;white-space:nowrap;box-shadow:0 6px 18px rgba(216,182,103,.4)}
+.tier .seats{font-family:var(--mono);font-size:.64rem;color:var(--rose);margin-top:8px;letter-spacing:.04em}
+.value-stack{margin-top:40px;text-align:center;font-family:var(--serif);font-size:1.32rem;color:var(--cream)}
+.value-stack b{color:var(--gold);font-weight:600;font-style:italic;font-family:var(--disp)}
+.guarantee{text-align:center;font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;color:var(--faint);margin-top:14px;text-transform:uppercase}
+.badge-legend{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-top:30px;font-family:var(--mono);font-size:.66rem;letter-spacing:.06em;color:var(--faint)}
+.badge-legend span{display:inline-flex;align-items:center;gap:8px}
+
+/* ---------- GUIDES ---------- */
+.guides-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:50px}
+.guide{
+  padding:26px 22px;border-radius:var(--r);position:relative;overflow:hidden;display:flex;flex-direction:column;
+  background:linear-gradient(165deg,rgba(24,24,29,.7),rgba(13,13,17,.7));border:1px solid var(--line);transition:transform .4s var(--ease),border-color .4s;min-height:230px;
+}
+.guide:hover{transform:translateY(-5px);border-color:var(--line2)}
+.guide .gtag{font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);align-self:flex-start;border:1px solid var(--line);padding:4px 10px;border-radius:100px}
+.guide .gic{font-size:1.6rem;color:var(--gold);margin:18px 0 0}
+.guide h5{font-family:var(--disp);font-size:1.16rem;font-weight:400;color:var(--white);margin:12px 0 7px;line-height:1.14}
+.guide p{font-size:.8rem;color:var(--mute);line-height:1.5;flex:1}
+.gate{display:flex;gap:8px;margin-top:16px}
+.gate input{flex:1;min-width:0;background:rgba(0,0,0,.25);border:1px solid var(--line);border-radius:10px;padding:10px 13px;color:var(--cream);font-family:var(--mono);font-size:.74rem;outline:none;transition:border-color .3s}
+.gate input::placeholder{color:var(--faint)}
+.gate input:focus{border-color:var(--gold)}
+.gate button{background:rgba(216,182,103,.12);border:1px solid var(--line2);color:var(--gold);width:42px;border-radius:10px;cursor:pointer;font-size:1rem;display:grid;place-items:center;transition:background .3s,transform .25s}
+.gate button:hover{background:rgba(216,182,103,.24);transform:translateX(2px)}
+
+/* ---------- FOOTER ---------- */
+footer{position:relative;z-index:3;border-top:1px solid var(--line);padding:72px 0 40px;margin-top:40px;background:linear-gradient(180deg,transparent,rgba(216,182,103,.03))}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px}
+.foot-brand .brand{margin-bottom:18px}
+.foot-brand p{font-family:var(--serif);font-size:1.12rem;color:var(--mute);max-width:32ch;line-height:1.5}
+.foot-brand .mail{display:inline-flex;align-items:center;gap:9px;margin-top:20px;font-family:var(--mono);font-size:.82rem;color:var(--gold);border-bottom:1px solid var(--line2);padding-bottom:3px;transition:border-color .3s}
+.foot-brand .mail:hover{border-color:var(--gold)}
+.foot-col h6{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--faint);margin-bottom:18px}
+.foot-col a{display:block;font-size:.86rem;color:var(--mute);margin-bottom:12px;transition:color .3s,padding-left .3s}
+.foot-col a:hover{color:var(--gold);padding-left:5px}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:54px;padding-top:26px;border-top:1px solid var(--line);font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;color:var(--faint);flex-wrap:wrap;gap:14px}
+.foot-bottom .pay{display:flex;gap:16px;color:var(--mute)}
+
+/* ---------- ADA BOT ---------- */
+.ada-bubble{position:fixed;bottom:26px;right:26px;z-index:500;width:62px;height:62px;border-radius:50%;cursor:pointer;border:none;background:linear-gradient(135deg,var(--gold-hi),var(--gold-deep));display:grid;place-items:center;box-shadow:0 10px 34px rgba(216,182,103,.4);transition:transform .35s var(--ease)}
+.ada-bubble:hover{transform:scale(1.08) rotate(-4deg)}
+.ada-bubble .a-ic{font-family:var(--disp);font-size:1.5rem;font-weight:500;color:#1a1407}
+.ada-bubble::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:1px solid var(--line2);animation:ring 2.6s infinite}
+@keyframes ring{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.35);opacity:0}}
+.ada-panel{position:fixed;bottom:100px;right:26px;z-index:500;width:340px;max-width:calc(100vw - 40px);border-radius:22px;overflow:hidden;background:linear-gradient(165deg,#1a1a20,#101015);border:1px solid var(--line2);box-shadow:0 30px 80px rgba(0,0,0,.6);transform:translateY(20px) scale(.96);opacity:0;visibility:hidden;transition:transform .4s var(--ease),opacity .4s,visibility .4s}
+.ada-panel.show{transform:none;opacity:1;visibility:visible}
+.ada-top{padding:20px 22px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:13px}
+.ada-av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--gold-hi),var(--gold-deep));display:grid;place-items:center;font-family:var(--disp);font-weight:600;color:#1a1407;font-size:1.1rem}
+.ada-top h6{font-family:var(--disp);font-size:1.1rem;font-weight:400;color:var(--white)}
+.ada-top span{font-family:var(--mono);font-size:.64rem;color:var(--gold);display:flex;align-items:center;gap:6px;margin-top:2px}
+.ada-top span::before{content:'';width:6px;height:6px;border-radius:50%;background:#5fae6c;box-shadow:0 0 6px #5fae6c}
+.ada-body{padding:20px 22px}
+.ada-msg{font-size:.86rem;color:var(--cream);line-height:1.6;background:rgba(216,182,103,.06);border:1px solid var(--line);padding:14px 16px;border-radius:14px;border-top-left-radius:4px}
+.ada-msg b{color:var(--gold);font-weight:500}
+.ada-sugg{margin-top:16px;display:flex;flex-direction:column;gap:9px}
+.ada-q{text-align:left;font-family:var(--body);font-size:.8rem;color:var(--cream);background:transparent;border:1px solid var(--line2);border-radius:12px;padding:11px 14px;cursor:pointer;transition:background .3s,border-color .3s,transform .25s}
+.ada-q:hover{background:rgba(216,182,103,.08);border-color:var(--gold);transform:translateX(3px)}
+
+/* ---------- TOAST ---------- */
+.toast{position:fixed;bottom:36px;left:50%;transform:translateX(-50%) translateY(28px);z-index:1500;background:linear-gradient(135deg,#1c1c22,#121217);border:1px solid var(--gold);color:var(--cream);font-family:var(--mono);font-size:.78rem;letter-spacing:.04em;padding:13px 22px;border-radius:100px;display:flex;align-items:center;gap:10px;opacity:0;visibility:hidden;transition:transform .4s var(--ease),opacity .4s,visibility .4s;box-shadow:0 14px 40px rgba(0,0,0,.5)}
+.toast.show{transform:translateX(-50%);opacity:1;visibility:visible}
+.toast i{color:var(--gold)}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .deck-stage{height:380px;order:-1}
+  .coll-grid{grid-template-columns:repeat(2,1fr)}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .price-grid{grid-template-columns:repeat(2,1fr)}
+  .tier.hero-tier{transform:none}.tier.hero-tier:hover{transform:translateY(-5px)}
+  .guides-grid{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .nav-links,.signin{display:none}
+  .menu-toggle{display:block;margin-left:auto}
+  .nav-right{gap:14px}
+}
+@media(max-width:560px){
+  .wrap{padding:0 18px}.nav-in{padding:14px 18px}
+  section{padding:70px 0}
+  .coll-grid,.price-grid,.guides-grid,.foot-grid,.grid{grid-template-columns:1fr}
+  .hero-meta{gap:18px}
+  .modal-foot{flex-direction:column}
+  .mbtn{width:100%}
+  .manifesto{padding:80px 0}
+  .foot-bottom{flex-direction:column;align-items:flex-start}
+  .ada-panel{right:50%;transform:translateX(50%) translateY(20px) scale(.96)}
+  .ada-panel.show{transform:translateX(50%)}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important}
+  .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+
+/* ============================================================
+   AUTH + PAYWALL  (Atelier-native: gold, Fraunces, panels)
+   ============================================================ */
+
+/* --- nav auth slot --- */
+.nav-auth{display:flex;align-items:center;gap:18px}
+.acct-btn{
+  display:flex;align-items:center;gap:9px;cursor:pointer;background:transparent;border:1px solid var(--line2);
+  border-radius:100px;padding:6px 8px 6px 14px;color:var(--cream);font-family:var(--body);font-size:.82rem;
+  transition:border-color .3s,background .3s,transform .25s var(--ease);
+}
+.acct-btn:hover{border-color:var(--gold);background:rgba(216,182,103,.07);transform:translateY(-1px)}
+.acct-btn .avatar{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;flex-shrink:0;
+  font-family:var(--disp);font-weight:600;font-size:.82rem;color:#1a1407;
+  background:linear-gradient(135deg,var(--gold-hi),var(--gold-deep));
+}
+.acct-btn .acct-tier{
+  font-family:var(--mono);font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);
+}
+.acct-btn .caret{color:var(--faint);font-size:.7rem;margin-left:-2px}
+
+/* generic Atelier overlay (auth + account share it) */
+.au-back{position:fixed;inset:0;z-index:1200;background:rgba(6,6,8,.78);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
+.au-back.show{opacity:1;visibility:visible}
+.au-card{
+  width:min(440px,100%);max-height:90vh;overflow-y:auto;border-radius:24px;position:relative;
+  background:linear-gradient(165deg,#1a1a20,#101015);border:1px solid var(--line2);
+  box-shadow:0 40px 100px rgba(0,0,0,.7),inset 0 1px 0 rgba(216,182,103,.14);
+  transform:scale(.92) translateY(18px);opacity:0;transition:transform .4s var(--ease),opacity .4s;
+}
+.au-back.show .au-card{transform:none;opacity:1}
+.au-card.wide{width:min(480px,100%)}
+.au-close{position:absolute;top:18px;right:18px;width:36px;height:36px;border-radius:50%;border:1px solid var(--line2);background:rgba(255,255,255,.02);color:var(--cream);cursor:pointer;display:grid;place-items:center;font-size:1.05rem;transition:transform .3s,background .3s,color .3s;z-index:3}
+.au-close:hover{background:rgba(216,182,103,.14);color:var(--gold);transform:rotate(90deg)}
+.au-head{padding:34px 34px 8px;text-align:center}
+.au-mark{
+  font-family:var(--mono);font-weight:500;color:var(--void);background:linear-gradient(135deg,var(--gold-hi),var(--gold-deep));
+  width:42px;height:42px;border-radius:11px;display:grid;place-items:center;font-size:1.15rem;letter-spacing:-2px;
+  margin:0 auto 18px;box-shadow:0 6px 22px rgba(216,182,103,.34);padding-right:1px;
+}
+.au-head h3{font-family:var(--disp);font-weight:380;font-size:1.7rem;color:var(--white);line-height:1.1;letter-spacing:-.02em}
+.au-head h3 em{font-style:italic;color:var(--gold)}
+.au-head p{font-family:var(--serif);font-size:1.02rem;color:var(--mute);margin-top:9px;line-height:1.45}
+.au-body{padding:18px 34px 30px}
+.au-field{margin-bottom:14px}
+.au-field label{display:block;font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.au-input{
+  width:100%;background:linear-gradient(180deg,rgba(20,20,25,.85),rgba(12,12,16,.85));
+  border:1px solid var(--line2);border-radius:12px;padding:13px 15px;color:var(--cream);
+  font-family:var(--body);font-size:.92rem;outline:none;transition:border-color .3s,box-shadow .3s;
+}
+.au-input::placeholder{color:var(--faint)}
+.au-input:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(216,182,103,.08)}
+.au-btn{
+  width:100%;cursor:pointer;border:none;border-radius:12px;padding:14px;margin-top:6px;
+  font-family:var(--body);font-size:.9rem;font-weight:500;letter-spacing:.01em;
+  background:linear-gradient(135deg,var(--gold-hi),var(--gold));color:#1a1407;
+  box-shadow:0 6px 22px rgba(216,182,103,.26);transition:transform .25s var(--ease),box-shadow .3s,opacity .3s;
+}
+.au-btn:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(216,182,103,.4)}
+.au-btn[disabled]{opacity:.55;cursor:default;transform:none;box-shadow:none}
+.au-btn.ghost{background:transparent;color:var(--cream);border:1px solid var(--line2);box-shadow:none}
+.au-btn.ghost:hover{background:rgba(216,182,103,.08);border-color:var(--gold)}
+.au-oauth{
+  width:100%;cursor:pointer;border:1px solid var(--line2);border-radius:12px;padding:12px;margin-top:6px;
+  background:rgba(255,255,255,.03);color:var(--cream);font-family:var(--body);font-size:.88rem;
+  display:flex;align-items:center;justify-content:center;gap:11px;transition:background .3s,border-color .3s,transform .25s var(--ease);
+}
+.au-oauth:hover{background:rgba(255,255,255,.06);border-color:var(--gold);transform:translateY(-1px)}
+.au-oauth svg{width:17px;height:17px;flex-shrink:0}
+.au-or{display:flex;align-items:center;gap:14px;margin:18px 0;font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--faint)}
+.au-or::before,.au-or::after{content:'';flex:1;height:1px;background:var(--line)}
+.au-alt{text-align:center;margin-top:18px;font-size:.84rem;color:var(--mute)}
+.au-alt a,.au-link{color:var(--gold);cursor:pointer;border-bottom:1px dashed var(--line2);transition:border-color .3s,color .3s}
+.au-alt a:hover,.au-link:hover{border-color:var(--gold);color:var(--gold-hi)}
+.au-sub{display:flex;justify-content:space-between;align-items:center;margin-top:4px}
+.au-sub .au-link{font-family:var(--mono);font-size:.66rem;letter-spacing:.04em}
+.au-msg{
+  margin-top:14px;border-radius:12px;padding:12px 14px;font-size:.82rem;line-height:1.5;
+  display:none;align-items:flex-start;gap:9px;font-family:var(--body);
+}
+.au-msg.show{display:flex}
+.au-msg.err{background:rgba(201,139,122,.1);border:1px solid rgba(201,139,122,.4);color:#e7b6a8}
+.au-msg.ok{background:rgba(216,182,103,.08);border:1px solid var(--line2);color:var(--gold-hi)}
+.au-msg .mi{flex-shrink:0;font-size:.95rem;margin-top:1px}
+.au-foot-note{font-family:var(--mono);font-size:.6rem;letter-spacing:.06em;color:var(--faint);text-align:center;margin-top:18px;line-height:1.7}
+.au-spin{display:inline-block;width:14px;height:14px;border:2px solid rgba(26,20,7,.35);border-top-color:#1a1407;border-radius:50%;animation:au-rot .7s linear infinite;vertical-align:-2px;margin-right:8px}
+.au-btn.ghost .au-spin{border-color:rgba(216,182,103,.3);border-top-color:var(--gold)}
+@keyframes au-rot{to{transform:rotate(360deg)}}
+
+/* --- account panel rows --- */
+.acct-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 0;border-bottom:1px solid var(--line)}
+.acct-row:last-of-type{border-bottom:none}
+.acct-row .lbl{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+.acct-row .val{font-family:var(--body);font-size:.9rem;color:var(--cream);text-align:right;word-break:break-word}
+.acct-tier-badge{
+  font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;padding:5px 13px;border-radius:100px;
+  color:#1a1407;background:linear-gradient(135deg,var(--gold-hi),var(--gold));font-weight:600;box-shadow:0 3px 12px rgba(216,182,103,.3);
+}
+.acct-tier-badge.free{color:var(--faint);background:rgba(255,255,255,.03);border:1px solid var(--line);box-shadow:none}
+.acct-tier-badge.pro{color:var(--gold);background:rgba(216,182,103,.06);border:1px solid var(--line2);box-shadow:none}
+.acct-actions{display:flex;flex-direction:column;gap:10px;margin-top:22px}
+.acct-mini{
+  width:100%;cursor:pointer;border:1px solid var(--line2);border-radius:11px;padding:12px 14px;background:rgba(255,255,255,.02);
+  color:var(--cream);font-family:var(--body);font-size:.84rem;display:flex;align-items:center;justify-content:space-between;gap:10px;
+  transition:background .3s,border-color .3s,transform .25s var(--ease);
+}
+.acct-mini:hover{background:rgba(216,182,103,.07);border-color:var(--gold);transform:translateY(-1px)}
+.acct-mini.danger{color:#e7b6a8;border-color:rgba(201,139,122,.3)}
+.acct-mini.danger:hover{background:rgba(201,139,122,.1);border-color:var(--rose)}
+.acct-mini .chev{color:var(--faint);font-size:.8rem}
+.acct-verify{margin-top:16px;font-family:var(--mono);font-size:.64rem;letter-spacing:.04em;color:var(--rose);display:none;align-items:center;gap:8px;line-height:1.5}
+.acct-verify.show{display:flex}
+
+/* --- in-modal paywall --- */
+.paywall{padding:6px 32px 10px}
+.pw-lock{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.pw-lock .ic{
+  width:46px;height:46px;border-radius:13px;display:grid;place-items:center;flex-shrink:0;font-size:1.3rem;color:#1a1407;
+  background:linear-gradient(135deg,var(--gold-hi),var(--gold-deep));box-shadow:0 6px 20px rgba(216,182,103,.3);
+}
+.pw-lock .tx{font-family:var(--disp);font-size:1.18rem;font-weight:400;color:var(--white);line-height:1.2}
+.pw-lock .tx span{display:block;font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-top:3px}
+.pw-section{margin-bottom:20px}
+.pw-section h4{font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;display:flex;align-items:center;gap:11px}
+.pw-section h4::after{content:'';flex:1;height:1px;background:var(--line)}
+.pw-section .pw-lead{font-family:var(--serif);font-size:1.12rem;color:var(--cream);line-height:1.5}
+.pw-list{list-style:none;display:flex;flex-direction:column;gap:10px}
+.pw-list li{display:flex;gap:11px;align-items:flex-start;font-size:.86rem;color:var(--mute);line-height:1.45}
+.pw-list li i{color:var(--gold);font-style:normal;font-size:.92rem;margin-top:1px;flex-shrink:0}
+.pw-list li b{color:var(--cream);font-weight:500}
+.pw-value{
+  display:flex;gap:14px;flex-wrap:wrap;margin-top:4px;padding:16px;border-radius:14px;
+  background:linear-gradient(165deg,rgba(40,34,20,.5),rgba(20,17,12,.5));border:1px solid var(--line2);
+}
+.pw-value .vb{flex:1;min-width:120px}
+.pw-value .vb .n{font-family:var(--disp);font-size:1.5rem;color:var(--gold-hi);font-weight:400;line-height:1}
+.pw-value .vb .l{font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-top:6px}
+.pw-cta{display:flex;flex-direction:column;gap:9px;padding:18px 0 4px}
+.pw-cta .au-btn{margin-top:0}
+.pw-cta .pw-fine{font-family:var(--mono);font-size:.62rem;letter-spacing:.06em;color:var(--faint);text-align:center;margin-top:4px}
+.pw-signin-line{text-align:center;font-size:.84rem;color:var(--mute);margin-top:6px}
 </style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "ProPrompt",
-  "url": "https://getproprompt.com/",
-  "description": "A free, hand-built library of 2,400+ premium AI prompts (viral, image, agentic and mega-prompts) for ChatGPT, Claude and Gemini.",
-  "creator": { "@type": "Organization", "name": "ProPrompt" },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://getproprompt.com/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": "Is ProPrompt really free?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every one of the 2,400+ premium prompts is free to copy and use. No account, no paywall, no tracking, forever." } },
-    { "@type": "Question", "name": "Which AI tools do these prompts work with?",
-      "acceptedAnswer": { "@type": "Answer", "text": "All of them. The prompts are plain text and work in ChatGPT, Claude, Gemini, Copilot, Grok and any other chat AI. Image prompts are tuned for Midjourney, DALL·E and Stable Diffusion." } },
-    { "@type": "Question", "name": "Do I need to sign up or install anything?",
-      "acceptedAnswer": { "@type": "Answer", "text": "No. Open the page, search, and click Copy. It is a single static website that even works offline." } },
-    { "@type": "Question", "name": "Can I use these prompts for my business?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Use them for work, clients, content and products. Replace the [VARIABLES] with your details and go." } }
-  ]
-}
-</script>
 </head>
 <body>
+<canvas id="dust" aria-hidden="true"></canvas>
+<div class="atmos" aria-hidden="true"></div>
 <div class="grain" aria-hidden="true"></div>
+<div class="cursor-ring" id="cRing" aria-hidden="true"></div>
+<div class="cursor-dot" id="cDot" aria-hidden="true"></div>
 
-<header class="site-head">
-  <a class="brand" href="#top" aria-label="ProPrompt — home">
-    <span class="brand-mark" aria-hidden="true">❯</span>
-    <span class="brand-text">
-      <span class="brand-name">ProPrompt</span>
-      <span class="brand-sub">Pro-grade prompts · free to start</span>
-    </span>
-  </a>
-  <div class="head-actions">
-    <a class="go-pro-btn" href="#pricing">✨ Go Pro</a>
-    <a class="ghost-btn" href="#groups">Browse</a>
-    <button class="ghost-btn" id="savedNav" aria-label="View saved prompts">★ <span id="savedNavN">0</span></button>
-    <button class="ghost-btn theme-toggle" id="themeToggle" aria-label="Toggle light / dark theme">
-      <span class="t-dark">☾</span><span class="t-light">☀</span>
-    </button>
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-in">
+    <a href="#top" class="brand"><span class="mark">&gt;|</span>ProPrompt</a>
+    <div class="nav-links">
+      <a href="#collections">Collections</a>
+      <a href="#browse">Browse</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#guides">Free guides</a>
+    </div>
+    <div class="nav-right">
+      <div class="nav-auth" id="navAuth">
+        <a href="#" class="signin" id="signinLink">Sign in</a>
+      </div>
+      <button class="btn btn-gold" data-cta>Own the vault</button>
+      <button class="menu-toggle" aria-label="Open menu" id="menuToggle"><i>&#8801;</i></button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="pip"></span>The operators' arsenal</span>
+        <h1 class="hero-h">Prompts the<br><em>elite</em> don't<br><span class="grad">share.</span></h1>
+        <p class="hero-sub"><b id="subPrompts">2,713</b> hand-built prompts across <b id="subColl">26</b> collections. Never scraped, never recycled — engineered for ChatGPT, Claude &amp; Gemini.</p>
+        <div class="hero-meta">
+          <div><span class="n" id="statPrompts">2,713</span><span class="l">Prompts</span></div>
+          <div><span class="n" id="statFrameworks">41</span><span class="l">Frameworks</span></div>
+          <div><span class="n" id="statColl">26</span><span class="l">Collections</span></div>
+          <div><span class="n">0</span><span class="l">Subscriptions</span></div>
+        </div>
+        <div class="hero-cta">
+          <button class="btn btn-gold" data-cta>Own it for life — from $100</button>
+          <button class="btn btn-ghost" id="exploreBtn">Open a prompt</button>
+        </div>
+        <p class="trust"><b>One payment.</b> No subscription. No drip. <b>Yours forever.</b></p>
+      </div>
+      <div class="deck-stage" id="deckStage">
+        <div class="deck-glow" aria-hidden="true"></div>
+        <div class="deck" id="deck">
+          <div class="card3d card-back-1" aria-hidden="true">
+            <span class="ct">Strategy &amp; Ops</span>
+            <h3>The Pre-Mortem Engine</h3>
+          </div>
+          <div class="card3d card-back-2" aria-hidden="true">
+            <span class="ct">Sales &amp; Growth</span>
+            <h3>Cold-Outbound Forge</h3>
+          </div>
+          <div class="card3d card-front" id="deckFront">
+            <span class="ct" id="deckCat">Loading the vault…</span>
+            <h3 id="deckTitle">The Positioning Oracle</h3>
+            <div class="body" id="deckBody">Tilt the deck — then open the vault below to fire any of 2,713 prompts straight into your model.</div>
+            <div class="foot">
+              <span class="badge" id="deckBadge">26 collections inside</span>
+              <span class="dots"><i></i><i></i><i></i></span>
+            </div>
+          </div>
+        </div>
+        <span class="deck-tag">Tilt me &#8599; live preview</span>
+      </div>
+    </div>
   </div>
 </header>
 
-<main id="top">
-  <!-- ░░ HERO ░░ -->
-  <section class="hero">
-    <p class="eyebrow">Free forever · No sign-up · <span class="pulse">100% premium, hand-built prompts</span></p>
-    <h1 class="hero-title">The prompt that<br><em>does the work</em>.</h1>
-    <p class="hero-lede">
-      A hand-built vault of <b id="heroCount">2,400+</b> premium AI prompts — viral, million-dollar
-      business, AI headshots &amp; selfies, content &amp; book writing, prompt generators, agentic &amp;
-      mega-prompts — for ChatGPT, Claude &amp; Gemini. Search it, copy it, paste it.
-      Every one hand-built &amp; battle-tested — not scraped, not AI-spun.
-    </p>
-
-    <p class="hero-aud">Built for <b>founders &amp; CEOs, marketers, creators &amp; developers</b> — and anyone putting AI to work in everyday life.</p>
-
-    <div class="search-wrap" id="searchWrap">
-      <svg class="search-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <input id="search" type="search" placeholder="Search prompts — “cold email”, “youtube script”, “midjourney”…" autocomplete="off" spellcheck="false" aria-label="Search prompts">
-      <button class="clear-btn" id="clearSearch" aria-label="Clear search" hidden>✕</button>
+<!-- COLLECTIONS -->
+<section id="collections">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="sec-eyebrow"><span id="collEyebrow">27 collections · 41 frameworks</span></div>
+      <h2 class="sec-h">An arsenal, <em>organised</em> like a war room.</h2>
+      <p class="sec-lead">Every prompt is filed by the job it does — so you find the exact instrument the moment you need it. Tap a collection to browse it.</p>
     </div>
-
-    <div class="search-chips" id="searchChips" aria-label="Popular searches"></div>
-
-    <div class="hero-stats" id="heroStats">
-      <span><b id="statTotal">2,400+</b> prompts</span><span class="dot">·</span>
-      <span><b id="statShelves">26</b> shelves</span><span class="dot">·</span>
-      <span><b id="statTopics">195</b> topics</span><span class="dot">·</span>
-      <button class="surprise" id="surprise">🎲 Surprise me</button>
-    </div>
-  </section>
-
-  <!-- ░░ PROMPT OF THE DAY ░░ -->
-  <section class="potd" id="potd" hidden aria-label="Prompt of the day">
-    <div class="potd-inner">
-      <div class="potd-glow" aria-hidden="true"></div>
-      <span class="potd-eyebrow">⭐ Prompt of the day</span>
-      <span class="potd-badge" id="potdBadge"></span>
-      <h2 class="potd-title" id="potdTitle"></h2>
-      <p class="potd-teaser" id="potdTeaser"></p>
-      <div class="potd-actions">
-        <button class="copy-btn" id="potdCopy"><span class="ci">⧉</span> <span class="ct">Copy</span></button>
-        <button class="potd-open" id="potdView">Open &amp; customize →</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- ░░ RECENTLY USED ░░ -->
-  <section class="recent" id="recent" hidden aria-label="Recently used prompts">
-    <div class="sec-head"><h2>🕘 Pick up where you left off</h2><button class="see-all" id="clearRecent">Clear</button></div>
-    <div class="recent-rail" id="recentRail"></div>
-  </section>
-
-  <!-- ░░ TRENDING STRIP ░░ -->
-  <section class="trending" id="trending" hidden aria-label="Trending prompts">
-    <div class="sec-head">
-      <h2>🔥 Trending now</h2>
-      <button class="see-all" id="seeViral">See all viral prompts →</button>
-    </div>
-    <div class="trend-rail" id="trendRail"><!-- featured viral cards --></div>
-  </section>
-
-  <!-- ░░ COLLECTIONS ░░ -->
-  <section class="collections" aria-label="Featured collections">
-    <div class="sec-head"><h2>Featured collections</h2><span class="sec-sub">one-tap shortcuts to the good stuff</span></div>
-    <div class="coll-row" id="collRow"><!-- collection chips --></div>
-  </section>
-
-  <!-- ░░ WHY PROPROMPT ░░ -->
-  <section class="why" id="why" aria-label="Why ProPrompt">
-    <div class="sec-head"><h2>Why founders &amp; creators keep it open</h2><span class="sec-sub">not another scraped prompt dump</span></div>
-    <div class="why-grid">
-      <div class="why-card"><span class="why-ico">✍️</span><h3>Hand-built originals</h3><p>All 2,445 prompts written &amp; stress-tested by hand — not scraped, not AI-spun filler. Engineered to produce pro-grade output on the first try.</p></div>
-      <div class="why-card"><span class="why-ico">⚡</span><h3>Copy, fill, run in seconds</h3><p>Fill the <code>[BLANKS]</code> live, one-click copy, then launch straight into ChatGPT, Claude or Gemini. No setup, no account.</p></div>
-      <div class="why-card"><span class="why-ico">🎯</span><h3>For real work, not demos</h3><p>Cold emails, launch copy, AI headshots, business plans, agents &amp; mega-prompts — built for founders, marketers, creators &amp; devs.</p></div>
-      <div class="why-card"><span class="why-ico">🔓</span><h3>Free forever to start</h3><p>The entire searchable vault is free — no card, no trial clock. Go Pro only when you want the offline PDF &amp; Notion packs.</p></div>
-    </div>
-  </section>
-
-  <!-- ░░ GO PRO / PRICING ░░ -->
-  <section class="pricing" id="pricing" aria-label="Pricing">
-    <div class="sec-head"><h2>✨ Simple pricing — start free, go Pro once</h2><span class="sec-sub">free forever, or one payment for the offline packs &amp; lifetime updates</span></div>
-    <div class="pricing-grid">
-      <div class="price-card">
-        <div class="price-name">Free</div>
-        <div class="price-amt">$0<span class="price-per">/forever</span></div>
-        <ul class="price-feats">
-          <li>✓ All <b id="freeCount">2,445</b> prompts, searchable</li>
-          <li>✓ Live fill-in customizer</li>
-          <li>✓ One-click copy &amp; share links</li>
-          <li>✓ Run in ChatGPT · Claude · Gemini</li>
-          <li>✓ Save favourites · works offline</li>
-        </ul>
-        <a class="price-btn ghost" href="#vault">Start browsing free →</a>
-      </div>
-      <div class="price-card featured">
-        <div class="price-badge">Lifetime · launch price</div>
-        <div class="price-name">ProPrompt Pro</div>
-        <div class="price-amt">$39 <span class="price-old">$49</span></div>
-        <ul class="price-feats">
-          <li>★ Everything in Free</li>
-          <li>★ All prompts as polished <b>PDF packs</b> — offline &amp; printable</li>
-          <li>★ <b>Notion-ready</b> version you can clone</li>
-          <li>★ Premium swipe files: 🦄 Unicorn · 🧪 Prompt Lab · 💎 Million-Dollar</li>
-          <li>★ Bonus exclusive prompts + <b>lifetime updates</b></li>
-        </ul>
-        <a class="price-btn" id="goProBtn" href="#pricing" data-checkout="lemonsqueezy">Get Lifetime Pro →</a>
-        <p class="price-note">One-time payment · instant download · 14-day money-back</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ░░ AFFILIATE ░░ -->
-  <section class="affiliate" id="affiliate" aria-label="Affiliate program">
-    <div class="aff-card">
-      <div class="aff-left">
-        <span class="aff-eyebrow">💸 Partner program</span>
-        <h2>Promote ProPrompt, earn <b>40%</b>.</h2>
-        <p>Have an audience that uses AI? Share ProPrompt and earn <b>40% on every sale</b>, paid out automatically. We hand you the swipe copy, banners &amp; a tracked link — you just post.</p>
-        <div class="aff-actions">
-          <button class="price-btn" id="affBtn">Become a founding affiliate →</button>
-          <span class="aff-foot">Launching with the Pro store — founding partners get the best slots.</span>
-        </div>
-      </div>
-      <ul class="aff-perks">
-        <li>✓ <b>40%</b> commission, recurring</li>
-        <li>✓ Done-for-you swipe copy &amp; banners</li>
-        <li>✓ Tracked link + live dashboard</li>
-        <li>✓ Built on Lemon Squeezy — reliable payouts</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ░░ HOW TO USE ░░ -->
-  <section class="howto" aria-label="How to use any prompt">
-    <div class="sec-head"><h2>How to use any prompt</h2></div>
-    <ol class="howto-steps">
-      <li><span class="step-n">1</span><div><b>Find &amp; copy.</b> Search or browse a shelf, then hit <b>Copy</b> on any prompt.</div></li>
-      <li><span class="step-n">2</span><div><b>Fill the blanks.</b> Replace the highlighted <code>[VARIABLES]</code> (like <code>[TOPIC]</code>) with your details.</div></li>
-      <li><span class="step-n">3</span><div><b>Paste &amp; run.</b> Drop it into ChatGPT, Claude or Gemini. Tweak the reply by asking for changes.</div></li>
-    </ol>
-  </section>
-
-  <!-- ░░ BROWSE THE FULL VAULT ░░ -->
-  <section class="vault" id="vault" aria-label="Browse the full vault">
-    <div class="sec-head"><h2>📚 Browse the full vault</h2><span class="sec-sub">2,445 prompts · search up top, or pick a shelf</span></div>
-    <div class="groups-section" id="groups" aria-label="Prompt shelves">
-      <div class="chip-row" id="groupRow"></div>
-      <div class="chip-row sub" id="catRow" hidden></div>
-    </div>
-    <div class="toolbar">
-      <div class="result-count" id="resultCount">Loading the vault…</div>
-      <div class="tool-right">
-        <button class="saved-toggle" id="savedToggle" aria-pressed="false">★ Saved</button>
-        <label class="sort-wrap"><span>Sort</span>
-          <select id="sort" aria-label="Sort prompts">
-            <option value="default">Featured order</option>
-            <option value="az">Title A → Z</option>
-            <option value="short">Shortest first</option>
-            <option value="long">Longest first</option>
-          </select>
-        </label>
-      </div>
-    </div>
-    <section class="grid" id="grid" aria-live="polite"></section>
-    <div class="load-more-wrap"><button class="load-more" id="loadMore" hidden>Load more prompts</button></div>
-    <div class="empty" id="empty" hidden>
-      <div class="empty-mark">🗝️</div>
-      <h3 id="emptyTitle">No prompts match that.</h3>
-      <p>Try a broader word, or <button class="link-btn" id="resetAll">reset all filters</button>.</p>
-    </div>
-  </section>
-
-  <!-- ░░ SUBSCRIBE ░░ -->
-  <section class="subscribe" aria-label="Subscribe for new prompts">
-    <div class="sub-inner">
-      <h2>📬 Get new prompts in your inbox</h2>
-      <p>A short note when fresh prompts drop. No spam, unsubscribe anytime.</p>
-      <form class="sub-form" id="subForm">
-        <input type="email" id="subEmail" placeholder="you@email.com" required aria-label="Your email">
-        <button type="submit">Subscribe</button>
-      </form>
-      <p class="sub-note" id="subNote" hidden>Thanks — you're on the list! 🎉</p>
-    </div>
-  </section>
-
-
-  <!-- ░░ FAQ ░░ -->
-  <section class="faq" aria-label="Frequently asked questions">
-    <div class="sec-head"><h2>Quick answers</h2></div>
-    <div class="faq-grid">
-      <details><summary>Is the free version really free?</summary><p>Yes. The full searchable vault of 2,400+ prompts, the customizer, one-click copy, the Run buttons and offline access are free forever — no account, no card, no trial clock.</p></details>
-      <details><summary>What do I get with ProPrompt Pro?</summary><p>Pro is a one-time Lifetime purchase ($39 launch, regular $49): every prompt as polished <b>PDF packs</b>, ready-to-clone <b>Notion packs</b>, premium swipe files, bonus prompt drops and <b>lifetime updates</b> — all future additions at no extra cost.</p></details>
-      <details><summary>How do payment &amp; tax work?</summary><p>Checkout is handled by <b>Lemon Squeezy</b>, our Merchant of Record. They process billing and handle any sales tax/VAT for the US, UK &amp; EU, and are PCI-DSS compliant. ProPrompt never stores or sees your card details.</p></details>
-      <details><summary>Can I get a refund?</summary><p>Yes — Pro has a <b>14-day money-back guarantee</b>. If it's not for you, email hello@getproprompt.com within 14 days and Lemon Squeezy processes the refund.</p></details>
-      <details><summary>Which AI tools work?</summary><p>All of them. Plain-text prompts work in ChatGPT, Claude, Gemini, Copilot &amp; Grok, and every prompt has Run-in buttons. Image prompts suit Midjourney, DALL·E &amp; Stable Diffusion.</p></details>
-      <details><summary>Can I use them for client &amp; commercial work?</summary><p>Yes — your licence covers personal and paid client work. Just swap the [VARIABLES] for your details. Please don't resell or republish the collection itself as a competing product.</p></details>
-    </div>
-  </section>
-</main>
-
-<footer class="site-foot">
-  <div class="foot-grid">
-    <div class="foot-brand">
-      <span class="brand-mark" aria-hidden="true">❯</span>
-      <div>
-        <p class="foot-name">ProPrompt</p>
-        <span class="foot-tag">Pro-grade prompts. Free to start.</span>
-      </div>
-    </div>
-    <p class="foot-note">
-      Free for everyone, forever — no account, no paywall, no tracking. A hand-built
-      collection of premium AI prompts — <b>viral, AI-image, agentic &amp; pro mega-prompts</b> —
-      every one hand-written and refined so the maximum number of
-      people can get exceptional results from AI.
-    </p>
+    <div class="coll-grid" id="collGrid"></div>
+    <p class="coll-foot reveal" id="collFoot"><b>2,713 prompts</b> across every collection — one library, yours for life.</p>
   </div>
-  <p class="foot-fine">© <span id="year"></span> ProPrompt · Built to be shared. ·
-    <a class="foot-link" href="mailto:hello@getproprompt.com?subject=Prompt%20suggestion%20%2F%20feedback">💬 Suggest a prompt / feedback</a> ·
-    <a class="foot-link" href="/about/">About</a> · <a class="foot-link" href="privacy.html">Privacy</a> ·
-    <a class="foot-link" href="terms.html">Terms</a> ·
-    <a class="foot-link" href="refund.html">Refund</a></p>
+</section>
+
+<!-- BROWSE -->
+<section id="browse">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="sec-eyebrow">Browse the vault</div>
+      <h2 class="sec-h">Open any prompt. Drop in your <em>variables.</em> Fire.</h2>
+      <p class="sec-lead">Search 2,713 instruments, filter by collection, and launch straight into ChatGPT, Claude or Gemini.</p>
+    </div>
+    <div class="browse-tools reveal d1">
+      <div class="search-row">
+        <span class="sicon">&#9906;</span>
+        <input type="text" id="searchInput" placeholder="Search prompts — try &quot;cold email&quot;, &quot;midjourney&quot;, &quot;pre-mortem&quot;…" aria-label="Search prompts" autocomplete="off" />
+        <button class="search-clear" id="searchClear" aria-label="Clear search">&#10005;</button>
+      </div>
+      <div class="chip-row" id="chipRow"></div>
+      <div class="result-line" id="resultLine">Loading the vault…</div>
+    </div>
+    <div class="grid" id="grid">
+      <div class="grid-loading">Fetching 2,713 prompts…</div>
+    </div>
+    <div class="load-wrap">
+      <button class="btn btn-ghost" id="loadMore" style="display:none">Load more prompts</button>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTO -->
+<section class="manifesto" id="manifesto">
+  <div class="wrap reveal">
+    <p class="quote"><span class="strike">Rent</span> the tools.<br><em>Own</em> the arsenal.</p>
+    <p>Subscriptions evaporate. Logins expire. A library you paid for once — built by hand, kept on your terms — does not. Pay once. Keep it forever. Pass it down.</p>
+    <p class="sig">— The ProPrompt doctrine</p>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="sec-eyebrow">One-time pricing · lifetime access</div>
+      <h2 class="sec-h">Buy the vault <em>once.</em> Keep it for good.</h2>
+      <p class="sec-lead">No seats expiring. No card on file. Choose your tier and it's yours — including every future expansion.</p>
+    </div>
+    <div class="price-grid">
+      <div class="tier reveal d1">
+        <span class="tn">Free</span>
+        <span class="anchor">&nbsp;</span>
+        <div class="price">$0</div>
+        <span class="once">Sign up · no card</span>
+        <ul>
+          <li><i>&#8250;</i>221 starter prompts</li>
+          <li><i>&#8250;</i>Preview every collection</li>
+          <li><i>&#8250;</i>Web access</li>
+        </ul>
+        <button class="btn btn-ghost" data-cta data-tier="free">Start free</button>
+      </div>
+      <div class="tier reveal d2">
+        <span class="tn">Pro</span>
+        <span class="anchor">$199</span>
+        <div class="price">$100</div>
+        <span class="once">One-time</span>
+        <ul>
+          <li><i>&#8250;</i>All 2,713 prompts</li>
+          <li><i>&#8250;</i>26 collections</li>
+          <li><i>&#8250;</i>Personal use licence</li>
+          <li><i>&#8250;</i>Lifetime updates</li>
+        </ul>
+        <button class="btn btn-ghost" data-cta data-tier="pro">Get Pro</button>
+      </div>
+      <div class="tier hero-tier reveal d3">
+        <span class="badge-top">Most chosen</span>
+        <span class="tn">Studio</span>
+        <span class="anchor">$499</span>
+        <div class="price">$250</div>
+        <span class="once">One-time</span>
+        <ul>
+          <li><i>&#10022;</i>Everything in Pro</li>
+          <li><i>&#10022;</i>All 40+ frameworks</li>
+          <li><i>&#10022;</i>Prompt builder + variables</li>
+          <li><i>&#10022;</i>Quarterly vault drops</li>
+          <li><i>&#10022;</i>Commercial use licence</li>
+        </ul>
+        <button class="btn btn-gold" data-cta data-tier="studio">Own the Studio</button>
+      </div>
+      <div class="tier reveal d4">
+        <span class="tn">Business</span>
+        <span class="anchor">$899</span>
+        <div class="price">$500</div>
+        <span class="once">The agency licence</span>
+        <ul>
+          <li><i>&#8250;</i>Everything in Studio</li>
+          <li><i>&#8250;</i>Up to 10 seats</li>
+          <li><i>&#8250;</i>Client-work licence</li>
+          <li><i>&#8250;</i>Team workspace</li>
+        </ul>
+        <button class="btn btn-ghost" data-cta data-tier="business">License the team</button>
+      </div>
+      <div class="tier reveal d4">
+        <span class="tn">Inner Circle</span>
+        <span class="anchor">$1,500</span>
+        <div class="price">$1,000</div>
+        <span class="once">One-time · founding</span>
+        <span class="seats">100 founding seats — then $1,500</span>
+        <ul>
+          <li><i>&#8250;</i>Everything · unlimited seats</li>
+          <li><i>&#8250;</i>Private request line</li>
+          <li><i>&#8250;</i>Custom prompt commissions</li>
+          <li><i>&#8250;</i>Name on the founders wall</li>
+        </ul>
+        <button class="btn btn-ghost" data-cta data-tier="elite">Claim a seat</button>
+      </div>
+    </div>
+    <p class="value-stack reveal">Studio unlocks <b>~$2,400</b> of operator-grade assets — for <b>$250.</b></p>
+    <div class="badge-legend reveal">
+      <span><span class="tier-badge t-free">Free</span> 221 open</span>
+      <span><span class="tier-badge t-pro">Pro</span> in the Pro vault</span>
+      <span><span class="tier-badge t-studio"><span class="crown">&#9819;</span>Studio</span> top-shelf instruments</span>
+    </div>
+    <p class="guarantee reveal">14-day no-questions refund · instant access · pay once, own forever</p>
+  </div>
+</section>
+
+<!-- GUIDES -->
+<section id="guides">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="sec-eyebrow">Free · email-gated</div>
+      <h2 class="sec-h">Start with the <em>field guides.</em></h2>
+      <p class="sec-lead">Battle-tested resources, free. A taste of what's behind the vault door.</p>
+    </div>
+    <div class="guides-grid">
+      <div class="guide reveal d1">
+        <span class="gtag">Field guide</span>
+        <i class="gic">&#9670;</i>
+        <h5>The Operator's Prompting Field Guide</h5>
+        <p>The exact anatomy of a prompt that performs — 38 pages, no fluff.</p>
+        <form class="gate" data-guide="Field Guide">
+          <input type="email" placeholder="you@company.com" aria-label="Email for field guide" required>
+          <button type="submit" aria-label="Get the field guide">&#8594;</button>
+        </form>
+      </div>
+      <div class="guide reveal d2">
+        <span class="gtag">Swipe file</span>
+        <i class="gic">&#10038;</i>
+        <h5>10 Mega-Prompts that replace a $5k contractor</h5>
+        <p>Copy-paste prompts that do the work of a freelance specialist.</p>
+        <form class="gate" data-guide="Mega-Prompts">
+          <input type="email" placeholder="you@company.com" aria-label="Email for mega-prompts" required>
+          <button type="submit" aria-label="Get the mega-prompts">&#8594;</button>
+        </form>
+      </div>
+      <div class="guide reveal d3">
+        <span class="gtag">Starter packs</span>
+        <i class="gic">&#9650;</i>
+        <h5>Sales · Marketing · Business starter packs</h5>
+        <p>Three curated mini-collections to deploy on day one.</p>
+        <form class="gate" data-guide="Starter Packs">
+          <input type="email" placeholder="you@company.com" aria-label="Email for starter packs" required>
+          <button type="submit" aria-label="Get the starter packs">&#8594;</button>
+        </form>
+      </div>
+      <div class="guide reveal d4">
+        <span class="gtag">Directory</span>
+        <i class="gic">&#9672;</i>
+        <h5>Top GPTs &amp; AI Tools directory</h5>
+        <p>The 60 tools elite operators actually keep in rotation.</p>
+        <form class="gate" data-guide="Tools Directory">
+          <input type="email" placeholder="you@company.com" aria-label="Email for tools directory" required>
+          <button type="submit" aria-label="Get the directory">&#8594;</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#top" class="brand"><span class="mark">&gt;|</span>ProPrompt</a>
+        <p>The operators' arsenal. Hand-built prompts for people who ship. Own it — don't rent it.</p>
+        <a href="mailto:hello@getproprompt.com" class="mail"><i>&#9993;</i>hello@getproprompt.com</a>
+      </div>
+      <div class="foot-col">
+        <h6>The vault</h6>
+        <a href="#collections">Collections</a>
+        <a href="#browse">Browse</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#guides">Free guides</a>
+      </div>
+      <div class="foot-col">
+        <h6>Operators</h6>
+        <a href="#browse">Browse the vault</a>
+        <a href="#pricing">Pricing &amp; tiers</a>
+        <a href="#guides">Free field guides</a>
+        <a href="https://getproprompt.lemonsqueezy.com/affiliates" target="_blank" rel="noopener">Affiliate program</a>
+      </div>
+      <div class="foot-col">
+        <h6>Company</h6>
+        <a href="/terms.html">Licence &amp; terms</a>
+        <a href="/refund.html">Refund policy</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/about/">About</a>
+        <a href="mailto:hello@getproprompt.com">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 ProPrompt · getproprompt.com · Own it, don't rent it.</span>
+      <span class="pay">Secure checkout · One-time payment · Lifetime access</span>
+    </div>
+  </div>
 </footer>
 
-<!-- ░░ MODAL ░░ -->
-<div class="modal-scrim" id="modal" hidden>
-  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mTitle">
-    <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+<!-- MODAL -->
+<div class="modal-back" id="modalBack" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modalClose" aria-label="Close prompt">&#10005;</button>
     <div class="modal-head">
-      <span class="m-badge" id="mBadge"></span>
-      <h2 id="mTitle"></h2>
-      <p class="m-meta" id="mMeta"></p>
+      <div class="ct-row">
+        <span class="ct" id="modalCat">Collection</span>
+        <span id="modalBadge"></span>
+      </div>
+      <h3 id="modalTitle">Prompt title</h3>
+      <p id="modalDesc">Prompt description</p>
     </div>
-    <div class="m-fill" id="mFill" hidden>
-      <div class="m-fill-head">🪄 <b>Fill in the blanks</b> <span class="m-fill-sub">— your answers rewrite the prompt live</span></div>
-      <div class="m-fill-grid" id="mFillGrid"></div>
+    <div class="modal-hint" id="modalHint"><span class="hp"></span><span id="modalHintText">Fill the gold fields, then copy or fire.</span></div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-foot">
+      <button class="mbtn primary" data-action="copy"><i>&#9112;</i>Copy</button>
+      <button class="mbtn" data-action="chatgpt"><span class="ai-ic" style="background:#10a37f;color:#fff">G</span>ChatGPT</button>
+      <button class="mbtn" data-action="gemini"><span class="ai-ic" style="background:#4285f4;color:#fff">&#10038;</span>Gemini</button>
+      <button class="mbtn" data-action="claude"><span class="ai-ic" style="background:#d97757;color:#fff">C</span>Claude</button>
     </div>
-    <div class="m-prompt-wrap"><pre class="m-prompt" id="mPrompt"></pre></div>
-    <div class="m-actions">
-      <button class="copy-btn big" id="mCopy"><span class="ci">⧉</span> <span class="ct">Copy prompt</span></button>
-      <button class="save-btn" id="mSave" aria-pressed="false">☆ Save</button>
-      <button class="icon-btn" id="mShare" title="Copy a link straight to this prompt">🔗 Link</button>
-    </div>
-    <div class="m-launch">
-      <span class="ml-label">Run it in</span>
-      <button class="launch-btn" data-ai="chatgpt">ChatGPT ↗</button>
-      <button class="launch-btn" data-ai="claude">Claude ↗</button>
-      <button class="launch-btn" data-ai="gemini">Gemini ↗</button>
-      <span class="ml-sep" aria-hidden="true"></span>
-      <span class="ml-label">Share</span>
-      <button class="share-ico" data-share="x" title="Share on X" aria-label="Share on X">𝕏</button>
-      <button class="share-ico" data-share="linkedin" title="Share on LinkedIn" aria-label="Share on LinkedIn">in</button>
-      <button class="share-ico" data-share="whatsapp" title="Share on WhatsApp" aria-label="Share on WhatsApp">⌬</button>
-    </div>
-    <p class="m-hint" id="mHint" hidden></p>
   </div>
 </div>
 
-<div class="toast" id="toast" hidden>Copied to clipboard ✓</div>
-<script src="app.js"></script>
+<!-- AUTH MODAL -->
+<div class="au-back" id="authBack" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+  <div class="au-card" id="authCard">
+    <button class="au-close" id="authClose" aria-label="Close">&#10005;</button>
+    <div class="au-head">
+      <div class="au-mark">&gt;|</div>
+      <h3 id="authTitle">Enter the <em>vault</em></h3>
+      <p id="authSub">Create a free account to open any prompt.</p>
+    </div>
+    <div class="au-body">
+      <!-- OAuth + magic link -->
+      <button class="au-oauth" id="googleBtn" type="button">
+        <svg viewBox="0 0 18 18" aria-hidden="true"><path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.91c1.7-1.57 2.69-3.88 2.69-6.62z"/><path fill="#34A853" d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.91-2.26c-.81.54-1.84.86-3.05.86-2.35 0-4.34-1.58-5.05-3.71H.96v2.33A9 9 0 0 0 9 18z"/><path fill="#FBBC05" d="M3.95 10.71a5.4 5.4 0 0 1 0-3.42V4.96H.96a9 9 0 0 0 0 8.08l2.99-2.33z"/><path fill="#EA4335" d="M9 3.58c1.32 0 2.51.45 3.44 1.35l2.58-2.59C13.46.89 11.43 0 9 0A9 9 0 0 0 .96 4.96l2.99 2.33C4.66 5.16 6.65 3.58 9 3.58z"/></svg>
+        Continue with Google
+      </button>
+      <div class="au-or">or</div>
+
+      <!-- email + password form -->
+      <form id="authForm" autocomplete="on" novalidate>
+        <div class="au-field" id="nameField" style="display:none">
+          <label for="authName">Name (optional)</label>
+          <input class="au-input" type="text" id="authName" placeholder="Your name" autocomplete="name">
+        </div>
+        <div class="au-field">
+          <label for="authEmail">Email</label>
+          <input class="au-input" type="email" id="authEmail" placeholder="you@company.com" autocomplete="email" required>
+        </div>
+        <div class="au-field" id="pwField">
+          <label for="authPassword">Password</label>
+          <input class="au-input" type="password" id="authPassword" placeholder="••••••••" autocomplete="current-password" minlength="8">
+          <div class="au-sub">
+            <span class="au-link" id="forgotLink">Forgot password?</span>
+            <span class="au-link" id="magicToggle">Email me a magic link instead</span>
+          </div>
+        </div>
+        <button class="au-btn" id="authSubmit" type="submit">Sign in</button>
+      </form>
+
+      <div class="au-msg" id="authMsg"><span class="mi" id="authMsgIc">!</span><span id="authMsgText"></span></div>
+
+      <div class="au-alt" id="authAlt">
+        New here? <a id="toSignup">Create a free account</a>
+      </div>
+      <p class="au-foot-note">Pay once, own forever. Your free account unlocks 221 starter prompts and lets you browse the whole vault.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ACCOUNT PANEL -->
+<div class="au-back" id="acctBack" role="dialog" aria-modal="true" aria-labelledby="acctTitle">
+  <div class="au-card wide" id="acctCard">
+    <button class="au-close" id="acctClose" aria-label="Close">&#10005;</button>
+    <div class="au-head">
+      <div class="au-mark">&gt;|</div>
+      <h3 id="acctTitle">Your <em>account</em></h3>
+    </div>
+    <div class="au-body">
+      <div class="acct-row">
+        <span class="lbl">Email</span>
+        <span class="val" id="acctEmail">—</span>
+      </div>
+      <div class="acct-row">
+        <span class="lbl">Current tier</span>
+        <span class="val"><span class="acct-tier-badge free" id="acctTierBadge">Free</span></span>
+      </div>
+      <div class="acct-row">
+        <span class="lbl">Member since</span>
+        <span class="val" id="acctSince">—</span>
+      </div>
+      <div class="acct-verify" id="acctVerify"><span>&#9888;</span><span>Email not verified yet — check your inbox. <span class="au-link" id="resendVerify">Resend link</span></span></div>
+
+      <div class="acct-actions">
+        <button class="acct-mini" id="manageBilling"><span>Manage billing</span><span class="chev">&#8599;</span></button>
+        <button class="acct-mini" id="upgradeBtn"><span>Upgrade your tier</span><span class="chev">&#8599;</span></button>
+        <button class="acct-mini" id="changePwBtn"><span>Change password</span><span class="chev">&#8250;</span></button>
+        <button class="acct-mini" id="logoutBtn"><span>Log out</span><span class="chev">&#8250;</span></button>
+        <button class="acct-mini danger" id="deleteAcctBtn"><span>Delete account</span><span class="chev">&#8250;</span></button>
+      </div>
+
+      <!-- change-password inline form -->
+      <form id="changePwForm" style="display:none;margin-top:18px">
+        <div class="au-field">
+          <label for="newPw">New password</label>
+          <input class="au-input" type="password" id="newPw" placeholder="At least 8 characters" autocomplete="new-password" minlength="8">
+        </div>
+        <button class="au-btn" type="submit">Update password</button>
+      </form>
+
+      <div class="au-msg" id="acctMsg"><span class="mi" id="acctMsgIc">!</span><span id="acctMsgText"></span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ADA -->
+<button class="ada-bubble" id="adaBubble" aria-label="Chat with Ada, the concierge"><span class="a-ic">A</span></button>
+<div class="ada-panel" id="adaPanel" role="dialog" aria-label="Ada concierge chat">
+  <div class="ada-top">
+    <div class="ada-av">A</div>
+    <div><h6>Ada</h6><span>Your vault concierge</span></div>
+  </div>
+  <div class="ada-body">
+    <div class="ada-msg" id="adaMsg">Welcome to <b>ProPrompt</b>. I'm Ada — I'll help you find the right tier or the right prompt. What are you after?</div>
+    <div class="ada-sugg">
+      <button class="ada-q">Which tier is right for me?</button>
+      <button class="ada-q">Is it really one payment forever?</button>
+      <button class="ada-q">How are these different from free prompts?</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"><i>&#10003;</i><span id="toastText">Done</span></div>
+
+<script type="module">
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+(function(){
+  "use strict";
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ============================================================
+     SUPABASE / AUTH / ENTITLEMENT  (production config)
+     ============================================================ */
+  var SUPABASE_URL = 'https://dsmmgneggxxlrjciedqt.supabase.co';
+  var SUPABASE_PUBLISHABLE = 'sb_publishable_xtBr08-Cgre12IcOFmrP2g_nQq2PrYD';
+  var API_BASE = '/api';                         // Cloudflare Functions, same origin in prod
+  // Lemon Squeezy customer portal / checkout placeholders (owner swaps for real store URLs).
+  var LS_PORTAL_URL = 'https://store.getproprompt.com/billing';
+  var CHECKOUT = {
+    pro:    'https://store.getproprompt.com/checkout/pro',
+    studio: 'https://store.getproprompt.com/checkout/studio'
+  };
+  // PRE-LAUNCH: payments are not live yet (Lemon Squeezy identity verification pending).
+  // While true, every paid CTA captures an email / founding-member interest instead of
+  // opening a checkout that can't take money. Flip to false the day payments go live.
+  var WAITLIST_MODE = true;
+
+  // tier ladder: a logged-in user can hold any of these; content tiers are only free|pro|studio.
+  var TIER_RANK = { free:0, pro:1, studio:2, premium:3, business:3, elite:4 };
+  function rankOf(t){ var r = TIER_RANK[String(t||'free').toLowerCase()]; return r == null ? 0 : r; }
+
+  // Dev/local browse flag: ?preview=1 lets the OWNER read local bodies without the deployed API.
+  // Production default is FULLY GATED (paid bodies never read client-side).
+  var PREVIEW = /[?&]preview=1\b/.test(window.location.search);
+
+  var supabase = null;
+  try {
+    supabase = createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE, {
+      auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true }
+    });
+  } catch (e) { supabase = null; }
+
+  // auth/session state (UX only — the real gate is server-side RLS + the Function)
+  var AUTH = { user: null, session: null, tier: 'free', flags: {}, ready: false };
+
+  function currentTier(){ return AUTH.user ? AUTH.tier : 'free'; }
+  function isEntitled(promptTier){
+    // free content is always readable; paid content needs sufficient rank
+    if (String(promptTier || 'free') === 'free') return true;
+    if (!AUTH.user) return false;
+    return rankOf(currentTier()) >= rankOf(promptTier);
+  }
+
+  // ---- real email capture (lead magnets + waitlist) ----
+  // Writes to public.leads (anon INSERT-only via RLS). Returns a promise.
+  function captureLead(email, source, tierIntent){
+    email = (email || '').trim().toLowerCase();
+    if (email.indexOf('@') < 1) return Promise.reject(new Error('invalid email'));
+    var ref = null; try { ref = localStorage.getItem('pp_ref') || null; } catch(_){}
+    try { localStorage.setItem('pp_lead', email); } catch(_){}   // remember for prefill
+    if (!supabase) return Promise.resolve({ offline: true });
+    return supabase.from('leads').insert({
+      email: email, source: source || null, ref: ref, tier_intent: tierIntent || null
+    }).then(function(res){ if (res && res.error) throw res.error; return res; });
+  }
+
+  /* ---------- gold dust canvas ---------- */
+  var canvas = document.getElementById('dust');
+  var ctx = canvas ? canvas.getContext('2d') : null;
+  var particles = [], W = 0, H = 0, raf = null, dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+  function resize(){
+    W = window.innerWidth; H = window.innerHeight;
+    canvas.width = W * dpr; canvas.height = H * dpr;
+    canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  function seed(){
+    particles = [];
+    var count = Math.min(120, Math.floor(W * H / 14000));
+    for (var i = 0; i < count; i++){
+      particles.push({
+        x: Math.random() * W,
+        y: Math.random() * H,
+        r: Math.random() * 1.7 + 0.4,
+        vx: (Math.random() - 0.5) * 0.18,
+        vy: -(Math.random() * 0.22 + 0.05),
+        a: Math.random() * 0.5 + 0.1,
+        tw: Math.random() * Math.PI * 2
+      });
+    }
+  }
+  function draw(){
+    ctx.clearRect(0, 0, W, H);
+    for (var i = 0; i < particles.length; i++){
+      var p = particles[i];
+      p.x += p.vx; p.y += p.vy; p.tw += 0.02;
+      if (p.y < -5) { p.y = H + 5; p.x = Math.random() * W; }
+      if (p.x < -5) p.x = W + 5;
+      if (p.x > W + 5) p.x = -5;
+      var flick = p.a * (0.6 + 0.4 * Math.sin(p.tw));
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(216,182,103,' + flick.toFixed(3) + ')';
+      ctx.fill();
+    }
+    for (var a = 0; a < particles.length; a++){
+      for (var b = a + 1; b < particles.length; b++){
+        var dx = particles[a].x - particles[b].x;
+        var dy = particles[a].y - particles[b].y;
+        var d2 = dx * dx + dy * dy;
+        if (d2 < 9000){
+          ctx.beginPath();
+          ctx.moveTo(particles[a].x, particles[a].y);
+          ctx.lineTo(particles[b].x, particles[b].y);
+          ctx.strokeStyle = 'rgba(216,182,103,' + (0.05 * (1 - d2 / 9000)).toFixed(3) + ')';
+          ctx.lineWidth = 0.5;
+          ctx.stroke();
+        }
+      }
+    }
+    raf = requestAnimationFrame(draw);
+  }
+  if (ctx && !reduce){
+    resize(); seed(); draw();
+    window.addEventListener('resize', function(){ resize(); seed(); });
+  } else if (ctx) {
+    resize(); seed();
+    ctx.clearRect(0,0,W,H);
+    for (var k = 0; k < particles.length; k++){
+      var pp = particles[k];
+      ctx.beginPath(); ctx.arc(pp.x, pp.y, pp.r, 0, Math.PI*2);
+      ctx.fillStyle = 'rgba(216,182,103,' + pp.a.toFixed(3) + ')'; ctx.fill();
+    }
+  }
+
+  /* ---------- custom cursor ---------- */
+  var cDot = document.getElementById('cDot'), cRing = document.getElementById('cRing');
+  var mx = window.innerWidth / 2, my = window.innerHeight / 2, rx = mx, ry = my;
+  if (!reduce && cDot && cRing && !window.matchMedia('(hover:none)').matches){
+    window.addEventListener('mousemove', function(e){
+      mx = e.clientX; my = e.clientY;
+      cDot.style.left = mx + 'px'; cDot.style.top = my + 'px';
+    });
+    (function loop(){
+      rx += (mx - rx) * 0.16; ry += (my - ry) * 0.16;
+      cRing.style.left = rx + 'px'; cRing.style.top = ry + 'px';
+      requestAnimationFrame(loop);
+    })();
+    var hotSel = 'a,button,input,.coll,.pcard,.chip,.guide,.tier,.card3d,.ada-q,[data-cta]';
+    document.addEventListener('mouseover', function(e){
+      if (e.target.closest(hotSel)) cRing.classList.add('hot');
+    });
+    document.addEventListener('mouseout', function(e){
+      if (e.target.closest(hotSel)) cRing.classList.remove('hot');
+    });
+  }
+
+  /* ---------- nav scroll ---------- */
+  var nav = document.getElementById('nav');
+  window.addEventListener('scroll', function(){
+    if (window.scrollY > 30) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  });
+  var menuToggle = document.getElementById('menuToggle');
+  if (menuToggle){
+    menuToggle.addEventListener('click', function(){
+      var links = document.querySelector('.nav-links');
+      if (!links) return;
+      var open = links.style.display === 'flex';
+      links.style.display = open ? '' : 'flex';
+      links.style.position = 'absolute';
+      links.style.flexDirection = 'column';
+      links.style.top = '64px';
+      links.style.right = '18px';
+      links.style.background = 'rgba(14,14,18,.96)';
+      links.style.padding = open ? '' : '18px 22px';
+      links.style.borderRadius = '14px';
+      links.style.border = open ? '' : '1px solid var(--line)';
+    });
+  }
+
+  /* ---------- reveal on scroll ---------- */
+  var io = null;
+  if ('IntersectionObserver' in window && !reduce){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  }
+  function observeReveals(root){
+    var revs = (root || document).querySelectorAll('.reveal:not(.in)');
+    if (io){ revs.forEach(function(r){ io.observe(r); }); }
+    else { for (var i = 0; i < revs.length; i++) revs[i].classList.add('in'); }
+  }
+  observeReveals(document);
+
+  /* ---------- parallax dust ---------- */
+  if (!reduce){
+    window.addEventListener('scroll', function(){
+      if (canvas) canvas.style.transform = 'translateY(' + (window.scrollY * 0.12) + 'px)';
+    }, { passive: true });
+  }
+
+  /* ---------- 3D tilt deck ---------- */
+  var deck = document.getElementById('deck'), deckStage = document.getElementById('deckStage');
+  if (deck && deckStage && !reduce){
+    deckStage.addEventListener('mousemove', function(e){
+      var r = deckStage.getBoundingClientRect();
+      var px = (e.clientX - r.left) / r.width - 0.5;
+      var py = (e.clientY - r.top) / r.height - 0.5;
+      deck.style.transform = 'rotateY(' + (px * 22) + 'deg) rotateX(' + (-py * 22) + 'deg)';
+    });
+    deckStage.addEventListener('mouseleave', function(){
+      deck.style.transform = 'rotateY(0deg) rotateX(0deg)';
+    });
+  }
+
+  /* ---------- toast ---------- */
+  var toast = document.getElementById('toast'), toastText = document.getElementById('toastText'), toastT = null;
+  function showToast(msg){
+    toastText.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastT);
+    toastT = setTimeout(function(){ toast.classList.remove('show'); }, 2600);
+  }
+
+  /* ---------- helpers ---------- */
+  function fmt(n){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
+  function esc(s){
+    return String(s == null ? '' : s)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+  }
+  function tierBadgeHTML(tier){
+    if (tier === 'studio') return '<span class="tier-badge t-studio"><span class="crown">&#9819;</span>Studio</span>';
+    if (tier === 'pro') return '<span class="tier-badge t-pro">Pro</span>';
+    return '<span class="tier-badge t-free">Free</span>';
+  }
+
+  /* ---------- data state ---------- */
+  var CATALOG = [], META = null, BODIES = {};
+  var GROUP_BY_KEY = {};
+  var activeGroup = 'all';
+  var searchTerm = '';
+  var filtered = [];
+  var rendered = 0;
+  var BATCH = 30;
+
+  var grid = document.getElementById('grid');
+  var loadMore = document.getElementById('loadMore');
+  var resultLine = document.getElementById('resultLine');
+  var searchInput = document.getElementById('searchInput');
+  var searchClear = document.getElementById('searchClear');
+  var chipRow = document.getElementById('chipRow');
+  var collGrid = document.getElementById('collGrid');
+
+  function fetchJSON(url){
+    return fetch(url).then(function(r){
+      if (!r.ok) throw new Error('Failed to load ' + url + ' (' + r.status + ')');
+      return r.json();
+    });
+  }
+
+  // SECURITY: the shipped body file MUST contain ONLY free-tier bodies. Paid bodies
+  // are NEVER shipped statically — they come solely from the gated /api/prompt Function
+  // after a server-side entitlement check. Loading a full-corpus file here would make the
+  // paywall trivially bypassable (just fetch the JSON). bodies.free.byid.json holds the
+  // 221 free starter bodies only.
+  Promise.all([
+    fetchJSON('./data/catalog.json'),
+    fetchJSON('./data/meta.json'),
+    fetchJSON('./data/bodies.free.byid.json')
+  ]).then(function(res){
+    CATALOG = res[0] || [];
+    META = res[1] || { total: CATALOG.length, groups: [] };
+    BODIES = res[2] || {};
+    init();
+  }).catch(function(err){
+    if (grid) grid.innerHTML = '<div class="no-results"><span class="nr-ic">&#9888;</span>Couldn\'t load the vault. Serve this folder over http (not file://) and reload.</div>';
+    if (resultLine) resultLine.textContent = String(err.message || err);
+  });
+
+  function init(){
+    META.groups = META.groups || [];
+    META.groups.forEach(function(g){ GROUP_BY_KEY[g.key] = g; });
+
+    var total = META.total || CATALOG.length;
+    var nColl = META.groups.length;
+    var fwGroup = GROUP_BY_KEY['frameworks'];
+    var nFrameworks = fwGroup ? fwGroup.count : 0;
+
+    setText('statPrompts', fmt(total));
+    setText('statColl', String(nColl));
+    setText('statFrameworks', String(nFrameworks));
+    setText('subPrompts', fmt(total));
+    setText('subColl', String(nColl));
+    setText('collEyebrow', nColl + ' collections · ' + nFrameworks + ' frameworks');
+    setHTML('collFoot', '<b>' + fmt(total) + ' prompts</b> across ' + nColl + ' collections — one library, yours for life.');
+    setText('deckBadge', nColl + ' collections inside');
+
+    // rotate a real prompt onto the hero deck
+    if (CATALOG.length){
+      var feat = CATALOG[Math.floor(Math.random() * CATALOG.length)];
+      var fg = GROUP_BY_KEY[feat.g];
+      setText('deckCat', (fg ? fg.label : (feat.c || 'Prompt')));
+      setText('deckTitle', feat.t);
+      var fbody = document.getElementById('deckBody');
+      if (fbody) fbody.innerHTML = renderDeckTeaser(feat);
+      var dfront = document.getElementById('deckFront');
+      if (dfront) dfront.setAttribute('data-id', feat.i);
+    }
+
+    renderCollections();
+    renderChips();
+    applyFilters();
+  }
+
+  function setText(id, v){ var el = document.getElementById(id); if (el) el.textContent = v; }
+  function setHTML(id, v){ var el = document.getElementById(id); if (el) el.innerHTML = v; }
+
+  function renderDeckTeaser(p){
+    var t = esc(p.te || p.t);
+    var vars = (p.v || []).slice(0, 3);
+    vars.forEach(function(v){
+      var label = esc(String(v).replace(/^\[|\]$/g, ''));
+      t += ' <span class="v">' + label + '</span>';
+    });
+    return t;
+  }
+
+  /* ---------- collections ---------- */
+  function renderCollections(){
+    var html = '';
+    META.groups.forEach(function(g, idx){
+      var d = (idx % 4) + 1;
+      var desc = collectionBlurb(g);
+      html += '<div class="coll reveal d' + d + '" data-group="' + esc(g.key) + '" style="--g-col:' + esc(g.color) + '">'
+        + '<span class="num">' + fmt(g.count) + ' prompts</span>'
+        + '<i class="ci">' + esc(g.icon) + '</i>'
+        + '<h4>' + esc(g.label) + '</h4>'
+        + '<p>' + esc(desc) + '</p>'
+        + '</div>';
+    });
+    collGrid.innerHTML = html;
+    observeReveals(collGrid);
+    collGrid.querySelectorAll('.coll').forEach(function(c){
+      c.addEventListener('click', function(){
+        selectGroup(c.getAttribute('data-group'), true);
+      });
+    });
+  }
+
+  function collectionBlurb(g){
+    var cats = (g.categories || []).slice(0, 3).map(function(c){ return c.label || c.name; });
+    if (cats.length) return cats.join(' · ') + (g.categories.length > 3 ? ' & more' : '');
+    return g.count + ' hand-built prompts.';
+  }
+
+  /* ---------- chips ---------- */
+  function renderChips(){
+    var total = META.total || CATALOG.length;
+    var html = '<button class="chip active" data-group="all">'
+      + '<span class="cc">&#9670;</span>All<span class="cn">' + fmt(total) + '</span></button>';
+    META.groups.forEach(function(g){
+      html += '<button class="chip" data-group="' + esc(g.key) + '">'
+        + '<span class="cc">' + esc(g.icon) + '</span>' + esc(g.label)
+        + '<span class="cn">' + fmt(g.count) + '</span></button>';
+    });
+    chipRow.innerHTML = html;
+    chipRow.querySelectorAll('.chip').forEach(function(ch){
+      ch.addEventListener('click', function(){
+        selectGroup(ch.getAttribute('data-group'), false);
+      });
+    });
+  }
+
+  function setActiveChip(){
+    chipRow.querySelectorAll('.chip').forEach(function(ch){
+      ch.classList.toggle('active', ch.getAttribute('data-group') === activeGroup);
+    });
+  }
+
+  function selectGroup(key, scroll){
+    activeGroup = key || 'all';
+    setActiveChip();
+    applyFilters();
+    if (scroll){
+      var b = document.getElementById('browse');
+      if (b) b.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+    }
+  }
+
+  /* ---------- search ---------- */
+  var searchTimer = null;
+  if (searchInput){
+    searchInput.addEventListener('input', function(){
+      searchClear.classList.toggle('on', searchInput.value.length > 0);
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(function(){
+        searchTerm = searchInput.value.trim().toLowerCase();
+        applyFilters();
+      }, 130);
+    });
+  }
+  if (searchClear){
+    searchClear.addEventListener('click', function(){
+      searchInput.value = '';
+      searchTerm = '';
+      searchClear.classList.remove('on');
+      applyFilters();
+      searchInput.focus();
+    });
+  }
+
+  /* ---------- filtering ---------- */
+  function applyFilters(){
+    var q = searchTerm;
+    filtered = CATALOG.filter(function(p){
+      if (activeGroup !== 'all' && p.g !== activeGroup) return false;
+      if (!q) return true;
+      var hay = (p.t + ' ' + (p.te || '') + ' ' + (p.c || '')).toLowerCase();
+      return hay.indexOf(q) !== -1;
+    });
+    rendered = 0;
+    grid.innerHTML = '';
+    renderBatch();
+    updateResultLine();
+  }
+
+  function renderBatch(){
+    if (!filtered.length){
+      grid.innerHTML = '<div class="no-results"><span class="nr-ic">&#9906;</span>No prompts match that search.<br><span style="font-size:.9rem;color:var(--faint);font-family:var(--mono);letter-spacing:.06em">Try a different word or clear the filter.</span></div>';
+      loadMore.style.display = 'none';
+      return;
+    }
+    var frag = document.createDocumentFragment();
+    var end = Math.min(rendered + BATCH, filtered.length);
+    for (var i = rendered; i < end; i++){
+      frag.appendChild(buildCard(filtered[i]));
+    }
+    grid.appendChild(frag);
+    rendered = end;
+    loadMore.style.display = rendered < filtered.length ? 'inline-block' : 'none';
+    if (rendered < filtered.length){
+      loadMore.textContent = 'Load more — ' + fmt(filtered.length - rendered) + ' left';
+    }
+  }
+
+  function buildCard(p){
+    var g = GROUP_BY_KEY[p.g];
+    var icon = g ? g.icon : '◆';
+    var col = g ? g.color : 'var(--gold)';
+    var card = document.createElement('article');
+    card.className = 'pcard';
+    card.setAttribute('data-id', p.i);
+    card.style.setProperty('--p-col', col);
+    var vcount = (p.v && p.v.length) ? p.v.length : 0;
+    var vlabel = vcount ? ('<span class="vn">' + vcount + '</span> variable' + (vcount === 1 ? '' : 's')) : 'no variables';
+    card.innerHTML =
+      '<div class="pcard-top">'
+        + '<span class="pcard-cat"><span class="gi">' + esc(icon) + '</span><span class="gt">' + esc(p.c || (g ? g.label : '')) + '</span></span>'
+        + tierBadgeHTML(p.tier)
+      + '</div>'
+      + '<h5>' + esc(p.t) + '</h5>'
+      + '<p>' + esc(p.te || '') + '</p>'
+      + '<div class="pcard-foot">'
+        + '<span class="pcard-meta">' + vlabel + ' · ' + fmt(p.len || 0) + ' chars</span>'
+        + '<span class="open-ic">&#8599;</span>'
+      + '</div>';
+    card.addEventListener('click', function(){ openModal(p); });
+    return card;
+  }
+
+  function updateResultLine(){
+    var n = filtered.length;
+    var parts = '<b>' + fmt(n) + '</b> ' + (n === 1 ? 'prompt' : 'prompts');
+    if (activeGroup !== 'all' && GROUP_BY_KEY[activeGroup]){
+      parts += ' in ' + GROUP_BY_KEY[activeGroup].icon + ' <b>' + esc(GROUP_BY_KEY[activeGroup].label) + '</b>';
+    }
+    if (searchTerm){ parts += ' matching &ldquo;' + esc(searchTerm) + '&rdquo;'; }
+    if (activeGroup !== 'all' || searchTerm){
+      parts += ' <span class="clearfilter" id="clearAll">clear filters</span>';
+    }
+    resultLine.innerHTML = parts;
+    var ca = document.getElementById('clearAll');
+    if (ca){
+      ca.addEventListener('click', function(){
+        activeGroup = 'all'; searchTerm = '';
+        if (searchInput) searchInput.value = '';
+        if (searchClear) searchClear.classList.remove('on');
+        setActiveChip();
+        applyFilters();
+      });
+    }
+  }
+
+  if (loadMore){ loadMore.addEventListener('click', renderBatch); }
+
+  /* ---------- modal ---------- */
+  var modalBack = document.getElementById('modalBack');
+  var modalCat = document.getElementById('modalCat');
+  var modalBadge = document.getElementById('modalBadge');
+  var modalTitle = document.getElementById('modalTitle');
+  var modalDesc = document.getElementById('modalDesc');
+  var modalBody = document.getElementById('modalBody');
+  var modalClose = document.getElementById('modalClose');
+  var modalHintText = document.getElementById('modalHintText');
+  var modalHint = document.getElementById('modalHint');
+  var modalFoot = document.querySelector('.modal-foot');
+  var currentSegments = [];
+  var lastFocus = null;
+  var TOKEN_RE = /\[([^\]]+)\]/g;
+
+  // Read a local body ONLY when allowed: free prompts always; paid prompts only under ?preview=1.
+  // In production a paid body is NEVER read from the shipped JSON — it comes from the gated Function.
+  function localBody(p){
+    if (String(p.tier || 'free') === 'free' || PREVIEW){
+      return BODIES[String(p.i)] || BODIES[p.i] || '';
+    }
+    return '';
+  }
+
+  function openModal(p){
+    var g = GROUP_BY_KEY[p.g];
+    lastFocus = document.activeElement;
+    modalCat.innerHTML = (g ? '<span style="font-size:1rem">' + esc(g.icon) + '</span>' : '') + esc(g ? g.label : (p.c || 'Prompt'));
+    modalBadge.innerHTML = tierBadgeHTML(p.tier);
+    modalTitle.textContent = p.t;
+    modalDesc.textContent = p.te || '';
+
+    // ---- GATE: decide whether this viewer may see the body ----
+    // PREVIEW (?preview=1) is a local owner dev flag that bypasses the gate so the owner can
+    // browse paid bodies locally. Production default (no flag) is fully gated.
+    if (!PREVIEW && !isEntitled(p.tier)){
+      renderPaywall(p);
+      return;
+    }
+    renderPromptBody(p);
+  }
+
+  // Render the actual fillable prompt (entitled path).
+  function renderPromptBody(p){
+    showFoot(true);
+    currentSegments = [];
+    modalBody.innerHTML = '';
+
+    var paid = String(p.tier || 'free') !== 'free';
+    var local = localBody(p);
+
+    if (paid && !PREVIEW){
+      // Production entitled path: fetch the body from the gated Function with the bearer token.
+      modalHint.style.display = '';
+      modalHintText.textContent = 'Unlocking from your vault…';
+      modalBody.innerHTML = '<span style="color:var(--faint);font-family:var(--mono);font-size:.8rem">Loading the prompt…</span>';
+      document.body.classList.add('modal-open');
+      modalBack.classList.add('show');
+      fetchEntitledBody(p).then(function(body){
+        if (body == null){
+          // Function unavailable / not deployed yet → graceful, honest fallback.
+          renderPaywall(p, 'We could not unlock this prompt right now. If you have already purchased, please reload — the secure unlock service may be warming up.');
+          return;
+        }
+        paintBody(p, body);
+      });
+      return;
+    }
+
+    // Free body (or owner ?preview=1): render straight from local JSON.
+    paintBody(p, local || p.te || '');
+  }
+
+  // Paint a resolved body string into fillable segments.
+  function paintBody(p, body){
+    showFoot(true);
+    currentSegments = parseBody(body);
+    modalBody.innerHTML = '';
+    var tokenCount = 0;
+    currentSegments.forEach(function(seg){
+      if (seg.type === 'text'){
+        modalBody.appendChild(document.createTextNode(seg.value));
+      } else {
+        tokenCount++;
+        var inp = document.createElement('input');
+        inp.className = 'v-input';
+        inp.type = 'text';
+        inp.setAttribute('data-token', seg.token);
+        inp.placeholder = seg.token;
+        inp.setAttribute('aria-label', seg.token);
+        inp.style.width = Math.max(70, Math.min(320, seg.token.length * 8.4 + 26)) + 'px';
+        modalBody.appendChild(inp);
+      }
+    });
+    modalHint.style.display = '';
+    modalHintText.textContent = tokenCount
+      ? ('Fill the ' + tokenCount + ' gold field' + (tokenCount === 1 ? '' : 's') + ', then copy or fire.')
+      : 'Ready to copy or fire straight into your model.';
+
+    document.body.classList.add('modal-open');
+    modalBack.classList.add('show');
+    setTimeout(function(){
+      var first = modalBody.querySelector('.v-input');
+      if (first) first.focus({ preventScroll: true });
+      else modalClose.focus({ preventScroll: true });
+    }, 380);
+  }
+
+  function showFoot(on){ if (modalFoot) modalFoot.style.display = on ? '' : 'none'; }
+
+  // Fetch a paid body from the deployed Cloudflare Function. Returns body string, or null on failure.
+  function fetchEntitledBody(p){
+    if (!supabase || !AUTH.session) return Promise.resolve(null);
+    var token = AUTH.session.access_token;
+    return fetch(API_BASE + '/prompt/' + encodeURIComponent(p.i), {
+      headers: { 'Authorization': 'Bearer ' + token }
+    }).then(function(r){
+      if (!r.ok) return null;
+      return r.json();
+    }).then(function(j){
+      if (!j) return null;
+      return (j.body != null) ? j.body : (j.prompt && j.prompt.body) || null;
+    }).catch(function(){ return null; });
+  }
+
+  /* ---------- paywall / sign-in gate (rendered inside the modal) ---------- */
+  var TIER_COPY = {
+    pro: {
+      name: 'Pro', price: '$100', anchor: '$199', rank: 1,
+      tagline: 'The full arsenal — all 2,713 hand-built prompts, yours for life.',
+      included: [
+        ['All 2,713 prompts', 'across all 26 collections — never scraped, never recycled'],
+        ['Every fill-in variable', 'engineered for ChatGPT, Claude &amp; Gemini'],
+        ['Personal-use licence', 'use them in all your own work'],
+        ['Lifetime updates', 'every future vault expansion, free']
+      ],
+      saves: ['~40 hrs', 'of prompt-engineering, per project'],
+      worth: ['$2,000+', 'of operator-grade prompts']
+    },
+    studio: {
+      name: 'Studio', price: '$250', anchor: '$499', rank: 2,
+      tagline: 'The crown jewels — every framework, optimizer & agent-builder, plus a commercial licence.',
+      included: [
+        ['Everything in Pro', 'all 2,713 prompts included'],
+        ['All 40+ frameworks', 'the flagship Context-Engineering & Prompt-Lab instruments'],
+        ['Commercial-use licence', 'deploy inside paid client work'],
+        ['Prompt builder + bulk export', 'mix, fill &amp; export at scale'],
+        ['Quarterly vault drops', 'day-0 access to every new collection']
+      ],
+      saves: ['a $5k contractor', 'replaced by a single mega-prompt'],
+      worth: ['~$2,400', 'of operator-grade assets']
+    }
+  };
+
+  function renderPaywall(p, note){
+    showFoot(false);
+    if (modalHint) modalHint.style.display = 'none';
+    currentSegments = [];
+
+    var html;
+    if (!AUTH.user && String(p.tier || 'free') === 'free'){
+      // logged-out, FREE prompt → invite to create a free account
+      html = ''
+        + '<div class="paywall">'
+        +   '<div class="pw-lock"><span class="ic">&#9670;</span><span class="tx">Free to open<span>Create a free account</span></span></div>'
+        +   '<div class="pw-section"><p class="pw-lead">This prompt is part of the <b style="color:var(--cream)">221 free starter prompts</b>. Create a free account — no card needed — to open it, fill the variables, and fire it straight into your model.</p></div>'
+        +   '<ul class="pw-list">'
+        +     '<li><i>&#10003;</i><span>221 starter prompts, free forever</span></li>'
+        +     '<li><i>&#10003;</i><span>Browse the entire 2,713-prompt vault</span></li>'
+        +     '<li><i>&#10003;</i><span>No credit card &middot; takes 20 seconds</span></li>'
+        +   '</ul>'
+        +   '<div class="pw-cta">'
+        +     '<button class="au-btn" data-pw="signup">Create a free account</button>'
+        +     '<p class="pw-signin-line">Already have one? <span class="au-link" data-pw="login">Sign in</span></p>'
+        +   '</div>'
+        + '</div>';
+    } else {
+      // PAID prompt the viewer is not entitled to → benefit-driven paywall
+      var t = TIER_COPY[p.tier] || TIER_COPY.studio;
+      var inc = t.included.map(function(x){
+        return '<li><i>&#10022;</i><span><b>' + x[0] + '</b> — ' + x[1] + '</span></li>';
+      }).join('');
+      html = ''
+        + '<div class="paywall">'
+        +   '<div class="pw-lock"><span class="ic">&#9819;</span><span class="tx">' + esc(p.t) + '<span>' + t.name + ' instrument</span></span></div>'
+        +   (note ? '<div class="au-msg ok show" style="margin-bottom:16px"><span class="mi">&#9888;</span><span>' + esc(note) + '</span></div>' : '')
+        +   '<div class="pw-section"><h4>What it does</h4><p class="pw-lead">' + esc(p.te || t.tagline) + '</p></div>'
+        +   '<div class="pw-section"><h4>The outcome</h4><p class="pw-lead" style="font-size:1.02rem;color:var(--mute)">' + t.tagline + ' Skip the trial-and-error and ship the result a specialist would charge for.</p></div>'
+        +   '<div class="pw-section"><h4>Why it\'s a ' + t.name + ' instrument</h4><ul class="pw-list">' + inc + '</ul></div>'
+        +   '<div class="pw-section"><div class="pw-value">'
+        +     '<div class="vb"><div class="n">' + t.saves[0] + '</div><div class="l">' + t.saves[1] + '</div></div>'
+        +     '<div class="vb"><div class="n">' + t.worth[0] + '</div><div class="l">' + t.worth[1] + '</div></div>'
+        +   '</div></div>'
+        +   '<div class="pw-cta">'
+        +     (WAITLIST_MODE
+                 ? '<button class="au-btn" data-pw="waitlist" data-tier="' + p.tier + '">Join the launch list &mdash; lock in founding pricing</button>'
+                   + '<p class="pw-fine">Founding members save on every tier &middot; we’ll email you the moment ' + t.name + ' opens</p>'
+                   + (AUTH.user
+                        ? '<p class="pw-signin-line">You’re signed in — we’ll email you at launch.</p>'
+                        : '<p class="pw-signin-line">Already have an account? <span class="au-link" data-pw="login">Sign in</span></p>')
+                 : '<button class="au-btn" data-pw="checkout" data-tier="' + p.tier + '">Unlock ' + t.name + ' &mdash; ' + t.price + ' once <span style="opacity:.6;text-decoration:line-through;margin-left:6px">' + t.anchor + '</span></button>'
+                   + '<p class="pw-fine">One payment &middot; lifetime access &middot; 7-day no-questions refund</p>'
+                   + (AUTH.user
+                        ? '<p class="pw-signin-line">Already purchased? <span class="au-link" data-pw="refresh">Refresh access</span></p>'
+                        : '<p class="pw-signin-line">Already own it? <span class="au-link" data-pw="login">Sign in</span></p>'))
+        +   '</div>'
+        + '</div>';
+    }
+
+    modalBody.innerHTML = html;
+
+    // wire the paywall buttons
+    modalBody.querySelectorAll('[data-pw]').forEach(function(b){
+      b.addEventListener('click', function(){
+        var act = b.getAttribute('data-pw');
+        if (act === 'signup'){ closeModal(); openAuth('signup'); }
+        else if (act === 'login'){ closeModal(); openAuth('login'); }
+        else if (act === 'waitlist'){
+          var wtier = b.getAttribute('data-tier') || 'studio';
+          if (AUTH.user && AUTH.user.email){
+            captureLead(AUTH.user.email, 'waitlist:' + wtier, wtier)
+              .then(function(){ showToast('You’re on the founding list ✓ — we’ll email you at launch'); })
+              .catch(function(){ showToast('You’re signed in — we’ll email you at launch'); });
+          } else {
+            closeModal(); openAuth('signup');
+            showToast('Create your free account — founding members lock in launch pricing');
+          }
+        }
+        else if (act === 'checkout'){
+          var tier = b.getAttribute('data-tier') || 'studio';
+          var url = CHECKOUT[tier] || CHECKOUT.studio;
+          if (AUTH.user && AUTH.user.email) url += (url.indexOf('?') < 0 ? '?' : '&') + 'checkout[email]=' + encodeURIComponent(AUTH.user.email);
+          window.open(url, '_blank', 'noopener');
+          showToast('Opening secure checkout');
+        }
+        else if (act === 'refresh'){ refreshEntitlement(true); showToast('Refreshing your access…'); }
+      });
+    });
+
+    document.body.classList.add('modal-open');
+    modalBack.classList.add('show');
+    setTimeout(function(){
+      var first = modalBody.querySelector('[data-pw]');
+      if (first) first.focus({ preventScroll: true });
+      else modalClose.focus({ preventScroll: true });
+    }, 380);
+  }
+
+  function parseBody(body){
+    var segs = [];
+    var last = 0, m;
+    TOKEN_RE.lastIndex = 0;
+    while ((m = TOKEN_RE.exec(body)) !== null){
+      if (m.index > last){ segs.push({ type: 'text', value: body.slice(last, m.index) }); }
+      segs.push({ type: 'token', token: m[1] });
+      last = m.index + m[0].length;
+    }
+    if (last < body.length){ segs.push({ type: 'text', value: body.slice(last) }); }
+    if (!segs.length) segs.push({ type: 'text', value: body });
+    return segs;
+  }
+
+  function closeModal(){
+    modalBack.classList.remove('show');
+    document.body.classList.remove('modal-open');
+    currentSegments = [];
+    showFoot(true);
+    if (modalHint) modalHint.style.display = '';
+    if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true });
+  }
+
+  function assemble(){
+    var out = '';
+    currentSegments.forEach(function(seg){
+      if (seg.type === 'text'){ out += seg.value; }
+      else {
+        var el = modalBody.querySelector('.v-input[data-token="' + cssEsc(seg.token) + '"]');
+        var val = el && el.value.trim() ? el.value.trim() : ('[' + seg.token + ']');
+        out += val;
+      }
+    });
+    return out;
+  }
+
+  function cssEsc(s){ return String(s).replace(/"/g, '\\"'); }
+
+  modalClose.addEventListener('click', closeModal);
+  modalBack.addEventListener('click', function(e){ if (e.target === modalBack) closeModal(); });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape'){
+      if (modalBack.classList.contains('show')) closeModal();
+      var ap = document.getElementById('adaPanel');
+      if (ap && ap.classList.contains('show')) ap.classList.remove('show');
+    }
+  });
+
+  function copyText(text){
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      return navigator.clipboard.writeText(text).catch(function(){ legacyCopy(text); });
+    }
+    legacyCopy(text);
+    return Promise.resolve();
+  }
+  function legacyCopy(text){
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.focus(); ta.select();
+    try { document.execCommand('copy'); } catch (err) {}
+    document.body.removeChild(ta);
+  }
+
+  document.querySelectorAll('.modal-foot .mbtn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var text = assemble();
+      var action = btn.getAttribute('data-action');
+      copyText(text);
+      var q = encodeURIComponent(text);
+      if (action === 'copy'){
+        showToast('Prompt copied to clipboard');
+      } else if (action === 'chatgpt'){
+        window.open('https://chatgpt.com/?q=' + q, '_blank', 'noopener');
+        showToast('Copied · opening ChatGPT');
+      } else if (action === 'gemini'){
+        window.open('https://gemini.google.com/app', '_blank', 'noopener');
+        showToast('Copied · paste it into Gemini');
+      } else if (action === 'claude'){
+        window.open('https://claude.ai/new?q=' + q, '_blank', 'noopener');
+        showToast('Copied · opening Claude');
+      }
+    });
+  });
+
+  var exploreBtn = document.getElementById('exploreBtn');
+  if (exploreBtn){
+    exploreBtn.addEventListener('click', function(){
+      var id = null, dfront = document.getElementById('deckFront');
+      if (dfront) id = dfront.getAttribute('data-id');
+      var p = null;
+      if (id != null){ p = CATALOG.filter(function(x){ return String(x.i) === String(id); })[0]; }
+      if (!p) p = CATALOG[0];
+      if (p) openModal(p);
+    });
+  }
+  var deckFront = document.getElementById('deckFront');
+  if (deckFront){
+    deckFront.addEventListener('click', function(){
+      var id = deckFront.getAttribute('data-id');
+      var p = id != null ? CATALOG.filter(function(x){ return String(x.i) === String(id); })[0] : CATALOG[0];
+      if (p) openModal(p);
+    });
+  }
+
+  /* ---------- guides ---------- */
+  document.querySelectorAll('.gate').forEach(function(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = form.getAttribute('data-guide') || 'guide';
+      var inp = form.querySelector('input');
+      var btn = form.querySelector('button');
+      var val = inp ? inp.value.trim() : '';
+      if (val && val.indexOf('@') > 0){
+        if (btn) btn.disabled = true;
+        captureLead(val, 'guide:' + name, null)
+          .then(function(){ showToast('You’re on the list — we’ll email the ' + name + ' shortly'); if (inp) inp.value = ''; })
+          .catch(function(){ showToast('Hmm, that didn’t save — please try again'); })
+          .then(function(){ if (btn) btn.disabled = false; });
+      } else {
+        showToast('Enter a valid email to receive it');
+        if (inp) inp.focus();
+      }
+    });
+  });
+
+  /* ---------- CTA buttons ---------- */
+  document.querySelectorAll('[data-cta]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var tier = b.getAttribute('data-tier');
+      if (tier){
+        // ----- a specific tier was chosen -----
+        try { localStorage.setItem('pp_tier_intent', tier); } catch(_){}
+        if (tier === 'free'){
+          if (AUTH.user){ showToast('You’re all set — browse the vault above'); }
+          else { openAuth('signup'); }
+          return;
+        }
+        // paid tier
+        if (!AUTH.user){
+          openAuth('signup');
+          showToast('Create your free account — founding members lock in launch pricing');
+          return;
+        }
+        if (WAITLIST_MODE){
+          captureLead(AUTH.user.email, 'pricing:' + tier, tier)
+            .then(function(){ showToast('You’re on the founding list ✓ — we’ll email you at launch'); })
+            .catch(function(){ showToast('You’re on the list — we’ll email you at launch'); });
+        } else {
+          var url = CHECKOUT[tier] || CHECKOUT.studio;
+          if (AUTH.user.email) url += (url.indexOf('?') < 0 ? '?' : '&') + 'checkout[email]=' + encodeURIComponent(AUTH.user.email);
+          window.open(url, '_blank', 'noopener');
+          showToast('Opening secure checkout');
+        }
+        return;
+      }
+      // ----- generic CTA → scroll to pricing -----
+      var pr = document.getElementById('pricing');
+      if (pr) pr.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+      showToast('Choose your tier below — own it for life');
+    });
+  });
+
+  /* ---------- Ada concierge ---------- */
+  var adaBubble = document.getElementById('adaBubble');
+  var adaPanel = document.getElementById('adaPanel');
+  var adaMsg = document.getElementById('adaMsg');
+  var answers = {
+    'Which tier is right for me?': 'If you operate solo, <b>Pro</b> ($100) is plenty. Running client work or an agency? <b>Studio</b> ($250) adds all 40+ frameworks + a commercial licence — it’s the one most people pick.',
+    'Is it really one payment forever?': 'Yes. <b>One payment, lifetime access</b> — no subscription, no renewals. Every future vault expansion is included free.',
+    'How are these different from free prompts?': 'Every prompt is <b>hand-built and never scraped</b> — engineered with fill-in variables and tested across ChatGPT, Claude &amp; Gemini. 2,713 of them, filed by job across 26 collections.'
+  };
+  if (adaBubble && adaPanel){
+    adaBubble.addEventListener('click', function(){
+      adaPanel.classList.toggle('show');
+    });
+    adaPanel.querySelectorAll('.ada-q').forEach(function(q){
+      q.addEventListener('click', function(){
+        var key = q.textContent.trim();
+        adaMsg.innerHTML = answers[key] || 'Drop us a line at <b>hello@getproprompt.com</b> and we’ll sort you out.';
+      });
+    });
+  }
+
+  /* ============================================================
+     AUTH + ACCOUNT controller
+     ============================================================ */
+  var navAuth      = document.getElementById('navAuth');
+  var signinLink   = document.getElementById('signinLink');
+
+  // auth modal els
+  var authBack = document.getElementById('authBack');
+  var authCard = document.getElementById('authCard');
+  var authClose = document.getElementById('authClose');
+  var authTitle = document.getElementById('authTitle');
+  var authSub = document.getElementById('authSub');
+  var authForm = document.getElementById('authForm');
+  var authName = document.getElementById('authName');
+  var nameField = document.getElementById('nameField');
+  var authEmail = document.getElementById('authEmail');
+  var authPassword = document.getElementById('authPassword');
+  var pwField = document.getElementById('pwField');
+  var authSubmit = document.getElementById('authSubmit');
+  var authMsg = document.getElementById('authMsg');
+  var authMsgText = document.getElementById('authMsgText');
+  var authMsgIc = document.getElementById('authMsgIc');
+  var authAlt = document.getElementById('authAlt');
+  var toSignup = document.getElementById('toSignup');
+  var forgotLink = document.getElementById('forgotLink');
+  var magicToggle = document.getElementById('magicToggle');
+
+  // account panel els
+  var acctBack = document.getElementById('acctBack');
+  var acctClose = document.getElementById('acctClose');
+  var acctEmail = document.getElementById('acctEmail');
+  var acctTierBadge = document.getElementById('acctTierBadge');
+  var acctSince = document.getElementById('acctSince');
+  var acctVerify = document.getElementById('acctVerify');
+  var resendVerify = document.getElementById('resendVerify');
+  var manageBilling = document.getElementById('manageBilling');
+  var upgradeBtn = document.getElementById('upgradeBtn');
+  var changePwBtn = document.getElementById('changePwBtn');
+  var changePwForm = document.getElementById('changePwForm');
+  var newPw = document.getElementById('newPw');
+  var logoutBtn = document.getElementById('logoutBtn');
+  var deleteAcctBtn = document.getElementById('deleteAcctBtn');
+  var acctMsg = document.getElementById('acctMsg');
+  var acctMsgText = document.getElementById('acctMsgText');
+  var acctMsgIc = document.getElementById('acctMsgIc');
+
+  var authMode = 'login';   // 'login' | 'signup' | 'magic'
+
+  function showMsg(box, txt, ic, type){
+    if (!box) return;
+    box.querySelector('span:last-child').innerHTML = txt;
+    box.querySelector('.mi').innerHTML = ic || '!';
+    box.className = 'au-msg show ' + (type || 'err');
+  }
+  function hideMsg(box){ if (box){ box.className = 'au-msg'; } }
+  function busy(btn, on, label){
+    if (!btn) return;
+    if (on){ btn.disabled = true; btn.dataset.label = btn.innerHTML; btn.innerHTML = '<span class="au-spin"></span>' + (label || 'Working…'); }
+    else { btn.disabled = false; if (btn.dataset.label) btn.innerHTML = btn.dataset.label; }
+  }
+  function prettyError(e){
+    var m = (e && e.message) ? e.message : String(e || 'Something went wrong');
+    if (/Invalid login/i.test(m)) return 'Email or password is incorrect.';
+    if (/already registered|already exists/i.test(m)) return 'That email already has an account — try signing in.';
+    if (/Email not confirmed/i.test(m)) return 'Please confirm your email first — check your inbox.';
+    if (/rate limit|too many/i.test(m)) return 'Too many attempts — wait a minute and try again.';
+    return m;
+  }
+
+  /* ----- open / close modals ----- */
+  function openAuth(mode){
+    if (!supabase){ showToast('Auth is unavailable on this page'); return; }
+    setAuthMode(mode || 'login');
+    hideMsg(authMsg);
+    acctBack.classList.remove('show');
+    authBack.classList.add('show');
+    document.body.classList.add('modal-open');
+    setTimeout(function(){ authEmail.focus({ preventScroll: true }); }, 360);
+  }
+  function closeAuth(){
+    authBack.classList.remove('show');
+    if (!modalBack.classList.contains('show') && !acctBack.classList.contains('show')) document.body.classList.remove('modal-open');
+  }
+  function openAcct(){
+    if (!AUTH.user){ openAuth('login'); return; }
+    hideMsg(acctMsg);
+    if (changePwForm) changePwForm.style.display = 'none';
+    paintAccount();
+    acctBack.classList.add('show');
+    document.body.classList.add('modal-open');
+  }
+  function closeAcct(){
+    acctBack.classList.remove('show');
+    if (!modalBack.classList.contains('show') && !authBack.classList.contains('show')) document.body.classList.remove('modal-open');
+  }
+
+  function setAuthMode(mode){
+    authMode = mode;
+    if (mode === 'signup'){
+      authTitle.innerHTML = 'Create your <em>free</em> account';
+      authSub.textContent = 'No card needed — unlock 221 starter prompts instantly.';
+      nameField.style.display = '';
+      pwField.style.display = '';
+      authPassword.setAttribute('autocomplete', 'new-password');
+      authSubmit.textContent = 'Create account';
+      authAlt.innerHTML = 'Already have an account? <a id="toLogin">Sign in</a>';
+      wireAltLinks();
+    } else if (mode === 'magic'){
+      authTitle.innerHTML = 'Email me a <em>magic link</em>';
+      authSub.textContent = 'We\'ll send a one-tap sign-in link — no password.';
+      nameField.style.display = 'none';
+      pwField.style.display = 'none';
+      authSubmit.textContent = 'Send the link';
+      authAlt.innerHTML = 'Prefer a password? <a id="toLogin">Sign in</a>';
+      wireAltLinks();
+    } else {
+      authTitle.innerHTML = 'Enter the <em>vault</em>';
+      authSub.textContent = 'Sign in to open prompts and access your tier.';
+      nameField.style.display = 'none';
+      pwField.style.display = '';
+      authPassword.setAttribute('autocomplete', 'current-password');
+      authSubmit.textContent = 'Sign in';
+      authAlt.innerHTML = 'New here? <a id="toSignup">Create a free account</a>';
+      wireAltLinks();
+    }
+  }
+  function wireAltLinks(){
+    var s = document.getElementById('toSignup'); if (s) s.addEventListener('click', function(){ setAuthMode('signup'); hideMsg(authMsg); });
+    var l = document.getElementById('toLogin');  if (l) l.addEventListener('click', function(){ setAuthMode('login'); hideMsg(authMsg); });
+  }
+
+  if (signinLink) signinLink.addEventListener('click', function(e){ e.preventDefault(); openAuth('login'); });
+  if (authClose)  authClose.addEventListener('click', closeAuth);
+  if (authBack)   authBack.addEventListener('click', function(e){ if (e.target === authBack) closeAuth(); });
+  if (acctClose)  acctClose.addEventListener('click', closeAcct);
+  if (acctBack)   acctBack.addEventListener('click', function(e){ if (e.target === acctBack) closeAcct(); });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape'){
+      if (authBack.classList.contains('show')) closeAuth();
+      if (acctBack.classList.contains('show')) closeAcct();
+    }
+  });
+  if (magicToggle) magicToggle.addEventListener('click', function(){ setAuthMode('magic'); hideMsg(authMsg); });
+
+  /* ----- the main auth form ----- */
+  if (authForm) authForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (!supabase) return;
+    hideMsg(authMsg);
+    var email = (authEmail.value || '').trim();
+    var pw = authPassword.value || '';
+    if (!email || email.indexOf('@') < 1){ showMsg(authMsg, 'Enter a valid email address.', '!'); authEmail.focus(); return; }
+
+    var ref = null;
+    try { ref = localStorage.getItem('pp_ref') || undefined; } catch(_){}
+
+    if (authMode === 'magic'){
+      busy(authSubmit, true, 'Sending…');
+      supabase.auth.signInWithOtp({
+        email: email,
+        options: { data: ref ? { ref_code: ref } : undefined, emailRedirectTo: window.location.origin + window.location.pathname }
+      }).then(function(res){
+        busy(authSubmit, false);
+        if (res.error) return showMsg(authMsg, prettyError(res.error), '!');
+        showMsg(authMsg, 'Check your inbox — we sent a one-tap sign-in link to <b>' + esc(email) + '</b>.', '&#9993;', 'ok');
+      });
+      return;
+    }
+
+    if (authMode === 'signup'){
+      if (pw.length < 8){ showMsg(authMsg, 'Use at least 8 characters for your password.', '!'); authPassword.focus(); return; }
+      busy(authSubmit, true, 'Creating…');
+      supabase.auth.signUp({
+        email: email, password: pw,
+        options: {
+          data: Object.assign({}, ref ? { ref_code: ref } : {}, authName.value.trim() ? { full_name: authName.value.trim() } : {}),
+          emailRedirectTo: window.location.origin + window.location.pathname
+        }
+      }).then(function(res){
+        busy(authSubmit, false);
+        if (res.error) return showMsg(authMsg, prettyError(res.error), '!');
+        if (res.data && res.data.session){
+          showMsg(authMsg, 'Welcome to the vault. Setting things up…', '&#10003;', 'ok');
+          setTimeout(closeAuth, 700);
+        } else {
+          showMsg(authMsg, 'Almost there — confirm your email at <b>' + esc(email) + '</b> to finish. Then sign in.', '&#9993;', 'ok');
+        }
+      });
+      return;
+    }
+
+    // login
+    busy(authSubmit, true, 'Signing in…');
+    supabase.auth.signInWithPassword({ email: email, password: pw }).then(function(res){
+      busy(authSubmit, false);
+      if (res.error) return showMsg(authMsg, prettyError(res.error), '!');
+      showMsg(authMsg, 'Signed in. Welcome back.', '&#10003;', 'ok');
+      setTimeout(closeAuth, 500);
+    });
+  });
+
+  /* ----- Google OAuth ----- */
+  var googleBtn = document.getElementById('googleBtn');
+  if (googleBtn) googleBtn.addEventListener('click', function(){
+    if (!supabase) return;
+    var ref = null; try { ref = localStorage.getItem('pp_ref') || undefined; } catch(_){}
+    supabase.auth.signInWithOAuth({
+      provider: 'google',
+      options: { redirectTo: window.location.origin + window.location.pathname, queryParams: ref ? { ref_code: ref } : undefined }
+    }).then(function(res){ if (res.error) showMsg(authMsg, prettyError(res.error), '!'); });
+  });
+
+  /* ----- forgot password ----- */
+  if (forgotLink) forgotLink.addEventListener('click', function(){
+    if (!supabase) return;
+    var email = (authEmail.value || '').trim();
+    if (!email || email.indexOf('@') < 1){ showMsg(authMsg, 'Enter your email above first, then tap "Forgot password".', '!'); authEmail.focus(); return; }
+    busy(authSubmit, true, 'Sending…');
+    supabase.auth.resetPasswordForEmail(email, { redirectTo: window.location.origin + window.location.pathname + '?reset=1' })
+      .then(function(res){
+        busy(authSubmit, false);
+        if (res.error) return showMsg(authMsg, prettyError(res.error), '!');
+        showMsg(authMsg, 'Password-reset link sent to <b>' + esc(email) + '</b>. Open it to set a new one.', '&#9993;', 'ok');
+      });
+  });
+
+  /* ----- account panel ----- */
+  function paintAccount(){
+    if (!AUTH.user) return;
+    acctEmail.textContent = AUTH.user.email || '—';
+    var tier = currentTier();
+    acctTierBadge.textContent = tier.charAt(0).toUpperCase() + tier.slice(1);
+    acctTierBadge.className = 'acct-tier-badge ' + (tier === 'free' ? 'free' : (tier === 'pro' ? 'pro' : ''));
+    var created = AUTH.user.created_at ? new Date(AUTH.user.created_at) : null;
+    acctSince.textContent = created ? created.toLocaleDateString(undefined, { year:'numeric', month:'short', day:'numeric' }) : '—';
+    var verified = !!(AUTH.user.email_confirmed_at || AUTH.user.confirmed_at);
+    acctVerify.classList.toggle('show', !verified);
+  }
+
+  if (manageBilling) manageBilling.addEventListener('click', function(){
+    window.open(LS_PORTAL_URL, '_blank', 'noopener');
+    showToast('Opening billing portal');
+  });
+  if (upgradeBtn) upgradeBtn.addEventListener('click', function(){
+    closeAcct();
+    var pr = document.getElementById('pricing');
+    if (pr) pr.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+  });
+  if (changePwBtn) changePwBtn.addEventListener('click', function(){
+    changePwForm.style.display = changePwForm.style.display === 'none' ? 'block' : 'none';
+    if (changePwForm.style.display === 'block') newPw.focus();
+  });
+  if (changePwForm) changePwForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (!supabase) return;
+    var pw = newPw.value || '';
+    if (pw.length < 8){ showMsg(acctMsg, 'Use at least 8 characters.', '!'); newPw.focus(); return; }
+    supabase.auth.updateUser({ password: pw }).then(function(res){
+      if (res.error) return showMsg(acctMsg, prettyError(res.error), '!');
+      newPw.value = '';
+      changePwForm.style.display = 'none';
+      showMsg(acctMsg, 'Password updated.', '&#10003;', 'ok');
+    });
+  });
+  if (resendVerify) resendVerify.addEventListener('click', function(){
+    if (!supabase || !AUTH.user) return;
+    supabase.auth.resend({ type: 'signup', email: AUTH.user.email, options: { emailRedirectTo: window.location.origin + window.location.pathname } })
+      .then(function(res){
+        if (res.error) return showMsg(acctMsg, prettyError(res.error), '!');
+        showMsg(acctMsg, 'Verification email re-sent. Check your inbox.', '&#9993;', 'ok');
+      });
+  });
+  if (logoutBtn) logoutBtn.addEventListener('click', function(){
+    if (!supabase) return;
+    supabase.auth.signOut().then(function(){ closeAcct(); showToast('Signed out'); });
+  });
+  if (deleteAcctBtn) deleteAcctBtn.addEventListener('click', function(){
+    if (!supabase || !AUTH.user) return;
+    if (!window.confirm('Delete your account permanently? This cannot be undone. Any purchased access will be lost.')) return;
+    // Account deletion needs a privileged server call; ask the deployed Function, else guide the user.
+    var token = AUTH.session ? AUTH.session.access_token : '';
+    fetch(API_BASE + '/account/delete', { method: 'POST', headers: { 'Authorization': 'Bearer ' + token } })
+      .then(function(r){ return r.ok ? r.json().catch(function(){return{};}) : Promise.reject(r.status); })
+      .then(function(){ supabase.auth.signOut().then(function(){ closeAcct(); showToast('Account deleted'); }); })
+      .catch(function(){
+        showMsg(acctMsg, 'We could not delete the account automatically. Email <b>hello@getproprompt.com</b> and we\'ll remove it within 24h.', '&#9888;', 'err');
+      });
+  });
+
+  /* ----- entitlement: own row via supabase, fallback to /api/me ----- */
+  function refreshEntitlement(reopenModal){
+    if (!AUTH.user || !supabase){ AUTH.tier = 'free'; AUTH.flags = {}; renderNavAuth(); return Promise.resolve(); }
+    return supabase.from('entitlements')
+      .select('tier, commercial_license, bulk_license, dfy_support')
+      .eq('user_id', AUTH.user.id)
+      .maybeSingle()
+      .then(function(res){
+        if (!res.error && res.data && res.data.tier){
+          AUTH.tier = res.data.tier;
+          AUTH.flags = { commercial: !!res.data.commercial_license, bulk: !!res.data.bulk_license, dfy: !!res.data.dfy_support };
+          return;
+        }
+        return apiMeFallback();
+      })
+      .catch(apiMeFallback)
+      .then(function(){
+        renderNavAuth();
+        paintAccount();
+        if (reopenModal && lastOpened) openModal(lastOpened);
+      });
+  }
+  function apiMeFallback(){
+    if (!AUTH.session) return;
+    return fetch(API_BASE + '/me', { headers: { 'Authorization': 'Bearer ' + AUTH.session.access_token } })
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(j){
+        if (j && j.tier){
+          AUTH.tier = j.tier;
+          AUTH.flags = j.flags || {};
+        }
+      })
+      .catch(function(){ /* leave tier as-is (free) */ });
+  }
+
+  /* ----- nav rendering for auth state ----- */
+  function renderNavAuth(){
+    if (!navAuth) return;
+    if (AUTH.user){
+      var tier = currentTier();
+      var initial = (AUTH.user.email || '?').charAt(0).toUpperCase();
+      navAuth.innerHTML = ''
+        + '<button class="acct-btn" id="acctOpen" aria-label="Open account">'
+        +   '<span class="avatar">' + esc(initial) + '</span>'
+        +   '<span class="acct-tier">' + esc(tier) + '</span>'
+        +   '<span class="caret">&#9662;</span>'
+        + '</button>';
+      var ab = document.getElementById('acctOpen');
+      if (ab) ab.addEventListener('click', openAcct);
+    } else {
+      navAuth.innerHTML = '<a href="#" class="signin" id="signinLink">Sign in</a>';
+      var sl = document.getElementById('signinLink');
+      if (sl) sl.addEventListener('click', function(e){ e.preventDefault(); openAuth('login'); });
+    }
+  }
+
+  /* ----- track last opened prompt so we can re-gate after auth changes ----- */
+  var lastOpened = null;
+  var _openModal = openModal;
+  openModal = function(p){ lastOpened = p; return _openModal(p); };
+
+  /* ----- session bootstrap + reactive auth ----- */
+  function bootstrapAuth(){
+    if (!supabase){ renderNavAuth(); return; }
+
+    // capture ?ref=CODE for referral attribution
+    try {
+      var rc = new URLSearchParams(window.location.search).get('ref');
+      if (rc) localStorage.setItem('pp_ref', rc);
+    } catch(_){}
+
+    // password-recovery landing (?reset=1 or supabase recovery event)
+    var wantsReset = /[?&]reset=1\b/.test(window.location.search);
+
+    supabase.auth.getSession().then(function(res){
+      var session = res && res.data ? res.data.session : null;
+      AUTH.session = session;
+      AUTH.user = session ? session.user : null;
+      AUTH.ready = true;
+      renderNavAuth();
+      if (AUTH.user) refreshEntitlement(false);
+      if (wantsReset) promptForNewPassword();
+    });
+
+    supabase.auth.onAuthStateChange(function(event, session){
+      AUTH.session = session;
+      AUTH.user = session ? session.user : null;
+      if (event === 'PASSWORD_RECOVERY'){ promptForNewPassword(); return; }
+      if (AUTH.user){
+        refreshEntitlement(modalBack.classList.contains('show'));
+      } else {
+        AUTH.tier = 'free'; AUTH.flags = {};
+        renderNavAuth();
+        // if a paywalled/free-gated modal is open, refresh it to the logged-out view
+        if (modalBack.classList.contains('show') && lastOpened) openModal(lastOpened);
+      }
+    });
+  }
+
+  // When arriving via a recovery link, open the auth modal in a "set new password" state.
+  function promptForNewPassword(){
+    openAuth('login');
+    setAuthMode('login');
+    authTitle.innerHTML = 'Set a <em>new password</em>';
+    authSub.textContent = 'Choose a new password for your account.';
+    nameField.style.display = 'none';
+    authEmail.parentElement.style.display = 'none';
+    pwField.style.display = '';
+    authPassword.value = '';
+    authPassword.setAttribute('autocomplete', 'new-password');
+    authPassword.placeholder = 'New password (8+ characters)';
+    var sub = pwField.querySelector('.au-sub'); if (sub) sub.style.display = 'none';
+    authSubmit.textContent = 'Update password';
+    authAlt.style.display = 'none';
+    // swap the submit handler for this flow
+    var handler = function(e){
+      e.preventDefault(); e.stopImmediatePropagation();
+      var pw = authPassword.value || '';
+      if (pw.length < 8){ showMsg(authMsg, 'Use at least 8 characters.', '!'); return; }
+      busy(authSubmit, true, 'Updating…');
+      supabase.auth.updateUser({ password: pw }).then(function(r){
+        busy(authSubmit, false);
+        if (r.error) return showMsg(authMsg, prettyError(r.error), '!');
+        showMsg(authMsg, 'Password updated — you\'re signed in.', '&#10003;', 'ok');
+        authForm.removeEventListener('submit', handler, true);
+        setTimeout(function(){ closeAuth(); authEmail.parentElement.style.display = ''; authAlt.style.display = ''; if (sub) sub.style.display = ''; }, 900);
+      });
+    };
+    authForm.addEventListener('submit', handler, true);
+  }
+
+  bootstrapAuth();
+})();
+</script>
 </body>
 </html>

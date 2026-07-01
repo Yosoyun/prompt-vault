@@ -3,7 +3,7 @@
 A free, fast, fully-static library of **470+ premium AI prompts** for ChatGPT, Claude
 & Gemini — search, filter, and copy any prompt in one click.
 
-**Hand-built, written & signed by Indrajeet Yadav.** Every prompt is original and
+**Hand-built, written & signed by ProPrompt.** Every prompt is original and
 refined to a premium bar — no recycled filler. Four curated shelves:
 
 - 🔥 **Trending & Viral** — what's actually going viral right now (hooks, threads, faceless YouTube, personal brand, money, study, careers…)
@@ -17,7 +17,7 @@ refined to a premium bar — no recycled filler. Four curated shelves:
 - 🗂️ 4 shelves + sub-topics, plus one-tap **Featured Collections**
 - ⧉ One-click copy · 🏷️ auto-highlighted `[VARIABLES]` so you know what to swap
 - ⭐ Save favourites (localStorage) · 🎲 Surprise me · 🔥 Trending rail
-- ✍️ A consistent **calligraphy signature** (Indrajeet Yadav) on every card — the copied prompt text stays clean
+- ✍️ A consistent **calligraphy signature** (ProPrompt) on every card — the copied prompt text stays clean
 - 🌗 Dark / light theme · responsive · keyboard friendly (`/` search, `Esc` close)
 - ⚡ Loads a slim index first; full prompt bodies stream in the background
 - 🔍 SEO: structured data (WebSite + FAQ), Open Graph image, sitemap
@@ -61,5 +61,5 @@ python3 tools/build-data.py
 
 ## Credit
 
-Every prompt is original work by **Indrajeet Yadav**, published free so the maximum
+Every prompt is original work by **ProPrompt**, published free so the maximum
 number of people can get exceptional results from AI.

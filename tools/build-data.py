@@ -2,7 +2,7 @@
 """
 Build The Prompt Vault dataset — PREMIUM ONLY (v3).
 
-100% hand-built, original prompts by Indrajeet Yadav. The old community export is
+100% hand-built, original prompts by ProPrompt. The old community export is
 NOT used. Source is incoming/*.json, routed to a group by filename prefix:
 
   <group>__<name>.json   -> that group   (image / agents / mega)
@@ -24,7 +24,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 INCOMING = os.path.join(ROOT, "incoming")
 OUT_DATA = os.path.join(ROOT, "data")
-CURATOR = "Indrajeet Yadav"
+CURATOR = "ProPrompt"
 
 # Premium groups, in display order (featured first). key, label, icon, color
 GROUPS = [

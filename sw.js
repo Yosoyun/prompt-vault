@@ -1,38 +1,23 @@
-/* ProPrompt — service worker (offline + fast repeat loads) */
-const CACHE = "pp-v2";
-const CORE = [
-  "./", "./index.html", "./styles.css", "./app.js",
-  "./data/meta.json", "./data/index.json", "./data/bodies.json",
-  "./og-cover.png", "./icon.svg", "./icon-192.png", "./icon-512.png", "./manifest.webmanifest",
-];
+/* ProPrompt — kill-switch service worker.
+ * The site no longer uses a caching service worker. This SW exists only to retire
+ * any previously-installed worker (which precached the old free site): it clears all
+ * caches, unregisters itself, and reloads open tabs so returning visitors always get
+ * the fresh, gated site. Safe to keep indefinitely. */
+self.addEventListener("install", function (e) { self.skipWaiting(); });
 
-self.addEventListener("install", (e) => {
-  e.waitUntil(
-    caches.open(CACHE).then((c) => c.addAll(CORE)).catch(() => {}).then(() => self.skipWaiting())
-  );
+self.addEventListener("activate", function (e) {
+  e.waitUntil((async function () {
+    try {
+      var keys = await caches.keys();
+      await Promise.all(keys.map(function (k) { return caches.delete(k); }));
+    } catch (_) {}
+    try { await self.registration.unregister(); } catch (_) {}
+    try {
+      var clients = await self.clients.matchAll({ type: "window" });
+      clients.forEach(function (c) { try { c.navigate(c.url); } catch (_) {} });
+    } catch (_) {}
+  })());
 });
 
-self.addEventListener("activate", (e) => {
-  e.waitUntil(
-    caches.keys()
-      .then((ks) => Promise.all(ks.filter((k) => k !== CACHE).map((k) => caches.delete(k))))
-      .then(() => self.clients.claim())
-  );
-});
-
-// Network-first (fresh when online), fall back to cache (works offline).
-self.addEventListener("fetch", (e) => {
-  const req = e.request;
-  if (req.method !== "GET" || !req.url.startsWith("http")) return;
-  e.respondWith(
-    fetch(req)
-      .then((res) => {
-        if (res && res.status === 200 && res.type === "basic") {
-          const copy = res.clone();
-          caches.open(CACHE).then((c) => c.put(req, copy)).catch(() => {});
-        }
-        return res;
-      })
-      .catch(() => caches.match(req).then((m) => m || caches.match("./index.html")))
-  );
-});
+/* Never serve from cache — let everything hit the network. */
+self.addEventListener("fetch", function (e) { /* no-op */ });
