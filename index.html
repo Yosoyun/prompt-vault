@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>ProPrompt — The Operators' Arsenal</title>
-<meta name="description" content="A premium, hand-built library of 2,713 AI prompts across 26 collections for ChatGPT, Claude & Gemini. Own it, don't rent it." />
+<title>The Prompt Vault — 2,600+ Free AI Prompts | ProPrompt</title>
+<meta name="description" content="A free, hand-built library of 2,600+ AI prompts across 28 collections for ChatGPT, Claude & Gemini. No sign-up, no paywall — open, fill, copy." />
 <link rel="canonical" href="https://getproprompt.com/" />
 <meta name="robots" content="index, follow" />
 <meta name="theme-color" content="#0a0a0c" />
@@ -15,18 +15,17 @@
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="ProPrompt" />
 <meta property="og:url" content="https://getproprompt.com/" />
-<meta property="og:title" content="ProPrompt — Premium AI Prompts for ChatGPT, Claude &amp; Gemini" />
-<meta property="og:description" content="2,713 hand-built, never-scraped AI prompts across 26 collections. Start free — own it, don't rent it." />
+<meta property="og:title" content="The Prompt Vault — 2,600+ Free AI Prompts for ChatGPT, Claude &amp; Gemini" />
+<meta property="og:description" content="Hand-built, never-scraped AI prompts across 28 collections. All free — no sign-up, no paywall." />
 <meta property="og:image" content="https://getproprompt.com/og-cover.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="ProPrompt — Premium AI Prompts" />
-<meta name="twitter:description" content="2,713 hand-built AI prompts for ChatGPT, Claude &amp; Gemini. Start free." />
+<meta name="twitter:title" content="The Prompt Vault — Free AI Prompts" />
+<meta name="twitter:description" content="2,600+ hand-built AI prompts for ChatGPT, Claude &amp; Gemini. All free." />
 <meta name="twitter:image" content="https://getproprompt.com/og-cover.png" />
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-  {"@type":"Organization","@id":"https://getproprompt.com/#org","name":"ProPrompt","url":"https://getproprompt.com/","logo":"https://getproprompt.com/icon.svg","description":"Hand-built premium AI prompts for ChatGPT, Claude and Gemini — own it, don't rent it."},
-  {"@type":"WebSite","@id":"https://getproprompt.com/#website","url":"https://getproprompt.com/","name":"ProPrompt","publisher":{"@id":"https://getproprompt.com/#org"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://getproprompt.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}},
-  {"@type":"Product","name":"ProPrompt — Premium AI Prompt Vault","description":"2,713 hand-built AI prompts across 26 collections for ChatGPT, Claude and Gemini.","brand":{"@id":"https://getproprompt.com/#org"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Free to start — 221 starter prompts, no card."}}
+  {"@type":"Organization","@id":"https://getproprompt.com/#org","name":"ProPrompt","url":"https://getproprompt.com/","logo":"https://getproprompt.com/icon.svg","description":"Hand-built AI prompts for ChatGPT, Claude and Gemini — free for everyone."},
+  {"@type":"WebSite","@id":"https://getproprompt.com/#website","url":"https://getproprompt.com/","name":"The Prompt Vault","publisher":{"@id":"https://getproprompt.com/#org"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://getproprompt.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}}
 ]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -304,56 +303,6 @@ h2.sec-h em{font-style:italic;color:var(--gold);font-weight:300}
 .manifesto p{font-family:var(--serif);font-size:1.34rem;color:var(--mute);max-width:46ch;margin:34px auto 0;font-weight:400}
 .manifesto .sig{font-family:var(--mono);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--faint);margin-top:30px}
 
-/* ---------- PRICING ---------- */
-.price-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:54px;align-items:stretch}
-.tier{
-  position:relative;padding:30px 22px 28px;border-radius:var(--r);display:flex;flex-direction:column;
-  background:linear-gradient(170deg,rgba(22,22,27,.78),rgba(13,13,17,.78));
-  border:1px solid var(--line);transition:transform .4s var(--ease),border-color .4s;
-}
-.tier:hover{transform:translateY(-5px);border-color:var(--line2)}
-.tier .tn{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
-.tier .anchor{font-family:var(--mono);font-size:.78rem;color:var(--faint);text-decoration:line-through;margin-top:16px;height:1em}
-.tier .price{font-family:var(--disp);font-size:2.5rem;font-weight:400;color:var(--white);line-height:1;margin-top:4px}
-.tier .price small{font-size:.9rem;color:var(--mute);font-family:var(--body);font-weight:300}
-.tier .once{font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;color:var(--faint);margin-top:8px;text-transform:uppercase}
-.tier ul{list-style:none;margin:22px 0;display:flex;flex-direction:column;gap:11px;flex:1}
-.tier li{font-size:.82rem;color:var(--mute);display:flex;gap:9px;align-items:flex-start;line-height:1.4}
-.tier li i{color:var(--gold);font-size:.92rem;margin-top:2px;flex-shrink:0}
-.tier .btn{width:100%;padding:12px;text-align:center}
-.tier.hero-tier{
-  background:linear-gradient(170deg,rgba(40,34,20,.92),rgba(20,17,12,.95));
-  border:1px solid var(--gold);transform:scale(1.06);z-index:2;
-  box-shadow:0 26px 70px rgba(216,182,103,.22),inset 0 1px 0 rgba(216,182,103,.2);
-}
-.tier.hero-tier:hover{transform:scale(1.06) translateY(-5px)}
-.tier.hero-tier .price{color:var(--gold-hi)}
-.tier .badge-top{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--gold-hi),var(--gold));color:#1a1407;font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 14px;border-radius:100px;font-weight:500;white-space:nowrap;box-shadow:0 6px 18px rgba(216,182,103,.4)}
-.tier .seats{font-family:var(--mono);font-size:.64rem;color:var(--rose);margin-top:8px;letter-spacing:.04em}
-.value-stack{margin-top:40px;text-align:center;font-family:var(--serif);font-size:1.32rem;color:var(--cream)}
-.value-stack b{color:var(--gold);font-weight:600;font-style:italic;font-family:var(--disp)}
-.guarantee{text-align:center;font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;color:var(--faint);margin-top:14px;text-transform:uppercase}
-.badge-legend{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-top:30px;font-family:var(--mono);font-size:.66rem;letter-spacing:.06em;color:var(--faint)}
-.badge-legend span{display:inline-flex;align-items:center;gap:8px}
-
-/* ---------- GUIDES ---------- */
-.guides-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:50px}
-.guide{
-  padding:26px 22px;border-radius:var(--r);position:relative;overflow:hidden;display:flex;flex-direction:column;
-  background:linear-gradient(165deg,rgba(24,24,29,.7),rgba(13,13,17,.7));border:1px solid var(--line);transition:transform .4s var(--ease),border-color .4s;min-height:230px;
-}
-.guide:hover{transform:translateY(-5px);border-color:var(--line2)}
-.guide .gtag{font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);align-self:flex-start;border:1px solid var(--line);padding:4px 10px;border-radius:100px}
-.guide .gic{font-size:1.6rem;color:var(--gold);margin:18px 0 0}
-.guide h5{font-family:var(--disp);font-size:1.16rem;font-weight:400;color:var(--white);margin:12px 0 7px;line-height:1.14}
-.guide p{font-size:.8rem;color:var(--mute);line-height:1.5;flex:1}
-.gate{display:flex;gap:8px;margin-top:16px}
-.gate input{flex:1;min-width:0;background:rgba(0,0,0,.25);border:1px solid var(--line);border-radius:10px;padding:10px 13px;color:var(--cream);font-family:var(--mono);font-size:.74rem;outline:none;transition:border-color .3s}
-.gate input::placeholder{color:var(--faint)}
-.gate input:focus{border-color:var(--gold)}
-.gate button{background:rgba(216,182,103,.12);border:1px solid var(--line2);color:var(--gold);width:42px;border-radius:10px;cursor:pointer;font-size:1rem;display:grid;place-items:center;transition:background .3s,transform .25s}
-.gate button:hover{background:rgba(216,182,103,.24);transform:translateX(2px)}
-
 /* ---------- FOOTER ---------- */
 footer{position:relative;z-index:3;border-top:1px solid var(--line);padding:72px 0 40px;margin-top:40px;background:linear-gradient(180deg,transparent,rgba(216,182,103,.03))}
 .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px}
@@ -366,26 +315,6 @@ footer{position:relative;z-index:3;border-top:1px solid var(--line);padding:72px
 .foot-col a:hover{color:var(--gold);padding-left:5px}
 .foot-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:54px;padding-top:26px;border-top:1px solid var(--line);font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;color:var(--faint);flex-wrap:wrap;gap:14px}
 .foot-bottom .pay{display:flex;gap:16px;color:var(--mute)}
-
-/* ---------- ADA BOT ---------- */
-.ada-bubble{position:fixed;bottom:26px;right:26px;z-index:500;width:62px;height:62px;border-radius:50%;cursor:pointer;border:none;background:linear-gradient(135deg,var(--gold-hi),var(--gold-deep));display:grid;place-items:center;box-shadow:0 10px 34px rgba(216,182,103,.4);transition:transform .35s var(--ease)}
-.ada-bubble:hover{transform:scale(1.08) rotate(-4deg)}
-.ada-bubble .a-ic{font-family:var(--disp);font-size:1.5rem;font-weight:500;color:#1a1407}
-.ada-bubble::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:1px solid var(--line2);animation:ring 2.6s infinite}
-@keyframes ring{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.35);opacity:0}}
-.ada-panel{position:fixed;bottom:100px;right:26px;z-index:500;width:340px;max-width:calc(100vw - 40px);border-radius:22px;overflow:hidden;background:linear-gradient(165deg,#1a1a20,#101015);border:1px solid var(--line2);box-shadow:0 30px 80px rgba(0,0,0,.6);transform:translateY(20px) scale(.96);opacity:0;visibility:hidden;transition:transform .4s var(--ease),opacity .4s,visibility .4s}
-.ada-panel.show{transform:none;opacity:1;visibility:visible}
-.ada-top{padding:20px 22px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:13px}
-.ada-av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--gold-hi),var(--gold-deep));display:grid;place-items:center;font-family:var(--disp);font-weight:600;color:#1a1407;font-size:1.1rem}
-.ada-top h6{font-family:var(--disp);font-size:1.1rem;font-weight:400;color:var(--white)}
-.ada-top span{font-family:var(--mono);font-size:.64rem;color:var(--gold);display:flex;align-items:center;gap:6px;margin-top:2px}
-.ada-top span::before{content:'';width:6px;height:6px;border-radius:50%;background:#5fae6c;box-shadow:0 0 6px #5fae6c}
-.ada-body{padding:20px 22px}
-.ada-msg{font-size:.86rem;color:var(--cream);line-height:1.6;background:rgba(216,182,103,.06);border:1px solid var(--line);padding:14px 16px;border-radius:14px;border-top-left-radius:4px}
-.ada-msg b{color:var(--gold);font-weight:500}
-.ada-sugg{margin-top:16px;display:flex;flex-direction:column;gap:9px}
-.ada-q{text-align:left;font-family:var(--body);font-size:.8rem;color:var(--cream);background:transparent;border:1px solid var(--line2);border-radius:12px;padding:11px 14px;cursor:pointer;transition:background .3s,border-color .3s,transform .25s}
-.ada-q:hover{background:rgba(216,182,103,.08);border-color:var(--gold);transform:translateX(3px)}
 
 /* ---------- TOAST ---------- */
 .toast{position:fixed;bottom:36px;left:50%;transform:translateX(-50%) translateY(28px);z-index:1500;background:linear-gradient(135deg,#1c1c22,#121217);border:1px solid var(--gold);color:var(--cream);font-family:var(--mono);font-size:.78rem;letter-spacing:.04em;padding:13px 22px;border-radius:100px;display:flex;align-items:center;gap:10px;opacity:0;visibility:hidden;transition:transform .4s var(--ease),opacity .4s,visibility .4s;box-shadow:0 14px 40px rgba(0,0,0,.5)}
@@ -424,149 +353,6 @@ footer{position:relative;z-index:3;border-top:1px solid var(--line);padding:72px
   html{scroll-behavior:auto}
 }
 
-/* ============================================================
-   AUTH + PAYWALL  (Atelier-native: gold, Fraunces, panels)
-   ============================================================ */
-
-/* --- nav auth slot --- */
-.nav-auth{display:flex;align-items:center;gap:18px}
-.acct-btn{
-  display:flex;align-items:center;gap:9px;cursor:pointer;background:transparent;border:1px solid var(--line2);
-  border-radius:100px;padding:6px 8px 6px 14px;color:var(--cream);font-family:var(--body);font-size:.82rem;
-  transition:border-color .3s,background .3s,transform .25s var(--ease);
-}
-.acct-btn:hover{border-color:var(--gold);background:rgba(216,182,103,.07);transform:translateY(-1px)}
-.acct-btn .avatar{
-  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;flex-shrink:0;
-  font-family:var(--disp);font-weight:600;font-size:.82rem;color:#1a1407;
-  background:linear-gradient(135deg,var(--gold-hi),var(--gold-deep));
-}
-.acct-btn .acct-tier{
-  font-family:var(--mono);font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);
-}
-.acct-btn .caret{color:var(--faint);font-size:.7rem;margin-left:-2px}
-
-/* generic Atelier overlay (auth + account share it) */
-.au-back{position:fixed;inset:0;z-index:1200;background:rgba(6,6,8,.78);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
-.au-back.show{opacity:1;visibility:visible}
-.au-card{
-  width:min(440px,100%);max-height:90vh;overflow-y:auto;border-radius:24px;position:relative;
-  background:linear-gradient(165deg,#1a1a20,#101015);border:1px solid var(--line2);
-  box-shadow:0 40px 100px rgba(0,0,0,.7),inset 0 1px 0 rgba(216,182,103,.14);
-  transform:scale(.92) translateY(18px);opacity:0;transition:transform .4s var(--ease),opacity .4s;
-}
-.au-back.show .au-card{transform:none;opacity:1}
-.au-card.wide{width:min(480px,100%)}
-.au-close{position:absolute;top:18px;right:18px;width:36px;height:36px;border-radius:50%;border:1px solid var(--line2);background:rgba(255,255,255,.02);color:var(--cream);cursor:pointer;display:grid;place-items:center;font-size:1.05rem;transition:transform .3s,background .3s,color .3s;z-index:3}
-.au-close:hover{background:rgba(216,182,103,.14);color:var(--gold);transform:rotate(90deg)}
-.au-head{padding:34px 34px 8px;text-align:center}
-.au-mark{
-  font-family:var(--mono);font-weight:500;color:var(--void);background:linear-gradient(135deg,var(--gold-hi),var(--gold-deep));
-  width:42px;height:42px;border-radius:11px;display:grid;place-items:center;font-size:1.15rem;letter-spacing:-2px;
-  margin:0 auto 18px;box-shadow:0 6px 22px rgba(216,182,103,.34);padding-right:1px;
-}
-.au-head h3{font-family:var(--disp);font-weight:380;font-size:1.7rem;color:var(--white);line-height:1.1;letter-spacing:-.02em}
-.au-head h3 em{font-style:italic;color:var(--gold)}
-.au-head p{font-family:var(--serif);font-size:1.02rem;color:var(--mute);margin-top:9px;line-height:1.45}
-.au-body{padding:18px 34px 30px}
-.au-field{margin-bottom:14px}
-.au-field label{display:block;font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
-.au-input{
-  width:100%;background:linear-gradient(180deg,rgba(20,20,25,.85),rgba(12,12,16,.85));
-  border:1px solid var(--line2);border-radius:12px;padding:13px 15px;color:var(--cream);
-  font-family:var(--body);font-size:.92rem;outline:none;transition:border-color .3s,box-shadow .3s;
-}
-.au-input::placeholder{color:var(--faint)}
-.au-input:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(216,182,103,.08)}
-.au-btn{
-  width:100%;cursor:pointer;border:none;border-radius:12px;padding:14px;margin-top:6px;
-  font-family:var(--body);font-size:.9rem;font-weight:500;letter-spacing:.01em;
-  background:linear-gradient(135deg,var(--gold-hi),var(--gold));color:#1a1407;
-  box-shadow:0 6px 22px rgba(216,182,103,.26);transition:transform .25s var(--ease),box-shadow .3s,opacity .3s;
-}
-.au-btn:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(216,182,103,.4)}
-.au-btn[disabled]{opacity:.55;cursor:default;transform:none;box-shadow:none}
-.au-btn.ghost{background:transparent;color:var(--cream);border:1px solid var(--line2);box-shadow:none}
-.au-btn.ghost:hover{background:rgba(216,182,103,.08);border-color:var(--gold)}
-.au-oauth{
-  width:100%;cursor:pointer;border:1px solid var(--line2);border-radius:12px;padding:12px;margin-top:6px;
-  background:rgba(255,255,255,.03);color:var(--cream);font-family:var(--body);font-size:.88rem;
-  display:flex;align-items:center;justify-content:center;gap:11px;transition:background .3s,border-color .3s,transform .25s var(--ease);
-}
-.au-oauth:hover{background:rgba(255,255,255,.06);border-color:var(--gold);transform:translateY(-1px)}
-.au-oauth svg{width:17px;height:17px;flex-shrink:0}
-.au-or{display:flex;align-items:center;gap:14px;margin:18px 0;font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--faint)}
-.au-or::before,.au-or::after{content:'';flex:1;height:1px;background:var(--line)}
-.au-alt{text-align:center;margin-top:18px;font-size:.84rem;color:var(--mute)}
-.au-alt a,.au-link{color:var(--gold);cursor:pointer;border-bottom:1px dashed var(--line2);transition:border-color .3s,color .3s}
-.au-alt a:hover,.au-link:hover{border-color:var(--gold);color:var(--gold-hi)}
-.au-sub{display:flex;justify-content:space-between;align-items:center;margin-top:4px}
-.au-sub .au-link{font-family:var(--mono);font-size:.66rem;letter-spacing:.04em}
-.au-msg{
-  margin-top:14px;border-radius:12px;padding:12px 14px;font-size:.82rem;line-height:1.5;
-  display:none;align-items:flex-start;gap:9px;font-family:var(--body);
-}
-.au-msg.show{display:flex}
-.au-msg.err{background:rgba(201,139,122,.1);border:1px solid rgba(201,139,122,.4);color:#e7b6a8}
-.au-msg.ok{background:rgba(216,182,103,.08);border:1px solid var(--line2);color:var(--gold-hi)}
-.au-msg .mi{flex-shrink:0;font-size:.95rem;margin-top:1px}
-.au-foot-note{font-family:var(--mono);font-size:.6rem;letter-spacing:.06em;color:var(--faint);text-align:center;margin-top:18px;line-height:1.7}
-.au-spin{display:inline-block;width:14px;height:14px;border:2px solid rgba(26,20,7,.35);border-top-color:#1a1407;border-radius:50%;animation:au-rot .7s linear infinite;vertical-align:-2px;margin-right:8px}
-.au-btn.ghost .au-spin{border-color:rgba(216,182,103,.3);border-top-color:var(--gold)}
-@keyframes au-rot{to{transform:rotate(360deg)}}
-
-/* --- account panel rows --- */
-.acct-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 0;border-bottom:1px solid var(--line)}
-.acct-row:last-of-type{border-bottom:none}
-.acct-row .lbl{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
-.acct-row .val{font-family:var(--body);font-size:.9rem;color:var(--cream);text-align:right;word-break:break-word}
-.acct-tier-badge{
-  font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;padding:5px 13px;border-radius:100px;
-  color:#1a1407;background:linear-gradient(135deg,var(--gold-hi),var(--gold));font-weight:600;box-shadow:0 3px 12px rgba(216,182,103,.3);
-}
-.acct-tier-badge.free{color:var(--faint);background:rgba(255,255,255,.03);border:1px solid var(--line);box-shadow:none}
-.acct-tier-badge.pro{color:var(--gold);background:rgba(216,182,103,.06);border:1px solid var(--line2);box-shadow:none}
-.acct-actions{display:flex;flex-direction:column;gap:10px;margin-top:22px}
-.acct-mini{
-  width:100%;cursor:pointer;border:1px solid var(--line2);border-radius:11px;padding:12px 14px;background:rgba(255,255,255,.02);
-  color:var(--cream);font-family:var(--body);font-size:.84rem;display:flex;align-items:center;justify-content:space-between;gap:10px;
-  transition:background .3s,border-color .3s,transform .25s var(--ease);
-}
-.acct-mini:hover{background:rgba(216,182,103,.07);border-color:var(--gold);transform:translateY(-1px)}
-.acct-mini.danger{color:#e7b6a8;border-color:rgba(201,139,122,.3)}
-.acct-mini.danger:hover{background:rgba(201,139,122,.1);border-color:var(--rose)}
-.acct-mini .chev{color:var(--faint);font-size:.8rem}
-.acct-verify{margin-top:16px;font-family:var(--mono);font-size:.64rem;letter-spacing:.04em;color:var(--rose);display:none;align-items:center;gap:8px;line-height:1.5}
-.acct-verify.show{display:flex}
-
-/* --- in-modal paywall --- */
-.paywall{padding:6px 32px 10px}
-.pw-lock{display:flex;align-items:center;gap:12px;margin-bottom:18px}
-.pw-lock .ic{
-  width:46px;height:46px;border-radius:13px;display:grid;place-items:center;flex-shrink:0;font-size:1.3rem;color:#1a1407;
-  background:linear-gradient(135deg,var(--gold-hi),var(--gold-deep));box-shadow:0 6px 20px rgba(216,182,103,.3);
-}
-.pw-lock .tx{font-family:var(--disp);font-size:1.18rem;font-weight:400;color:var(--white);line-height:1.2}
-.pw-lock .tx span{display:block;font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-top:3px}
-.pw-section{margin-bottom:20px}
-.pw-section h4{font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;display:flex;align-items:center;gap:11px}
-.pw-section h4::after{content:'';flex:1;height:1px;background:var(--line)}
-.pw-section .pw-lead{font-family:var(--serif);font-size:1.12rem;color:var(--cream);line-height:1.5}
-.pw-list{list-style:none;display:flex;flex-direction:column;gap:10px}
-.pw-list li{display:flex;gap:11px;align-items:flex-start;font-size:.86rem;color:var(--mute);line-height:1.45}
-.pw-list li i{color:var(--gold);font-style:normal;font-size:.92rem;margin-top:1px;flex-shrink:0}
-.pw-list li b{color:var(--cream);font-weight:500}
-.pw-value{
-  display:flex;gap:14px;flex-wrap:wrap;margin-top:4px;padding:16px;border-radius:14px;
-  background:linear-gradient(165deg,rgba(40,34,20,.5),rgba(20,17,12,.5));border:1px solid var(--line2);
-}
-.pw-value .vb{flex:1;min-width:120px}
-.pw-value .vb .n{font-family:var(--disp);font-size:1.5rem;color:var(--gold-hi);font-weight:400;line-height:1}
-.pw-value .vb .l{font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-top:6px}
-.pw-cta{display:flex;flex-direction:column;gap:9px;padding:18px 0 4px}
-.pw-cta .au-btn{margin-top:0}
-.pw-cta .pw-fine{font-family:var(--mono);font-size:.62rem;letter-spacing:.06em;color:var(--faint);text-align:center;margin-top:4px}
-.pw-signin-line{text-align:center;font-size:.84rem;color:var(--mute);margin-top:6px}
 </style>
 </head>
 <body>
@@ -583,14 +369,10 @@ footer{position:relative;z-index:3;border-top:1px solid var(--line);padding:72px
     <div class="nav-links">
       <a href="#collections">Collections</a>
       <a href="#browse">Browse</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#guides">Free guides</a>
+      <a href="/about/">About</a>
     </div>
     <div class="nav-right">
-      <div class="nav-auth" id="navAuth">
-        <a href="#" class="signin" id="signinLink">Sign in</a>
-      </div>
-      <button class="btn btn-gold" data-cta>Own the vault</button>
+      <button class="btn btn-gold" id="navBrowseBtn">Browse the vault</button>
       <button class="menu-toggle" aria-label="Open menu" id="menuToggle"><i>&#8801;</i></button>
     </div>
   </div>
@@ -601,20 +383,20 @@ footer{position:relative;z-index:3;border-top:1px solid var(--line);padding:72px
   <div class="wrap">
     <div class="hero-grid">
       <div class="hero-copy">
-        <span class="eyebrow"><span class="pip"></span>The operators' arsenal</span>
-        <h1 class="hero-h">Prompts the<br><em>elite</em> don't<br><span class="grad">share.</span></h1>
-        <p class="hero-sub"><b id="subPrompts">2,713</b> hand-built prompts across <b id="subColl">26</b> collections. Never scraped, never recycled — engineered for ChatGPT, Claude &amp; Gemini.</p>
+        <span class="eyebrow"><span class="pip"></span>The whole vault, open</span>
+        <h1 class="hero-h">Every prompt.<br><em>Free</em> for<br><span class="grad">everyone.</span></h1>
+        <p class="hero-sub"><b id="subPrompts">2,600+</b> hand-built prompts across <b id="subColl">28</b> collections. Never scraped, never recycled — engineered for ChatGPT, Claude &amp; Gemini.</p>
         <div class="hero-meta">
-          <div><span class="n" id="statPrompts">2,713</span><span class="l">Prompts</span></div>
+          <div><span class="n" id="statPrompts">2,600+</span><span class="l">Prompts</span></div>
           <div><span class="n" id="statFrameworks">41</span><span class="l">Frameworks</span></div>
-          <div><span class="n" id="statColl">26</span><span class="l">Collections</span></div>
-          <div><span class="n">0</span><span class="l">Subscriptions</span></div>
+          <div><span class="n" id="statColl">28</span><span class="l">Collections</span></div>
+          <div><span class="n">$0</span><span class="l">Forever</span></div>
         </div>
         <div class="hero-cta">
-          <button class="btn btn-gold" data-cta>Own it for life — from $100</button>
+          <button class="btn btn-gold" id="heroBrowseBtn">Browse the vault</button>
           <button class="btn btn-ghost" id="exploreBtn">Open a prompt</button>
         </div>
-        <p class="trust"><b>One payment.</b> No subscription. No drip. <b>Yours forever.</b></p>
+        <p class="trust"><b>No sign-up.</b> No paywall. No catch. <b>Copy and go.</b></p>
       </div>
       <div class="deck-stage" id="deckStage">
         <div class="deck-glow" aria-hidden="true"></div>
@@ -630,9 +412,9 @@ footer{position:relative;z-index:3;border-top:1px solid var(--line);padding:72px
           <div class="card3d card-front" id="deckFront">
             <span class="ct" id="deckCat">Loading the vault…</span>
             <h3 id="deckTitle">The Positioning Oracle</h3>
-            <div class="body" id="deckBody">Tilt the deck — then open the vault below to fire any of 2,713 prompts straight into your model.</div>
+            <div class="body" id="deckBody">Tilt the deck — then open the vault below to fire any prompt straight into your model.</div>
             <div class="foot">
-              <span class="badge" id="deckBadge">26 collections inside</span>
+              <span class="badge" id="deckBadge">28 collections inside</span>
               <span class="dots"><i></i><i></i><i></i></span>
             </div>
           </div>
@@ -647,12 +429,12 @@ footer{position:relative;z-index:3;border-top:1px solid var(--line);padding:72px
 <section id="collections">
   <div class="wrap">
     <div class="reveal">
-      <div class="sec-eyebrow"><span id="collEyebrow">27 collections · 41 frameworks</span></div>
+      <div class="sec-eyebrow"><span id="collEyebrow">28 collections · 41 frameworks</span></div>
       <h2 class="sec-h">An arsenal, <em>organised</em> like a war room.</h2>
       <p class="sec-lead">Every prompt is filed by the job it does — so you find the exact instrument the moment you need it. Tap a collection to browse it.</p>
     </div>
     <div class="coll-grid" id="collGrid"></div>
-    <p class="coll-foot reveal" id="collFoot"><b>2,713 prompts</b> across every collection — one library, yours for life.</p>
+    <p class="coll-foot reveal" id="collFoot"><b>2,600+ prompts</b> across every collection — one library, free for everyone.</p>
   </div>
 </section>
 
@@ -662,7 +444,7 @@ footer{position:relative;z-index:3;border-top:1px solid var(--line);padding:72px
     <div class="reveal">
       <div class="sec-eyebrow">Browse the vault</div>
       <h2 class="sec-h">Open any prompt. Drop in your <em>variables.</em> Fire.</h2>
-      <p class="sec-lead">Search 2,713 instruments, filter by collection, and launch straight into ChatGPT, Claude or Gemini.</p>
+      <p class="sec-lead">Search every instrument, filter by collection, and launch straight into ChatGPT, Claude or Gemini.</p>
     </div>
     <div class="browse-tools reveal d1">
       <div class="search-row">
@@ -674,7 +456,7 @@ footer{position:relative;z-index:3;border-top:1px solid var(--line);padding:72px
       <div class="result-line" id="resultLine">Loading the vault…</div>
     </div>
     <div class="grid" id="grid">
-      <div class="grid-loading">Fetching 2,713 prompts…</div>
+      <div class="grid-loading">Fetching the vault…</div>
     </div>
     <div class="load-wrap">
       <button class="btn btn-ghost" id="loadMore" style="display:none">Load more prompts</button>
@@ -685,149 +467,8 @@ footer{position:relative;z-index:3;border-top:1px solid var(--line);padding:72px
 <!-- MANIFESTO -->
 <section class="manifesto" id="manifesto">
   <div class="wrap reveal">
-    <p class="quote"><span class="strike">Rent</span> the tools.<br><em>Own</em> the arsenal.</p>
-    <p>Subscriptions evaporate. Logins expire. A library you paid for once — built by hand, kept on your terms — does not. Pay once. Keep it forever. Pass it down.</p>
-    <p class="sig">— The ProPrompt doctrine</p>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section id="pricing">
-  <div class="wrap">
-    <div class="reveal">
-      <div class="sec-eyebrow">One-time pricing · lifetime access</div>
-      <h2 class="sec-h">Buy the vault <em>once.</em> Keep it for good.</h2>
-      <p class="sec-lead">No seats expiring. No card on file. Choose your tier and it's yours — including every future expansion.</p>
-    </div>
-    <div class="price-grid">
-      <div class="tier reveal d1">
-        <span class="tn">Free</span>
-        <span class="anchor">&nbsp;</span>
-        <div class="price">$0</div>
-        <span class="once">Sign up · no card</span>
-        <ul>
-          <li><i>&#8250;</i>221 starter prompts</li>
-          <li><i>&#8250;</i>Preview every collection</li>
-          <li><i>&#8250;</i>Web access</li>
-        </ul>
-        <button class="btn btn-ghost" data-cta data-tier="free">Start free</button>
-      </div>
-      <div class="tier reveal d2">
-        <span class="tn">Pro</span>
-        <span class="anchor">$199</span>
-        <div class="price">$100</div>
-        <span class="once">One-time</span>
-        <ul>
-          <li><i>&#8250;</i>All 2,713 prompts</li>
-          <li><i>&#8250;</i>26 collections</li>
-          <li><i>&#8250;</i>Personal use licence</li>
-          <li><i>&#8250;</i>Lifetime updates</li>
-        </ul>
-        <button class="btn btn-ghost" data-cta data-tier="pro">Get Pro</button>
-      </div>
-      <div class="tier hero-tier reveal d3">
-        <span class="badge-top">Most chosen</span>
-        <span class="tn">Studio</span>
-        <span class="anchor">$499</span>
-        <div class="price">$250</div>
-        <span class="once">One-time</span>
-        <ul>
-          <li><i>&#10022;</i>Everything in Pro</li>
-          <li><i>&#10022;</i>All 40+ frameworks</li>
-          <li><i>&#10022;</i>Prompt builder + variables</li>
-          <li><i>&#10022;</i>Quarterly vault drops</li>
-          <li><i>&#10022;</i>Commercial use licence</li>
-        </ul>
-        <button class="btn btn-gold" data-cta data-tier="studio">Own the Studio</button>
-      </div>
-      <div class="tier reveal d4">
-        <span class="tn">Business</span>
-        <span class="anchor">$899</span>
-        <div class="price">$500</div>
-        <span class="once">The agency licence</span>
-        <ul>
-          <li><i>&#8250;</i>Everything in Studio</li>
-          <li><i>&#8250;</i>Up to 10 seats</li>
-          <li><i>&#8250;</i>Client-work licence</li>
-          <li><i>&#8250;</i>Team workspace</li>
-        </ul>
-        <button class="btn btn-ghost" data-cta data-tier="business">License the team</button>
-      </div>
-      <div class="tier reveal d4">
-        <span class="tn">Inner Circle</span>
-        <span class="anchor">$1,500</span>
-        <div class="price">$1,000</div>
-        <span class="once">One-time · founding</span>
-        <span class="seats">100 founding seats — then $1,500</span>
-        <ul>
-          <li><i>&#8250;</i>Everything · unlimited seats</li>
-          <li><i>&#8250;</i>Private request line</li>
-          <li><i>&#8250;</i>Custom prompt commissions</li>
-          <li><i>&#8250;</i>Name on the founders wall</li>
-        </ul>
-        <button class="btn btn-ghost" data-cta data-tier="elite">Claim a seat</button>
-      </div>
-    </div>
-    <p class="value-stack reveal">Studio unlocks <b>~$2,400</b> of operator-grade assets — for <b>$250.</b></p>
-    <div class="badge-legend reveal">
-      <span><span class="tier-badge t-free">Free</span> 221 open</span>
-      <span><span class="tier-badge t-pro">Pro</span> in the Pro vault</span>
-      <span><span class="tier-badge t-studio"><span class="crown">&#9819;</span>Studio</span> top-shelf instruments</span>
-    </div>
-    <p class="guarantee reveal">14-day no-questions refund · instant access · pay once, own forever</p>
-  </div>
-</section>
-
-<!-- GUIDES -->
-<section id="guides">
-  <div class="wrap">
-    <div class="reveal">
-      <div class="sec-eyebrow">Free · email-gated</div>
-      <h2 class="sec-h">Start with the <em>field guides.</em></h2>
-      <p class="sec-lead">Battle-tested resources, free. A taste of what's behind the vault door.</p>
-    </div>
-    <div class="guides-grid">
-      <div class="guide reveal d1">
-        <span class="gtag">Field guide</span>
-        <i class="gic">&#9670;</i>
-        <h5>The Operator's Prompting Field Guide</h5>
-        <p>The exact anatomy of a prompt that performs — 38 pages, no fluff.</p>
-        <form class="gate" data-guide="Field Guide">
-          <input type="email" placeholder="you@company.com" aria-label="Email for field guide" required>
-          <button type="submit" aria-label="Get the field guide">&#8594;</button>
-        </form>
-      </div>
-      <div class="guide reveal d2">
-        <span class="gtag">Swipe file</span>
-        <i class="gic">&#10038;</i>
-        <h5>10 Mega-Prompts that replace a $5k contractor</h5>
-        <p>Copy-paste prompts that do the work of a freelance specialist.</p>
-        <form class="gate" data-guide="Mega-Prompts">
-          <input type="email" placeholder="you@company.com" aria-label="Email for mega-prompts" required>
-          <button type="submit" aria-label="Get the mega-prompts">&#8594;</button>
-        </form>
-      </div>
-      <div class="guide reveal d3">
-        <span class="gtag">Starter packs</span>
-        <i class="gic">&#9650;</i>
-        <h5>Sales · Marketing · Business starter packs</h5>
-        <p>Three curated mini-collections to deploy on day one.</p>
-        <form class="gate" data-guide="Starter Packs">
-          <input type="email" placeholder="you@company.com" aria-label="Email for starter packs" required>
-          <button type="submit" aria-label="Get the starter packs">&#8594;</button>
-        </form>
-      </div>
-      <div class="guide reveal d4">
-        <span class="gtag">Directory</span>
-        <i class="gic">&#9672;</i>
-        <h5>Top GPTs &amp; AI Tools directory</h5>
-        <p>The 60 tools elite operators actually keep in rotation.</p>
-        <form class="gate" data-guide="Tools Directory">
-          <input type="email" placeholder="you@company.com" aria-label="Email for tools directory" required>
-          <button type="submit" aria-label="Get the directory">&#8594;</button>
-        </form>
-      </div>
-    </div>
+    <p class="quote">Good prompts,<br><em>free</em> for everyone.</p>
+    <p>No subscription. No login. No paywall. Every prompt here is hand-built, kept current, and yours to copy — open one, drop in your variables, and fire it straight into your model.</p>
   </div>
 </section>
 
@@ -837,35 +478,25 @@ footer{position:relative;z-index:3;border-top:1px solid var(--line);padding:72px
     <div class="foot-grid">
       <div class="foot-brand">
         <a href="#top" class="brand"><span class="mark">&gt;|</span>ProPrompt</a>
-        <p>The operators' arsenal. Hand-built prompts for people who ship. Own it — don't rent it.</p>
+        <p>Hand-built AI prompts for ChatGPT, Claude &amp; Gemini — free for everyone.</p>
         <a href="mailto:hello@getproprompt.com" class="mail"><i>&#9993;</i>hello@getproprompt.com</a>
       </div>
       <div class="foot-col">
         <h6>The vault</h6>
         <a href="#collections">Collections</a>
         <a href="#browse">Browse</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#guides">Free guides</a>
-      </div>
-      <div class="foot-col">
-        <h6>Operators</h6>
-        <a href="#browse">Browse the vault</a>
-        <a href="#pricing">Pricing &amp; tiers</a>
-        <a href="#guides">Free field guides</a>
-        <a href="https://getproprompt.lemonsqueezy.com/affiliates" target="_blank" rel="noopener">Affiliate program</a>
+        <a href="/about/">About</a>
       </div>
       <div class="foot-col">
         <h6>Company</h6>
-        <a href="/terms.html">Licence &amp; terms</a>
-        <a href="/refund.html">Refund policy</a>
+        <a href="/terms.html">Terms</a>
         <a href="/privacy.html">Privacy</a>
-        <a href="/about/">About</a>
         <a href="mailto:hello@getproprompt.com">Contact</a>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 ProPrompt · getproprompt.com · Own it, don't rent it.</span>
-      <span class="pay">Secure checkout · One-time payment · Lifetime access</span>
+      <span>© 2026 ProPrompt · getproprompt.com</span>
+      <span class="pay">Free forever · no sign-up · no tracking</span>
     </div>
   </div>
 </footer>
@@ -877,7 +508,6 @@ footer{position:relative;z-index:3;border-top:1px solid var(--line);padding:72px
     <div class="modal-head">
       <div class="ct-row">
         <span class="ct" id="modalCat">Collection</span>
-        <span id="modalBadge"></span>
       </div>
       <h3 id="modalTitle">Prompt title</h3>
       <p id="modalDesc">Prompt description</p>
@@ -893,208 +523,16 @@ footer{position:relative;z-index:3;border-top:1px solid var(--line);padding:72px
   </div>
 </div>
 
-<!-- AUTH MODAL -->
-<div class="au-back" id="authBack" role="dialog" aria-modal="true" aria-labelledby="authTitle">
-  <div class="au-card" id="authCard">
-    <button class="au-close" id="authClose" aria-label="Close">&#10005;</button>
-    <div class="au-head">
-      <div class="au-mark">&gt;|</div>
-      <h3 id="authTitle">Enter the <em>vault</em></h3>
-      <p id="authSub">Create a free account to open any prompt.</p>
-    </div>
-    <div class="au-body">
-      <!-- OAuth + magic link -->
-      <button class="au-oauth" id="googleBtn" type="button">
-        <svg viewBox="0 0 18 18" aria-hidden="true"><path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.91c1.7-1.57 2.69-3.88 2.69-6.62z"/><path fill="#34A853" d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.91-2.26c-.81.54-1.84.86-3.05.86-2.35 0-4.34-1.58-5.05-3.71H.96v2.33A9 9 0 0 0 9 18z"/><path fill="#FBBC05" d="M3.95 10.71a5.4 5.4 0 0 1 0-3.42V4.96H.96a9 9 0 0 0 0 8.08l2.99-2.33z"/><path fill="#EA4335" d="M9 3.58c1.32 0 2.51.45 3.44 1.35l2.58-2.59C13.46.89 11.43 0 9 0A9 9 0 0 0 .96 4.96l2.99 2.33C4.66 5.16 6.65 3.58 9 3.58z"/></svg>
-        Continue with Google
-      </button>
-      <div class="au-or">or</div>
-
-      <!-- email + password form -->
-      <form id="authForm" autocomplete="on" novalidate>
-        <div class="au-field" id="nameField" style="display:none">
-          <label for="authName">Name (optional)</label>
-          <input class="au-input" type="text" id="authName" placeholder="Your name" autocomplete="name">
-        </div>
-        <div class="au-field">
-          <label for="authEmail">Email</label>
-          <input class="au-input" type="email" id="authEmail" placeholder="you@company.com" autocomplete="email" required>
-        </div>
-        <div class="au-field" id="pwField">
-          <label for="authPassword">Password</label>
-          <input class="au-input" type="password" id="authPassword" placeholder="••••••••" autocomplete="current-password" minlength="8">
-          <div class="au-sub">
-            <span class="au-link" id="forgotLink">Forgot password?</span>
-            <span class="au-link" id="magicToggle">Email me a magic link instead</span>
-          </div>
-        </div>
-        <button class="au-btn" id="authSubmit" type="submit">Sign in</button>
-      </form>
-
-      <div class="au-msg" id="authMsg"><span class="mi" id="authMsgIc">!</span><span id="authMsgText"></span></div>
-
-      <div class="au-alt" id="authAlt">
-        New here? <a id="toSignup">Create a free account</a>
-      </div>
-      <p class="au-foot-note">Pay once, own forever. Your free account unlocks 221 starter prompts and lets you browse the whole vault.</p>
-    </div>
-  </div>
-</div>
-
-<!-- ACCOUNT PANEL -->
-<div class="au-back" id="acctBack" role="dialog" aria-modal="true" aria-labelledby="acctTitle">
-  <div class="au-card wide" id="acctCard">
-    <button class="au-close" id="acctClose" aria-label="Close">&#10005;</button>
-    <div class="au-head">
-      <div class="au-mark">&gt;|</div>
-      <h3 id="acctTitle">Your <em>account</em></h3>
-    </div>
-    <div class="au-body">
-      <div class="acct-row">
-        <span class="lbl">Email</span>
-        <span class="val" id="acctEmail">—</span>
-      </div>
-      <div class="acct-row">
-        <span class="lbl">Current tier</span>
-        <span class="val"><span class="acct-tier-badge free" id="acctTierBadge">Free</span></span>
-      </div>
-      <div class="acct-row">
-        <span class="lbl">Member since</span>
-        <span class="val" id="acctSince">—</span>
-      </div>
-      <div class="acct-verify" id="acctVerify"><span>&#9888;</span><span>Email not verified yet — check your inbox. <span class="au-link" id="resendVerify">Resend link</span></span></div>
-
-      <div class="acct-actions">
-        <button class="acct-mini" id="manageBilling"><span>Manage billing</span><span class="chev">&#8599;</span></button>
-        <button class="acct-mini" id="upgradeBtn"><span>Upgrade your tier</span><span class="chev">&#8599;</span></button>
-        <button class="acct-mini" id="changePwBtn"><span>Change password</span><span class="chev">&#8250;</span></button>
-        <button class="acct-mini" id="logoutBtn"><span>Log out</span><span class="chev">&#8250;</span></button>
-        <button class="acct-mini danger" id="deleteAcctBtn"><span>Delete account</span><span class="chev">&#8250;</span></button>
-      </div>
-
-      <!-- change-password inline form -->
-      <form id="changePwForm" style="display:none;margin-top:18px">
-        <div class="au-field">
-          <label for="newPw">New password</label>
-          <input class="au-input" type="password" id="newPw" placeholder="At least 8 characters" autocomplete="new-password" minlength="8">
-        </div>
-        <button class="au-btn" type="submit">Update password</button>
-      </form>
-
-      <div class="au-msg" id="acctMsg"><span class="mi" id="acctMsgIc">!</span><span id="acctMsgText"></span></div>
-    </div>
-  </div>
-</div>
-
-<!-- ADA -->
-<button class="ada-bubble" id="adaBubble" aria-label="Chat with Ada, the concierge"><span class="a-ic">A</span></button>
-<div class="ada-panel" id="adaPanel" role="dialog" aria-label="Ada concierge chat">
-  <div class="ada-top">
-    <div class="ada-av">A</div>
-    <div><h6>Ada</h6><span>Your vault concierge</span></div>
-  </div>
-  <div class="ada-body">
-    <div class="ada-msg" id="adaMsg">Welcome to <b>ProPrompt</b>. I'm Ada — I'll help you find the right tier or the right prompt. What are you after?</div>
-    <div class="ada-sugg">
-      <button class="ada-q">Which tier is right for me?</button>
-      <button class="ada-q">Is it really one payment forever?</button>
-      <button class="ada-q">How are these different from free prompts?</button>
-    </div>
-  </div>
-</div>
-
 <!-- TOAST -->
 <div class="toast" id="toast"><i>&#10003;</i><span id="toastText">Done</span></div>
 
 <script type="module">
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 (function(){
   "use strict";
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ============================================================
-     SUPABASE / AUTH / ENTITLEMENT  (production config)
-     ============================================================ */
-  var SUPABASE_URL = 'https://dsmmgneggxxlrjciedqt.supabase.co';
-  var SUPABASE_PUBLISHABLE = 'sb_publishable_xtBr08-Cgre12IcOFmrP2g_nQq2PrYD';
-  var API_BASE = '/api';                         // Cloudflare Functions, same origin in prod
-  // Lemon Squeezy customer portal / checkout placeholders (owner swaps for real store URLs).
-  var LS_PORTAL_URL = 'https://store.getproprompt.com/billing';
-  var CHECKOUT = {
-    pro:    'https://store.getproprompt.com/checkout/pro',
-    studio: 'https://store.getproprompt.com/checkout/studio'
-  };
-  // PRE-LAUNCH: payments are not live yet (Lemon Squeezy identity verification pending).
-  // While true, every paid CTA captures an email / founding-member interest instead of
-  // opening a checkout that can't take money. Flip to false the day payments go live.
-  var WAITLIST_MODE = true;
-
-  // tier ladder: a logged-in user can hold any of these; content tiers are only free|pro|studio.
-  var TIER_RANK = { free:0, pro:1, studio:2, premium:3, business:3, elite:4 };
-  function rankOf(t){ var r = TIER_RANK[String(t||'free').toLowerCase()]; return r == null ? 0 : r; }
-
-  // Dev/local browse flag: ?preview=1 lets the OWNER read local bodies without the deployed API.
-  // Production default is FULLY GATED (paid bodies never read client-side).
-  var PREVIEW = /[?&]preview=1\b/.test(window.location.search);
-
-  var supabase = null;
-  try {
-    supabase = createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE, {
-      auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true }
-    });
-  } catch (e) { supabase = null; }
-
-  // auth/session state (UX only — the real gate is server-side RLS + the Function)
-  var AUTH = { user: null, session: null, tier: 'free', flags: {}, ready: false };
-
-  function currentTier(){ return AUTH.user ? AUTH.tier : 'free'; }
-  function isEntitled(promptTier){
-    // free content is always readable; paid content needs sufficient rank
-    if (String(promptTier || 'free') === 'free') return true;
-    if (!AUTH.user) return false;
-    return rankOf(currentTier()) >= rankOf(promptTier);
-  }
-
-  // ---- real email capture (lead magnets + waitlist) ----
-  // Writes to public.leads (anon INSERT-only via RLS). Returns a promise.
-  function captureLead(email, source, tierIntent){
-    email = (email || '').trim().toLowerCase();
-    if (email.indexOf('@') < 1) return Promise.reject(new Error('invalid email'));
-    var ref = null; try { ref = localStorage.getItem('pp_ref') || null; } catch(_){}
-    try { localStorage.setItem('pp_lead', email); } catch(_){}   // remember for prefill
-    if (!supabase) return Promise.resolve({ offline: true });
-    return supabase.from('leads').insert({
-      email: email, source: source || null, ref: ref, tier_intent: tierIntent || null
-    }).then(function(res){
-      if (res && res.error) throw res.error;
-      track('lead', { source: source || null, tier: tierIntent || null });
-      return res;
-    });
-  }
-
-  // ---- first-party analytics (anonymous funnel events → public.page_events) ----
-  var _sid = null;
-  function sessionId(){
-    if (_sid) return _sid;
-    try { _sid = localStorage.getItem('pp_sid'); } catch(_){}
-    if (!_sid){
-      _sid = 's_' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36).slice(-4);
-      try { localStorage.setItem('pp_sid', _sid); } catch(_){}
-    }
-    return _sid;
-  }
-  function track(event, meta){
-    if (!supabase) return;
-    var ref = null; try { ref = document.referrer || null; } catch(_){}
-    try {
-      supabase.from('page_events').insert({
-        event: event,
-        path: (location.pathname + location.hash).slice(0, 300),
-        ref: ref, session_id: sessionId(),
-        meta: meta || null
-      }).then(function(){}, function(){});   // fire-and-forget, never blocks UX
-    } catch(_){}
-  }
+  // The whole vault is free and static — no accounts, no gating, no tracking.
+  // Every prompt body ships in data/bodies.byid.json and renders straight into the modal.
 
   /* ---------- gold dust canvas ---------- */
   var canvas = document.getElementById('dust');
@@ -1179,7 +617,7 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
       cRing.style.left = rx + 'px'; cRing.style.top = ry + 'px';
       requestAnimationFrame(loop);
     })();
-    var hotSel = 'a,button,input,.coll,.pcard,.chip,.guide,.tier,.card3d,.ada-q,[data-cta]';
+    var hotSel = 'a,button,input,.coll,.pcard,.chip,.card3d';
     document.addEventListener('mouseover', function(e){
       if (e.target.closest(hotSel)) cRing.classList.add('hot');
     });
@@ -1265,11 +703,6 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
       .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
       .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
   }
-  function tierBadgeHTML(tier){
-    if (tier === 'studio') return '<span class="tier-badge t-studio"><span class="crown">&#9819;</span>Studio</span>';
-    if (tier === 'pro') return '<span class="tier-badge t-pro">Pro</span>';
-    return '<span class="tier-badge t-free">Free</span>';
-  }
 
   /* ---------- data state ---------- */
   var CATALOG = [], META = null, BODIES = {};
@@ -1295,15 +728,12 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
     });
   }
 
-  // SECURITY: the shipped body file MUST contain ONLY free-tier bodies. Paid bodies
-  // are NEVER shipped statically — they come solely from the gated /api/prompt Function
-  // after a server-side entitlement check. Loading a full-corpus file here would make the
-  // paywall trivially bypassable (just fetch the JSON). bodies.free.byid.json holds the
-  // 221 free starter bodies only.
+  // Every prompt body ships statically in data/bodies.byid.json ({id: {p, h}}).
+  // Nothing is gated — the whole vault is free.
   Promise.all([
     fetchJSON('./data/catalog.json'),
     fetchJSON('./data/meta.json'),
-    fetchJSON('./data/bodies.free.byid.json')
+    fetchJSON('./data/bodies.byid.json')
   ]).then(function(res){
     CATALOG = res[0] || [];
     META = res[1] || { total: CATALOG.length, groups: [] };
@@ -1329,7 +759,7 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
     setText('subPrompts', fmt(total));
     setText('subColl', String(nColl));
     setText('collEyebrow', nColl + ' collections · ' + nFrameworks + ' frameworks');
-    setHTML('collFoot', '<b>' + fmt(total) + ' prompts</b> across ' + nColl + ' collections — one library, yours for life.');
+    setHTML('collFoot', '<b>' + fmt(total) + ' prompts</b> across ' + nColl + ' collections — one library, free for everyone.');
     setText('deckBadge', nColl + ' collections inside');
 
     // rotate a real prompt onto the hero deck
@@ -1493,7 +923,6 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
     card.innerHTML =
       '<div class="pcard-top">'
         + '<span class="pcard-cat"><span class="gi">' + esc(icon) + '</span><span class="gt">' + esc(p.c || (g ? g.label : '')) + '</span></span>'
-        + tierBadgeHTML(p.tier)
       + '</div>'
       + '<h5>' + esc(p.t) + '</h5>'
       + '<p>' + esc(p.te || '') + '</p>'
@@ -1545,66 +974,25 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
   var lastFocus = null;
   var TOKEN_RE = /\[([^\]]+)\]/g;
 
-  // Read a local body ONLY when allowed: free prompts always; paid prompts only under ?preview=1.
-  // In production a paid body is NEVER read from the shipped JSON — it comes from the gated Function.
+  // Resolve a prompt body from the statically-shipped bodies map. Shape: {id: {p, h}}.
   function localBody(p){
-    if (String(p.tier || 'free') === 'free' || PREVIEW){
-      return BODIES[String(p.i)] || BODIES[p.i] || '';
-    }
-    return '';
+    var rec = BODIES[String(p.i)] || BODIES[p.i];
+    if (!rec) return { p: '', h: '' };
+    return (typeof rec === 'string') ? { p: rec, h: '' } : rec;
   }
 
   function openModal(p){
     var g = GROUP_BY_KEY[p.g];
     lastFocus = document.activeElement;
     modalCat.innerHTML = (g ? '<span style="font-size:1rem">' + esc(g.icon) + '</span>' : '') + esc(g ? g.label : (p.c || 'Prompt'));
-    modalBadge.innerHTML = tierBadgeHTML(p.tier);
     modalTitle.textContent = p.t;
     modalDesc.textContent = p.te || '';
-
-    // ---- GATE: decide whether this viewer may see the body ----
-    // PREVIEW (?preview=1) is a local owner dev flag that bypasses the gate so the owner can
-    // browse paid bodies locally. Production default (no flag) is fully gated.
-    if (!PREVIEW && !isEntitled(p.tier)){
-      renderPaywall(p);
-      return;
-    }
-    renderPromptBody(p);
-  }
-
-  // Render the actual fillable prompt (entitled path).
-  function renderPromptBody(p){
-    showFoot(true);
-    currentSegments = [];
-    modalBody.innerHTML = '';
-
-    var paid = String(p.tier || 'free') !== 'free';
-    var local = localBody(p);
-
-    if (paid && !PREVIEW){
-      // Production entitled path: fetch the body from the gated Function with the bearer token.
-      modalHint.style.display = '';
-      modalHintText.textContent = 'Unlocking from your vault…';
-      modalBody.innerHTML = '<span style="color:var(--faint);font-family:var(--mono);font-size:.8rem">Loading the prompt…</span>';
-      document.body.classList.add('modal-open');
-      modalBack.classList.add('show');
-      fetchEntitledBody(p).then(function(body){
-        if (body == null){
-          // Function unavailable / not deployed yet → graceful, honest fallback.
-          renderPaywall(p, 'We could not unlock this prompt right now. If you have already purchased, please reload — the secure unlock service may be warming up.');
-          return;
-        }
-        paintBody(p, body);
-      });
-      return;
-    }
-
-    // Free body (or owner ?preview=1): render straight from local JSON.
-    paintBody(p, local || p.te || '');
+    var rec = localBody(p);
+    paintBody(p, rec.p || p.te || '', rec.h || '');
   }
 
   // Paint a resolved body string into fillable segments.
-  function paintBody(p, body){
+  function paintBody(p, body, hint){
     showFoot(true);
     currentSegments = parseBody(body);
     modalBody.innerHTML = '';
@@ -1625,9 +1013,11 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
       }
     });
     modalHint.style.display = '';
-    modalHintText.textContent = tokenCount
-      ? ('Fill the ' + tokenCount + ' gold field' + (tokenCount === 1 ? '' : 's') + ', then copy or fire.')
-      : 'Ready to copy or fire straight into your model.';
+    modalHintText.textContent = hint
+      ? hint
+      : (tokenCount
+          ? ('Fill the ' + tokenCount + ' gold field' + (tokenCount === 1 ? '' : 's') + ', then copy or fire.')
+          : 'Ready to copy or fire straight into your model.');
 
     document.body.classList.add('modal-open');
     modalBack.classList.add('show');
@@ -1639,144 +1029,6 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
   }
 
   function showFoot(on){ if (modalFoot) modalFoot.style.display = on ? '' : 'none'; }
-
-  // Fetch a paid body from the deployed Cloudflare Function. Returns body string, or null on failure.
-  function fetchEntitledBody(p){
-    if (!supabase || !AUTH.session) return Promise.resolve(null);
-    var token = AUTH.session.access_token;
-    return fetch(API_BASE + '/prompt/' + encodeURIComponent(p.i), {
-      headers: { 'Authorization': 'Bearer ' + token }
-    }).then(function(r){
-      if (!r.ok) return null;
-      return r.json();
-    }).then(function(j){
-      if (!j) return null;
-      return (j.body != null) ? j.body : (j.prompt && j.prompt.body) || null;
-    }).catch(function(){ return null; });
-  }
-
-  /* ---------- paywall / sign-in gate (rendered inside the modal) ---------- */
-  var TIER_COPY = {
-    pro: {
-      name: 'Pro', price: '$100', anchor: '$199', rank: 1,
-      tagline: 'The full arsenal — all 2,713 hand-built prompts, yours for life.',
-      included: [
-        ['All 2,713 prompts', 'across all 26 collections — never scraped, never recycled'],
-        ['Every fill-in variable', 'engineered for ChatGPT, Claude &amp; Gemini'],
-        ['Personal-use licence', 'use them in all your own work'],
-        ['Lifetime updates', 'every future vault expansion, free']
-      ],
-      saves: ['~40 hrs', 'of prompt-engineering, per project'],
-      worth: ['$2,000+', 'of operator-grade prompts']
-    },
-    studio: {
-      name: 'Studio', price: '$250', anchor: '$499', rank: 2,
-      tagline: 'The crown jewels — every framework, optimizer & agent-builder, plus a commercial licence.',
-      included: [
-        ['Everything in Pro', 'all 2,713 prompts included'],
-        ['All 40+ frameworks', 'the flagship Context-Engineering & Prompt-Lab instruments'],
-        ['Commercial-use licence', 'deploy inside paid client work'],
-        ['Prompt builder + bulk export', 'mix, fill &amp; export at scale'],
-        ['Quarterly vault drops', 'day-0 access to every new collection']
-      ],
-      saves: ['a $5k contractor', 'replaced by a single mega-prompt'],
-      worth: ['~$2,400', 'of operator-grade assets']
-    }
-  };
-
-  function renderPaywall(p, note){
-    showFoot(false);
-    if (modalHint) modalHint.style.display = 'none';
-    currentSegments = [];
-
-    var html;
-    if (!AUTH.user && String(p.tier || 'free') === 'free'){
-      // logged-out, FREE prompt → invite to create a free account
-      html = ''
-        + '<div class="paywall">'
-        +   '<div class="pw-lock"><span class="ic">&#9670;</span><span class="tx">Free to open<span>Create a free account</span></span></div>'
-        +   '<div class="pw-section"><p class="pw-lead">This prompt is part of the <b style="color:var(--cream)">221 free starter prompts</b>. Create a free account — no card needed — to open it, fill the variables, and fire it straight into your model.</p></div>'
-        +   '<ul class="pw-list">'
-        +     '<li><i>&#10003;</i><span>221 starter prompts, free forever</span></li>'
-        +     '<li><i>&#10003;</i><span>Browse the entire 2,713-prompt vault</span></li>'
-        +     '<li><i>&#10003;</i><span>No credit card &middot; takes 20 seconds</span></li>'
-        +   '</ul>'
-        +   '<div class="pw-cta">'
-        +     '<button class="au-btn" data-pw="signup">Create a free account</button>'
-        +     '<p class="pw-signin-line">Already have one? <span class="au-link" data-pw="login">Sign in</span></p>'
-        +   '</div>'
-        + '</div>';
-    } else {
-      // PAID prompt the viewer is not entitled to → benefit-driven paywall
-      var t = TIER_COPY[p.tier] || TIER_COPY.studio;
-      var inc = t.included.map(function(x){
-        return '<li><i>&#10022;</i><span><b>' + x[0] + '</b> — ' + x[1] + '</span></li>';
-      }).join('');
-      html = ''
-        + '<div class="paywall">'
-        +   '<div class="pw-lock"><span class="ic">&#9819;</span><span class="tx">' + esc(p.t) + '<span>' + t.name + ' instrument</span></span></div>'
-        +   (note ? '<div class="au-msg ok show" style="margin-bottom:16px"><span class="mi">&#9888;</span><span>' + esc(note) + '</span></div>' : '')
-        +   '<div class="pw-section"><h4>What it does</h4><p class="pw-lead">' + esc(p.te || t.tagline) + '</p></div>'
-        +   '<div class="pw-section"><h4>The outcome</h4><p class="pw-lead" style="font-size:1.02rem;color:var(--mute)">' + t.tagline + ' Skip the trial-and-error and ship the result a specialist would charge for.</p></div>'
-        +   '<div class="pw-section"><h4>Why it\'s a ' + t.name + ' instrument</h4><ul class="pw-list">' + inc + '</ul></div>'
-        +   '<div class="pw-section"><div class="pw-value">'
-        +     '<div class="vb"><div class="n">' + t.saves[0] + '</div><div class="l">' + t.saves[1] + '</div></div>'
-        +     '<div class="vb"><div class="n">' + t.worth[0] + '</div><div class="l">' + t.worth[1] + '</div></div>'
-        +   '</div></div>'
-        +   '<div class="pw-cta">'
-        +     (WAITLIST_MODE
-                 ? '<button class="au-btn" data-pw="waitlist" data-tier="' + p.tier + '">Join the launch list &mdash; lock in founding pricing</button>'
-                   + '<p class="pw-fine">Founding members save on every tier &middot; we’ll email you the moment ' + t.name + ' opens</p>'
-                   + (AUTH.user
-                        ? '<p class="pw-signin-line">You’re signed in — we’ll email you at launch.</p>'
-                        : '<p class="pw-signin-line">Already have an account? <span class="au-link" data-pw="login">Sign in</span></p>')
-                 : '<button class="au-btn" data-pw="checkout" data-tier="' + p.tier + '">Unlock ' + t.name + ' &mdash; ' + t.price + ' once <span style="opacity:.6;text-decoration:line-through;margin-left:6px">' + t.anchor + '</span></button>'
-                   + '<p class="pw-fine">One payment &middot; lifetime access &middot; 7-day no-questions refund</p>'
-                   + (AUTH.user
-                        ? '<p class="pw-signin-line">Already purchased? <span class="au-link" data-pw="refresh">Refresh access</span></p>'
-                        : '<p class="pw-signin-line">Already own it? <span class="au-link" data-pw="login">Sign in</span></p>'))
-        +   '</div>'
-        + '</div>';
-    }
-
-    modalBody.innerHTML = html;
-
-    // wire the paywall buttons
-    modalBody.querySelectorAll('[data-pw]').forEach(function(b){
-      b.addEventListener('click', function(){
-        var act = b.getAttribute('data-pw');
-        if (act === 'signup'){ closeModal(); openAuth('signup'); }
-        else if (act === 'login'){ closeModal(); openAuth('login'); }
-        else if (act === 'waitlist'){
-          var wtier = b.getAttribute('data-tier') || 'studio';
-          if (AUTH.user && AUTH.user.email){
-            captureLead(AUTH.user.email, 'waitlist:' + wtier, wtier)
-              .then(function(){ showToast('You’re on the founding list ✓ — we’ll email you at launch'); })
-              .catch(function(){ showToast('You’re signed in — we’ll email you at launch'); });
-          } else {
-            closeModal(); openAuth('signup');
-            showToast('Create your free account — founding members lock in launch pricing');
-          }
-        }
-        else if (act === 'checkout'){
-          var tier = b.getAttribute('data-tier') || 'studio';
-          var url = CHECKOUT[tier] || CHECKOUT.studio;
-          if (AUTH.user && AUTH.user.email) url += (url.indexOf('?') < 0 ? '?' : '&') + 'checkout[email]=' + encodeURIComponent(AUTH.user.email);
-          window.open(url, '_blank', 'noopener');
-          showToast('Opening secure checkout');
-        }
-        else if (act === 'refresh'){ refreshEntitlement(true); showToast('Refreshing your access…'); }
-      });
-    });
-
-    document.body.classList.add('modal-open');
-    modalBack.classList.add('show');
-    setTimeout(function(){
-      var first = modalBody.querySelector('[data-pw]');
-      if (first) first.focus({ preventScroll: true });
-      else modalClose.focus({ preventScroll: true });
-    }, 380);
-  }
 
   function parseBody(body){
     var segs = [];
@@ -1882,508 +1134,21 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
     });
   }
 
-  /* ---------- guides ---------- */
-  document.querySelectorAll('.gate').forEach(function(form){
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      var name = form.getAttribute('data-guide') || 'guide';
-      var inp = form.querySelector('input');
-      var btn = form.querySelector('button');
-      var val = inp ? inp.value.trim() : '';
-      if (val && val.indexOf('@') > 0){
-        if (btn) btn.disabled = true;
-        captureLead(val, 'guide:' + name, null)
-          .then(function(){ showToast('You’re on the list — we’ll email the ' + name + ' shortly'); if (inp) inp.value = ''; })
-          .catch(function(){ showToast('Hmm, that didn’t save — please try again'); })
-          .then(function(){ if (btn) btn.disabled = false; });
-      } else {
-        showToast('Enter a valid email to receive it');
-        if (inp) inp.focus();
-      }
-    });
-  });
-
-  /* ---------- CTA buttons ---------- */
-  document.querySelectorAll('[data-cta]').forEach(function(b){
-    b.addEventListener('click', function(){
-      var tier = b.getAttribute('data-tier');
-      if (tier){
-        // ----- a specific tier was chosen -----
-        try { localStorage.setItem('pp_tier_intent', tier); } catch(_){}
-        if (tier === 'free'){
-          if (AUTH.user){ showToast('You’re all set — browse the vault above'); }
-          else { openAuth('signup'); }
-          return;
-        }
-        // paid tier
-        if (!AUTH.user){
-          openAuth('signup');
-          showToast('Create your free account — founding members lock in launch pricing');
-          return;
-        }
-        if (WAITLIST_MODE){
-          captureLead(AUTH.user.email, 'pricing:' + tier, tier)
-            .then(function(){ showToast('You’re on the founding list ✓ — we’ll email you at launch'); })
-            .catch(function(){ showToast('You’re on the list — we’ll email you at launch'); });
-        } else {
-          var url = CHECKOUT[tier] || CHECKOUT.studio;
-          if (AUTH.user.email) url += (url.indexOf('?') < 0 ? '?' : '&') + 'checkout[email]=' + encodeURIComponent(AUTH.user.email);
-          window.open(url, '_blank', 'noopener');
-          showToast('Opening secure checkout');
-        }
-        return;
-      }
-      // ----- generic CTA → scroll to pricing -----
-      var pr = document.getElementById('pricing');
-      if (pr) pr.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
-      showToast('Choose your tier below — own it for life');
-    });
-  });
-
-  /* ---------- Ada concierge ---------- */
-  var adaBubble = document.getElementById('adaBubble');
-  var adaPanel = document.getElementById('adaPanel');
-  var adaMsg = document.getElementById('adaMsg');
-  var answers = {
-    'Which tier is right for me?': 'If you operate solo, <b>Pro</b> ($100) is plenty. Running client work or an agency? <b>Studio</b> ($250) adds all 40+ frameworks + a commercial licence — it’s the one most people pick.',
-    'Is it really one payment forever?': 'Yes. <b>One payment, lifetime access</b> — no subscription, no renewals. Every future vault expansion is included free.',
-    'How are these different from free prompts?': 'Every prompt is <b>hand-built and never scraped</b> — engineered with fill-in variables and tested across ChatGPT, Claude &amp; Gemini. 2,713 of them, filed by job across 26 collections.'
-  };
-  if (adaBubble && adaPanel){
-    adaBubble.addEventListener('click', function(){
-      adaPanel.classList.toggle('show');
-    });
-    adaPanel.querySelectorAll('.ada-q').forEach(function(q){
-      q.addEventListener('click', function(){
-        var key = q.textContent.trim();
-        adaMsg.innerHTML = answers[key] || 'Drop us a line at <b>hello@getproprompt.com</b> and we’ll sort you out.';
-      });
-    });
+  /* ---------- browse buttons ---------- */
+  function goBrowse(){
+    var b = document.getElementById('browse');
+    if (b) b.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+    var s = document.getElementById('searchInput');
+    if (s) setTimeout(function(){ s.focus({ preventScroll: true }); }, reduce ? 0 : 400);
   }
+  var navBrowseBtn = document.getElementById('navBrowseBtn');
+  if (navBrowseBtn) navBrowseBtn.addEventListener('click', goBrowse);
+  var heroBrowseBtn = document.getElementById('heroBrowseBtn');
+  if (heroBrowseBtn) heroBrowseBtn.addEventListener('click', goBrowse);
 
-  /* ============================================================
-     AUTH + ACCOUNT controller
-     ============================================================ */
-  var navAuth      = document.getElementById('navAuth');
-  var signinLink   = document.getElementById('signinLink');
-
-  // auth modal els
-  var authBack = document.getElementById('authBack');
-  var authCard = document.getElementById('authCard');
-  var authClose = document.getElementById('authClose');
-  var authTitle = document.getElementById('authTitle');
-  var authSub = document.getElementById('authSub');
-  var authForm = document.getElementById('authForm');
-  var authName = document.getElementById('authName');
-  var nameField = document.getElementById('nameField');
-  var authEmail = document.getElementById('authEmail');
-  var authPassword = document.getElementById('authPassword');
-  var pwField = document.getElementById('pwField');
-  var authSubmit = document.getElementById('authSubmit');
-  var authMsg = document.getElementById('authMsg');
-  var authMsgText = document.getElementById('authMsgText');
-  var authMsgIc = document.getElementById('authMsgIc');
-  var authAlt = document.getElementById('authAlt');
-  var toSignup = document.getElementById('toSignup');
-  var forgotLink = document.getElementById('forgotLink');
-  var magicToggle = document.getElementById('magicToggle');
-
-  // account panel els
-  var acctBack = document.getElementById('acctBack');
-  var acctClose = document.getElementById('acctClose');
-  var acctEmail = document.getElementById('acctEmail');
-  var acctTierBadge = document.getElementById('acctTierBadge');
-  var acctSince = document.getElementById('acctSince');
-  var acctVerify = document.getElementById('acctVerify');
-  var resendVerify = document.getElementById('resendVerify');
-  var manageBilling = document.getElementById('manageBilling');
-  var upgradeBtn = document.getElementById('upgradeBtn');
-  var changePwBtn = document.getElementById('changePwBtn');
-  var changePwForm = document.getElementById('changePwForm');
-  var newPw = document.getElementById('newPw');
-  var logoutBtn = document.getElementById('logoutBtn');
-  var deleteAcctBtn = document.getElementById('deleteAcctBtn');
-  var acctMsg = document.getElementById('acctMsg');
-  var acctMsgText = document.getElementById('acctMsgText');
-  var acctMsgIc = document.getElementById('acctMsgIc');
-
-  var authMode = 'login';   // 'login' | 'signup' | 'magic'
-
-  function showMsg(box, txt, ic, type){
-    if (!box) return;
-    box.querySelector('span:last-child').innerHTML = txt;
-    box.querySelector('.mi').innerHTML = ic || '!';
-    box.className = 'au-msg show ' + (type || 'err');
-  }
-  function hideMsg(box){ if (box){ box.className = 'au-msg'; } }
-  function busy(btn, on, label){
-    if (!btn) return;
-    if (on){ btn.disabled = true; btn.dataset.label = btn.innerHTML; btn.innerHTML = '<span class="au-spin"></span>' + (label || 'Working…'); }
-    else { btn.disabled = false; if (btn.dataset.label) btn.innerHTML = btn.dataset.label; }
-  }
-  function prettyError(e){
-    var m = (e && e.message) ? e.message : String(e || 'Something went wrong');
-    if (/Invalid login/i.test(m)) return 'Email or password is incorrect.';
-    if (/already registered|already exists/i.test(m)) return 'That email already has an account — try signing in.';
-    if (/Email not confirmed/i.test(m)) return 'Please confirm your email first — check your inbox.';
-    if (/rate limit|too many/i.test(m)) return 'Too many attempts — wait a minute and try again.';
-    return m;
-  }
-
-  /* ----- open / close modals ----- */
-  function openAuth(mode){
-    if (!supabase){ showToast('Auth is unavailable on this page'); return; }
-    track('auth_open', { mode: mode || 'login' });
-    setAuthMode(mode || 'login');
-    hideMsg(authMsg);
-    acctBack.classList.remove('show');
-    authBack.classList.add('show');
-    document.body.classList.add('modal-open');
-    setTimeout(function(){ authEmail.focus({ preventScroll: true }); }, 360);
-  }
-  function closeAuth(){
-    authBack.classList.remove('show');
-    if (!modalBack.classList.contains('show') && !acctBack.classList.contains('show')) document.body.classList.remove('modal-open');
-  }
-  function openAcct(){
-    if (!AUTH.user){ openAuth('login'); return; }
-    hideMsg(acctMsg);
-    if (changePwForm) changePwForm.style.display = 'none';
-    paintAccount();
-    acctBack.classList.add('show');
-    document.body.classList.add('modal-open');
-  }
-  function closeAcct(){
-    acctBack.classList.remove('show');
-    if (!modalBack.classList.contains('show') && !authBack.classList.contains('show')) document.body.classList.remove('modal-open');
-  }
-
-  function setAuthMode(mode){
-    authMode = mode;
-    if (mode === 'signup'){
-      authTitle.innerHTML = 'Create your <em>free</em> account';
-      authSub.textContent = 'No card needed — unlock 221 starter prompts instantly.';
-      nameField.style.display = '';
-      pwField.style.display = '';
-      authPassword.setAttribute('autocomplete', 'new-password');
-      authSubmit.textContent = 'Create account';
-      authAlt.innerHTML = 'Already have an account? <a id="toLogin">Sign in</a>';
-      wireAltLinks();
-    } else if (mode === 'magic'){
-      authTitle.innerHTML = 'Email me a <em>magic link</em>';
-      authSub.textContent = 'We\'ll send a one-tap sign-in link — no password.';
-      nameField.style.display = 'none';
-      pwField.style.display = 'none';
-      authSubmit.textContent = 'Send the link';
-      authAlt.innerHTML = 'Prefer a password? <a id="toLogin">Sign in</a>';
-      wireAltLinks();
-    } else {
-      authTitle.innerHTML = 'Enter the <em>vault</em>';
-      authSub.textContent = 'Sign in to open prompts and access your tier.';
-      nameField.style.display = 'none';
-      pwField.style.display = '';
-      authPassword.setAttribute('autocomplete', 'current-password');
-      authSubmit.textContent = 'Sign in';
-      authAlt.innerHTML = 'New here? <a id="toSignup">Create a free account</a>';
-      wireAltLinks();
-    }
-  }
-  function wireAltLinks(){
-    var s = document.getElementById('toSignup'); if (s) s.addEventListener('click', function(){ setAuthMode('signup'); hideMsg(authMsg); });
-    var l = document.getElementById('toLogin');  if (l) l.addEventListener('click', function(){ setAuthMode('login'); hideMsg(authMsg); });
-  }
-
-  if (signinLink) signinLink.addEventListener('click', function(e){ e.preventDefault(); openAuth('login'); });
-  if (authClose)  authClose.addEventListener('click', closeAuth);
-  if (authBack)   authBack.addEventListener('click', function(e){ if (e.target === authBack) closeAuth(); });
-  if (acctClose)  acctClose.addEventListener('click', closeAcct);
-  if (acctBack)   acctBack.addEventListener('click', function(e){ if (e.target === acctBack) closeAcct(); });
-  document.addEventListener('keydown', function(e){
-    if (e.key === 'Escape'){
-      if (authBack.classList.contains('show')) closeAuth();
-      if (acctBack.classList.contains('show')) closeAcct();
-    }
-  });
-  if (magicToggle) magicToggle.addEventListener('click', function(){ setAuthMode('magic'); hideMsg(authMsg); });
-
-  /* ----- the main auth form ----- */
-  if (authForm) authForm.addEventListener('submit', function(e){
-    e.preventDefault();
-    if (!supabase) return;
-    hideMsg(authMsg);
-    var email = (authEmail.value || '').trim();
-    var pw = authPassword.value || '';
-    if (!email || email.indexOf('@') < 1){ showMsg(authMsg, 'Enter a valid email address.', '!'); authEmail.focus(); return; }
-
-    var ref = null;
-    try { ref = localStorage.getItem('pp_ref') || undefined; } catch(_){}
-
-    if (authMode === 'magic'){
-      busy(authSubmit, true, 'Sending…');
-      supabase.auth.signInWithOtp({
-        email: email,
-        options: { data: ref ? { ref_code: ref } : undefined, emailRedirectTo: window.location.origin + window.location.pathname }
-      }).then(function(res){
-        busy(authSubmit, false);
-        if (res.error) return showMsg(authMsg, prettyError(res.error), '!');
-        showMsg(authMsg, 'Check your inbox — we sent a one-tap sign-in link to <b>' + esc(email) + '</b>.', '&#9993;', 'ok');
-      });
-      return;
-    }
-
-    if (authMode === 'signup'){
-      if (pw.length < 8){ showMsg(authMsg, 'Use at least 8 characters for your password.', '!'); authPassword.focus(); return; }
-      busy(authSubmit, true, 'Creating…');
-      supabase.auth.signUp({
-        email: email, password: pw,
-        options: {
-          data: Object.assign({}, ref ? { ref_code: ref } : {}, authName.value.trim() ? { full_name: authName.value.trim() } : {}),
-          emailRedirectTo: window.location.origin + window.location.pathname
-        }
-      }).then(function(res){
-        busy(authSubmit, false);
-        if (res.error) return showMsg(authMsg, prettyError(res.error), '!');
-        if (res.data && res.data.session){
-          showMsg(authMsg, 'Welcome to the vault. Setting things up…', '&#10003;', 'ok');
-          setTimeout(closeAuth, 700);
-        } else {
-          showMsg(authMsg, 'Almost there — confirm your email at <b>' + esc(email) + '</b> to finish. Then sign in.', '&#9993;', 'ok');
-        }
-      });
-      return;
-    }
-
-    // login
-    busy(authSubmit, true, 'Signing in…');
-    supabase.auth.signInWithPassword({ email: email, password: pw }).then(function(res){
-      busy(authSubmit, false);
-      if (res.error) return showMsg(authMsg, prettyError(res.error), '!');
-      showMsg(authMsg, 'Signed in. Welcome back.', '&#10003;', 'ok');
-      setTimeout(closeAuth, 500);
-    });
-  });
-
-  /* ----- Google OAuth ----- */
-  var googleBtn = document.getElementById('googleBtn');
-  if (googleBtn) googleBtn.addEventListener('click', function(){
-    if (!supabase) return;
-    var ref = null; try { ref = localStorage.getItem('pp_ref') || undefined; } catch(_){}
-    supabase.auth.signInWithOAuth({
-      provider: 'google',
-      options: { redirectTo: window.location.origin + window.location.pathname, queryParams: ref ? { ref_code: ref } : undefined }
-    }).then(function(res){ if (res.error) showMsg(authMsg, prettyError(res.error), '!'); });
-  });
-
-  /* ----- forgot password ----- */
-  if (forgotLink) forgotLink.addEventListener('click', function(){
-    if (!supabase) return;
-    var email = (authEmail.value || '').trim();
-    if (!email || email.indexOf('@') < 1){ showMsg(authMsg, 'Enter your email above first, then tap "Forgot password".', '!'); authEmail.focus(); return; }
-    busy(authSubmit, true, 'Sending…');
-    supabase.auth.resetPasswordForEmail(email, { redirectTo: window.location.origin + window.location.pathname + '?reset=1' })
-      .then(function(res){
-        busy(authSubmit, false);
-        if (res.error) return showMsg(authMsg, prettyError(res.error), '!');
-        showMsg(authMsg, 'Password-reset link sent to <b>' + esc(email) + '</b>. Open it to set a new one.', '&#9993;', 'ok');
-      });
-  });
-
-  /* ----- account panel ----- */
-  function paintAccount(){
-    if (!AUTH.user) return;
-    acctEmail.textContent = AUTH.user.email || '—';
-    var tier = currentTier();
-    acctTierBadge.textContent = tier.charAt(0).toUpperCase() + tier.slice(1);
-    acctTierBadge.className = 'acct-tier-badge ' + (tier === 'free' ? 'free' : (tier === 'pro' ? 'pro' : ''));
-    var created = AUTH.user.created_at ? new Date(AUTH.user.created_at) : null;
-    acctSince.textContent = created ? created.toLocaleDateString(undefined, { year:'numeric', month:'short', day:'numeric' }) : '—';
-    var verified = !!(AUTH.user.email_confirmed_at || AUTH.user.confirmed_at);
-    acctVerify.classList.toggle('show', !verified);
-  }
-
-  if (manageBilling) manageBilling.addEventListener('click', function(){
-    window.open(LS_PORTAL_URL, '_blank', 'noopener');
-    showToast('Opening billing portal');
-  });
-  if (upgradeBtn) upgradeBtn.addEventListener('click', function(){
-    closeAcct();
-    var pr = document.getElementById('pricing');
-    if (pr) pr.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
-  });
-  if (changePwBtn) changePwBtn.addEventListener('click', function(){
-    changePwForm.style.display = changePwForm.style.display === 'none' ? 'block' : 'none';
-    if (changePwForm.style.display === 'block') newPw.focus();
-  });
-  if (changePwForm) changePwForm.addEventListener('submit', function(e){
-    e.preventDefault();
-    if (!supabase) return;
-    var pw = newPw.value || '';
-    if (pw.length < 8){ showMsg(acctMsg, 'Use at least 8 characters.', '!'); newPw.focus(); return; }
-    supabase.auth.updateUser({ password: pw }).then(function(res){
-      if (res.error) return showMsg(acctMsg, prettyError(res.error), '!');
-      newPw.value = '';
-      changePwForm.style.display = 'none';
-      showMsg(acctMsg, 'Password updated.', '&#10003;', 'ok');
-    });
-  });
-  if (resendVerify) resendVerify.addEventListener('click', function(){
-    if (!supabase || !AUTH.user) return;
-    supabase.auth.resend({ type: 'signup', email: AUTH.user.email, options: { emailRedirectTo: window.location.origin + window.location.pathname } })
-      .then(function(res){
-        if (res.error) return showMsg(acctMsg, prettyError(res.error), '!');
-        showMsg(acctMsg, 'Verification email re-sent. Check your inbox.', '&#9993;', 'ok');
-      });
-  });
-  if (logoutBtn) logoutBtn.addEventListener('click', function(){
-    if (!supabase) return;
-    supabase.auth.signOut().then(function(){ closeAcct(); showToast('Signed out'); });
-  });
-  if (deleteAcctBtn) deleteAcctBtn.addEventListener('click', function(){
-    if (!supabase || !AUTH.user) return;
-    if (!window.confirm('Delete your account permanently? This cannot be undone. Any purchased access will be lost.')) return;
-    // Account deletion needs a privileged server call; ask the deployed Function, else guide the user.
-    var token = AUTH.session ? AUTH.session.access_token : '';
-    fetch(API_BASE + '/account/delete', { method: 'POST', headers: { 'Authorization': 'Bearer ' + token } })
-      .then(function(r){ return r.ok ? r.json().catch(function(){return{};}) : Promise.reject(r.status); })
-      .then(function(){ supabase.auth.signOut().then(function(){ closeAcct(); showToast('Account deleted'); }); })
-      .catch(function(){
-        showMsg(acctMsg, 'We could not delete the account automatically. Email <b>hello@getproprompt.com</b> and we\'ll remove it within 24h.', '&#9888;', 'err');
-      });
-  });
-
-  /* ----- entitlement: own row via supabase, fallback to /api/me ----- */
-  function refreshEntitlement(reopenModal){
-    if (!AUTH.user || !supabase){ AUTH.tier = 'free'; AUTH.flags = {}; renderNavAuth(); return Promise.resolve(); }
-    return supabase.from('entitlements')
-      .select('tier, commercial_license, bulk_license, dfy_support')
-      .eq('user_id', AUTH.user.id)
-      .maybeSingle()
-      .then(function(res){
-        if (!res.error && res.data && res.data.tier){
-          AUTH.tier = res.data.tier;
-          AUTH.flags = { commercial: !!res.data.commercial_license, bulk: !!res.data.bulk_license, dfy: !!res.data.dfy_support };
-          return;
-        }
-        return apiMeFallback();
-      })
-      .catch(apiMeFallback)
-      .then(function(){
-        renderNavAuth();
-        paintAccount();
-        if (reopenModal && lastOpened) openModal(lastOpened);
-      });
-  }
-  function apiMeFallback(){
-    if (!AUTH.session) return;
-    return fetch(API_BASE + '/me', { headers: { 'Authorization': 'Bearer ' + AUTH.session.access_token } })
-      .then(function(r){ return r.ok ? r.json() : null; })
-      .then(function(j){
-        if (j && j.tier){
-          AUTH.tier = j.tier;
-          AUTH.flags = j.flags || {};
-        }
-      })
-      .catch(function(){ /* leave tier as-is (free) */ });
-  }
-
-  /* ----- nav rendering for auth state ----- */
-  function renderNavAuth(){
-    if (!navAuth) return;
-    if (AUTH.user){
-      var tier = currentTier();
-      var initial = (AUTH.user.email || '?').charAt(0).toUpperCase();
-      navAuth.innerHTML = ''
-        + '<button class="acct-btn" id="acctOpen" aria-label="Open account">'
-        +   '<span class="avatar">' + esc(initial) + '</span>'
-        +   '<span class="acct-tier">' + esc(tier) + '</span>'
-        +   '<span class="caret">&#9662;</span>'
-        + '</button>';
-      var ab = document.getElementById('acctOpen');
-      if (ab) ab.addEventListener('click', openAcct);
-    } else {
-      navAuth.innerHTML = '<a href="#" class="signin" id="signinLink">Sign in</a>';
-      var sl = document.getElementById('signinLink');
-      if (sl) sl.addEventListener('click', function(e){ e.preventDefault(); openAuth('login'); });
-    }
-  }
-
-  /* ----- track last opened prompt so we can re-gate after auth changes ----- */
-  var lastOpened = null;
-  var _openModal = openModal;
-  openModal = function(p){ lastOpened = p; track('prompt_open', { id: p && p.i, tier: p && p.tier }); return _openModal(p); };
-
-  /* ----- session bootstrap + reactive auth ----- */
-  function bootstrapAuth(){
-    if (!supabase){ renderNavAuth(); return; }
-
-    // capture ?ref=CODE for referral attribution
-    try {
-      var rc = new URLSearchParams(window.location.search).get('ref');
-      if (rc) localStorage.setItem('pp_ref', rc);
-    } catch(_){}
-
-    // password-recovery landing (?reset=1 or supabase recovery event)
-    var wantsReset = /[?&]reset=1\b/.test(window.location.search);
-
-    supabase.auth.getSession().then(function(res){
-      var session = res && res.data ? res.data.session : null;
-      AUTH.session = session;
-      AUTH.user = session ? session.user : null;
-      AUTH.ready = true;
-      renderNavAuth();
-      if (AUTH.user) refreshEntitlement(false);
-      if (wantsReset) promptForNewPassword();
-    });
-
-    supabase.auth.onAuthStateChange(function(event, session){
-      AUTH.session = session;
-      AUTH.user = session ? session.user : null;
-      if (event === 'PASSWORD_RECOVERY'){ promptForNewPassword(); return; }
-      if (AUTH.user){
-        refreshEntitlement(modalBack.classList.contains('show'));
-      } else {
-        AUTH.tier = 'free'; AUTH.flags = {};
-        renderNavAuth();
-        // if a paywalled/free-gated modal is open, refresh it to the logged-out view
-        if (modalBack.classList.contains('show') && lastOpened) openModal(lastOpened);
-      }
-    });
-  }
-
-  // When arriving via a recovery link, open the auth modal in a "set new password" state.
-  function promptForNewPassword(){
-    openAuth('login');
-    setAuthMode('login');
-    authTitle.innerHTML = 'Set a <em>new password</em>';
-    authSub.textContent = 'Choose a new password for your account.';
-    nameField.style.display = 'none';
-    authEmail.parentElement.style.display = 'none';
-    pwField.style.display = '';
-    authPassword.value = '';
-    authPassword.setAttribute('autocomplete', 'new-password');
-    authPassword.placeholder = 'New password (8+ characters)';
-    var sub = pwField.querySelector('.au-sub'); if (sub) sub.style.display = 'none';
-    authSubmit.textContent = 'Update password';
-    authAlt.style.display = 'none';
-    // swap the submit handler for this flow
-    var handler = function(e){
-      e.preventDefault(); e.stopImmediatePropagation();
-      var pw = authPassword.value || '';
-      if (pw.length < 8){ showMsg(authMsg, 'Use at least 8 characters.', '!'); return; }
-      busy(authSubmit, true, 'Updating…');
-      supabase.auth.updateUser({ password: pw }).then(function(r){
-        busy(authSubmit, false);
-        if (r.error) return showMsg(authMsg, prettyError(r.error), '!');
-        showMsg(authMsg, 'Password updated — you\'re signed in.', '&#10003;', 'ok');
-        authForm.removeEventListener('submit', handler, true);
-        setTimeout(function(){ closeAuth(); authEmail.parentElement.style.display = ''; authAlt.style.display = ''; if (sub) sub.style.display = ''; }, 900);
-      });
-    };
-    authForm.addEventListener('submit', handler, true);
-  }
-
-  bootstrapAuth();
-  track('pageview');
+  /* ---------- menu toggle (mobile) ---------- */
+  var menuToggle = document.getElementById('menuToggle');
+  if (menuToggle) menuToggle.addEventListener('click', goBrowse);
 })();
 </script>
 </body>

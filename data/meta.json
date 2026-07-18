@@ -1,1 +1,1957 @@
-{"total":2713,"groups":[{"key":"viral","label":"Trending & Viral","icon":"🔥","color":"#ff6b4a","count":259,"featured":true,"categories":[{"name":"Health, Fitness & Mind","label":"Health, Fitness & Mind","count":16},{"name":"AI Agents & Automation","label":"AI Agents & Automation","count":15},{"name":"ChatGPT Power-User","label":"ChatGPT Power-User","count":15},{"name":"Email & Communication","label":"Email & Communication","count":15},{"name":"Expert Personas & Roleplay","label":"Expert Personas & Roleplay","count":15},{"name":"Learn Anything Faster","label":"Learn Anything Faster","count":15},{"name":"Coding & Dev Copilot","label":"Coding & Dev Copilot","count":14},{"name":"Copywriting & Ads","label":"Copywriting & Ads","count":14},{"name":"Data, Excel & Sheets","label":"Data, Excel & Sheets","count":14},{"name":"Life, Travel & Home","label":"Life, Travel & Home","count":14},{"name":"Midjourney v6 & AI Art","label":"Midjourney v6 & AI Art","count":14},{"name":"Money & Side-Hustle","label":"Money & Side-Hustle","count":14},{"name":"Personal Brand & LinkedIn","label":"Personal Brand & LinkedIn","count":14},{"name":"Productivity & Systems","label":"Productivity & Systems","count":14},{"name":"Resume & Career","label":"Resume & Career","count":14},{"name":"SEO & Growth","label":"SEO & Growth","count":14},{"name":"Viral Content & Hooks","label":"Viral Content & Hooks","count":14},{"name":"Faceless YouTube & Shorts","label":"Faceless YouTube & Shorts","count":14}]},{"key":"elite","label":"Million-Dollar Prompts","icon":"💎","color":"#36c98b","count":127,"featured":false,"categories":[{"name":"Sales Systems","label":"Sales Systems","count":15},{"name":"AI Business Automation","label":"AI Business Automation","count":14},{"name":"Career & Income","label":"Career & Income","count":14},{"name":"Founder & Strategy","label":"Founder & Strategy","count":14},{"name":"Mastery & Mental Models","label":"Mastery & Mental Models","count":14},{"name":"Personal Leverage & Systems","label":"Personal Leverage & Systems","count":14},{"name":"Growth & Marketing Engines","label":"Growth & Marketing Engines","count":14},{"name":"Offers & Pricing","label":"Offers & Pricing","count":14},{"name":"Deep Research & Due Diligence","label":"Deep Research & Due Diligence","count":14}]},{"key":"expert","label":"Expert Picks","icon":"🧠","color":"#34c3c9","count":50,"featured":false,"categories":[{"name":"Agentic Patterns","label":"Agentic Patterns","count":10},{"name":"Expert Frameworks","label":"Expert Frameworks","count":10},{"name":"Meta-Prompting","label":"Meta-Prompting","count":10},{"name":"Power Prompts","label":"Power Prompts","count":10},{"name":"Advanced Reasoning","label":"Advanced Reasoning","count":10}]},{"key":"image","label":"AI Image Prompts","icon":"🖼️","color":"#e0729e","count":325,"featured":false,"categories":[{"name":"DALL·E 3","label":"DALL·E 3","count":14},{"name":"Gemini · Nano Banana","label":"Gemini · Nano Banana","count":14},{"name":"Midjourney v6/v7","label":"Midjourney v6/v7","count":14},{"name":"3D & Render","label":"3D & Render","count":13},{"name":"Anime & Manga","label":"Anime & Manga","count":13},{"name":"Couples, Family & Pets","label":"Couples, Family & Pets","count":13},{"name":"Fantasy & Sci-Fi Art","label":"Fantasy & Sci-Fi Art","count":13},{"name":"Fashion & Editorial","label":"Fashion & Editorial","count":13},{"name":"Flux","label":"Flux","count":13},{"name":"Food & Drink","label":"Food & Drink","count":13},{"name":"ChatGPT Viral Image Prompts","label":"ChatGPT Viral Image Prompts","count":13},{"name":"Pro Headshots","label":"Pro Headshots","count":13},{"name":"Icons & UI Assets","label":"Icons & UI Assets","count":13},{"name":"Infographics & Charts","label":"Infographics & Charts","count":13},{"name":"Interior & Architecture","label":"Interior & Architecture","count":13},{"name":"Logos & Branding","label":"Logos & Branding","count":13},{"name":"Mockups & Packaging","label":"Mockups & Packaging","count":13},{"name":"Photoreal Portraits & Product","label":"Photoreal Portraits & Product","count":13},{"name":"Product & Commercial Ads","label":"Product & Commercial Ads","count":13},{"name":"Retro & Vintage","label":"Retro & Vintage","count":13},{"name":"Selfie Transformations","label":"Selfie Transformations","count":13},{"name":"Sports & Action","label":"Sports & Action","count":13},{"name":"Stable Diffusion (SDXL)","label":"Stable Diffusion (SDXL)","count":13},{"name":"Ideogram (Text in Image)","label":"Ideogram (Text in Image)","count":12},{"name":"Viral Photo Trends","label":"Viral Photo Trends","count":11}]},{"key":"writing","label":"Content & Writing","icon":"✍️","color":"#e3b341","count":159,"featured":false,"categories":[{"name":"Book & Ebook Writing","label":"Book & Ebook Writing","count":12},{"name":"Editing & Proofreading","label":"Editing & Proofreading","count":12},{"name":"Ghostwriting & Bios","label":"Ghostwriting & Bios","count":12},{"name":"Grants & Proposals","label":"Grants & Proposals","count":12},{"name":"Instagram & Reels","label":"Instagram & Reels","count":12},{"name":"LinkedIn Posts","label":"LinkedIn Posts","count":12},{"name":"Newsletter & Email","label":"Newsletter & Email","count":12},{"name":"Press & PR","label":"Press & PR","count":12},{"name":"Story & Scriptwriting","label":"Story & Scriptwriting","count":12},{"name":"Technical Writing & Docs","label":"Technical Writing & Docs","count":12},{"name":"X / Twitter Threads","label":"X / Twitter Threads","count":12},{"name":"Blog & Articles","label":"Blog & Articles","count":11}]},{"key":"gen","label":"Generators & Templates","icon":"🛠️","color":"#9bbf3f","count":44,"featured":false,"categories":[{"name":"Custom GPT & System Builders","label":"Custom GPT & System Builders","count":11},{"name":"Prompt Generators","label":"Prompt Generators","count":11},{"name":"Document & Framework Templates","label":"Document & Framework Templates","count":11},{"name":"Workflow & SOP Builders","label":"Workflow & SOP Builders","count":11}]},{"key":"agents","label":"Agentic & System","icon":"🤖","color":"#6c8cff","count":42,"featured":false,"categories":[{"name":"Autonomous Agents","label":"Autonomous Agents","count":15},{"name":"System Prompts","label":"System Prompts","count":14},{"name":"Multi-Agent & Tools","label":"Multi-Agent & Tools","count":13}]},{"key":"mega","label":"Pro Mega-Prompts","icon":"⚡","color":"#b48cff","count":73,"featured":false,"categories":[{"name":"JSON & Structured Output","label":"JSON & Structured Output","count":17},{"name":"Deep Research","label":"Deep Research","count":15},{"name":"Business & Strategy","label":"Business & Strategy","count":15},{"name":"Data Extraction & Tables","label":"Data Extraction & Tables","count":13},{"name":"Life & Productivity","label":"Life & Productivity","count":13}]},{"key":"work","label":"Work & Career","icon":"🏢","color":"#d98c4a","count":83,"featured":false,"categories":[{"name":"Decision-Making","label":"Decision-Making","count":12},{"name":"Leadership & Management","label":"Leadership & Management","count":12},{"name":"Meetings & Facilitation","label":"Meetings & Facilitation","count":12},{"name":"Performance & Feedback","label":"Performance & Feedback","count":12},{"name":"Project & Product Management","label":"Project & Product Management","count":12}]},{"key":"living","label":"Life & Wellbeing","icon":"🌿","color":"#5fc9a8","count":70,"featured":false,"categories":[{"name":"Habits & Discipline","label":"Habits & Discipline","count":12},{"name":"Home, Cooking & Organising","label":"Home, Cooking & Organising","count":12},{"name":"Mindset & Reflection","label":"Mindset & Reflection","count":12},{"name":"Personal Money Systems","label":"Personal Money Systems","count":12},{"name":"Relationships & Communication","label":"Relationships & Communication","count":12}]},{"key":"biz","label":"Business & Verticals","icon":"🛒","color":"#c77dba","count":129,"featured":false,"categories":[{"name":"Agency & Consulting","label":"Agency & Consulting","count":12},{"name":"B2B & Enterprise Sales","label":"B2B & Enterprise Sales","count":12},{"name":"Creator & Coaching Business","label":"Creator & Coaching Business","count":12},{"name":"E-commerce & DTC","label":"E-commerce & DTC","count":12},{"name":"Finance & Fintech","label":"Finance & Fintech","count":12},{"name":"Restaurants & Hospitality","label":"Restaurants & Hospitality","count":12},{"name":"Local & Service Business","label":"Local & Service Business","count":12},{"name":"Nonprofit & Fundraising","label":"Nonprofit & Fundraising","count":12},{"name":"Real Estate","label":"Real Estate","count":12},{"name":"SaaS & Product","label":"SaaS & Product","count":12}]},{"key":"comms","label":"Communication & Influence","icon":"🗣️","color":"#3fb6c2","count":63,"featured":false,"categories":[{"name":"Difficult Conversations","label":"Difficult Conversations","count":12},{"name":"Negotiation","label":"Negotiation","count":12},{"name":"Persuasion & Influence","label":"Persuasion & Influence","count":12},{"name":"Public Speaking & Pitches","label":"Public Speaking & Pitches","count":12},{"name":"Storytelling & Narrative","label":"Storytelling & Narrative","count":12}]},{"key":"ops","label":"Operations & Admin","icon":"📋","color":"#9a8fd8","count":60,"featured":false,"categories":[{"name":"Data & Analytics","label":"Data & Analytics","count":12},{"name":"Events & Webinars","label":"Events & Webinars","count":12},{"name":"Legal & Compliance","label":"Legal & Compliance","count":12},{"name":"Policies & Compliance","label":"Policies & Compliance","count":12},{"name":"Customer Support","label":"Customer Support","count":12}]},{"key":"tech","label":"Tech & Engineering","icon":"💻","color":"#5fa8d3","count":92,"featured":false,"categories":[{"name":"AI/ML Engineering","label":"AI/ML Engineering","count":12},{"name":"System Architecture & APIs","label":"System Architecture & APIs","count":12},{"name":"Data Engineering & Analytics","label":"Data Engineering & Analytics","count":12},{"name":"DevOps & Infrastructure","label":"DevOps & Infrastructure","count":12},{"name":"Mobile & App Dev","label":"Mobile & App Dev","count":12},{"name":"Security & Privacy","label":"Security & Privacy","count":12}]},{"key":"create","label":"Creative & Media","icon":"🎬","color":"#d56b8a","count":73,"featured":false,"categories":[{"name":"Comedy & Humor","label":"Comedy & Humor","count":12},{"name":"Fiction & Storycraft","label":"Fiction & Storycraft","count":12},{"name":"Games & Interactive Fiction","label":"Games & Interactive Fiction","count":12},{"name":"Music & Lyrics","label":"Music & Lyrics","count":12},{"name":"Podcasting","label":"Podcasting","count":12},{"name":"Film, TV & Video Scripts","label":"Film, TV & Video Scripts","count":12}]},{"key":"grow","label":"Learning & Growth","icon":"🌱","color":"#6fae5a","count":59,"featured":false,"categories":[{"name":"Curiosity & Explainers","label":"Curiosity & Explainers","count":12},{"name":"Languages & Translation","label":"Languages & Translation","count":12},{"name":"Memory & Focus","label":"Memory & Focus","count":12},{"name":"Skill-Building Plans","label":"Skill-Building Plans","count":12}]},{"key":"social","label":"Social Media","icon":"📱","color":"#b388e0","count":61,"featured":false,"categories":[{"name":"Paid Social Ads","label":"Paid Social Ads","count":12},{"name":"Pinterest & Visual SEO","label":"Pinterest & Visual SEO","count":12},{"name":"TikTok & Short Video","label":"TikTok & Short Video","count":12},{"name":"UGC & Influencer","label":"UGC & Influencer","count":12}]},{"key":"industry","label":"Industry Packs","icon":"🏭","color":"#9c8e6a","count":72,"featured":false,"categories":[{"name":"Beauty & Wellness Spas","label":"Beauty & Wellness Spas","count":12},{"name":"Construction & Trades","label":"Construction & Trades","count":12},{"name":"Healthcare & Clinics","label":"Healthcare & Clinics","count":12},{"name":"Law Firms","label":"Law Firms","count":12},{"name":"Manufacturing & Logistics","label":"Manufacturing & Logistics","count":12},{"name":"Travel & Tourism","label":"Travel & Tourism","count":12}]},{"key":"personal","label":"Personal & Lifestyle","icon":"🎁","color":"#e69ec0","count":49,"featured":false,"categories":[{"name":"Events & Celebrations","label":"Events & Celebrations","count":12},{"name":"Gifts & Shopping","label":"Gifts & Shopping","count":12},{"name":"Hobbies & DIY","label":"Hobbies & DIY","count":12},{"name":"Pets & Animals","label":"Pets & Animals","count":12}]},{"key":"research","label":"Research & Analysis","icon":"🔬","color":"#6d9b8f","count":62,"featured":false,"categories":[{"name":"Competitive & Market Intel","label":"Competitive & Market Intel","count":12},{"name":"Data Analysis & Insights","label":"Data Analysis & Insights","count":12},{"name":"Literature & Source Reviews","label":"Literature & Source Reviews","count":12},{"name":"Surveys & User Research","label":"Surveys & User Research","count":12},{"name":"Technical & Science Explainers","label":"Technical & Science Explainers","count":12}]},{"key":"design","label":"Design & UX","icon":"🎨","color":"#c2627a","count":48,"featured":false,"categories":[{"name":"Brand & Identity","label":"Brand & Identity","count":12},{"name":"Presentations & Decks","label":"Presentations & Decks","count":12},{"name":"UX & Product Design","label":"UX & Product Design","count":12},{"name":"Web & Landing Pages","label":"Web & Landing Pages","count":12}]},{"key":"money","label":"Money & Finance","icon":"💰","color":"#4faf7a","count":60,"featured":false,"categories":[{"name":"Debt & Credit","label":"Debt & Credit","count":12},{"name":"Freelance Finance","label":"Freelance Finance","count":12},{"name":"Investing Basics","label":"Investing Basics","count":12},{"name":"Taxes & Bookkeeping","label":"Taxes & Bookkeeping","count":12},{"name":"Budgeting & Saving","label":"Budgeting & Saving","count":11}]},{"key":"fun","label":"Fun & Games","icon":"✨","color":"#e8845e","count":60,"featured":false,"categories":[{"name":"Astrology & Tarot (for fun)","label":"Astrology & Tarot (for fun)","count":12},{"name":"Name & Title Generators","label":"Name & Title Generators","count":12},{"name":"Party Games & Icebreakers","label":"Party Games & Icebreakers","count":12},{"name":"Roleplay & Simulations","label":"Roleplay & Simulations","count":12},{"name":"Trivia & Quizzes","label":"Trivia & Quizzes","count":12}]},{"key":"promptlab","label":"Prompt Lab","icon":"🧪","color":"#6e56cf","count":246,"featured":false,"categories":[{"name":"AI Agent Designers","label":"AI Agent Designers","count":14},{"name":"Prompt Chains & Pipelines","label":"Prompt Chains & Pipelines","count":14},{"name":"Prompt Debuggers","label":"Prompt Debuggers","count":14},{"name":"Constraints & Guardrails","label":"Constraints & Guardrails","count":14},{"name":"Multi-Agent Orchestrators","label":"Multi-Agent Orchestrators","count":14},{"name":"Persona & Voice Builders","label":"Persona & Voice Builders","count":14},{"name":"RAG & Knowledge Prompts","label":"RAG & Knowledge Prompts","count":14},{"name":"Reasoning Frameworks","label":"Reasoning Frameworks","count":13},{"name":"Self-Critique & Refine","label":"Self-Critique & Refine","count":13},{"name":"Custom GPT & Gem Builders","label":"Custom GPT & Gem Builders","count":13},{"name":"Evaluation & LLM-as-Judge","label":"Evaluation & LLM-as-Judge","count":13},{"name":"Output-Format Enforcers","label":"Output-Format Enforcers","count":13},{"name":"Mega-Prompt Generators","label":"Mega-Prompt Generators","count":13},{"name":"Prompt Optimizers","label":"Prompt Optimizers","count":13},{"name":"Few-Shot & Template Engines","label":"Few-Shot & Template Engines","count":12},{"name":"Expert Panel & Role-Stacking","label":"Expert Panel & Role-Stacking","count":12},{"name":"System Prompt Builders","label":"System Prompt Builders","count":12},{"name":"Advanced Meta-Prompting","label":"Advanced Meta-Prompting","count":11}]},{"key":"favorites","label":"Community Favorites","icon":"🏆","color":"#c79a3a","count":55,"featured":false,"categories":[{"name":"Life Clarity & Big Decisions","label":"Life Clarity & Big Decisions","count":11},{"name":"Brutally Honest Life Coach","label":"Brutally Honest Life Coach","count":11},{"name":"Learn, Focus & Level Up","label":"Learn, Focus & Level Up","count":11},{"name":"Mindset, Resilience & Reflection","label":"Mindset, Resilience & Reflection","count":11},{"name":"Personal Transformation Systems","label":"Personal Transformation Systems","count":11}]},{"key":"unicorn","label":"Unicorn Builder","icon":"🦄","color":"#7048e8","count":144,"featured":false,"categories":[{"name":"Evals & Model Quality","label":"Evals & Model Quality","count":12},{"name":"Founder Operating System","label":"Founder Operating System","count":12},{"name":"Fundraising & The AI Narrative","label":"Fundraising & The AI Narrative","count":12},{"name":"AI Go-To-Market","label":"AI Go-To-Market","count":12},{"name":"AI Infra & Unit Economics","label":"AI Infra & Unit Economics","count":12},{"name":"Competitive & Market Intel","label":"Competitive & Market Intel","count":12},{"name":"Data, Moats & Defensibility","label":"Data, Moats & Defensibility","count":12},{"name":"Category & Narrative","label":"Category & Narrative","count":12},{"name":"Applied AI Research","label":"Applied AI Research","count":12},{"name":"AI Product Strategy","label":"AI Product Strategy","count":12},{"name":"Hiring & Org for AI","label":"Hiring & Org for AI","count":12},{"name":"AI Safety, Trust & Governance","label":"AI Safety, Trust & Governance","count":12}]},{"key":"frameworks","label":"Frameworks","icon":"🏗️","color":"#e6b34c","featured":true,"count":41,"categories":[{"name":"Context Engineering","label":"Context Engineering"},{"name":"AI Agent Design & Orchestration","label":"AI Agent Design & Orchestration"},{"name":"Prompt Optimization Systems","label":"Prompt Optimization Systems"},{"name":"Business Operating Systems","label":"Business Operating Systems"},{"name":"Offer & Pricing Architecture","label":"Offer & Pricing Architecture"},{"name":"Growth & Acquisition Engines","label":"Growth & Acquisition Engines"},{"name":"Content & Brand Systems","label":"Content & Brand Systems"},{"name":"Sales Systems","label":"Sales Systems"},{"name":"Decision & Strategy Frameworks","label":"Decision & Strategy Frameworks"},{"name":"Founder/Operator Productivity OS","label":"Founder/Operator Productivity OS"}]},{"key":"warroom","label":"The War Room","icon":"🎯","color":"#e6b34c","featured":true,"count":107,"categories":[{"name":"Fundraising & Board","label":"Fundraising & Board"},{"name":"Category Design","label":"Category Design"},{"name":"Competitive Moats","label":"Competitive Moats"},{"name":"Pricing & Unit Economics","label":"Pricing & Unit Economics"},{"name":"GTM at Scale","label":"GTM at Scale"},{"name":"GTM for Enterprise","label":"GTM for Enterprise"},{"name":"Eng Org & Exec Hiring","label":"Eng Org & Exec Hiring"},{"name":"Org Design","label":"Org Design"},{"name":"Technical Architecture","label":"Technical Architecture"},{"name":"Build vs Buy","label":"Build vs Buy"},{"name":"AI Product Strategy","label":"AI Product Strategy"},{"name":"AI Evals & Reliability","label":"AI Evals & Reliability"},{"name":"Security & Compliance","label":"Security & Compliance"},{"name":"Technical Due Diligence","label":"Technical Due Diligence"},{"name":"M&A","label":"M&A"},{"name":"Crisis & Executive Comms","label":"Crisis & Executive Comms"},{"name":"AI Org & Talent","label":"AI Org & Talent"}]}],"curator":"ProPrompt","tagline":"Premium AI prompts for ChatGPT, Claude & Gemini"}
+{
+ "total": 2711,
+ "groups": [
+  {
+   "key": "viral",
+   "label": "Trending & Viral",
+   "icon": "🔥",
+   "color": "#ff6b4a",
+   "count": 259,
+   "featured": true,
+   "categories": [
+    {
+     "name": "Health, Fitness & Mind",
+     "label": "Health, Fitness & Mind",
+     "count": 16
+    },
+    {
+     "name": "AI Agents & Automation",
+     "label": "AI Agents & Automation",
+     "count": 15
+    },
+    {
+     "name": "ChatGPT Power-User",
+     "label": "ChatGPT Power-User",
+     "count": 15
+    },
+    {
+     "name": "Email & Communication",
+     "label": "Email & Communication",
+     "count": 15
+    },
+    {
+     "name": "Expert Personas & Roleplay",
+     "label": "Expert Personas & Roleplay",
+     "count": 15
+    },
+    {
+     "name": "Learn Anything Faster",
+     "label": "Learn Anything Faster",
+     "count": 15
+    },
+    {
+     "name": "Coding & Dev Copilot",
+     "label": "Coding & Dev Copilot",
+     "count": 14
+    },
+    {
+     "name": "Copywriting & Ads",
+     "label": "Copywriting & Ads",
+     "count": 14
+    },
+    {
+     "name": "Data, Excel & Sheets",
+     "label": "Data, Excel & Sheets",
+     "count": 14
+    },
+    {
+     "name": "Life, Travel & Home",
+     "label": "Life, Travel & Home",
+     "count": 14
+    },
+    {
+     "name": "Midjourney v6 & AI Art",
+     "label": "Midjourney v6 & AI Art",
+     "count": 14
+    },
+    {
+     "name": "Money & Side-Hustle",
+     "label": "Money & Side-Hustle",
+     "count": 14
+    },
+    {
+     "name": "Personal Brand & LinkedIn",
+     "label": "Personal Brand & LinkedIn",
+     "count": 14
+    },
+    {
+     "name": "Productivity & Systems",
+     "label": "Productivity & Systems",
+     "count": 14
+    },
+    {
+     "name": "Resume & Career",
+     "label": "Resume & Career",
+     "count": 14
+    },
+    {
+     "name": "SEO & Growth",
+     "label": "SEO & Growth",
+     "count": 14
+    },
+    {
+     "name": "Viral Content & Hooks",
+     "label": "Viral Content & Hooks",
+     "count": 14
+    },
+    {
+     "name": "Faceless YouTube & Shorts",
+     "label": "Faceless YouTube & Shorts",
+     "count": 14
+    }
+   ]
+  },
+  {
+   "key": "elite",
+   "label": "Million-Dollar Prompts",
+   "icon": "💎",
+   "color": "#36c98b",
+   "count": 126,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Sales Systems",
+     "label": "Sales Systems",
+     "count": 15
+    },
+    {
+     "name": "AI Business Automation",
+     "label": "AI Business Automation",
+     "count": 14
+    },
+    {
+     "name": "Founder & Strategy",
+     "label": "Founder & Strategy",
+     "count": 14
+    },
+    {
+     "name": "Mastery & Mental Models",
+     "label": "Mastery & Mental Models",
+     "count": 14
+    },
+    {
+     "name": "Personal Leverage & Systems",
+     "label": "Personal Leverage & Systems",
+     "count": 14
+    },
+    {
+     "name": "Growth & Marketing Engines",
+     "label": "Growth & Marketing Engines",
+     "count": 14
+    },
+    {
+     "name": "Offers & Pricing",
+     "label": "Offers & Pricing",
+     "count": 14
+    },
+    {
+     "name": "Deep Research & Due Diligence",
+     "label": "Deep Research & Due Diligence",
+     "count": 14
+    },
+    {
+     "name": "Career & Income",
+     "label": "Career & Income",
+     "count": 13
+    }
+   ]
+  },
+  {
+   "key": "expert",
+   "label": "Expert Picks",
+   "icon": "🧠",
+   "color": "#34c3c9",
+   "count": 49,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Expert Frameworks",
+     "label": "Expert Frameworks",
+     "count": 10
+    },
+    {
+     "name": "Meta-Prompting",
+     "label": "Meta-Prompting",
+     "count": 10
+    },
+    {
+     "name": "Power Prompts",
+     "label": "Power Prompts",
+     "count": 10
+    },
+    {
+     "name": "Advanced Reasoning",
+     "label": "Advanced Reasoning",
+     "count": 10
+    },
+    {
+     "name": "Agentic Patterns",
+     "label": "Agentic Patterns",
+     "count": 9
+    }
+   ]
+  },
+  {
+   "key": "image",
+   "label": "AI Image Prompts",
+   "icon": "🖼️",
+   "color": "#e0729e",
+   "count": 325,
+   "featured": false,
+   "categories": [
+    {
+     "name": "DALL·E 3",
+     "label": "DALL·E 3",
+     "count": 14
+    },
+    {
+     "name": "Gemini · Nano Banana",
+     "label": "Gemini · Nano Banana",
+     "count": 14
+    },
+    {
+     "name": "Midjourney v6/v7",
+     "label": "Midjourney v6/v7",
+     "count": 14
+    },
+    {
+     "name": "3D & Render",
+     "label": "3D & Render",
+     "count": 13
+    },
+    {
+     "name": "Anime & Manga",
+     "label": "Anime & Manga",
+     "count": 13
+    },
+    {
+     "name": "Couples, Family & Pets",
+     "label": "Couples, Family & Pets",
+     "count": 13
+    },
+    {
+     "name": "Fantasy & Sci-Fi Art",
+     "label": "Fantasy & Sci-Fi Art",
+     "count": 13
+    },
+    {
+     "name": "Fashion & Editorial",
+     "label": "Fashion & Editorial",
+     "count": 13
+    },
+    {
+     "name": "Flux",
+     "label": "Flux",
+     "count": 13
+    },
+    {
+     "name": "Food & Drink",
+     "label": "Food & Drink",
+     "count": 13
+    },
+    {
+     "name": "ChatGPT Viral Image Prompts",
+     "label": "ChatGPT Viral Image Prompts",
+     "count": 13
+    },
+    {
+     "name": "Pro Headshots",
+     "label": "Pro Headshots",
+     "count": 13
+    },
+    {
+     "name": "Icons & UI Assets",
+     "label": "Icons & UI Assets",
+     "count": 13
+    },
+    {
+     "name": "Infographics & Charts",
+     "label": "Infographics & Charts",
+     "count": 13
+    },
+    {
+     "name": "Interior & Architecture",
+     "label": "Interior & Architecture",
+     "count": 13
+    },
+    {
+     "name": "Logos & Branding",
+     "label": "Logos & Branding",
+     "count": 13
+    },
+    {
+     "name": "Mockups & Packaging",
+     "label": "Mockups & Packaging",
+     "count": 13
+    },
+    {
+     "name": "Photoreal Portraits & Product",
+     "label": "Photoreal Portraits & Product",
+     "count": 13
+    },
+    {
+     "name": "Product & Commercial Ads",
+     "label": "Product & Commercial Ads",
+     "count": 13
+    },
+    {
+     "name": "Retro & Vintage",
+     "label": "Retro & Vintage",
+     "count": 13
+    },
+    {
+     "name": "Selfie Transformations",
+     "label": "Selfie Transformations",
+     "count": 13
+    },
+    {
+     "name": "Sports & Action",
+     "label": "Sports & Action",
+     "count": 13
+    },
+    {
+     "name": "Stable Diffusion (SDXL)",
+     "label": "Stable Diffusion (SDXL)",
+     "count": 13
+    },
+    {
+     "name": "Ideogram (Text in Image)",
+     "label": "Ideogram (Text in Image)",
+     "count": 12
+    },
+    {
+     "name": "Viral Photo Trends",
+     "label": "Viral Photo Trends",
+     "count": 11
+    }
+   ]
+  },
+  {
+   "key": "writing",
+   "label": "Content & Writing",
+   "icon": "✍️",
+   "color": "#e3b341",
+   "count": 159,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Book & Ebook Writing",
+     "label": "Book & Ebook Writing",
+     "count": 12
+    },
+    {
+     "name": "Editing & Proofreading",
+     "label": "Editing & Proofreading",
+     "count": 12
+    },
+    {
+     "name": "Ghostwriting & Bios",
+     "label": "Ghostwriting & Bios",
+     "count": 12
+    },
+    {
+     "name": "Grants & Proposals",
+     "label": "Grants & Proposals",
+     "count": 12
+    },
+    {
+     "name": "Instagram & Reels",
+     "label": "Instagram & Reels",
+     "count": 12
+    },
+    {
+     "name": "LinkedIn Posts",
+     "label": "LinkedIn Posts",
+     "count": 12
+    },
+    {
+     "name": "Newsletter & Email",
+     "label": "Newsletter & Email",
+     "count": 12
+    },
+    {
+     "name": "Press & PR",
+     "label": "Press & PR",
+     "count": 12
+    },
+    {
+     "name": "Story & Scriptwriting",
+     "label": "Story & Scriptwriting",
+     "count": 12
+    },
+    {
+     "name": "Technical Writing & Docs",
+     "label": "Technical Writing & Docs",
+     "count": 12
+    },
+    {
+     "name": "X / Twitter Threads",
+     "label": "X / Twitter Threads",
+     "count": 12
+    },
+    {
+     "name": "Blog & Articles",
+     "label": "Blog & Articles",
+     "count": 11
+    },
+    {
+     "name": "Editing & Compression",
+     "label": "Editing & Compression",
+     "count": 1
+    },
+    {
+     "name": "Voice & Style Transfer",
+     "label": "Voice & Style Transfer",
+     "count": 1
+    },
+    {
+     "name": "Narrative Craft",
+     "label": "Narrative Craft",
+     "count": 1
+    },
+    {
+     "name": "Prose Mechanics",
+     "label": "Prose Mechanics",
+     "count": 1
+    },
+    {
+     "name": "Hooks & Openers",
+     "label": "Hooks & Openers",
+     "count": 1
+    },
+    {
+     "name": "Humanization & De-AI Editing",
+     "label": "Humanization & De-AI Editing",
+     "count": 1
+    },
+    {
+     "name": "Adversarial Line Editing",
+     "label": "Adversarial Line Editing",
+     "count": 1
+    },
+    {
+     "name": "Tone Variation & Selection",
+     "label": "Tone Variation & Selection",
+     "count": 1
+    },
+    {
+     "name": "Argument Reconstruction",
+     "label": "Argument Reconstruction",
+     "count": 1
+    },
+    {
+     "name": "Narrative Explanation Design",
+     "label": "Narrative Explanation Design",
+     "count": 1
+    },
+    {
+     "name": "Summarization & Distillation",
+     "label": "Summarization & Distillation",
+     "count": 1
+    },
+    {
+     "name": "Headlines & Hooks",
+     "label": "Headlines & Hooks",
+     "count": 1
+    },
+    {
+     "name": "Argument & Evidence Editing",
+     "label": "Argument & Evidence Editing",
+     "count": 1
+    },
+    {
+     "name": "Audience Adaptation",
+     "label": "Audience Adaptation",
+     "count": 1
+    },
+    {
+     "name": "Proofreading & Polish",
+     "label": "Proofreading & Polish",
+     "count": 1
+    },
+    {
+     "name": "Long-Form Editorial Workflow",
+     "label": "Long-Form Editorial Workflow",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "key": "gen",
+   "label": "Generators & Templates",
+   "icon": "🛠️",
+   "color": "#9bbf3f",
+   "count": 44,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Custom GPT & System Builders",
+     "label": "Custom GPT & System Builders",
+     "count": 11
+    },
+    {
+     "name": "Prompt Generators",
+     "label": "Prompt Generators",
+     "count": 11
+    },
+    {
+     "name": "Document & Framework Templates",
+     "label": "Document & Framework Templates",
+     "count": 11
+    },
+    {
+     "name": "Workflow & SOP Builders",
+     "label": "Workflow & SOP Builders",
+     "count": 11
+    }
+   ]
+  },
+  {
+   "key": "agents",
+   "label": "Agentic & System",
+   "icon": "🤖",
+   "color": "#6c8cff",
+   "count": 42,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Autonomous Agents",
+     "label": "Autonomous Agents",
+     "count": 15
+    },
+    {
+     "name": "System Prompts",
+     "label": "System Prompts",
+     "count": 14
+    },
+    {
+     "name": "Multi-Agent & Tools",
+     "label": "Multi-Agent & Tools",
+     "count": 13
+    }
+   ]
+  },
+  {
+   "key": "mega",
+   "label": "Pro Mega-Prompts",
+   "icon": "⚡",
+   "color": "#b48cff",
+   "count": 73,
+   "featured": false,
+   "categories": [
+    {
+     "name": "JSON & Structured Output",
+     "label": "JSON & Structured Output",
+     "count": 17
+    },
+    {
+     "name": "Deep Research",
+     "label": "Deep Research",
+     "count": 15
+    },
+    {
+     "name": "Business & Strategy",
+     "label": "Business & Strategy",
+     "count": 15
+    },
+    {
+     "name": "Data Extraction & Tables",
+     "label": "Data Extraction & Tables",
+     "count": 13
+    },
+    {
+     "name": "Life & Productivity",
+     "label": "Life & Productivity",
+     "count": 13
+    }
+   ]
+  },
+  {
+   "key": "work",
+   "label": "Work & Career",
+   "icon": "🏢",
+   "color": "#d98c4a",
+   "count": 83,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Meetings & Facilitation",
+     "label": "Meetings & Facilitation",
+     "count": 13
+    },
+    {
+     "name": "Decision-Making",
+     "label": "Decision-Making",
+     "count": 12
+    },
+    {
+     "name": "Leadership & Management",
+     "label": "Leadership & Management",
+     "count": 12
+    },
+    {
+     "name": "Performance & Feedback",
+     "label": "Performance & Feedback",
+     "count": 12
+    },
+    {
+     "name": "Project & Product Management",
+     "label": "Project & Product Management",
+     "count": 12
+    },
+    {
+     "name": "Strategic Decision-Making & Bet Sizing",
+     "label": "Strategic Decision-Making & Bet Sizing",
+     "count": 2
+    },
+    {
+     "name": "Systems Thinking & Causal Diagnosis",
+     "label": "Systems Thinking & Causal Diagnosis",
+     "count": 1
+    },
+    {
+     "name": "Risk & Assumption Testing",
+     "label": "Risk & Assumption Testing",
+     "count": 1
+    },
+    {
+     "name": "Scenario Planning & Resilience",
+     "label": "Scenario Planning & Resilience",
+     "count": 1
+    },
+    {
+     "name": "Stakeholder & Influence Mapping",
+     "label": "Stakeholder & Influence Mapping",
+     "count": 1
+    },
+    {
+     "name": "Resource Allocation & Prioritization",
+     "label": "Resource Allocation & Prioritization",
+     "count": 1
+    },
+    {
+     "name": "Risk & Adversarial Review",
+     "label": "Risk & Adversarial Review",
+     "count": 1
+    },
+    {
+     "name": "Systems & Consequence Analysis",
+     "label": "Systems & Consequence Analysis",
+     "count": 1
+    },
+    {
+     "name": "Decision Frameworks",
+     "label": "Decision Frameworks",
+     "count": 1
+    },
+    {
+     "name": "Problem Diagnosis & Systems Thinking",
+     "label": "Problem Diagnosis & Systems Thinking",
+     "count": 1
+    },
+    {
+     "name": "Procrastination & Task Activation",
+     "label": "Procrastination & Task Activation",
+     "count": 1
+    },
+    {
+     "name": "Prioritization & Sequencing",
+     "label": "Prioritization & Sequencing",
+     "count": 1
+    },
+    {
+     "name": "Meeting Capture & Accountability",
+     "label": "Meeting Capture & Accountability",
+     "count": 1
+    },
+    {
+     "name": "Stakeholder Decoding & Communication Intelligence",
+     "label": "Stakeholder Decoding & Communication Intelligence",
+     "count": 1
+    },
+    {
+     "name": "Executive Briefing & Message Compression",
+     "label": "Executive Briefing & Message Compression",
+     "count": 1
+    },
+    {
+     "name": "Effort Triage & Pragmatic Execution",
+     "label": "Effort Triage & Pragmatic Execution",
+     "count": 1
+    },
+    {
+     "name": "Workflow Automation & Process Leverage",
+     "label": "Workflow Automation & Process Leverage",
+     "count": 1
+    },
+    {
+     "name": "Daily Planning & Time Realism",
+     "label": "Daily Planning & Time Realism",
+     "count": 1
+    },
+    {
+     "name": "Stakeholder Meeting Prep",
+     "label": "Stakeholder Meeting Prep",
+     "count": 1
+    },
+    {
+     "name": "Resume and LinkedIn Achievements",
+     "label": "Resume and LinkedIn Achievements",
+     "count": 1
+    },
+    {
+     "name": "Interview Answer Engineering",
+     "label": "Interview Answer Engineering",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "key": "living",
+   "label": "Life & Wellbeing",
+   "icon": "🌿",
+   "color": "#5fc9a8",
+   "count": 70,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Habits & Discipline",
+     "label": "Habits & Discipline",
+     "count": 12
+    },
+    {
+     "name": "Home, Cooking & Organising",
+     "label": "Home, Cooking & Organising",
+     "count": 12
+    },
+    {
+     "name": "Mindset & Reflection",
+     "label": "Mindset & Reflection",
+     "count": 12
+    },
+    {
+     "name": "Personal Money Systems",
+     "label": "Personal Money Systems",
+     "count": 12
+    },
+    {
+     "name": "Relationships & Communication",
+     "label": "Relationships & Communication",
+     "count": 12
+    },
+    {
+     "name": "Practical Language Learning",
+     "label": "Practical Language Learning",
+     "count": 3
+    },
+    {
+     "name": "Travel Planning & Itineraries",
+     "label": "Travel Planning & Itineraries",
+     "count": 2
+    },
+    {
+     "name": "Spaced Repetition Systems",
+     "label": "Spaced Repetition Systems",
+     "count": 1
+    },
+    {
+     "name": "Exam Preparation Engines",
+     "label": "Exam Preparation Engines",
+     "count": 1
+    },
+    {
+     "name": "Project-Based Skill Building",
+     "label": "Project-Based Skill Building",
+     "count": 1
+    },
+    {
+     "name": "Deliberate Practice Design",
+     "label": "Deliberate Practice Design",
+     "count": 1
+    },
+    {
+     "name": "Knowledge Compression",
+     "label": "Knowledge Compression",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "key": "biz",
+   "label": "Business & Verticals",
+   "icon": "🛒",
+   "color": "#c77dba",
+   "count": 129,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Agency & Consulting",
+     "label": "Agency & Consulting",
+     "count": 12
+    },
+    {
+     "name": "B2B & Enterprise Sales",
+     "label": "B2B & Enterprise Sales",
+     "count": 12
+    },
+    {
+     "name": "Creator & Coaching Business",
+     "label": "Creator & Coaching Business",
+     "count": 12
+    },
+    {
+     "name": "E-commerce & DTC",
+     "label": "E-commerce & DTC",
+     "count": 12
+    },
+    {
+     "name": "Finance & Fintech",
+     "label": "Finance & Fintech",
+     "count": 12
+    },
+    {
+     "name": "Restaurants & Hospitality",
+     "label": "Restaurants & Hospitality",
+     "count": 12
+    },
+    {
+     "name": "Local & Service Business",
+     "label": "Local & Service Business",
+     "count": 12
+    },
+    {
+     "name": "Nonprofit & Fundraising",
+     "label": "Nonprofit & Fundraising",
+     "count": 12
+    },
+    {
+     "name": "Real Estate",
+     "label": "Real Estate",
+     "count": 12
+    },
+    {
+     "name": "SaaS & Product",
+     "label": "SaaS & Product",
+     "count": 12
+    },
+    {
+     "name": "Offer Design & Productization",
+     "label": "Offer Design & Productization",
+     "count": 1
+    },
+    {
+     "name": "Opportunity Discovery & Validation",
+     "label": "Opportunity Discovery & Validation",
+     "count": 1
+    },
+    {
+     "name": "Competitive Strategy & Whitespace",
+     "label": "Competitive Strategy & Whitespace",
+     "count": 1
+    },
+    {
+     "name": "Sales Enablement & Objection Handling",
+     "label": "Sales Enablement & Objection Handling",
+     "count": 1
+    },
+    {
+     "name": "Offer & Messaging Diagnostics",
+     "label": "Offer & Messaging Diagnostics",
+     "count": 1
+    },
+    {
+     "name": "Financial Modeling & Viability",
+     "label": "Financial Modeling & Viability",
+     "count": 1
+    },
+    {
+     "name": "Market Differentiation & Positioning",
+     "label": "Market Differentiation & Positioning",
+     "count": 1
+    },
+    {
+     "name": "Customer Discovery & Validation",
+     "label": "Customer Discovery & Validation",
+     "count": 1
+    },
+    {
+     "name": "Risk & Resilience Planning",
+     "label": "Risk & Resilience Planning",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "key": "comms",
+   "label": "Communication & Influence",
+   "icon": "🗣️",
+   "color": "#3fb6c2",
+   "count": 63,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Difficult Conversations",
+     "label": "Difficult Conversations",
+     "count": 12
+    },
+    {
+     "name": "Negotiation",
+     "label": "Negotiation",
+     "count": 12
+    },
+    {
+     "name": "Persuasion & Influence",
+     "label": "Persuasion & Influence",
+     "count": 12
+    },
+    {
+     "name": "Public Speaking & Pitches",
+     "label": "Public Speaking & Pitches",
+     "count": 12
+    },
+    {
+     "name": "Storytelling & Narrative",
+     "label": "Storytelling & Narrative",
+     "count": 12
+    },
+    {
+     "name": "Boundaries & Difficult Replies",
+     "label": "Boundaries & Difficult Replies",
+     "count": 1
+    },
+    {
+     "name": "Workplace Email Diplomacy",
+     "label": "Workplace Email Diplomacy",
+     "count": 1
+    },
+    {
+     "name": "Follow-Up and Re-Engagement",
+     "label": "Follow-Up and Re-Engagement",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "key": "ops",
+   "label": "Operations & Admin",
+   "icon": "📋",
+   "color": "#9a8fd8",
+   "count": 60,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Data & Analytics",
+     "label": "Data & Analytics",
+     "count": 12
+    },
+    {
+     "name": "Events & Webinars",
+     "label": "Events & Webinars",
+     "count": 12
+    },
+    {
+     "name": "Legal & Compliance",
+     "label": "Legal & Compliance",
+     "count": 12
+    },
+    {
+     "name": "Policies & Compliance",
+     "label": "Policies & Compliance",
+     "count": 12
+    },
+    {
+     "name": "Customer Support",
+     "label": "Customer Support",
+     "count": 12
+    }
+   ]
+  },
+  {
+   "key": "tech",
+   "label": "Tech & Engineering",
+   "icon": "💻",
+   "color": "#5fa8d3",
+   "count": 92,
+   "featured": false,
+   "categories": [
+    {
+     "name": "AI/ML Engineering",
+     "label": "AI/ML Engineering",
+     "count": 12
+    },
+    {
+     "name": "System Architecture & APIs",
+     "label": "System Architecture & APIs",
+     "count": 12
+    },
+    {
+     "name": "Data Engineering & Analytics",
+     "label": "Data Engineering & Analytics",
+     "count": 12
+    },
+    {
+     "name": "DevOps & Infrastructure",
+     "label": "DevOps & Infrastructure",
+     "count": 12
+    },
+    {
+     "name": "Mobile & App Dev",
+     "label": "Mobile & App Dev",
+     "count": 12
+    },
+    {
+     "name": "Security & Privacy",
+     "label": "Security & Privacy",
+     "count": 12
+    },
+    {
+     "name": "Debugging & Diagnostics",
+     "label": "Debugging & Diagnostics",
+     "count": 2
+    },
+    {
+     "name": "Spreadsheet Engineering",
+     "label": "Spreadsheet Engineering",
+     "count": 2
+    },
+    {
+     "name": "Code Review & Quality Gates",
+     "label": "Code Review & Quality Gates",
+     "count": 1
+    },
+    {
+     "name": "Technical Design & Planning",
+     "label": "Technical Design & Planning",
+     "count": 1
+    },
+    {
+     "name": "Refactoring & Code Health",
+     "label": "Refactoring & Code Health",
+     "count": 1
+    },
+    {
+     "name": "Testing & QA Engineering",
+     "label": "Testing & QA Engineering",
+     "count": 1
+    },
+    {
+     "name": "Application Security Review",
+     "label": "Application Security Review",
+     "count": 1
+    },
+    {
+     "name": "Developer Learning Paths",
+     "label": "Developer Learning Paths",
+     "count": 1
+    },
+    {
+     "name": "Portfolio & Career Engineering",
+     "label": "Portfolio & Career Engineering",
+     "count": 1
+    },
+    {
+     "name": "Software Architecture Decisions",
+     "label": "Software Architecture Decisions",
+     "count": 1
+    },
+    {
+     "name": "Workflow Automation Design",
+     "label": "Workflow Automation Design",
+     "count": 1
+    },
+    {
+     "name": "Data Integrity & Lookups",
+     "label": "Data Integrity & Lookups",
+     "count": 1
+    },
+    {
+     "name": "Spreadsheet Forensics",
+     "label": "Spreadsheet Forensics",
+     "count": 1
+    },
+    {
+     "name": "Spreadsheet Data Hygiene",
+     "label": "Spreadsheet Data Hygiene",
+     "count": 1
+    },
+    {
+     "name": "Spreadsheet Analysis Design",
+     "label": "Spreadsheet Analysis Design",
+     "count": 1
+    },
+    {
+     "name": "Exploratory Data Analysis",
+     "label": "Exploratory Data Analysis",
+     "count": 1
+    },
+    {
+     "name": "Dashboard & Reporting Design",
+     "label": "Dashboard & Reporting Design",
+     "count": 1
+    },
+    {
+     "name": "Spreadsheet QA & Risk",
+     "label": "Spreadsheet QA & Risk",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "key": "create",
+   "label": "Creative & Media",
+   "icon": "🎬",
+   "color": "#d56b8a",
+   "count": 73,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Comedy & Humor",
+     "label": "Comedy & Humor",
+     "count": 12
+    },
+    {
+     "name": "Fiction & Storycraft",
+     "label": "Fiction & Storycraft",
+     "count": 12
+    },
+    {
+     "name": "Games & Interactive Fiction",
+     "label": "Games & Interactive Fiction",
+     "count": 12
+    },
+    {
+     "name": "Music & Lyrics",
+     "label": "Music & Lyrics",
+     "count": 12
+    },
+    {
+     "name": "Podcasting",
+     "label": "Podcasting",
+     "count": 12
+    },
+    {
+     "name": "Film, TV & Video Scripts",
+     "label": "Film, TV & Video Scripts",
+     "count": 12
+    },
+    {
+     "name": "Structured Ideation & Concept Escalation",
+     "label": "Structured Ideation & Concept Escalation",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "key": "grow",
+   "label": "Learning & Growth",
+   "icon": "🌱",
+   "color": "#6fae5a",
+   "count": 59,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Curiosity & Explainers",
+     "label": "Curiosity & Explainers",
+     "count": 12
+    },
+    {
+     "name": "Languages & Translation",
+     "label": "Languages & Translation",
+     "count": 12
+    },
+    {
+     "name": "Memory & Focus",
+     "label": "Memory & Focus",
+     "count": 12
+    },
+    {
+     "name": "Skill-Building Plans",
+     "label": "Skill-Building Plans",
+     "count": 12
+    },
+    {
+     "name": "Adaptive Mastery Tutoring",
+     "label": "Adaptive Mastery Tutoring",
+     "count": 1
+    },
+    {
+     "name": "Self-Explanation Gap Diagnosis",
+     "label": "Self-Explanation Gap Diagnosis",
+     "count": 1
+    },
+    {
+     "name": "Skill Roadmap Architecture",
+     "label": "Skill Roadmap Architecture",
+     "count": 1
+    },
+    {
+     "name": "High-Leverage Learning Sprints",
+     "label": "High-Leverage Learning Sprints",
+     "count": 1
+    },
+    {
+     "name": "Learning Diagnostics & Remediation",
+     "label": "Learning Diagnostics & Remediation",
+     "count": 1
+    },
+    {
+     "name": "Misconception Diagnosis & Error Engineering",
+     "label": "Misconception Diagnosis & Error Engineering",
+     "count": 1
+    },
+    {
+     "name": "Conceptual Discrimination & Boundary Mastery",
+     "label": "Conceptual Discrimination & Boundary Mastery",
+     "count": 1
+    },
+    {
+     "name": "Explanatory Modeling & Analogy Design",
+     "label": "Explanatory Modeling & Analogy Design",
+     "count": 1
+    },
+    {
+     "name": "Inquiry Design & Expertise Progression",
+     "label": "Inquiry Design & Expertise Progression",
+     "count": 1
+    },
+    {
+     "name": "Active-Recall Study System Design",
+     "label": "Active-Recall Study System Design",
+     "count": 1
+    },
+    {
+     "name": "Positioning & Ad Angles",
+     "label": "Positioning & Ad Angles",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "key": "social",
+   "label": "Social Media",
+   "icon": "📱",
+   "color": "#b388e0",
+   "count": 61,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Paid Social Ads",
+     "label": "Paid Social Ads",
+     "count": 12
+    },
+    {
+     "name": "Pinterest & Visual SEO",
+     "label": "Pinterest & Visual SEO",
+     "count": 12
+    },
+    {
+     "name": "TikTok & Short Video",
+     "label": "TikTok & Short Video",
+     "count": 12
+    },
+    {
+     "name": "UGC & Influencer",
+     "label": "UGC & Influencer",
+     "count": 12
+    },
+    {
+     "name": "Editorial Strategy & Ideation",
+     "label": "Editorial Strategy & Ideation",
+     "count": 1
+    },
+    {
+     "name": "Hooks & Openers",
+     "label": "Hooks & Openers",
+     "count": 1
+    },
+    {
+     "name": "Long-Form Structure & Outlining",
+     "label": "Long-Form Structure & Outlining",
+     "count": 1
+    },
+    {
+     "name": "Content Repurposing & Distribution",
+     "label": "Content Repurposing & Distribution",
+     "count": 1
+    },
+    {
+     "name": "Brand Voice & Style Systems",
+     "label": "Brand Voice & Style Systems",
+     "count": 1
+    },
+    {
+     "name": "SEO & Organic Search",
+     "label": "SEO & Organic Search",
+     "count": 1
+    },
+    {
+     "name": "Profile & Personal Branding",
+     "label": "Profile & Personal Branding",
+     "count": 1
+    },
+    {
+     "name": "Content Repurposing",
+     "label": "Content Repurposing",
+     "count": 1
+    },
+    {
+     "name": "Engagement & Conversation",
+     "label": "Engagement & Conversation",
+     "count": 1
+    },
+    {
+     "name": "Video Packaging & CTR",
+     "label": "Video Packaging & CTR",
+     "count": 1
+    },
+    {
+     "name": "YouTube Retention & Cold Opens",
+     "label": "YouTube Retention & Cold Opens",
+     "count": 1
+    },
+    {
+     "name": "YouTube SEO & Metadata",
+     "label": "YouTube SEO & Metadata",
+     "count": 1
+    },
+    {
+     "name": "Content Angles & Repositioning",
+     "label": "Content Angles & Repositioning",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "key": "industry",
+   "label": "Industry Packs",
+   "icon": "🏭",
+   "color": "#9c8e6a",
+   "count": 72,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Beauty & Wellness Spas",
+     "label": "Beauty & Wellness Spas",
+     "count": 12
+    },
+    {
+     "name": "Construction & Trades",
+     "label": "Construction & Trades",
+     "count": 12
+    },
+    {
+     "name": "Healthcare & Clinics",
+     "label": "Healthcare & Clinics",
+     "count": 12
+    },
+    {
+     "name": "Law Firms",
+     "label": "Law Firms",
+     "count": 12
+    },
+    {
+     "name": "Manufacturing & Logistics",
+     "label": "Manufacturing & Logistics",
+     "count": 12
+    },
+    {
+     "name": "Travel & Tourism",
+     "label": "Travel & Tourism",
+     "count": 12
+    }
+   ]
+  },
+  {
+   "key": "personal",
+   "label": "Personal & Lifestyle",
+   "icon": "🎁",
+   "color": "#e69ec0",
+   "count": 49,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Events & Celebrations",
+     "label": "Events & Celebrations",
+     "count": 12
+    },
+    {
+     "name": "Gifts & Shopping",
+     "label": "Gifts & Shopping",
+     "count": 12
+    },
+    {
+     "name": "Hobbies & DIY",
+     "label": "Hobbies & DIY",
+     "count": 12
+    },
+    {
+     "name": "Pets & Animals",
+     "label": "Pets & Animals",
+     "count": 12
+    },
+    {
+     "name": "Cognitive Debiasing",
+     "label": "Cognitive Debiasing",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "key": "research",
+   "label": "Research & Analysis",
+   "icon": "🔬",
+   "color": "#6d9b8f",
+   "count": 62,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Competitive & Market Intel",
+     "label": "Competitive & Market Intel",
+     "count": 12
+    },
+    {
+     "name": "Data Analysis & Insights",
+     "label": "Data Analysis & Insights",
+     "count": 12
+    },
+    {
+     "name": "Literature & Source Reviews",
+     "label": "Literature & Source Reviews",
+     "count": 12
+    },
+    {
+     "name": "Surveys & User Research",
+     "label": "Surveys & User Research",
+     "count": 12
+    },
+    {
+     "name": "Technical & Science Explainers",
+     "label": "Technical & Science Explainers",
+     "count": 12
+    },
+    {
+     "name": "Reasoning & Argument Analysis",
+     "label": "Reasoning & Argument Analysis",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "key": "design",
+   "label": "Design & UX",
+   "icon": "🎨",
+   "color": "#c2627a",
+   "count": 48,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Brand & Identity",
+     "label": "Brand & Identity",
+     "count": 12
+    },
+    {
+     "name": "Presentations & Decks",
+     "label": "Presentations & Decks",
+     "count": 12
+    },
+    {
+     "name": "UX & Product Design",
+     "label": "UX & Product Design",
+     "count": 12
+    },
+    {
+     "name": "Web & Landing Pages",
+     "label": "Web & Landing Pages",
+     "count": 12
+    }
+   ]
+  },
+  {
+   "key": "money",
+   "label": "Money & Finance",
+   "icon": "💰",
+   "color": "#4faf7a",
+   "count": 60,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Debt & Credit",
+     "label": "Debt & Credit",
+     "count": 12
+    },
+    {
+     "name": "Freelance Finance",
+     "label": "Freelance Finance",
+     "count": 12
+    },
+    {
+     "name": "Investing Basics",
+     "label": "Investing Basics",
+     "count": 12
+    },
+    {
+     "name": "Taxes & Bookkeeping",
+     "label": "Taxes & Bookkeeping",
+     "count": 12
+    },
+    {
+     "name": "Budgeting & Saving",
+     "label": "Budgeting & Saving",
+     "count": 11
+    },
+    {
+     "name": "Resource Allocation & Trade-offs",
+     "label": "Resource Allocation & Trade-offs",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "key": "fun",
+   "label": "Fun & Games",
+   "icon": "✨",
+   "color": "#e8845e",
+   "count": 60,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Astrology & Tarot (for fun)",
+     "label": "Astrology & Tarot (for fun)",
+     "count": 12
+    },
+    {
+     "name": "Name & Title Generators",
+     "label": "Name & Title Generators",
+     "count": 12
+    },
+    {
+     "name": "Party Games & Icebreakers",
+     "label": "Party Games & Icebreakers",
+     "count": 12
+    },
+    {
+     "name": "Roleplay & Simulations",
+     "label": "Roleplay & Simulations",
+     "count": 12
+    },
+    {
+     "name": "Trivia & Quizzes",
+     "label": "Trivia & Quizzes",
+     "count": 12
+    }
+   ]
+  },
+  {
+   "key": "promptlab",
+   "label": "Prompt Lab",
+   "icon": "🧪",
+   "color": "#6e56cf",
+   "count": 246,
+   "featured": false,
+   "categories": [
+    {
+     "name": "AI Agent Designers",
+     "label": "AI Agent Designers",
+     "count": 14
+    },
+    {
+     "name": "Prompt Chains & Pipelines",
+     "label": "Prompt Chains & Pipelines",
+     "count": 14
+    },
+    {
+     "name": "Prompt Debuggers",
+     "label": "Prompt Debuggers",
+     "count": 14
+    },
+    {
+     "name": "Constraints & Guardrails",
+     "label": "Constraints & Guardrails",
+     "count": 14
+    },
+    {
+     "name": "Multi-Agent Orchestrators",
+     "label": "Multi-Agent Orchestrators",
+     "count": 14
+    },
+    {
+     "name": "Persona & Voice Builders",
+     "label": "Persona & Voice Builders",
+     "count": 14
+    },
+    {
+     "name": "RAG & Knowledge Prompts",
+     "label": "RAG & Knowledge Prompts",
+     "count": 14
+    },
+    {
+     "name": "Reasoning Frameworks",
+     "label": "Reasoning Frameworks",
+     "count": 13
+    },
+    {
+     "name": "Self-Critique & Refine",
+     "label": "Self-Critique & Refine",
+     "count": 13
+    },
+    {
+     "name": "Custom GPT & Gem Builders",
+     "label": "Custom GPT & Gem Builders",
+     "count": 13
+    },
+    {
+     "name": "Evaluation & LLM-as-Judge",
+     "label": "Evaluation & LLM-as-Judge",
+     "count": 13
+    },
+    {
+     "name": "Output-Format Enforcers",
+     "label": "Output-Format Enforcers",
+     "count": 13
+    },
+    {
+     "name": "Mega-Prompt Generators",
+     "label": "Mega-Prompt Generators",
+     "count": 13
+    },
+    {
+     "name": "Prompt Optimizers",
+     "label": "Prompt Optimizers",
+     "count": 13
+    },
+    {
+     "name": "Few-Shot & Template Engines",
+     "label": "Few-Shot & Template Engines",
+     "count": 12
+    },
+    {
+     "name": "Expert Panel & Role-Stacking",
+     "label": "Expert Panel & Role-Stacking",
+     "count": 12
+    },
+    {
+     "name": "System Prompt Builders",
+     "label": "System Prompt Builders",
+     "count": 12
+    },
+    {
+     "name": "Advanced Meta-Prompting",
+     "label": "Advanced Meta-Prompting",
+     "count": 11
+    },
+    {
+     "name": "Prompt Diagnostics & Rewriting",
+     "label": "Prompt Diagnostics & Rewriting",
+     "count": 1
+    },
+    {
+     "name": "Pre-Execution Risk Modeling",
+     "label": "Pre-Execution Risk Modeling",
+     "count": 1
+    },
+    {
+     "name": "Assumption-Surfacing Reasoning",
+     "label": "Assumption-Surfacing Reasoning",
+     "count": 1
+    },
+    {
+     "name": "Constraint & Anti-Pattern Control",
+     "label": "Constraint & Anti-Pattern Control",
+     "count": 1
+    },
+    {
+     "name": "Output Contract Engineering",
+     "label": "Output Contract Engineering",
+     "count": 1
+    },
+    {
+     "name": "Input Elicitation & Scoping Controllers",
+     "label": "Input Elicitation & Scoping Controllers",
+     "count": 1
+    },
+    {
+     "name": "Self-Critique & Refinement Loops",
+     "label": "Self-Critique & Refinement Loops",
+     "count": 1
+    },
+    {
+     "name": "Anti-Hallucination & Epistemic Controls",
+     "label": "Anti-Hallucination & Epistemic Controls",
+     "count": 1
+    },
+    {
+     "name": "Prompt Systematization & Reuse",
+     "label": "Prompt Systematization & Reuse",
+     "count": 1
+    },
+    {
+     "name": "Reverse-Engineering & Spec Mining",
+     "label": "Reverse-Engineering & Spec Mining",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "key": "favorites",
+   "label": "Community Favorites",
+   "icon": "🏆",
+   "color": "#c79a3a",
+   "count": 55,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Life Clarity & Big Decisions",
+     "label": "Life Clarity & Big Decisions",
+     "count": 11
+    },
+    {
+     "name": "Brutally Honest Life Coach",
+     "label": "Brutally Honest Life Coach",
+     "count": 11
+    },
+    {
+     "name": "Learn, Focus & Level Up",
+     "label": "Learn, Focus & Level Up",
+     "count": 11
+    },
+    {
+     "name": "Mindset, Resilience & Reflection",
+     "label": "Mindset, Resilience & Reflection",
+     "count": 11
+    },
+    {
+     "name": "Personal Transformation Systems",
+     "label": "Personal Transformation Systems",
+     "count": 11
+    }
+   ]
+  },
+  {
+   "key": "unicorn",
+   "label": "Unicorn Builder",
+   "icon": "🦄",
+   "color": "#7048e8",
+   "count": 144,
+   "featured": false,
+   "categories": [
+    {
+     "name": "Evals & Model Quality",
+     "label": "Evals & Model Quality",
+     "count": 12
+    },
+    {
+     "name": "Founder Operating System",
+     "label": "Founder Operating System",
+     "count": 12
+    },
+    {
+     "name": "Fundraising & The AI Narrative",
+     "label": "Fundraising & The AI Narrative",
+     "count": 12
+    },
+    {
+     "name": "AI Go-To-Market",
+     "label": "AI Go-To-Market",
+     "count": 12
+    },
+    {
+     "name": "AI Infra & Unit Economics",
+     "label": "AI Infra & Unit Economics",
+     "count": 12
+    },
+    {
+     "name": "Competitive & Market Intel",
+     "label": "Competitive & Market Intel",
+     "count": 12
+    },
+    {
+     "name": "Data, Moats & Defensibility",
+     "label": "Data, Moats & Defensibility",
+     "count": 12
+    },
+    {
+     "name": "Category & Narrative",
+     "label": "Category & Narrative",
+     "count": 12
+    },
+    {
+     "name": "Applied AI Research",
+     "label": "Applied AI Research",
+     "count": 12
+    },
+    {
+     "name": "AI Product Strategy",
+     "label": "AI Product Strategy",
+     "count": 12
+    },
+    {
+     "name": "Hiring & Org for AI",
+     "label": "Hiring & Org for AI",
+     "count": 12
+    },
+    {
+     "name": "AI Safety, Trust & Governance",
+     "label": "AI Safety, Trust & Governance",
+     "count": 12
+    }
+   ]
+  },
+  {
+   "key": "frameworks",
+   "label": "Frameworks",
+   "icon": "🏗️",
+   "color": "#e6b34c",
+   "count": 41,
+   "featured": true,
+   "categories": [
+    {
+     "name": "Context Engineering",
+     "label": "Context Engineering",
+     "count": 5
+    },
+    {
+     "name": "AI Agent Design & Orchestration",
+     "label": "AI Agent Design & Orchestration",
+     "count": 5
+    },
+    {
+     "name": "Prompt Optimization Systems",
+     "label": "Prompt Optimization Systems",
+     "count": 5
+    },
+    {
+     "name": "Business Operating Systems",
+     "label": "Business Operating Systems",
+     "count": 5
+    },
+    {
+     "name": "Offer & Pricing Architecture",
+     "label": "Offer & Pricing Architecture",
+     "count": 5
+    },
+    {
+     "name": "Growth & Acquisition Engines",
+     "label": "Growth & Acquisition Engines",
+     "count": 5
+    },
+    {
+     "name": "Content & Brand Systems",
+     "label": "Content & Brand Systems",
+     "count": 4
+    },
+    {
+     "name": "Sales Systems",
+     "label": "Sales Systems",
+     "count": 4
+    },
+    {
+     "name": "Decision & Strategy Frameworks",
+     "label": "Decision & Strategy Frameworks",
+     "count": 2
+    },
+    {
+     "name": "Founder/Operator Productivity OS",
+     "label": "Founder/Operator Productivity OS",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "key": "warroom",
+   "label": "The War Room",
+   "icon": "🎯",
+   "color": "#e6b34c",
+   "count": 107,
+   "featured": true,
+   "categories": [
+    {
+     "name": "Pricing & Unit Economics",
+     "label": "Pricing & Unit Economics",
+     "count": 10
+    },
+    {
+     "name": "Fundraising & Board",
+     "label": "Fundraising & Board",
+     "count": 9
+    },
+    {
+     "name": "Eng Org & Exec Hiring",
+     "label": "Eng Org & Exec Hiring",
+     "count": 9
+    },
+    {
+     "name": "AI Evals & Reliability",
+     "label": "AI Evals & Reliability",
+     "count": 8
+    },
+    {
+     "name": "Competitive Moats",
+     "label": "Competitive Moats",
+     "count": 7
+    },
+    {
+     "name": "AI Product Strategy",
+     "label": "AI Product Strategy",
+     "count": 7
+    },
+    {
+     "name": "Crisis & Executive Comms",
+     "label": "Crisis & Executive Comms",
+     "count": 7
+    },
+    {
+     "name": "Org Design",
+     "label": "Org Design",
+     "count": 6
+    },
+    {
+     "name": "Technical Architecture",
+     "label": "Technical Architecture",
+     "count": 6
+    },
+    {
+     "name": "Security & Compliance",
+     "label": "Security & Compliance",
+     "count": 6
+    },
+    {
+     "name": "M&A",
+     "label": "M&A",
+     "count": 6
+    },
+    {
+     "name": "Category Design",
+     "label": "Category Design",
+     "count": 5
+    },
+    {
+     "name": "Build vs Buy",
+     "label": "Build vs Buy",
+     "count": 5
+    },
+    {
+     "name": "AI Org & Talent",
+     "label": "AI Org & Talent",
+     "count": 5
+    },
+    {
+     "name": "GTM for Enterprise",
+     "label": "GTM for Enterprise",
+     "count": 4
+    },
+    {
+     "name": "Technical Due Diligence",
+     "label": "Technical Due Diligence",
+     "count": 4
+    },
+    {
+     "name": "GTM at Scale",
+     "label": "GTM at Scale",
+     "count": 3
+    }
+   ]
+  }
+ ],
+ "curator": "ProPrompt",
+ "tagline": "Free AI prompts for ChatGPT, Claude & Gemini"
+}

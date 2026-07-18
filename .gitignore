@@ -1,5 +1,6 @@
 tools/aiprm_raw.json
 tools/premium-seed.json
+data/corpus.pristine.json
 .env
 .dev.vars
 .gstack/

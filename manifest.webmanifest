@@ -1,7 +1,7 @@
 {
-  "name": "ProPrompt",
-  "short_name": "ProPrompt",
-  "description": "2,400+ original premium AI prompts for ChatGPT, Claude & Gemini. Pro-grade prompts, free to start.",
+  "name": "The Prompt Vault",
+  "short_name": "Prompt Vault",
+  "description": "2,600+ hand-built AI prompts for ChatGPT, Claude & Gemini. Free — no sign-up, no paywall.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

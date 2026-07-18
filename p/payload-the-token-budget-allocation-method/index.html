@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAYLOAD — The Token-Budget Allocation Method — Free AI Prompt for ChatGPT, Claude &amp; Gemini | ProPrompt</title>
+<meta name="description" content="Decide what earns a slot in the context window with a priority-tier ledger, so you never blow the budget on noise.">
+<link rel="canonical" href="https://getproprompt.com/p/payload-the-token-budget-allocation-method/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#14130f">
+<link rel="icon" type="image/svg+xml" href="/icon.svg">
+<link rel="icon" type="image/png" href="/icon-192.png">
+<meta property="og:type" content="website"><meta property="og:site_name" content="ProPrompt">
+<meta property="og:title" content="PAYLOAD — The Token-Budget Allocation Method — Free AI Prompt for ChatGPT, Claude &amp; Gemini | ProPrompt"><meta property="og:description" content="Decide what earns a slot in the context window with a priority-tier ledger, so you never blow the budget on noise.">
+<meta property="og:url" content="https://getproprompt.com/p/payload-the-token-budget-allocation-method/"><meta property="og:image" content="https://getproprompt.com/og-cover.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="PAYLOAD — The Token-Budget Allocation Method — Free AI Prompt for ChatGPT, Claude &amp; Gemini | ProPrompt">
+<meta name="twitter:description" content="Decide what earns a slot in the context window with a priority-tier ledger, so you never blow the budget on noise."><meta name="twitter:image" content="https://getproprompt.com/og-cover.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<style>
+.grain{position:fixed;inset:0;pointer-events:none;opacity:var(--grain-op,.04);z-index:0}
+.seo-head{max-width:880px;margin:0 auto;padding:22px 22px 0;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.seo-brand{color:var(--ink);text-decoration:none;font-family:'Fraunces',serif;font-weight:700;font-size:20px;display:flex;align-items:center;gap:8px}
+.seo-mark{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:var(--accent);color:var(--accent-ink);font-size:16px}
+.seo-cta-top{color:var(--accent);text-decoration:none;font-weight:600;font-size:.9rem;font-family:'JetBrains Mono',monospace;white-space:nowrap}
+.seo-wrap{max-width:880px;margin:0 auto;padding:10px 22px 50px;font-family:'Hanken Grotesk',system-ui,sans-serif;color:var(--ink-dim);line-height:1.7;position:relative;z-index:1}
+.crumbs{font-size:.8rem;color:var(--ink-faint);font-family:'JetBrains Mono',monospace;margin:14px 0}
+.crumbs a{color:var(--ink-faint)}
+.seo-wrap h1{font-family:'Fraunces',serif;color:var(--ink);font-size:clamp(28px,5vw,42px);line-height:1.08;margin:.2em 0 .25em}
+.seo-wrap h2{font-family:'Fraunces',serif;color:var(--ink);font-size:1.5rem;margin:1.7em 0 .5em}
+.seo-wrap h3{color:var(--ink);font-size:1.15rem;margin:.2em 0 .3em}
+.lede{font-size:1.08rem;color:var(--ink-dim);margin:0 0 1em}
+.seo-wrap a{color:var(--accent)}
+.muted{color:var(--ink-faint)}
+.cats{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.cats span{font-size:.78rem;background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:5px 11px;color:var(--ink-dim)}
+.promptwrap{position:relative;margin:10px 0}
+.promptwrap pre{background:var(--bg-2);border:1px solid var(--line);border-radius:12px;padding:20px 16px 18px;white-space:pre-wrap;word-wrap:break-word;font-family:'JetBrains Mono',monospace;font-size:.85rem;line-height:1.6;color:var(--ink);overflow-x:auto}
+.copybtn{position:absolute;top:10px;right:10px;z-index:2;background:var(--accent);color:var(--accent-ink);border:none;border-radius:8px;padding:6px 12px;font-weight:600;font-size:.78rem;cursor:pointer;font-family:'JetBrains Mono',monospace}
+.copybtn.done{background:var(--accent-2)}
+.openapp{display:inline-block;margin:4px 0 0;font-weight:600}
+.ctacard{margin:34px 0;padding:28px 24px;border-radius:18px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 16%,var(--bg-2)),var(--bg-2) 72%);border:1px solid color-mix(in srgb,var(--accent) 30%,var(--line));text-align:center}
+.ctacard h2{margin:.1em 0 .3em;font-size:1.4rem}
+.ctacard p{margin:.2em 0 .2em}
+.ctabtn{display:inline-block;margin-top:12px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;padding:12px 24px;border-radius:11px}
+.catlist{columns:2;gap:26px;padding-left:1.1em;margin:.4em 0}
+.catlist li{margin:.3em 0;color:var(--ink-dim)}
+.shelfgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin-top:16px}
+.shelfcard{display:block;background:var(--bg-card);border:1px solid var(--line);border-radius:14px;padding:18px;text-decoration:none;transition:transform .2s ease,border-color .2s ease}
+.shelfcard:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.shelfcard .sc-t{color:var(--ink);font-family:'Fraunces',serif;font-weight:600;font-size:1.04rem;display:block}
+.shelfcard .sc-c{color:var(--ink-faint);font-size:.82rem}
+.relist{padding-left:1.1em}.relist li{margin:.35em 0}
+.seo-foot{max-width:880px;margin:0 auto;padding:24px 22px 50px;border-top:1px solid var(--line);color:var(--ink-faint);font-size:.84rem;position:relative;z-index:1}
+.seo-shelfnav{display:flex;flex-wrap:wrap;gap:10px 14px;margin-bottom:14px}
+.seo-shelfnav a{color:var(--ink-faint);text-decoration:none;font-size:.82rem}
+.seo-shelfnav a:hover{color:var(--accent)}
+.seo-foot .legal a{color:var(--ink-faint)}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "PAYLOAD — The Token-Budget Allocation Method", "description": "Decide what earns a slot in the context window with a priority-tier ledger, so you never blow the budget on noise.", "url": "https://getproprompt.com/p/payload-the-token-budget-allocation-method/", "about": "Frameworks", "publisher": {"@type": "Organization", "name": "ProPrompt", "url": "https://getproprompt.com/"}}</script>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<header class="seo-head"><a class="seo-brand" href="/"><span class="seo-mark">❯</span> <b>ProPrompt</b></a><a class="seo-cta-top" href="/#browse">Browse the vault →</a></header>
+<main class="seo-wrap">
+<nav class="crumbs"><a href="/">Home</a> › <a href="/shelf/frameworks/">Frameworks</a> › Prompt</nav>
+<h1>PAYLOAD — The Token-Budget Allocation Method</h1>
+<p class="lede">Decide what earns a slot in the context window with a priority-tier ledger, so you never blow the budget on noise.</p>
+<div class="promptwrap"><button class="copybtn" data-target="b5001" data-label="Copy prompt">Copy prompt</button><pre id="b5001">WHAT THIS IS / WHEN TO RUN IT
+PAYLOAD is triage for the context window. When candidate context exceeds space — long docs, history, examples, retrieved chunks, instructions — PAYLOAD scores each block against the task, tiers it by value-per-token, estimates cost, and packs to a budget. Run it before any token-constrained task (long-doc QA, RAG, agent steps, summarize-the-summaries) or whenever outputs degrade as you add context. Output: a packing plan — what to include, compress, cut, and why.
+
+ROLE
+You are a Context Budget Officer. You do NOT perform [TASK]. You decide what context deserves the window so the executor gets the highest-signal payload that fits.
+
+OPERATING SYSTEM — the name is the method: P-A-Y-L-O-A-D
+
+P — PARSE (runnable)
+&quot;Task: [TASK]. Window: [MODEL_WINDOW] tokens. Reserve [RESERVED_OUTPUT] for the answer. Hard requirements: [HARD_REQUIREMENTS]. Quality bar: [QUALITY_BAR]. Position sensitivity: [POSITION_SENSITIVITY].&quot; Compute usable budget = [MODEL_WINDOW] − [RESERVED_OUTPUT] − 10% safety margin. State the budget in tokens before anything else.
+
+A — ASSESS
+For each block in [CANDIDATE_BLOCKS]: estimate tokens and score RELEVANCE 0–5 with a one-line reason. Token estimate = max(words×1.34, chars÷4); for code/tables/JSON use chars÷3.2 (denser). State which rule you used per block. No block skips scoring.
+
+Y — YIELD-RANK into tiers by value-per-token:
+- T0 CRITICAL — task fails or violates [HARD_REQUIREMENTS] without it. Always in.
+- T1 HIGH — materially improves correctness/quality.
+- T2 SUPPORTING — helpful, redundancy-tolerant.
+- T3 NICE — marginal; first cut.
+Ties → lower token cost wins (cheaper signal takes the slot).
+
+L — LEDGER
+Add blocks T0→T1→T2→T3, tracking cumulative tokens after each. The block that would breach budget triggers the next phase.
+
+O — OPTIMIZE OVERFLOW
+Any T0/T1 that won&#x27;t fit whole is COMPRESSED, never dropped: extract task-relevant spans, summarize to directives, or convert prose to a structured digest. Re-estimate and re-add. T2/T3 overflow is cut, not compressed.
+
+A — ASSEMBLE
+Default order: stable instructions and rules first → T0 facts → supporting context → [TASK]/question LAST (recency advantage). If [POSITION_SENSITIVITY]=high (long context, lost-in-the-middle risk), additionally place a 2-line restatement of [HARD_REQUIREMENTS] at BOTH ends and keep the single most critical T0 block adjacent to the question. Note placement rationale.
+
+D — DECLARE
+Emit the packing plan and budget reconciliation.
+
+OUTPUT CONTRACT
+Return exactly:
+1. BUDGET — usable tokens, reserve, margin (one line each).
+2. LEDGER — table: Block | Tier | Relevance(0–5) | Est. tokens (+rule) | Action (include / compress→N / cut) | Cumulative.
+3. COMPRESSIONS — per compressed block: original→new tokens + 1-line method.
+4. FINAL PAYLOAD ORDER — numbered, in load order, running total ≤ budget.
+5. CUT LIST — what was dropped + cheapest recovery (e.g. &quot;retrieve on demand&quot;).
+6. RISK — one line: the biggest thing this packing sacrifices.
+Numbers MUST reconcile: final cumulative ≤ usable budget. If not, you are not done.
+
+DECISION LOGIC / BRANCHES
+- T0 alone exceeds budget → compress T0 first; if still over, STOP and emit a SPLIT recommendation (multi-pass / chunked / map-reduce) — never a doomed single pass.
+- Two near-duplicate blocks → keep higher-relevance, cut the other, note it.
+- [QUALITY_BAR] high + budget tight → bias toward fewer fully-included T0/T1 over many truncated blocks.
+- Costly block, uncertain relevance → tier T2, mark [VERIFY]; don&#x27;t gamble a large slot.
+- Budget left over → leave as headroom; never backfill with T3 noise.
+
+GUARDRAILS
+- Margin is sacred — if math says over, cut or split.
+- Never cut a T0 — compress instead (T0 is task-breaking by definition).
+- No phantom tokens: every block carries an estimate; totals add up.
+- No padding.
+
+SELF-CHECK
+1. Cumulative ≤ usable budget? 2. All [HARD_REQUIREMENTS] satisfied by T0 inclusions? 3. Anything cut that the task secretly needs? 4. Is the single most-expensive block actually earning its tokens? Fix any failure before emitting.</pre></div>
+<p class="muted">Fill the highlighted <code>[VARIABLES]</code> with your details, then paste into your AI.</p>
+<a class="openapp" href="/?p=payload-the-token-budget-allocation-method">Open &amp; customize →</a>
+<div class="ctacard"><h2>The whole vault is free</h2><p>Every prompt — copy, customize the <code>[BLANKS]</code>, and run it in ChatGPT, Claude &amp; Gemini. No sign-up, no paywall.</p><a class="ctabtn" href="/#browse">Browse all prompts →</a></div>
+<h2>More Frameworks prompts</h2><ul class="relist"><li><a href="/p/the-context-compiler-source-of-truth-architecture/">The Context Compiler — Source-of-Truth Architecture for AI Workflows</a></li><li><a href="/p/living-brief-the-self-updating-knowledge-object/">Living Brief — The Self-Updating Knowledge Object</a></li><li><a href="/p/the-grounding-lattice-anti-hallucination-context-d/">The Grounding Lattice — Anti-Hallucination Context Design</a></li><li><a href="/p/rolecast-persona-constraint-encoding-system/">ROLECAST — Persona &amp; Constraint Encoding System</a></li><li><a href="/p/agentforge-the-single-agent-specification-blueprin/">AgentForge — The Single-Agent Specification Blueprint</a></li><li><a href="/p/the-conductor-protocol-multi-agent-orchestration-o/">The Conductor Protocol — Multi-Agent Orchestration OS</a></li></ul>
+</main>
+<footer class="seo-foot"><nav class="seo-shelfnav"><a href="/shelf/viral/">Trending &amp; Viral</a> · <a href="/shelf/elite/">Million-Dollar Prompts</a> · <a href="/shelf/expert/">Expert Picks</a> · <a href="/shelf/image/">AI Image Prompts</a> · <a href="/shelf/writing/">Content &amp; Writing</a> · <a href="/shelf/gen/">Generators &amp; Templates</a> · <a href="/shelf/agents/">Agentic &amp; System</a> · <a href="/shelf/mega/">Pro Mega-Prompts</a> · <a href="/shelf/work/">Work &amp; Career</a> · <a href="/shelf/living/">Life &amp; Wellbeing</a> · <a href="/shelf/biz/">Business &amp; Verticals</a> · <a href="/shelf/comms/">Communication &amp; Influence</a> · <a href="/shelf/ops/">Operations &amp; Admin</a> · <a href="/shelf/tech/">Tech &amp; Engineering</a> · <a href="/shelf/create/">Creative &amp; Media</a> · <a href="/shelf/grow/">Learning &amp; Growth</a> · <a href="/shelf/social/">Social Media</a> · <a href="/shelf/industry/">Industry Packs</a> · <a href="/shelf/personal/">Personal &amp; Lifestyle</a> · <a href="/shelf/research/">Research &amp; Analysis</a> · <a href="/shelf/design/">Design &amp; UX</a> · <a href="/shelf/money/">Money &amp; Finance</a> · <a href="/shelf/fun/">Fun &amp; Games</a> · <a href="/shelf/promptlab/">Prompt Lab</a> · <a href="/shelf/favorites/">Community Favorites</a> · <a href="/shelf/unicorn/">Unicorn Builder</a> · <a href="/shelf/frameworks/">Frameworks</a> · <a href="/shelf/warroom/">The War Room</a></nav><p class="legal">© 2026 ProPrompt · getproprompt.com · <a href="/about/">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p></footer>
+<script>document.querySelectorAll('.copybtn').forEach(function(b){b.addEventListener('click',function(){var el=document.getElementById(b.dataset.target);navigator.clipboard.writeText(el.textContent).then(function(){var o=b.textContent;b.textContent='Copied \u2713';b.classList.add('done');setTimeout(function(){b.textContent=o;b.classList.remove('done')},1600)})})});</script>
+</body></html>
